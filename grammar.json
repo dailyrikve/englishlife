@@ -1,0 +1,8 @@
+[
+  {"pattern":"If + 過去式, 主詞 + would + 原形","zh":"假設語氣:與現在事實相反","ex":"If I were you, I would study harder.","exZh":"如果我是你,我會更用功。","q":"If I ___ you, I would take the job.","options":["am","was","were","be"],"answer":"were","note":"與現在相反,be 動詞一律用 were。"},
+  {"pattern":"關係代名詞 who(指人)","zh":"用 who 連接、代替「人」","ex":"The teacher who helped me is kind.","exZh":"幫助我的那位老師人很好。","q":"The man ___ called you is my uncle.","options":["which","who","whom","whose"],"answer":"who","note":"先行詞是人、且在子句中當主詞,用 who。"},
+  {"pattern":"had better + 原形動詞","zh":"最好(做某事),帶勸告語氣","ex":"You had better see a doctor.","exZh":"你最好去看醫生。","q":"You had better ___ early today.","options":["leave","to leave","leaving","left"],"answer":"leave","note":"had better 後面直接接原形動詞。"},
+  {"pattern":"not only ... but also ...","zh":"不僅…而且…(對稱連接)","ex":"She is not only smart but also kind.","exZh":"她不僅聰明而且善良。","q":"He speaks not only English ___ also Japanese.","options":["but","and","or","so"],"answer":"but","note":"固定搭配 but also,前後詞性要對稱。"},
+  {"pattern":"被動語態 be + 過去分詞","zh":"主詞「被」做某事","ex":"The meal was prepared by the chef.","exZh":"那餐是由廚師準備的。","q":"The letter ___ yesterday.","options":["sends","sent","was sent","sending"],"answer":"was sent","note":"過去被動 = was/were + p.p.。"},
+  {"pattern":"動詞後接動名詞 (V-ing)","zh":"avoid/consider/finish 等後面接 V-ing","ex":"They considered moving abroad.","exZh":"他們考慮搬到國外。","q":"She avoided ___ the question.","options":["answer","to answer","answering","answered"],"answer":"answering","note":"avoid 後面接動名詞,不接不定詞。"}
+]

@@ -1,0 +1,17 @@
+[
+  {"type":"reading",
+   "keywords":[{"en":"deliver","zh":"遞送"},{"en":"on time","zh":"準時"},{"en":"customer","zh":"顧客"},{"en":"route","zh":"路線"}],
+   "passage":"The post office works hard to deliver packages on time. When a package is late, customers are not happy. To avoid this, workers check each route carefully every morning before they start.",
+   "questions":[
+     {"q":"What does the post office try to do?","options":["Sell packages","Deliver packages on time","Make customers wait","Close early"],"answer":"Deliver packages on time"},
+     {"q":"Why do workers check the route every morning?","options":["To rest","To avoid late delivery","To buy stamps","To go home"],"answer":"To avoid late delivery"}
+   ]},
+  {"type":"cloze",
+   "text":"Recycling paper and bottles helps ___ waste and protect the environment.",
+   "options":["reduce","deliver","resign","commute"],"answer":"reduce",
+   "note":"句意:回收能「減少」廢棄物,選 reduce。"},
+  {"type":"cloze",
+   "text":"Hurry up, ___ we will miss the train.",
+   "options":["otherwise","however","because","although"],"answer":"otherwise",
+   "note":"前後是「快點,否則…」的關係,選 otherwise。"}
+]
