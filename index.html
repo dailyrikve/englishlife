@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日郵政英文</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6efe3;--paper2:#efe5d4;--ink:#2b2622;--muted:#7d7264;
+    --accent:#d2462f;--accent-soft:#f3c9bf;--teal:#2f6f6a;--line:#e0d4bf;
+    --good:#2f7d54;--bad:#c0432e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Noto Sans TC',sans-serif;background:var(--paper);color:var(--ink);
+    min-height:100vh;background-image:radial-gradient(var(--line) 0.5px,transparent 0.5px);
+    background-size:18px 18px;padding:24px 16px 60px;}
+  .wrap{max-width:520px;margin:0 auto;}
+  header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;}
+  .brand{font-family:'Fraunces',serif;font-size:26px;font-weight:600;letter-spacing:-0.01em;}
+  .brand span{color:var(--accent);}
+  .streak{background:var(--accent);color:#fff;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:500;}
+  .daynav{display:flex;align-items:center;justify-content:space-between;background:var(--paper2);
+    border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:18px;}
+  .daynav button{background:none;border:none;font-size:20px;cursor:pointer;color:var(--ink);padding:4px 10px;border-radius:8px;}
+  .daynav button:hover{background:var(--accent-soft);}
+  .daynav button:disabled{opacity:.25;cursor:default;background:none;}
+  .daylabel{text-align:center;}
+  .daylabel .big{font-family:'Fraunces',serif;font-size:18px;font-weight:600;}
+  .daylabel .sub{font-size:12px;color:var(--muted);}
+  .today-pill{display:inline-block;font-size:11px;background:var(--teal);color:#fff;border-radius:10px;padding:1px 7px;margin-left:6px;vertical-align:middle;}
+  .progress{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:22px;}
+  .progress > i{display:block;height:100%;background:var(--teal);width:0;transition:width .4s ease;}
+  .card{background:#fffaf0;border:1px solid var(--line);border-radius:20px;padding:30px 26px;
+    box-shadow:0 8px 24px rgba(80,60,30,.07);min-height:300px;display:flex;flex-direction:column;}
+  .counter{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;}
+  .word{font-family:'Fraunces',serif;font-size:46px;font-weight:600;line-height:1.05;letter-spacing:-0.02em;}
+  .pos{display:inline-block;font-style:italic;font-family:'Fraunces',serif;color:var(--teal);font-size:16px;margin-top:6px;}
+  .zh{font-size:24px;font-weight:500;margin-top:16px;}
+  .zh.hidden{filter:blur(7px);user-select:none;}
+  .ex{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line);}
+  .ex .en{font-family:'Fraunces',serif;font-size:18px;line-height:1.5;}
+  .ex .ent{font-size:15px;color:var(--muted);margin-top:6px;}
+  .reveal-hint{font-size:13px;color:var(--accent);margin-top:14px;cursor:pointer;user-select:none;}
+  .row{display:flex;gap:10px;margin-top:auto;padding-top:24px;}
+  .btn{flex:1;border:none;border-radius:12px;padding:13px;font-size:15px;font-weight:500;font-family:inherit;cursor:pointer;transition:transform .08s;}
+  .btn:active{transform:scale(.97);}
+  .btn-ghost{background:var(--paper2);color:var(--ink);border:1px solid var(--line);}
+  .btn-main{background:var(--accent);color:#fff;}
+  .qword{font-family:'Fraunces',serif;font-size:40px;font-weight:600;text-align:center;margin:6px 0 4px;}
+  .qask{text-align:center;color:var(--muted);font-size:14px;margin-bottom:22px;}
+  .opt{display:block;width:100%;text-align:left;background:#fffaf0;border:1.5px solid var(--line);
+    border-radius:12px;padding:14px 16px;margin-bottom:11px;font-size:16px;font-family:inherit;cursor:pointer;transition:.15s;}
+  .opt:hover{border-color:var(--teal);}
+  .opt.correct{border-color:var(--good);background:#e7f3ea;}
+  .opt.wrong{border-color:var(--bad);background:#f7e3df;}
+  .opt:disabled{cursor:default;}
+  .done{text-align:center;padding:30px 10px;}
+  .done .mark{font-size:54px;}
+  .done h2{font-family:'Fraunces',serif;font-size:28px;margin:10px 0 6px;font-weight:600;}
+  .done p{color:var(--muted);margin-bottom:8px;}
+  .score{font-family:'Fraunces',serif;font-size:40px;color:var(--accent);font-weight:600;}
+  .note{font-size:12px;color:var(--muted);text-align:center;margin-top:26px;line-height:1.6;}
+  .errbox{background:#f7e3df;border:1px solid var(--bad);border-radius:14px;padding:20px;color:#7a2417;line-height:1.6;font-size:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">每日<span>郵政</span>英文</div>
+    <div class="streak" id="streak">連續 0 天</div>
+  </header>
+  <div class="daynav">
+    <button id="prev">‹</button>
+    <div class="daylabel"><div class="big" id="dayBig">載入中…</div><div class="sub" id="daySub"></div></div>
+    <button id="next">›</button>
+  </div>
+  <div class="progress"><i id="bar"></i></div>
+  <div class="card" id="card"></div>
+  <div class="note">
+    單字內容存放在 data.json,要更新只需編輯那個檔。<br>
+    進度自動記在這台裝置的瀏覽器裡。
+  </div>
+</div>
+
+<script>
+let DAYS = [];
+const ONE_DAY = 86400000;
+let state = {startDate:null, completed:{}};
+let viewDay = 0, todayIndex = 0, phase = "learn";
+let learnIdx = 0, quizIdx = 0, quizScore = 0, quizOrder = [];
+const STORE_KEY = "dailyEnglishState";
+
+function loadState(){
+  try{ const s = localStorage.getItem(STORE_KEY); if(s) state = JSON.parse(s); }catch(e){}
+  if(!state.startDate){ state.startDate = Date.now(); saveState(); }
+}
+function saveState(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(state)); }catch(e){} }
+function dayKey(d){return "day"+d;}
+function computeStreak(){ return Object.keys(state.completed).length; }
+
+async function init(){
+  loadState();
+  try{
+    const res = await fetch("data.json", {cache:"no-store"});
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    DAYS = await res.json();
+    if(!Array.isArray(DAYS) || DAYS.length===0) throw new Error("資料是空的");
+  }catch(e){
+    showError(e.message);
+    return;
+  }
+  const days = Math.floor((Date.now() - state.startDate)/ONE_DAY);
+  todayIndex = days % DAYS.length;
+  viewDay = todayIndex;
+  render();
+}
+
+function showError(msg){
+  document.getElementById("dayBig").textContent = "讀不到單字";
+  document.getElementById("card").innerHTML =
+    '<div class="errbox"><b>找不到或讀不到 data.json</b><br>'+
+    '原因:'+msg+'<br><br>'+
+    '這個網頁需要和 data.json 放在一起,而且要透過網址(例如 GitHub Pages 的 https 網址)開啟。'+
+    '直接用滑鼠雙擊本機檔案開啟,瀏覽器基於安全限制不會載入 data.json,屬正常現象。</div>';
+}
+
+function render(){
+  document.getElementById("streak").textContent = "連續 "+computeStreak()+" 天";
+  document.getElementById("prev").disabled = viewDay<=0;
+  document.getElementById("next").disabled = viewDay>=todayIndex;
+  document.getElementById("dayBig").innerHTML = "第 "+(viewDay+1)+" 天" +
+    (viewDay===todayIndex?'<span class="today-pill">今天</span>':'');
+  document.getElementById("daySub").textContent =
+    phase==="quiz"?"小測驗":(phase==="done"?"完成":"單字練習");
+  const set = DAYS[viewDay];
+  let pct = phase==="learn"? learnIdx/set.length*50
+          : phase==="quiz"? 50+quizIdx/set.length*50 : 100;
+  document.getElementById("bar").style.width = pct+"%";
+  if(phase==="learn") renderLearn();
+  else if(phase==="quiz") renderQuiz();
+  else renderDone();
+}
+
+function renderLearn(){
+  const set=DAYS[viewDay], w=set[learnIdx], card=document.getElementById("card");
+  card.innerHTML = `
+    <div class="counter">單字 ${learnIdx+1} / ${set.length}</div>
+    <div class="word">${w.en}</div>
+    <div class="pos">${w.pos}</div>
+    <div class="zh hidden" id="zh">${w.zh}</div>
+    <div class="reveal-hint" id="rev">👆 點這裡看中文意思</div>
+    <div class="ex"><div class="en">${w.ex}</div><div class="ent">${w.ext}</div></div>
+    <div class="row">
+      <button class="btn btn-ghost" id="back">‹ 上一個</button>
+      <button class="btn btn-main" id="fwd">${learnIdx===set.length-1?"開始測驗 →":"下一個 ›"}</button>
+    </div>`;
+  document.getElementById("rev").onclick=()=>{
+    document.getElementById("zh").classList.remove("hidden");
+    document.getElementById("rev").style.visibility="hidden"; };
+  document.getElementById("back").onclick=()=>{ if(learnIdx>0){learnIdx--;render();} };
+  document.getElementById("fwd").onclick=()=>{
+    if(learnIdx<set.length-1){learnIdx++;render();} else startQuiz(); };
+}
+
+function startQuiz(){
+  phase="quiz"; quizIdx=0; quizScore=0;
+  quizOrder = DAYS[viewDay].map((_,i)=>i).sort(()=>Math.random()-0.5);
+  render();
+}
+
+function renderQuiz(){
+  const set=DAYS[viewDay], w=set[quizOrder[quizIdx]];
+  let pool=set.map(x=>x.zh).filter(z=>z!==w.zh).sort(()=>Math.random()-0.5).slice(0,3);
+  let opts=[w.zh,...pool].sort(()=>Math.random()-0.5);
+  const card=document.getElementById("card");
+  card.innerHTML = `
+    <div class="counter">測驗 ${quizIdx+1} / ${set.length}</div>
+    <div class="qword">${w.en}</div>
+    <div class="qask">這個字的意思是?</div>
+    <div id="opts"></div>`;
+  const box=document.getElementById("opts");
+  opts.forEach(o=>{
+    const b=document.createElement("button");
+    b.className="opt"; b.textContent=o;
+    b.onclick=()=>{
+      document.querySelectorAll(".opt").forEach(x=>x.disabled=true);
+      if(o===w.zh){ b.classList.add("correct"); quizScore++; }
+      else{ b.classList.add("wrong");
+        document.querySelectorAll(".opt").forEach(x=>{ if(x.textContent===w.zh)x.classList.add("correct"); }); }
+      setTimeout(()=>{ if(quizIdx<set.length-1){quizIdx++;render();} else finishDay(); },850);
+    };
+    box.appendChild(b);
+  });
+}
+
+function finishDay(){
+  phase="done";
+  const set=DAYS[viewDay], prev=state.completed[dayKey(viewDay)];
+  if(!prev || quizScore>prev.score){
+    state.completed[dayKey(viewDay)]={score:quizScore,total:set.length}; saveState(); }
+  render();
+}
+
+function renderDone(){
+  const set=DAYS[viewDay];
+  const rec=state.completed[dayKey(viewDay)]||{score:quizScore,total:set.length};
+  const pass=rec.score>=Math.ceil(set.length*0.6);
+  document.getElementById("card").innerHTML=`
+    <div class="done">
+      <div class="mark">${pass?"🎉":"💪"}</div>
+      <h2>${pass?"今天完成了!":"再複習一次會更好"}</h2>
+      <div class="score">${rec.score} / ${rec.total}</div>
+      <p>${pass?"明天會出新的一批單字。":"答對一半以下,建議再練一輪。"}</p>
+      <div class="row">
+        <button class="btn btn-ghost" id="again">再練一次</button>
+        ${viewDay<todayIndex?'<button class="btn btn-main" id="nx">下一天 ›</button>':''}
+      </div>
+    </div>`;
+  document.getElementById("again").onclick=()=>{ phase="learn";learnIdx=0;render(); };
+  const nx=document.getElementById("nx");
+  if(nx) nx.onclick=()=>{ viewDay++;phase="learn";learnIdx=0;render(); };
+}
+
+document.getElementById("prev").onclick=()=>{ if(viewDay>0){viewDay--;phase="learn";learnIdx=0;render();} };
+document.getElementById("next").onclick=()=>{ if(viewDay<todayIndex){viewDay++;phase="learn";learnIdx=0;render();} };
+
+init();
+</script>
+</body>
+</html>

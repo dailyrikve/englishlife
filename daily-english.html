@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日郵政英文</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6efe3;
+    --paper2:#efe5d4;
+    --ink:#2b2622;
+    --muted:#7d7264;
+    --accent:#d2462f;
+    --accent-soft:#f3c9bf;
+    --teal:#2f6f6a;
+    --line:#e0d4bf;
+    --good:#2f7d54;
+    --bad:#c0432e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Noto Sans TC',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    min-height:100vh;
+    background-image:radial-gradient(var(--line) 0.5px,transparent 0.5px);
+    background-size:18px 18px;
+    padding:24px 16px 60px;
+  }
+  .wrap{max-width:520px;margin:0 auto;}
+  header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;}
+  .brand{font-family:'Fraunces',serif;font-size:26px;font-weight:600;letter-spacing:-0.01em;}
+  .brand span{color:var(--accent);}
+  .meta{font-size:13px;color:var(--muted);}
+  .streak{background:var(--accent);color:#fff;border-radius:20px;padding:4px 12px;font-size:13px;font-weight:500;}
+
+  .daynav{display:flex;align-items:center;justify-content:space-between;background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:18px;}
+  .daynav button{background:none;border:none;font-size:20px;cursor:pointer;color:var(--ink);padding:4px 10px;border-radius:8px;}
+  .daynav button:hover{background:var(--accent-soft);}
+  .daynav button:disabled{opacity:.25;cursor:default;background:none;}
+  .daylabel{text-align:center;}
+  .daylabel .big{font-family:'Fraunces',serif;font-size:18px;font-weight:600;}
+  .daylabel .sub{font-size:12px;color:var(--muted);}
+  .today-pill{display:inline-block;font-size:11px;background:var(--teal);color:#fff;border-radius:10px;padding:1px 7px;margin-left:6px;vertical-align:middle;}
+
+  .progress{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:22px;}
+  .progress > i{display:block;height:100%;background:var(--teal);width:0;transition:width .4s ease;}
+
+  /* card */
+  .card{background:#fffaf0;border:1px solid var(--line);border-radius:20px;padding:30px 26px;box-shadow:0 8px 24px rgba(80,60,30,.07);min-height:300px;display:flex;flex-direction:column;}
+  .counter{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;}
+  .word{font-family:'Fraunces',serif;font-size:46px;font-weight:600;line-height:1.05;letter-spacing:-0.02em;}
+  .pos{display:inline-block;font-style:italic;font-family:'Fraunces',serif;color:var(--teal);font-size:16px;margin-top:6px;}
+  .zh{font-size:24px;font-weight:500;margin-top:16px;}
+  .zh.hidden{filter:blur(7px);user-select:none;}
+  .ex{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line);}
+  .ex .en{font-family:'Fraunces',serif;font-size:18px;line-height:1.5;}
+  .ex .ent{font-size:15px;color:var(--muted);margin-top:6px;}
+  .reveal-hint{font-size:13px;color:var(--accent);margin-top:14px;cursor:pointer;user-select:none;}
+  .row{display:flex;gap:10px;margin-top:auto;padding-top:24px;}
+  .btn{flex:1;border:none;border-radius:12px;padding:13px;font-size:15px;font-weight:500;font-family:inherit;cursor:pointer;transition:transform .08s;}
+  .btn:active{transform:scale(.97);}
+  .btn-ghost{background:var(--paper2);color:var(--ink);border:1px solid var(--line);}
+  .btn-main{background:var(--accent);color:#fff;}
+
+  /* quiz */
+  .qword{font-family:'Fraunces',serif;font-size:40px;font-weight:600;text-align:center;margin:6px 0 4px;}
+  .qask{text-align:center;color:var(--muted);font-size:14px;margin-bottom:22px;}
+  .opt{display:block;width:100%;text-align:left;background:#fffaf0;border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:11px;font-size:16px;font-family:inherit;cursor:pointer;transition:.15s;}
+  .opt:hover{border-color:var(--teal);}
+  .opt.correct{border-color:var(--good);background:#e7f3ea;}
+  .opt.wrong{border-color:var(--bad);background:#f7e3df;}
+  .opt:disabled{cursor:default;}
+
+  /* done */
+  .done{text-align:center;padding:30px 10px;}
+  .done .mark{font-size:54px;}
+  .done h2{font-family:'Fraunces',serif;font-size:28px;margin:10px 0 6px;font-weight:600;}
+  .done p{color:var(--muted);margin-bottom:8px;}
+  .score{font-family:'Fraunces',serif;font-size:40px;color:var(--accent);font-weight:600;}
+  .note{font-size:12px;color:var(--muted);text-align:center;margin-top:26px;line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">每日<span>郵政</span>英文</div>
+    <div class="streak" id="streak">連續 0 天</div>
+  </header>
+
+  <div class="daynav">
+    <button id="prev">‹</button>
+    <div class="daylabel">
+      <div class="big" id="dayBig">第 1 天</div>
+      <div class="sub" id="daySub">單字練習</div>
+    </div>
+    <button id="next">›</button>
+  </div>
+
+  <div class="progress"><i id="bar"></i></div>
+
+  <div class="card" id="card"></div>
+
+  <div class="note">
+    這是原型 demo。單字為示範內容,正式版會換成從阿摩考古題萃取出的高頻字。<br>
+    進度會自動記住(換天、關掉再開都在)。
+  </div>
+</div>
+
+<script>
+// ---- 示範單字庫(正式版改成從考古題萃取的高頻字) ----
+const DAYS = [
+  [
+    {en:"deliver",pos:"v.",zh:"遞送;運送",ex:"The mailman delivers letters every morning.",ext:"郵差每天早上遞送信件。"},
+    {en:"package",pos:"n.",zh:"包裹",ex:"I received a package from my friend.",ext:"我收到朋友寄來的包裹。"},
+    {en:"address",pos:"n.",zh:"地址",ex:"Please write your address clearly.",ext:"請清楚寫下你的地址。"},
+    {en:"stamp",pos:"n.",zh:"郵票",ex:"She put a stamp on the envelope.",ext:"她在信封上貼了郵票。"},
+    {en:"envelope",pos:"n.",zh:"信封",ex:"The letter is inside the envelope.",ext:"信在信封裡面。"},
+    {en:"customer",pos:"n.",zh:"顧客",ex:"The customer is waiting at the counter.",ext:"顧客在櫃台等候。"},
+    {en:"service",pos:"n.",zh:"服務",ex:"Our postal service is fast.",ext:"我們的郵政服務很快。"},
+    {en:"weight",pos:"n.",zh:"重量",ex:"The weight of the box is two kilograms.",ext:"箱子的重量是兩公斤。"}
+  ],
+  [
+    {en:"account",pos:"n.",zh:"帳戶",ex:"I opened a bank account today.",ext:"我今天開了一個銀行帳戶。"},
+    {en:"deposit",pos:"v./n.",zh:"存入;存款",ex:"She wants to deposit money.",ext:"她想要存錢。"},
+    {en:"withdraw",pos:"v.",zh:"提領;提取",ex:"You can withdraw cash here.",ext:"你可以在這裡提領現金。"},
+    {en:"amount",pos:"n.",zh:"金額;數量",ex:"Please check the amount.",ext:"請確認金額。"},
+    {en:"receipt",pos:"n.",zh:"收據",ex:"Keep the receipt for your records.",ext:"請保留收據備查。"},
+    {en:"transfer",pos:"v./n.",zh:"轉帳;轉移",ex:"I will transfer the money tomorrow.",ext:"我明天會轉帳。"},
+    {en:"fee",pos:"n.",zh:"費用",ex:"There is a small fee for this service.",ext:"這項服務有少額費用。"},
+    {en:"balance",pos:"n.",zh:"餘額;結餘",ex:"Please check your account balance.",ext:"請查看你的帳戶餘額。"}
+  ],
+  [
+    {en:"require",pos:"v.",zh:"需要;要求",ex:"This job requires good English.",ext:"這份工作需要好的英文。"},
+    {en:"provide",pos:"v.",zh:"提供",ex:"We provide free delivery.",ext:"我們提供免費遞送。"},
+    {en:"available",pos:"adj.",zh:"可取得的;有空的",ex:"The service is available now.",ext:"這項服務現在可使用。"},
+    {en:"complete",pos:"v./adj.",zh:"完成;完整的",ex:"Please complete the form.",ext:"請填完這張表格。"},
+    {en:"receive",pos:"v.",zh:"收到",ex:"Did you receive my email?",ext:"你收到我的電子郵件了嗎?"},
+    {en:"apply",pos:"v.",zh:"申請;適用",ex:"You can apply online.",ext:"你可以線上申請。"},
+    {en:"confirm",pos:"v.",zh:"確認",ex:"Please confirm your order.",ext:"請確認你的訂單。"},
+    {en:"allow",pos:"v.",zh:"允許",ex:"Smoking is not allowed here.",ext:"這裡不允許吸菸。"}
+  ],
+  [
+    {en:"however",pos:"adv.",zh:"然而",ex:"It is cheap; however, it is slow.",ext:"它便宜,然而很慢。"},
+    {en:"although",pos:"conj.",zh:"雖然",ex:"Although it rained, we went out.",ext:"雖然下雨,我們還是出門了。"},
+    {en:"increase",pos:"v./n.",zh:"增加;上升",ex:"Prices will increase next year.",ext:"明年價格會上漲。"},
+    {en:"reduce",pos:"v.",zh:"減少;降低",ex:"We need to reduce the cost.",ext:"我們需要降低成本。"},
+    {en:"similar",pos:"adj.",zh:"相似的",ex:"These two boxes are similar.",ext:"這兩個箱子很相似。"},
+    {en:"include",pos:"v.",zh:"包含",ex:"The price includes tax.",ext:"價格包含稅金。"},
+    {en:"necessary",pos:"adj.",zh:"必要的",ex:"A signature is necessary.",ext:"簽名是必要的。"},
+    {en:"instead",pos:"adv.",zh:"反而;作為替代",ex:"Use email instead of letters.",ext:"用電子郵件代替信件。"}
+  ]
+];
+
+const ONE_DAY = 86400000;
+let state = {startDate:null, completed:{}};
+let viewDay = 0;      // 目前瀏覽的天(0-based)
+let todayIndex = 0;   // 依日期算出的「今天」
+let phase = "learn";  // learn / quiz / done
+let learnIdx = 0;
+let quizIdx = 0;
+let quizScore = 0;
+let quizOrder = [];
+
+function dayKey(d){return "day"+d;}
+
+async function load(){
+  try{
+    const r = await window.storage.get("state");
+    if(r && r.value){ state = JSON.parse(r.value); }
+  }catch(e){ /* 第一次,沒資料 */ }
+  if(!state.startDate){
+    state.startDate = Date.now();
+    await save();
+  }
+  const days = Math.floor((Date.now() - state.startDate)/ONE_DAY);
+  todayIndex = days % DAYS.length;
+  viewDay = todayIndex;
+  render();
+}
+async function save(){
+  try{ await window.storage.set("state", JSON.stringify(state)); }catch(e){}
+}
+
+function computeStreak(){
+  // 簡化:已完成天數即連續天數(demo 用途)
+  return Object.keys(state.completed).length;
+}
+
+function render(){
+  document.getElementById("streak").textContent = "連續 "+computeStreak()+" 天";
+  document.getElementById("prev").disabled = viewDay<=0;
+  document.getElementById("next").disabled = viewDay>=todayIndex;
+  const big = document.getElementById("dayBig");
+  big.innerHTML = "第 "+(viewDay+1)+" 天" + (viewDay===todayIndex?'<span class="today-pill">今天</span>':'');
+  document.getElementById("daySub").textContent = phase==="quiz"?"小測驗":(phase==="done"?"完成":"單字練習");
+
+  const set = DAYS[viewDay];
+  let pct = 0;
+  if(phase==="learn") pct = (learnIdx)/set.length*50;
+  else if(phase==="quiz") pct = 50 + (quizIdx)/set.length*50;
+  else pct = 100;
+  document.getElementById("bar").style.width = pct+"%";
+
+  if(phase==="learn") renderLearn();
+  else if(phase==="quiz") renderQuiz();
+  else renderDone();
+}
+
+function renderLearn(){
+  const set = DAYS[viewDay];
+  const w = set[learnIdx];
+  const card = document.getElementById("card");
+  card.innerHTML = `
+    <div class="counter">單字 ${learnIdx+1} / ${set.length}</div>
+    <div class="word">${w.en}</div>
+    <div class="pos">${w.pos}</div>
+    <div class="zh hidden" id="zh">${w.zh}</div>
+    <div class="reveal-hint" id="rev">👆 點這裡看中文意思</div>
+    <div class="ex">
+      <div class="en">${w.ex}</div>
+      <div class="ent">${w.ext}</div>
+    </div>
+    <div class="row">
+      <button class="btn btn-ghost" id="back">‹ 上一個</button>
+      <button class="btn btn-main" id="fwd">${learnIdx===set.length-1?"開始測驗 →":"下一個 ›"}</button>
+    </div>`;
+  document.getElementById("rev").onclick = ()=>{
+    document.getElementById("zh").classList.remove("hidden");
+    document.getElementById("rev").style.visibility="hidden";
+  };
+  document.getElementById("back").onclick = ()=>{ if(learnIdx>0){learnIdx--;render();} };
+  document.getElementById("fwd").onclick = ()=>{
+    if(learnIdx<set.length-1){ learnIdx++; render(); }
+    else { startQuiz(); }
+  };
+}
+
+function startQuiz(){
+  phase="quiz"; quizIdx=0; quizScore=0;
+  quizOrder = DAYS[viewDay].map((_,i)=>i).sort(()=>Math.random()-0.5);
+  render();
+}
+
+function renderQuiz(){
+  const set = DAYS[viewDay];
+  const w = set[quizOrder[quizIdx]];
+  // 干擾選項
+  let pool = set.map(x=>x.zh).filter(z=>z!==w.zh);
+  pool = pool.sort(()=>Math.random()-0.5).slice(0,3);
+  let opts = [w.zh, ...pool].sort(()=>Math.random()-0.5);
+  const card = document.getElementById("card");
+  card.innerHTML = `
+    <div class="counter">測驗 ${quizIdx+1} / ${set.length}</div>
+    <div class="qword">${w.en}</div>
+    <div class="qask">這個字的意思是?</div>
+    <div id="opts"></div>`;
+  const box = document.getElementById("opts");
+  opts.forEach(o=>{
+    const b=document.createElement("button");
+    b.className="opt"; b.textContent=o;
+    b.onclick=()=>{
+      document.querySelectorAll(".opt").forEach(x=>x.disabled=true);
+      if(o===w.zh){ b.classList.add("correct"); quizScore++; }
+      else{
+        b.classList.add("wrong");
+        document.querySelectorAll(".opt").forEach(x=>{ if(x.textContent===w.zh)x.classList.add("correct"); });
+      }
+      setTimeout(()=>{
+        if(quizIdx<set.length-1){ quizIdx++; render(); }
+        else finishDay();
+      },850);
+    };
+    box.appendChild(b);
+  });
+  render_progress_only();
+}
+function render_progress_only(){
+  const set=DAYS[viewDay];
+  document.getElementById("bar").style.width = (50+(quizIdx)/set.length*50)+"%";
+}
+
+async function finishDay(){
+  phase="done";
+  const set=DAYS[viewDay];
+  const prev = state.completed[dayKey(viewDay)];
+  if(!prev || quizScore>prev.score){
+    state.completed[dayKey(viewDay)] = {score:quizScore,total:set.length};
+    await save();
+  }
+  render();
+}
+
+function renderDone(){
+  const set=DAYS[viewDay];
+  const rec = state.completed[dayKey(viewDay)] || {score:quizScore,total:set.length};
+  const card=document.getElementById("card");
+  const pass = rec.score>=Math.ceil(set.length*0.6);
+  card.innerHTML=`
+    <div class="done">
+      <div class="mark">${pass?"🎉":"💪"}</div>
+      <h2>${pass?"今天完成了!":"再複習一次會更好"}</h2>
+      <div class="score">${rec.score} / ${rec.total}</div>
+      <p>${pass?"明天會出新的一批單字。":"答對一半以下,建議再練一輪。"}</p>
+      <div class="row">
+        <button class="btn btn-ghost" id="again">再練一次</button>
+        ${viewDay<todayIndex?'<button class="btn btn-main" id="nx">下一天 ›</button>':''}
+      </div>
+    </div>`;
+  document.getElementById("again").onclick=()=>{ phase="learn"; learnIdx=0; render(); };
+  const nx=document.getElementById("nx");
+  if(nx) nx.onclick=()=>{ viewDay++; phase="learn"; learnIdx=0; render(); };
+}
+
+document.getElementById("prev").onclick=()=>{ if(viewDay>0){viewDay--;phase="learn";learnIdx=0;render();} };
+document.getElementById("next").onclick=()=>{ if(viewDay<todayIndex){viewDay++;phase="learn";learnIdx=0;render();} };
+
+load();
+</script>
+</body>
+</html>
