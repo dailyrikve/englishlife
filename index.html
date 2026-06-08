@@ -136,10 +136,11 @@ function currentLevel(cat){ // 第一個還沒完成的關卡
   const n=levelCount(cat);for(let i=0;i<n;i++)if(!state.progress[cat]["L"+i])return i;return n;
 }
 // 單字關卡的題型:前段選中文→中段拼字母→後段選英文
-function vocabFmt(i){return i<2?"zh":i<4?"fill":"en";}
+function vocabFmt(i){return i<2?"zh":i<4?"en":i<6?"fillp":"fillf";}
+function vocabFmtLabel(i){const f=vocabFmt(i);return f==="zh"?"選中文":f==="en"?"選英文":f==="fillp"?"補字母":"拼全字";}
 function fmtHint(cat,i){
   if(i>=levelCount(cat))return "這個大類已全部完成,可回去複習任何一關。";
-  if(cat==="vocab"){const f=vocabFmt(i);return f==="zh"?"看英文,選出正確的中文意思。":f==="fill"?"聽發音,把單字缺少的字母補上。":"看中文,從相似的英文裡選出正確的字。";}
+  if(cat==="vocab"){const f=vocabFmt(i);return f==="zh"?"看英文,選出正確的中文意思。":f==="en"?"看中文,從相似的英文裡選出正確的字。":f==="fillp"?"聽發音,把單字缺少的字母補上。":"聽發音,把整個單字拼出來。";}
   if(cat==="grammar")return "先看句型卡,再選出填空的正確答案。";
   if(cat==="reading")return "先熟悉關鍵字,再讀短文用刪去法找答案。";
   if(cat==="exam")return "各種題型混合的小考,練習絕不留白、先刪再猜。";
@@ -209,8 +210,9 @@ function renderCat(){
   html+=`<div class="hint">下一關預告:${fmtHint(curCat,allDone?0:cur)}</div>`;
   html+='<div class="menu-title">所有關卡(可自由前後挑戰)</div><div class="grid" id="grid">';
   for(let i=0;i<n;i++){const rec=state.progress[curCat]["L"+i];
+    const tag=(curCat==="vocab")?('<div class="st" style="color:var(--accent)">'+vocabFmtLabel(i)+'</div>'):'';
     html+=`<button class="daycell ${rec?'done':''}" data-l="${i}">
-      <div class="dn">第 ${i+1} 關</div><div class="st">${rec?('✓ '+rec.score+'/'+rec.total):'未挑戰'}</div></button>`;}
+      <div class="dn">第 ${i+1} 關</div>${tag}<div class="st">${rec?('✓ '+rec.score+'/'+rec.total):'未挑戰'}</div></button>`;}
   html+='</div>';
   const card=document.getElementById("card");card.innerHTML=html;
   if(curCat==="vocab")card.querySelectorAll("#chips .chip").forEach(c=>{c.onclick=()=>{state.wordsPerDay=parseInt(c.dataset.n);saveState();rechunk();render();};});
@@ -234,8 +236,9 @@ function renderLearn(){
     card.innerHTML=`<div class="counter">單字 ${learnIdx+1} / ${set.length}</div>
       <div class="wordrow"><div class="word">${w.en}</div>${speakerHTML()}</div>
       <div class="syl">${w.syl||""}</div><div class="pos">${w.pos}</div><div class="zh">${w.zh}</div>
+      ${w.tip?('<div class="hint" style="margin-top:14px">💡 '+w.tip+'</div>'):''}
       <div class="ex"><span class="ex-toggle" id="extog">&#9656; 看例句</span>
-      <div class="ex-body" id="exbody"><div class="en">${w.ex}</div><div class="ent">${w.ext}</div></div></div>
+      <div class="ex-body" id="exbody"><div class="en">${hlWord(w.ex,w.en)}</div><div class="ent">${w.ext}</div></div></div>
       <div class="row"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===set.length-1?'開始測驗 →':'下一個 ›'}</button></div>`;
     document.getElementById("spk").onclick=()=>speak(w.en);speak(w.en);
@@ -274,10 +277,15 @@ function pickDistract(word,n,similar){
   const pool=similar?others.slice(0,Math.min(6,others.length)):others;
   return shuffle(pool).slice(0,n);
 }
-function maskWord(en){
-  const ch=en.split("");let idx=ch.map((c,i)=>/[a-z]/i.test(c)?i:-1).filter(i=>i>0&&i<ch.length-1);
+function maskWord(en,full){
+  const ch=en.split("");
+  if(full)return ch.map(c=>/[a-z]/i.test(c)?"_":c).join(" ");
+  let idx=ch.map((c,i)=>/[a-z]/i.test(c)?i:-1).filter(i=>i>0&&i<ch.length-1);
   idx=shuffle(idx).slice(0,Math.max(1,Math.round(idx.length*0.5)));
   return ch.map((c,i)=>idx.includes(i)?"_":c).join(" ");
+}
+function hlWord(sentence,word){
+  try{return sentence.replace(new RegExp("\\b"+word+"\\b","i"),m=>'<b style="color:var(--accent)">'+m+'</b>');}catch(e){return sentence;}
 }
 
 function buildQuiz(){
@@ -289,7 +297,7 @@ function buildQuiz(){
         quizQ.push({kind:"choice",head:w.en,speak:w.en,ask:"這個字的意思是?(可點🔊)",options:opts,answer:w.zh});}
       else if(f==="en"){const opts=shuffle([w.en,...pickDistract(w,3,true).map(x=>x.en)]);
         quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"哪一個是正確的英文?",options:opts,answer:w.en});}
-      else{quizQ.push({kind:"fill",head:w.zh,speak:w.en,syl:w.syl,answer:w.en});}
+      else{quizQ.push({kind:"fill",head:w.zh,headSmall:true,ask:(f==="fillf"?"聽發音,把整個單字拼出來":"聽發音,補上缺少的字母"),speak:w.en,syl:w.syl,answer:w.en,full:(f==="fillf")});}
     }
   } else if(curCat==="grammar"){
     const items=GRAMMAR.slice(viewLevel*3,viewLevel*3+3);
@@ -316,7 +324,7 @@ function renderQuiz(){
   html+=`<div class="qask">${q.ask}</div>`;
   if(q.kind==="choice"){html+='<div id="opts"></div>';}
   else if(q.kind==="fill"){html+=`<div class="syl" style="text-align:center">${q.syl||""}</div>
-    <div class="fillrow"><span class="fillmask">${maskWord(q.answer)}</span></div>
+    <div class="fillrow"><span class="fillmask">${maskWord(q.answer,q.full)}</span></div>
     <input class="fillin" id="fin" placeholder="把完整的字拼出來" autocomplete="off" autocapitalize="off">
     <div class="row"><button class="btn btn-main" id="sub">送出</button></div>`;}
   html+=`<div class="feedback" id="fb"></div>`;
