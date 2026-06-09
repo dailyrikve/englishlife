@@ -163,7 +163,7 @@ function discrimHTML(answer,picked){
   if(!picked||picked===answer)return "";
   const wa=ALL.find(x=>x.en===answer),wp=ALL.find(x=>x.en===picked);
   if(!wa||!wp)return ""; // 只有兩個都是單字(非文法/閱讀選項)才比對
-  if(editDist(answer.toLowerCase(),picked.toLowerCase())>1)return "";
+  if(editDist(answer.toLowerCase(),picked.toLowerCase())>2)return "";
   return '<div class="disc"><div class="disc-h">這兩個字長很像,看清楚差別:</div>'
     +'<div class="disc-row"><span class="disc-w">'+diffHL(wp.en,wa.en)+'</span><span class="disc-zh">'+wp.zh+'(你選的)</span><span class="confspk" data-en="'+wp.en+'">🔊</span></div>'
     +'<div class="disc-row"><span class="disc-w">'+diffHL(wa.en,wp.en)+'</span><span class="disc-zh">'+wa.zh+'(正解)</span><span class="confspk" data-en="'+wa.en+'">🔊</span></div></div>';}
