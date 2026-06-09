@@ -85,21 +85,30 @@
       }
     ],
     "contrast": {
-      "stem": "The post office ___ at eight every day.",
+      "stem": "The post office ___ at eight ___.",
       "items": [
         {
           "form": "opens",
+          "time": "every day",
           "zh": "郵局每天八點開門(現在/習慣)"
         },
         {
           "form": "opened",
-          "zh": "郵局以前每天八點開門(過去)"
+          "time": "yesterday",
+          "zh": "郵局昨天八點開了門(過去)"
         },
         {
           "form": "will open",
-          "zh": "郵局以後每天會八點開門(未來)"
+          "time": "tomorrow",
+          "zh": "郵局明天會八點開門(未來)"
         }
       ]
+    },
+    "forms": {
+      "base": "open",
+      "s": "opens",
+      "past": "opened",
+      "ing": "opening"
     }
   },
   {
@@ -188,21 +197,30 @@
       }
     ],
     "contrast": {
-      "stem": "Look! The mailman ___ a package now.",
+      "stem": "Look! The mailman ___ a package ___.",
       "items": [
         {
           "form": "is delivering",
+          "time": "now",
           "zh": "郵差現在正在送一個包裹(現在進行)"
         },
         {
           "form": "delivers",
-          "zh": "郵差每天都送包裹(習慣)"
+          "time": "every day",
+          "zh": "郵差每天送一個包裹(現在/習慣)"
         },
         {
-          "form": "delivered",
-          "zh": "郵差剛剛送了一個包裹(過去)"
+          "form": "will deliver",
+          "time": "tomorrow",
+          "zh": "郵差明天會送一個包裹(未來)"
         }
       ]
+    },
+    "forms": {
+      "base": "deliver",
+      "s": "delivers",
+      "past": "delivered",
+      "ing": "delivering"
     }
   },
   {
@@ -291,19 +309,22 @@
       }
     ],
     "contrast": {
-      "stem": "I ___ the letter yesterday.",
+      "stem": "I ___ the letter ___.",
       "items": [
         {
           "form": "sent",
+          "time": "yesterday",
           "zh": "我昨天寄了那封信(過去)"
         },
         {
           "form": "send",
-          "zh": "我（平常）寄那封信(現在/習慣)"
+          "time": "every day",
+          "zh": "我每天寄那封信(現在/習慣)"
         },
         {
           "form": "will send",
-          "zh": "我會寄那封信(未來)"
+          "time": "tomorrow",
+          "zh": "我明天會寄那封信(未來)"
         }
       ]
     },
@@ -317,6 +338,12 @@
       ],
       "answer": "finished",
       "note": "有明確過去時間 last night,要用過去式,不用現在完成式 → finished。"
+    },
+    "forms": {
+      "base": "send",
+      "s": "sends",
+      "past": "sent",
+      "ing": "sending"
     }
   },
   {
@@ -405,19 +432,22 @@
       }
     ],
     "contrast": {
-      "stem": "I ___ your package tomorrow.",
+      "stem": "I ___ your package ___.",
       "items": [
         {
           "form": "will deliver",
+          "time": "tomorrow",
           "zh": "我明天會送你的包裹(未來)"
         },
         {
-          "form": "am going to deliver",
-          "zh": "我打算明天送你的包裹(計畫)"
+          "form": "delivered",
+          "time": "yesterday",
+          "zh": "我昨天送了你的包裹(過去)"
         },
         {
-          "form": "delivered",
-          "zh": "我（已經）送了你的包裹(過去)"
+          "form": "deliver",
+          "time": "every day",
+          "zh": "我每天送你的包裹(現在/習慣)"
         }
       ]
     },
@@ -431,6 +461,12 @@
       ],
       "answer": "is going to",
       "note": "眼前有跡象(烏雲)的預測,用 be going to,不用 will → is going to。"
+    },
+    "forms": {
+      "base": "deliver",
+      "s": "delivers",
+      "past": "delivered",
+      "ing": "delivering"
     }
   },
   {
@@ -519,21 +555,30 @@
       }
     ],
     "contrast": {
-      "stem": "We ___ next month.",
+      "stem": "We ___ ___.",
       "items": [
         {
           "form": "are going to move",
+          "time": "next month",
           "zh": "我們下個月打算搬家(計畫)"
         },
         {
-          "form": "will move",
-          "zh": "我們下個月會搬家(未來)"
+          "form": "moved",
+          "time": "last month",
+          "zh": "我們上個月搬了家(過去)"
         },
         {
-          "form": "moved",
-          "zh": "我們（已經）搬家了(過去)"
+          "form": "will move",
+          "time": "next week",
+          "zh": "我們下週會搬家(未來)"
         }
       ]
+    },
+    "forms": {
+      "base": "move",
+      "s": "moves",
+      "past": "moved",
+      "ing": "moving"
     }
   },
   {
@@ -622,21 +667,30 @@
       }
     ],
     "contrast": {
-      "stem": "I ___ when the bell rang.",
+      "stem": "I ___ ___.",
       "items": [
         {
           "form": "was reading",
+          "time": "when the bell rang",
           "zh": "鈴響的時候我正在看書(過去進行)"
         },
         {
           "form": "read",
-          "zh": "我（那時）看了書(過去)"
+          "time": "yesterday",
+          "zh": "我昨天看了書(過去)"
         },
         {
           "form": "am reading",
+          "time": "now",
           "zh": "我現在正在看書(現在進行)"
         }
       ]
+    },
+    "forms": {
+      "base": "read",
+      "s": "reads",
+      "past": "read",
+      "ing": "reading"
     }
   },
   {
@@ -725,19 +779,22 @@
       }
     ],
     "contrast": {
-      "stem": "I ___ here for three years.",
+      "stem": "I ___ here ___.",
       "items": [
         {
           "form": "have worked",
+          "time": "for three years",
           "zh": "我在這裡工作三年了(現在完成,一直到現在)"
         },
         {
           "form": "worked",
-          "zh": "我在這裡工作過(過去)"
+          "time": "last year",
+          "zh": "我去年在這裡工作(過去)"
         },
         {
           "form": "work",
-          "zh": "我在這裡工作(現在/習慣)"
+          "time": "every day",
+          "zh": "我每天在這裡工作(現在/習慣)"
         }
       ]
     },
@@ -751,6 +808,12 @@
       ],
       "answer": "have lived",
       "note": "since 表從過去持續到現在,用現在完成式,不用過去式 → have lived。"
+    },
+    "forms": {
+      "base": "work",
+      "s": "works",
+      "past": "worked",
+      "ing": "working"
     }
   },
   {
@@ -839,21 +902,30 @@
       }
     ],
     "contrast": {
-      "stem": "These boxes ___ every morning.",
+      "stem": "These boxes ___ ___.",
       "items": [
         {
           "form": "are checked",
+          "time": "every morning",
           "zh": "這些箱子每天早上被檢查(現在被動)"
         },
         {
           "form": "were checked",
-          "zh": "這些箱子昨天被檢查了(過去被動)"
+          "time": "last night",
+          "zh": "這些箱子昨晚被檢查了(過去被動)"
         },
         {
           "form": "will be checked",
+          "time": "tomorrow",
           "zh": "這些箱子明天會被檢查(未來被動)"
         }
       ]
+    },
+    "forms": {
+      "base": "check",
+      "s": "checks",
+      "past": "checked",
+      "ing": "checking"
     }
   },
   {
@@ -957,6 +1029,12 @@
           "zh": "那餐會由廚師準備(未來被動)"
         }
       ]
+    },
+    "forms": {
+      "base": "prepare",
+      "s": "prepares",
+      "past": "prepared",
+      "ing": "preparing"
     }
   },
   {
@@ -1071,6 +1149,12 @@
       ],
       "answer": "reading / to take",
       "note": "enjoy 後接動名詞 reading,want 後接不定詞 to take。"
+    },
+    "forms": {
+      "base": "decide",
+      "s": "decides",
+      "past": "decided",
+      "ing": "deciding"
     }
   },
   {
@@ -1185,6 +1269,12 @@
       ],
       "answer": "writing / to send",
       "note": "finish 後接動名詞 writing,decide 後接不定詞 to send。"
+    },
+    "forms": {
+      "base": "enjoy",
+      "s": "enjoys",
+      "past": "enjoyed",
+      "ing": "enjoying"
     }
   },
   {
@@ -1288,6 +1378,12 @@
           "zh": "投遞這封信之前先核對地址(介系詞後接 動詞ing)"
         }
       ]
+    },
+    "forms": {
+      "base": "send",
+      "s": "sends",
+      "past": "sent",
+      "ing": "sending"
     }
   },
   {
@@ -1891,19 +1987,22 @@
       }
     ],
     "contrast": {
-      "stem": "The train ___ before we arrived.",
+      "stem": "The train ___ ___.",
       "items": [
         {
           "form": "had left",
-          "zh": "我們到之前,火車就已經先開走了(過去完成:更早發生)"
+          "time": "before we arrived",
+          "zh": "我們到之前火車就已經先開走了(過去完成)"
         },
         {
           "form": "left",
-          "zh": "火車開走了(過去)"
+          "time": "ten minutes ago",
+          "zh": "火車十分鐘前開走了(過去)"
         },
         {
-          "form": "was leaving",
-          "zh": "火車正要開走(過去進行)"
+          "form": "leaves",
+          "time": "every day",
+          "zh": "火車每天都準時開(現在/習慣)"
         }
       ]
     },
@@ -1917,6 +2016,12 @@
       ],
       "answer": "had / left",
       "note": "比「我到達」更早發生,用過去完成式 had left,不用過去式。"
+    },
+    "forms": {
+      "base": "leave",
+      "s": "leaves",
+      "past": "left",
+      "ing": "leaving"
     }
   },
   {
