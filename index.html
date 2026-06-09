@@ -78,6 +78,21 @@
   .disc-row{display:flex;align-items:center;gap:9px;margin-top:5px;}
   .disc-w{font-family:'Fraunces',serif;font-size:21px;color:var(--ink);min-width:104px;}
   .disc-zh{color:var(--muted);font-size:14px;flex:1;}
+  /* 找訊號字 chips */
+  .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:8px;}
+  .chip{font-family:'Fraunces',serif;font-size:17px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;background:#fffaf0;cursor:pointer;color:var(--ink);}
+  .chip:disabled{cursor:default;opacity:.85;}
+  .chip.correct{background:#e7f3ec;border-color:var(--good);color:#1c6b3f;}
+  .chip.wrong{background:#f7e3df;border-color:var(--bad);color:#7a2417;}
+  /* 對比階梯 */
+  .clad{margin-top:16px;background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:14px;}
+  .clad-h{font-size:12px;color:var(--teal);margin-bottom:8px;}
+  .clad-stem{font-family:'Fraunces',serif;font-size:19px;line-height:1.6;text-align:center;}
+  .cslot{color:var(--accent);font-weight:700;border-bottom:2px solid var(--accent);padding:0 3px;}
+  .cbtns{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:12px;}
+  .cbtn{font-family:inherit;font-size:14px;padding:7px 13px;border:1px solid var(--accent-soft);border-radius:999px;background:#fffaf0;cursor:pointer;color:var(--ink);}
+  .cbtn.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .cnote{text-align:center;font-size:14px;color:var(--muted);margin-top:10px;min-height:1.3em;}
   /* home */
   .cats{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
   .catcard{border:1.5px solid var(--line);background:#fffaf0;border-radius:16px;padding:18px 14px;text-align:left;cursor:pointer;font-family:inherit;color:var(--ink);transition:.12s;}
@@ -168,12 +183,57 @@ function discrimHTML(answer,picked){
     +'<div class="disc-row"><span class="disc-w">'+diffHL(wp.en,wa.en)+'</span><span class="disc-zh">'+wp.zh+'(你選的)</span><span class="confspk" data-en="'+wp.en+'">🔊</span></div>'
     +'<div class="disc-row"><span class="disc-w">'+diffHL(wa.en,wp.en)+'</span><span class="disc-zh">'+wa.zh+'(正解)</span><span class="confspk" data-en="'+wa.en+'">🔊</span></div></div>';}
 
+// ===== 文法:找訊號字 / 對比階梯 (皆為選填欄位,沒有就略過)=====
+// 由 it.signal + it.ex 組出「點出關鍵字」題;訊號字可為片語,會自動合併成一個 chip
+function buildSignalQ(it){
+  if(!it.signal||!it.ex)return null;
+  const toks=it.ex.split(/\s+/);
+  const norm=s=>s.toLowerCase().replace(/[^a-z]/g,"");
+  const sig=norm(it.signal);if(!sig)return null;
+  for(let i=0;i<toks.length;i++){
+    let acc="",j=i;
+    while(j<toks.length){const add=norm(toks[j]);if(add===""||!sig.startsWith(acc+add))break;acc+=add;j++;if(acc===sig)break;}
+    if(acc===sig){
+      const chips=[];let ai=-1;
+      for(let k=0;k<toks.length;){if(k===i){chips.push(toks.slice(i,j).join(" "));ai=chips.length-1;k=j;}else{chips.push(toks[k]);k++;}}
+      return {kind:"signal",head:"",chips,answerIdx:ai,answer:toks.slice(i,j).join(" "),
+        ask:"先找關鍵字:點出這句裡決定要用哪種文法的字",
+        note:it.signalNote||("「"+it.signal+"」是判斷的關鍵字。")};
+    }
+  }
+  return null;
+}
+function contrastHTML(c){
+  if(!c||!Array.isArray(c.items)||!c.items.length)return "";
+  const btns=c.items.map((x,i)=>'<button class="cbtn" data-i="'+i+'">'+x.form+'</button>').join("");
+  return '<div class="clad"><div class="clad-h">比比看 — 換一個字,整句的意思就跟著變</div>'
+    +'<div class="clad-stem" id="cstem"></div><div class="cbtns">'+btns+'</div><div class="cnote" id="cnote"></div></div>';
+}
+// 文法分關:有 family 就依家族分組(每族一關),否則退回每 3 條一關
+let GRAM_LV=null;
+function gramLevels(){
+  if(GRAM_LV)return GRAM_LV;
+  if(GRAMMAR.some(g=>g&&g.family)){
+    const order=[],map={};
+    for(const g of GRAMMAR){const f=g.family||"其他";if(!map[f]){map[f]=[];order.push(f);}map[f].push(g);}
+    GRAM_LV=order.map(f=>map[f]);
+  }else{GRAM_LV=[];for(let i=0;i<GRAMMAR.length;i+=3)GRAM_LV.push(GRAMMAR.slice(i,i+3));}
+  return GRAM_LV;
+}
+// 題庫:有 qbank 就用題庫,否則退回單一 q;每題需有 options 陣列
+function gramBank(it){
+  const bank=(Array.isArray(it.qbank)&&it.qbank.length)?it.qbank:[{q:it.q,options:it.options,answer:it.answer,note:it.note}];
+  return bank.filter(x=>x&&Array.isArray(x.options)&&x.options.length&&x.answer);
+}
+function gramFormQ(qq){return {kind:"choice",head:qq.q,headSmall:true,ask:"選出正確答案",options:shuffle(qq.options.slice()),answer:qq.answer,note:qq.note};}
+
+
 function rechunk(){DAYS=[];const w=state.wordsPerDay;for(let i=0;i<ALL.length;i+=w)DAYS.push(ALL.slice(i,i+w));}
 
 // 每個大類有幾關
 function levelCount(cat){
   if(cat==="vocab")return DAYS.length;
-  if(cat==="grammar")return Math.ceil(GRAMMAR.length/3);
+  if(cat==="grammar")return gramLevels().length;
   if(cat==="reading")return READING.length;
   if(cat==="exam")return (ALL.length&&GRAMMAR.length)?EXAM_ROUNDS:0;
   return 0;
@@ -188,7 +248,7 @@ function vocabFmtLabel(i){const f=vocabFmt(i);return f==="zh"?"選中文":f==="e
 function fmtHint(cat,i){
   if(i>=levelCount(cat))return "這個大類已全部完成,可回去複習任何一關。";
   if(cat==="vocab"){const f=vocabFmt(i);return f==="zh"?"看英文,選出正確的中文意思。":f==="en"?(i>=3?"進階:從長得很像的英文裡選出正確的字。":"看中文,從幾個英文裡選出正確的字。"):f==="fillp"?"聽發音,把單字缺少的字母補上。":"聽發音,把整個單字拼出來。";}
-  if(cat==="grammar")return "先看句型卡,再選出填空的正確答案。";
+  if(cat==="grammar")return "看句型卡和對比例句,先找出關鍵字,再選出正確用法。";
   if(cat==="reading")return "先熟悉關鍵字,再讀短文用刪去法找答案。";
   if(cat==="exam")return "各種題型混合的小考,練習絕不留白、先刪再猜。";
   return "";
@@ -311,14 +371,24 @@ function renderLearn(){
     document.getElementById("back").onclick=()=>{if(learnIdx>0){learnIdx--;render();}else{phase="cat";render();}};
     document.getElementById("fwd").onclick=()=>{if(learnIdx<set.length-1){learnIdx++;render();}else buildQuiz();};
   } else if(curCat==="grammar"){
-    const items=GRAMMAR.slice(viewLevel*3,viewLevel*3+3),it=items[learnIdx];
+    const items=gramLevels()[viewLevel],it=items[learnIdx];
     card.innerHTML=`<div class="counter">句型 ${learnIdx+1} / ${items.length}</div>
       <div class="qhead small"><b>${it.pattern}</b></div>
       <div class="zh" style="font-size:17px">${it.zh}</div>
       <div class="ex"><div class="en" style="font-size:18px">${it.ex}</div><div class="ent">${it.exZh}</div></div>
       <div class="hint" style="margin-top:16px">💡 ${it.note}</div>
+      ${contrastHTML(it.contrast)}
       <div class="row"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===items.length-1?'開始測驗 →':'下一個 ›'}</button></div>`;
+    if(it.contrast&&it.contrast.items&&it.contrast.items.length){
+      const c=it.contrast,stem=document.getElementById("cstem"),note=document.getElementById("cnote");
+      const sel=(i)=>{const f=c.items[i];
+        stem.innerHTML=(c.stem||"").replace("___",'<span class="cslot">'+f.form+'</span>');
+        note.textContent=f.zh||"";
+        card.querySelectorAll(".cbtn").forEach(b=>b.classList.toggle("on",(+b.dataset.i)===i));};
+      card.querySelectorAll(".cbtn").forEach(b=>b.onclick=()=>sel(+b.dataset.i));
+      sel(0);
+    }
     document.getElementById("back").onclick=()=>{if(learnIdx>0){learnIdx--;render();}else{phase="cat";render();}};
     document.getElementById("fwd").onclick=()=>{if(learnIdx<items.length-1){learnIdx++;render();}else buildQuiz();};
   } else if(curCat==="reading"){
@@ -371,15 +441,24 @@ function buildQuiz(){
       else{quizQ.push({kind:"fill",head:w.zh,headSmall:true,ask:(f==="fillf"?"聽發音,把整個單字拼出來":"聽發音,補上缺少的字母"),speak:w.en,syl:w.syl,answer:w.en,full:(f==="fillf")});}
     }
   } else if(curCat==="grammar"){
-    const items=GRAMMAR.slice(viewLevel*3,viewLevel*3+3);
-    for(const it of shuffle(items))quizQ.push({kind:"choice",head:it.q,headSmall:true,ask:"選出正確答案",options:shuffle(it.options.slice()),answer:it.answer,note:it.note});
+    const lvl=gramLevels()[viewLevel];
+    const per=lvl.length<=4?2:1; // 小家族每句型抽2題,大家族抽1題,控制每關長度
+    for(const it of shuffle(lvl.slice())){
+      const draw=shuffle(gramBank(it)).slice(0,per);
+      const sq=buildSignalQ(it);if(sq)quizQ.push(sq); // 有標 signal 才出現「找關鍵字」步驟(每句型一次)
+      for(const qq of draw)quizQ.push(gramFormQ(qq)); // 從題庫抽1~2題
+    }
+    for(const it of lvl){ // 有 confuse 才出現辨析題,放在最後當進階
+      if(it.confuse&&Array.isArray(it.confuse.options))
+        quizQ.push({kind:"choice",head:it.confuse.q,headSmall:true,ask:"辨析:哪一個用法才對?",options:shuffle(it.confuse.options.slice()),answer:it.confuse.answer,note:it.confuse.note});
+    }
   } else if(curCat==="reading"){
     const item=READING[viewLevel];
     if(item.type==="reading"){quizCtx=item.passage;for(const q of item.questions)quizQ.push({kind:"choice",head:q.q,headSmall:true,ask:"根據短文選出答案",options:shuffle(q.options.slice()),answer:q.answer});}
     else{quizQ.push({kind:"choice",head:item.text,headSmall:true,ask:"選出最適合填入的字",options:shuffle(item.options.slice()),answer:item.answer,note:item.note});}
   } else if(curCat==="exam"){
     const vs=shuffle(ALL).slice(0,4);for(const w of vs){const opts=shuffle([w.en,...pickDistract(w,3,"hard").map(x=>x.en)]);quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"選出正確的英文",options:opts,answer:w.en});}
-    for(const it of shuffle(GRAMMAR).slice(0,3))quizQ.push({kind:"choice",head:it.q,headSmall:true,ask:"選出正確答案",options:shuffle(it.options.slice()),answer:it.answer,note:it.note});
+    for(const it of shuffle(GRAMMAR).slice(0,3)){const qq=shuffle(gramBank(it))[0];if(qq)quizQ.push(gramFormQ(qq));}
     const cl=READING.filter(r=>r.type==="cloze");if(cl.length){const c=shuffle(cl)[0];quizQ.push({kind:"choice",head:c.text,headSmall:true,ask:"選出最適合填入的字",options:shuffle(c.options.slice()),answer:c.answer,note:c.note});}
     quizQ=shuffle(quizQ);
   }
@@ -394,6 +473,7 @@ function renderQuiz(){
   if(q.speak)html+=`<div class="qspeak">${speakerHTML()}</div>`;
   html+=`<div class="qask">${q.ask}</div>`;
   if(q.kind==="choice"){html+='<div id="opts"></div>';}
+  else if(q.kind==="signal"){html+='<div id="chips" class="chips"></div>';}
   else if(q.kind==="fill"){html+=`${q.full?"":'<div class="syl" style="text-align:center">'+(q.syl||"")+'</div>'}
     <div class="fillrow"><span class="fillmask">${maskWord(q.answer,q.full)}</span></div>
     <input class="fillin" id="fin" placeholder="${q.full?'聽發音,把整個字拼出來':'把缺少的字母補上'}" autocomplete="off" autocapitalize="off">
@@ -406,7 +486,7 @@ function renderQuiz(){
   function after(ok,picked){answered=true;quizScore+=ok?1:0;
     fb.className="feedback show "+(ok?"ok":"no");
     let body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
-    if(!ok)body+=discrimHTML(q.answer,picked); // 形近字才會出現,否則為空字串
+    if(!ok && (curCat==="vocab"||curCat==="exam"))body+=discrimHTML(q.answer,picked); // 形近字辨別卡只在單字/模擬考出現
     fb.innerHTML=body;
     fb.querySelectorAll(".confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
     if(ok){setTimeout(go,q.note?1300:850);} // 答對:保留節奏,自動進下一題
@@ -422,6 +502,12 @@ function renderQuiz(){
       b.onclick=()=>{if(answered)return;document.querySelectorAll(".opt").forEach(x=>x.disabled=true);
         if(o===q.answer)b.classList.add("correct");else{b.classList.add("wrong");document.querySelectorAll(".opt").forEach(x=>{if(x.textContent===q.answer)x.classList.add("correct");});}
         after(o===q.answer,o);};box.appendChild(b);});
+  } else if(q.kind==="signal"){
+    const box=document.getElementById("chips"),chipEls=[];
+    q.chips.forEach((t,i)=>{const b=document.createElement("button");b.className="chip";b.textContent=t;chipEls.push(b);
+      b.onclick=()=>{if(answered)return;chipEls.forEach(x=>x.disabled=true);
+        if(i===q.answerIdx)b.classList.add("correct");else{b.classList.add("wrong");chipEls[q.answerIdx].classList.add("correct");}
+        after(i===q.answerIdx,t);};box.appendChild(b);});
   } else if(q.kind==="fill"){
     const inp=document.getElementById("fin");
     document.getElementById("sub").onclick=()=>{if(answered)return;const v=inp.value.trim();after(v.toLowerCase()===q.answer.toLowerCase(),v);};
