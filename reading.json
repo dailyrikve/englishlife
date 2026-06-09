@@ -1,17 +1,84 @@
 [
   {"type":"reading",
-   "keywords":[{"en":"deliver","zh":"遞送"},{"en":"on time","zh":"準時"},{"en":"customer","zh":"顧客"},{"en":"route","zh":"路線"}],
-   "passage":"The post office works hard to deliver packages on time. When a package is late, customers are not happy. To avoid this, workers check each route carefully every morning before they start.",
+   "keywords":[{"en":"deliver","zh":"遞送"},{"en":"package","zh":"包裹"},{"en":"on time","zh":"準時"},{"en":"customer","zh":"顧客"}],
+   "passage":"The post office is busy every day. In the morning, workers sort the mail. Then they deliver letters and packages to each house. They always try to be on time. When the mail comes on time, customers are happy.",
    "questions":[
-     {"q":"What does the post office try to do?","options":["Sell packages","Deliver packages on time","Make customers wait","Close early"],"answer":"Deliver packages on time"},
-     {"q":"Why do workers check the route every morning?","options":["To rest","To avoid late delivery","To buy stamps","To go home"],"answer":"To avoid late delivery"}
+     {"q":"What do the workers do in the morning?","options":["Sort the mail","Sell drinks","Clean the road","Close the shop"],"answer":"Sort the mail"},
+     {"q":"Why are the customers happy?","options":["The mail is late","The mail comes on time","The shop is closed","The truck is broken"],"answer":"The mail comes on time"}
+   ]},
+  {"type":"reading",
+   "keywords":[{"en":"counter","zh":"櫃台"},{"en":"weight","zh":"重量"},{"en":"fee","zh":"費用"},{"en":"receipt","zh":"收據"}],
+   "passage":"Mr. Lin wants to send a box to his friend. He takes the box to the counter. The clerk checks the weight of the box. Then she tells him the fee. Mr. Lin pays the money and gets a receipt.",
+   "questions":[
+     {"q":"Where does Mr. Lin take the box?","options":["To the counter","To the airport","To the school","To the park"],"answer":"To the counter"},
+     {"q":"What does Mr. Lin get after he pays?","options":["A receipt","A package","A ticket","A gift"],"answer":"A receipt"}
+   ]},
+  {"type":"reading",
+   "keywords":[{"en":"recycle","zh":"回收"},{"en":"reduce","zh":"減少"},{"en":"waste","zh":"廢棄物"},{"en":"environment","zh":"環境"}],
+   "passage":"We make a lot of waste every day. Paper, bottles, and cans fill our trash. But we can recycle many of them. Recycling helps reduce waste. It is also good for the environment.",
+   "questions":[
+     {"q":"What can we do with paper and bottles?","options":["Throw them away","Recycle them","Eat them","Hide them"],"answer":"Recycle them"},
+     {"q":"Recycling is good for what?","options":["The environment","The traffic","The storm","The fee"],"answer":"The environment"}
+   ]},
+  {"type":"reading",
+   "keywords":[{"en":"commute","zh":"通勤"},{"en":"traffic","zh":"車流"},{"en":"MRT","zh":"捷運"},{"en":"early","zh":"早"}],
+   "passage":"Amy works in the city. Every morning she commutes to work. The traffic on the road is very heavy. So Amy takes the MRT instead. She leaves home early to arrive on time.",
+   "questions":[
+     {"q":"How does Amy go to work?","options":["By MRT","By plane","On foot","By boat"],"answer":"By MRT"},
+     {"q":"Why does Amy leave home early?","options":["To arrive on time","To buy a car","To sleep more","To avoid school"],"answer":"To arrive on time"}
+   ]},
+  {"type":"reading",
+   "keywords":[{"en":"interview","zh":"面試"},{"en":"position","zh":"職位"},{"en":"experience","zh":"經驗"},{"en":"careful","zh":"細心的"}],
+   "passage":"Ken wants a new job at the post office. Today he has an interview. The manager asks about his experience. Ken says he is careful and works hard. The manager likes him and offers him the position.",
+   "questions":[
+     {"q":"Why does Ken go to the post office today?","options":["To have an interview","To send a package","To buy stamps","To clean the office"],"answer":"To have an interview"},
+     {"q":"What does the manager do in the end?","options":["Offers him the position","Sends him home","Closes the shop","Loses his job"],"answer":"Offers him the position"}
+   ]},
+  {"type":"reading",
+   "keywords":[{"en":"storm","zh":"暴風雨"},{"en":"delay","zh":"延誤"},{"en":"safe","zh":"安全的"},{"en":"careful","zh":"小心的"}],
+   "passage":"A big storm is coming this weekend. The wind is strong and the rain is heavy. Many flights will be delayed. The police tell people to stay home and be safe. Drivers must be careful on the wet road.",
+   "questions":[
+     {"q":"What will happen to many flights?","options":["They will be delayed","They will be early","They will be free","They will be cheap"],"answer":"They will be delayed"},
+     {"q":"What do the police tell people to do?","options":["Stay home and be safe","Drive fast","Go to the beach","Open the windows"],"answer":"Stay home and be safe"}
    ]},
   {"type":"cloze",
-   "text":"Recycling paper and bottles helps ___ waste and protect the environment.",
-   "options":["reduce","deliver","resign","commute"],"answer":"reduce",
-   "note":"句意:回收能「減少」廢棄物,選 reduce。"},
+   "text":"The mailman will ___ the package to your house tomorrow.",
+   "options":["deliver","clean","build","teach"],"answer":"deliver",
+   "note":"把包裹送到你家 → deliver(遞送)。"},
+  {"type":"cloze",
+   "text":"Please ___ the address before you send the letter.",
+   "options":["check","eat","drive","sleep"],"answer":"check",
+   "note":"寄信前先核對地址 → check(檢查)。"},
+  {"type":"cloze",
+   "text":"Recycling can ___ waste and protect the environment.",
+   "options":["reduce","increase","forget","buy"],"answer":"reduce",
+   "note":"回收能「減少」廢棄物 → reduce。"},
   {"type":"cloze",
    "text":"Hurry up, ___ we will miss the train.",
-   "options":["otherwise","however","because","although"],"answer":"otherwise",
-   "note":"前後是「快點,否則…」的關係,選 otherwise。"}
+   "options":["otherwise","because","although","and"],"answer":"otherwise",
+   "note":"前後是「快點,否則…」的關係 → otherwise(否則)。"},
+  {"type":"cloze",
+   "text":"The hotel is very ___, so it has no rooms left this weekend.",
+   "options":["popular","empty","quiet","cheap"],"answer":"popular",
+   "note":"很受歡迎所以客滿 → popular(受歡迎的)。"},
+  {"type":"cloze",
+   "text":"Mr. Wang takes the MRT to ___ the heavy traffic.",
+   "options":["avoid","enjoy","start","open"],"answer":"avoid",
+   "note":"搭捷運是為了避開車潮 → avoid(避免)。"},
+  {"type":"cloze",
+   "text":"Please keep your ___ as proof of payment.",
+   "options":["receipt","weather","fear","career"],"answer":"receipt",
+   "note":"收據可作為付款證明 → receipt。"},
+  {"type":"cloze",
+   "text":"She felt very ___ before the job interview.",
+   "options":["nervous","famous","global","free"],"answer":"nervous",
+   "note":"面試前感到緊張 → nervous(緊張的)。"},
+  {"type":"cloze",
+   "text":"This restaurant is ___; the food is cheap and good.",
+   "options":["affordable","dangerous","impossible","heavy"],"answer":"affordable",
+   "note":"便宜又好吃,價格實惠 → affordable(負擔得起的)。"},
+  {"type":"cloze",
+   "text":"I will ___ to your email this afternoon.",
+   "options":["respond","refuse","resign","return"],"answer":"respond",
+   "note":"回覆你的 email → respond(回應、回覆)。"}
 ]
