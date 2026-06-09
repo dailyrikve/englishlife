@@ -336,9 +336,9 @@ function renderQuiz(){
   if(q.speak)html+=`<div class="qspeak">${speakerHTML()}</div>`;
   html+=`<div class="qask">${q.ask}</div>`;
   if(q.kind==="choice"){html+='<div id="opts"></div>';}
-  else if(q.kind==="fill"){html+=`<div class="syl" style="text-align:center">${q.syl||""}</div>
+  else if(q.kind==="fill"){html+=`${q.full?"":'<div class="syl" style="text-align:center">'+(q.syl||"")+'</div>'}
     <div class="fillrow"><span class="fillmask">${maskWord(q.answer,q.full)}</span></div>
-    <input class="fillin" id="fin" placeholder="把完整的字拼出來" autocomplete="off" autocapitalize="off">
+    <input class="fillin" id="fin" placeholder="${q.full?'聽發音,把整個字拼出來':'把缺少的字母補上'}" autocomplete="off" autocapitalize="off">
     <div class="row"><button class="btn btn-main" id="sub">送出</button></div>`;}
   html+=`<div class="feedback" id="fb"></div>`;
   card.innerHTML=html;
