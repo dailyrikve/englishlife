@@ -46,6 +46,7 @@
   .ex .ent{font-size:15px;color:var(--muted);margin-top:6px;cursor:pointer;}
   .zhmask{filter:blur(6px);} .zhmask:hover{filter:blur(5px);}
   .syn{margin-top:14px;} .synitem{font-size:15px;margin-top:4px;} .synitem b{font-family:'Fraunces',serif;color:var(--teal);}
+  .synspk{cursor:pointer;font-size:14px;margin-left:4px;}
   .row{display:flex;gap:10px;margin-top:auto;padding-top:22px;}
   .btn{flex:1;border:none;border-radius:12px;padding:13px;font-size:15px;font-weight:500;font-family:inherit;cursor:pointer;transition:transform .08s;}
   .btn:active{transform:scale(.97);} .btn-ghost{background:var(--paper2);color:var(--ink);border:1px solid var(--line);} .btn-main{background:var(--accent);color:#fff;}
@@ -247,7 +248,7 @@ function renderLearn(){
         <span class="ex-toggle" id="extog">點上面看中文翻譯</span>
       </div>
       ${(w.syn&&w.syn.length)?`<div class="syn"><span class="ex-toggle" id="syntog">&#9656; 看同義字</span>
-        <div class="ex-body" id="synbody">${w.syn.slice(0,2).map(s=>'<div class="synitem"><b>'+s.en+'</b> '+s.zh+'</div>').join("")}</div></div>`:''}
+        <div class="ex-body" id="synbody">${w.syn.slice(0,2).map((s,si)=>'<div class="synitem"><b>'+s.en+'</b> '+s.zh+' <span class="synspk" data-en="'+s.en+'">🔊</span></div>').join("")}</div></div>`:''}
       <div class="row"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===set.length-1?'開始測驗 →':'下一個 ›'}</button></div>`;
     document.getElementById("spk").onclick=()=>speak(w.en);speak(w.en);
@@ -256,7 +257,8 @@ function renderLearn(){
     em.onclick=revealZh;et.onclick=revealZh;
     const st=document.getElementById("syntog");
     if(st){const sb=document.getElementById("synbody");
-      st.onclick=()=>{sb.classList.toggle("show");st.innerHTML=sb.classList.contains("show")?"&#9662; 收起同義字":"&#9656; 看同義字";};}
+      st.onclick=()=>{sb.classList.toggle("show");st.innerHTML=sb.classList.contains("show")?"&#9662; 收起同義字":"&#9656; 看同義字";};
+      sb.querySelectorAll(".synspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});}
     document.getElementById("back").onclick=()=>{if(learnIdx>0){learnIdx--;render();}else{phase="cat";render();}};
     document.getElementById("fwd").onclick=()=>{if(learnIdx<set.length-1){learnIdx++;render();}else buildQuiz();};
   } else if(curCat==="grammar"){
