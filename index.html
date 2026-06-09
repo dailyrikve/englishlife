@@ -65,6 +65,19 @@
   .feedback.show{display:block;} .feedback.ok{background:#e7f3ea;color:var(--good);} .feedback.no{background:#f7e3df;color:var(--bad);}
   .note{font-size:11px;color:var(--muted);text-align:center;margin-top:28px;letter-spacing:.05em;}
   .errbox{background:#f7e3df;border:1px solid var(--bad);border-radius:14px;padding:20px;color:#7a2417;line-height:1.6;font-size:14px;}
+  /* 形近字對比 */
+  .conf{margin-top:14px;background:#fbf2ec;border:1px solid var(--accent-soft);border-radius:12px;padding:12px 14px;}
+  .conf-h{font-size:12px;color:var(--accent);font-weight:500;margin-bottom:6px;}
+  .conf-row{display:flex;align-items:center;gap:10px;margin-top:6px;}
+  .conf-w{font-family:'Fraunces',serif;font-size:21px;min-width:104px;color:var(--ink);}
+  .conf-zh{font-size:14px;color:var(--muted);flex:1;}
+  .dchar{color:var(--accent);font-weight:700;border-bottom:2px solid var(--accent);}
+  .confspk{cursor:pointer;font-size:15px;flex-shrink:0;}
+  .disc{margin-top:12px;padding-top:10px;border-top:1px dashed var(--bad);}
+  .disc-h{font-size:12px;margin-bottom:6px;color:var(--bad);}
+  .disc-row{display:flex;align-items:center;gap:9px;margin-top:5px;}
+  .disc-w{font-family:'Fraunces',serif;font-size:21px;color:var(--ink);min-width:104px;}
+  .disc-zh{color:var(--muted);font-size:14px;flex:1;}
   /* home */
   .cats{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
   .catcard{border:1.5px solid var(--line);background:#fffaf0;border-radius:16px;padding:18px 14px;text-align:left;cursor:pointer;font-family:inherit;color:var(--ink);transition:.12s;}
@@ -126,6 +139,35 @@ function speak(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUttera
 function shuffle(a){return a.slice().sort(()=>Math.random()-0.5);}
 function normalize(d){return (Array.isArray(d)&&d.length&&Array.isArray(d[0]))?d.flat():d;}
 
+// ===== 形近字偵測(編輯距離)=====
+function editDist(a,b){const m=a.length,n=b.length;const dp=Array.from({length:m+1},()=>new Array(n+1).fill(0));
+  for(let i=0;i<=m;i++)dp[i][0]=i;for(let j=0;j<=n;j++)dp[0][j]=j;
+  for(let i=1;i<=m;i++)for(let j=1;j<=n;j++)dp[i][j]=Math.min(dp[i-1][j]+1,dp[i][j-1]+1,dp[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
+  return dp[m][n];}
+let CONF_CACHE=null;
+function buildConfCache(){CONF_CACHE={};
+  for(const w of ALL){const en=w.en.toLowerCase();const near=[];
+    if(!/^[a-z]+$/.test(en)){CONF_CACHE[w.en]=near;continue;} // 跳過片語
+    for(const o of ALL){if(o.en===w.en)continue;const oe=o.en.toLowerCase();
+      if(/^[a-z]+$/.test(oe)&&Math.abs(oe.length-en.length)<=1&&editDist(en,oe)<=1)near.push(o);}
+    CONF_CACHE[w.en]=near;}}
+function confusables(en){if(!CONF_CACHE)buildConfCache();return CONF_CACHE[en]||[];}
+// 把 a 相對於 b 的「不同字母」標紅,共同部分維持原色 → 讓考生看清差在哪
+function diffParts(a,b){let p=0;while(p<a.length&&p<b.length&&a[p]===b[p])p++;
+  let s=0;while(s<a.length-p&&s<b.length-p&&a[a.length-1-s]===b[b.length-1-s])s++;
+  return [a.slice(0,p),a.slice(p,a.length-s),a.slice(a.length-s)];}
+function diffHL(a,b){const[p,c,s]=diffParts(a.toLowerCase(),b.toLowerCase());
+  return p+(c?'<u class="dchar">'+c+'</u>':'')+s;}
+// 答錯時:若選項與正解是形近的單字,組一張並排辨別小卡
+function discrimHTML(answer,picked){
+  if(!picked||picked===answer)return "";
+  const wa=ALL.find(x=>x.en===answer),wp=ALL.find(x=>x.en===picked);
+  if(!wa||!wp)return ""; // 只有兩個都是單字(非文法/閱讀選項)才比對
+  if(editDist(answer.toLowerCase(),picked.toLowerCase())>1)return "";
+  return '<div class="disc"><div class="disc-h">這兩個字長很像,看清楚差別:</div>'
+    +'<div class="disc-row"><span class="disc-w">'+diffHL(wp.en,wa.en)+'</span><span class="disc-zh">'+wp.zh+'(你選的)</span><span class="confspk" data-en="'+wp.en+'">🔊</span></div>'
+    +'<div class="disc-row"><span class="disc-w">'+diffHL(wa.en,wp.en)+'</span><span class="disc-zh">'+wa.zh+'(正解)</span><span class="confspk" data-en="'+wa.en+'">🔊</span></div></div>';}
+
 function rechunk(){DAYS=[];const w=state.wordsPerDay;for(let i=0;i<ALL.length;i+=w)DAYS.push(ALL.slice(i,i+w));}
 
 // 每個大類有幾關
@@ -145,7 +187,7 @@ function vocabFmt(i){return i<2?"zh":i<4?"en":i<6?"fillp":"fillf";}
 function vocabFmtLabel(i){const f=vocabFmt(i);return f==="zh"?"選中文":f==="en"?"選英文":f==="fillp"?"補字母":"拼全字";}
 function fmtHint(cat,i){
   if(i>=levelCount(cat))return "這個大類已全部完成,可回去複習任何一關。";
-  if(cat==="vocab"){const f=vocabFmt(i);return f==="zh"?"看英文,選出正確的中文意思。":f==="en"?"看中文,從相似的英文裡選出正確的字。":f==="fillp"?"聽發音,把單字缺少的字母補上。":"聽發音,把整個單字拼出來。";}
+  if(cat==="vocab"){const f=vocabFmt(i);return f==="zh"?"看英文,選出正確的中文意思。":f==="en"?(i>=3?"進階:從長得很像的英文裡選出正確的字。":"看中文,從幾個英文裡選出正確的字。"):f==="fillp"?"聽發音,把單字缺少的字母補上。":"聽發音,把整個單字拼出來。";}
   if(cat==="grammar")return "先看句型卡,再選出填空的正確答案。";
   if(cat==="reading")return "先熟悉關鍵字,再讀短文用刪去法找答案。";
   if(cat==="exam")return "各種題型混合的小考,練習絕不留白、先刪再猜。";
@@ -238,6 +280,11 @@ function renderLearn(){
   const card=document.getElementById("card");
   if(curCat==="vocab"){
     const set=DAYS[viewLevel],w=set[learnIdx];
+    const near=confusables(w.en).slice(0,3);
+    const confHTML=near.length?`<div class="conf"><div class="conf-h">⚠️ 容易混淆 — 紅色就是不一樣的地方</div>
+      <div class="conf-row"><span class="conf-w">${diffHL(w.en,near[0].en)}</span><span class="conf-zh">${w.zh}(這個字)</span></div>
+      ${near.map(s=>'<div class="conf-row"><span class="conf-w">'+diffHL(s.en,w.en)+'</span><span class="conf-zh">'+s.zh+'</span><span class="confspk" data-en="'+s.en+'">🔊</span></div>').join("")}
+      </div>`:"";
     card.innerHTML=`<div class="counter">單字 ${learnIdx+1} / ${set.length}</div>
       <div class="wordrow"><div class="word">${w.en}</div>${speakerHTML()}</div>
       <div class="syl">${w.syl||""}</div><div class="pos">${w.pos}</div><div class="zh">${w.zh}</div>
@@ -249,9 +296,11 @@ function renderLearn(){
       </div>
       ${(w.syn&&w.syn.length)?`<div class="syn"><span class="ex-toggle" id="syntog">&#9656; 看同義字</span>
         <div class="ex-body" id="synbody">${w.syn.slice(0,2).map((s,si)=>'<div class="synitem"><b>'+s.en+'</b> '+s.zh+' <span class="synspk" data-en="'+s.en+'">🔊</span></div>').join("")}</div></div>`:''}
+      ${confHTML}
       <div class="row"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===set.length-1?'開始測驗 →':'下一個 ›'}</button></div>`;
     document.getElementById("spk").onclick=()=>speak(w.en);speak(w.en);
+    card.querySelectorAll(".conf .confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
     const em=document.getElementById("entmask"),et=document.getElementById("extog");
     function revealZh(){em.classList.remove("zhmask");et.style.display="none";}
     em.onclick=revealZh;et.onclick=revealZh;
@@ -286,11 +335,18 @@ function renderLearn(){
   }
 }
 
-function pickDistract(word,n,similar){
-  let others=ALL.filter(x=>x.en!==word.en);
-  if(similar)others.sort((a,b)=>((b.en[0]===word.en[0])-(a.en[0]===word.en[0]))||(Math.abs(a.en.length-word.en.length)-Math.abs(b.en.length-word.en.length)));
-  const pool=similar?others.slice(0,Math.min(6,others.length)):others;
-  return shuffle(pool).slice(0,n);
+function pickDistract(word,n,mode){
+  const others=ALL.filter(x=>x.en!==word.en);
+  const conf=new Set(confusables(word.en).map(x=>x.en));
+  if(mode==="hard"){ // 優先用形近字當干擾(已先教過辨別)
+    const near=shuffle(others.filter(x=>conf.has(x.en)));
+    const rest=shuffle(others.filter(x=>!conf.has(x.en)))
+      .sort((a,b)=>((b.en[0]===word.en[0])-(a.en[0]===word.en[0])));
+    return [...near,...rest].slice(0,n);
+  }
+  // easy / 預設:刻意排除形近字,挑長相明顯不同的字 → 先讓考生答對、建立信心
+  const pool=shuffle(others.filter(x=>!conf.has(x.en)));
+  return (pool.length>=n?pool:shuffle(others)).slice(0,n);
 }
 function maskWord(en,full){
   const ch=en.split("");
@@ -308,9 +364,9 @@ function buildQuiz(){
   if(curCat==="vocab"){
     const set=DAYS[viewLevel],f=vocabFmt(viewLevel);
     for(const w of shuffle(set)){
-      if(f==="zh"){const opts=shuffle([w.zh,...pickDistract(w,3,false).map(x=>x.zh)]);
+      if(f==="zh"){const opts=shuffle([w.zh,...pickDistract(w,3,"easy").map(x=>x.zh)]);
         quizQ.push({kind:"choice",head:w.en,speak:w.en,ask:"這個字的意思是?(可點🔊)",options:opts,answer:w.zh});}
-      else if(f==="en"){const opts=shuffle([w.en,...pickDistract(w,3,true).map(x=>x.en)]);
+      else if(f==="en"){const opts=shuffle([w.en,...pickDistract(w,3,viewLevel>=3?"hard":"easy").map(x=>x.en)]);
         quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"哪一個是正確的英文?",options:opts,answer:w.en});}
       else{quizQ.push({kind:"fill",head:w.zh,headSmall:true,ask:(f==="fillf"?"聽發音,把整個單字拼出來":"聽發音,補上缺少的字母"),speak:w.en,syl:w.syl,answer:w.en,full:(f==="fillf")});}
     }
@@ -322,7 +378,7 @@ function buildQuiz(){
     if(item.type==="reading"){quizCtx=item.passage;for(const q of item.questions)quizQ.push({kind:"choice",head:q.q,headSmall:true,ask:"根據短文選出答案",options:shuffle(q.options.slice()),answer:q.answer});}
     else{quizQ.push({kind:"choice",head:item.text,headSmall:true,ask:"選出最適合填入的字",options:shuffle(item.options.slice()),answer:item.answer,note:item.note});}
   } else if(curCat==="exam"){
-    const vs=shuffle(ALL).slice(0,4);for(const w of vs){const opts=shuffle([w.en,...pickDistract(w,3,true).map(x=>x.en)]);quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"選出正確的英文",options:opts,answer:w.en});}
+    const vs=shuffle(ALL).slice(0,4);for(const w of vs){const opts=shuffle([w.en,...pickDistract(w,3,"hard").map(x=>x.en)]);quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"選出正確的英文",options:opts,answer:w.en});}
     for(const it of shuffle(GRAMMAR).slice(0,3))quizQ.push({kind:"choice",head:it.q,headSmall:true,ask:"選出正確答案",options:shuffle(it.options.slice()),answer:it.answer,note:it.note});
     const cl=READING.filter(r=>r.type==="cloze");if(cl.length){const c=shuffle(cl)[0];quizQ.push({kind:"choice",head:c.text,headSmall:true,ask:"選出最適合填入的字",options:shuffle(c.options.slice()),answer:c.answer,note:c.note});}
     quizQ=shuffle(quizQ);
@@ -346,19 +402,29 @@ function renderQuiz(){
   card.innerHTML=html;
   if(q.speak){document.getElementById("spk").onclick=()=>speak(q.speak);speak(q.speak);}
   const fb=document.getElementById("fb");
-  function after(ok){answered=true;quizScore+=ok?1:0;
+  function go(){if(quizIdx<quizQ.length-1){quizIdx++;render();}else finishLevel();}
+  function after(ok,picked){answered=true;quizScore+=ok?1:0;
     fb.className="feedback show "+(ok?"ok":"no");
-    fb.innerHTML=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
-    setTimeout(()=>{if(quizIdx<quizQ.length-1){quizIdx++;render();}else finishLevel();}, q.note?1800:1000);}
+    let body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
+    if(!ok)body+=discrimHTML(q.answer,picked); // 形近字才會出現,否則為空字串
+    fb.innerHTML=body;
+    fb.querySelectorAll(".confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
+    if(ok){setTimeout(go,q.note?1300:850);} // 答對:保留節奏,自動進下一題
+    else{ // 答錯:畫面停住,由考生看懂後自己按
+      const wrap=document.createElement("div");wrap.className="row";
+      wrap.innerHTML='<button class="btn btn-main" id="nextq">我看懂了,下一題 ›</button>';
+      card.appendChild(wrap);
+      document.getElementById("nextq").onclick=go;
+    }}
   if(q.kind==="choice"){
     const box=document.getElementById("opts");
     q.options.forEach(o=>{const b=document.createElement("button");b.className="opt";b.textContent=o;
       b.onclick=()=>{if(answered)return;document.querySelectorAll(".opt").forEach(x=>x.disabled=true);
         if(o===q.answer)b.classList.add("correct");else{b.classList.add("wrong");document.querySelectorAll(".opt").forEach(x=>{if(x.textContent===q.answer)x.classList.add("correct");});}
-        after(o===q.answer);};box.appendChild(b);});
+        after(o===q.answer,o);};box.appendChild(b);});
   } else if(q.kind==="fill"){
     const inp=document.getElementById("fin");
-    document.getElementById("sub").onclick=()=>{if(answered)return;after(inp.value.trim().toLowerCase()===q.answer.toLowerCase());};
+    document.getElementById("sub").onclick=()=>{if(answered)return;const v=inp.value.trim();after(v.toLowerCase()===q.answer.toLowerCase(),v);};
     inp.addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("sub").click();});
     inp.focus();
   }
