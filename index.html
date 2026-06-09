@@ -100,6 +100,7 @@
   .vf{display:flex;flex-direction:column;align-items:center;min-width:74px;padding:7px 9px;background:#fffaf0;border:1px solid var(--line);border-radius:9px;}
   .vf b{font-family:'Fraunces',serif;font-size:17px;color:var(--ink);}
   .vf small{font-size:11px;color:var(--muted);margin-top:3px;}
+  .vf-note{font-size:12.5px;color:var(--teal);text-align:center;margin-top:10px;line-height:1.5;}
   /* home */
   .cats{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
   .catcard{border:1.5px solid var(--line);background:#fffaf0;border-radius:16px;padding:18px 14px;text-align:left;cursor:pointer;font-family:inherit;color:var(--ink);transition:.12s;}
@@ -212,7 +213,8 @@ function buildSignalQ(it){
 }
 function contrastHTML(c){
   if(!c||!Array.isArray(c.items)||!c.items.length)return "";
-  const btns=c.items.map((x,i)=>'<button class="cbtn" data-i="'+i+'">'+x.form+'</button>').join("");
+  const lab=x=>x.label||x.form||(Array.isArray(x.fills)?x.fills.find(v=>v):"")||"";
+  const btns=c.items.map((x,i)=>'<button class="cbtn" data-i="'+i+'">'+lab(x)+'</button>').join("");
   return '<div class="clad"><div class="clad-h">比比看 — 拿上面那句,換掉一個字,看中文怎麼變</div>'
     +'<div class="clad-stem" id="cstem"></div><div class="cbtns">'+btns+'</div><div class="cnote" id="cnote"></div></div>';
 }
@@ -221,8 +223,9 @@ function vformsHTML(f){
   if(!f)return "";
   const rows=[["base","原形"],["s","他/她+s"],["past","過去"],["ing","-ing(進行)"]].filter(([k])=>f[k]);
   if(rows.length<2)return "";
+  const sNote=f.s?'<div class="vf-note">主詞是「單數的他/她/它」時,動詞才加 s'+(f.subjNote?(';'+f.subjNote):'')+'</div>':'';
   return '<div class="vforms"><div class="vf-h">這個動詞的幾種樣子</div><div class="vf-row">'
-    +rows.map(([k,lab])=>'<span class="vf"><b>'+f[k]+'</b><small>'+lab+'</small></span>').join("")+'</div></div>';
+    +rows.map(([k,lab])=>'<span class="vf"><b>'+f[k]+'</b><small>'+lab+'</small></span>').join("")+'</div>'+sNote+'</div>';
 }
 // 文法分關:有 family 就依家族分組(每族一關),否則退回每 3 條一關
 let GRAM_LV=null;
@@ -390,7 +393,7 @@ function renderLearn(){
     card.innerHTML=`<div class="counter">句型 ${learnIdx+1} / ${items.length}</div>
       <div class="qhead small"><b>${it.pattern}</b></div>
       <div class="zh" style="font-size:17px">${it.zh}</div>
-      <div class="ex"><div class="en" style="font-size:18px">${it.ex}</div><div class="ent">${it.exZh}</div></div>
+      <div class="ex"><div class="en" style="font-size:18px">${hlSignal(it.ex,it.signal)}</div><div class="ent">${it.exZh}</div></div>
       <div class="hint" style="margin-top:16px">💡 ${it.signalNote||it.note}</div>
       ${vformsHTML(it.forms)}
       ${contrastHTML(it.contrast)}
@@ -399,9 +402,9 @@ function renderLearn(){
     if(it.contrast&&it.contrast.items&&it.contrast.items.length){
       const c=it.contrast,stem=document.getElementById("cstem"),note=document.getElementById("cnote");
       const sel=(i)=>{const f=c.items[i];
-        const parts=(c.stem||"").split("___"),fills=[f.form,f.time];let h=parts[0];
-        for(let b=0;b<parts.length-1;b++){h+='<span class="cslot">'+(fills[b]!=null?fills[b]:"")+'</span>'+parts[b+1];}
-        stem.innerHTML=h; note.textContent=f.zh||"";
+        const parts=(c.stem||"").split("___"),fills=Array.isArray(f.fills)?f.fills:[f.form,f.time];let h=parts[0];
+        for(let b=0;b<parts.length-1;b++){const v=fills[b]!=null?fills[b]:"";h+=(v===""?"":'<span class="cslot">'+v+'</span>')+parts[b+1];}
+        stem.innerHTML=h.replace(/ {2,}/g," ").trim(); note.textContent=f.zh||"";
         card.querySelectorAll(".cbtn").forEach(b=>b.classList.toggle("on",(+b.dataset.i)===i));};
       card.querySelectorAll(".cbtn").forEach(b=>b.onclick=()=>sel(+b.dataset.i));
       sel(0);
@@ -444,6 +447,12 @@ function maskWord(en,full){
 }
 function hlWord(sentence,word){
   try{return sentence.replace(new RegExp("\\b"+word+"\\b","i"),m=>'<b style="color:var(--accent)">'+m+'</b>');}catch(e){return sentence;}
+}
+// 把例句裡的訊號詞標紅(支援片語與含標點如 Look!),呼應下方 💡 說明
+function hlSignal(sentence,sig){
+  if(!sig)return sentence;
+  try{const esc=sig.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+    return sentence.replace(new RegExp(esc),m=>'<b style="color:var(--accent)">'+m+'</b>');}catch(e){return sentence;}
 }
 
 function buildQuiz(){

@@ -88,18 +88,27 @@
       "stem": "The post office ___ at eight ___.",
       "items": [
         {
-          "form": "opens",
-          "time": "every day",
+          "fills": [
+            "opens",
+            "every day"
+          ],
+          "label": "opens",
           "zh": "郵局每天八點開門(現在/習慣)"
         },
         {
-          "form": "opened",
-          "time": "yesterday",
+          "fills": [
+            "opened",
+            "yesterday"
+          ],
+          "label": "opened",
           "zh": "郵局昨天八點開了門(過去)"
         },
         {
-          "form": "will open",
-          "time": "tomorrow",
+          "fills": [
+            "will open",
+            "tomorrow"
+          ],
+          "label": "will open",
           "zh": "郵局明天會八點開門(未來)"
         }
       ]
@@ -109,7 +118,8 @@
       "s": "opens",
       "past": "opened",
       "ing": "opening"
-    }
+    },
+    "subjNote": "the post office 是『它』,所以動詞加 s"
   },
   {
     "pattern": "現在進行式:be + V-ing",
@@ -197,21 +207,33 @@
       }
     ],
     "contrast": {
-      "stem": "Look! The mailman ___ a package ___.",
+      "stem": "___ The mailman ___ a package ___.",
       "items": [
         {
-          "form": "is delivering",
-          "time": "now",
-          "zh": "郵差現在正在送一個包裹(現在進行)"
+          "fills": [
+            "Look!",
+            "is delivering",
+            "now"
+          ],
+          "label": "is delivering",
+          "zh": "你看!郵差正在送一個包裹(現在進行)"
         },
         {
-          "form": "delivers",
-          "time": "every day",
-          "zh": "郵差每天送一個包裹(現在/習慣)"
+          "fills": [
+            "",
+            "delivered",
+            "yesterday"
+          ],
+          "label": "delivered",
+          "zh": "郵差昨天送了一個包裹(過去)"
         },
         {
-          "form": "will deliver",
-          "time": "tomorrow",
+          "fills": [
+            "",
+            "will deliver",
+            "tomorrow"
+          ],
+          "label": "will deliver",
           "zh": "郵差明天會送一個包裹(未來)"
         }
       ]
@@ -312,18 +334,27 @@
       "stem": "I ___ the letter ___.",
       "items": [
         {
-          "form": "sent",
-          "time": "yesterday",
+          "fills": [
+            "sent",
+            "yesterday"
+          ],
+          "label": "sent",
           "zh": "我昨天寄了那封信(過去)"
         },
         {
-          "form": "send",
-          "time": "every day",
+          "fills": [
+            "send",
+            "every day"
+          ],
+          "label": "send",
           "zh": "我每天寄那封信(現在/習慣)"
         },
         {
-          "form": "will send",
-          "time": "tomorrow",
+          "fills": [
+            "will send",
+            "tomorrow"
+          ],
+          "label": "will send",
           "zh": "我明天會寄那封信(未來)"
         }
       ]
@@ -435,18 +466,27 @@
       "stem": "I ___ your package ___.",
       "items": [
         {
-          "form": "will deliver",
-          "time": "tomorrow",
+          "fills": [
+            "will deliver",
+            "tomorrow"
+          ],
+          "label": "will deliver",
           "zh": "我明天會送你的包裹(未來)"
         },
         {
-          "form": "delivered",
-          "time": "yesterday",
+          "fills": [
+            "delivered",
+            "yesterday"
+          ],
+          "label": "delivered",
           "zh": "我昨天送了你的包裹(過去)"
         },
         {
-          "form": "deliver",
-          "time": "every day",
+          "fills": [
+            "deliver",
+            "every day"
+          ],
+          "label": "deliver",
           "zh": "我每天送你的包裹(現在/習慣)"
         }
       ]
@@ -558,18 +598,27 @@
       "stem": "We ___ ___.",
       "items": [
         {
-          "form": "are going to move",
-          "time": "next month",
-          "zh": "我們下個月打算搬家(計畫)"
+          "fills": [
+            "are going to move",
+            "next month"
+          ],
+          "label": "are going to move",
+          "zh": "我們下個月打算搬家(計畫/未來)"
         },
         {
-          "form": "moved",
-          "time": "last month",
+          "fills": [
+            "moved",
+            "last month"
+          ],
+          "label": "moved",
           "zh": "我們上個月搬了家(過去)"
         },
         {
-          "form": "will move",
-          "time": "next week",
+          "fills": [
+            "will move",
+            "next week"
+          ],
+          "label": "will move",
           "zh": "我們下週會搬家(未來)"
         }
       ]
@@ -670,19 +719,28 @@
       "stem": "I ___ ___.",
       "items": [
         {
-          "form": "was reading",
-          "time": "when the bell rang",
+          "fills": [
+            "was reading",
+            "when the bell rang"
+          ],
+          "label": "was reading",
           "zh": "鈴響的時候我正在看書(過去進行)"
         },
         {
-          "form": "read",
-          "time": "yesterday",
-          "zh": "我昨天看了書(過去)"
+          "fills": [
+            "am reading",
+            "now"
+          ],
+          "label": "am reading",
+          "zh": "我現在正在看書(現在進行)"
         },
         {
-          "form": "am reading",
-          "time": "now",
-          "zh": "我現在正在看書(現在進行)"
+          "fills": [
+            "will read",
+            "tomorrow"
+          ],
+          "label": "will read",
+          "zh": "我明天會看書(未來)"
         }
       ]
     },
@@ -782,19 +840,28 @@
       "stem": "I ___ here ___.",
       "items": [
         {
-          "form": "have worked",
-          "time": "for three years",
+          "fills": [
+            "have worked",
+            "for three years"
+          ],
+          "label": "have worked",
           "zh": "我在這裡工作三年了(現在完成,一直到現在)"
         },
         {
-          "form": "worked",
-          "time": "last year",
+          "fills": [
+            "worked",
+            "last year"
+          ],
+          "label": "worked",
           "zh": "我去年在這裡工作(過去)"
         },
         {
-          "form": "work",
-          "time": "every day",
-          "zh": "我每天在這裡工作(現在/習慣)"
+          "fills": [
+            "will work",
+            "next week"
+          ],
+          "label": "will work",
+          "zh": "我下週會在這裡工作(未來)"
         }
       ]
     },
@@ -905,18 +972,27 @@
       "stem": "These boxes ___ ___.",
       "items": [
         {
-          "form": "are checked",
-          "time": "every morning",
+          "fills": [
+            "are checked",
+            "every morning"
+          ],
+          "label": "are checked",
           "zh": "這些箱子每天早上被檢查(現在被動)"
         },
         {
-          "form": "were checked",
-          "time": "last night",
+          "fills": [
+            "were checked",
+            "last night"
+          ],
+          "label": "were checked",
           "zh": "這些箱子昨晚被檢查了(過去被動)"
         },
         {
-          "form": "will be checked",
-          "time": "tomorrow",
+          "fills": [
+            "will be checked",
+            "tomorrow"
+          ],
+          "label": "will be checked",
           "zh": "這些箱子明天會被檢查(未來被動)"
         }
       ]
@@ -1017,15 +1093,24 @@
       "stem": "The meal ___ by the chef.",
       "items": [
         {
-          "form": "was prepared",
+          "fills": [
+            "was prepared"
+          ],
+          "label": "was prepared",
           "zh": "那餐是廚師準備的(過去被動)"
         },
         {
-          "form": "is prepared",
+          "fills": [
+            "is prepared"
+          ],
+          "label": "is prepared",
           "zh": "那餐是廚師準備的(現在被動)"
         },
         {
-          "form": "will be prepared",
+          "fills": [
+            "will be prepared"
+          ],
+          "label": "will be prepared",
           "zh": "那餐會由廚師準備(未來被動)"
         }
       ]
@@ -1126,15 +1211,24 @@
       "stem": "She ___ the job.",
       "items": [
         {
-          "form": "decided to take",
+          "fills": [
+            "decided to take"
+          ],
+          "label": "decided to take",
           "zh": "她決定接下這份工作(decide 後接 to + 動詞)"
         },
         {
-          "form": "wanted to take",
+          "fills": [
+            "wanted to take"
+          ],
+          "label": "wanted to take",
           "zh": "她想要接下這份工作(want 後接 to + 動詞)"
         },
         {
-          "form": "enjoyed doing",
+          "fills": [
+            "enjoyed doing"
+          ],
+          "label": "enjoyed doing",
           "zh": "她喜歡做這份工作(enjoy 後接 動詞ing)"
         }
       ]
@@ -1246,15 +1340,24 @@
       "stem": "They ___ together.",
       "items": [
         {
-          "form": "enjoy working",
+          "fills": [
+            "enjoy working"
+          ],
+          "label": "enjoy working",
           "zh": "他們喜歡一起工作(enjoy 後接 動詞ing)"
         },
         {
-          "form": "finished working",
+          "fills": [
+            "finished working"
+          ],
+          "label": "finished working",
           "zh": "他們做完了一起的工作(finish 後接 動詞ing)"
         },
         {
-          "form": "want to work",
+          "fills": [
+            "want to work"
+          ],
+          "label": "want to work",
           "zh": "他們想要一起工作(want 後接 to + 動詞)"
         }
       ]
@@ -1366,15 +1469,24 @@
       "stem": "Check the address before ___ the letter.",
       "items": [
         {
-          "form": "sending",
+          "fills": [
+            "sending"
+          ],
+          "label": "sending",
           "zh": "寄出這封信之前先核對地址(before 後接 動詞ing)"
         },
         {
-          "form": "mailing",
+          "fills": [
+            "mailing"
+          ],
+          "label": "mailing",
           "zh": "寄出這封信之前先核對地址(介系詞後接 動詞ing)"
         },
         {
-          "form": "posting",
+          "fills": [
+            "posting"
+          ],
+          "label": "posting",
           "zh": "投遞這封信之前先核對地址(介系詞後接 動詞ing)"
         }
       ]
@@ -1475,15 +1587,24 @@
       "stem": "The teacher ___ helped me is kind.",
       "items": [
         {
-          "form": "who",
+          "fills": [
+            "who"
+          ],
+          "label": "who",
           "zh": "幫我的那位老師人很好(指人、當主詞:正確)"
         },
         {
-          "form": "that",
+          "fills": [
+            "that"
+          ],
+          "label": "that",
           "zh": "幫我的那位老師人很好(指人也可以用 that:正確)"
         },
         {
-          "form": "which",
+          "fills": [
+            "which"
+          ],
+          "label": "which",
           "zh": "（×）which 是用在「東西」,指人不能用"
         }
       ]
@@ -1589,15 +1710,24 @@
       "stem": "The box ___ arrived today is heavy.",
       "items": [
         {
-          "form": "which",
+          "fills": [
+            "which"
+          ],
+          "label": "which",
           "zh": "今天送到的那個箱子很重(指東西:正確)"
         },
         {
-          "form": "that",
+          "fills": [
+            "that"
+          ],
+          "label": "that",
           "zh": "今天送到的那個箱子很重(指東西也可以用 that:正確)"
         },
         {
-          "form": "who",
+          "fills": [
+            "who"
+          ],
+          "label": "who",
           "zh": "（×）who 是用在「人」,指東西不能用"
         }
       ]
@@ -1703,15 +1833,24 @@
       "stem": "The man ___ car is red works here.",
       "items": [
         {
-          "form": "whose",
+          "fills": [
+            "whose"
+          ],
+          "label": "whose",
           "zh": "那台紅色車子的車主在這裡上班(表示「他的」:正確)"
         },
         {
-          "form": "who",
+          "fills": [
+            "who"
+          ],
+          "label": "who",
           "zh": "（×）who 是「他」當主詞,不能表示「他的」"
         },
         {
-          "form": "which",
+          "fills": [
+            "which"
+          ],
+          "label": "which",
           "zh": "（×）which 用在東西,也不能表示「他的」"
         }
       ]
@@ -1817,15 +1956,24 @@
       "stem": "If it rains, I ___ a taxi.",
       "items": [
         {
-          "form": "will take",
+          "fills": [
+            "will take"
+          ],
+          "label": "will take",
           "zh": "如果下雨,我就會搭計程車(真實條件:可能會發生)"
         },
         {
-          "form": "take",
+          "fills": [
+            "take"
+          ],
+          "label": "take",
           "zh": "每次下雨,我都搭計程車(習慣:零條件)"
         },
         {
-          "form": "would take",
+          "fills": [
+            "would take"
+          ],
+          "label": "would take",
           "zh": "如果（假設）下雨,我會搭計程車(假設語氣)"
         }
       ]
@@ -1920,15 +2068,24 @@
       "stem": "If I ___ you, I would study harder.",
       "items": [
         {
-          "form": "were",
+          "fills": [
+            "were"
+          ],
+          "label": "were",
           "zh": "如果我是你,我會更用功(與現在相反的假設,be 要用 were)"
         },
         {
-          "form": "was",
+          "fills": [
+            "was"
+          ],
+          "label": "was",
           "zh": "如果我是你…(日常口語有人說 was,但正式或考試要用 were)"
         },
         {
-          "form": "am",
+          "fills": [
+            "am"
+          ],
+          "label": "am",
           "zh": "（×）am 是真的「就是」的時候用,假設語氣不用"
         }
       ]
@@ -1990,19 +2147,28 @@
       "stem": "The train ___ ___.",
       "items": [
         {
-          "form": "had left",
-          "time": "before we arrived",
+          "fills": [
+            "had left",
+            "before we arrived"
+          ],
+          "label": "had left",
           "zh": "我們到之前火車就已經先開走了(過去完成)"
         },
         {
-          "form": "left",
-          "time": "ten minutes ago",
-          "zh": "火車十分鐘前開走了(過去)"
+          "fills": [
+            "leaves",
+            "every day"
+          ],
+          "label": "leaves",
+          "zh": "火車每天都準時開(現在/習慣)"
         },
         {
-          "form": "leaves",
-          "time": "every day",
-          "zh": "火車每天都準時開(現在/習慣)"
+          "fills": [
+            "will leave",
+            "tomorrow"
+          ],
+          "label": "will leave",
+          "zh": "火車明天會開(未來)"
         }
       ]
     },
@@ -2080,15 +2246,24 @@
       "stem": "If I had known, I ___ you.",
       "items": [
         {
-          "form": "would have helped",
+          "fills": [
+            "would have helped"
+          ],
+          "label": "would have helped",
           "zh": "如果我那時早知道,我就會幫你了(與過去相反:其實沒幫成)"
         },
         {
-          "form": "would help",
+          "fills": [
+            "would help"
+          ],
+          "label": "would help",
           "zh": "如果我知道,我會幫你(與現在相反的假設)"
         },
         {
-          "form": "helped",
+          "fills": [
+            "helped"
+          ],
+          "label": "helped",
           "zh": "我幫了你(過去)"
         }
       ]
@@ -2183,15 +2358,24 @@
       "stem": "___ it was late, he kept working.",
       "items": [
         {
-          "form": "Although",
+          "fills": [
+            "Although"
+          ],
+          "label": "Although",
           "zh": "雖然很晚了,他還是繼續工作(雖然:前後相反)"
         },
         {
-          "form": "Because",
+          "fills": [
+            "Because"
+          ],
+          "label": "Because",
           "zh": "因為很晚了,他才繼續工作(因為:表原因)"
         },
         {
-          "form": "When",
+          "fills": [
+            "When"
+          ],
+          "label": "When",
           "zh": "很晚的時候,他還在工作(當…時:表時間)"
         }
       ]
@@ -2297,15 +2481,24 @@
       "stem": "We stayed home ___ the storm.",
       "items": [
         {
-          "form": "because of",
+          "fills": [
+            "because of"
+          ],
+          "label": "because of",
           "zh": "我們因為暴風雨待在家(後面是名詞,用 because of:正確)"
         },
         {
-          "form": "during",
+          "fills": [
+            "during"
+          ],
+          "label": "during",
           "zh": "我們在暴風雨期間待在家(during=在…期間,後接名詞:正確)"
         },
         {
-          "form": "because",
+          "fills": [
+            "because"
+          ],
+          "label": "because",
           "zh": "（×）because 後面要接「主詞+動詞」的句子,只接名詞不行"
         }
       ]
@@ -2411,15 +2604,24 @@
       "stem": "He was ___ tired to finish the work.",
       "items": [
         {
-          "form": "too",
+          "fills": [
+            "too"
+          ],
+          "label": "too",
           "zh": "他太累了,累到無法完成工作(too…to:太…而不能)"
         },
         {
-          "form": "so",
+          "fills": [
+            "so"
+          ],
+          "label": "so",
           "zh": "（×）so 要配 that 子句(so tired that…),不能直接接 to"
         },
         {
-          "form": "very",
+          "fills": [
+            "very"
+          ],
+          "label": "very",
           "zh": "（×）very 只是「很」,沒有「太…而不能」的意思,也不接 to"
         }
       ]
@@ -2514,15 +2716,24 @@
       "stem": "She is not only smart ___ also kind.",
       "items": [
         {
-          "form": "but",
+          "fills": [
+            "but"
+          ],
+          "label": "but",
           "zh": "她不僅聰明而且善良(not only…but also:固定搭配)"
         },
         {
-          "form": "and",
+          "fills": [
+            "and"
+          ],
+          "label": "and",
           "zh": "（×）not only 要搭配 but also,不是 and also"
         },
         {
-          "form": "or",
+          "fills": [
+            "or"
+          ],
+          "label": "or",
           "zh": "（×）這裡用 or 意思不通"
         }
       ]
@@ -2617,15 +2828,24 @@
       "stem": "You had better ___ a doctor.",
       "items": [
         {
-          "form": "see",
+          "fills": [
+            "see"
+          ],
+          "label": "see",
           "zh": "你最好去看醫生(had better 後接動詞最原本的樣子)"
         },
         {
-          "form": "to see",
+          "fills": [
+            "to see"
+          ],
+          "label": "to see",
           "zh": "（×）had better 後面不加 to"
         },
         {
-          "form": "seeing",
+          "fills": [
+            "seeing"
+          ],
+          "label": "seeing",
           "zh": "（×）had better 後面不接動詞ing"
         }
       ]
