@@ -138,7 +138,7 @@
   "note": "Listen! 表示此刻正在發生,用 be + V-ing → is ringing。",
   "family": "時態",
   "signal": "Look!",
-  "signalNote": "看到 Look!(你看!)還有 now(現在),就是此刻正在發生,要用「be + 動詞ing」,is delivering。",
+  "signalNote": "看到 Look!(你看!)還有 now(現在),就是此刻正在發生,要用「be + 動詞ing」。",
   "qbank": [
    {
     "q": "Listen! The phone ___ now.",
@@ -394,7 +394,7 @@
   "note": "tomorrow 表未來,用 will + 原形動詞。",
   "family": "時態",
   "signal": "tomorrow",
-  "signalNote": "看到 tomorrow(明天)就是還沒發生的未來,用 will 加動詞最原本的樣子,will deliver。",
+  "signalNote": "看到 tomorrow(明天)就是還沒發生的未來,用 will 加動詞最原本的樣子。",
   "qbank": [
    {
     "q": "He ___ call you tomorrow.",
@@ -647,7 +647,7 @@
   "note": "主詞 She 用 was;過去進行式 = was + V-ing。",
   "family": "時態",
   "signal": "when the bell rang",
-  "signalNote": "看到 when the bell rang(鈴響的時候)是過去某個時間點,而且那時動作正在進行,要用「was + 動詞ing」,was reading。",
+  "signalNote": "看到 when the bell rang(鈴響的時候)是過去某個時間點,而且那時動作正在進行,要用「was + 動詞ing」。",
   "qbank": [
    {
     "q": "She ___ cooking when I came home.",
@@ -768,7 +768,7 @@
   "note": "主詞 She 用 has;already 是完成式提示 → has finished。",
   "family": "時態",
   "signal": "for three years",
-  "signalNote": "看到 for three years(長達三年)是從過去一直到現在,要用「have + 動詞過去分詞」,have worked。",
+  "signalNote": "看到 for three years(長達三年)是從過去一直到現在,要用「have + 動詞過去分詞」。",
   "qbank": [
    {
     "q": "She ___ already finished her work.",
@@ -900,7 +900,7 @@
   "note": "主詞 mail 為單數,現在被動 = is + p.p. → is delivered。",
   "family": "被動",
   "signal": "are checked",
-  "signalNote": "箱子是「被」檢查的,不是自己檢查,而且是每天的事,要用「are + 動詞過去分詞」,are checked。",
+  "signalNote": "箱子是「被」檢查的,不是自己檢查,而且是每天的事,要用「are + 動詞過去分詞」。",
   "qbank": [
    {
     "q": "The mail ___ delivered every day.",
@@ -1021,7 +1021,7 @@
   "note": "過去被動 = was/were + 過去分詞 → was sent。",
   "family": "被動",
   "signal": "by the chef",
-  "signalNote": "看到 by the chef(由廚師)表示事情是「被」廚師做的,主詞是被動的一方,要用「was + 動詞過去分詞」,was prepared。",
+  "signalNote": "看到 by the chef(由廚師)表示事情是「被」廚師做的,主詞是被動的一方,要用「was + 動詞過去分詞」。",
   "qbank": [
    {
     "q": "The letter ___ yesterday.",
@@ -1139,7 +1139,7 @@
   "note": "want 後面接不定詞 → to make。",
   "family": "非謂語",
   "signal": "decided",
-  "signalNote": "看到 decided(決定),decide 後面要接「to + 動詞最原本的樣子」,to take。",
+  "signalNote": "看到 decided(決定),decide 後面要接「to + 動詞最原本的樣子」。",
   "qbank": [
    {
     "q": "I want ___ a reservation.",
@@ -1884,7 +1884,7 @@
   "note": "真實條件:if 子句用現在式,主句用 will + 原形。",
   "family": "條件假設",
   "signal": "If it rains",
-  "signalNote": "看到 If it rains(如果下雨)是「有可能會發生」的條件,主句要用 will 加動詞最原本的樣子,will take。",
+  "signalNote": "看到 If it rains(如果下雨)是「有可能會發生」的條件,主句要用 will 加動詞最原本的樣子。",
   "qbank": [
    {
     "q": "If you hurry, you ___ catch the train.",
@@ -2108,7 +2108,7 @@
   "note": "兩件過去的事,先發生的用過去完成式 had + 過去分詞。",
   "family": "時態",
   "signal": "before we arrived",
-  "signalNote": "有兩件過去的事,火車先走、我們後到。比較早發生的那件(火車走)要用「had + 動詞過去分詞」,had left。",
+  "signalNote": "有兩件過去的事,火車先走、我們後到。比較早發生的那件(火車走)要用「had + 動詞過去分詞」。",
   "qbank": [
    {
     "q": "By the time I got there, the meeting ___ already ended.",
@@ -2207,7 +2207,7 @@
   "note": "與過去相反:If + had + 過去分詞。",
   "family": "條件假設",
   "signal": "would have helped",
-  "signalNote": "這是「與過去相反」的假設(其實當時沒幫到)。前面是 If + had known,後面主句就要用 would have + 動詞過去分詞,would have helped。",
+  "signalNote": "這是「與過去相反」的假設(其實當時沒幫到)。前面是 If + had known,後面主句就要用 would have + 動詞過去分詞。",
   "qbank": [
    {
     "q": "If she ___ studied harder, she would have passed.",

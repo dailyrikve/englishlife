@@ -219,20 +219,23 @@ function contrastHTML(c){
     +'<div class="clad-stem" id="cstem"></div><div class="cbtns">'+btns+'</div><div class="cnote" id="cnote"></div></div>';
 }
 // 動詞變化表(選填):四種樣子 原形/加s/過去/-ing,至少要有2種才顯示
-// forms.baseNote(選填):原形的主詞提示,例如 "I/you/we/they";有給時才把「複數用原形 vs 單數+s」講清楚
+// 表格下方註解=選填、按需顯示:
+//   有 baseNote → 顯示「複數用原形 vs 單數+s」對比(只給現在簡單式這種真的吃 +s 規則的句型)
+//   否則有 subjNote → 顯示該自訂說明
+//   兩者都沒有 → 不顯示註解(避免在過去式/被動/非謂語等句型誤掛「+s」提示)
 function vformsHTML(f){
   if(!f)return "";
   const rows=[["base","原形"],["s","他/她/它+s"],["past","過去"],["ing","-ing(進行)"]].filter(([k])=>f[k]);
   if(rows.length<2)return "";
   const labOf=(k,lab)=>(k==="base"&&f.baseNote)?(lab+'<i style="font-style:normal;color:var(--teal)"> '+f.baseNote+'</i>'):lab;
-  let sNote="";
-  if(f.s){
-    sNote = f.baseNote
-      ? '<div class="vf-note"><b>'+f.baseNote+'</b>(含複數)動詞用<b>原形</b>;只有<b>單數</b>的他/她/它才加 <b>s</b>'+(f.subjNote?(';'+f.subjNote):'')+'</div>'
-      : '<div class="vf-note">主詞是「單數的他/她/它」時,動詞才加 s'+(f.subjNote?(';'+f.subjNote):'')+'</div>';
+  let note="";
+  if(f.baseNote){
+    note='<div class="vf-note"><b>'+f.baseNote+'</b>(含複數)動詞用<b>原形</b>;只有<b>單數</b>的他/她/它才加 <b>s</b>'+(f.subjNote?(';'+f.subjNote):'')+'</div>';
+  }else if(f.subjNote){
+    note='<div class="vf-note">'+f.subjNote+'</div>';
   }
   return '<div class="vforms"><div class="vf-h">這個動詞的幾種樣子</div><div class="vf-row">'
-    +rows.map(([k,lab])=>'<span class="vf"><b>'+f[k]+'</b><small>'+labOf(k,lab)+'</small></span>').join("")+'</div>'+sNote+'</div>';
+    +rows.map(([k,lab])=>'<span class="vf"><b>'+f[k]+'</b><small>'+labOf(k,lab)+'</small></span>').join("")+'</div>'+note+'</div>';
 }
 // 文法分關:有 family 就依家族分組(每族一關),否則退回每 3 條一關
 let GRAM_LV=null;
