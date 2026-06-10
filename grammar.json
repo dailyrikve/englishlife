@@ -1500,8 +1500,8 @@
   }
  },
  {
-  "pattern": "關係代名詞 who(指人,主格)",
-  "zh": "先行詞是「人」且在子句中當主詞時,用 who",
+  "pattern": "關係代名詞 who(指人,當主詞)",
+  "zh": "前面被描述的那個詞是「人」,而且它在後面的句子裡當主詞時,用 who",
   "ex": "The teacher who helped me is kind.",
   "exZh": "幫助我的那位老師人很好。",
   "q": "The man ___ called you is my uncle.",
@@ -1512,10 +1512,10 @@
    "whose"
   ],
   "answer": "who",
-  "note": "先行詞是人、且在子句中當主詞,用 who。",
+  "note": "前面那個詞是人、且在句子中當主詞,用 who。",
   "family": "關代",
   "signal": "who",
-  "signalNote": "先行詞是人(the teacher 老師),而且這個人在後面句子裡是「做動作的人」(當主詞),所以用 who。",
+  "signalNote": "前面被描述的是人(the teacher 老師),而且這個人在後面句子裡是「做動作的人」(當主詞),所以用 who。",
   "qbank": [
    {
     "q": "The man ___ called you is my uncle.",
@@ -1526,7 +1526,7 @@
      "whose"
     ],
     "answer": "who",
-    "note": "先行詞是人、當主詞 → who。"
+    "note": "前面那個詞是人、當主詞 → who。"
    },
    {
     "q": "I met a girl ___ speaks five languages.",
@@ -1537,7 +1537,7 @@
      "whom"
     ],
     "answer": "who",
-    "note": "先行詞 girl 是人、當主詞 → who。"
+    "note": "前面那個詞 girl 是人、當主詞 → who。"
    },
    {
     "q": "The teacher ___ helped me is kind.",
@@ -1548,7 +1548,7 @@
      "whom"
     ],
     "answer": "who",
-    "note": "先行詞 teacher 是人 → who。"
+    "note": "前面那個詞 teacher 是人 → who。"
    },
    {
     "q": "He is the worker ___ delivers our mail.",
@@ -1559,7 +1559,7 @@
      "whom"
     ],
     "answer": "who",
-    "note": "先行詞 worker 是人、當主詞 → who。"
+    "note": "前面那個詞 worker 是人、當主詞 → who。"
    },
    {
     "q": "The people ___ live here are friendly.",
@@ -1570,7 +1570,7 @@
      "whom"
     ],
     "answer": "who",
-    "note": "先行詞 people 是人 → who。"
+    "note": "前面那個詞 people 是人 → who。"
    },
    {
     "q": "I know the boy ___ won the prize.",
@@ -1581,7 +1581,7 @@
      "whom"
     ],
     "answer": "who",
-    "note": "先行詞 boy 是人、當主詞 → who。"
+    "note": "前面那個詞 boy 是人、當主詞 → who。"
    }
   ],
   "contrast": {
@@ -1606,7 +1606,8 @@
       "which"
      ],
      "label": "which",
-     "zh": "（×）which 是用在「東西」,指人不能用"
+     "zh": "which 用在「東西」,指人不能用",
+     "ok": false
     }
    ]
   },
@@ -1619,12 +1620,12 @@
     "who / whose"
    ],
    "answer": "which / who",
-   "note": "先行詞 box 是物用 which;man 是人當主詞用 who。"
+   "note": "前面那個詞 box 是物用 which;man 是人當主詞用 who。"
   }
  },
  {
   "pattern": "關係代名詞 which / that(指物)",
-  "zh": "先行詞是「物」時,用 which 或 that 連接",
+  "zh": "前面被描述的那個詞是「物」時,用 which 或 that 連接",
   "ex": "The box which arrived today is heavy.",
   "exZh": "今天送到的那個箱子很重。",
   "q": "This is the letter ___ came this morning.",
@@ -1635,10 +1636,10 @@
    "whom"
   ],
   "answer": "which",
-  "note": "先行詞 letter 是物,用 which(或 that)。",
+  "note": "前面那個詞 letter 是物,用 which(或 that)。",
   "family": "關代",
   "signal": "which",
-  "signalNote": "先行詞是東西(the box 箱子),不是人,所以用 which(也可以用 that)。",
+  "signalNote": "前面被描述的是東西(the box 箱子),不是人,所以用 which(也可以用 that)。",
   "qbank": [
    {
     "q": "This is the letter ___ came this morning.",
@@ -1649,7 +1650,7 @@
      "whom"
     ],
     "answer": "which",
-    "note": "先行詞 letter 是物 → which。"
+    "note": "前面那個詞 letter 是物 → which。"
    },
    {
     "q": "The box ___ arrived today is heavy.",
@@ -1660,7 +1661,7 @@
      "whom"
     ],
     "answer": "which",
-    "note": "先行詞 box 是物 → which。"
+    "note": "前面那個詞 box 是物 → which。"
    },
    {
     "q": "I like the book ___ you gave me.",
@@ -1671,7 +1672,7 @@
      "whom"
     ],
     "answer": "which",
-    "note": "先行詞 book 是物 → which。"
+    "note": "前面那個詞 book 是物 → which。"
    },
    {
     "q": "The bus ___ goes downtown is late.",
@@ -1682,7 +1683,7 @@
      "whom"
     ],
     "answer": "which",
-    "note": "先行詞 bus 是物 → which。"
+    "note": "前面那個詞 bus 是物 → which。"
    },
    {
     "q": "Here is the form ___ you need.",
@@ -1693,7 +1694,7 @@
      "whom"
     ],
     "answer": "which",
-    "note": "先行詞 form 是物 → which。"
+    "note": "前面那個詞 form 是物 → which。"
    },
    {
     "q": "The shop ___ sells stamps is closed.",
@@ -1704,7 +1705,7 @@
      "whom"
     ],
     "answer": "which",
-    "note": "先行詞 shop 是物 → which。"
+    "note": "前面那個詞 shop 是物 → which。"
    }
   ],
   "contrast": {
@@ -1729,7 +1730,8 @@
       "who"
      ],
      "label": "who",
-     "zh": "（×）who 是用在「人」,指東西不能用"
+     "zh": "who 是用在「人」,指東西不能用",
+     "ok": false
     }
    ]
   },
@@ -1742,11 +1744,11 @@
     "who / whose"
    ],
    "answer": "who / which",
-   "note": "先行詞 girl 是人用 who;prize 是物用 which。"
+   "note": "前面那個詞 girl 是人用 who;prize 是物用 which。"
   }
  },
  {
-  "pattern": "關係代名詞 whose(所有格)",
+  "pattern": "關係代名詞 whose(表示「的」)",
   "zh": "表示「…的」,連接所屬關係,人或物皆可",
   "ex": "The man whose car is red works here.",
   "exZh": "那台紅色車子的車主在這裡工作。",
@@ -1845,14 +1847,16 @@
       "who"
      ],
      "label": "who",
-     "zh": "（×）who 是「他」當主詞,不能表示「他的」"
+     "zh": "who 是「他」當主詞,不能表示「他的」",
+     "ok": false
     },
     {
      "fills": [
       "which"
      ],
      "label": "which",
-     "zh": "（×）which 用在東西,也不能表示「他的」"
+     "zh": "which 用在東西,也不能表示「他的」",
+     "ok": false
     }
    ]
   },
@@ -1881,7 +1885,7 @@
    "have"
   ],
   "answer": "will",
-  "note": "真實條件:if 子句用現在式,主句用 will + 原形。",
+  "note": "真實條件:if 句子用現在式,主句用 will + 原形。",
   "family": "條件假設",
   "signal": "If it rains",
   "signalNote": "看到 If it rains(如果下雨)是「有可能會發生」的條件,主句要用 will 加動詞最原本的樣子。",
@@ -1939,7 +1943,7 @@
      "studying"
     ],
     "answer": "study",
-    "note": "if 子句用現在式 → study。"
+    "note": "if 句子用現在式 → study。"
    },
    {
     "q": "If the bus is late, we ___ wait.",
@@ -1975,7 +1979,8 @@
       "would take"
      ],
      "label": "would take",
-     "zh": "如果（假設）下雨,我會搭計程車(假設語氣)"
+     "zh": "要用 would,前面得改成 If it rained(假設不是真的);真實條件句配 will",
+     "ok": false
     }
    ]
   }
@@ -2062,7 +2067,7 @@
      "were living"
     ],
     "answer": "lived",
-    "note": "與現在相反,if 子句用過去式 → lived。"
+    "note": "與現在相反,if 句子用過去式 → lived。"
    }
   ],
   "contrast": {
@@ -2087,7 +2092,8 @@
       "am"
      ],
      "label": "am",
-     "zh": "（×）am 是真的「就是」的時候用,假設語氣不用"
+     "zh": "am 是「真的就是」時才用,假設語氣不用",
+     "ok": false
     }
    ]
   }
@@ -2500,7 +2506,8 @@
       "because"
      ],
      "label": "because",
-     "zh": "（×）because 後面要接「主詞+動詞」的句子,只接名詞不行"
+     "zh": "because 後面要接「主詞+動詞」的句子,只接名詞不行",
+     "ok": false
     }
    ]
   },
@@ -2616,14 +2623,16 @@
       "so"
      ],
      "label": "so",
-     "zh": "（×）so 要配 that 子句(so tired that…),不能直接接 to"
+     "zh": "so 要配 that 句子(so tired that…),不能直接接 to",
+     "ok": false
     },
     {
      "fills": [
       "very"
      ],
      "label": "very",
-     "zh": "（×）very 只是「很」,沒有「太…而不能」的意思,也不接 to"
+     "zh": "very 只是「很」,沒有「太…而不能」的意思,也不接 to",
+     "ok": false
     }
    ]
   }
@@ -2728,14 +2737,16 @@
       "and"
      ],
      "label": "and",
-     "zh": "（×）not only 要搭配 but also,不是 and also"
+     "zh": "not only 要搭配 but also,不是 and also",
+     "ok": false
     },
     {
      "fills": [
       "or"
      ],
      "label": "or",
-     "zh": "（×）這裡用 or 意思不通"
+     "zh": "這裡用 or 意思不通",
+     "ok": false
     }
    ]
   }
@@ -2840,14 +2851,16 @@
       "to see"
      ],
      "label": "to see",
-     "zh": "（×）had better 後面不加 to"
+     "zh": "had better 後面不加 to",
+     "ok": false
     },
     {
      "fills": [
       "seeing"
      ],
      "label": "seeing",
-     "zh": "（×）had better 後面不接動詞ing"
+     "zh": "had better 後面不接動詞ing",
+     "ok": false
     }
    ]
   }
