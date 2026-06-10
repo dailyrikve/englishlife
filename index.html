@@ -219,13 +219,20 @@ function contrastHTML(c){
     +'<div class="clad-stem" id="cstem"></div><div class="cbtns">'+btns+'</div><div class="cnote" id="cnote"></div></div>';
 }
 // 動詞變化表(選填):四種樣子 原形/加s/過去/-ing,至少要有2種才顯示
+// forms.baseNote(選填):原形的主詞提示,例如 "I/you/we/they";有給時才把「複數用原形 vs 單數+s」講清楚
 function vformsHTML(f){
   if(!f)return "";
-  const rows=[["base","原形"],["s","他/她+s"],["past","過去"],["ing","-ing(進行)"]].filter(([k])=>f[k]);
+  const rows=[["base","原形"],["s","他/她/它+s"],["past","過去"],["ing","-ing(進行)"]].filter(([k])=>f[k]);
   if(rows.length<2)return "";
-  const sNote=f.s?'<div class="vf-note">主詞是「單數的他/她/它」時,動詞才加 s'+(f.subjNote?(';'+f.subjNote):'')+'</div>':'';
+  const labOf=(k,lab)=>(k==="base"&&f.baseNote)?(lab+'<i style="font-style:normal;color:var(--teal)"> '+f.baseNote+'</i>'):lab;
+  let sNote="";
+  if(f.s){
+    sNote = f.baseNote
+      ? '<div class="vf-note"><b>'+f.baseNote+'</b>(含複數)動詞用<b>原形</b>;只有<b>單數</b>的他/她/它才加 <b>s</b>'+(f.subjNote?(';'+f.subjNote):'')+'</div>'
+      : '<div class="vf-note">主詞是「單數的他/她/它」時,動詞才加 s'+(f.subjNote?(';'+f.subjNote):'')+'</div>';
+  }
   return '<div class="vforms"><div class="vf-h">這個動詞的幾種樣子</div><div class="vf-row">'
-    +rows.map(([k,lab])=>'<span class="vf"><b>'+f[k]+'</b><small>'+lab+'</small></span>').join("")+'</div>'+sNote+'</div>';
+    +rows.map(([k,lab])=>'<span class="vf"><b>'+f[k]+'</b><small>'+labOf(k,lab)+'</small></span>').join("")+'</div>'+sNote+'</div>';
 }
 // 文法分關:有 family 就依家族分組(每族一關),否則退回每 3 條一關
 let GRAM_LV=null;
@@ -393,7 +400,7 @@ function renderLearn(){
     card.innerHTML=`<div class="counter">句型 ${learnIdx+1} / ${items.length}</div>
       <div class="qhead small"><b>${it.pattern}</b></div>
       <div class="zh" style="font-size:17px">${it.zh}</div>
-      <div class="ex"><div class="en" style="font-size:18px">${hlSignal(it.ex,it.signal)}</div><div class="ent">${it.exZh}</div></div>
+      <div class="ex"><div class="en" style="font-size:18px">${hlSignal(it.ex,it.signal,it.forms)}</div><div class="ent">${it.exZh}</div></div>
       <div class="hint" style="margin-top:16px">💡 ${it.signalNote||it.note}</div>
       ${vformsHTML(it.forms)}
       ${contrastHTML(it.contrast)}
@@ -449,10 +456,28 @@ function hlWord(sentence,word){
   try{return sentence.replace(new RegExp("\\b"+word+"\\b","i"),m=>'<b style="color:var(--accent)">'+m+'</b>');}catch(e){return sentence;}
 }
 // 把例句裡的訊號詞標紅(支援片語與含標點如 Look!),呼應下方 💡 說明
-function hlSignal(sentence,sig){
-  if(!sig)return sentence;
-  try{const esc=sig.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
-    return sentence.replace(new RegExp(esc),m=>'<b style="color:var(--accent)">'+m+'</b>');}catch(e){return sentence;}
+// forms 有給時,連「實際出現在句中的動詞樣子」一起標(紅+底線),呼應下方動詞表
+function hlSignal(sentence,sig,forms){
+  let out=sentence;
+  if(sig){
+    try{const esc=sig.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+      out=out.replace(new RegExp(esc),m=>'<b style="color:var(--accent)">'+m+'</b>');}catch(e){}
+  }
+  if(forms){
+    // 長的優先(opening 先於 open),取句中真的有的那個樣子,只標第一個
+    const cands=[forms.ing,forms.past,forms.s,forms.base].filter(Boolean)
+      .sort((a,b)=>b.length-a.length);
+    const plain=out.replace(/<[^>]+>/g,"");
+    for(const v of cands){
+      try{const esc=v.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+        const re=new RegExp("\\b"+esc+"\\b");
+        if(re.test(plain)){
+          out=out.replace(re,m=>'<b style="color:var(--accent);text-decoration:underline">'+m+'</b>');
+          break;}
+      }catch(e){}
+    }
+  }
+  return out;
 }
 
 function buildQuiz(){
