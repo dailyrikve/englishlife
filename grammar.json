@@ -82,6 +82,18 @@
     ],
     "answer": "boils",
     "note": "科學事實,用現在簡單式;主詞單數 → boils。"
+   },
+   {
+    "q": "Aunt Gina has lived in this town for more than sixty years, so she ___ it very well.",
+    "options": [
+     "will know",
+     "knew",
+     "knows",
+     "was going to know"
+    ],
+    "answer": "knows",
+    "note": "『現在很熟悉』是現在的事實，主詞 she 第三人稱單數，用 knows。最強干擾 will know 是未來式，但她現在就已經熟，不是未來才會知道。",
+    "src": "real"
    }
   ],
   "contrast": {
@@ -205,6 +217,42 @@
     ],
     "answer": "am writing",
     "note": "主詞 I + now → am writing。"
+   },
+   {
+    "q": "Listen! The baby ___ in the bedroom. Why don't you go in and take a look?",
+    "options": [
+     "cried",
+     "cries",
+     "is crying",
+     "will cry"
+    ],
+    "answer": "is crying",
+    "note": "Listen! 提示『此刻正在發生』，用現在進行式 is crying。最強干擾 cries 是現在簡單式，表習慣（每天哭），不符合『現在正在哭』的當下情境。",
+    "src": "real"
+   },
+   {
+    "q": "Have you found a summer job yet? Mr. Firth ___ someone to take care of his kids during the vacation.",
+    "options": [
+     "has looked for",
+     "is looking for",
+     "looks for",
+     "was looking for"
+    ],
+    "answer": "is looking for",
+    "note": "描述『現在正在找人』的進行狀態，用現在進行式 is looking for。最強干擾 looks for 是現在簡單式，表反覆習慣，無法凸顯『此刻正在進行』。",
+    "src": "real"
+   },
+   {
+    "q": "Christmas ___ and I want to visit my aunt abroad. Do you have any plans yet?",
+    "options": [
+     "came",
+     "comes",
+     "is coming",
+     "was coming"
+    ],
+    "answer": "is coming",
+    "note": "現在進行式可表『已排定、即將到來』的近未來，聖誕節快到了用 is coming。最強干擾 comes 是現在簡單式，多用於時刻表式客觀事實，語氣不如進行式自然。",
+    "src": "real"
    }
   ],
   "contrast": {
@@ -329,6 +377,30 @@
     ],
     "answer": "left",
     "note": "ago 表過去,leave → left。"
+   },
+   {
+    "q": "The chef ___ a delicious meal for the guests.",
+    "options": [
+     "was prepared",
+     "prepared",
+     "is prepared",
+     "has been prepared"
+    ],
+    "answer": "prepared",
+    "note": "廚師是『主動』做飯，用主動的過去簡單式 prepared。最強干擾 was prepared 是被動，意思變成『廚師被準備』，要主詞是 meal 才合理，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "Before becoming a movie star, she ___ the floors at the supermarket.",
+    "options": [
+     "mops",
+     "is mopping",
+     "has mopped",
+     "mopped"
+    ],
+    "answer": "mopped",
+    "note": "Before becoming a movie star（成名之前）指過去已結束的事，用過去簡單式 mopped。最強干擾 has mopped 是現在完成式，會把動作連到現在，與『成名前』的明確過去時段矛盾。",
+    "src": "real"
    }
   ],
   "contrast": {
@@ -461,6 +533,18 @@
     ],
     "answer": "will",
     "note": "tomorrow 表未來 → will open。"
+   },
+   {
+    "q": "My sister is coming to my home today. She ___ with me for a week.",
+    "options": [
+     "stays",
+     "stayed",
+     "has stayed",
+     "will stay"
+    ],
+    "answer": "will stay",
+    "note": "接下來要住一週是未來的事，用 will + 原形 will stay。最強干擾 stays 是現在簡單式，表習慣性動作，無法表達『未來將會』停留。",
+    "src": "real"
    }
   ],
   "contrast": {
@@ -714,6 +798,54 @@
     ],
     "answer": "were",
     "note": "主詞 The kids 複數 → were playing。"
+   },
+   {
+    "q": "While Sarah ___ a book in the library, her phone suddenly rang.",
+    "options": [
+     "read",
+     "was reading",
+     "has read",
+     "reads"
+    ],
+    "answer": "was reading",
+    "note": "While 引導『當時正在進行』的背景動作，被另一個短暫動作（rang）打斷，用過去進行式 was reading。最強干擾 read（過去式）只表動作完成，無法呈現『正進行中被打斷』。",
+    "src": "real"
+   },
+   {
+    "q": "Yesterday when I got home from work, my brother ___ for dinner, so he invited me to join him.",
+    "options": [
+     "goes out",
+     "went out",
+     "has gone out",
+     "was going out"
+    ],
+    "answer": "was going out",
+    "note": "我到家的那一刻，哥哥『正準備出門』（動作進行中），用過去進行式 was going out。最強干擾 went out 是過去式，表動作已結束，那他就不會還能邀我同行。",
+    "src": "real"
+   },
+   {
+    "q": "Rex did not feel the earthquake this morning. He ___ in the park at the time.",
+    "options": [
+     "jogged",
+     "was jogging",
+     "has jogged",
+     "would jog"
+    ],
+    "answer": "was jogging",
+    "note": "at the time（在那個時間點）正在做某事，用過去進行式 was jogging。最強干擾 jogged 是過去式，只說『慢跑過』，無法表達地震當下『正在進行』而沒感覺到。",
+    "src": "real"
+   },
+   {
+    "q": "Mr. Olson went to the doctor when he found he ___ his hair.",
+    "options": [
+     "was losing",
+     "is losing",
+     "will lose",
+     "has lost"
+    ],
+    "answer": "was losing",
+    "note": "那段過去期間『正持續掉髮』，用過去進行式 was losing。最強干擾 is losing 是現在進行式，時態與整句的過去（went, found）不一致。",
+    "src": "real"
    }
   ],
   "contrast": {
@@ -835,6 +967,54 @@
     ],
     "answer": "read",
     "note": "has + 過去分詞,read 三態同形 → read。"
+   },
+   {
+    "q": "She ___ all her homework assignments yet, has she?",
+    "options": [
+     "hadn't finished",
+     "hasn't finished",
+     "don't finish",
+     "didn't finish"
+    ],
+    "answer": "hasn't finished",
+    "note": "yet（尚未）與附加問句 has she 都指向現在完成式，表示『到現在為止還沒完成』，故用 hasn't finished。最強干擾 hadn't finished 是過去完成式，需要另一個更早的過去時間點當參照，本句沒有，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "Paul misses his parents a lot. He ___ them since he came to work in Taiwan a year ago.",
+    "options": [
+     "didn't see",
+     "doesn't see",
+     "hasn't seen",
+     "won't see"
+    ],
+    "answer": "hasn't seen",
+    "note": "since（自從…以來）固定搭配現在完成式，描述從過去延續到現在的狀態，故用 hasn't seen。最強干擾 didn't see 是過去簡單式，只講過去某次，無法表達『一直到現在』的持續，與 since 衝突。",
+    "src": "real"
+   },
+   {
+    "q": "I can't tell you what I think of the movie because I ___ it. I'll probably watch it this Saturday.",
+    "options": [
+     "am not seeing",
+     "don't see",
+     "haven't seen",
+     "won't see"
+    ],
+    "answer": "haven't seen",
+    "note": "『到目前為止還沒做、之後才要做』用現在完成式 haven't seen。最強干擾 don't see 是現在簡單式，表習慣或事實，無法表達『至今尚未』的經驗。",
+    "src": "real"
+   },
+   {
+    "q": "The courier ___ the documents three times today, but no one answered the door.",
+    "options": [
+     "delivers",
+     "has delivered",
+     "delivered",
+     "is delivering"
+    ],
+    "answer": "has delivered",
+    "note": "today（今天尚未結束）＋已發生數次，用現在完成式 has delivered，強調對現在的影響。最強干擾 delivered 是過去簡單式，會把動作切離現在，與 today 的『至今』語氣不合。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -967,6 +1147,18 @@
     ],
     "answer": "sorted",
     "note": "be + 過去分詞 → are sorted。"
+   },
+   {
+    "q": "Every parcel ___ by an X-ray machine before it leaves the post office.",
+    "options": [
+     "checks",
+     "is checked",
+     "checking",
+     "checked"
+    ],
+    "answer": "is checked",
+    "note": "每件包裹是『被』X 光機檢查，描述現在的例行規定，用現在式被動 is checked。最強干擾 checks 是主動現在式，意思變成『包裹檢查別人』，主被動相反。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -1088,6 +1280,66 @@
     ],
     "answer": "built",
     "note": "was + 過去分詞,build → built。"
+   },
+   {
+    "q": "Last night, due to the delay in flight departure, all the passengers ___ sandwiches.",
+    "options": [
+     "were given",
+     "have been given",
+     "are given",
+     "had been given"
+    ],
+    "answer": "were given",
+    "note": "乘客是『被給』三明治→被動；句首 Last night 是單一過去事件，用過去簡單被動 were given（主詞複數用 were）。最強干擾 had been given 是過去完成被動，需要更早的過去當參照點，本句沒有，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "Doraemon has hated mice since his ears ___ by a mouse.",
+    "options": [
+     "bit",
+     "bite",
+     "were bitten",
+     "have bitten"
+    ],
+    "answer": "were bitten",
+    "note": "耳朵是『被』老鼠咬→被動，且 since 指過去發生的那一刻，用過去簡單被動 were bitten。最強干擾 bit 是主動過去式，意思變成『耳朵咬了老鼠』，主被動相反。",
+    "src": "real"
+   },
+   {
+    "q": "The police haven't found the little girl who ___ at a supermarket.",
+    "options": [
+     "took away",
+     "taken away",
+     "has taken away",
+     "was taken away"
+    ],
+    "answer": "was taken away",
+    "note": "小女孩是『被』帶走→必須被動（排除主動的 took away / has taken away）；事件在過去某刻，用過去簡單被動 was taken away。最強干擾 took away 是主動，意思變成女孩主動帶走別人，語意不通。",
+    "src": "real"
+   },
+   {
+    "q": "The parcel ___ to the wrong address yesterday, so the customer complained.",
+    "options": [
+     "delivered",
+     "was delivered",
+     "delivers",
+     "is delivering"
+    ],
+    "answer": "was delivered",
+    "note": "包裹是『被』送到（動作的接受者），且 yesterday 是過去，用過去簡單被動 was delivered。最強干擾 delivered 是主動過去式，意思變成『包裹送了某物』，主被動相反。",
+    "src": "gen"
+   },
+   {
+    "q": "All the morning letters ___ by the postman before nine o'clock.",
+    "options": [
+     "sorted",
+     "were sorted",
+     "have sorted",
+     "are sorting"
+    ],
+    "answer": "were sorted",
+    "note": "信件是『被』分類，主詞複數且時間在過去（before nine），用過去簡單被動 were sorted。最強干擾 have sorted 是主動現在完成式，主被動與時態都不合。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -1206,6 +1458,54 @@
     ],
     "answer": "to get",
     "note": "would like 後接不定詞 → to get。"
+   },
+   {
+    "q": "It took me three hours ___ the work.",
+    "options": [
+     "do",
+     "to do",
+     "doing",
+     "done"
+    ],
+    "answer": "to do",
+    "note": "『花時間做某事』固定句型 It takes＋時間＋to V，空格用不定詞 to do。最強干擾 doing 是動名詞，這個句型不接動名詞，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "They considered it impossible ___ the project in two days.",
+    "options": [
+     "finished",
+     "to finish",
+     "had finished",
+     "finishing"
+    ],
+    "answer": "to finish",
+    "note": "consider it＋形容詞＋to V 句型中，it 是虛主詞，真正的事情用不定詞 to finish 表達。最強干擾 finishing 是動名詞，無法當虛主詞 it 所指代的真主詞，結構不符。",
+    "src": "real"
+   },
+   {
+    "q": "Although it took me lots of time ___ a big meal for ten people, I was happy.",
+    "options": [
+     "prepare",
+     "to prepare",
+     "preparing",
+     "prepared"
+    ],
+    "answer": "to prepare",
+    "note": "同樣是 It takes＋時間＋to V 句型，空格用不定詞 to prepare。最強干擾 preparing 是動名詞，此句型固定接 to V，不接 V-ing。",
+    "src": "real"
+   },
+   {
+    "q": "The new clerk decided ___ overtime to clear the backlog of parcels.",
+    "options": [
+     "work",
+     "to work",
+     "working",
+     "worked"
+    ],
+    "answer": "to work",
+    "note": "decide 後面固定接不定詞，故用 to work。最強干擾 working 是動名詞，decide 不接動名詞，故不選。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -1335,6 +1635,90 @@
     ],
     "answer": "waiting",
     "note": "keep 後接動名詞 → waiting。"
+   },
+   {
+    "q": "Susan avoids ___ alone on a long trip because she tends to fall asleep.",
+    "options": [
+     "drive",
+     "to drive",
+     "driving",
+     "driven"
+    ],
+    "answer": "driving",
+    "note": "avoid 後面接受詞時固定用動名詞，故用 driving。最強干擾 to drive 是不定詞，avoid 不接 to V（固定用法），故不選。",
+    "src": "real"
+   },
+   {
+    "q": "People often have trouble ___ attention to one thing.",
+    "options": [
+     "to pay",
+     "pay",
+     "paying",
+     "paid"
+    ],
+    "answer": "paying",
+    "note": "have trouble (in)＋V-ing 是固定句型，故用 paying。最強干擾 to pay 是不定詞，這個句型省略的是介系詞 in，後面只能接動名詞。",
+    "src": "real"
+   },
+   {
+    "q": "I think you should keep ___ and never give up.",
+    "options": [
+     "try",
+     "to try",
+     "trying",
+     "to trying"
+    ],
+    "answer": "trying",
+    "note": "keep＋V-ing 表『持續做某事』，故用 trying。最強干擾 to try 是不定詞，keep 表持續時固定接 V-ing，不接不定詞。",
+    "src": "real"
+   },
+   {
+    "q": "Dennis enjoys ___ in public. He is proud of his beautiful voice.",
+    "options": [
+     "dancing",
+     "drawing",
+     "shopping",
+     "singing"
+    ],
+    "answer": "singing",
+    "note": "enjoy 後面固定接動名詞（四個選項都是 V-ing，文法上都合 enjoy），再由『以美妙嗓音為傲』判斷內容是唱歌，故選 singing；dancing/drawing/shopping 文法對但與『嗓音』語意不合。",
+    "src": "real"
+   },
+   {
+    "q": "Cindy enjoys ___ her dad read stories to her before bed.",
+    "options": [
+     "to listen to",
+     "listening to",
+     "listen to",
+     "listens to"
+    ],
+    "answer": "listening to",
+    "note": "enjoy 後面接動名詞，故用 listening to。最強干擾 to listen to 是不定詞，enjoy 不接不定詞，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "Please avoid ___ fragile parcels at the bottom of the cart.",
+    "options": [
+     "to place",
+     "place",
+     "placing",
+     "placed"
+    ],
+    "answer": "placing",
+    "note": "avoid 後面固定接動名詞，故用 placing。最強干擾 to place 是不定詞，avoid 不接不定詞，正是常考陷阱。",
+    "src": "gen"
+   },
+   {
+    "q": "The supervisor suggested ___ the express letters first.",
+    "options": [
+     "to deliver",
+     "deliver",
+     "delivering",
+     "delivered"
+    ],
+    "answer": "delivering",
+    "note": "suggest 後面接動名詞，故用 delivering。最強干擾 to deliver 是不定詞，suggest 不接不定詞，故不選。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -1464,6 +1848,54 @@
     ],
     "answer": "solving",
     "note": "at 是介系詞,後接 V-ing → solving。"
+   },
+   {
+    "q": "I have gotten used to ___ tea during these two years.",
+    "options": [
+     "drink",
+     "drinking",
+     "have been drinking",
+     "have drunk"
+    ],
+    "answer": "drinking",
+    "note": "be/get used to 的 to 是介系詞（不是不定詞記號），後面動詞要變動名詞 drinking。最強干擾 drink 是原形，誤以為 to 後面接原形，正是本題陷阱。",
+    "src": "real"
+   },
+   {
+    "q": "Despite ___ incredibly tired, he continued working on the project.",
+    "options": [
+     "be",
+     "being",
+     "been",
+     "to be"
+    ],
+    "answer": "being",
+    "note": "Despite 是介系詞，後面只能接名詞或動名詞，故用 being。最強干擾 to be 是不定詞，介系詞後不可接不定詞，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "Mr. Lee has worked in the same store for ten years; he's never thought about ___ his job.",
+    "options": [
+     "changing",
+     "finding",
+     "remembering",
+     "starting"
+    ],
+    "answer": "changing",
+    "note": "think about 的 about 是介系詞，後面接動名詞（四個都是 V-ing 形式合文法），再依語意『做十年沒想過換工作』選 changing；finding/remembering/starting 文法對但語意不合。",
+    "src": "real"
+   },
+   {
+    "q": "She is good at ___ with difficult customers at the front desk.",
+    "options": [
+     "deal",
+     "to deal",
+     "dealing",
+     "dealt"
+    ],
+    "answer": "dealing",
+    "note": "be good at 的 at 是介系詞，後面動詞變動名詞，故用 dealing。最強干擾 deal 是原形，誤把介系詞 at 當成接原形，故不選。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -1582,6 +2014,66 @@
     ],
     "answer": "who",
     "note": "前面那個詞 boy 是人、當主詞 → who。"
+   },
+   {
+    "q": "James is a shy student ___ likes reading, especially historical novels.",
+    "options": [
+     "which",
+     "who",
+     "whom",
+     "whose"
+    ],
+    "answer": "who",
+    "note": "先行詞 student 是人，且關係子句中缺主詞，用主格關代 who。最強干擾 whom 是受格，用在子句缺受詞時，這裡缺的是主詞，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "The teacher, ___ has a lot of experience, is very helpful.",
+    "options": [
+     "whom",
+     "which",
+     "that",
+     "who"
+    ],
+    "answer": "who",
+    "note": "先行詞 teacher 是人、子句缺主詞，且逗號為非限定用法，用 who。最強干擾 that 雖可指人，但 that 不能用於逗號的非限定子句，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "Students ___ to go on the school trip should ask their parents first.",
+    "options": [
+     "who want",
+     "want",
+     "who they want",
+     "what they want"
+    ],
+    "answer": "who want",
+    "note": "先行詞 Students 是人、子句缺主詞，用 who 帶出 who want。最強干擾 want 少了關代，會讓句子出現 want 與 should ask 兩個動詞而沒有連接，結構錯誤。",
+    "src": "real"
+   },
+   {
+    "q": "I thought the girl ___ was Kate, but it was her sister, Candy.",
+    "options": [
+     "answered the phone",
+     "she answered the phone",
+     "who answered the phone",
+     "and answered the phone"
+    ],
+    "answer": "who answered the phone",
+    "note": "先行詞 girl 是人、子句缺主詞，用 who answered the phone 修飾 girl。最強干擾 she answered the phone 多了主詞 she，使子句變成完整句而無法當修飾語，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "The customer ___ is standing by the counter wants to send a registered letter.",
+    "options": [
+     "which",
+     "who",
+     "whom",
+     "whose"
+    ],
+    "answer": "who",
+    "note": "先行詞 customer 是人、子句缺主詞，用主格 who。最強干擾 which 只能指物，不可指人，故不選。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -1706,6 +2198,30 @@
     ],
     "answer": "which",
     "note": "前面那個詞 shop 是物 → which。"
+   },
+   {
+    "q": "This is the school from ___ I graduated.",
+    "options": [
+     "that",
+     "what",
+     "which",
+     "where"
+    ],
+    "answer": "which",
+    "note": "先行詞 school 是物，且前面有介系詞 from，指物的關代用 which（from which＝從那所學校）。最強干擾 that 不能接在介系詞後面（不可說 from that），故不選。",
+    "src": "real"
+   },
+   {
+    "q": "This is the form ___ you need to fill out before mailing a parcel abroad.",
+    "options": [
+     "who",
+     "which",
+     "whose",
+     "whom"
+    ],
+    "answer": "which",
+    "note": "先行詞 form 是物，用指物的關代 which。最強干擾 who 只能指人，不能修飾 form，故不選。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -1830,6 +2346,18 @@
     ],
     "answer": "whose",
     "note": "表「它的主人」所屬 → whose。"
+   },
+   {
+    "q": "We are looking for the customer ___ package was left at the counter this morning.",
+    "options": [
+     "who",
+     "which",
+     "whose",
+     "whom"
+    ],
+    "answer": "whose",
+    "note": "空格後接名詞 package，表『那位顧客的包裹』，所有格關代用 whose。最強干擾 who 是主格，後面不會直接接名詞表所屬，故不選。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -1955,6 +2483,54 @@
     ],
     "answer": "will",
     "note": "真實條件主句 → will wait。"
+   },
+   {
+    "q": "If we play some interesting games in class, there ___ more fun in learning English.",
+    "options": [
+     "are",
+     "has",
+     "will be",
+     "will have"
+    ],
+    "answer": "will be",
+    "note": "單純條件句：If 子句用現在式，主句講未來結果用 will；there 句型用 will be。最強干擾 will have 用錯動詞，there 表『有』要用 be 動詞而非 have，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "John will stay with his sister until he ___ an apartment.",
+    "options": [
+     "will find",
+     "would find",
+     "finds",
+     "found"
+    ],
+    "answer": "finds",
+    "note": "until 引導的時間副詞子句中，要用現在式代替未來式，故用 finds。最強干擾 will find 是常見錯誤，時間/條件子句裡不可再用 will，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "If it ___ tomorrow, the delivery vans will set off an hour earlier.",
+    "options": [
+     "rains",
+     "will rain",
+     "rained",
+     "is raining"
+    ],
+    "answer": "rains",
+    "note": "單純條件句：If 子句用現在式代替未來，故用 rains。最強干擾 will rain 是常見錯誤，條件子句裡不可用 will，will 要放在主句。",
+    "src": "gen"
+   },
+   {
+    "q": "The clerk will help you fill out the form if you ___ at the counter.",
+    "options": [
+     "will wait",
+     "wait",
+     "waited",
+     "would wait"
+    ],
+    "answer": "wait",
+    "note": "if 條件子句用現在式，故用 wait。最強干擾 will wait 把 will 放進條件子句是錯誤，未來的意思由主句的 will help 表達即可。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -2068,6 +2644,54 @@
     ],
     "answer": "lived",
     "note": "與現在相反,if 句子用過去式 → lived。"
+   },
+   {
+    "q": "If I ___ more money, I would buy a big house for my parents.",
+    "options": [
+     "have",
+     "will have",
+     "having",
+     "had"
+    ],
+    "answer": "had",
+    "note": "與現在事實相反的假設（其實沒錢），If 子句用過去式 had、主句用 would＋原形。最強干擾 have 是現在式，那會變成單純條件句，無法表達『與現在事實相反』的語氣。",
+    "src": "real"
+   },
+   {
+    "q": "If I ___ you, I would take the opportunity and learn as much as possible.",
+    "options": [
+     "am",
+     "wasn't",
+     "were",
+     "have been"
+    ],
+    "answer": "were",
+    "note": "與現在事實相反的假設，be 動詞一律用 were（If I were you 是固定說法）。最強干擾 am 是現在式直述，無法表達『假設我是你』的非現實語氣。",
+    "src": "real"
+   },
+   {
+    "q": "If I ___ the manager, I would open one more counter at lunchtime.",
+    "options": [
+     "am",
+     "was",
+     "were",
+     "will be"
+    ],
+    "answer": "were",
+    "note": "與現在事實相反的假設（我其實不是經理），be 動詞用 were。最強干擾 am 是現在直述，無法表達『假設我是經理』的非現實語氣。",
+    "src": "gen"
+   },
+   {
+    "q": "If our office ___ closer to the station, more customers would come in.",
+    "options": [
+     "is",
+     "were",
+     "will be",
+     "has been"
+    ],
+    "answer": "were",
+    "note": "與現在事實相反的假設，If 子句 be 動詞用 were。最強干擾 is 是現在式，會變成單純條件，失去『與現在相反』的假設語氣。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -2148,6 +2772,18 @@
     ],
     "answer": "had",
     "note": "更早完成 → had finished。"
+   },
+   {
+    "q": "When her friends invited Judy to watch the movie, she declined because she ___ it before.",
+    "options": [
+     "was to see",
+     "did see",
+     "had seen",
+     "were seen"
+    ],
+    "answer": "had seen",
+    "note": "declined 是過去，而『先前看過』發生得更早（過去的過去），用過去完成式 had seen。最強干擾 did see 是過去簡單式，無法表達兩個過去動作的先後順序。",
+    "src": "real"
    }
   ],
   "contrast": {
@@ -2247,6 +2883,30 @@
     ],
     "answer": "would have",
     "note": "與過去相反,主句 would have + p.p. → would have caught。"
+   },
+   {
+    "q": "If he had taken my advice, he ___ the mistake. Now he regretted not listening to me.",
+    "options": [
+     "might make",
+     "might had made",
+     "might not made",
+     "might not have made"
+    ],
+    "answer": "might not have made",
+    "note": "與過去事實相反，If 子句用 had taken，主句用 might/would have＋過去分詞，故 might not have made。最強干擾 might make 少了 have＋p.p.，無法表達『與過去相反』的結果，且與 had taken 不對稱。",
+    "src": "real"
+   },
+   {
+    "q": "If you had weighed the package, you ___ the correct postage.",
+    "options": [
+     "would pay",
+     "would have paid",
+     "will pay",
+     "paid"
+    ],
+    "answer": "would have paid",
+    "note": "與過去事實相反，If 子句用 had weighed，主句用 would have＋過去分詞，故 would have paid。最強干擾 would pay 少了 have＋p.p.，那是與現在相反的句型，與 had weighed 不對稱。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -2359,6 +3019,42 @@
     ],
     "answer": "Although",
     "note": "讓步語氣 → Although。"
+   },
+   {
+    "q": "Elsa never learned to communicate in Spanish ___ she lived in Spain for more than ten years.",
+    "options": [
+     "in spite of",
+     "for",
+     "despite",
+     "although"
+    ],
+    "answer": "although",
+    "note": "空格後是完整句子（she lived...），表『雖然』的讓步用連接詞 although。最強干擾 despite 意思相近，但它是介系詞，後面只能接名詞不能接句子，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "___ machines have been used to pick fruits for a long time, they were not used on strawberry farms until recently.",
+    "options": [
+     "Although",
+     "Because",
+     "Before",
+     "If"
+    ],
+    "answer": "Although",
+    "note": "前後兩句語意相反（機器早就有，草莓園卻很晚才用），用『雖然』Although。最強干擾 Because 表原因，但兩句不是因果關係，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "___ the line was very long, the clerk kept smiling and stayed polite.",
+    "options": [
+     "Although",
+     "Because",
+     "So",
+     "Unless"
+    ],
+    "answer": "Although",
+    "note": "前後語意相反（隊伍很長 vs 仍保持微笑），用讓步連接詞 Although。最強干擾 Because 表原因，但兩句並非因果，故不選。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -2482,6 +3178,30 @@
     ],
     "answer": "because of",
     "note": "後面是名詞 the holiday → because of。"
+   },
+   {
+    "q": "It's dangerous to block an emergency exit in buildings ___ it can prevent people from escaping.",
+    "options": [
+     "unless",
+     "due to",
+     "so that",
+     "because"
+    ],
+    "answer": "because",
+    "note": "空格後是完整句子在說明原因，用連接詞 because（because＋句子）。最強干擾 due to 雖表原因，但它是介系詞片語，後面接名詞而非句子，故不選。",
+    "src": "real"
+   },
+   {
+    "q": "The post office closed early ___ a sudden power failure in the area.",
+    "options": [
+     "because",
+     "because of",
+     "although",
+     "so"
+    ],
+    "answer": "because of",
+    "note": "空格後是名詞片語 a sudden power failure（不是完整句子），表原因要用 because of。最強干擾 because 後面必須接完整句子，不能直接接名詞，故不選。",
+    "src": "gen"
    }
   ],
   "contrast": {
@@ -2720,6 +3440,30 @@
     ],
     "answer": "but",
     "note": "not only…but also → but。"
+   },
+   {
+    "q": "Global warming is responsible ___ for shrinking ice caps but also for a surge in extreme weather.",
+    "options": [
+     "not only",
+     "only not",
+     "no longer",
+     "not longer"
+    ],
+    "answer": "not only",
+    "note": "後面有 but also，前面必須配 not only，構成 not only...but also（不僅…而且…）相關連接詞。最強干擾 no longer（不再）語意與 but also 不搭，無法形成對應結構。",
+    "src": "real"
+   },
+   {
+    "q": "Not only ___ the American student speak Chinese well, but she also understands Taiwanese.",
+    "options": [
+     "do",
+     "will",
+     "did",
+     "does"
+    ],
+    "answer": "does",
+    "note": "Not only 置於句首要倒裝（助動詞提前）；主詞為第三人稱單數、且由 understands 可知是現在式，故用 does。最強干擾 did 是過去式，與後半句現在式 understands 時態不一致。",
+    "src": "real"
    }
   ],
   "contrast": {

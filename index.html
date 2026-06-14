@@ -124,6 +124,7 @@
   .daycell{position:relative;border:1.5px solid var(--line);background:#fffaf0;border-radius:14px;padding:13px 6px;text-align:center;cursor:pointer;font-family:inherit;transition:.12s;}
   .daycell:hover{border-color:var(--teal);} .daycell .dn{font-family:'Fraunces',serif;font-size:16px;font-weight:600;} .daycell .st{font-size:11px;color:var(--muted);margin-top:3px;}
   .daycell.done{background:#e7f3ea;border-color:#a8d3ba;} .daycell.done .st{color:var(--good);} .daycell .todaytag{position:absolute;top:-8px;right:-6px;background:var(--teal);color:#fff;font-size:10px;border-radius:10px;padding:1px 7px;}
+  .daycell .advbadge{position:absolute;top:-8px;left:-6px;background:#fbeee6;color:#b3502e;border:1px solid #e6c3ab;font-size:10px;font-weight:600;border-radius:10px;padding:1px 7px;}
 </style>
 </head>
 <body>
@@ -142,20 +143,23 @@
 
 <script>
 const DEFAULT_WPD=8, DAY_OPTIONS=[6,8,10,12,15], EXAM_ROUNDS=3, DEFAULT_SPRINT_N=20, SPRINT_OPTIONS=[10,15,20,25];
+const DEFAULT_GSPRINT_N=15, GSPRINT_OPTIONS=[10,15,20,25]; // 文法衝刺題數(比照單字衝刺;預設 15)
 const CATS=[
   {key:"vocab",name:"單字",ic:"📦",ds:"核心高頻字"},
   {key:"grammar",name:"文法",ic:"🔧",ds:"常考句型"},
   {key:"reading",name:"閱讀",ic:"📖",ds:"短文與克漏字"},
   {key:"exam",name:"模擬考",ic:"📝",ds:"綜合實戰"},
-  {key:"sprint",name:"單字衝刺",ic:"⚡",ds:"每天實戰,錯字優先"}
+  {key:"sprint",name:"單字衝刺",ic:"⚡",ds:"每天實戰,錯字優先"},
+  {key:"gsprint",name:"文法衝刺",ic:"🧩",ds:"句型實戰,錯題優先"}
 ];
 let ALL=[], GRAMMAR=[], READING=[];
 let DAYS=[];
 const ONE_DAY=86400000;
-let state={startDate:null,wordsPerDay:DEFAULT_WPD,sprintN:DEFAULT_SPRINT_N,progress:{vocab:{},grammar:{},reading:{},exam:{},sprint:{}}};
+let state={startDate:null,wordsPerDay:DEFAULT_WPD,sprintN:DEFAULT_SPRINT_N,gsprintN:DEFAULT_GSPRINT_N,progress:{vocab:{},grammar:{},reading:{},exam:{},sprint:{},gsprint:{}}};
 let phase="home", curCat=null, viewLevel=0, learnIdx=0;
 let quizQ=[], quizIdx=0, quizScore=0, quizCtx=null, answered=false;
 let sprintWrong=[];
+let gramSprintWrong=[]; // 文法衝刺本回答錯的句型(供完成畫面列出)
 const STORE_KEY="dailyEnglishState_v2";
 
 function loadState(){
@@ -163,8 +167,9 @@ function loadState(){
   if(!state.startDate)state.startDate=Date.now();
   if(!state.wordsPerDay)state.wordsPerDay=DEFAULT_WPD;
   if(!state.sprintN)state.sprintN=DEFAULT_SPRINT_N;
-  if(!state.progress)state.progress={vocab:{},grammar:{},reading:{},exam:{},sprint:{}};
-  for(const c of CATS)if(!state.progress[c.key])state.progress[c.key]={};
+  if(!state.gsprintN)state.gsprintN=DEFAULT_GSPRINT_N;
+  if(!state.progress)state.progress={vocab:{},grammar:{},reading:{},exam:{},sprint:{},gsprint:{}};
+  for(const c of CATS)if(!state.progress[c.key])state.progress[c.key]={}; // 舊存檔自動補上 gsprint:{} 等缺漏欄位
   saveState();
 }
 function saveState(){try{localStorage.setItem(STORE_KEY,JSON.stringify(state));}catch(e){}}
@@ -279,6 +284,7 @@ function levelCount(cat){
   if(cat==="reading")return READING.length;
   if(cat==="exam")return (ALL.length&&GRAMMAR.length)?EXAM_ROUNDS:0;
   if(cat==="sprint")return ALL.length?1:0; // 衝刺沒有關卡;回傳非 0 只為了讓首頁卡片不被當「準備中」
+  if(cat==="gsprint")return GRAMMAR.length?1:0; // 文法衝刺同理,不走 level 計數
   return 0;
 }
 function doneCount(cat){return Object.keys(state.progress[cat]||{}).length;}
@@ -287,10 +293,16 @@ function currentLevel(cat){ // 第一個還沒完成的關卡
 }
 // 單字關卡的題型:前段選中文→中段拼字母→後段選英文
 function vocabFmt(i){return i<2?"zh":i<4?"en":i<6?"fillp":"fillf";}
-function vocabFmtLabel(i){const f=vocabFmt(i);return f==="zh"?"選中文":f==="en"?"選英文":f==="fillp"?"補字母":"拼全字";}
+// 第7關起改為「綜合」:同一關內四種題型(選中文/選英文/補字母/拼全字)輪流,避免後段一路只有拼全字
+function vocabMixed(i){return i>=6;}
+function vocabQFmt(level,j){return vocabMixed(level)?["zh","en","fillp","fillf"][j%4]:vocabFmt(level);}
+// 該關是否以進階字(level>=2)為主 → 首頁關卡格標「進階」(依實際單字判斷,自動適應每日字數)
+function vocabAdv(i){const set=DAYS[i];if(!set||!set.length)return false;
+  return set.filter(w=>(w.level||1)>=2).length*2>set.length;}
+function vocabFmtLabel(i){if(vocabMixed(i))return "綜合";const f=vocabFmt(i);return f==="zh"?"選中文":f==="en"?"選英文":f==="fillp"?"補字母":"拼全字";}
 function fmtHint(cat,i){
   if(i>=levelCount(cat))return "這個大類已全部完成,可回去複習任何一關。";
-  if(cat==="vocab"){const f=vocabFmt(i);return f==="zh"?"看英文,選出正確的中文意思。":f==="en"?(i>=3?"進階:從長得很像的英文裡選出正確的字。":"看中文,從幾個英文裡選出正確的字。"):f==="fillp"?"聽發音,把單字缺少的字母補上。":"聽發音,把整個單字拼出來。";}
+  if(cat==="vocab"){if(vocabMixed(i))return "綜合題:選中文、選英文、補字母、拼全字輪流出現,模擬實戰。";const f=vocabFmt(i);return f==="zh"?"看英文,選出正確的中文意思。":f==="en"?(i>=3?"進階:從長得很像的英文裡選出正確的字。":"看中文,從幾個英文裡選出正確的字。"):f==="fillp"?"聽發音,把單字缺少的字母補上。":"聽發音,把整個單字拼出來。";}
   if(cat==="grammar")return "看句型卡和對比例句,先找出關鍵字,再選出正確用法。";
   if(cat==="reading")return "先熟悉關鍵字,再讀短文用刪去法找答案。";
   if(cat==="exam")return "各種題型混合的小考,練習絕不留白、先刪再猜。";
@@ -311,14 +323,14 @@ function chrome(){
   const home=(phase==="home");
   document.getElementById("topbar").style.display=home?"none":"flex";
   document.getElementById("progress").style.display=(phase==="learn"||phase==="quiz")?"block":"none";
-  let totDone=0;for(const c of CATS){if(c.key==="sprint")continue;totDone+=doneCount(c.key);}
+  let totDone=0;for(const c of CATS){if(c.key.endsWith("sprint"))continue;totDone+=doneCount(c.key);} // sprint / gsprint 皆不計關
   document.getElementById("streak").textContent="完成 "+totDone+" 關";
   let learned=0;for(const k in state.progress.vocab){const i=parseInt(k.replace("L",""));if(DAYS[i])learned+=DAYS[i].length;}
   document.getElementById("tally").textContent="累積認得 "+learned+" 個單字";
   if(!home){
     const cn=CATS.find(c=>c.key===curCat);
-    document.getElementById("dayBig").textContent=(phase==="cat")?cn.name:(curCat==="sprint"?cn.name:(cn.name+" · 第 "+(viewLevel+1)+" 關"));
-    document.getElementById("daySub").textContent=phase==="quiz"?"作答中":(phase==="done"||phase==="sprintDone")?"完成":phase==="sprintSetup"?"選題數":phase==="learn"?"學習":("共 "+levelCount(curCat)+" 關");
+    document.getElementById("dayBig").textContent=(phase==="cat")?cn.name:(curCat.endsWith("sprint")?cn.name:(cn.name+" · 第 "+(viewLevel+1)+" 關"));
+    document.getElementById("daySub").textContent=phase==="quiz"?"作答中":(phase==="done"||phase==="sprintDone"||phase==="gsprintDone")?"完成":(phase==="sprintSetup"||phase==="gsprintSetup")?"選題數":phase==="learn"?"學習":("共 "+levelCount(curCat)+" 關");
     if(phase==="learn"||phase==="quiz"){
       let pct=phase==="learn"?(DAYS[viewLevel]?learnIdx/DAYS[viewLevel].length*50:0):(quizQ.length?50+quizIdx/quizQ.length*50:50);
       document.getElementById("bar").style.width=pct+"%";
@@ -333,6 +345,8 @@ function render(){chrome();
   else if(phase==="done")renderDone();
   else if(phase==="sprintDone")renderSprintDone();
   else if(phase==="sprintSetup")renderSprintSetup();
+  else if(phase==="gsprintDone")renderGramSprintDone();
+  else if(phase==="gsprintSetup")renderGramSprintSetup();
 }
 
 function renderHome(){
@@ -341,6 +355,7 @@ function renderHome(){
     const n=levelCount(c.key),locked=n===0;
     let pr;
     if(c.key==="sprint"){const np=Object.keys(state.progress.sprint||{}).length;pr=locked?'準備中':(np?('已練 '+np+' 字'):'點我開始');}
+    else if(c.key==="gsprint"){const np=Object.keys(state.progress.gsprint||{}).length;pr=locked?'準備中':(np?('已練 '+np+' 句型'):'點我開始');}
     else{pr=locked?'準備中':('完成 '+doneCount(c.key)+' / '+n+' 關');}
     html+=`<button class="catcard ${locked?'locked':''}" data-c="${c.key}">
       <div class="ic">${c.ic}</div><div class="nm">${c.name}</div><div class="ds">${c.ds}</div>
@@ -350,6 +365,7 @@ function renderHome(){
   const card=document.getElementById("card");card.innerHTML=html;
   card.querySelectorAll(".catcard").forEach(b=>{b.onclick=()=>{
     if(b.dataset.c==="sprint"){if(!ALL.length){alert("單字資料還沒載入完成,請稍候再試。");return;}curCat="sprint";phase="sprintSetup";render();return;}
+    if(b.dataset.c==="gsprint"){if(!GRAMMAR.length){alert("文法資料還沒載入完成,請稍候再試。");return;}curCat="gsprint";phase="gsprintSetup";render();return;}
     if(levelCount(b.dataset.c)===0){alert("這個大類的資料還沒上傳,敬請期待。");return;}
     curCat=b.dataset.c;phase="cat";render();};});
 }
@@ -367,7 +383,8 @@ function renderCat(){
   html+='<div class="menu-title">所有關卡(可自由前後挑戰)</div><div class="grid" id="grid">';
   for(let i=0;i<n;i++){const rec=state.progress[curCat]["L"+i];
     const tag=(curCat==="vocab")?('<div class="st" style="color:var(--accent)">'+vocabFmtLabel(i)+'</div>'):'';
-    html+=`<button class="daycell ${rec?'done':''}" data-l="${i}">
+    const adv=(curCat==="vocab"&&vocabAdv(i))?'<span class="advbadge">進階</span>':'';
+    html+=`<button class="daycell ${rec?'done':''}" data-l="${i}">${adv}
       <div class="dn">第 ${i+1} 關</div>${tag}<div class="st">${rec?('✓ '+rec.score+'/'+rec.total):'未挑戰'}</div></button>`;}
   html+='</div>';
   const card=document.getElementById("card");card.innerHTML=html;
@@ -520,12 +537,14 @@ function sprintWeight(en){
   return weight;
 }
 // 加權隨機抽樣,一個 session 內不重複
-function weightedSampleNoRepeat(pool,n){
+// weightFn(item)->權重;預設沿用單字衝刺(讀 .en),確保既有呼叫行為完全不變
+function weightedSampleNoRepeat(pool,n,weightFn){
+  weightFn=weightFn||(x=>sprintWeight(x.en));
   const picks=[],avail=pool.slice();
   n=Math.min(n,avail.length);
   for(let k=0;k<n;k++){
     let tot=0;const ws=new Array(avail.length);
-    for(let i=0;i<avail.length;i++){const x=sprintWeight(avail[i].en);ws[i]=x;tot+=x;}
+    for(let i=0;i<avail.length;i++){const x=weightFn(avail[i]);ws[i]=x;tot+=x;}
     let r=Math.random()*tot,idx=avail.length-1;
     for(let i=0;i<avail.length;i++){r-=ws[i];if(r<=0){idx=i;break;}}
     picks.push(avail[idx]);avail.splice(idx,1);
@@ -549,7 +568,7 @@ function renderSprintSetup(){
 function startSprint(){
   if(!ALL.length){alert("單字資料還沒載入完成,請稍候再試。");return;}
   curCat="sprint";sprintWrong=[];quizCtx=null;quizIdx=0;quizScore=0;answered=false;
-  const picks=weightedSampleNoRepeat(ALL,state.sprintN||DEFAULT_SPRINT_N);
+  const picks=weightedSampleNoRepeat(ALL,state.sprintN||DEFAULT_SPRINT_N,w=>sprintWeight(w.en));
   quizQ=picks.map(w=>{
     const opts=shuffle([w.en,...pickDistract(w,3,"hard").map(x=>x.en)]); // 形近字干擾,最像考場
     const lvtag=w.level===3?'<span class="lvtag lv3">進階</span> ':w.level===2?'<span class="lvtag lv2">進階</span> ':'';
@@ -581,17 +600,84 @@ function renderSprintDone(){
   document.getElementById("again").onclick=()=>startSprint();
 }
 
+// ===== 文法衝刺(第 6 大類):全句型混抽、間隔複習加權 =====
+// 每個句型記 {r:答對次數, w:答錯次數},存在 state.progress.gsprint[pattern]
+// 公式與 sprintWeight 完全相同,只是改讀 gsprint 與用 pattern 當 key
+function gramSprintWeight(pattern){
+  const sp=state.progress.gsprint||{};const s=sp[pattern]||{r:0,w:0};
+  const w_stat=s.w||0, r_stat=s.r||0;
+  let weight=1;
+  weight*=(1+2*w_stat);                       // 錯越多 → 權重越高
+  if(w_stat===0&&r_stat>=2)weight*=0.25;      // 連續答對且沒錯 → 很少出(但不歸零)
+  else if(r_stat>w_stat)weight*=0.6;          // 對多於錯 → 降低
+  if(r_stat===0&&w_stat===0)weight*=1.5;      // 沒練過 → 略優先,讓新句型浮現
+  return weight;
+}
+function renderGramSprintSetup(){
+  const np=Object.keys(state.progress.gsprint||{}).length;
+  const cur=state.gsprintN||DEFAULT_GSPRINT_N;
+  let html=`<div class="counter" style="text-align:center">文法衝刺 🧩</div>
+    <div class="hint" style="margin-top:14px">全部句型混抽,答錯的句型之後會更常出現。${np?('目前已練 '+np+' 個句型。'):'這是練習,沒有及格門檻,放心衝。'}</div>
+    <div class="setting"><div class="lab">這一回要練幾題?</div><div class="chips" id="gschips">`+
+    GSPRINT_OPTIONS.map(x=>`<button class="chip ${x===cur?'on':''}" data-n="${x}">${x} 題</button>`).join("")+`</div></div>
+    <div class="row"><button class="btn btn-ghost" id="home">‹ 返回</button>
+    <button class="btn btn-main" id="go">開始衝刺 🧩</button></div>`;
+  const card=document.getElementById("card");card.innerHTML=html;
+  card.querySelectorAll("#gschips .chip").forEach(c=>{c.onclick=()=>{state.gsprintN=parseInt(c.dataset.n);saveState();render();};});
+  document.getElementById("home").onclick=()=>{phase="home";render();};
+  document.getElementById("go").onclick=()=>startGramSprint();
+}
+function startGramSprint(){
+  if(!GRAMMAR.length){alert("文法資料還沒載入完成,請稍候再試。");return;}
+  curCat="gsprint";gramSprintWrong=[];quizCtx=null;quizIdx=0;quizScore=0;answered=false;
+  // 全句型混抽,加權不重複;實際題數 = min(設定值, 可用句型數)
+  const picks=weightedSampleNoRepeat(GRAMMAR,state.gsprintN||DEFAULT_GSPRINT_N,g=>gramSprintWeight(g.pattern));
+  quizQ=[];
+  for(const it of picks){
+    const qq=shuffle(gramBank(it))[0]; // 每句型抽一題;純考題,不放找關鍵字教學步驟
+    if(!qq)continue;
+    const q=gramFormQ(qq);
+    q.gPattern=it.pattern;            // 記回 stats 用
+    q.gZh=it.zh;                      // 完成畫面一句說明備援
+    quizQ.push(q);
+  }
+  phase="quiz";render();
+}
+function finishGramSprint(){phase="gsprintDone";render();}
+function renderGramSprintDone(){
+  const total=quizQ.length;
+  const seen=new Set(),wrongs=[];
+  for(const q of gramSprintWrong){if(seen.has(q.gPattern))continue;seen.add(q.gPattern);wrongs.push(q);}
+  let html=`<div class="counter" style="text-align:center">文法衝刺完成</div>
+    <div style="text-align:center;padding:14px 0">
+    <div style="font-size:52px">🧩</div>
+    <div style="font-family:'Fraunces';font-size:40px;color:var(--accent);font-weight:600">${quizScore} / ${total}</div>
+    <p style="color:var(--muted);margin-top:6px">${wrongs.length?'答錯的句型會在之後更常出現,多衝幾輪就熟了。':'全對!保持手感,等等再來一回。'}</p></div>`;
+  if(wrongs.length){
+    html+='<div class="conf"><div class="conf-h">這次答錯的句型</div>'
+      +wrongs.map(q=>'<div class="conf-row"><span class="conf-w" style="font-size:15px;min-width:0">'+q.gPattern+'</span><span class="conf-zh">'+(q.note||q.gZh||"")+'</span></div>').join("")
+      +'</div>';
+  }
+  html+=`<div class="row"><button class="btn btn-ghost" id="home">回目錄</button>
+    <button class="btn btn-main" id="again">再衝一回 🧩</button></div>`;
+  const card=document.getElementById("card");card.innerHTML=html;
+  document.getElementById("home").onclick=()=>{phase="home";render();};
+  document.getElementById("again").onclick=()=>startGramSprint();
+}
+
 function buildQuiz(){
   quizQ=[];quizCtx=null;quizIdx=0;quizScore=0;answered=false;
   if(curCat==="vocab"){
-    const set=DAYS[viewLevel],f=vocabFmt(viewLevel);
-    for(const w of shuffle(set)){
+    const set=DAYS[viewLevel],mixed=vocabMixed(viewLevel);
+    shuffle(set).forEach((w,j)=>{
+      const f=mixed?vocabQFmt(viewLevel,j):vocabFmt(viewLevel);
+      const hard=(viewLevel>=3||(w.level||1)>=2); // 進階字或後段關卡:用形近字干擾
       if(f==="zh"){const opts=shuffle([w.zh,...pickDistract(w,3,"easy").map(x=>x.zh)]);
         quizQ.push({kind:"choice",head:w.en,speak:w.en,ask:"這個字的意思是?(可點🔊)",options:opts,answer:w.zh});}
-      else if(f==="en"){const opts=shuffle([w.en,...pickDistract(w,3,viewLevel>=3?"hard":"easy").map(x=>x.en)]);
+      else if(f==="en"){const opts=shuffle([w.en,...pickDistract(w,3,hard?"hard":"easy").map(x=>x.en)]);
         quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"哪一個是正確的英文?",options:opts,answer:w.en});}
       else{quizQ.push({kind:"fill",head:w.zh,headSmall:true,ask:(f==="fillf"?"聽發音,把整個單字拼出來":"聽發音,補上缺少的字母"),speak:w.en,syl:w.syl,answer:w.en,full:(f==="fillf")});}
-    }
+    });
   } else if(curCat==="grammar"){
     const lvl=gramLevels()[viewLevel];
     const per=lvl.length<=4?2:1; // 小家族每句型抽2題,大家族抽1題,控制每關長度
@@ -634,10 +720,12 @@ function renderQuiz(){
   card.innerHTML=html;
   if(q.speak){document.getElementById("spk").onclick=()=>speak(q.speak);speak(q.speak);}
   const fb=document.getElementById("fb");
-  function go(){if(quizIdx<quizQ.length-1){quizIdx++;render();}else{if(curCat==="sprint")finishSprint();else finishLevel();}}
+  function go(){if(quizIdx<quizQ.length-1){quizIdx++;render();}else{if(curCat==="sprint")finishSprint();else if(curCat==="gsprint")finishGramSprint();else finishLevel();}}
   function after(ok,picked){answered=true;quizScore+=ok?1:0;
     if(curCat==="sprint"&&q.sprintEn){const sp=state.progress.sprint||(state.progress.sprint={});
       const st=sp[q.sprintEn]||(sp[q.sprintEn]={r:0,w:0});if(ok)st.r++;else{st.w++;sprintWrong.push(q);}saveState();}
+    if(curCat==="gsprint"&&q.gPattern){const gp=state.progress.gsprint||(state.progress.gsprint={});
+      const st=gp[q.gPattern]||(gp[q.gPattern]={r:0,w:0});if(ok)st.r++;else{st.w++;gramSprintWrong.push(q);}saveState();}
     fb.className="feedback show "+(ok?"ok":"no");
     let body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
     if(!ok && (curCat==="vocab"||curCat==="exam"||curCat==="sprint"))body+=discrimHTML(q.answer,picked); // 形近字辨別卡:單字/模擬考/衝刺都出現
