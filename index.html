@@ -66,6 +66,11 @@
   .fillin:focus{outline:none;border-color:var(--teal);}
   .feedback{margin-top:14px;font-size:15px;line-height:1.6;padding:12px;border-radius:10px;display:none;}
   .feedback.show{display:block;} .feedback.ok{background:#e7f3ea;color:var(--good);} .feedback.no{background:#f7e3df;color:var(--bad);}
+  /* 文法題:答完後分開列出整句中文意思 */
+  .qzh{margin-top:12px;padding-top:10px;border-top:1px dashed rgba(120,90,40,.28);}
+  .qzh-h{font-size:11px;letter-spacing:.06em;color:var(--muted);margin-bottom:5px;}
+  .qzh-en{font-family:'Fraunces',serif;font-size:16px;line-height:1.5;color:var(--ink);}
+  .qzh-zh{font-size:14.5px;margin-top:4px;color:var(--ink);}
   .note{font-size:11px;color:var(--muted);text-align:center;margin-top:28px;letter-spacing:.05em;}
   .errbox{background:#f7e3df;border:1px solid var(--bad);border-radius:14px;padding:20px;color:#7a2417;line-height:1.6;font-size:14px;}
   /* 形近字對比 */
@@ -272,7 +277,13 @@ function gramBank(it){
   const bank=(Array.isArray(it.qbank)&&it.qbank.length)?it.qbank:[{q:it.q,options:it.options,answer:it.answer,note:it.note}];
   return bank.filter(x=>x&&Array.isArray(x.options)&&x.options.length&&x.answer);
 }
-function gramFormQ(qq){return {kind:"choice",head:qq.q,headSmall:true,ask:"選出正確答案",options:shuffle(qq.options.slice()),answer:qq.answer,note:qq.note};}
+function gramFormQ(qq){return {kind:"choice",head:qq.q,headSmall:true,ask:"選出正確答案",options:shuffle(qq.options.slice()),answer:qq.answer,note:qq.note,qZh:qq.qZh};}
+// 答完後的「整句意思」小卡:把題目空格填入正解,並附整句中文(資料有 qZh 才顯示)
+function gramSentenceHTML(q){
+  if(!q||!q.qZh)return "";
+  const en=/_{2,}/.test(q.head)?q.head.replace(/_{2,}/,'<b style="color:var(--accent)">'+q.answer+'</b>'):q.head;
+  return '<div class="qzh"><div class="qzh-h">整句意思</div><div class="qzh-en">'+en+'</div><div class="qzh-zh">'+q.qZh+'</div></div>';
+}
 
 
 function rechunk(){DAYS=[];const w=state.wordsPerDay;for(let i=0;i<ALL.length;i+=w)DAYS.push(ALL.slice(i,i+w));}
@@ -729,12 +740,14 @@ function renderQuiz(){
     fb.className="feedback show "+(ok?"ok":"no");
     let body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
     if(!ok && (curCat==="vocab"||curCat==="exam"||curCat==="sprint"))body+=discrimHTML(q.answer,picked); // 形近字辨別卡:單字/模擬考/衝刺都出現
+    if(q.qZh && (curCat==="grammar"||curCat==="gsprint"))body+=gramSentenceHTML(q); // 文法/文法衝刺:答完分開列出整句中文
     fb.innerHTML=body;
     fb.querySelectorAll(".confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
-    if(ok){setTimeout(go,q.note?1300:850);} // 答對:保留節奏,自動進下一題
-    else{ // 答錯:畫面停住,由考生看懂後自己按
+    const manualNext=(curCat==="grammar"||curCat==="gsprint"); // 文法說明較長,答對也讓考生自己按
+    if(ok && !manualNext){setTimeout(go,q.note?1300:850);} // 其餘大類答對仍保留節奏自動前進
+    else{ // 答錯一律停住;文法/文法衝刺答對也停住,給時間看說明
       const wrap=document.createElement("div");wrap.className="row";
-      wrap.innerHTML='<button class="btn btn-main" id="nextq">我看懂了,下一題 ›</button>';
+      wrap.innerHTML='<button class="btn btn-main" id="nextq">'+(ok?'下一題 ›':'我看懂了,下一題 ›')+'</button>';
       card.appendChild(wrap);
       document.getElementById("nextq").onclick=go;
     }}
