@@ -141,7 +141,7 @@
 </div>
 
 <script>
-const DEFAULT_WPD=8, DAY_OPTIONS=[6,8,10,12,15], EXAM_ROUNDS=3, SPRINT_N=20;
+const DEFAULT_WPD=8, DAY_OPTIONS=[6,8,10,12,15], EXAM_ROUNDS=3, DEFAULT_SPRINT_N=20, SPRINT_OPTIONS=[10,15,20,25];
 const CATS=[
   {key:"vocab",name:"單字",ic:"📦",ds:"核心高頻字"},
   {key:"grammar",name:"文法",ic:"🔧",ds:"常考句型"},
@@ -152,7 +152,7 @@ const CATS=[
 let ALL=[], GRAMMAR=[], READING=[];
 let DAYS=[];
 const ONE_DAY=86400000;
-let state={startDate:null,wordsPerDay:DEFAULT_WPD,progress:{vocab:{},grammar:{},reading:{},exam:{},sprint:{}}};
+let state={startDate:null,wordsPerDay:DEFAULT_WPD,sprintN:DEFAULT_SPRINT_N,progress:{vocab:{},grammar:{},reading:{},exam:{},sprint:{}}};
 let phase="home", curCat=null, viewLevel=0, learnIdx=0;
 let quizQ=[], quizIdx=0, quizScore=0, quizCtx=null, answered=false;
 let sprintWrong=[];
@@ -162,6 +162,7 @@ function loadState(){
   try{const s=localStorage.getItem(STORE_KEY);if(s)state=Object.assign(state,JSON.parse(s));}catch(e){}
   if(!state.startDate)state.startDate=Date.now();
   if(!state.wordsPerDay)state.wordsPerDay=DEFAULT_WPD;
+  if(!state.sprintN)state.sprintN=DEFAULT_SPRINT_N;
   if(!state.progress)state.progress={vocab:{},grammar:{},reading:{},exam:{},sprint:{}};
   for(const c of CATS)if(!state.progress[c.key])state.progress[c.key]={};
   saveState();
@@ -317,7 +318,7 @@ function chrome(){
   if(!home){
     const cn=CATS.find(c=>c.key===curCat);
     document.getElementById("dayBig").textContent=(phase==="cat")?cn.name:(curCat==="sprint"?cn.name:(cn.name+" · 第 "+(viewLevel+1)+" 關"));
-    document.getElementById("daySub").textContent=phase==="quiz"?"作答中":(phase==="done"||phase==="sprintDone")?"完成":phase==="learn"?"學習":("共 "+levelCount(curCat)+" 關");
+    document.getElementById("daySub").textContent=phase==="quiz"?"作答中":(phase==="done"||phase==="sprintDone")?"完成":phase==="sprintSetup"?"選題數":phase==="learn"?"學習":("共 "+levelCount(curCat)+" 關");
     if(phase==="learn"||phase==="quiz"){
       let pct=phase==="learn"?(DAYS[viewLevel]?learnIdx/DAYS[viewLevel].length*50:0):(quizQ.length?50+quizIdx/quizQ.length*50:50);
       document.getElementById("bar").style.width=pct+"%";
@@ -331,6 +332,7 @@ function render(){chrome();
   else if(phase==="quiz")renderQuiz();
   else if(phase==="done")renderDone();
   else if(phase==="sprintDone")renderSprintDone();
+  else if(phase==="sprintSetup")renderSprintSetup();
 }
 
 function renderHome(){
@@ -347,7 +349,7 @@ function renderHome(){
   html+='</div>';
   const card=document.getElementById("card");card.innerHTML=html;
   card.querySelectorAll(".catcard").forEach(b=>{b.onclick=()=>{
-    if(b.dataset.c==="sprint"){if(!ALL.length){alert("單字資料還沒載入完成,請稍候再試。");return;}startSprint();return;}
+    if(b.dataset.c==="sprint"){if(!ALL.length){alert("單字資料還沒載入完成,請稍候再試。");return;}curCat="sprint";phase="sprintSetup";render();return;}
     if(levelCount(b.dataset.c)===0){alert("這個大類的資料還沒上傳,敬請期待。");return;}
     curCat=b.dataset.c;phase="cat";render();};});
 }
@@ -530,10 +532,24 @@ function weightedSampleNoRepeat(pool,n){
   }
   return picks;
 }
+function renderSprintSetup(){
+  const np=Object.keys(state.progress.sprint||{}).length;
+  const cur=state.sprintN||DEFAULT_SPRINT_N;
+  let html=`<div class="counter" style="text-align:center">單字衝刺 ⚡</div>
+    <div class="hint" style="margin-top:14px">全部單字混抽,答錯的字之後會更常出現。${np?('目前已練 '+np+' 個字。'):'這是練習,沒有及格門檻,放心衝。'}</div>
+    <div class="setting"><div class="lab">這一回要練幾題?</div><div class="chips" id="schips">`+
+    SPRINT_OPTIONS.map(x=>`<button class="chip ${x===cur?'on':''}" data-n="${x}">${x} 題</button>`).join("")+`</div></div>
+    <div class="row"><button class="btn btn-ghost" id="home">‹ 返回</button>
+    <button class="btn btn-main" id="go">開始衝刺 ⚡</button></div>`;
+  const card=document.getElementById("card");card.innerHTML=html;
+  card.querySelectorAll("#schips .chip").forEach(c=>{c.onclick=()=>{state.sprintN=parseInt(c.dataset.n);saveState();render();};});
+  document.getElementById("home").onclick=()=>{phase="home";render();};
+  document.getElementById("go").onclick=()=>startSprint();
+}
 function startSprint(){
   if(!ALL.length){alert("單字資料還沒載入完成,請稍候再試。");return;}
   curCat="sprint";sprintWrong=[];quizCtx=null;quizIdx=0;quizScore=0;answered=false;
-  const picks=weightedSampleNoRepeat(ALL,SPRINT_N);
+  const picks=weightedSampleNoRepeat(ALL,state.sprintN||DEFAULT_SPRINT_N);
   quizQ=picks.map(w=>{
     const opts=shuffle([w.en,...pickDistract(w,3,"hard").map(x=>x.en)]); // 形近字干擾,最像考場
     const lvtag=w.level===3?'<span class="lvtag lv3">進階</span> ':w.level===2?'<span class="lvtag lv2">進階</span> ':'';
