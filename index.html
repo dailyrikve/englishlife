@@ -31,6 +31,9 @@
     box-shadow:0 8px 24px rgba(80,60,30,.07);min-height:330px;display:flex;flex-direction:column;}
   .counter{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;}
   .wordrow{display:flex;align-items:center;gap:14px;}
+  .lvtag{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap;line-height:1.4;}
+  .lvtag.lv2{background:#eef3f1;color:var(--teal);border:1px solid #cfe0db;}
+  .lvtag.lv3{background:#fbeee6;color:#b3502e;border:1px solid #e6c3ab;}
   .word{font-family:'Fraunces',serif;font-size:44px;font-weight:600;line-height:1.05;letter-spacing:-0.02em;}
   .speaker{flex-shrink:0;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--teal);background:#eaf2f1;
     color:var(--teal);font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.12s;}
@@ -376,13 +379,14 @@ function renderLearn(){
   const card=document.getElementById("card");
   if(curCat==="vocab"){
     const set=DAYS[viewLevel],w=set[learnIdx];
+    const lvtag=w.level===3?'<span class="lvtag lv3">進階・正式說法</span>':w.level===2?'<span class="lvtag lv2">進階</span>':'';
     const near=confusables(w.en).slice(0,3);
     const confHTML=near.length?`<div class="conf"><div class="conf-h">⚠️ 容易混淆 — 紅色就是不一樣的地方</div>
       <div class="conf-row"><span class="conf-w">${diffHL(w.en,near[0].en)}</span><span class="conf-zh">${w.zh}(這個字)</span></div>
       ${near.map(s=>'<div class="conf-row"><span class="conf-w">'+diffHL(s.en,w.en)+'</span><span class="conf-zh">'+s.zh+'</span><span class="confspk" data-en="'+s.en+'">🔊</span></div>').join("")}
       </div>`:"";
     card.innerHTML=`<div class="counter">單字 ${learnIdx+1} / ${set.length}</div>
-      <div class="wordrow"><div class="word">${w.en}</div>${speakerHTML()}</div>
+      <div class="wordrow"><div class="word">${w.en}</div>${speakerHTML()}${lvtag}</div>
       <div class="syl">${w.syl||""}</div><div class="pos">${w.pos}</div><div class="zh">${w.zh}</div>
       ${w.tip?('<div class="hint" style="margin-top:14px">💡 '+w.tip+'</div>'):''}
       <div class="ex">
