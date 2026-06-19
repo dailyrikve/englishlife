@@ -62,11 +62,15 @@
   .ctx.long{font-size:16.5px;line-height:1.95;padding:18px 16px;}
   .ctx.long p{margin:0 0 12px 0;} .ctx.long p:last-child{margin-bottom:0;}
   .ctx mark{background:#ffe9a8;color:inherit;padding:1px 2px;border-radius:3px;box-shadow:0 0 0 1px #f3d77a;}
-  .ctxtools{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
-  .ctxtools .btn{font-size:13px;padding:5px 12px;}
-  .glossbox{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:13.5px;line-height:2;font-family:'Noto Sans TC',sans-serif;display:none;}
+  .ctxtools{display:flex;flex-direction:column;gap:8px;margin-top:12px;}
+  .ctxtools .btn{font-size:13px;padding:9px 12px;width:100%;}
+  .glossbox{margin-top:10px;border-top:1px dashed var(--line);padding-top:6px;font-family:'Noto Sans TC',sans-serif;display:none;}
   .glossbox.show{display:block;}
-  .glossbox b{font-family:'Fraunces',serif;}
+  .glossbox .ttl{font-size:12px;color:var(--teal);font-weight:700;margin:2px 0 4px;}
+  .glossbox .gl{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:6px 2px;border-bottom:1px solid #eadfce;}
+  .glossbox .gl:last-child{border-bottom:none;}
+  .glossbox .gl b{font-family:'Fraunces',serif;font-size:16.5px;}
+  .glossbox .gl span{color:#6b5d4a;font-size:14px;text-align:right;}
   .ctxzh{display:none;margin-top:10px;font-family:'Noto Sans TC',sans-serif;text-align:left;line-height:1.85;color:#5a5148;}
   .ctxzh.show{display:block;}
   /* 連貫克漏字:空格 token */
@@ -511,12 +515,11 @@ function renderLearn(){
     document.getElementById("back").onclick=()=>{if(learnIdx>0){learnIdx--;render();}else{phase="cat";render();}};
     document.getElementById("fwd").onclick=()=>{if(learnIdx<items.length-1){learnIdx++;render();}else buildQuiz();};
   } else if(curCat==="reading"){
-    const item=readingLevels()[viewLevel],kw=item.keywords,k=kw[learnIdx];
-    card.innerHTML=`<div class="counter">關鍵字 ${learnIdx+1} / ${kw.length}</div>
+    const item=readingLevels()[viewLevel],kw=(item.glossary&&item.glossary.length?item.glossary:item.keywords),k=kw[learnIdx];
+    card.innerHTML=`<div class="counter">難字 ${learnIdx+1} / ${kw.length}</div>
       <div class="wordrow"><div class="word">${k.en}</div>${speakerHTML()}</div>
       <div class="zh">${k.zh}</div>
-      <div class="hint" style="margin-top:18px">先認得這幾個字。</div>
-      <div class="row"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
+      <div class="row" style="margin-top:22px"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===kw.length-1?'開始閱讀 →':'下一個 ›'}</button></div>`;
     document.getElementById("spk").onclick=()=>speak(k.en);speak(k.en);
     document.getElementById("back").onclick=()=>{if(learnIdx>0){learnIdx--;render();}else{phase="cat";render();}};
@@ -913,10 +916,10 @@ function renderQuiz(){
     html+=`<div id="ctxpassage">${ctxInnerHTML(q,null)}</div>`;
     let tools="";
     if(quizCtxGloss&&quizCtxGloss.length)tools+=`<button class="btn btn-ghost" id="glossbtn">看難字 (${quizCtxGloss.length})</button>`;
-    if(quizCtxZh)tools+=`<button class="btn btn-ghost" id="ctxzhbtn">${quizStory?"看中文":"看不懂?顯示整篇中文"}</button>`;
+    if(quizCtxZh)tools+=`<button class="btn btn-ghost" id="ctxzhbtn">${quizStory?"看整篇中文":"看不懂?看整篇中文"}</button>`;
     if(tools)html+=`<div class="ctxtools">${tools}</div>`;
-    if(quizCtxGloss&&quizCtxGloss.length)html+=`<div class="glossbox" id="glossbox"><b style="color:var(--teal)">難字</b>　`
-      +quizCtxGloss.map(g=>`<span style="display:inline-block;margin:0 14px 2px 0;white-space:nowrap"><b>${g.en}</b> ${g.zh}</span>`).join("")+`</div>`;
+    if(quizCtxGloss&&quizCtxGloss.length)html+=`<div class="glossbox" id="glossbox"><div class="ttl">難字</div>`
+      +quizCtxGloss.map(g=>`<div class="gl"><b>${g.en}</b><span>${g.zh}</span></div>`).join("")+`</div>`;
     if(quizCtxZh)html+=`<div class="ctxzh" id="ctxzh">${quizCtxZh}</div>`;
     html+=`</div>`;
   }
@@ -939,7 +942,7 @@ function renderQuiz(){
   if(q.cloze){const rb=document.getElementById("revealzh");if(rb)rb.onclick=()=>{
     const h=document.getElementById("zhhint");h.textContent=q.clozeZh;h.style.display="block";rb.style.display="none";};}
   {const gb=document.getElementById("glossbtn");if(gb)gb.onclick=()=>{const h=document.getElementById("glossbox");const open=h.classList.toggle("show");gb.textContent=open?"收起難字":("看難字 ("+quizCtxGloss.length+")");};}
-  {const cz=document.getElementById("ctxzhbtn");if(cz)cz.onclick=()=>{const h=document.getElementById("ctxzh");const open=h.classList.toggle("show");cz.textContent=open?"收起中文":(quizStory?"看中文":"看不懂?顯示整篇中文");};}
+  {const cz=document.getElementById("ctxzhbtn");if(cz)cz.onclick=()=>{const h=document.getElementById("ctxzh");const open=h.classList.toggle("show");cz.textContent=open?"收起中文":(quizStory?"看整篇中文":"看不懂?看整篇中文");};}
   const fb=document.getElementById("fb");
   function go(){if(quizIdx<quizQ.length-1){quizIdx++;render();}else{if(curCat==="sprint")finishSprint();else if(curCat==="gsprint")finishGramSprint();else finishLevel();}}
   function after(ok,picked){answered=true;quizScore+=ok?1:0;
