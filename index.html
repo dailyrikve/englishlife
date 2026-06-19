@@ -310,10 +310,10 @@ function vocabQFmt(level,j){return vocabMixed(level)?["zh","en","fillp","fillf"]
 // 該關是否以進階字(level>=2)為主 → 首頁關卡格標「進階」(依實際單字判斷,自動適應每日字數)
 function vocabAdv(i){const set=DAYS[i];if(!set||!set.length)return false;
   return set.filter(w=>(w.level||1)>=2).length*2>set.length;}
-function vocabFmtLabel(i){if(vocabMixed(i))return "綜合";const f=vocabFmt(i);return f==="zh"?"選中文":f==="en"?"選英文":f==="fillp"?"補字母":"拼全字";}
+function vocabFmtLabel(i){if(vocabAdv(i))return "例句填空";if(vocabMixed(i))return "綜合";const f=vocabFmt(i);return f==="zh"?"選中文":f==="en"?"選英文":f==="fillp"?"補字母":"拼全字";}
 function fmtHint(cat,i){
   if(i>=levelCount(cat))return "這個大類已全部完成,可回去複習任何一關。";
-  if(cat==="vocab"){if(vocabMixed(i))return "綜合題:選中文、選英文、補字母、拼全字輪流出現,模擬實戰。";const f=vocabFmt(i);return f==="zh"?"看英文,選出正確的中文意思。":f==="en"?(i>=3?"進階:從長得很像的英文裡選出正確的字。":"看中文,從幾個英文裡選出正確的字。"):f==="fillp"?"聽發音,把單字缺少的字母補上。":"聽發音,把整個單字拼出來。";}
+  if(cat==="vocab"){if(vocabAdv(i))return "考題式例句填空:先 2 題拼字暖身,再看英文句子從同詞性的字裡選出最適合填入空格的;答完看整句中文。";if(vocabMixed(i))return "綜合題:選中文、選英文、補字母、拼全字輪流出現,模擬實戰。";const f=vocabFmt(i);return f==="zh"?"看英文,選出正確的中文意思。":f==="en"?(i>=3?"進階:從長得很像的英文裡選出正確的字。":"看中文,從幾個英文裡選出正確的字。"):f==="fillp"?"聽發音,把單字缺少的字母補上。":"聽發音,把整個單字拼出來。";}
   if(cat==="grammar")return "看句型卡和對比例句,先找出關鍵字,再選出正確用法。";
   if(cat==="reading")return "先熟悉關鍵字,再讀短文用刪去法找答案。";
   if(cat==="exam")return "各種題型混合的小考,練習絕不留白、先刪再猜。";
@@ -535,6 +535,70 @@ function hlSignal(sentence,sig,forms){
   return out;
 }
 
+// ===== 例句填空(cloze):比照考古題,看英文句子選同詞性的字填空 =====
+// 產生「實際可能出現在句中的字形」:原形 + s/es/ed/d/ing/y→ies/雙寫尾子音
+function wordForms(en){
+  en=(en||"").toLowerCase();
+  const s=new Set([en,en+"s",en+"es",en+"ed",en+"d",en+"ing"]);
+  if(en.endsWith("e")){s.add(en.slice(0,-1)+"ing");s.add(en.slice(0,-1)+"ed");}
+  if(en.endsWith("y")){s.add(en.slice(0,-1)+"ies");s.add(en.slice(0,-1)+"ied");}
+  if(en.length>=3&&!"aeiou".includes(en[en.length-1])&&"aeiou".includes(en[en.length-2])&&!"aeiou".includes(en[en.length-3])){
+    s.add(en+en[en.length-1]+"ing");s.add(en+en[en.length-1]+"ed");}
+  return [...s].sort((a,b)=>b.length-a.length); // 長的先試,優先挖到變化形而非子字串
+}
+const CLOZE_GAP='<span style="border-bottom:2.5px solid var(--accent);padding:0 26px;margin:0 3px"></span>';
+// 把例句裡的目標字(含變化形)換成空格;找不到回 null → 呼叫端 fallback 拼字
+function clozeBlank(ex,en){
+  for(const f of wordForms(en)){
+    try{const re=new RegExp("\\b"+f.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\b","i");
+      if(re.test(ex))return ex.replace(re,CLOZE_GAP);}catch(e){}
+  }
+  return null;
+}
+// 答完把正解(實際出現的字形)在整句裡標紅
+function hlClozeAnswer(ex,en){
+  for(const f of wordForms(en)){
+    try{const re=new RegExp("\\b"+f.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\b","i");
+      if(re.test(ex))return ex.replace(re,m=>'<b style="color:var(--accent)">'+m+'</b>');}catch(e){}
+  }
+  return ex;
+}
+// 取主要詞性(取「/」前那個,去掉句點):n./v./adj./adv./conj./prep./片語
+function primaryPos(pos){pos=(pos||"").trim();if(pos.includes("片語"))return "片語";
+  return (pos.split("/")[0].trim().replace(/\.$/,""))||"n";}
+// 同詞性干擾(考題式):四個選項同詞性、逼考生靠語境分辨字義,不能再靠「猜詞性」
+function pickDistractPos(word,n){
+  const tgt=primaryPos(word.pos);
+  const syn=new Set((word.syn||[]).map(s=>s.en)); // 排除同義字,避免兩個答案都對
+  let pool=shuffle(ALL.filter(x=>x.en!==word.en&&x.zh!==word.zh&&!syn.has(x.en)&&primaryPos(x.pos)===tgt));
+  if(pool.length<n){ // 詞性池不足(如副詞少)→ 補其他詞性
+    const seen=new Set(pool.map(x=>x.en));
+    pool=pool.concat(shuffle(ALL.filter(x=>x.en!==word.en&&x.zh!==word.zh&&!syn.has(x.en)&&!seen.has(x.en))));
+  }
+  return pool.slice(0,n);
+}
+// 語境夠才出 cloze:例句要挖得出空格、且字數>=5(太短的句子語境不足)→ 否則回 null
+function buildClozeQ(w){
+  const blanked=clozeBlank(w.ex,w.en);
+  if(!blanked||w.ex.split(/\s+/).length<5)return null;
+  const opts=shuffle([w.en,...pickDistractPos(w,3).map(x=>x.en)]);
+  return {kind:"choice",cloze:true,head:blanked,headSmall:true,
+    ask:"選出最適合填入空格的字",options:opts,answer:w.en,
+    clozeZh:w.ext,clozeEx:w.ex,clozeEn:w.en}; // 注意:不設 speak,避免自動唸出答案
+}
+// 語境不足時的後備:拼全字(沿用既有 fill 題型)
+function fillFullQ(w,headPrefix){
+  return {kind:"fill",head:(headPrefix||"")+w.zh,headSmall:true,
+    ask:"聽發音,把整個單字拼出來",speak:w.en,syl:w.syl,answer:w.en,full:true};
+}
+// 答完顯示:整句英文(正解標紅)+ 整句中文 + 🔊;cloze 答對/答錯都出現
+function clozeReviewHTML(q){
+  return '<div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--muted)">'+
+    '<div>'+hlClozeAnswer(q.clozeEx,q.clozeEn)+
+    ' <button class="confspk" data-en="'+q.clozeEn+'" style="background:none;border:none;cursor:pointer;font-size:15px">🔊</button></div>'+
+    '<div style="color:var(--muted);margin-top:4px">'+q.clozeZh+'</div></div>';
+}
+
 // ===== 單字衝刺(第 5 大類):全字混抽、間隔複習加權 =====
 // 每個字記 {r:答對次數, w:答錯次數},存在 state.progress.sprint[en]
 function sprintWeight(en){
@@ -581,10 +645,10 @@ function startSprint(){
   curCat="sprint";sprintWrong=[];quizCtx=null;quizIdx=0;quizScore=0;answered=false;
   const picks=weightedSampleNoRepeat(ALL,state.sprintN||DEFAULT_SPRINT_N,w=>sprintWeight(w.en));
   quizQ=picks.map(w=>{
-    const opts=shuffle([w.en,...pickDistract(w,3,"hard").map(x=>x.en)]); // 形近字干擾,最像考場
     const lvtag=w.level===3?'<span class="lvtag lv3">進階</span> ':w.level===2?'<span class="lvtag lv2">進階</span> ':'';
-    return {kind:"choice",head:lvtag+w.zh,headSmall:true,ask:"哪一個是正確的英文?",
-      options:opts,answer:w.en,sprintEn:w.en,sprintZh:w.zh};
+    const cq=buildClozeQ(w); // 考題式例句填空;語境夠就用,進度仍以 .en 記
+    if(cq){cq.sprintEn=w.en;cq.sprintZh=w.zh;return cq;}
+    const fq=fillFullQ(w,lvtag);fq.sprintEn=w.en;fq.sprintZh=w.zh;return fq; // 語境不足 → 拼字
   });
   phase="quiz";render();
 }
@@ -679,16 +743,24 @@ function renderGramSprintDone(){
 function buildQuiz(){
   quizQ=[];quizCtx=null;quizIdx=0;quizScore=0;answered=false;
   if(curCat==="vocab"){
-    const set=DAYS[viewLevel],mixed=vocabMixed(viewLevel);
-    shuffle(set).forEach((w,j)=>{
-      const f=mixed?vocabQFmt(viewLevel,j):vocabFmt(viewLevel);
-      const hard=(viewLevel>=3||(w.level||1)>=2); // 進階字或後段關卡:用形近字干擾
-      if(f==="zh"){const opts=shuffle([w.zh,...pickDistract(w,3,"easy").map(x=>x.zh)]);
-        quizQ.push({kind:"choice",head:w.en,speak:w.en,ask:"這個字的意思是?(可點🔊)",options:opts,answer:w.zh});}
-      else if(f==="en"){const opts=shuffle([w.en,...pickDistract(w,3,hard?"hard":"easy").map(x=>x.en)]);
-        quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"哪一個是正確的英文?",options:opts,answer:w.en});}
-      else{quizQ.push({kind:"fill",head:w.zh,headSmall:true,ask:(f==="fillf"?"聽發音,把整個單字拼出來":"聽發音,補上缺少的字母"),speak:w.en,syl:w.syl,answer:w.en,full:(f==="fillf")});}
-    });
+    const set=DAYS[viewLevel];
+    if(vocabAdv(viewLevel)){ // 進階關:考題式例句填空(前 2 題拼字緩衝 → 全部字 cloze)
+      const words=shuffle(set);
+      const bufN=Math.min(2,words.length);
+      words.slice(0,bufN).forEach(w=>quizQ.push(fillFullQ(w))); // 緩衝:先喚醒「字長怎樣」
+      words.forEach(w=>quizQ.push(buildClozeQ(w)||fillFullQ(w))); // 主體:語境夠出 cloze,太薄回拼字
+    } else { // 暖身關(0–5)與基礎綜合關:維持原本由淺入深的認字題,既有行為完全不動
+      const mixed=vocabMixed(viewLevel);
+      shuffle(set).forEach((w,j)=>{
+        const f=mixed?vocabQFmt(viewLevel,j):vocabFmt(viewLevel);
+        const hard=(viewLevel>=3||(w.level||1)>=2); // 進階字或後段關卡:用形近字干擾
+        if(f==="zh"){const opts=shuffle([w.zh,...pickDistract(w,3,"easy").map(x=>x.zh)]);
+          quizQ.push({kind:"choice",head:w.en,speak:w.en,ask:"這個字的意思是?(可點🔊)",options:opts,answer:w.zh});}
+        else if(f==="en"){const opts=shuffle([w.en,...pickDistract(w,3,hard?"hard":"easy").map(x=>x.en)]);
+          quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"哪一個是正確的英文?",options:opts,answer:w.en});}
+        else{quizQ.push({kind:"fill",head:w.zh,headSmall:true,ask:(f==="fillf"?"聽發音,把整個單字拼出來":"聽發音,補上缺少的字母"),speak:w.en,syl:w.syl,answer:w.en,full:(f==="fillf")});}
+      });
+    }
   } else if(curCat==="grammar"){
     const lvl=gramLevels()[viewLevel];
     const per=lvl.length<=4?2:1; // 小家族每句型抽2題,大家族抽1題,控制每關長度
@@ -721,6 +793,9 @@ function renderQuiz(){
   html+=`<div class="qhead ${q.headSmall?'small':''}">${q.head}</div>`;
   if(q.speak)html+=`<div class="qspeak">${speakerHTML()}</div>`;
   html+=`<div class="qask">${q.ask}</div>`;
+  if(q.cloze)html+=`<div style="text-align:center;margin:2px 0 6px">
+    <button class="btn btn-ghost" id="revealzh" style="font-size:13px;padding:6px 12px">看不懂?顯示中文句意</button>
+    <div id="zhhint" class="hint" style="display:none;margin-top:8px"></div></div>`;
   if(q.kind==="choice"){html+='<div id="opts"></div>';}
   else if(q.kind==="signal"){html+='<div id="chips" class="chips"></div>';}
   else if(q.kind==="fill"){html+=`${q.full?"":'<div class="syl" style="text-align:center">'+(q.syl||"")+'</div>'}
@@ -730,6 +805,8 @@ function renderQuiz(){
   html+=`<div class="feedback" id="fb"></div>`;
   card.innerHTML=html;
   if(q.speak){document.getElementById("spk").onclick=()=>speak(q.speak);speak(q.speak);}
+  if(q.cloze){const rb=document.getElementById("revealzh");if(rb)rb.onclick=()=>{
+    const h=document.getElementById("zhhint");h.textContent=q.clozeZh;h.style.display="block";rb.style.display="none";};}
   const fb=document.getElementById("fb");
   function go(){if(quizIdx<quizQ.length-1){quizIdx++;render();}else{if(curCat==="sprint")finishSprint();else if(curCat==="gsprint")finishGramSprint();else finishLevel();}}
   function after(ok,picked){answered=true;quizScore+=ok?1:0;
@@ -739,11 +816,12 @@ function renderQuiz(){
       const st=gp[q.gPattern]||(gp[q.gPattern]={r:0,w:0});if(ok)st.r++;else{st.w++;gramSprintWrong.push(q);}saveState();}
     fb.className="feedback show "+(ok?"ok":"no");
     let body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
-    if(!ok && (curCat==="vocab"||curCat==="exam"||curCat==="sprint"))body+=discrimHTML(q.answer,picked); // 形近字辨別卡:單字/模擬考/衝刺都出現
+    if(q.cloze)body+=clozeReviewHTML(q); // 例句填空:答完一律給整句英文(正解標紅)+整句中文+🔊
+    else if(!ok && (curCat==="vocab"||curCat==="exam"||curCat==="sprint"))body+=discrimHTML(q.answer,picked); // 形近字辨別卡:單字/模擬考/衝刺都出現
     if(q.qZh && (curCat==="grammar"||curCat==="gsprint"))body+=gramSentenceHTML(q); // 文法/文法衝刺:答完分開列出整句中文
     fb.innerHTML=body;
     fb.querySelectorAll(".confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
-    const manualNext=(curCat==="grammar"||curCat==="gsprint"); // 文法說明較長,答對也讓考生自己按
+    const manualNext=(curCat==="grammar"||curCat==="gsprint"||q.cloze); // 文法說明長、例句填空要看整句翻譯,答對也讓考生自己按
     if(ok && !manualNext){setTimeout(go,q.note?1300:850);} // 其餘大類答對仍保留節奏自動前進
     else{ // 答錯一律停住;文法/文法衝刺答對也停住,給時間看說明
       const wrap=document.createElement("div");wrap.className="row";
