@@ -1733,7 +1733,204 @@
     "locate": "You still haven't watched Star Wars, and I really think you'd like it."
    }
   ],
-  "genre": "課外讀物"
+  "genre": "課外讀物",
+  "story": [
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "It was early in the morning when Tony felt the bed move.",
+      "zh": "清晨,Tony 感覺到床動了一下。"
+     },
+     {
+      "en": "He kept his eyes shut and pushed his face into his pillow.",
+      "zh": "他閉著眼,把臉埋進枕頭裡。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "“What's going on?”",
+      "zh": "「怎麼了?」"
+     },
+     {
+      "en": "he groaned.",
+      "zh": "他咕噥著。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Steve",
+    "s": [
+     {
+      "en": "“It's morning, Tony.",
+      "zh": "「天亮了,Tony。"
+     },
+     {
+      "en": "I'm going for my run,”",
+      "zh": "我要去跑步了,」"
+     },
+     {
+      "en": "Steve said with a soft laugh.",
+      "zh": "Steve 輕笑著說。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "“Come back to bed,”",
+      "zh": "「回來睡覺啦,」"
+     },
+     {
+      "en": "Tony said, reaching out his hand without looking.",
+      "zh": "Tony 說著,沒睜眼就伸出了手。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "“It's too early.",
+      "zh": "「太早了。"
+     },
+     {
+      "en": "It must be four in the morning.”",
+      "zh": "現在一定才早上四點。」"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Steve",
+    "s": [
+     {
+      "en": "“It's seven,”",
+      "zh": "「七點了,」"
+     },
+     {
+      "en": "Steve laughed.",
+      "zh": "Steve 笑了。"
+     },
+     {
+      "en": "“The sun is about to come up.”",
+      "zh": "「太陽都快出來了。」"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "“Still too early.",
+      "zh": "「還是太早。"
+     },
+     {
+      "en": "Just stay home.",
+      "zh": "就待在家嘛。"
+     },
+     {
+      "en": "We could have a lazy day.",
+      "zh": "我們可以耍廢一整天。"
+     },
+     {
+      "en": "You still haven't watched Star Wars, and I really think you'd like it.”",
+      "zh": "你還沒看過《星際大戰》,我真的覺得你會喜歡。」"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Steve",
+    "s": [
+     {
+      "en": "“I'm sure I would,”",
+      "zh": "「我相信我會喜歡,」"
+     },
+     {
+      "en": "Steve said.",
+      "zh": "Steve 說。"
+     },
+     {
+      "en": "“But I'm meeting Bucky in ten minutes.”",
+      "zh": "「但我十分鐘後要跟 Bucky 碰面。」"
+     }
+    ]
+   },
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "Tony pulled his blanket over his head.",
+      "zh": "Tony 把被子拉過頭頂。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "“Fine.",
+      "zh": "「好啦。"
+     },
+     {
+      "en": "Go for your run.”",
+      "zh": "去跑你的步吧。」"
+     }
+    ]
+   },
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "Steve leaned down and kissed his cheek.",
+      "zh": "Steve 俯身親了親他的臉頰。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Steve",
+    "s": [
+     {
+      "en": "“Goodbye, sweetheart.",
+      "zh": "「再見,親愛的。"
+     },
+     {
+      "en": "I'll be back soon for breakfast and Star Trek.”",
+      "zh": "我很快就回來吃早餐、看《星艦迷航記》。」"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "“Wars!”",
+      "zh": "「是大戰!」"
+     },
+     {
+      "en": "Tony shouted as Steve left.",
+      "zh": "Steve 離開時 Tony 大喊。"
+     },
+     {
+      "en": "“It's Star Wars!”",
+      "zh": "「是《星際大戰》!」"
+     }
+    ]
+   }
+  ]
  },
  {
   "type": "reading",
@@ -1883,6 +2080,221 @@
     "locate": "\"Don't get used to it, Cap.\""
    }
   ],
-  "genre": "課外讀物"
+  "genre": "課外讀物",
+  "story": [
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "The tower was quiet that night.",
+      "zh": "那天晚上,大樓裡很安靜。"
+     },
+     {
+      "en": "Tony was still working in his lab, even though it was very late.",
+      "zh": "雖然已經很晚,Tony 還在實驗室裡工作。"
+     },
+     {
+      "en": "He pretended not to notice when Steve walked in, but he saw his reflection in the metal panel.",
+      "zh": "Steve 走進來時他假裝沒注意到,卻在金屬面板上看見了他的倒影。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Steve",
+    "s": [
+     {
+      "en": "“You're still up,”",
+      "zh": "「你還沒睡,」"
+     },
+     {
+      "en": "Steve said gently.",
+      "zh": "Steve 輕聲說。"
+     },
+     {
+      "en": "It was not really a question.",
+      "zh": "那其實不算是個問句。"
+     }
+    ]
+   },
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "Tony shrugged.",
+      "zh": "Tony 聳了聳肩。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "“The world didn't end today.",
+      "zh": "「今天世界沒有毀滅。"
+     },
+     {
+      "en": "I figured I'd celebrate by working.”",
+      "zh": "我想說,那就用工作來慶祝吧。」"
+     }
+    ]
+   },
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "Steve came closer.",
+      "zh": "Steve 走近了些。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Steve",
+    "s": [
+     {
+      "en": "“You don't have to do everything alone, you know.”",
+      "zh": "「你知道的,你不必什麼都自己扛。」"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "Tony said quietly,",
+      "zh": "Tony 輕聲說,"
+     },
+     {
+      "en": "“Coming from Mr. I'll-Carry-the-World-on-My-Shoulders.”",
+      "zh": "「這話居然出自『我要把全世界扛在肩上』先生之口。」"
+     }
+    ]
+   },
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "Steve smiled.",
+      "zh": "Steve 笑了。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Steve",
+    "s": [
+     {
+      "en": "“Yeah.",
+      "zh": "「對啊。"
+     },
+     {
+      "en": "I guess I'm still learning.”",
+      "zh": "我想我也還在學。」"
+     }
+    ]
+   },
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "For a moment, neither of them spoke.",
+      "zh": "有那麼一會兒,兩個人都沒說話。"
+     },
+     {
+      "en": "Outside, the city lights shone in the dark.",
+      "zh": "窗外,城市的燈火在黑夜裡閃著光。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "“Do you ever think about how strange this is?”",
+      "zh": "「你會不會想過,這一切有多奇怪?」"
+     },
+     {
+      "en": "Tony asked.",
+      "zh": "Tony 問。"
+     },
+     {
+      "en": "“Us.",
+      "zh": "「我們倆。"
+     },
+     {
+      "en": "After everything that's happened.”",
+      "zh": "在發生過那麼多事之後。」"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Steve",
+    "s": [
+     {
+      "en": "“All the time,”",
+      "zh": "「一直都在想,」"
+     },
+     {
+      "en": "Steve said.",
+      "zh": "Steve 說。"
+     },
+     {
+      "en": "“But I don't think it means anything is wrong.”",
+      "zh": "「但我不覺得這代表哪裡出了錯。」"
+     }
+    ]
+   },
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "Steve held out a hand.",
+      "zh": "Steve 伸出一隻手。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Steve",
+    "s": [
+     {
+      "en": "“Come on.",
+      "zh": "「走吧。"
+     },
+     {
+      "en": "You can save the world tomorrow.”",
+      "zh": "世界明天再救就好。」"
+     }
+    ]
+   },
+   {
+    "k": "n",
+    "s": [
+     {
+      "en": "Tony looked at the hand for a second.",
+      "zh": "Tony 盯著那隻手看了一秒。"
+     },
+     {
+      "en": "Then he took it.",
+      "zh": "然後,他握住了。"
+     }
+    ]
+   },
+   {
+    "k": "d",
+    "who": "Tony",
+    "s": [
+     {
+      "en": "“Don't get used to it, Cap.”",
+      "zh": "「別習慣了,隊長。」"
+     }
+    ]
+   }
+  ]
  }
 ]

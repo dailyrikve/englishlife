@@ -78,14 +78,21 @@
   .blk.cur{border-bottom:2px solid var(--teal);background:#dff0ee;color:var(--teal);font-weight:700;border-radius:5px 5px 0 0;}
   .blk.filled{border-bottom:2px solid var(--ok,#2e7d57);color:var(--ok,#2e7d57);font-weight:700;font-family:'Fraunces',serif;}
   /* 課外讀物:對話氣泡情境 */
-  .story{background:linear-gradient(180deg,#fbf3e7,#f7ede0);border:1px solid #ecddc6;border-radius:16px;padding:16px 14px 18px;margin-bottom:16px;font-family:'Fraunces',serif;}
-  .story .scene{font-family:'Noto Sans TC',sans-serif;font-size:12px;letter-spacing:.08em;color:#b08948;text-align:center;margin-bottom:14px;text-transform:uppercase;}
-  .story .narr{font-size:15px;line-height:1.85;color:#6b5d4a;margin:10px 4px;text-align:center;font-style:italic;}
-  .story .bub{max-width:82%;padding:9px 13px;border-radius:16px;margin:8px 0;font-size:16px;line-height:1.5;position:relative;}
-  .story .bub .who{display:block;font-family:'Noto Sans TC',sans-serif;font-size:11px;opacity:.7;margin-bottom:2px;}
-  .story .bub.L{background:#eef3f4;border:1px solid #d7e3e4;border-bottom-left-radius:5px;margin-right:auto;}
-  .story .bub.R{background:#e7f0ea;border:1px solid #cfe5d6;border-bottom-right-radius:5px;margin-left:auto;}
-  .story .endmark{text-align:center;color:#b08948;font-size:18px;margin-top:12px;}
+  .story{background:linear-gradient(180deg,#fbf3e7,#f7ede0);border:1px solid #ecddc6;border-radius:16px;padding:18px 16px 20px;margin-bottom:16px;font-family:'Fraunces',serif;}
+  .story .scene{font-family:'Noto Sans TC',sans-serif;font-size:12px;letter-spacing:.1em;color:#b08948;text-align:center;margin-bottom:6px;text-transform:uppercase;}
+  .story .shint{font-family:'Noto Sans TC',sans-serif;font-size:12px;color:#a98a5e;text-align:center;margin-bottom:14px;}
+  .story .para{margin:0 0 13px;line-height:1.95;font-size:16.5px;}
+  .story .para.n{color:#5f5240;}
+  .story .para.d{padding:2px 0 2px 13px;border-left:3px solid #cfc0a6;}
+  .story .para.d.tony{border-left-color:#cf8f5e;}
+  .story .para.d.steve{border-left-color:#5e8fa8;}
+  .story .para .who{display:block;font-family:'Noto Sans TC',sans-serif;font-size:11px;letter-spacing:.04em;color:#9c8a6e;margin-bottom:1px;opacity:.85;}
+  .story .para.d.tony .who{color:#b9743f;} .story .para.d.steve .who{color:#477287;}
+  .story .sent{cursor:pointer;border-radius:4px;padding:0 1px;transition:background .12s;}
+  .story .sent:hover{background:#f1e7d4;}
+  .story .sent.tapped{background:#fbeec9;text-decoration:underline;text-decoration-color:#d9b676;text-underline-offset:3px;}
+  .story .sentzh{display:none;font-family:'Noto Sans TC',sans-serif;font-size:13.5px;color:#7a6a52;background:#fbeec9;border-radius:5px;padding:1px 7px;margin:0 2px;}
+  .story .sentzh.show{display:inline;}
   .card.storymode{background:#fff8ef;}
   /* 關卡列表類型標牌 */
   .rtag{display:inline-block;font-family:'Noto Sans TC',sans-serif;font-size:11px;padding:1px 8px;border-radius:999px;margin-top:4px;}
@@ -194,7 +201,7 @@ let DAYS=[];
 const ONE_DAY=86400000;
 let state={startDate:null,wordsPerDay:DEFAULT_WPD,sprintN:DEFAULT_SPRINT_N,gsprintN:DEFAULT_GSPRINT_N,progress:{vocab:{},grammar:{},reading:{},exam:{},sprint:{},gsprint:{}}};
 let phase="home", curCat=null, viewLevel=0, learnIdx=0;
-let quizQ=[], quizIdx=0, quizScore=0, quizCtx=null, quizCtxZh=null, quizCtxGloss=null, quizGenre=null, quizStory=false, quizCloze=false, quizFill={}, answered=false;
+let quizQ=[], quizIdx=0, quizScore=0, quizCtx=null, quizCtxZh=null, quizCtxGloss=null, quizGenre=null, quizStory=false, quizStoryData=null, quizCloze=false, quizFill={}, answered=false;
 let sprintWrong=[];
 let gramSprintWrong=[]; // 文法衝刺本回答錯的句型(供完成畫面列出)
 const STORE_KEY="dailyEnglishState_v2";
@@ -682,7 +689,7 @@ function renderSprintSetup(){
 }
 function startSprint(){
   if(!ALL.length){alert("單字資料還沒載入完成,請稍候再試。");return;}
-  curCat="sprint";sprintWrong=[];quizCtx=null;quizCtxZh=null;quizCtxGloss=null;quizGenre=null;quizStory=false;quizCloze=false;quizIdx=0;quizScore=0;answered=false;
+  curCat="sprint";sprintWrong=[];quizCtx=null;quizCtxZh=null;quizCtxGloss=null;quizGenre=null;quizStory=false;quizStoryData=null;quizCloze=false;quizIdx=0;quizScore=0;answered=false;
   const picks=weightedSampleNoRepeat(ALL,state.sprintN||DEFAULT_SPRINT_N,w=>sprintWeight(w.en));
   quizQ=picks.map(w=>{
     const lvtag=w.level===3?'<span class="lvtag lv3">進階</span> ':w.level===2?'<span class="lvtag lv2">進階</span> ':'';
@@ -744,7 +751,7 @@ function renderGramSprintSetup(){
 }
 function startGramSprint(){
   if(!GRAMMAR.length){alert("文法資料還沒載入完成,請稍候再試。");return;}
-  curCat="gsprint";gramSprintWrong=[];quizCtx=null;quizCtxZh=null;quizCtxGloss=null;quizGenre=null;quizStory=false;quizCloze=false;quizIdx=0;quizScore=0;answered=false;
+  curCat="gsprint";gramSprintWrong=[];quizCtx=null;quizCtxZh=null;quizCtxGloss=null;quizGenre=null;quizStory=false;quizStoryData=null;quizCloze=false;quizIdx=0;quizScore=0;answered=false;
   // 全句型混抽,加權不重複;實際題數 = min(設定值, 可用句型數)
   const picks=weightedSampleNoRepeat(GRAMMAR,state.gsprintN||DEFAULT_GSPRINT_N,g=>gramSprintWeight(g.pattern));
   quizQ=[];
@@ -781,7 +788,7 @@ function renderGramSprintDone(){
 }
 
 function buildQuiz(){
-  quizQ=[];quizCtx=null;quizCtxZh=null;quizCtxGloss=null;quizGenre=null;quizStory=false;quizCloze=false;quizIdx=0;quizScore=0;answered=false;
+  quizQ=[];quizCtx=null;quizCtxZh=null;quizCtxGloss=null;quizGenre=null;quizStory=false;quizStoryData=null;quizCloze=false;quizIdx=0;quizScore=0;answered=false;
   if(curCat==="vocab"){
     const set=DAYS[viewLevel];
     if(vocabAdv(viewLevel)){ // 進階關:考題式例句填空(前 2 題拼字緩衝 → 全部字 cloze)
@@ -820,6 +827,7 @@ function buildQuiz(){
     quizGenre=item.genre||null;
     quizStory=(quizGenre==="課外讀物");
     quizCloze=(item.type==="passagecloze");
+    quizStoryData=(item.story&&item.story.length)?item.story:null;
     quizFill={};
     if(item.type==="reading"){
       quizCtx=item.passage;
@@ -897,9 +905,29 @@ function storyHTML(p){
   }
   return html+'<div class="endmark">❦</div>';
 }
+// 課外讀物(B 方案):散文式段落,對話用左側色條＋說話者小標(非左右氣泡);每句可點開中文(句對句)
+function storyProseHTML(blocks){
+  let html="",k=0;
+  for(const b of blocks){
+    const dlg=(b.k==="d");
+    const who=(b.who||"").toLowerCase();
+    const cls="para "+(dlg?("d "+who):"n");
+    html+=`<div class="${cls}">`;
+    if(dlg&&b.who)html+=`<span class="who">${escHTML(b.who)}</span>`;
+    for(const sObj of b.s){
+      html+=`<span class="sent" data-k="${k}">${escHTML(sObj.en)}</span><span class="sentzh" data-k="${k}">${escHTML(sObj.zh)}</span> `;
+      k++;
+    }
+    html+=`</div>`;
+  }
+  return html;
+}
 // 統一產生短文區內容(可帶 highlight 定位句)
 function ctxInnerHTML(q,locate){
-  if(quizStory){let h=storyHTML(quizCtx);return locate?hlInHTML(h,locate):h;}
+  if(quizStory){
+    if(quizStoryData)return storyProseHTML(quizStoryData); // 有句對句資料 → 散文點讀模式
+    let h=storyHTML(quizCtx);return locate?hlInHTML(h,locate):h; // 退回舊氣泡版
+  }
   if(quizCloze)return clozePassageHTML(quizCtx,(q&&q.blankN)||0,quizFill);
   const lng=quizCtx.split(/\s+/).length>120;
   let h=lng?paraSplit(quizCtx):escHTML(quizCtx);
@@ -912,11 +940,12 @@ function renderQuiz(){
     const lng=(!quizStory&&!quizCloze&&quizCtx.split(/\s+/).length>120);
     const boxCls=quizStory?"story":("ctx"+(lng?" long":""));
     html+=`<div class="${boxCls}" id="ctxbox">`;
-    if(quizStory)html+=`<div class="scene">· 課外讀物 · 輕鬆讀,看不懂就開中文 ·</div>`;
+    if(quizStory)html+=`<div class="scene">· 課外讀物 ·</div>`;
+    if(quizStory&&quizStoryData)html+=`<div class="shint">輕點任何一句,就會出現它的中文</div>`;
     html+=`<div id="ctxpassage">${ctxInnerHTML(q,null)}</div>`;
     let tools="";
     if(quizCtxGloss&&quizCtxGloss.length)tools+=`<button class="btn btn-ghost" id="glossbtn">看難字 (${quizCtxGloss.length})</button>`;
-    if(quizCtxZh)tools+=`<button class="btn btn-ghost" id="ctxzhbtn">${quizStory?"看整篇中文":"看不懂?看整篇中文"}</button>`;
+    if(quizCtxZh&&!(quizStory&&quizStoryData))tools+=`<button class="btn btn-ghost" id="ctxzhbtn">${quizStory?"看整篇中文":"看不懂?看整篇中文"}</button>`;
     if(tools)html+=`<div class="ctxtools">${tools}</div>`;
     if(quizCtxGloss&&quizCtxGloss.length)html+=`<div class="glossbox" id="glossbox"><div class="ttl">難字</div>`
       +quizCtxGloss.map(g=>`<div class="gl"><b>${g.en}</b><span>${g.zh}</span></div>`).join("")+`</div>`;
@@ -943,6 +972,10 @@ function renderQuiz(){
     const h=document.getElementById("zhhint");h.textContent=q.clozeZh;h.style.display="block";rb.style.display="none";};}
   {const gb=document.getElementById("glossbtn");if(gb)gb.onclick=()=>{const h=document.getElementById("glossbox");const open=h.classList.toggle("show");gb.textContent=open?"收起難字":("看難字 ("+quizCtxGloss.length+")");};}
   {const cz=document.getElementById("ctxzhbtn");if(cz)cz.onclick=()=>{const h=document.getElementById("ctxzh");const open=h.classList.toggle("show");cz.textContent=open?"收起中文":(quizStory?"看整篇中文":"看不懂?看整篇中文");};}
+  if(quizStory&&quizStoryData){const cp=document.getElementById("ctxpassage");if(cp)cp.querySelectorAll(".sent").forEach(el=>{
+    el.onclick=()=>{const k=el.dataset.k;const zh=cp.querySelector('.sentzh[data-k="'+k+'"]');const open=zh.classList.contains("show");
+      cp.querySelectorAll(".sentzh.show").forEach(z=>z.classList.remove("show"));cp.querySelectorAll(".sent.tapped").forEach(s=>s.classList.remove("tapped"));
+      if(!open){zh.classList.add("show");el.classList.add("tapped");}};});}
   const fb=document.getElementById("fb");
   function go(){if(quizIdx<quizQ.length-1){quizIdx++;render();}else{if(curCat==="sprint")finishSprint();else if(curCat==="gsprint")finishGramSprint();else finishLevel();}}
   function after(ok,picked){answered=true;quizScore+=ok?1:0;
@@ -951,8 +984,8 @@ function renderQuiz(){
     if(curCat==="gsprint"&&q.gPattern){const gp=state.progress.gsprint||(state.progress.gsprint={});
       const st=gp[q.gPattern]||(gp[q.gPattern]={r:0,w:0});if(ok)st.r++;else{st.w++;gramSprintWrong.push(q);}saveState();}
     fb.className="feedback show "+(ok?"ok":"no");
-    // 答完更新短文區:閱讀 → 在原文 highlight 定位句;克漏字 → 把該格填上正解(綠色)
-    if(curCat==="reading"){const cp=document.getElementById("ctxpassage");
+    // 答完更新短文區:一般閱讀 → 在原文 highlight 定位句;克漏字 → 該格填上正解;課外讀物散文 → 不重繪(保留點讀狀態)
+    if(curCat==="reading"&&!(quizStory&&quizStoryData)){const cp=document.getElementById("ctxpassage");
       if(cp){if(quizCloze&&q.blankN!=null){quizFill[q.blankN]=q.answer;cp.innerHTML=clozePassageHTML(quizCtx,q.blankN,quizFill);}
         else if(q.locate){cp.innerHTML=ctxInnerHTML(q,q.locate);}}}
     let body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
