@@ -1,0 +1,882 @@
+{
+  "rounds": [
+    {
+      "title": "模擬考 第 1 回",
+      "vocab": [
+        {
+          "stem": "It will take a lot of work to ___ such a big mailing event, so the post office needs more staff to help.",
+          "options": [
+            "organize",
+            "occur",
+            "beat",
+            "warn"
+          ],
+          "answer": "organize",
+          "note": "organize=籌辦、安排。句意是「要花很多力氣『籌辦』這麼大的活動」。occur=發生(不及物,不能接受詞)、beat=打敗、warn=警告,語意都不合。"
+        },
+        {
+          "stem": "The express counter is not ___ on Sunday, so please come back on Monday to send your parcel.",
+          "options": [
+            "available",
+            "familiar",
+            "original",
+            "similar"
+          ],
+          "answer": "available",
+          "note": "available=可使用的、開放的。櫃台週日「不開放」。familiar=熟悉的、original=原本的、similar=相似的,都搭不上「櫃台不…」。"
+        },
+        {
+          "stem": "The mail carrier promised to ___ the package to the customer's door before noon.",
+          "options": [
+            "deliver",
+            "discover",
+            "decorate",
+            "decrease"
+          ],
+          "answer": "deliver",
+          "note": "deliver=投遞、送達。郵差答應在中午前把包裹「送到」門口。discover=發現、decorate=裝飾、decrease=減少,語意都不對。"
+        },
+        {
+          "stem": "Please mark the box as ___ so the workers will handle the glass cups inside with care.",
+          "options": [
+            "fragile",
+            "flexible",
+            "familiar",
+            "formal"
+          ],
+          "answer": "fragile",
+          "note": "fragile=易碎的。裡面是玻璃杯,要標「易碎」。flexible=有彈性的、familiar=熟悉的、formal=正式的,都不符合「小心輕放」的情境。"
+        },
+        {
+          "stem": "The clerk will ___ your letter first to decide how much postage you need to pay.",
+          "options": [
+            "weigh",
+            "count",
+            "borrow",
+            "repair"
+          ],
+          "answer": "weigh",
+          "note": "weigh=秤重。要先「秤」信的重量才知道郵資多少。count=數、borrow=借、repair=修理,跟決定郵資沒關係。"
+        },
+        {
+          "stem": "After waiting in line for over an hour, the angry customer filed a ___ about the slow service.",
+          "options": [
+            "complaint",
+            "compliment",
+            "contract",
+            "container"
+          ],
+          "answer": "complaint",
+          "note": "complaint=抱怨、投訴。客人生氣,當然是「投訴」服務太慢。compliment=稱讚(意思相反)、contract=合約、container=容器,都不合。"
+        },
+        {
+          "stem": "Trucks ___ thousands of parcels from the sorting center to local post offices every night.",
+          "options": [
+            "transport",
+            "translate",
+            "transform",
+            "trade"
+          ],
+          "answer": "transport",
+          "note": "transport=運送。卡車把包裹從分揀中心「運」到各地郵局。translate=翻譯、transform=轉變、trade=交易,字頭很像但語意都不對。"
+        },
+        {
+          "stem": "Please ___ your address and phone number so we can contact you if the delivery fails.",
+          "options": [
+            "confirm",
+            "cancel",
+            "consume",
+            "connect"
+          ],
+          "answer": "confirm",
+          "note": "confirm=確認。請你「確認」地址電話,投遞失敗才聯絡得到你。cancel=取消、consume=消耗、connect=連接,都不合句意。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "The customers were not ___ the long waiting time at the counter, so they left a bad review.",
+          "options": [
+            "satisfying to",
+            "satisfied with",
+            "satisfying with",
+            "satisfied to"
+          ],
+          "answer": "satisfied with",
+          "note": "be satisfied with=對…感到滿意,是固定用法。人是「被滿足」用過去分詞 satisfied;搭配的介系詞是 with,不是 to。"
+        },
+        {
+          "q": "This is the package ___ I have been waiting for all week.",
+          "options": [
+            "who",
+            "which",
+            "what",
+            "where"
+          ],
+          "answer": "which",
+          "note": "先行詞是 package(物),關係代名詞用 which(或 that)。who 指人、where 指地方、what 不能接在名詞後面當關係代名詞。"
+        },
+        {
+          "q": "The man ___ in line at the counter is holding three big boxes.",
+          "options": [
+            "standing",
+            "stands",
+            "stood",
+            "who stand"
+          ],
+          "answer": "standing",
+          "note": "現在分詞 standing 當形容詞修飾 the man,等於 who is standing。stands/stood 是動詞,會讓句子變兩個動詞;who stand 主詞單數應該用 stands,也不對。"
+        },
+        {
+          "q": "Despite ___ incredibly tired, the mail carrier still finished delivering every parcel.",
+          "options": [
+            "be",
+            "being",
+            "been",
+            "to be"
+          ],
+          "answer": "being",
+          "note": "despite 是介系詞,後面要接名詞或動名詞(V-ing),所以用 being。be/been/to be 都不是動名詞,接在介系詞後面不合文法。"
+        },
+        {
+          "q": "The manager expects his staff to spend more time ___ customers rather than chatting.",
+          "options": [
+            "serve",
+            "serving",
+            "to serve",
+            "which serves"
+          ],
+          "answer": "serving",
+          "note": "spend time + V-ing=花時間做某事,是固定用法,所以用 serving。serve/to serve/which serves 都不符合 spend time 後面要接 V-ing 的規則。"
+        },
+        {
+          "q": "If the address ___ clearer, the package would not have been returned to the sender.",
+          "options": [
+            "is",
+            "was",
+            "had been",
+            "has been"
+          ],
+          "answer": "had been",
+          "note": "這是與過去事實相反的假設(後半句 would not have been)。if 子句要用過去完成式 had been。is/was/has been 都不符合假設語氣的搭配。"
+        },
+        {
+          "q": "___ the heavy rain, the delivery team kept working day and night to clear the parcels.",
+          "options": [
+            "Despite",
+            "Though",
+            "As soon as",
+            "As long as"
+          ],
+          "answer": "Despite",
+          "note": "後面接的是名詞 the heavy rain,要用介系詞 Despite(儘管)。Though 是連接詞,後面要接完整句子;As soon as=一…就、As long as=只要,語意也不對。"
+        },
+        {
+          "q": "The more parcels we sort tonight, ___ we will have to do tomorrow.",
+          "options": [
+            "the fewer",
+            "fewer",
+            "the fewest",
+            "less few"
+          ],
+          "answer": "the fewer",
+          "note": "「the + 比較級…, the + 比較級…」=越…就越…。前面 the more,後面要對稱用 the fewer(越少)。fewer 少了 the、the fewest 是最高級、less few 不是正確說法。"
+        }
+      ],
+      "cloze": {
+        "passage": "Mr. Lin works at a busy post office in the city. Every morning, he ___(1) early to sort hundreds of letters and parcels. ___(2) the weather is bad, he still delivers the mail on time. Last week, a heavy storm hit the town, and many roads were ___(3) by fallen trees. Mr. Lin had to carry the parcels on foot for several hours. By the end of the day, he ___(4) walking more than twenty kilometers. His manager thanked him ___(5) his hard work and gave him a day off. Mr. Lin felt tired but very proud, because he knew that many people were waiting at home for their letters and packages.",
+        "passageZh": "林先生在城裡一間忙碌的郵局工作。每天早上,他很早起床,分揀好幾百封信和包裹。即使天氣不好,他還是準時把郵件送出去。上週,一場大風暴侵襲鎮上,許多道路被倒下的樹擋住。林先生只好徒步扛著包裹走了好幾個小時。到了一天結束時,他總共走了超過二十公里。他的主管為了他的辛勞向他道謝,還給了他一天假。林先生雖然很累,卻非常驕傲,因為他知道有許多人正在家裡等著他們的信件和包裹。",
+        "glossary": [
+          {
+            "en": "post office",
+            "zh": "郵局"
+          },
+          {
+            "en": "sort",
+            "zh": "分揀、分信"
+          },
+          {
+            "en": "parcel",
+            "zh": "包裹"
+          },
+          {
+            "en": "deliver",
+            "zh": "投遞、送達"
+          },
+          {
+            "en": "on time",
+            "zh": "準時"
+          },
+          {
+            "en": "storm",
+            "zh": "風暴"
+          },
+          {
+            "en": "fallen",
+            "zh": "倒下的"
+          },
+          {
+            "en": "on foot",
+            "zh": "徒步、走路"
+          },
+          {
+            "en": "kilometer",
+            "zh": "公里"
+          },
+          {
+            "en": "manager",
+            "zh": "主管、經理"
+          },
+          {
+            "en": "proud",
+            "zh": "驕傲的、自豪的"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "片語動詞",
+            "options": [
+              "gets up",
+              "gives up",
+              "looks up",
+              "puts up"
+            ],
+            "answer": "gets up",
+            "note": "get up=起床。他每天很早「起床」去分信。give up=放棄、look up=查詢、put up=搭起,都不合。"
+          },
+          {
+            "n": 2,
+            "point": "連接詞",
+            "options": [
+              "Although",
+              "Because",
+              "So",
+              "Unless"
+            ],
+            "answer": "Although",
+            "note": "前後句意相反(天氣不好『卻』照樣送信),用 Although(雖然)。Because=因為、So=所以、Unless=除非,邏輯都不對。"
+          },
+          {
+            "n": 3,
+            "point": "分詞/被動",
+            "options": [
+              "blocking",
+              "blocked",
+              "to block",
+              "block"
+            ],
+            "answer": "blocked",
+            "note": "道路是「被」樹擋住,用被動 were blocked。blocking 是主動、to block/block 不能跟在 were 後面當被動。"
+          },
+          {
+            "n": 4,
+            "point": "片語動詞",
+            "options": [
+              "ended up",
+              "put up",
+              "made up",
+              "gave up"
+            ],
+            "answer": "ended up",
+            "note": "end up + V-ing=結果落得、最後變成。他最後「總共走了」二十多公里。put up=搭起、made up=編造、gave up=放棄,都不合。"
+          },
+          {
+            "n": 5,
+            "point": "介系詞搭配",
+            "options": [
+              "for",
+              "to",
+              "with",
+              "at"
+            ],
+            "answer": "for",
+            "note": "thank somebody for something=為了某事感謝某人,固定搭配 for。to/with/at 都不是 thank 後面接「原因」的介系詞。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "Anna had worked as a mail carrier in a small mountain town for over thirty years. Every day, she carried a heavy bag full of letters and packages, walking up and down the steep roads to reach every house. The town had no big delivery trucks, so most of the work had to be done on foot. Many people thought the job was too hard, but Anna never complained. The people in the town loved Anna. For many older residents who lived alone, she was often the only person they saw all day. She did more than just deliver the mail. She checked on the elderly, carried groceries for those who could not walk far, and even read letters aloud for those whose eyes had grown weak. To the people of the town, Anna was not just a mail carrier; she was a friend. One winter, a terrible snowstorm hit the town. The roads were covered with thick ice, and the post office told its workers to stay home for their own safety. But Anna knew that an old man named Mr. Reed was waiting for an important medicine that had been mailed to him. Without telling anyone, she put on her boots and walked two hours through the snow to bring him the package. Mr. Reed was so moved that he cried. When Anna finally retired, the whole town held a party for her. The mayor gave a speech and called her a true hero. Anna smiled and said she had only done her job. But everyone knew that she had given the town much more than letters.",
+        "passageZh": "安娜在一個小山城當郵差已經超過三十年。每天,她背著裝滿信件和包裹的沉重袋子,在陡峭的山路上上下下,把郵件送到每一戶人家。鎮上沒有大型投遞卡車,所以大部分工作都得靠雙腳完成。很多人覺得這份工作太辛苦,但安娜從不抱怨。鎮上的人都很愛安娜。對許多獨居的長者來說,她常常是他們一整天唯一見到的人。她做的不只是送信。她會探望老人家、幫走不遠的人提日用品,甚至為視力衰退的人朗讀信件。對鎮上的人而言,安娜不只是郵差,更是朋友。有一年冬天,一場可怕的暴風雪襲擊小鎮。道路結了厚厚的冰,郵局要員工為了自身安全待在家裡。但安娜知道一位叫里德先生的老人正在等一份寄給他的重要藥品。她沒告訴任何人,就穿上靴子,在雪中走了兩小時把包裹送到他手上。里德先生感動得哭了。安娜終於退休時,全鎮為她辦了一場派對。鎮長致詞,稱她是真正的英雄。安娜微笑著說,她只是做好自己的工作而已。但大家都知道,她給這個小鎮的,遠不只是信件。",
+        "glossary": [
+          {
+            "en": "mail carrier",
+            "zh": "郵差"
+          },
+          {
+            "en": "steep",
+            "zh": "陡峭的"
+          },
+          {
+            "en": "delivery truck",
+            "zh": "投遞卡車"
+          },
+          {
+            "en": "on foot",
+            "zh": "徒步、走路"
+          },
+          {
+            "en": "complain",
+            "zh": "抱怨"
+          },
+          {
+            "en": "resident",
+            "zh": "居民"
+          },
+          {
+            "en": "the elderly",
+            "zh": "老人家、長者"
+          },
+          {
+            "en": "groceries",
+            "zh": "日用雜貨、食品"
+          },
+          {
+            "en": "aloud",
+            "zh": "出聲地、大聲地"
+          },
+          {
+            "en": "snowstorm",
+            "zh": "暴風雪"
+          },
+          {
+            "en": "thick",
+            "zh": "厚的"
+          },
+          {
+            "en": "medicine",
+            "zh": "藥品"
+          },
+          {
+            "en": "mailed",
+            "zh": "寄出的(mail 的過去分詞)"
+          },
+          {
+            "en": "boots",
+            "zh": "靴子"
+          },
+          {
+            "en": "moved",
+            "zh": "受感動的"
+          },
+          {
+            "en": "retire",
+            "zh": "退休"
+          },
+          {
+            "en": "mayor",
+            "zh": "鎮長、市長"
+          },
+          {
+            "en": "hero",
+            "zh": "英雄"
+          }
+        ],
+        "questions": [
+          {
+            "q": "How did Anna usually deliver the mail in the town?",
+            "options": [
+              "By driving a big delivery truck",
+              "By riding a fast motorcycle",
+              "On foot, walking up and down the roads",
+              "By asking other workers to help her"
+            ],
+            "answer": "On foot, walking up and down the roads",
+            "qtype": "細節",
+            "note": "文章說鎮上沒有大卡車,工作幾乎都靠走路,所以是徒步送信。",
+            "locate": "The town had no big delivery trucks, so most of the work had to be done on foot."
+          },
+          {
+            "q": "Besides delivering mail, what did Anna do for the older residents?",
+            "options": [
+              "She cooked hot meals for them every night",
+              "She checked on them and carried groceries for them",
+              "She drove them to the hospital",
+              "She gave them money"
+            ],
+            "answer": "She checked on them and carried groceries for them",
+            "qtype": "細節",
+            "note": "文章列出她會探望老人、幫忙提日用品、朗讀信件,所以選『探望並幫忙提東西』。",
+            "locate": "She checked on the elderly, carried groceries for those who could not walk far, and even read letters aloud for those whose eyes had grown weak."
+          },
+          {
+            "q": "Why did Anna walk through the snowstorm to Mr. Reed's house?",
+            "options": [
+              "Because the post office ordered her to",
+              "Because she wanted to win a prize",
+              "Because she knew he was waiting for important medicine",
+              "Because she enjoyed walking in the snow"
+            ],
+            "answer": "Because she knew he was waiting for important medicine",
+            "qtype": "推論",
+            "note": "雖然郵局要大家待在家,但她知道老先生在等重要藥品,所以冒雪去送。這是從上下文推論出的原因。",
+            "locate": "But Anna knew that an old man named Mr. Reed was waiting for an important medicine that had been mailed to him."
+          },
+          {
+            "q": "What does the word \"moved\" mean in the story?",
+            "options": [
+              "physically pushed to another place",
+              "deeply touched in his feelings",
+              "changed to a new home",
+              "made very angry"
+            ],
+            "answer": "deeply touched in his feelings",
+            "qtype": "字義",
+            "note": "moved 在這裡不是『移動』,而是『被感動』。後面接『哭了』,可知是情感上深受觸動。",
+            "locate": "Mr. Reed was so moved that he cried."
+          },
+          {
+            "q": "What is the main idea of the story?",
+            "options": [
+              "Anna was paid a lot of money for her hard work",
+              "A mail carrier can become a town's true friend through care and devotion",
+              "Small mountain towns always have bad weather in winter",
+              "Delivering mail on foot is too dangerous to do"
+            ],
+            "answer": "A mail carrier can become a town's true friend through care and devotion",
+            "qtype": "主旨",
+            "note": "整篇在講安娜不只送信,更用關懷付出贏得全鎮的愛與尊敬,這就是主旨。其他選項只是細節或與文意不符。"
+          }
+        ]
+      }
+    },
+    {
+      "title": "模擬考 第 2 回",
+      "vocab": [
+        {
+          "stem": "With postage rising so high, some small shops can no longer ___ to mail heavy parcels overseas.",
+          "options": [
+            "divide",
+            "afford",
+            "recognize",
+            "connect"
+          ],
+          "answer": "afford",
+          "note": "afford=負擔得起(費用)。郵資太貴,小店「付不起」寄重包裹到國外。divide=分開、recognize=認出、connect=連接,都跟費用無關。"
+        },
+        {
+          "stem": "The clerk ___ that I use the express service if I want the letter to arrive tomorrow.",
+          "options": [
+            "avoided",
+            "obeyed",
+            "recommended",
+            "depended"
+          ],
+          "answer": "recommended",
+          "note": "recommend=建議、推薦。櫃員「建議」我用快遞。avoid=避免、obey=服從、depend=依賴,語意都不合。"
+        },
+        {
+          "stem": "The box was badly ___ during transport, so the cups inside were all broken.",
+          "options": [
+            "damaged",
+            "decorated",
+            "delighted",
+            "delivered"
+          ],
+          "answer": "damaged",
+          "note": "damage=損壞。箱子在運送中被「弄壞」,裡面杯子才會破。decorate=裝飾、delight=使高興、deliver=投遞,字頭像但語意都不對。"
+        },
+        {
+          "stem": "Our post office is famous for its ___ service; parcels almost always arrive on time.",
+          "options": [
+            "reliable",
+            "curious",
+            "nervous",
+            "empty"
+          ],
+          "answer": "reliable",
+          "note": "reliable=可靠的。包裹幾乎都準時到,代表服務「可靠」。curious=好奇的、nervous=緊張的、empty=空的,都不符合。"
+        },
+        {
+          "stem": "You can ___ your parcel online to see exactly where it is right now.",
+          "options": [
+            "track",
+            "treat",
+            "trust",
+            "trade"
+          ],
+          "answer": "track",
+          "note": "track=追蹤(包裹位置)。可以上網「追蹤」包裹到哪了。treat=對待、trust=信任、trade=交易,字頭像但語意不合。"
+        },
+        {
+          "stem": "Because the package arrived broken, the customer asked the post office for a full ___.",
+          "options": [
+            "refund",
+            "reason",
+            "record",
+            "receipt"
+          ],
+          "answer": "refund",
+          "note": "refund=退款。包裹寄到時是壞的,客人要求「全額退款」。reason=理由、record=紀錄、receipt=收據,雖然 receipt 也常出現在郵局,但這裡要的是『退錢』。"
+        },
+        {
+          "stem": "Please ___ the correct address label to the front of the box before you send it.",
+          "options": [
+            "attach",
+            "attend",
+            "attack",
+            "attract"
+          ],
+          "answer": "attach",
+          "note": "attach=貼上、附上。要把地址標籤「貼」在箱子正面。attend=出席、attack=攻擊、attract=吸引,字頭都是 att- 但語意不同。"
+        },
+        {
+          "stem": "Heavy snow caused a long ___ in mail delivery across the whole country last week.",
+          "options": [
+            "delay",
+            "display",
+            "demand",
+            "design"
+          ],
+          "answer": "delay",
+          "note": "delay=延誤。大雪造成郵件投遞「延誤」。display=展示、demand=需求、design=設計,字頭像但語意不合。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "This post office ___ at the same street corner for more than fifty years.",
+          "options": [
+            "stands",
+            "has stood",
+            "standing",
+            "stood"
+          ],
+          "answer": "has stood",
+          "note": "搭配 for more than fifty years(持續到現在),用現在完成式 has stood。stands 是單純現在式、standing 不是完整動詞、stood 是過去式都不含『一直到現在』的意思。"
+        },
+        {
+          "q": "As soon as the parcels arrived at the center, they ___ by the machines into different lines.",
+          "options": [
+            "sorted",
+            "had sorted",
+            "were sorted",
+            "were sorting"
+          ],
+          "answer": "were sorted",
+          "note": "包裹是「被」機器分揀,用被動 were sorted。sorted/had sorted 是主動、were sorting 是主動進行式,都不對。"
+        },
+        {
+          "q": "This is the customer ___ package was lost on the way last week.",
+          "options": [
+            "who",
+            "which",
+            "whose",
+            "whom"
+          ],
+          "answer": "whose",
+          "note": "後面接名詞 package,表示『那位客人的包裹』,要用所有格關係代名詞 whose。who/whom 當主詞或受詞、which 指物,後面都不會直接接名詞。"
+        },
+        {
+          "q": "The Internet makes ___ possible for us to track our parcels without leaving home.",
+          "options": [
+            "it",
+            "us",
+            "one",
+            "that"
+          ],
+          "answer": "it",
+          "note": "make it + 形容詞 + to V 是固定句型,it 是虛受詞,真正的受詞是後面的 to track…。us/one/that 都不能當這個虛受詞。"
+        },
+        {
+          "q": "Not only ___ the carrier deliver the mail on time, but he also helped the old lady carry her bags.",
+          "options": [
+            "do",
+            "will",
+            "did",
+            "does"
+          ],
+          "answer": "did",
+          "note": "Not only 放句首要『倒裝』,且全句是過去式(helped),所以助動詞用 did + 原形 deliver。do/does 是現在式、will 是未來式,時態都不合。"
+        },
+        {
+          "q": "Many carriers feel happier riding bikes to work than ___ in heavy traffic.",
+          "options": [
+            "drive",
+            "driving",
+            "to drive",
+            "drove"
+          ],
+          "answer": "driving",
+          "note": "than 前面是 riding(動名詞),為了對稱,後面也要用動名詞 driving。drive/to drive/drove 形式不一致。"
+        },
+        {
+          "q": "___ the long line at the counter, the customers stayed calm and waited quietly.",
+          "options": [
+            "Although",
+            "Because",
+            "In spite of",
+            "As long as"
+          ],
+          "answer": "In spite of",
+          "note": "後面接名詞 the long line,要用介系詞片語 In spite of(儘管)。Although/Because/As long as 都是連接詞,後面要接完整句子。"
+        },
+        {
+          "q": "The new sorting machine works ___ as the old one, so it clears the parcels much sooner.",
+          "options": [
+            "twice as fast",
+            "twice faster than",
+            "two times fast",
+            "twice faster"
+          ],
+          "answer": "twice as fast",
+          "note": "倍數表達用『倍數 + as + 原級 + as』,即 twice as fast as。twice faster than / two times fast / twice faster 都不是正確的倍數比較說法。"
+        }
+      ],
+      "cloze": {
+        "passage": "Online shopping has become very popular in recent years. Every day, millions of packages are ___(1) from warehouses to homes all over the country. ___(2) this is convenient for shoppers, it also creates a lot of pressure for delivery workers. During holidays, the number of parcels can almost ___(3) in just a few weeks. Many carriers ___(4) working late into the night to make sure every package arrives on time. To solve this problem, some companies are now ___(5) on new machines and electric trucks that can move parcels faster and more safely. Thanks to these efforts, most packages still reach their owners on time, even during the busiest shopping days of the year.",
+        "passageZh": "近年來網路購物變得非常流行。每天有數百萬件包裹從倉庫被運送到全國各地的家庭。雖然這對消費者很方便,卻也帶給投遞人員很大的壓力。每逢假期,包裹數量在短短幾週內幾乎會翻倍。許多投遞員最後都得工作到深夜,才能確保每件包裹準時送達。為了解決這個問題,有些公司現在開始仰賴新型機器和電動卡車,讓包裹運得更快、更安全。多虧這些努力,即使在一年中最忙碌的購物日,大多數包裹仍能準時送到主人手上。",
+        "glossary": [
+          {
+            "en": "online shopping",
+            "zh": "網路購物"
+          },
+          {
+            "en": "package",
+            "zh": "包裹"
+          },
+          {
+            "en": "warehouse",
+            "zh": "倉庫"
+          },
+          {
+            "en": "convenient",
+            "zh": "方便的"
+          },
+          {
+            "en": "pressure",
+            "zh": "壓力"
+          },
+          {
+            "en": "parcel",
+            "zh": "包裹"
+          },
+          {
+            "en": "carrier",
+            "zh": "投遞員"
+          },
+          {
+            "en": "on time",
+            "zh": "準時"
+          },
+          {
+            "en": "electric",
+            "zh": "電動的"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "分詞/被動",
+            "options": [
+              "shipping",
+              "shipped",
+              "to ship",
+              "ship"
+            ],
+            "answer": "shipped",
+            "note": "包裹是「被」運送,用被動 are shipped。shipping 是主動進行、to ship/ship 不能跟在 are 後面構成被動。"
+          },
+          {
+            "n": 2,
+            "point": "連接詞",
+            "options": [
+              "Although",
+              "Because",
+              "Unless",
+              "So"
+            ],
+            "answer": "Although",
+            "note": "前後語意相反(方便『卻』也造成壓力),用 Although(雖然)。Because=因為、Unless=除非、So=所以,邏輯都不合。"
+          },
+          {
+            "n": 3,
+            "point": "動詞語意",
+            "options": [
+              "double",
+              "reduce",
+              "cancel",
+              "repair"
+            ],
+            "answer": "double",
+            "note": "假期包裹暴增,數量幾乎「翻倍」double。reduce=減少(意思相反)、cancel=取消、repair=修理,都不合句意。"
+          },
+          {
+            "n": 4,
+            "point": "片語動詞",
+            "options": [
+              "end up",
+              "put up",
+              "give up",
+              "look up"
+            ],
+            "answer": "end up",
+            "note": "end up + V-ing=結果落得、最後變成。投遞員「最後都得」工作到深夜。put up=搭起、give up=放棄、look up=查詢,都不合。"
+          },
+          {
+            "n": 5,
+            "point": "片語動詞",
+            "options": [
+              "relying",
+              "refusing",
+              "removing",
+              "repairing"
+            ],
+            "answer": "relying",
+            "note": "rely on=仰賴、依靠。公司開始「仰賴」新機器。refuse=拒絕、remove=移除、repair=修理,字頭像但語意不對,且只有 rely 配 on。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "Have you ever wondered what happens to a package after you drop it off at the post office? The journey of a parcel is longer and more complex than most people imagine. First, when you hand your package to the clerk, it is weighed and given a special barcode. This barcode is very important because it allows the parcel to be tracked at every step of its trip. After you pay the postage, your package is placed into a large bin with hundreds of others. Next, trucks carry these bins to a huge sorting center. Inside the center, machines read the barcodes and quickly separate the packages by their destinations. A parcel going to the north of the country is sent to a different line from one going to the south. These machines can sort thousands of packages in a single hour, far faster than any human could. Once the packages are sorted, they are loaded onto trucks, trains, or even planes, depending on how far they must travel. A package sent across the country may fly through the air, while one going to a nearby town simply rides in a small van. Finally, the parcel arrives at a local post office near its destination. A mail carrier picks it up, places it in a delivery vehicle, and brings it to your door. From start to finish, a single package may be touched by many workers and travel hundreds of kilometers. The next time you receive a parcel at your door, take a moment to remember the long and busy journey it has taken just to reach your hands.",
+        "passageZh": "你有沒有想過,把包裹寄到郵局後,它接下來會發生什麼事?一件包裹的旅程,比大多數人想像的更長、更複雜。首先,當你把包裹交給櫃員時,它會被秤重,並貼上一個專屬的條碼。這個條碼非常重要,因為它讓包裹在每一個環節都能被追蹤。付完郵資後,你的包裹會和好幾百件包裹一起被放進一個大箱櫃裡。接著,卡車把這些箱櫃載到一個巨大的分揀中心。在中心裡,機器會讀取條碼,迅速依照目的地把包裹分開。要寄到北部的包裹,會被送到和寄往南部不同的輸送線上。這些機器一小時能分揀好幾千件包裹,遠比任何人都快。包裹分好之後,會依照要運送的距離,被裝上卡車、火車,甚至飛機。寄到全國另一端的包裹可能會搭飛機;而送往鄰鎮的包裹,就只是搭一台小貨車。最後,包裹抵達靠近目的地的當地郵局。郵差把它取走,放上投遞車,送到你家門口。從頭到尾,一件包裹可能經過許多人的手,並旅行好幾百公里。下次你在家門口收到包裹時,不妨花點時間,想想它為了送到你手上,經歷了多麼漫長又忙碌的旅程。",
+        "glossary": [
+          {
+            "en": "wonder",
+            "zh": "想知道、納悶"
+          },
+          {
+            "en": "drop off",
+            "zh": "(順道)放下、寄放"
+          },
+          {
+            "en": "journey",
+            "zh": "旅程"
+          },
+          {
+            "en": "parcel",
+            "zh": "包裹"
+          },
+          {
+            "en": "complex",
+            "zh": "複雜的"
+          },
+          {
+            "en": "imagine",
+            "zh": "想像"
+          },
+          {
+            "en": "clerk",
+            "zh": "櫃員、職員"
+          },
+          {
+            "en": "weighed",
+            "zh": "被秤重(weigh 的過去分詞)"
+          },
+          {
+            "en": "barcode",
+            "zh": "條碼"
+          },
+          {
+            "en": "track",
+            "zh": "追蹤"
+          },
+          {
+            "en": "postage",
+            "zh": "郵資"
+          },
+          {
+            "en": "bin",
+            "zh": "箱櫃、大箱子"
+          },
+          {
+            "en": "sorting center",
+            "zh": "分揀中心"
+          },
+          {
+            "en": "separate",
+            "zh": "分開"
+          },
+          {
+            "en": "destination",
+            "zh": "目的地"
+          },
+          {
+            "en": "loaded",
+            "zh": "被裝載(load 的過去分詞)"
+          },
+          {
+            "en": "depending on",
+            "zh": "取決於、依照"
+          },
+          {
+            "en": "van",
+            "zh": "廂型車、小貨車"
+          },
+          {
+            "en": "delivery vehicle",
+            "zh": "投遞車輛"
+          },
+          {
+            "en": "kilometer",
+            "zh": "公里"
+          }
+        ],
+        "questions": [
+          {
+            "q": "What is given to a package right after it is weighed?",
+            "options": [
+              "A new home address",
+              "A special barcode",
+              "A free delivery truck",
+              "A customer's phone number"
+            ],
+            "answer": "A special barcode",
+            "qtype": "細節",
+            "note": "文章說交給櫃員後,包裹先被秤重並『貼上專屬條碼』,所以答案是條碼。",
+            "locate": "First, when you hand your package to the clerk, it is weighed and given a special barcode."
+          },
+          {
+            "q": "What do the machines in the sorting center do?",
+            "options": [
+              "They wrap the packages in paper",
+              "They read barcodes and separate packages by destination",
+              "They weigh every customer at the door",
+              "They sell stamps to visitors"
+            ],
+            "answer": "They read barcodes and separate packages by destination",
+            "qtype": "細節",
+            "note": "文章明白寫機器讀條碼、依目的地把包裹分開,所以選這項。",
+            "locate": "Inside the center, machines read the barcodes and quickly separate the packages by their destinations."
+          },
+          {
+            "q": "Why might a package be sent by plane?",
+            "options": [
+              "Because planes are always the cheapest way",
+              "Because it must travel a long distance",
+              "Because it is too heavy for a truck",
+              "Because the customer paid extra for fun"
+            ],
+            "answer": "Because it must travel a long distance",
+            "qtype": "推論",
+            "note": "文章說運送方式『取決於要走多遠』,寄到全國另一端的才搭飛機,可推論距離遠才用飛機。",
+            "locate": "Once the packages are sorted, they are loaded onto trucks, trains, or even planes, depending on how far they must travel."
+          },
+          {
+            "q": "What does the word \"destinations\" mean in the passage?",
+            "options": [
+              "the places where the packages are going",
+              "the prices people pay for postage",
+              "the names of the postal workers",
+              "the weights of the boxes"
+            ],
+            "answer": "the places where the packages are going",
+            "qtype": "字義",
+            "note": "destination=目的地,也就是包裹『要去的地方』。從『依目的地分開、寄往北部或南部』可看出意思。",
+            "locate": "Inside the center, machines read the barcodes and quickly separate the packages by their destinations."
+          },
+          {
+            "q": "What is the main idea of the passage?",
+            "options": [
+              "Sending a package by post is far too expensive",
+              "A package goes through a long, complex journey before it reaches you",
+              "Machines will soon replace all postal workers",
+              "Traveling by plane is the fastest way to see a country"
+            ],
+            "answer": "A package goes through a long, complex journey before it reaches you",
+            "qtype": "主旨",
+            "note": "全篇從寄件、秤重、分揀到投遞,說明包裹要經過漫長複雜的旅程才送到你手上,這就是主旨。"
+          }
+        ]
+      }
+    }
+  ]
+}

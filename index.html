@@ -197,6 +197,7 @@ const CATS=[
   {key:"gsprint",name:"文法衝刺",ic:"🧩",ds:"句型實戰,錯題優先"}
 ];
 let ALL=[], GRAMMAR=[], READING=[];
+let EXAM=null; // 模擬考整卷(exam.json);載入失敗為 null → 退回即時組卷
 let DAYS=[];
 const ONE_DAY=86400000;
 let state={startDate:null,wordsPerDay:DEFAULT_WPD,sprintN:DEFAULT_SPRINT_N,gsprintN:DEFAULT_GSPRINT_N,progress:{vocab:{},grammar:{},reading:{},exam:{},sprint:{},gsprint:{}}};
@@ -335,7 +336,8 @@ function levelCount(cat){
   if(cat==="vocab")return DAYS.length;
   if(cat==="grammar")return gramLevels().length;
   if(cat==="reading")return readingLevels().length;
-  if(cat==="exam")return (ALL.length&&GRAMMAR.length)?EXAM_ROUNDS:0;
+  if(cat==="exam"){if(EXAM&&EXAM.rounds.length)return EXAM.rounds.length; // 有整卷:每回=一關
+    return (ALL.length&&GRAMMAR.length)?EXAM_ROUNDS:0;} // 後備:即時組卷
   if(cat==="sprint")return ALL.length?1:0; // 衝刺沒有關卡;回傳非 0 只為了讓首頁卡片不被當「準備中」
   if(cat==="gsprint")return GRAMMAR.length?1:0; // 文法衝刺同理,不走 level 計數
   return 0;
@@ -372,6 +374,8 @@ async function init(){
   catch(e){document.getElementById("card").innerHTML='<div class="errbox"><b>讀不到 data.json</b><br>'+e.message+'<br><br>請確認 data.json 與本網頁放在同一層,並透過 https 網址開啟。</div>';return;}
   try{GRAMMAR=await fetchJSON("grammar.json");}catch(e){GRAMMAR=[];}
   try{READING=await fetchJSON("reading.json");}catch(e){READING=[];}
+  // 模擬考整卷:獨立 try/catch,載入失敗只讓 EXAM=null(退回即時組卷),不影響其他資料
+  try{const ex=await fetchJSON("exam.json");EXAM=(ex&&Array.isArray(ex.rounds)&&ex.rounds.length)?ex:null;}catch(e){EXAM=null;}
   rechunk();phase="home";render();
 }
 
@@ -848,10 +852,39 @@ function buildQuiz(){
       }
     }
   } else if(curCat==="exam"){
-    const vs=shuffle(ALL).slice(0,4);for(const w of vs){const opts=shuffle([w.en,...pickDistract(w,3,"hard").map(x=>x.en)]);quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"選出正確的英文",options:opts,answer:w.en});}
-    for(const it of shuffle(GRAMMAR).slice(0,3)){const qq=shuffle(gramBank(it))[0];if(qq)quizQ.push(gramFormQ(qq));}
-    const cl=READING.filter(r=>r.type==="cloze");if(cl.length){const c=shuffle(cl)[0];quizQ.push({kind:"choice",head:c.text,headSmall:true,ask:"選出最適合填入的字",options:shuffle(c.options.slice()),answer:c.answer,note:c.note});}
-    quizQ=shuffle(quizQ);
+    if(EXAM&&EXAM.rounds[viewLevel]){ // ===== 整卷模式:讀 exam.json,依四區塊順序組卷(區塊間不洗牌)=====
+      const R=EXAM.rounds[viewLevel];quizFill={};
+      // 1) 字彙:每題一句挖一格,依語境選字(區塊內題序可洗、選項可洗)
+      for(const v of shuffle((R.vocab||[]).slice())){
+        quizQ.push({kind:"choice",head:v.stem,headSmall:true,ask:"依句意選出最適合的字",
+          options:shuffle(v.options.slice()),answer:v.answer,note:v.note||null});}
+      // 2) 文法:單句四選一
+      for(const g of shuffle((R.grammar||[]).slice())){
+        quizQ.push({kind:"choice",head:g.q,headSmall:true,ask:"選出正確的文法",
+          options:shuffle(g.options.slice()),answer:g.answer,note:g.note||null});}
+      // 3) 克漏字題組:每格一題;短文跟著每題走(ctxMode:cloze),格號維持 1..n 不洗
+      if(R.cloze&&Array.isArray(R.cloze.blanks)){const cz=R.cloze;
+        for(const b of cz.blanks){
+          const head=(b.n!=null?("第 "+b.n+" 格"):"克漏字");
+          const ask=b.point?("【"+b.point+"】選最適合填入的字"):"選最適合填入空格的字";
+          const note=b.note?((b.point?("〔"+b.point+"〕"):"")+b.note):(b.point||null);
+          quizQ.push({kind:"choice",head,headSmall:true,ask,options:shuffle(b.options.slice()),
+            answer:b.answer,note,blankN:b.n,
+            ctxPassage:cz.passage,ctxZh:cz.passageZh||null,ctxGloss:cz.glossary||null,ctxMode:"cloze"});}}
+      // 4) 閱讀題組:每題短文跟著走(ctxMode:reading),保留定位句 highlight
+      if(R.reading&&Array.isArray(R.reading.questions)){const rd=R.reading;
+        for(const q of rd.questions){
+          const ask=q.qtype?("【"+q.qtype+"】根據短文選出答案"):"根據短文選出答案";
+          quizQ.push({kind:"choice",head:q.q,headSmall:true,ask,options:shuffle(q.options.slice()),
+            answer:q.answer,note:q.note||null,locate:q.locate||null,
+            ctxPassage:rd.passage,ctxZh:rd.passageZh||null,ctxGloss:rd.glossary||null,ctxMode:"reading"});}}
+      // 整卷不再整體洗牌(維持字彙→文法→克漏字→閱讀的考卷順序)
+    } else { // ===== 後備:沒有 exam.json 時的即時組卷(保留原行為)=====
+      const vs=shuffle(ALL).slice(0,4);for(const w of vs){const opts=shuffle([w.en,...pickDistract(w,3,"hard").map(x=>x.en)]);quizQ.push({kind:"choice",head:w.zh,headSmall:true,ask:"選出正確的英文",options:opts,answer:w.en});}
+      for(const it of shuffle(GRAMMAR).slice(0,3)){const qq=shuffle(gramBank(it))[0];if(qq)quizQ.push(gramFormQ(qq));}
+      const cl=READING.filter(r=>r.type==="cloze");if(cl.length){const c=shuffle(cl)[0];quizQ.push({kind:"choice",head:c.text,headSmall:true,ask:"選出最適合填入的字",options:shuffle(c.options.slice()),answer:c.answer,note:c.note});}
+      quizQ=shuffle(quizQ);
+    }
   }
   phase="quiz";render();
 }
@@ -923,33 +956,44 @@ function storyProseHTML(blocks){
   return html;
 }
 // 統一產生短文區內容(可帶 highlight 定位句)
-function ctxInnerHTML(q,locate){
-  if(quizStory){
-    if(quizStoryData)return storyProseHTML(quizStoryData); // 有句對句資料 → 散文點讀模式
-    let h=storyHTML(quizCtx);return locate?hlInHTML(h,locate):h; // 退回舊氣泡版
+// ctx(選填)= 該題自帶的短文設定 {passage,mode("story"|"cloze"|"reading"),story};沒帶就退回全域 quizCtx/quizStory/quizCloze
+function ctxInnerHTML(q,locate,ctx){
+  ctx=ctx||{passage:quizCtx,mode:(quizStory?"story":(quizCloze?"cloze":"reading")),story:quizStoryData};
+  const passage=ctx.passage,mode=ctx.mode;
+  if(mode==="story"){
+    if(ctx.story)return storyProseHTML(ctx.story); // 有句對句資料 → 散文點讀模式
+    let h=storyHTML(passage);return locate?hlInHTML(h,locate):h; // 退回舊氣泡版
   }
-  if(quizCloze)return clozePassageHTML(quizCtx,(q&&q.blankN)||0,quizFill);
-  const lng=quizCtx.split(/\s+/).length>120;
-  let h=lng?paraSplit(quizCtx):escHTML(quizCtx);
+  if(mode==="cloze")return clozePassageHTML(passage,(q&&q.blankN)||0,quizFill);
+  const lng=passage.split(/\s+/).length>120;
+  let h=lng?paraSplit(passage):escHTML(passage);
   return locate?hlInHTML(h,locate):h;
 }
 function renderQuiz(){
   const card=document.getElementById("card"),q=quizQ[quizIdx];answered=false;
+  // 每題自帶短文設定優先(整卷模式);沒帶就退回全域(閱讀/克漏字大類原本行為不變)
+  const ctxPassage=(q.ctxPassage!=null)?q.ctxPassage:quizCtx;
+  const ctxZh=(q.ctxZh!=null)?q.ctxZh:quizCtxZh;
+  const ctxGloss=(q.ctxGloss!=null)?q.ctxGloss:quizCtxGloss;
+  const isStory=q.ctxMode?(q.ctxMode==="story"):quizStory;
+  const isCloze=q.ctxMode?(q.ctxMode==="cloze"):quizCloze;
+  const storyData=q.ctxMode?null:quizStoryData; // 整卷沒有句對句散文資料
+  const curCtx={passage:ctxPassage,mode:(isStory?"story":(isCloze?"cloze":"reading")),story:storyData};
   let html=`<div class="counter">第 ${quizIdx+1} / ${quizQ.length} 題</div>`;
-  if(quizCtx){
-    const lng=(!quizStory&&!quizCloze&&quizCtx.split(/\s+/).length>120);
-    const boxCls=quizStory?"story":("ctx"+(lng?" long":""));
+  if(ctxPassage){
+    const lng=(!isStory&&!isCloze&&ctxPassage.split(/\s+/).length>120);
+    const boxCls=isStory?"story":("ctx"+(lng?" long":""));
     html+=`<div class="${boxCls}" id="ctxbox">`;
-    if(quizStory)html+=`<div class="scene">· 課外讀物 ·</div>`;
-    if(quizStory&&quizStoryData)html+=`<div class="shint">輕點任何一句,就會出現它的中文</div>`;
-    html+=`<div id="ctxpassage">${ctxInnerHTML(q,null)}</div>`;
+    if(isStory)html+=`<div class="scene">· 課外讀物 ·</div>`;
+    if(isStory&&storyData)html+=`<div class="shint">輕點任何一句,就會出現它的中文</div>`;
+    html+=`<div id="ctxpassage">${ctxInnerHTML(q,null,curCtx)}</div>`;
     let tools="";
-    if(quizCtxGloss&&quizCtxGloss.length)tools+=`<button class="btn btn-ghost" id="glossbtn">看難字 (${quizCtxGloss.length})</button>`;
-    if(quizCtxZh&&!(quizStory&&quizStoryData))tools+=`<button class="btn btn-ghost" id="ctxzhbtn">${quizStory?"看整篇中文":"看不懂?看整篇中文"}</button>`;
+    if(ctxGloss&&ctxGloss.length)tools+=`<button class="btn btn-ghost" id="glossbtn">看難字 (${ctxGloss.length})</button>`;
+    if(ctxZh&&!(isStory&&storyData))tools+=`<button class="btn btn-ghost" id="ctxzhbtn">${isStory?"看整篇中文":"看不懂?看整篇中文"}</button>`;
     if(tools)html+=`<div class="ctxtools">${tools}</div>`;
-    if(quizCtxGloss&&quizCtxGloss.length)html+=`<div class="glossbox" id="glossbox"><div class="ttl">難字</div>`
-      +quizCtxGloss.map(g=>`<div class="gl"><b>${g.en}</b><span>${g.zh}</span></div>`).join("")+`</div>`;
-    if(quizCtxZh)html+=`<div class="ctxzh" id="ctxzh">${quizCtxZh}</div>`;
+    if(ctxGloss&&ctxGloss.length)html+=`<div class="glossbox" id="glossbox"><div class="ttl">難字</div>`
+      +ctxGloss.map(g=>`<div class="gl"><b>${g.en}</b><span>${g.zh}</span></div>`).join("")+`</div>`;
+    if(ctxZh)html+=`<div class="ctxzh" id="ctxzh">${ctxZh}</div>`;
     html+=`</div>`;
   }
   html+=`<div class="qhead ${q.headSmall?'small':''}">${q.head}</div>`;
@@ -966,13 +1010,13 @@ function renderQuiz(){
     <div class="row"><button class="btn btn-main" id="sub">送出</button></div>`;}
   html+=`<div class="feedback" id="fb"></div>`;
   card.innerHTML=html;
-  card.classList.toggle("storymode",!!quizStory);
+  card.classList.toggle("storymode",!!isStory);
   if(q.speak){document.getElementById("spk").onclick=()=>speak(q.speak);speak(q.speak);}
   if(q.cloze){const rb=document.getElementById("revealzh");if(rb)rb.onclick=()=>{
     const h=document.getElementById("zhhint");h.textContent=q.clozeZh;h.style.display="block";rb.style.display="none";};}
-  {const gb=document.getElementById("glossbtn");if(gb)gb.onclick=()=>{const h=document.getElementById("glossbox");const open=h.classList.toggle("show");gb.textContent=open?"收起難字":("看難字 ("+quizCtxGloss.length+")");};}
-  {const cz=document.getElementById("ctxzhbtn");if(cz)cz.onclick=()=>{const h=document.getElementById("ctxzh");const open=h.classList.toggle("show");cz.textContent=open?"收起中文":(quizStory?"看整篇中文":"看不懂?看整篇中文");};}
-  if(quizStory&&quizStoryData){const cp=document.getElementById("ctxpassage");if(cp)cp.querySelectorAll(".sent").forEach(el=>{
+  {const gb=document.getElementById("glossbtn");if(gb)gb.onclick=()=>{const h=document.getElementById("glossbox");const open=h.classList.toggle("show");gb.textContent=open?"收起難字":("看難字 ("+ctxGloss.length+")");};}
+  {const cz=document.getElementById("ctxzhbtn");if(cz)cz.onclick=()=>{const h=document.getElementById("ctxzh");const open=h.classList.toggle("show");cz.textContent=open?"收起中文":(isStory?"看整篇中文":"看不懂?看整篇中文");};}
+  if(isStory&&storyData){const cp=document.getElementById("ctxpassage");if(cp)cp.querySelectorAll(".sent").forEach(el=>{
     el.onclick=()=>{const k=el.dataset.k;const zh=cp.querySelector('.sentzh[data-k="'+k+'"]');const open=zh.classList.contains("show");
       cp.querySelectorAll(".sentzh.show").forEach(z=>z.classList.remove("show"));cp.querySelectorAll(".sent.tapped").forEach(s=>s.classList.remove("tapped"));
       if(!open){zh.classList.add("show");el.classList.add("tapped");}};});}
@@ -984,10 +1028,11 @@ function renderQuiz(){
     if(curCat==="gsprint"&&q.gPattern){const gp=state.progress.gsprint||(state.progress.gsprint={});
       const st=gp[q.gPattern]||(gp[q.gPattern]={r:0,w:0});if(ok)st.r++;else{st.w++;gramSprintWrong.push(q);}saveState();}
     fb.className="feedback show "+(ok?"ok":"no");
-    // 答完更新短文區:一般閱讀 → 在原文 highlight 定位句;克漏字 → 該格填上正解;課外讀物散文 → 不重繪(保留點讀狀態)
-    if(curCat==="reading"&&!(quizStory&&quizStoryData)){const cp=document.getElementById("ctxpassage");
-      if(cp){if(quizCloze&&q.blankN!=null){quizFill[q.blankN]=q.answer;cp.innerHTML=clozePassageHTML(quizCtx,q.blankN,quizFill);}
-        else if(q.locate){cp.innerHTML=ctxInnerHTML(q,q.locate);}}}
+    // 答完更新短文區:閱讀 → 在原文 highlight 定位句;克漏字 → 該格填上正解;課外讀物散文 → 不重繪(保留點讀狀態)
+    // 模擬考(exam)整卷的克漏字/閱讀題組也走這條(用該題自帶的 curCtx),才會填格與標定位句
+    if((curCat==="reading"||curCat==="exam")&&ctxPassage&&!(isStory&&storyData)){const cp=document.getElementById("ctxpassage");
+      if(cp){if(isCloze&&q.blankN!=null){quizFill[q.blankN]=q.answer;cp.innerHTML=clozePassageHTML(ctxPassage,q.blankN,quizFill);}
+        else if(q.locate){cp.innerHTML=ctxInnerHTML(q,q.locate,curCtx);}}}
     let body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
     if(q.locate){const hled=!!document.querySelector("#ctxpassage mark");
       body+='<div class="hint" style="margin-top:8px;text-align:left">'+(hled?"📍 答案就在上面標黃的那一句":("📍 答案線索:「"+q.locate+"」"))+'</div>';}
@@ -996,7 +1041,7 @@ function renderQuiz(){
     if(q.qZh && (curCat==="grammar"||curCat==="gsprint"))body+=gramSentenceHTML(q); // 文法/文法衝刺:答完分開列出整句中文
     fb.innerHTML=body;
     fb.querySelectorAll(".confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
-    const manualNext=(curCat==="grammar"||curCat==="gsprint"||q.cloze||(curCat==="reading"&&(q.note||q.locate))); // 文法說明長、例句填空看整句翻譯、閱讀有解析/定位 → 答對也讓考生自己按
+    const manualNext=(curCat==="grammar"||curCat==="gsprint"||q.cloze||(curCat==="reading"&&(q.note||q.locate))||(curCat==="exam"&&(q.note||q.locate))); // 文法說明長、例句填空看整句翻譯、閱讀/模擬考有解析或定位 → 答對也讓考生自己按
     if(ok && !manualNext){setTimeout(go,q.note?1300:850);} // 其餘大類答對仍保留節奏自動前進
     else{ // 答錯一律停住;文法/文法衝刺答對也停住,給時間看說明
       const wrap=document.createElement("div");wrap.className="row";
