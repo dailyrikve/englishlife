@@ -29,7 +29,10 @@
      "Clean the road",
      "Close the shop"
     ],
-    "answer": "Sort the mail"
+    "answer": "Sort the mail",
+    "qtype": "細節",
+    "note": "早上員工先 sort the mail(分信),其他選項文中沒提到。",
+    "locate": "In the morning, workers sort the mail."
    },
    {
     "q": "Why are the customers happy?",
@@ -39,9 +42,40 @@
      "The shop is closed",
      "The truck is broken"
     ],
-    "answer": "The mail comes on time"
+    "answer": "The mail comes on time",
+    "qtype": "細節",
+    "note": "「當郵件準時(on time)送達,顧客就開心」 → the mail comes on time。",
+    "locate": "When the mail comes on time, customers are happy."
    }
-  ]
+  ],
+  "passageZh": "郵局每天都很忙。早上,員工先分信。接著他們把信件和包裹送到每一戶人家。他們總是盡量準時。當郵件準時送達,顧客就會很開心。",
+  "glossary": [
+   {
+    "en": "busy",
+    "zh": "忙碌的"
+   },
+   {
+    "en": "sort",
+    "zh": "分類、分信"
+   },
+   {
+    "en": "deliver",
+    "zh": "遞送"
+   },
+   {
+    "en": "package",
+    "zh": "包裹"
+   },
+   {
+    "en": "on time",
+    "zh": "準時"
+   },
+   {
+    "en": "customer",
+    "zh": "顧客"
+   }
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "reading",
@@ -73,7 +107,10 @@
      "To the school",
      "To the park"
     ],
-    "answer": "To the counter"
+    "answer": "To the counter",
+    "qtype": "細節",
+    "note": "文章說 He takes the box to the counter(拿到櫃台)。",
+    "locate": "He takes the box to the counter."
    },
    {
     "q": "What does Mr. Lin get after he pays?",
@@ -83,9 +120,40 @@
      "A ticket",
      "A gift"
     ],
-    "answer": "A receipt"
+    "answer": "A receipt",
+    "qtype": "細節",
+    "note": "付完錢後他拿到 a receipt(收據)。",
+    "locate": "Mr. Lin pays the money and gets a receipt."
    }
-  ]
+  ],
+  "passageZh": "林先生想寄一個箱子給他的朋友。他把箱子拿到櫃台。櫃員檢查箱子的重量。然後她告訴他費用。林先生付了錢,拿到一張收據。",
+  "glossary": [
+   {
+    "en": "send",
+    "zh": "寄、送"
+   },
+   {
+    "en": "counter",
+    "zh": "櫃台"
+   },
+   {
+    "en": "clerk",
+    "zh": "櫃員"
+   },
+   {
+    "en": "weight",
+    "zh": "重量"
+   },
+   {
+    "en": "fee",
+    "zh": "費用"
+   },
+   {
+    "en": "receipt",
+    "zh": "收據"
+   }
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "reading",
@@ -117,7 +185,10 @@
      "Eat them",
      "Hide them"
     ],
-    "answer": "Recycle them"
+    "answer": "Recycle them",
+    "qtype": "細節",
+    "note": "文章說 we can recycle many of them(可以回收)。",
+    "locate": "But we can recycle many of them."
    },
    {
     "q": "Recycling is good for what?",
@@ -127,9 +198,44 @@
      "The storm",
      "The fee"
     ],
-    "answer": "The environment"
+    "answer": "The environment",
+    "qtype": "細節",
+    "note": "最後一句 It is also good for the environment(對環境有益)。",
+    "locate": "It is also good for the environment."
    }
-  ]
+  ],
+  "passageZh": "我們每天製造很多垃圾。紙張、瓶子和罐子堆滿我們的垃圾。但我們可以回收其中許多東西。回收有助於減少垃圾。它對環境也有好處。",
+  "glossary": [
+   {
+    "en": "waste",
+    "zh": "垃圾、廢棄物"
+   },
+   {
+    "en": "bottle",
+    "zh": "瓶子"
+   },
+   {
+    "en": "can",
+    "zh": "罐子"
+   },
+   {
+    "en": "trash",
+    "zh": "垃圾"
+   },
+   {
+    "en": "recycle",
+    "zh": "回收"
+   },
+   {
+    "en": "reduce",
+    "zh": "減少"
+   },
+   {
+    "en": "environment",
+    "zh": "環境"
+   }
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "reading",
@@ -161,7 +267,10 @@
      "On foot",
      "By boat"
     ],
-    "answer": "By MRT"
+    "answer": "By MRT",
+    "qtype": "細節",
+    "note": "因為車流壅塞,Amy 改搭 MRT(捷運)。",
+    "locate": "So Amy takes the MRT instead."
    },
    {
     "q": "Why does Amy leave home early?",
@@ -171,9 +280,40 @@
      "To sleep more",
      "To avoid school"
     ],
-    "answer": "To arrive on time"
+    "answer": "To arrive on time",
+    "qtype": "細節",
+    "note": "她早出門是為了 arrive on time(準時到)。",
+    "locate": "She leaves home early to arrive on time."
    }
-  ]
+  ],
+  "passageZh": "艾咪在城市裡工作。每天早上她通勤上班。路上的車流非常壅塞。所以艾咪改搭捷運。她很早出門以便準時到達。",
+  "glossary": [
+   {
+    "en": "commute",
+    "zh": "通勤"
+   },
+   {
+    "en": "traffic",
+    "zh": "車流"
+   },
+   {
+    "en": "heavy",
+    "zh": "(交通)壅塞的"
+   },
+   {
+    "en": "MRT",
+    "zh": "捷運"
+   },
+   {
+    "en": "instead",
+    "zh": "改為、取而代之"
+   },
+   {
+    "en": "arrive",
+    "zh": "到達"
+   }
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "reading",
@@ -205,7 +345,10 @@
      "To buy stamps",
      "To clean the office"
     ],
-    "answer": "To have an interview"
+    "answer": "To have an interview",
+    "qtype": "細節",
+    "note": "文章說 Today he has an interview(今天有面試)。",
+    "locate": "Today he has an interview."
    },
    {
     "q": "What does the manager do in the end?",
@@ -215,9 +358,44 @@
      "Closes the shop",
      "Loses his job"
     ],
-    "answer": "Offers him the position"
+    "answer": "Offers him the position",
+    "qtype": "細節",
+    "note": "最後經理 offers him the position(給他職位)。",
+    "locate": "The manager likes him and offers him the position."
    }
-  ]
+  ],
+  "passageZh": "肯想在郵局找一份新工作。今天他有一場面試。經理詢問他的經驗。肯說他很細心而且工作努力。經理喜歡他,於是提供他這個職位。",
+  "glossary": [
+   {
+    "en": "job",
+    "zh": "工作"
+   },
+   {
+    "en": "interview",
+    "zh": "面試"
+   },
+   {
+    "en": "manager",
+    "zh": "經理"
+   },
+   {
+    "en": "experience",
+    "zh": "經驗"
+   },
+   {
+    "en": "careful",
+    "zh": "細心的"
+   },
+   {
+    "en": "offer",
+    "zh": "提供"
+   },
+   {
+    "en": "position",
+    "zh": "職位"
+   }
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "reading",
@@ -249,7 +427,10 @@
      "They will be free",
      "They will be cheap"
     ],
-    "answer": "They will be delayed"
+    "answer": "They will be delayed",
+    "qtype": "細節",
+    "note": "文章說 Many flights will be delayed(班機會延誤)。",
+    "locate": "Many flights will be delayed."
    },
    {
     "q": "What do the police tell people to do?",
@@ -259,9 +440,48 @@
      "Go to the beach",
      "Open the windows"
     ],
-    "answer": "Stay home and be safe"
+    "answer": "Stay home and be safe",
+    "qtype": "細節",
+    "note": "警方要民眾 stay home and be safe。",
+    "locate": "The police tell people to stay home and be safe."
    }
-  ]
+  ],
+  "passageZh": "這個週末會有一場大暴風雨。風很強,雨很大。許多班機將會延誤。警方告訴民眾待在家裡、注意安全。駕駛人在濕滑的路面上必須小心。",
+  "glossary": [
+   {
+    "en": "storm",
+    "zh": "暴風雨"
+   },
+   {
+    "en": "strong",
+    "zh": "強的"
+   },
+   {
+    "en": "heavy",
+    "zh": "(雨)大的"
+   },
+   {
+    "en": "flight",
+    "zh": "班機"
+   },
+   {
+    "en": "delay",
+    "zh": "延誤"
+   },
+   {
+    "en": "safe",
+    "zh": "安全的"
+   },
+   {
+    "en": "wet",
+    "zh": "潮濕的"
+   },
+   {
+    "en": "careful",
+    "zh": "小心的"
+   }
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "cloze",
@@ -487,7 +707,8 @@
     "note": "他總是很友善、跟每個人打招呼,所以大家喜歡他 → 第一個。其他選項文章都沒提到。",
     "locate": "He says hello to everyone on his road."
    }
-  ]
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "reading",
@@ -617,7 +838,8 @@
     "qtype": "主旨",
     "note": "綜合全文:麗莎寄生日禮物、選快遞、最後禮物平安送到 → 第一個。"
    }
-  ]
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "reading",
@@ -787,7 +1009,8 @@
     "qtype": "主旨",
     "note": "綜合全文:每天散步是同時照顧身心、又簡單免費的方法。"
    }
-  ]
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "reading",
@@ -986,7 +1209,8 @@
     "qtype": "主旨",
     "note": "綜合全文:陳女士八十二歲大學畢業,證明追夢、學習永遠不嫌晚。"
    }
-  ]
+  ],
+  "genre": "考試閱讀"
  },
  {
   "type": "passagecloze",
@@ -1466,7 +1690,8 @@
     "note": "東尼一直堅持是《星際大戰》(Star Wars),最後還大喊糾正史蒂夫。",
     "locate": "You still haven't watched Star Wars, and I really think you'd like it."
    }
-  ]
+  ],
+  "genre": "課外讀物"
  },
  {
   "type": "reading",
@@ -1615,6 +1840,7 @@
     "note": "get used to = 習慣。東尼半開玩笑說「別太習慣(我接受你幫忙)」。",
     "locate": "Then he took it. \"Don't get used to it, Cap.\""
    }
-  ]
+  ],
+  "genre": "課外讀物"
  }
 ]
