@@ -943,6 +943,14 @@
    {
     "en": "mind",
     "zh": "心智、心靈"
+   },
+   {
+    "en": "free",
+    "zh": "免費的"
+   },
+   {
+    "en": "take care of",
+    "zh": "照顧"
    }
   ],
   "questions": [
@@ -995,7 +1003,8 @@
     ],
     "answer": "You can enjoy the benefits of walking without spending money",
     "qtype": "推論",
-    "note": "文章說不必花錢上健身房或買貴鞋,在哪裡都能走 → 作者認為散步免費又有好處。"
+    "note": "文章說不必花錢上健身房或買貴鞋,在哪裡都能走 → 作者認為散步免費又有好處。",
+    "locate": "You do not need to pay for a gym or buy expensive shoes."
    },
    {
     "q": "What is the main idea of the passage?",
@@ -1142,6 +1151,26 @@
    {
     "en": "follow a dream",
     "zh": "追逐夢想"
+   },
+   {
+    "en": "college",
+    "zh": "大學"
+   },
+   {
+    "en": "receive",
+    "zh": "收到、獲得"
+   },
+   {
+    "en": "be born",
+    "zh": "出生"
+   },
+   {
+    "en": "local",
+    "zh": "當地的"
+   },
+   {
+    "en": "stage",
+    "zh": "舞台"
    }
   ],
   "questions": [
@@ -1263,6 +1292,10 @@
    {
     "en": "display",
     "zh": "展示"
+   },
+   {
+    "en": "deliver",
+    "zh": "遞送"
    }
   ],
   "passage": "Mr. Wang has worked at the post office for thirty years. Every morning he ___(1) early to sort the letters before the sun comes up. ___(2) the weather is cold and rainy, he still delivers every package on time. One day he found a letter with no address on it. The letter was meant ___(3) a small girl who was waiting for news from her father. Mr. Wang did not give up. He asked around the town and finally ___(4) finding her house. The girl was so thankful that she gave him a drawing. Now that drawing is ___(5) on the wall of the post office for everyone to see.",
@@ -1380,6 +1413,10 @@
    {
     "en": "do one's best",
     "zh": "盡全力"
+   },
+   {
+    "en": "move into",
+    "zh": "搬進"
    }
   ],
   "passage": "Amy just got a new job in Taipei, so she moved into a small apartment near an MRT station. ___(1) she had never lived alone before, she felt a little nervous. On her first morning, she ___(2) early because she did not want to be late. The streets were crowded, and she had to be careful ___(3) the busy road. When she arrived, her new boss smiled and ___(4) her a warm welcome. By the end of the day, Amy ___(5) feeling happy about her choice. She knew the new job would not be easy, but she was ready to do her best.",
@@ -1649,6 +1686,10 @@
    {
     "en": "shout",
     "zh": "大喊"
+   },
+   {
+    "en": "about to",
+    "zh": "即將、快要"
    }
   ],
   "questions": [
@@ -1663,7 +1704,7 @@
     "answer": "He is going for a run",
     "qtype": "細節",
     "note": "史蒂夫說「我要去跑步」 → going for a run。",
-    "locate": "\"It's morning, Tony. I'm going for my run,\" Steve said with a soft laugh."
+    "locate": "\"It's morning, Tony. I'm going for my run,\""
    },
    {
     "q": "When Tony says \"It's too early,\" how does he most likely feel?",
@@ -1675,7 +1716,8 @@
     ],
     "answer": "Sleepy and wanting to stay in bed",
     "qtype": "推論",
-    "note": "他閉著眼、把臉埋進枕頭、叫史蒂夫回來睡 → 想賴床、還很睏。"
+    "note": "他閉著眼、把臉埋進枕頭、叫史蒂夫回來睡 → 想賴床、還很睏。",
+    "locate": "He kept his eyes shut and pushed his face into his pillow."
    },
    {
     "q": "What movie does Tony want Steve to watch?",
@@ -1838,7 +1880,7 @@
     "answer": "become familiar with it",
     "qtype": "字義",
     "note": "get used to = 習慣。東尼半開玩笑說「別太習慣(我接受你幫忙)」。",
-    "locate": "Then he took it. \"Don't get used to it, Cap.\""
+    "locate": "\"Don't get used to it, Cap.\""
    }
   ],
   "genre": "課外讀物"
