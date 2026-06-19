@@ -1,84 +1,1620 @@
 [
-  {"type":"reading",
-   "keywords":[{"en":"deliver","zh":"遞送"},{"en":"package","zh":"包裹"},{"en":"on time","zh":"準時"},{"en":"customer","zh":"顧客"}],
-   "passage":"The post office is busy every day. In the morning, workers sort the mail. Then they deliver letters and packages to each house. They always try to be on time. When the mail comes on time, customers are happy.",
-   "questions":[
-     {"q":"What do the workers do in the morning?","options":["Sort the mail","Sell drinks","Clean the road","Close the shop"],"answer":"Sort the mail"},
-     {"q":"Why are the customers happy?","options":["The mail is late","The mail comes on time","The shop is closed","The truck is broken"],"answer":"The mail comes on time"}
-   ]},
-  {"type":"reading",
-   "keywords":[{"en":"counter","zh":"櫃台"},{"en":"weight","zh":"重量"},{"en":"fee","zh":"費用"},{"en":"receipt","zh":"收據"}],
-   "passage":"Mr. Lin wants to send a box to his friend. He takes the box to the counter. The clerk checks the weight of the box. Then she tells him the fee. Mr. Lin pays the money and gets a receipt.",
-   "questions":[
-     {"q":"Where does Mr. Lin take the box?","options":["To the counter","To the airport","To the school","To the park"],"answer":"To the counter"},
-     {"q":"What does Mr. Lin get after he pays?","options":["A receipt","A package","A ticket","A gift"],"answer":"A receipt"}
-   ]},
-  {"type":"reading",
-   "keywords":[{"en":"recycle","zh":"回收"},{"en":"reduce","zh":"減少"},{"en":"waste","zh":"廢棄物"},{"en":"environment","zh":"環境"}],
-   "passage":"We make a lot of waste every day. Paper, bottles, and cans fill our trash. But we can recycle many of them. Recycling helps reduce waste. It is also good for the environment.",
-   "questions":[
-     {"q":"What can we do with paper and bottles?","options":["Throw them away","Recycle them","Eat them","Hide them"],"answer":"Recycle them"},
-     {"q":"Recycling is good for what?","options":["The environment","The traffic","The storm","The fee"],"answer":"The environment"}
-   ]},
-  {"type":"reading",
-   "keywords":[{"en":"commute","zh":"通勤"},{"en":"traffic","zh":"車流"},{"en":"MRT","zh":"捷運"},{"en":"early","zh":"早"}],
-   "passage":"Amy works in the city. Every morning she commutes to work. The traffic on the road is very heavy. So Amy takes the MRT instead. She leaves home early to arrive on time.",
-   "questions":[
-     {"q":"How does Amy go to work?","options":["By MRT","By plane","On foot","By boat"],"answer":"By MRT"},
-     {"q":"Why does Amy leave home early?","options":["To arrive on time","To buy a car","To sleep more","To avoid school"],"answer":"To arrive on time"}
-   ]},
-  {"type":"reading",
-   "keywords":[{"en":"interview","zh":"面試"},{"en":"position","zh":"職位"},{"en":"experience","zh":"經驗"},{"en":"careful","zh":"細心的"}],
-   "passage":"Ken wants a new job at the post office. Today he has an interview. The manager asks about his experience. Ken says he is careful and works hard. The manager likes him and offers him the position.",
-   "questions":[
-     {"q":"Why does Ken go to the post office today?","options":["To have an interview","To send a package","To buy stamps","To clean the office"],"answer":"To have an interview"},
-     {"q":"What does the manager do in the end?","options":["Offers him the position","Sends him home","Closes the shop","Loses his job"],"answer":"Offers him the position"}
-   ]},
-  {"type":"reading",
-   "keywords":[{"en":"storm","zh":"暴風雨"},{"en":"delay","zh":"延誤"},{"en":"safe","zh":"安全的"},{"en":"careful","zh":"小心的"}],
-   "passage":"A big storm is coming this weekend. The wind is strong and the rain is heavy. Many flights will be delayed. The police tell people to stay home and be safe. Drivers must be careful on the wet road.",
-   "questions":[
-     {"q":"What will happen to many flights?","options":["They will be delayed","They will be early","They will be free","They will be cheap"],"answer":"They will be delayed"},
-     {"q":"What do the police tell people to do?","options":["Stay home and be safe","Drive fast","Go to the beach","Open the windows"],"answer":"Stay home and be safe"}
-   ]},
-  {"type":"cloze",
-   "text":"The mailman will ___ the package to your house tomorrow.",
-   "options":["deliver","clean","build","teach"],"answer":"deliver",
-   "note":"把包裹送到你家 → deliver(遞送)。"},
-  {"type":"cloze",
-   "text":"Please ___ the address before you send the letter.",
-   "options":["check","eat","drive","sleep"],"answer":"check",
-   "note":"寄信前先核對地址 → check(檢查)。"},
-  {"type":"cloze",
-   "text":"Recycling can ___ waste and protect the environment.",
-   "options":["reduce","increase","forget","buy"],"answer":"reduce",
-   "note":"回收能「減少」廢棄物 → reduce。"},
-  {"type":"cloze",
-   "text":"Hurry up, ___ we will miss the train.",
-   "options":["otherwise","because","although","and"],"answer":"otherwise",
-   "note":"前後是「快點,否則…」的關係 → otherwise(否則)。"},
-  {"type":"cloze",
-   "text":"The hotel is very ___, so it has no rooms left this weekend.",
-   "options":["popular","empty","quiet","cheap"],"answer":"popular",
-   "note":"很受歡迎所以客滿 → popular(受歡迎的)。"},
-  {"type":"cloze",
-   "text":"Mr. Wang takes the MRT to ___ the heavy traffic.",
-   "options":["avoid","enjoy","start","open"],"answer":"avoid",
-   "note":"搭捷運是為了避開車潮 → avoid(避免)。"},
-  {"type":"cloze",
-   "text":"Please keep your ___ as proof of payment.",
-   "options":["receipt","weather","fear","career"],"answer":"receipt",
-   "note":"收據可作為付款證明 → receipt。"},
-  {"type":"cloze",
-   "text":"She felt very ___ before the job interview.",
-   "options":["nervous","famous","global","free"],"answer":"nervous",
-   "note":"面試前感到緊張 → nervous(緊張的)。"},
-  {"type":"cloze",
-   "text":"This restaurant is ___; the food is cheap and good.",
-   "options":["affordable","dangerous","impossible","heavy"],"answer":"affordable",
-   "note":"便宜又好吃,價格實惠 → affordable(負擔得起的)。"},
-  {"type":"cloze",
-   "text":"I will ___ to your email this afternoon.",
-   "options":["respond","refuse","resign","return"],"answer":"respond",
-   "note":"回覆你的 email → respond(回應、回覆)。"}
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "deliver",
+    "zh": "遞送"
+   },
+   {
+    "en": "package",
+    "zh": "包裹"
+   },
+   {
+    "en": "on time",
+    "zh": "準時"
+   },
+   {
+    "en": "customer",
+    "zh": "顧客"
+   }
+  ],
+  "passage": "The post office is busy every day. In the morning, workers sort the mail. Then they deliver letters and packages to each house. They always try to be on time. When the mail comes on time, customers are happy.",
+  "questions": [
+   {
+    "q": "What do the workers do in the morning?",
+    "options": [
+     "Sort the mail",
+     "Sell drinks",
+     "Clean the road",
+     "Close the shop"
+    ],
+    "answer": "Sort the mail"
+   },
+   {
+    "q": "Why are the customers happy?",
+    "options": [
+     "The mail is late",
+     "The mail comes on time",
+     "The shop is closed",
+     "The truck is broken"
+    ],
+    "answer": "The mail comes on time"
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "counter",
+    "zh": "櫃台"
+   },
+   {
+    "en": "weight",
+    "zh": "重量"
+   },
+   {
+    "en": "fee",
+    "zh": "費用"
+   },
+   {
+    "en": "receipt",
+    "zh": "收據"
+   }
+  ],
+  "passage": "Mr. Lin wants to send a box to his friend. He takes the box to the counter. The clerk checks the weight of the box. Then she tells him the fee. Mr. Lin pays the money and gets a receipt.",
+  "questions": [
+   {
+    "q": "Where does Mr. Lin take the box?",
+    "options": [
+     "To the counter",
+     "To the airport",
+     "To the school",
+     "To the park"
+    ],
+    "answer": "To the counter"
+   },
+   {
+    "q": "What does Mr. Lin get after he pays?",
+    "options": [
+     "A receipt",
+     "A package",
+     "A ticket",
+     "A gift"
+    ],
+    "answer": "A receipt"
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "recycle",
+    "zh": "回收"
+   },
+   {
+    "en": "reduce",
+    "zh": "減少"
+   },
+   {
+    "en": "waste",
+    "zh": "廢棄物"
+   },
+   {
+    "en": "environment",
+    "zh": "環境"
+   }
+  ],
+  "passage": "We make a lot of waste every day. Paper, bottles, and cans fill our trash. But we can recycle many of them. Recycling helps reduce waste. It is also good for the environment.",
+  "questions": [
+   {
+    "q": "What can we do with paper and bottles?",
+    "options": [
+     "Throw them away",
+     "Recycle them",
+     "Eat them",
+     "Hide them"
+    ],
+    "answer": "Recycle them"
+   },
+   {
+    "q": "Recycling is good for what?",
+    "options": [
+     "The environment",
+     "The traffic",
+     "The storm",
+     "The fee"
+    ],
+    "answer": "The environment"
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "commute",
+    "zh": "通勤"
+   },
+   {
+    "en": "traffic",
+    "zh": "車流"
+   },
+   {
+    "en": "MRT",
+    "zh": "捷運"
+   },
+   {
+    "en": "early",
+    "zh": "早"
+   }
+  ],
+  "passage": "Amy works in the city. Every morning she commutes to work. The traffic on the road is very heavy. So Amy takes the MRT instead. She leaves home early to arrive on time.",
+  "questions": [
+   {
+    "q": "How does Amy go to work?",
+    "options": [
+     "By MRT",
+     "By plane",
+     "On foot",
+     "By boat"
+    ],
+    "answer": "By MRT"
+   },
+   {
+    "q": "Why does Amy leave home early?",
+    "options": [
+     "To arrive on time",
+     "To buy a car",
+     "To sleep more",
+     "To avoid school"
+    ],
+    "answer": "To arrive on time"
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "interview",
+    "zh": "面試"
+   },
+   {
+    "en": "position",
+    "zh": "職位"
+   },
+   {
+    "en": "experience",
+    "zh": "經驗"
+   },
+   {
+    "en": "careful",
+    "zh": "細心的"
+   }
+  ],
+  "passage": "Ken wants a new job at the post office. Today he has an interview. The manager asks about his experience. Ken says he is careful and works hard. The manager likes him and offers him the position.",
+  "questions": [
+   {
+    "q": "Why does Ken go to the post office today?",
+    "options": [
+     "To have an interview",
+     "To send a package",
+     "To buy stamps",
+     "To clean the office"
+    ],
+    "answer": "To have an interview"
+   },
+   {
+    "q": "What does the manager do in the end?",
+    "options": [
+     "Offers him the position",
+     "Sends him home",
+     "Closes the shop",
+     "Loses his job"
+    ],
+    "answer": "Offers him the position"
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "storm",
+    "zh": "暴風雨"
+   },
+   {
+    "en": "delay",
+    "zh": "延誤"
+   },
+   {
+    "en": "safe",
+    "zh": "安全的"
+   },
+   {
+    "en": "careful",
+    "zh": "小心的"
+   }
+  ],
+  "passage": "A big storm is coming this weekend. The wind is strong and the rain is heavy. Many flights will be delayed. The police tell people to stay home and be safe. Drivers must be careful on the wet road.",
+  "questions": [
+   {
+    "q": "What will happen to many flights?",
+    "options": [
+     "They will be delayed",
+     "They will be early",
+     "They will be free",
+     "They will be cheap"
+    ],
+    "answer": "They will be delayed"
+   },
+   {
+    "q": "What do the police tell people to do?",
+    "options": [
+     "Stay home and be safe",
+     "Drive fast",
+     "Go to the beach",
+     "Open the windows"
+    ],
+    "answer": "Stay home and be safe"
+   }
+  ]
+ },
+ {
+  "type": "cloze",
+  "text": "The mailman will ___ the package to your house tomorrow.",
+  "options": [
+   "deliver",
+   "clean",
+   "build",
+   "teach"
+  ],
+  "answer": "deliver",
+  "note": "把包裹送到你家 → deliver(遞送)。"
+ },
+ {
+  "type": "cloze",
+  "text": "Please ___ the address before you send the letter.",
+  "options": [
+   "check",
+   "eat",
+   "drive",
+   "sleep"
+  ],
+  "answer": "check",
+  "note": "寄信前先核對地址 → check(檢查)。"
+ },
+ {
+  "type": "cloze",
+  "text": "Recycling can ___ waste and protect the environment.",
+  "options": [
+   "reduce",
+   "increase",
+   "forget",
+   "buy"
+  ],
+  "answer": "reduce",
+  "note": "回收能「減少」廢棄物 → reduce。"
+ },
+ {
+  "type": "cloze",
+  "text": "Hurry up, ___ we will miss the train.",
+  "options": [
+   "otherwise",
+   "because",
+   "although",
+   "and"
+  ],
+  "answer": "otherwise",
+  "note": "前後是「快點,否則…」的關係 → otherwise(否則)。"
+ },
+ {
+  "type": "cloze",
+  "text": "The hotel is very ___, so it has no rooms left this weekend.",
+  "options": [
+   "popular",
+   "empty",
+   "quiet",
+   "cheap"
+  ],
+  "answer": "popular",
+  "note": "很受歡迎所以客滿 → popular(受歡迎的)。"
+ },
+ {
+  "type": "cloze",
+  "text": "Mr. Wang takes the MRT to ___ the heavy traffic.",
+  "options": [
+   "avoid",
+   "enjoy",
+   "start",
+   "open"
+  ],
+  "answer": "avoid",
+  "note": "搭捷運是為了避開車潮 → avoid(避免)。"
+ },
+ {
+  "type": "cloze",
+  "text": "Please keep your ___ as proof of payment.",
+  "options": [
+   "receipt",
+   "weather",
+   "fear",
+   "career"
+  ],
+  "answer": "receipt",
+  "note": "收據可作為付款證明 → receipt。"
+ },
+ {
+  "type": "cloze",
+  "text": "She felt very ___ before the job interview.",
+  "options": [
+   "nervous",
+   "famous",
+   "global",
+   "free"
+  ],
+  "answer": "nervous",
+  "note": "面試前感到緊張 → nervous(緊張的)。"
+ },
+ {
+  "type": "cloze",
+  "text": "This restaurant is ___; the food is cheap and good.",
+  "options": [
+   "affordable",
+   "dangerous",
+   "impossible",
+   "heavy"
+  ],
+  "answer": "affordable",
+  "note": "便宜又好吃,價格實惠 → affordable(負擔得起的)。"
+ },
+ {
+  "type": "cloze",
+  "text": "I will ___ to your email this afternoon.",
+  "options": [
+   "respond",
+   "refuse",
+   "resign",
+   "return"
+  ],
+  "answer": "respond",
+  "note": "回覆你的 email → respond(回應、回覆)。"
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "mail carrier",
+    "zh": "郵差"
+   },
+   {
+    "en": "uniform",
+    "zh": "制服"
+   },
+   {
+    "en": "sort",
+    "zh": "分信"
+   },
+   {
+    "en": "deliver",
+    "zh": "遞送"
+   }
+  ],
+  "passage": "Mr. Chang is a mail carrier. He works at the post office near my home. Every morning he gets up early and puts on his uniform. First he sorts the letters by street. Then he rides his motorcycle to deliver them. Some days the bags are very heavy. But Mr. Chang is always friendly. He says hello to everyone on his road. People in our town like him very much.",
+  "passageZh": "張先生是一位郵差。他在我家附近的郵局上班。每天早上他很早起床,穿上制服。他先把信件按街道分好。然後他騎機車把信送出去。有些日子袋子很重。但是張先生總是很友善。他跟路上每個人打招呼。我們鎮上的人都很喜歡他。",
+  "glossary": [
+   {
+    "en": "mail carrier",
+    "zh": "郵差"
+   },
+   {
+    "en": "uniform",
+    "zh": "制服"
+   },
+   {
+    "en": "get up",
+    "zh": "起床"
+   },
+   {
+    "en": "put on",
+    "zh": "穿上"
+   },
+   {
+    "en": "sort",
+    "zh": "分(信)、分類"
+   },
+   {
+    "en": "deliver",
+    "zh": "遞送"
+   },
+   {
+    "en": "motorcycle",
+    "zh": "機車"
+   },
+   {
+    "en": "heavy",
+    "zh": "重的"
+   },
+   {
+    "en": "friendly",
+    "zh": "友善的"
+   },
+   {
+    "en": "town",
+    "zh": "城鎮"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Mr. Chang do right after he gets up?",
+    "options": [
+     "Puts on his uniform",
+     "Rides his motorcycle",
+     "Eats lunch",
+     "Closes the post office"
+    ],
+    "answer": "Puts on his uniform",
+    "qtype": "細節",
+    "note": "文章說他一早起床就穿上制服 → Puts on his uniform。",
+    "locate": "Every morning he gets up early and puts on his uniform."
+   },
+   {
+    "q": "How does Mr. Chang deliver the letters?",
+    "options": [
+     "By motorcycle",
+     "By bus",
+     "On foot",
+     "By boat"
+    ],
+    "answer": "By motorcycle",
+    "qtype": "細節",
+    "note": "他騎機車去送信 → By motorcycle。",
+    "locate": "Then he rides his motorcycle to deliver them."
+   },
+   {
+    "q": "Why do people in the town like Mr. Chang?",
+    "options": [
+     "He is friendly and says hello",
+     "He gives out free money",
+     "He drives very fast",
+     "He sells letters cheaply"
+    ],
+    "answer": "He is friendly and says hello",
+    "qtype": "推論",
+    "note": "他總是很友善、跟每個人打招呼,所以大家喜歡他 → 第一個。其他選項文章都沒提到。",
+    "locate": "He says hello to everyone on his road."
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "gift",
+    "zh": "禮物"
+   },
+   {
+    "en": "counter",
+    "zh": "櫃台"
+   },
+   {
+    "en": "weigh",
+    "zh": "秤重"
+   },
+   {
+    "en": "express mail",
+    "zh": "快遞、限時郵件"
+   },
+   {
+    "en": "receipt",
+    "zh": "收據"
+   }
+  ],
+  "passage": "Lisa wants to send a birthday gift to her sister in Tainan. She puts the gift in a box and takes it to the post office. At the counter, the clerk weighs the box and asks, \"Do you want it to arrive fast?\" Lisa says yes, so she chooses express mail. It costs a little more, but the gift will arrive in one day. The clerk gives Lisa a receipt with a tracking number. With this number, Lisa can check where the box is online. Three days later, her sister calls to say thank you. Lisa is happy that the gift arrived safely.",
+  "passageZh": "麗莎想寄一份生日禮物給她在台南的妹妹。她把禮物放進盒子裡,拿到郵局。在櫃台,櫃員幫盒子秤重,並問:「你想要快點寄到嗎?」麗莎說好,所以她選了快遞。雖然貴了一點,但禮物一天內就會送到。櫃員給麗莎一張附有追蹤號碼的收據。有了這個號碼,麗莎可以上網查盒子在哪裡。三天後,她妹妹打電話來道謝。麗莎很開心禮物平安寄到了。",
+  "glossary": [
+   {
+    "en": "gift",
+    "zh": "禮物"
+   },
+   {
+    "en": "counter",
+    "zh": "櫃台"
+   },
+   {
+    "en": "clerk",
+    "zh": "櫃員、店員"
+   },
+   {
+    "en": "weigh",
+    "zh": "秤重"
+   },
+   {
+    "en": "arrive",
+    "zh": "抵達"
+   },
+   {
+    "en": "express mail",
+    "zh": "快遞、限時郵件"
+   },
+   {
+    "en": "cost",
+    "zh": "花費"
+   },
+   {
+    "en": "receipt",
+    "zh": "收據"
+   },
+   {
+    "en": "tracking number",
+    "zh": "追蹤號碼"
+   },
+   {
+    "en": "check",
+    "zh": "查詢"
+   },
+   {
+    "en": "online",
+    "zh": "線上、網路上"
+   },
+   {
+    "en": "safely",
+    "zh": "安全地、平安地"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where does Lisa take the box?",
+    "options": [
+     "To the post office",
+     "To the airport",
+     "To the school",
+     "To the hospital"
+    ],
+    "answer": "To the post office",
+    "qtype": "細節",
+    "note": "她把禮物裝盒後拿到郵局 → To the post office。",
+    "locate": "She puts the gift in a box and takes it to the post office."
+   },
+   {
+    "q": "In this passage, \"express mail\" most likely means mail that ___.",
+    "options": [
+     "arrives very fast",
+     "has no stamp",
+     "is very heavy",
+     "is always free"
+    ],
+    "answer": "arrives very fast",
+    "qtype": "字義",
+    "note": "後一句說「貴一點,但一天就到」,可見 express mail 是「很快送達」的郵件 → arrives very fast。",
+    "locate": "It costs a little more, but the gift will arrive in one day."
+   },
+   {
+    "q": "What does Lisa use the tracking number for?",
+    "options": [
+     "To check where the box is online",
+     "To pay for the gift",
+     "To open the box",
+     "To call her sister"
+    ],
+    "answer": "To check where the box is online",
+    "qtype": "細節",
+    "note": "有了追蹤號碼,她可以上網查盒子在哪 → 用來查包裹位置。",
+    "locate": "With this number, Lisa can check where the box is online."
+   },
+   {
+    "q": "What is the main idea of the passage?",
+    "options": [
+     "Lisa sends a gift and it arrives safely",
+     "Express mail is a waste of money",
+     "Lisa works at a post office",
+     "Lisa loses her sister's gift"
+    ],
+    "answer": "Lisa sends a gift and it arrives safely",
+    "qtype": "主旨",
+    "note": "綜合全文:麗莎寄生日禮物、選快遞、最後禮物平安送到 → 第一個。"
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "stressed",
+    "zh": "有壓力的"
+   },
+   {
+    "en": "scientist",
+    "zh": "科學家"
+   },
+   {
+    "en": "chemical",
+    "zh": "化學物質"
+   },
+   {
+    "en": "calm",
+    "zh": "冷靜的"
+   },
+   {
+    "en": "digest",
+    "zh": "消化"
+   }
+  ],
+  "passage": "Many people today feel tired and stressed after a long day at work. They often think that they need a long holiday to feel better. But scientists say there is a simple and free way to feel good: taking a walk.\n\nA short walk of just twenty minutes can help in many ways. When you walk, your body makes chemicals that make you feel happy. Walking also helps you sleep better at night. People who walk every day are often calmer and think more clearly.\n\nThe best part is that you do not need any special tools. You do not need to pay for a gym or buy expensive shoes. You can walk in a park, around your office, or even inside your home. Many doctors suggest walking after meals, because it helps your body rest and digest the food.\n\nSo the next time you feel worried or tired, do not just sit and wait. Put on your shoes and step outside. A short walk may be the easiest way to take care of both your body and your mind.",
+  "passageZh": "現在很多人在忙碌一天之後感到疲倦又有壓力。他們常以為自己需要一個長假才能變好。但科學家說,有一個簡單又免費的方法可以讓人感覺更好:散步。\n\n只要二十分鐘的短短散步,就能在很多方面幫上忙。當你走路時,身體會製造讓你感到快樂的化學物質。散步也能幫助你晚上睡得更好。每天走路的人通常比較冷靜,思緒也更清楚。\n\n最棒的是,你不需要任何特別的工具。你不必花錢上健身房,也不必買昂貴的鞋子。你可以在公園、辦公室附近、甚至在家裡走動。許多醫生建議飯後散步,因為這能幫助身體休息並消化食物。\n\n所以下次你覺得擔心或疲倦時,別只是坐著等。穿上鞋子,走到戶外。短短一段散步,也許就是同時照顧身體和心靈最簡單的方法。",
+  "glossary": [
+   {
+    "en": "tired",
+    "zh": "疲倦的"
+   },
+   {
+    "en": "stressed",
+    "zh": "有壓力的"
+   },
+   {
+    "en": "holiday",
+    "zh": "假期"
+   },
+   {
+    "en": "scientist",
+    "zh": "科學家"
+   },
+   {
+    "en": "simple",
+    "zh": "簡單的"
+   },
+   {
+    "en": "chemical",
+    "zh": "化學物質"
+   },
+   {
+    "en": "calmer",
+    "zh": "更冷靜的"
+   },
+   {
+    "en": "clearly",
+    "zh": "清楚地"
+   },
+   {
+    "en": "special",
+    "zh": "特別的"
+   },
+   {
+    "en": "tool",
+    "zh": "工具"
+   },
+   {
+    "en": "gym",
+    "zh": "健身房"
+   },
+   {
+    "en": "expensive",
+    "zh": "昂貴的"
+   },
+   {
+    "en": "suggest",
+    "zh": "建議"
+   },
+   {
+    "en": "meal",
+    "zh": "一餐、餐點"
+   },
+   {
+    "en": "digest",
+    "zh": "消化"
+   },
+   {
+    "en": "worried",
+    "zh": "擔心的"
+   },
+   {
+    "en": "step outside",
+    "zh": "走到戶外"
+   },
+   {
+    "en": "both",
+    "zh": "兩者都"
+   },
+   {
+    "en": "mind",
+    "zh": "心智、心靈"
+   }
+  ],
+  "questions": [
+   {
+    "q": "According to scientists, what is a simple and free way to feel good?",
+    "options": [
+     "Taking a walk",
+     "Taking a long holiday",
+     "Buying new shoes",
+     "Joining a gym"
+    ],
+    "answer": "Taking a walk",
+    "qtype": "細節",
+    "note": "科學家說的免費簡單方法就是散步 → Taking a walk。",
+    "locate": "But scientists say there is a simple and free way to feel good: taking a walk."
+   },
+   {
+    "q": "The word \"calmer\" in the second paragraph is closest in meaning to ___.",
+    "options": [
+     "more relaxed",
+     "more angry",
+     "more tired",
+     "more busy"
+    ],
+    "answer": "more relaxed",
+    "qtype": "字義",
+    "note": "calm 是「冷靜、放鬆」,calmer = 更放鬆 → more relaxed。",
+    "locate": "People who walk every day are often calmer and think more clearly."
+   },
+   {
+    "q": "Why do many doctors suggest walking after meals?",
+    "options": [
+     "It helps the body rest and digest food",
+     "It makes people eat more",
+     "It is the only time to walk",
+     "It helps people lose their shoes"
+    ],
+    "answer": "It helps the body rest and digest food",
+    "qtype": "細節",
+    "note": "醫生建議飯後走,因為能幫助身體休息和消化食物。",
+    "locate": "Many doctors suggest walking after meals, because it helps your body rest and digest the food."
+   },
+   {
+    "q": "Which of the following would the writer most likely agree with?",
+    "options": [
+     "You can enjoy the benefits of walking without spending money",
+     "You must join a gym to stay healthy",
+     "Only a long holiday can reduce stress",
+     "Walking is helpful only in the morning"
+    ],
+    "answer": "You can enjoy the benefits of walking without spending money",
+    "qtype": "推論",
+    "note": "文章說不必花錢上健身房或買貴鞋,在哪裡都能走 → 作者認為散步免費又有好處。"
+   },
+   {
+    "q": "What is the main idea of the passage?",
+    "options": [
+     "A short daily walk is an easy way to help your body and mind",
+     "Everyone should take a long holiday",
+     "Expensive shoes make you run faster",
+     "Doctors do not like walking"
+    ],
+    "answer": "A short daily walk is an easy way to help your body and mind",
+    "qtype": "主旨",
+    "note": "綜合全文:每天散步是同時照顧身心、又簡單免費的方法。"
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "graduate",
+    "zh": "畢業"
+   },
+   {
+    "en": "degree",
+    "zh": "學位"
+   },
+   {
+    "en": "village",
+    "zh": "村莊"
+   },
+   {
+    "en": "apply",
+    "zh": "申請"
+   },
+   {
+    "en": "audience",
+    "zh": "觀眾"
+   }
+  ],
+  "passage": "Mrs. Chen is eighty-two years old, and last summer she did something that surprised her whole town. She graduated from college and received her degree, becoming the oldest student her school had ever seen.\n\nMrs. Chen was born in a small mountain village. When she was young, her family was poor, and she had to work on the farm instead of going to school. She always dreamed of studying, but there was never enough time or money. She got married, raised five children, and later helped take care of her grandchildren. For most of her life, learning had to wait.\n\nWhen her husband passed away, Mrs. Chen felt lonely and lost. One day her granddaughter, who was in college, invited her to sit in on a class. To everyone's surprise, Mrs. Chen loved it. She decided to apply to the school herself. At first, the lessons were difficult. Reading took her a long time, and she often had to ask younger students for help. But she never gave up. She studied late into the night and slowly improved.\n\nFour years later, Mrs. Chen walked across the stage in her cap and gown. The whole audience stood up and cheered. \"I am not too old to learn,\" she said with a smile. \"I only wish I had started sooner.\"\n\nToday Mrs. Chen gives short talks at local schools. She tells young students that age is just a number, and that it is never too late to follow a dream.",
+  "passageZh": "陳女士八十二歲了,去年夏天她做了一件讓全鎮驚訝的事。她從大學畢業、拿到學位,成為她學校有史以來年紀最大的學生。\n\n陳女士出生在一個小山村。她小時候家裡很窮,必須在農場工作,沒辦法去上學。她一直夢想著讀書,但總是沒有足夠的時間和金錢。她結了婚、養大五個孩子,後來又幫忙照顧孫子。她大半輩子,學習都只能等待。\n\n當她的丈夫過世後,陳女士覺得孤單又失落。有一天,她在念大學的孫女邀請她去旁聽一堂課。出乎大家意料,陳女士非常喜歡。她決定自己去申請那所學校。一開始,課程很難。光是閱讀就要花她很久,她常常得向年輕同學求助。但她從不放棄。她讀書到深夜,慢慢進步。\n\n四年後,陳女士戴著學士帽、穿著學士袍走過舞台。全場觀眾起立歡呼。「我沒有老到不能學習,」她微笑著說。「我只希望我早一點開始。」\n\n如今陳女士會在當地學校做簡短演講。她告訴年輕學生,年齡只是一個數字,而追逐夢想永遠不嫌晚。",
+  "glossary": [
+   {
+    "en": "graduate",
+    "zh": "畢業"
+   },
+   {
+    "en": "degree",
+    "zh": "學位"
+   },
+   {
+    "en": "surprise",
+    "zh": "使驚訝"
+   },
+   {
+    "en": "mountain village",
+    "zh": "山村"
+   },
+   {
+    "en": "poor",
+    "zh": "貧窮的"
+   },
+   {
+    "en": "farm",
+    "zh": "農場"
+   },
+   {
+    "en": "instead of",
+    "zh": "而不是"
+   },
+   {
+    "en": "dream of",
+    "zh": "夢想"
+   },
+   {
+    "en": "raise",
+    "zh": "養育"
+   },
+   {
+    "en": "grandchildren",
+    "zh": "孫子女"
+   },
+   {
+    "en": "pass away",
+    "zh": "過世"
+   },
+   {
+    "en": "lonely",
+    "zh": "孤單的"
+   },
+   {
+    "en": "lost",
+    "zh": "失落的、不知所措的"
+   },
+   {
+    "en": "granddaughter",
+    "zh": "孫女"
+   },
+   {
+    "en": "sit in on",
+    "zh": "旁聽"
+   },
+   {
+    "en": "apply",
+    "zh": "申請"
+   },
+   {
+    "en": "lesson",
+    "zh": "課程"
+   },
+   {
+    "en": "difficult",
+    "zh": "困難的"
+   },
+   {
+    "en": "give up",
+    "zh": "放棄"
+   },
+   {
+    "en": "improve",
+    "zh": "進步"
+   },
+   {
+    "en": "cap and gown",
+    "zh": "學士帽與學士袍"
+   },
+   {
+    "en": "audience",
+    "zh": "觀眾"
+   },
+   {
+    "en": "cheer",
+    "zh": "歡呼"
+   },
+   {
+    "en": "sooner",
+    "zh": "更早"
+   },
+   {
+    "en": "age",
+    "zh": "年齡"
+   },
+   {
+    "en": "follow a dream",
+    "zh": "追逐夢想"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why did Mrs. Chen not go to school when she was young?",
+    "options": [
+     "Her family was poor and she had to work on the farm",
+     "She did not like studying",
+     "Her village had no teachers",
+     "She was too busy traveling"
+    ],
+    "answer": "Her family was poor and she had to work on the farm",
+    "qtype": "細節",
+    "note": "小時候家裡窮,她得在農場工作,沒辦法上學。",
+    "locate": "When she was young, her family was poor, and she had to work on the farm instead of going to school."
+   },
+   {
+    "q": "The phrase \"passed away\" in the third paragraph most likely means ___.",
+    "options": [
+     "died",
+     "moved to a new town",
+     "got a new job",
+     "went on a long trip"
+    ],
+    "answer": "died",
+    "qtype": "字義",
+    "note": "丈夫 passed away 後她覺得孤單失落,可知 passed away = 過世(died)。",
+    "locate": "When her husband passed away, Mrs. Chen felt lonely and lost."
+   },
+   {
+    "q": "How did Mrs. Chen first become interested in going back to school?",
+    "options": [
+     "Her granddaughter invited her to sit in on a class",
+     "She saw an advertisement on TV",
+     "Her husband told her to",
+     "She read about it in a newspaper"
+    ],
+    "answer": "Her granddaughter invited her to sit in on a class",
+    "qtype": "細節",
+    "note": "是念大學的孫女邀她去旁聽一堂課,她才喜歡上。",
+    "locate": "One day her granddaughter, who was in college, invited her to sit in on a class."
+   },
+   {
+    "q": "Which of the following is LEAST likely to be true about Mrs. Chen?",
+    "options": [
+     "She gave up easily when the lessons were hard",
+     "She is proud of finishing college",
+     "She wants to encourage young people",
+     "She worked hard to reach her goal"
+    ],
+    "answer": "She gave up easily when the lessons were hard",
+    "qtype": "推論",
+    "note": "文章說她「從不放棄」、讀到深夜慢慢進步,所以「容易放棄」最不可能。",
+    "locate": "But she never gave up."
+   },
+   {
+    "q": "What is the main idea of the passage?",
+    "options": [
+     "It is never too late to follow a dream and keep learning",
+     "College is only for young people",
+     "Farming is harder than studying",
+     "Old people should just rest at home"
+    ],
+    "answer": "It is never too late to follow a dream and keep learning",
+    "qtype": "主旨",
+    "note": "綜合全文:陳女士八十二歲大學畢業,證明追夢、學習永遠不嫌晚。"
+   }
+  ]
+ },
+ {
+  "type": "passagecloze",
+  "passageZh": "王先生在郵局已經工作三十年了。每天早上,他在太陽出來之前就早早起床分信。即使天氣又冷又下雨,他還是準時送出每一個包裹。有一天,他發現一封沒有地址的信。那封信是要給一個小女孩的,她正在等爸爸的消息。王先生沒有放棄。他在鎮上四處打聽,最後終於找到了她家。小女孩非常感激,送了他一張圖畫。現在那張圖就被展示在郵局的牆上。",
+  "glossary": [
+   {
+    "en": "sort",
+    "zh": "分(信)"
+   },
+   {
+    "en": "package",
+    "zh": "包裹"
+   },
+   {
+    "en": "on time",
+    "zh": "準時"
+   },
+   {
+    "en": "address",
+    "zh": "地址"
+   },
+   {
+    "en": "get up",
+    "zh": "起床"
+   },
+   {
+    "en": "meant for",
+    "zh": "是為了…而準備的"
+   },
+   {
+    "en": "give up",
+    "zh": "放棄"
+   },
+   {
+    "en": "ask around",
+    "zh": "四處打聽"
+   },
+   {
+    "en": "end up",
+    "zh": "結果、最後"
+   },
+   {
+    "en": "thankful",
+    "zh": "感激的"
+   },
+   {
+    "en": "drawing",
+    "zh": "圖畫"
+   },
+   {
+    "en": "display",
+    "zh": "展示"
+   }
+  ],
+  "passage": "Mr. Wang has worked at the post office for thirty years. Every morning he ___(1) early to sort the letters before the sun comes up. ___(2) the weather is cold and rainy, he still delivers every package on time. One day he found a letter with no address on it. The letter was meant ___(3) a small girl who was waiting for news from her father. Mr. Wang did not give up. He asked around the town and finally ___(4) finding her house. The girl was so thankful that she gave him a drawing. Now that drawing is ___(5) on the wall of the post office for everyone to see.",
+  "blanks": [
+   {
+    "n": 1,
+    "point": "片語動詞",
+    "options": [
+     "gets up",
+     "gives up",
+     "looks up",
+     "puts up"
+    ],
+    "answer": "gets up",
+    "note": "get up = 起床。他每天很早起床分信 → gets up。"
+   },
+   {
+    "n": 2,
+    "point": "連接詞",
+    "options": [
+     "Although",
+     "Because",
+     "So",
+     "Unless"
+    ],
+    "answer": "Although",
+    "note": "前後是「雖然天氣不好,仍準時送件」的讓步關係 → Although(雖然)。"
+   },
+   {
+    "n": 3,
+    "point": "介系詞",
+    "options": [
+     "for",
+     "to",
+     "at",
+     "with"
+    ],
+    "answer": "for",
+    "note": "be meant for = 是為了某人而準備的。這封信是要給那個小女孩的 → meant for。"
+   },
+   {
+    "n": 4,
+    "point": "片語動詞",
+    "options": [
+     "ended up",
+     "gave up",
+     "grew up",
+     "stood up"
+    ],
+    "answer": "ended up",
+    "note": "end up + V-ing = 結果、最後做了某事。他到處問,最後找到她家 → ended up finding。"
+   },
+   {
+    "n": 5,
+    "point": "分詞(被動)",
+    "options": [
+     "displayed",
+     "displaying",
+     "display",
+     "displays"
+    ],
+    "answer": "displayed",
+    "note": "be + 過去分詞 = 被動。圖畫「被展示」在牆上 → is displayed。"
+   }
+  ]
+ },
+ {
+  "type": "passagecloze",
+  "passageZh": "艾咪剛在台北找到一份新工作,所以她搬進捷運站附近一間小公寓。因為她以前從來沒有一個人住過,所以覺得有點緊張。第一天早上,她很早起床,因為她不想遲到。街上很擁擠,她在繁忙的馬路上必須很小心。當她到達時,她的新老闆面帶微笑,給了她熱情的歡迎。到了一天結束時,艾咪結果對自己的選擇感到很開心。她知道新工作不會輕鬆,但她已經準備好全力以赴。",
+  "glossary": [
+   {
+    "en": "apartment",
+    "zh": "公寓"
+   },
+   {
+    "en": "MRT station",
+    "zh": "捷運站"
+   },
+   {
+    "en": "alone",
+    "zh": "獨自"
+   },
+   {
+    "en": "nervous",
+    "zh": "緊張的"
+   },
+   {
+    "en": "get up",
+    "zh": "起床"
+   },
+   {
+    "en": "crowded",
+    "zh": "擁擠的"
+   },
+   {
+    "en": "careful",
+    "zh": "小心的"
+   },
+   {
+    "en": "boss",
+    "zh": "老闆"
+   },
+   {
+    "en": "welcome",
+    "zh": "歡迎"
+   },
+   {
+    "en": "end up",
+    "zh": "結果、最後"
+   },
+   {
+    "en": "choice",
+    "zh": "選擇"
+   },
+   {
+    "en": "do one's best",
+    "zh": "盡全力"
+   }
+  ],
+  "passage": "Amy just got a new job in Taipei, so she moved into a small apartment near an MRT station. ___(1) she had never lived alone before, she felt a little nervous. On her first morning, she ___(2) early because she did not want to be late. The streets were crowded, and she had to be careful ___(3) the busy road. When she arrived, her new boss smiled and ___(4) her a warm welcome. By the end of the day, Amy ___(5) feeling happy about her choice. She knew the new job would not be easy, but she was ready to do her best.",
+  "blanks": [
+   {
+    "n": 1,
+    "point": "連接詞",
+    "options": [
+     "Because",
+     "Although",
+     "So",
+     "But"
+    ],
+    "answer": "Because",
+    "note": "「因為以前沒一個人住過,所以緊張」是因果關係 → Because(因為)。"
+   },
+   {
+    "n": 2,
+    "point": "片語動詞",
+    "options": [
+     "got up",
+     "gave up",
+     "put up",
+     "looked up"
+    ],
+    "answer": "got up",
+    "note": "get up = 起床。她不想遲到所以很早起床 → got up。"
+   },
+   {
+    "n": 3,
+    "point": "介系詞",
+    "options": [
+     "on",
+     "in",
+     "of",
+     "to"
+    ],
+    "answer": "on",
+    "note": "be careful on the road = 在(馬)路上要小心 → on。"
+   },
+   {
+    "n": 4,
+    "point": "動詞語意",
+    "options": [
+     "gave",
+     "made",
+     "took",
+     "put"
+    ],
+    "answer": "gave",
+    "note": "give somebody a warm welcome = 給某人熱情的歡迎 → gave。"
+   },
+   {
+    "n": 5,
+    "point": "片語動詞",
+    "options": [
+     "ended up",
+     "gave up",
+     "grew up",
+     "made up"
+    ],
+    "answer": "ended up",
+    "note": "end up + V-ing = 結果…。最後她對自己的選擇感到開心 → ended up feeling happy。"
+   }
+  ]
+ },
+ {
+  "type": "passagecloze",
+  "passageZh": "台灣以夜市聞名,夜市受到當地人和觀光客的喜愛。當太陽下山,街道就因為明亮的燈光和熱食的香味而變得熱鬧。這裡賣的許多小吃,像是臭豆腐,都是用古老的家傳食譜做出來的。雖然食物看起來很簡單,但往往要花好幾年才能學會把它做好。所以如果你有機會來台灣,千萬別錯過嚐嚐這些美味小吃的機會。",
+  "glossary": [
+   {
+    "en": "famous for",
+    "zh": "以…聞名"
+   },
+   {
+    "en": "night market",
+    "zh": "夜市"
+   },
+   {
+    "en": "local",
+    "zh": "當地人"
+   },
+   {
+    "en": "popular",
+    "zh": "受歡迎的"
+   },
+   {
+    "en": "tourist",
+    "zh": "觀光客"
+   },
+   {
+    "en": "come alive",
+    "zh": "變得熱鬧、活躍起來"
+   },
+   {
+    "en": "smell",
+    "zh": "氣味、香味"
+   },
+   {
+    "en": "snack",
+    "zh": "小吃、點心"
+   },
+   {
+    "en": "stinky tofu",
+    "zh": "臭豆腐"
+   },
+   {
+    "en": "recipe",
+    "zh": "食譜"
+   },
+   {
+    "en": "simple",
+    "zh": "簡單的"
+   },
+   {
+    "en": "chance",
+    "zh": "機會"
+   },
+   {
+    "en": "tasty",
+    "zh": "美味的"
+   },
+   {
+    "en": "treat",
+    "zh": "美食、好吃的東西"
+   }
+  ],
+  "passage": "Taiwan is famous for its night markets, ___(1) are popular with both locals and tourists. ___(2) the sun goes down, the streets come alive with bright lights and the smell of hot food. Many of the snacks sold here, such as stinky tofu, are ___(3) using old family recipes. ___(4) the food looks simple, it often takes years to learn how to make it well. So if you ever visit Taiwan, do not ___(5) the chance to try these tasty treats.",
+  "blanks": [
+   {
+    "n": 1,
+    "point": "關係代名詞",
+    "options": [
+     "which",
+     "who",
+     "where",
+     "what"
+    ],
+    "answer": "which",
+    "note": "先行詞是 night markets(物),用 which 帶出補充說明 → which。"
+   },
+   {
+    "n": 2,
+    "point": "連接詞",
+    "options": [
+     "When",
+     "What if",
+     "Although",
+     "Unless"
+    ],
+    "answer": "When",
+    "note": "「當太陽下山時,街道變熱鬧」→ When(當…時)。"
+   },
+   {
+    "n": 3,
+    "point": "分詞(被動)",
+    "options": [
+     "made",
+     "making",
+     "make",
+     "makes"
+    ],
+    "answer": "made",
+    "note": "小吃「被製作」出來,be made = 被動 → are made using old recipes。"
+   },
+   {
+    "n": 4,
+    "point": "連接詞",
+    "options": [
+     "Although",
+     "Because",
+     "When",
+     "So"
+    ],
+    "answer": "Although",
+    "note": "「雖然看起來簡單,卻要花好幾年學」是讓步關係 → Although(雖然)。"
+   },
+   {
+    "n": 5,
+    "point": "動詞語意",
+    "options": [
+     "miss",
+     "lose",
+     "drop",
+     "pass"
+    ],
+    "answer": "miss",
+    "note": "miss the chance = 錯過機會。別錯過嚐美食的機會 → do not miss。"
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "groan",
+    "zh": "哼著抱怨"
+   },
+   {
+    "en": "pillow",
+    "zh": "枕頭"
+   },
+   {
+    "en": "lazy",
+    "zh": "懶散的"
+   },
+   {
+    "en": "blanket",
+    "zh": "毯子"
+   },
+   {
+    "en": "sweetheart",
+    "zh": "親愛的"
+   }
+  ],
+  "passage": "It was early in the morning when Tony felt the bed move. He kept his eyes shut and pushed his face into his pillow.\n\n\"What's going on?\" he groaned.\n\n\"It's morning, Tony. I'm going for my run,\" Steve said with a soft laugh.\n\n\"Come back to bed,\" Tony said, reaching out his hand without looking. \"It's too early. It must be four in the morning.\"\n\n\"It's seven,\" Steve laughed. \"The sun is about to come up.\"\n\n\"Still too early. Just stay home. We could have a lazy day. You still haven't watched Star Wars, and I really think you'd like it.\"\n\n\"I'm sure I would,\" Steve said. \"But I'm meeting Bucky in ten minutes.\"\n\nTony pulled his blanket over his head. \"Fine. Go for your run.\"\n\nSteve leaned down and kissed his cheek. \"Goodbye, sweetheart. I'll be back soon for breakfast and Star Trek.\"\n\n\"Wars!\" Tony shouted as Steve left. \"It's Star Wars!\"",
+  "passageZh": "清晨,東尼感覺到床動了一下。他閉著眼睛,把臉埋進枕頭裡。\n\n「怎麼了?」他哼著抱怨。\n\n「天亮了,東尼。我要去跑步了,」史蒂夫輕笑著說。\n\n「回來睡啦,」東尼說,沒睜眼就伸出手。「太早了。現在一定才凌晨四點。」\n\n「七點了,」史蒂夫笑道。「太陽快出來了。」\n\n「還是太早。待在家嘛。我們可以耍廢一整天。你還沒看過《星際大戰》,我真的覺得你會喜歡。」\n\n「我相信我會,」史蒂夫說。「但我十分鐘後要跟巴奇碰面。」\n\n東尼把毯子拉過頭頂。「好啦。去跑你的步吧。」\n\n史蒂夫彎下身,親了親他的臉頰。「再見,親愛的。我很快就回來吃早餐、看《星艦迷航》。」\n\n「是大戰!」史蒂夫離開時東尼大喊。「是《星際大戰》!」",
+  "glossary": [
+   {
+    "en": "shut",
+    "zh": "閉上的"
+   },
+   {
+    "en": "groan",
+    "zh": "哼著(抱怨地)說"
+   },
+   {
+    "en": "pillow",
+    "zh": "枕頭"
+   },
+   {
+    "en": "go for a run",
+    "zh": "去跑步"
+   },
+   {
+    "en": "reach out",
+    "zh": "伸出(手)"
+   },
+   {
+    "en": "come up",
+    "zh": "(太陽)升起"
+   },
+   {
+    "en": "lazy day",
+    "zh": "慵懶耍廢的一天"
+   },
+   {
+    "en": "meet",
+    "zh": "與…碰面"
+   },
+   {
+    "en": "blanket",
+    "zh": "毯子"
+   },
+   {
+    "en": "lean down",
+    "zh": "彎下身"
+   },
+   {
+    "en": "cheek",
+    "zh": "臉頰"
+   },
+   {
+    "en": "sweetheart",
+    "zh": "親愛的(暱稱)"
+   },
+   {
+    "en": "shout",
+    "zh": "大喊"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is Steve getting up early?",
+    "options": [
+     "He is going for a run",
+     "He is making breakfast",
+     "He is watching a movie",
+     "He is going to work"
+    ],
+    "answer": "He is going for a run",
+    "qtype": "細節",
+    "note": "史蒂夫說「我要去跑步」 → going for a run。",
+    "locate": "\"It's morning, Tony. I'm going for my run,\" Steve said with a soft laugh."
+   },
+   {
+    "q": "When Tony says \"It's too early,\" how does he most likely feel?",
+    "options": [
+     "Sleepy and wanting to stay in bed",
+     "Angry at Steve",
+     "Excited to go running",
+     "Afraid of the dark"
+    ],
+    "answer": "Sleepy and wanting to stay in bed",
+    "qtype": "推論",
+    "note": "他閉著眼、把臉埋進枕頭、叫史蒂夫回來睡 → 想賴床、還很睏。"
+   },
+   {
+    "q": "What movie does Tony want Steve to watch?",
+    "options": [
+     "Star Wars",
+     "Star Trek",
+     "a cartoon",
+     "the news"
+    ],
+    "answer": "Star Wars",
+    "qtype": "細節",
+    "note": "東尼一直堅持是《星際大戰》(Star Wars),最後還大喊糾正史蒂夫。",
+    "locate": "You still haven't watched Star Wars, and I really think you'd like it."
+   }
+  ]
+ },
+ {
+  "type": "reading",
+  "keywords": [
+   {
+    "en": "quiet",
+    "zh": "安靜的"
+   },
+   {
+    "en": "pretend",
+    "zh": "假裝"
+   },
+   {
+    "en": "gently",
+    "zh": "溫柔地"
+   },
+   {
+    "en": "alone",
+    "zh": "獨自"
+   },
+   {
+    "en": "celebrate",
+    "zh": "慶祝"
+   }
+  ],
+  "passage": "The tower was quiet that night. Tony was still working in his lab, even though it was very late. He pretended not to notice when Steve walked in, but he saw his reflection in the metal panel.\n\n\"You're still up,\" Steve said gently. It was not really a question.\n\nTony shrugged. \"The world didn't end today. I figured I'd celebrate by working.\"\n\nSteve came closer. \"You don't have to do everything alone, you know.\"\n\nTony said quietly, \"Coming from Mr. I'll-Carry-the-World-on-My-Shoulders.\"\n\nSteve smiled. \"Yeah. I guess I'm still learning.\"\n\nFor a moment, neither of them spoke. Outside, the city lights shone in the dark.\n\n\"Do you ever think about how strange this is?\" Tony asked. \"Us. After everything that's happened.\"\n\n\"All the time,\" Steve said. \"But I don't think it means anything is wrong.\"\n\nSteve held out a hand. \"Come on. You can save the world tomorrow.\"\n\nTony looked at the hand for a second. Then he took it. \"Don't get used to it, Cap.\"",
+  "passageZh": "那天晚上,大樓裡很安靜。雖然已經很晚了,東尼還在實驗室裡工作。史蒂夫走進來時,他假裝沒注意到,但他從金屬面板的倒影看見了他。\n\n「你還沒睡,」史蒂夫溫柔地說。這其實不算是個問題。\n\n東尼聳聳肩。「今天世界沒毀滅。我想說就用工作來慶祝吧。」\n\n史蒂夫走近一點。「你知道,你不必什麼都自己一個人扛。」\n\n東尼輕聲說:「這話居然出自『我要把全世界扛在肩上』先生之口。」\n\n史蒂夫笑了。「對啊。我想我還在學。」\n\n有那麼一會兒,兩個人都沒說話。窗外,城市的燈光在黑暗中閃爍。\n\n「你有沒有想過這一切有多奇怪?」東尼問。「我們。在發生了那麼多事之後。」\n\n「一直都在想,」史蒂夫說。「但我不覺得這代表哪裡出了錯。」\n\n史蒂夫伸出一隻手。「來吧。世界明天再救。」\n\n東尼看著那隻手一秒鐘。然後他握住了。「別太習慣喔,隊長。」",
+  "glossary": [
+   {
+    "en": "tower",
+    "zh": "高塔、大樓"
+   },
+   {
+    "en": "lab",
+    "zh": "實驗室"
+   },
+   {
+    "en": "pretend",
+    "zh": "假裝"
+   },
+   {
+    "en": "notice",
+    "zh": "注意到"
+   },
+   {
+    "en": "reflection",
+    "zh": "倒影"
+   },
+   {
+    "en": "metal panel",
+    "zh": "金屬面板"
+   },
+   {
+    "en": "gently",
+    "zh": "溫柔地"
+   },
+   {
+    "en": "shrug",
+    "zh": "聳肩"
+   },
+   {
+    "en": "figure",
+    "zh": "心想、打算"
+   },
+   {
+    "en": "celebrate",
+    "zh": "慶祝"
+   },
+   {
+    "en": "alone",
+    "zh": "獨自"
+   },
+   {
+    "en": "quietly",
+    "zh": "安靜地、輕聲地"
+   },
+   {
+    "en": "carry",
+    "zh": "扛、背負"
+   },
+   {
+    "en": "shoulder",
+    "zh": "肩膀"
+   },
+   {
+    "en": "neither",
+    "zh": "兩者都不"
+   },
+   {
+    "en": "shine",
+    "zh": "照耀、閃爍"
+   },
+   {
+    "en": "strange",
+    "zh": "奇怪的"
+   },
+   {
+    "en": "hold out",
+    "zh": "伸出"
+   },
+   {
+    "en": "save",
+    "zh": "拯救"
+   },
+   {
+    "en": "get used to",
+    "zh": "習慣於"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Tony doing when Steve walks in?",
+    "options": [
+     "Working late in his lab",
+     "Sleeping in bed",
+     "Eating dinner",
+     "Watching the city lights"
+    ],
+    "answer": "Working late in his lab",
+    "qtype": "細節",
+    "note": "史蒂夫進來時東尼還在實驗室加班。",
+    "locate": "Tony was still working in his lab, even though it was very late."
+   },
+   {
+    "q": "What does Steve mean when he says \"You don't have to do everything alone\"?",
+    "options": [
+     "He wants Tony to accept help",
+     "He wants Tony to work harder",
+     "He is angry at Tony",
+     "He wants Tony to leave"
+    ],
+    "answer": "He wants Tony to accept help",
+    "qtype": "推論",
+    "note": "史蒂夫接著伸出手要東尼一起,是想讓他知道有人能分擔,不必一個人撐。"
+   },
+   {
+    "q": "When Tony says \"Don't get used to it,\" the phrase \"get used to it\" most likely means ___.",
+    "options": [
+     "become familiar with it",
+     "forget about it",
+     "be afraid of it",
+     "pay money for it"
+    ],
+    "answer": "become familiar with it",
+    "qtype": "字義",
+    "note": "get used to = 習慣。東尼半開玩笑說「別太習慣(我接受你幫忙)」。",
+    "locate": "Then he took it. \"Don't get used to it, Cap.\""
+   }
+  ]
+ }
 ]
