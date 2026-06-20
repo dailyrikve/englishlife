@@ -73,6 +73,7 @@
   .glossbox .gl b{font-family:'Fraunces',serif;font-size:16.5px;}
   .glossbox .gl-syl{font-family:'Fraunces',serif;font-style:italic;color:var(--teal);font-size:13px;}
   .glossbox .gl-pos{font-style:italic;color:#a89878;font-size:12.5px;}
+  .glossbox .glspk{cursor:pointer;font-size:14px;}
   .glossbox .gl-zh{color:#6b5d4a;font-size:14px;text-align:right;flex-shrink:0;}
   .ctxzh{display:none;margin-top:10px;font-family:'Noto Sans TC',sans-serif;text-align:left;line-height:1.85;color:#5a5148;}
   .ctxzh.show{display:block;}
@@ -538,7 +539,7 @@ function renderLearn(){
     const item=readingLevels()[viewLevel],kw=(item.glossary&&item.glossary.length?item.glossary:item.keywords),k=kw[learnIdx];
     card.innerHTML=`<div class="counter">難字 ${learnIdx+1} / ${kw.length}</div>
       <div class="wordrow"><div class="word">${k.en}</div>${speakerHTML()}</div>
-      <div class="zh">${k.zh}</div>
+      <div class="syl">${k.syl||""}</div><div class="pos">${k.pos||""}</div><div class="zh">${k.zh}</div>
       <div class="row" style="margin-top:22px"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===kw.length-1?'開始閱讀 →':'下一個 ›'}</button></div>`;
     document.getElementById("spk").onclick=()=>speak(k.en);speak(k.en);
@@ -1011,9 +1012,8 @@ function renderQuiz(){
     if(ctxZh&&!(isStory&&storyData))tools+=`<button class="btn btn-ghost" id="ctxzhbtn">${isStory?"看整篇中文":"看不懂?看整篇中文"}</button>`;
     if(tools)html+=`<div class="ctxtools">${tools}</div>`;
     if(ctxGloss&&ctxGloss.length)html+=`<div class="glossbox" id="glossbox"><div class="ttl">難字</div>`
-      +ctxGloss.map(g=>{const syl=g.syl?`<span class="gl-syl">${g.syl}</span>`:"";
-        const pos=g.pos?`<span class="gl-pos">${g.pos}</span>`:"";
-        return `<div class="gl"><div class="gl-l"><b>${g.en}</b>${syl}${pos}</div><span class="gl-zh">${g.zh}</span></div>`;}).join("")+`</div>`;
+      +ctxGloss.map(g=>{const pos=g.pos?`<span class="gl-pos">${g.pos}</span>`:"";
+        return `<div class="gl"><div class="gl-l"><b>${g.en}</b>${pos}<span class="glspk" data-en="${g.en}">🔊</span></div><span class="gl-zh">${g.zh}</span></div>`;}).join("")+`</div>`;
     if(ctxZh)html+=`<div class="ctxzh" id="ctxzh">${ctxZh}</div>`;
     html+=`</div>`;
   }
@@ -1036,6 +1036,7 @@ function renderQuiz(){
   if(q.cloze){const rb=document.getElementById("revealzh");if(rb)rb.onclick=()=>{
     const h=document.getElementById("zhhint");h.textContent=q.clozeZh;h.style.display="block";rb.style.display="none";};}
   {const gb=document.getElementById("glossbtn");if(gb)gb.onclick=()=>{const h=document.getElementById("glossbox");const open=h.classList.toggle("show");gb.textContent=open?"收起難字":("看難字 ("+ctxGloss.length+")");};}
+  document.querySelectorAll(".glspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
   {const cz=document.getElementById("ctxzhbtn");if(cz)cz.onclick=()=>{const h=document.getElementById("ctxzh");const open=h.classList.toggle("show");cz.textContent=open?"收起中文":(isStory?"看整篇中文":"看不懂?看整篇中文");};}
   if(isStory&&storyData){const cp=document.getElementById("ctxpassage");if(cp)cp.querySelectorAll(".sent").forEach(el=>{
     el.onclick=()=>{const k=el.dataset.k;const zh=cp.querySelector('.sentzh[data-k="'+k+'"]');const open=zh.classList.contains("show");
