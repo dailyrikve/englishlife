@@ -69,8 +69,11 @@
   .glossbox .ttl{font-size:12px;color:var(--teal);font-weight:700;margin:2px 0 4px;}
   .glossbox .gl{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:6px 2px;border-bottom:1px solid #eadfce;}
   .glossbox .gl:last-child{border-bottom:none;}
+  .glossbox .gl-l{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
   .glossbox .gl b{font-family:'Fraunces',serif;font-size:16.5px;}
-  .glossbox .gl span{color:#6b5d4a;font-size:14px;text-align:right;}
+  .glossbox .gl-syl{font-family:'Fraunces',serif;font-style:italic;color:var(--teal);font-size:13px;}
+  .glossbox .gl-pos{font-style:italic;color:#a89878;font-size:12.5px;}
+  .glossbox .gl-zh{color:#6b5d4a;font-size:14px;text-align:right;flex-shrink:0;}
   .ctxzh{display:none;margin-top:10px;font-family:'Noto Sans TC',sans-serif;text-align:left;line-height:1.85;color:#5a5148;}
   .ctxzh.show{display:block;}
   /* 連貫克漏字:空格 token */
@@ -125,6 +128,12 @@
   .disc-row{display:flex;align-items:center;gap:9px;margin-top:5px;}
   .disc-w{font-family:'Fraunces',serif;font-size:21px;color:var(--ink);min-width:104px;}
   .disc-zh{color:var(--muted);font-size:14px;flex:1;}
+  /* 四選一答完:各選項中文對照 */
+  .optzh{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);}
+  .optzh-row{display:flex;align-items:center;gap:9px;padding:3px 0;color:var(--muted);}
+  .optzh-en{font-family:'Fraunces',serif;font-size:18px;min-width:104px;color:#8a7c68;}
+  .optzh-zh{font-size:14px;flex:1;}
+  .optzh-row.ans .optzh-en,.optzh-row.ans .optzh-zh{color:var(--accent);font-weight:600;}
   /* 找訊號字 chips */
   .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:8px;}
   .chip{font-family:'Fraunces',serif;font-size:17px;padding:8px 13px;border:1px solid var(--line);border-radius:10px;background:#fffaf0;cursor:pointer;color:var(--ink);}
@@ -632,9 +641,11 @@ function pickDistractPos(word,n){
 function buildClozeQ(w){
   const blanked=clozeBlank(w.ex,w.en);
   if(!blanked||w.ex.split(/\s+/).length<5)return null;
-  const opts=shuffle([w.en,...pickDistractPos(w,3).map(x=>x.en)]);
+  const dis=pickDistractPos(w,3); // 干擾字(同詞性);保留物件以便附中文對照
+  const opts=shuffle([w.en,...dis.map(x=>x.en)]);
+  const optZh=[{en:w.en,zh:w.zh},...dis.map(x=>({en:x.en,zh:x.zh}))]; // 四選一每個選項的中文(答完才顯示)
   return {kind:"choice",cloze:true,head:blanked,headSmall:true,
-    ask:"選出最適合填入空格的字",options:opts,answer:w.en,
+    ask:"選出最適合填入空格的字",options:opts,answer:w.en,optZh,
     clozeZh:w.ext,clozeEx:w.ex,clozeEn:w.en}; // 注意:不設 speak,避免自動唸出答案
 }
 // 語境不足時的後備:拼全字(沿用既有 fill 題型)
@@ -642,12 +653,20 @@ function fillFullQ(w,headPrefix){
   return {kind:"fill",head:(headPrefix||"")+w.zh,headSmall:true,
     ask:"聽發音,把整個單字拼出來",speak:w.en,syl:w.syl,answer:w.en,full:true};
 }
-// 答完顯示:整句英文(正解標紅)+ 整句中文 + 🔊;cloze 答對/答錯都出現
+// 答完顯示:整句英文(正解標紅)+ 整句中文 + 🔊;四選一各選項中文對照;cloze 答對/答錯都出現
 function clozeReviewHTML(q){
+  let optList="";
+  if(q.optZh&&q.optZh.length){ // 把四個選項都列出中文,正解標色,讓考生順便認得其他三個字
+    const m={};q.optZh.forEach(o=>m[o.en.toLowerCase()]=o.zh);
+    optList='<div class="optzh">'+q.options.map(o=>{const isAns=(o===q.answer);
+      return '<div class="optzh-row'+(isAns?' ans':'')+'"><span class="optzh-en">'+o+'</span>'+
+        '<span class="optzh-zh">'+(m[o.toLowerCase()]||"")+'</span>'+
+        '<span class="confspk" data-en="'+o+'">🔊</span></div>';}).join("")+'</div>';
+  }
   return '<div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--muted)">'+
     '<div>'+hlClozeAnswer(q.clozeEx,q.clozeEn)+
     ' <button class="confspk" data-en="'+q.clozeEn+'" style="background:none;border:none;cursor:pointer;font-size:15px">🔊</button></div>'+
-    '<div style="color:var(--muted);margin-top:4px">'+q.clozeZh+'</div></div>';
+    '<div style="color:var(--muted);margin-top:4px">'+q.clozeZh+'</div>'+optList+'</div>';
 }
 
 // ===== 單字衝刺(第 5 大類):全字混抽、間隔複習加權 =====
@@ -992,7 +1011,9 @@ function renderQuiz(){
     if(ctxZh&&!(isStory&&storyData))tools+=`<button class="btn btn-ghost" id="ctxzhbtn">${isStory?"看整篇中文":"看不懂?看整篇中文"}</button>`;
     if(tools)html+=`<div class="ctxtools">${tools}</div>`;
     if(ctxGloss&&ctxGloss.length)html+=`<div class="glossbox" id="glossbox"><div class="ttl">難字</div>`
-      +ctxGloss.map(g=>`<div class="gl"><b>${g.en}</b><span>${g.zh}</span></div>`).join("")+`</div>`;
+      +ctxGloss.map(g=>{const syl=g.syl?`<span class="gl-syl">${g.syl}</span>`:"";
+        const pos=g.pos?`<span class="gl-pos">${g.pos}</span>`:"";
+        return `<div class="gl"><div class="gl-l"><b>${g.en}</b>${syl}${pos}</div><span class="gl-zh">${g.zh}</span></div>`;}).join("")+`</div>`;
     if(ctxZh)html+=`<div class="ctxzh" id="ctxzh">${ctxZh}</div>`;
     html+=`</div>`;
   }
