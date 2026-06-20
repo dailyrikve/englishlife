@@ -74,7 +74,7 @@
  {
   "en": "help",
   "syl": "help",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "幫助",
   "ex": "Can you help me?",
   "ext": "你可以幫我嗎?",
@@ -143,7 +143,7 @@
  {
   "en": "study",
   "syl": "stu·dy",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "研讀;學習",
   "ex": "I study English every day.",
   "ext": "我每天讀英文。",
@@ -188,7 +188,7 @@
  {
   "en": "change",
   "syl": "change",
-  "pos": "v./n.",
+  "pos": "n./v.",
   "zh": "改變;零錢",
   "ex": "Please count your change.",
   "ext": "請清點你的零錢。",
@@ -452,7 +452,7 @@
  {
   "en": "watch",
   "syl": "watch",
-  "pos": "v./n.",
+  "pos": "n./v.",
   "zh": "觀看;手錶",
   "ex": "Tom looked at his watch.",
   "ext": "湯姆看了看手錶。",
@@ -659,7 +659,7 @@
  {
   "en": "use",
   "syl": "use",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "使用",
   "ex": "Use a pen to sign.",
   "ext": "用筆簽名。",
@@ -836,7 +836,7 @@
  {
   "en": "support",
   "syl": "sup·port",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "支持",
   "ex": "Thank you for your support.",
   "ext": "謝謝你的支持。",
@@ -1034,7 +1034,7 @@
  {
   "en": "purchase",
   "syl": "pur·chase",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "購買",
   "ex": "I want to purchase a new bag.",
   "ext": "我想購買一個新包。",
@@ -1208,7 +1208,7 @@
  {
   "en": "waste",
   "syl": "waste",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "浪費;廢棄物",
   "ex": "Do not waste food.",
   "ext": "不要浪費食物。",
@@ -1282,8 +1282,8 @@
   "syl": "im·por·tant",
   "pos": "adj.",
   "zh": "重要的",
-  "ex": "This is an important letter.",
-  "ext": "這是一封重要的信。",
+  "ex": "Sign it now; this important letter cannot wait.",
+  "ext": "現在就簽，這封重要的信不能等。",
   "tip": "im+port(港口)→ 進出港口的貨很重要 → 重要的。"
  },
  {
@@ -1291,8 +1291,8 @@
   "syl": "pop·u·lar",
   "pos": "adj.",
   "zh": "受歡迎的",
-  "ex": "The hotel is very popular.",
-  "ext": "這家飯店很受歡迎。",
+  "ex": "So many people stay here because the hotel is popular.",
+  "ext": "這麼多人來住，因為這家飯店很受歡迎。",
   "tip": "pop(流行)+ular → 大家都愛 → 受歡迎的。"
  },
  {
@@ -1300,8 +1300,8 @@
   "syl": "fa·mous",
   "pos": "adj.",
   "zh": "有名的",
-  "ex": "She is a famous actress.",
-  "ext": "她是位有名的女演員。",
+  "ex": "Everyone knows her face because she is a famous actress.",
+  "ext": "大家都認得她的臉，因為她是有名的女演員。",
   "tip": "fame(名聲)+ous → 有名聲的 → 有名的。",
   "syn": [
    {
@@ -1315,8 +1315,8 @@
   "syl": "pos·si·ble",
   "pos": "adj.",
   "zh": "可能的",
-  "ex": "It is possible to win.",
-  "ext": "獲勝是有可能的。",
+  "ex": "With more practice, it is possible to win.",
+  "ext": "多加練習，獲勝是有可能的。",
   "tip": "poss(能)+ible(可以)→ 可能的。"
  },
  {
@@ -1324,8 +1324,8 @@
   "syl": "im·pos·si·ble",
   "pos": "adj.",
   "zh": "不可能的",
-  "ex": "It is impossible to finish today.",
-  "ext": "今天不可能完成。",
+  "ex": "There is no time left; it is impossible to finish today.",
+  "ext": "沒時間了，今天不可能完成。",
   "tip": "im(不)+possible → 不可能的。"
  },
  {
@@ -1363,8 +1363,8 @@
   "syl": "cheap",
   "pos": "adj.",
   "zh": "便宜的",
-  "ex": "The drinks here are cheap.",
-  "ext": "這裡的飲料很便宜。",
+  "ex": "Each drink costs only ten dollars; they are cheap.",
+  "ext": "每杯飲料只要十元，很便宜。",
   "tip": "諧音「氣破」→ 便宜到老闆氣破肚 → 便宜的。"
  },
  {
@@ -1372,8 +1372,8 @@
   "syl": "ex·pen·sive",
   "pos": "adj.",
   "zh": "昂貴的",
-  "ex": "That phone is too expensive.",
-  "ext": "那支手機太貴了。",
+  "ex": "That phone costs a month's pay; it is too expensive.",
+  "ext": "那支手機要花一個月的薪水，太貴了。",
   "tip": "ex+pen(花費)→ 花很多錢 → 昂貴的。"
  },
  {
@@ -1390,8 +1390,8 @@
   "syl": "re·li·a·ble",
   "pos": "adj.",
   "zh": "可靠的",
-  "ex": "He is a reliable worker.",
-  "ext": "他是個可靠的員工。",
+  "ex": "He always shows up on time, so he is reliable.",
+  "ext": "他總是準時出現，所以他很可靠。",
   "tip": "rely(依靠)+able → 可以依靠的 → 可靠的。"
  },
  {
@@ -1408,8 +1408,8 @@
   "syl": "glo·bal",
   "pos": "adj.",
   "zh": "全球的",
-  "ex": "English is a global language.",
-  "ext": "英文是全球性的語言。",
+  "ex": "People speak English all over the world, a global language.",
+  "ext": "全世界的人都說英文，是全球性的語言。",
   "tip": "globe(地球)+al → 全地球的 → 全球的。"
  },
  {
@@ -1447,8 +1447,8 @@
   "syl": "bus·y",
   "pos": "adj.",
   "zh": "忙碌的",
-  "ex": "He has a busy schedule.",
-  "ext": "他的行程很忙。",
+  "ex": "He has no free time because his schedule is busy.",
+  "ext": "他沒有空閒時間，因為他的行程很忙。",
   "tip": "諧音「比日」→ 忙到比平日更累 → 忙碌的。"
  },
  {
@@ -1483,8 +1483,8 @@
   "syl": "care·less",
   "pos": "adj.",
   "zh": "粗心的",
-  "ex": "A careless mistake cost him the job.",
-  "ext": "一個粗心的錯誤讓他丟了工作。",
+  "ex": "He didn't check his work, so a careless mistake cost him the job.",
+  "ext": "他沒檢查工作，一個粗心的錯誤讓他丟了工作。",
   "tip": "care+less(少)→ 少了在意 → 粗心的。"
  },
  {
@@ -1492,8 +1492,8 @@
   "syl": "dan·ger·ous",
   "pos": "adj.",
   "zh": "危險的",
-  "ex": "Driving in a storm is dangerous.",
-  "ext": "暴風雨中開車很危險。",
+  "ex": "You could crash on the icy road; driving in a storm is dangerous.",
+  "ext": "結冰路面可能撞車，暴風雨中開車很危險。",
   "tip": "danger(危險)+ous → 危險的。"
  },
  {
@@ -1501,8 +1501,8 @@
   "syl": "heav·y",
   "pos": "adj.",
   "zh": "重的;大量的",
-  "ex": "The box is too heavy.",
-  "ext": "這箱子太重了。",
+  "ex": "I cannot lift the box; it is too heavy.",
+  "ext": "我抬不起這個箱子，它太重了。",
   "tip": "諧音「黑肥」→ 又黑又肥很重 → 重的。"
  },
  {
@@ -1510,8 +1510,8 @@
   "syl": "quick",
   "pos": "adj.",
   "zh": "快速的",
-  "ex": "We need a quick answer.",
-  "ext": "我們需要快速的回覆。",
+  "ex": "There is no time to wait; we need a quick answer.",
+  "ext": "沒時間等了，我們需要快速的回覆。",
   "tip": "諧音「虧客」→ 動作快才不虧 → 快速的。",
   "syn": [
    {
@@ -1570,8 +1570,8 @@
   "syl": "hon·est",
   "pos": "adj.",
   "zh": "誠實的",
-  "ex": "He is an honest man.",
-  "ext": "他是個誠實的人。",
+  "ex": "He returned the extra change because he is an honest man.",
+  "ext": "他把多找的零錢還回去，因為他是個誠實的人。",
   "tip": "h 不發音;心裡 on(開著)→ 坦白 → 誠實的。"
  },
  {
@@ -1579,8 +1579,8 @@
   "syl": "po·lite",
   "pos": "adj.",
   "zh": "有禮貌的",
-  "ex": "The clerk was very polite.",
-  "ext": "那位櫃員很有禮貌。",
+  "ex": "The clerk said please and thank you, very polite.",
+  "ext": "那位櫃員說請和謝謝，非常有禮貌。",
   "tip": "諧音「破賴特」→ 不破口、不耍賴 → 有禮貌的。"
  },
  {
@@ -1588,8 +1588,8 @@
   "syl": "dil·i·gent",
   "pos": "adj.",
   "zh": "勤奮的",
-  "ex": "She is a diligent student.",
-  "ext": "她是個勤奮的學生。",
+  "ex": "She studies hard every night, a diligent student.",
+  "ext": "她每晚用功讀書，是個勤奮的學生。",
   "tip": "諧音「弟理近」→ 弟弟天天理書近書 → 勤奮的。"
  },
  {
@@ -1597,8 +1597,8 @@
   "syl": "la·zy",
   "pos": "adj.",
   "zh": "懶惰的",
-  "ex": "He is too lazy to study.",
-  "ext": "他懶得讀書。",
+  "ex": "He sleeps all day and does no work; he is lazy.",
+  "ext": "他整天睡覺什麼都不做，很懶惰。",
   "tip": "諧音「累擠」→ 一累就賴床 → 懶惰的。"
  },
  {
@@ -1621,8 +1621,8 @@
   "syl": "cu·ri·ous",
   "pos": "adj.",
   "zh": "好奇的",
-  "ex": "Children are curious about everything.",
-  "ext": "小孩對什麼都好奇。",
+  "ex": "Children ask many questions because they are curious.",
+  "ext": "小孩問很多問題，因為他們很好奇。",
   "tip": "諧音「Q裡額斯」→ 一堆問號在腦裡 → 好奇的。"
  },
  {
@@ -1639,8 +1639,8 @@
   "syl": "a·vail·a·ble",
   "pos": "adj.",
   "zh": "可獲得的;有空的",
-  "ex": "No rooms are available tonight.",
-  "ext": "今晚沒有空房。",
+  "ex": "Every room is taken; none are available tonight.",
+  "ext": "每間房都被訂滿了，今晚沒有空房。",
   "tip": "avail(有用)+able → 拿得到、有空檔 → 可用的。"
  },
  {
@@ -1657,8 +1657,8 @@
   "syl": "ef·fec·tive",
   "pos": "adj.",
   "zh": "有效的",
-  "ex": "This is an effective way to learn.",
-  "ext": "這是有效的學習方法。",
+  "ex": "This way really works, so it is effective.",
+  "ext": "這個方法真的有效，所以很有效。",
   "tip": "effect(效果)+ive → 有效果的 → 有效的。"
  },
  {
@@ -2278,8 +2278,8 @@
   "syl": "sur·prised",
   "pos": "adj.",
   "zh": "驚訝的",
-  "ex": "She was surprised by the news.",
-  "ext": "她對這消息感到驚訝。",
+  "ex": "She gasped and froze, surprised by the sudden news.",
+  "ext": "她倒抽一口氣愣住，對突來的消息感到驚訝。",
   "tip": "sur(上)+prise(抓)→ 突然被抓住 → 驚訝的。"
  },
  {
@@ -2287,8 +2287,8 @@
   "syl": "com·fort·a·ble",
   "pos": "adj.",
   "zh": "舒適的",
-  "ex": "The bed is very comfortable.",
-  "ext": "這張床很舒服。",
+  "ex": "I sleep so well because the bed is comfortable.",
+  "ext": "我睡得很好，因為這張床很舒適。",
   "tip": "comfort(安慰)+able → 讓人舒服的 → 舒適的。"
  },
  {
@@ -2296,8 +2296,8 @@
   "syl": "con·ve·nient",
   "pos": "adj.",
   "zh": "方便的",
-  "ex": "The store is very convenient.",
-  "ext": "這家店很方便。",
+  "ex": "The store is close to home, so it is convenient.",
+  "ext": "這家店離家很近，所以很方便。",
   "tip": "和 convenience store(超商)同源 → 方便的。"
  },
  {
@@ -2305,8 +2305,8 @@
   "syl": "use·ful",
   "pos": "adj.",
   "zh": "有用的",
-  "ex": "This is a useful tip.",
-  "ext": "這是個有用的訣竅。",
+  "ex": "This tip really helps, so it is useful.",
+  "ext": "這個訣竅真的有幫助，所以很有用。",
   "tip": "use(用)+ful → 充滿用處 → 有用的。"
  },
  {
@@ -2314,8 +2314,8 @@
   "syl": "com·mon",
   "pos": "adj.",
   "zh": "常見的;共同的",
-  "ex": "It is a common mistake.",
-  "ext": "這是常見的錯誤。",
+  "ex": "Almost everyone makes it; it is a common mistake.",
+  "ext": "幾乎每個人都會犯，這是常見的錯誤。",
   "tip": "com(共)+mon → 大家都有的 → 常見的。"
  },
  {
@@ -2341,8 +2341,8 @@
   "syl": "se·ri·ous",
   "pos": "adj.",
   "zh": "嚴重的;認真的",
-  "ex": "This is a serious problem.",
-  "ext": "這是個嚴重的問題。",
+  "ex": "We must fix it now; this is a serious problem.",
+  "ext": "我們必須馬上處理，這是個嚴重的問題。",
   "tip": "諧音「西瑞兒斯」→ 板起臉 → 嚴肅、嚴重的。"
  },
  {
@@ -2426,7 +2426,7 @@
  {
   "en": "post",
   "syl": "post",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "郵政;郵寄;張貼",
   "ex": "Please post this letter for me.",
   "ext": "請幫我寄這封信。",
@@ -2702,7 +2702,7 @@
  {
   "en": "ship",
   "syl": "ship",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "船;運送",
   "ex": "We ship goods by sea.",
   "ext": "我們走海運送貨。",
@@ -2765,7 +2765,7 @@
  {
   "en": "fast",
   "syl": "fast",
-  "pos": "adj./adv.",
+  "pos": "adv./adj.",
   "zh": "快的;快速地",
   "ex": "He drives too fast.",
   "ext": "他開車太快了。",
@@ -2782,8 +2782,8 @@
   "syl": "slow",
   "pos": "adj.",
   "zh": "慢的",
-  "ex": "The traffic is slow today.",
-  "ext": "今天車流很慢。",
+  "ex": "Cars barely move; the traffic is slow today.",
+  "ext": "車子幾乎不動，今天車流很慢。",
   "tip": "fast 的相反;諧音「斯漏」→ 慢慢漏 → 慢的。"
  },
  {
@@ -2861,7 +2861,7 @@
  {
   "en": "left",
   "syl": "left",
-  "pos": "n./adj.",
+  "pos": "adj./n.",
   "zh": "左邊",
   "ex": "Turn to the left.",
   "ext": "往左轉。",
@@ -2890,8 +2890,8 @@
   "syl": "far",
   "pos": "adj./adv.",
   "zh": "遠的",
-  "ex": "The station is too far.",
-  "ext": "車站太遠了。",
+  "ex": "It takes an hour to walk there; the station is too far.",
+  "ext": "走過去要一個小時，車站太遠了。",
   "tip": "near 的相反;諧音「乏」→ 走到累乏 → 遠的。"
  },
  {
@@ -2918,8 +2918,7 @@
   "pos": "n.",
   "zh": "車輛",
   "ex": "No vehicles can enter here.",
-  "ext": "車輛不得進入這裡。",
-  "tip": "諧音「米裡扣」→ 會跑的交通工具 → 車輛。"
+  "ext": "車輛不得進入這裡。"
  },
  {
   "en": "serve",
@@ -3016,8 +3015,8 @@
   "syl": "friend·ly",
   "pos": "adj.",
   "zh": "友善的",
-  "ex": "The clerk is very friendly.",
-  "ext": "那位櫃員很友善。",
+  "ex": "The clerk smiles and chats, very friendly to all.",
+  "ext": "那位櫃員笑著閒聊，對大家都很友善。",
   "tip": "friend(朋友)+ly → 像朋友一樣 → 友善的。"
  },
  {
@@ -3025,8 +3024,8 @@
   "syl": "kind",
   "pos": "adj.",
   "zh": "親切的;種類",
-  "ex": "She is kind to everyone.",
-  "ext": "她對每個人都很親切。",
+  "ex": "She helps anyone in need, so kind to everyone.",
+  "ext": "她幫助任何有需要的人，對每個人都很親切。",
   "tip": "諧音「砍的」→ 心軟不忍砍 → 親切的。"
  },
  {
@@ -3034,8 +3033,8 @@
   "syl": "help·ful",
   "pos": "adj.",
   "zh": "樂於助人的",
-  "ex": "The staff are very helpful.",
-  "ext": "員工都很樂於助人。",
+  "ex": "The staff answer every question, very helpful.",
+  "ext": "員工回答每個問題，非常樂於助人。",
   "tip": "help(幫)+ful → 充滿幫助 → 樂於助人的。"
  },
  {
@@ -3250,8 +3249,8 @@
   "syl": "rich",
   "pos": "adj.",
   "zh": "富有的",
-  "ex": "He is a rich man.",
-  "ext": "他是個有錢人。",
+  "ex": "He owns three houses because he is rich.",
+  "ext": "他擁有三棟房子，因為他很富有。",
   "tip": "諧音「日去」→ 有錢人天天爽 → 富有的。"
  },
  {
@@ -3457,8 +3456,8 @@
   "syl": "cor·rect",
   "pos": "adj.",
   "zh": "正確的",
-  "ex": "Make sure the address is correct.",
-  "ext": "確認地址正確。",
+  "ex": "Check every letter so the address is correct.",
+  "ext": "核對每個字，確保地址正確無誤。",
   "tip": "cor+rect(直)→ 拉直沒歪 → 正確的。"
  },
  {
@@ -3466,8 +3465,8 @@
   "syl": "wrong",
   "pos": "adj.",
   "zh": "錯誤的",
-  "ex": "The phone number is wrong.",
-  "ext": "電話號碼錯了。",
+  "ex": "The call won't connect; the phone number is wrong.",
+  "ext": "電話打不通，這個號碼是錯的。",
   "tip": "correct 的相反;w 不發音 → 錯誤的。"
  },
  {
@@ -3545,7 +3544,7 @@
  {
   "en": "rain",
   "syl": "rain",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "雨;下雨",
   "ex": "It may rain this afternoon.",
   "ext": "今天下午可能會下雨。",
@@ -3554,7 +3553,7 @@
  {
   "en": "snow",
   "syl": "snow",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "雪;下雪",
   "ex": "It rarely snows here.",
   "ext": "這裡很少下雪。",
@@ -3574,8 +3573,8 @@
   "syl": "sun·ny",
   "pos": "adj.",
   "zh": "晴朗的",
-  "ex": "It is a sunny day.",
-  "ext": "今天是個晴天。",
+  "ex": "The sun shines bright with no clouds; it is a sunny day.",
+  "ext": "陽光燦爛沒有雲，是個晴天。",
   "tip": "sun(太陽)+ny → 出太陽 → 晴朗的。"
  },
  {
@@ -3610,8 +3609,8 @@
   "syl": "hot",
   "pos": "adj.",
   "zh": "熱的",
-  "ex": "It is very hot in summer.",
-  "ext": "夏天非常熱。",
+  "ex": "We sweat all day in summer; it is very hot.",
+  "ext": "夏天我們整天流汗，非常熱。",
   "tip": "諧音「哈特」→ 熱到喘 → 熱的。"
  },
  {
@@ -3619,8 +3618,8 @@
   "syl": "cold",
   "pos": "adj.",
   "zh": "冷的",
-  "ex": "It is cold in winter.",
-  "ext": "冬天很冷。",
+  "ex": "We wear thick coats in winter; it is cold.",
+  "ext": "冬天我們穿厚外套，很冷。",
   "tip": "hot 的相反;諧音「摳的」→ 冷得發抖 → 冷的。"
  },
  {
@@ -3637,8 +3636,8 @@
   "syl": "cool",
   "pos": "adj.",
   "zh": "涼爽的;酷的",
-  "ex": "The weather is cool today.",
-  "ext": "今天天氣涼爽。",
+  "ex": "I need a light jacket; the weather is cool today.",
+  "ext": "我需要薄外套，今天天氣涼爽。",
   "tip": "諧音「酷」→ 不冷不熱很舒服 → 涼爽的。"
  },
  {
@@ -4393,8 +4392,8 @@
   "syl": "big",
   "pos": "adj.",
   "zh": "大的",
-  "ex": "This is a big box.",
-  "ext": "這是個大箱子。",
+  "ex": "This box is so big that two people must carry it.",
+  "ext": "這個箱子很大，要兩個人才搬得動。",
   "tip": "諧音「逼哥」→ 塊頭大 → 大的。"
  },
  {
@@ -4402,8 +4401,8 @@
   "syl": "small",
   "pos": "adj.",
   "zh": "小的",
-  "ex": "I need a small envelope.",
-  "ext": "我需要一個小信封。",
+  "ex": "The card is tiny, so I need a small envelope.",
+  "ext": "卡片很小，所以我需要一個小信封。",
   "tip": "big 的相反;諧音「斯摩」→ 小小一個 → 小的。"
  },
  {
@@ -4411,8 +4410,8 @@
   "syl": "long",
   "pos": "adj.",
   "zh": "長的",
-  "ex": "It was a long day.",
-  "ext": "這是漫長的一天。",
+  "ex": "We worked from dawn to night; it was a long day.",
+  "ext": "我們從清晨工作到夜晚，這是漫長的一天。",
   "tip": "諧音「弄」→ 拉得很長 → 長的。"
  },
  {
@@ -4420,8 +4419,8 @@
   "syl": "short",
   "pos": "adj.",
   "zh": "短的;矮的",
-  "ex": "Give me a short answer.",
-  "ext": "給我一個簡短的回答。",
+  "ex": "Just say yes or no; give me a short answer.",
+  "ext": "說好或不好就行，給我一個簡短的回答。",
   "tip": "long 的相反;諧音「秀特」→ 短短一截 → 短的。"
  },
  {
@@ -4429,8 +4428,8 @@
   "syl": "tall",
   "pos": "adj.",
   "zh": "高的(人/物)",
-  "ex": "He is a tall man.",
-  "ext": "他是個高個子。",
+  "ex": "He is so tall that he can reach the top shelf.",
+  "ext": "他很高，高到能搆到最上層的架子。",
   "tip": "諧音「投」→ 個子很高 → 高的。"
  },
  {
@@ -4438,8 +4437,8 @@
   "syl": "high",
   "pos": "adj.",
   "zh": "高的(高度/程度)",
-  "ex": "The price is too high.",
-  "ext": "價格太高了。",
+  "ex": "Nobody can afford it; the price is too high.",
+  "ext": "沒有人負擔得起，價格太高了。",
   "tip": "gh 不發音;諧音「嗨」→ 往上很高 → 高的。"
  },
  {
@@ -4447,8 +4446,8 @@
   "syl": "low",
   "pos": "adj.",
   "zh": "低的",
-  "ex": "The shelf is very low.",
-  "ext": "這個架子很低。",
+  "ex": "I can reach the top without bending; the shelf is low.",
+  "ext": "我不用彎腰就搆到頂，這個架子很低。",
   "tip": "high 的相反;諧音「漏」→ 矮矮低低 → 低的。"
  },
  {
@@ -4456,8 +4455,8 @@
   "syl": "new",
   "pos": "adj.",
   "zh": "新的",
-  "ex": "I bought a new bag.",
-  "ext": "我買了一個新包。",
+  "ex": "My old bag broke, so I bought a new bag.",
+  "ext": "我的舊包壞了，所以買了一個新包。",
   "tip": "諧音「妞」→ 剛出爐 → 新的。"
  },
  {
@@ -4465,8 +4464,8 @@
   "syl": "old",
   "pos": "adj.",
   "zh": "舊的;老的",
-  "ex": "This is an old house.",
-  "ext": "這是棟舊房子。",
+  "ex": "This house was built a hundred years ago; it is old.",
+  "ext": "這棟房子一百年前蓋的，很老舊。",
   "tip": "new 的相反;諧音「歐的」→ 用很久 → 舊的。"
  },
  {
@@ -4483,8 +4482,8 @@
   "syl": "good",
   "pos": "adj.",
   "zh": "好的",
-  "ex": "This is a good plan.",
-  "ext": "這是個好計畫。",
+  "ex": "This plan will work well; it is a good plan.",
+  "ext": "這個計畫會很順利，是個好計畫。",
   "tip": "兩個 o 比讚 → 好的。"
  },
  {
@@ -4492,8 +4491,8 @@
   "syl": "bad",
   "pos": "adj.",
   "zh": "壞的;差的",
-  "ex": "The weather is bad today.",
-  "ext": "今天天氣很差。",
+  "ex": "It rains and the wind is strong; the weather is bad.",
+  "ext": "又下雨又刮大風，今天天氣很差。",
   "tip": "good 的相反;諧音「貝的」→ 不好 → 壞的。"
  },
  {
@@ -4510,8 +4509,8 @@
   "syl": "hap·py",
   "pos": "adj.",
   "zh": "快樂的",
-  "ex": "I am happy to help.",
-  "ext": "我很樂意幫忙。",
+  "ex": "I smile because I am happy to help you.",
+  "ext": "我微笑，因為我很樂意幫你。",
   "tip": "諧音「黑皮」→ 心情飛揚 → 快樂的。"
  },
  {
@@ -4537,8 +4536,8 @@
   "syl": "hun·gry",
   "pos": "adj.",
   "zh": "飢餓的",
-  "ex": "I am hungry after work.",
-  "ext": "下班後我餓了。",
+  "ex": "My stomach growls and I want food; I am hungry.",
+  "ext": "我肚子咕嚕叫想吃東西，我餓了。",
   "tip": "和 angry 押韻;肚子餓 → 飢餓的。"
  },
  {
@@ -4573,8 +4572,8 @@
   "syl": "same",
   "pos": "adj.",
   "zh": "相同的",
-  "ex": "We take the same route.",
-  "ext": "我們走相同的路線。",
+  "ex": "We both go by this road every day, the same route.",
+  "ext": "我們每天都走這條路，相同的路線。",
   "tip": "諧音「審母」→ 一模一樣 → 相同的。"
  },
  {
@@ -4589,7 +4588,7 @@
  {
   "en": "hard",
   "syl": "hard",
-  "pos": "adj./adv.",
+  "pos": "adv./adj.",
   "zh": "困難的;努力地",
   "ex": "He works very hard.",
   "ext": "他工作非常努力。",
@@ -4642,8 +4641,8 @@
   "syl": "re·al",
   "pos": "adj.",
   "zh": "真實的",
-  "ex": "This is a real diamond.",
-  "ext": "這是真鑽石。",
+  "ex": "It is not glass; this is a real diamond.",
+  "ext": "這不是玻璃，這是真的鑽石。",
   "tip": "realize(意識到)的字根 → 真的存在 → 真實的。"
  },
  {
@@ -4651,8 +4650,8 @@
   "syl": "main",
   "pos": "adj.",
   "zh": "主要的",
-  "ex": "This is the main road.",
-  "ext": "這是主要道路。",
+  "ex": "All other streets join this one, the main road.",
+  "ext": "其他所有街道都連到這一條，是主要道路。",
   "tip": "和 main(主幹)同義;最重要那條 → 主要的。"
  },
  {
@@ -4660,8 +4659,8 @@
   "syl": "on·ly",
   "pos": "adj./adv.",
   "zh": "唯一的;只",
-  "ex": "This is the only way.",
-  "ext": "這是唯一的辦法。",
+  "ex": "There is no other choice; this is the only way.",
+  "ext": "沒有別的選擇，這是唯一的辦法。",
   "tip": "one(一)+ly → 只有一個 → 唯一的。"
  },
  {
@@ -4678,8 +4677,8 @@
   "syl": "spe·cial",
   "pos": "adj.",
   "zh": "特別的",
-  "ex": "Today is a special day.",
-  "ext": "今天是特別的日子。",
+  "ex": "We celebrate today because it is a special day.",
+  "ext": "我們今天慶祝，因為這是特別的日子。",
   "tip": "諧音「斯背秀」→ 與眾不同 → 特別的。"
  },
  {
@@ -4687,8 +4686,8 @@
   "syl": "sim·ple",
   "pos": "adj.",
   "zh": "簡單的",
-  "ex": "It is a simple form.",
-  "ext": "這是份簡單的表格。",
+  "ex": "The form is easy to fill in; it is simple.",
+  "ext": "這份表格很容易填，很簡單。",
   "tip": "諧音「心剝」→ 不複雜 → 簡單的。",
   "syn": [
    {
@@ -4738,8 +4737,8 @@
   "syl": "glad",
   "pos": "adj.",
   "zh": "高興的",
-  "ex": "I am glad to help you.",
-  "ext": "我很高興幫你。",
+  "ex": "Of course I will help; I am glad to help you.",
+  "ext": "我當然會幫忙，我很高興能幫你。",
   "tip": "諧音「個雷的」→ 心情開朗 → 高興的。"
  },
  {
@@ -4747,8 +4746,8 @@
   "syl": "proud",
   "pos": "adj.",
   "zh": "驕傲的;自豪的",
-  "ex": "I am proud of my work.",
-  "ext": "我為我的工作感到自豪。",
+  "ex": "I did my best, so I am proud of my work.",
+  "ext": "我盡了全力，所以我為我的工作感到自豪。",
   "tip": "諧音「破勞的」→ 抬頭挺胸 → 自豪的。"
  },
  {
@@ -4756,8 +4755,8 @@
   "syl": "luck·y",
   "pos": "adj.",
   "zh": "幸運的",
-  "ex": "You are lucky to win.",
-  "ext": "你能贏算你幸運。",
+  "ex": "You won by pure chance; you are lucky.",
+  "ext": "你純粹靠運氣贏了，你很幸運。",
   "tip": "luck(運氣)+y → 有好運 → 幸運的。"
  },
  {
@@ -4774,8 +4773,8 @@
   "syl": "wide",
   "pos": "adj.",
   "zh": "寬的",
-  "ex": "The road is very wide.",
-  "ext": "這條路很寬。",
+  "ex": "Four cars fit side by side; the road is wide.",
+  "ext": "四輛車能並排通行，這條路很寬。",
   "tip": "諧音「歪的」→ 左右很開 → 寬的。"
  },
  {
@@ -5054,7 +5053,7 @@
  {
   "en": "before",
   "syl": "be·fore",
-  "pos": "prep./conj.",
+  "pos": "conj./prep.",
   "zh": "在…之前",
   "ex": "Check the address before you send it.",
   "ext": "寄出前先核對地址。",
@@ -5072,7 +5071,7 @@
  {
   "en": "since",
   "syl": "since",
-  "pos": "conj./prep.",
+  "pos": "prep./conj.",
   "zh": "自從;既然",
   "ex": "I have been here since nine.",
   "ext": "我從九點就在這裡了。",
@@ -6693,7 +6692,7 @@
  {
   "en": "input",
   "syl": "in·put",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "輸入",
   "ex": "Input the address into the system.",
   "ext": "把地址輸入系統。",
@@ -6743,7 +6742,7 @@
  {
   "en": "comment",
   "syl": "com·ment",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "評論、意見",
   "ex": "Please leave a comment on our service.",
   "ext": "請對我們的服務留下意見。",
@@ -6753,7 +6752,7 @@
  {
   "en": "chat",
   "syl": "chat",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "閒聊",
   "ex": "We chatted about the new route.",
   "ext": "我們聊了新路線。",
@@ -7315,8 +7314,8 @@
   "syl": "ef·fi·cient",
   "pos": "adj.",
   "zh": "有效率的",
-  "ex": "An efficient clerk serves customers faster.",
-  "ext": "有效率的員工服務更快。",
+  "ex": "An efficient clerk wastes no time and works smoothly.",
+  "ext": "有效率的櫃員不浪費時間，做事順暢。",
   "tip": "花最少力辦最多事 → 有效率的。",
   "level": 2
  },
@@ -7343,7 +7342,7 @@
  {
   "en": "exchange",
   "syl": "ex·change",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "交換、兌換",
   "ex": "You can exchange the goods here.",
   "ext": "你可以在這裡換貨。",
@@ -7445,8 +7444,8 @@
   "syl": "ab·sent",
   "pos": "adj.",
   "zh": "缺席的",
-  "ex": "Two workers were absent today.",
-  "ext": "今天有兩名工人缺席。",
+  "ex": "Two workers stayed home and were absent today.",
+  "ext": "今天有兩名工人沒來，缺席了。",
   "tip": "ab(離)+sent(在)→ 不在 → 缺席。",
   "level": 2
  },
@@ -8045,8 +8044,8 @@
   "syl": "pro·duc·tive",
   "pos": "adj.",
   "zh": "多產的、有成效的",
-  "ex": "It was a very productive meeting.",
-  "ext": "那是場很有成效的會議。",
+  "ex": "We finished many tasks; it was a productive meeting.",
+  "ext": "我們完成了很多事，是場很有成效的會議。",
   "tip": "produce+tive → 能產出的 → 有成效的。",
   "level": 2
  },
@@ -8385,8 +8384,8 @@
   "syl": "re·gion·al",
   "pos": "adj.",
   "zh": "區域的、地區的",
-  "ex": "We follow the regional rules here.",
-  "ext": "我們在這裡遵守區域規定。",
+  "ex": "Each area has its own rules; we follow the regional ones.",
+  "ext": "每個地區有自己的規定，我們遵守區域規定。",
   "tip": "region(地區)+al → 區域的。",
   "level": 2
  },
@@ -8443,7 +8442,7 @@
  {
   "en": "research",
   "syl": "re·search",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "研究、調查",
   "ex": "They did market research first.",
   "ext": "他們先做了市場調查。",
@@ -8673,7 +8672,7 @@
  {
   "en": "supply",
   "syl": "sup·ply",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "供應、補給",
   "ex": "They supply boxes to many shops.",
   "ext": "他們供應箱子給許多店家。",
@@ -9103,7 +9102,7 @@
  {
   "en": "advance",
   "syl": "ad·vance",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "進展、預先",
   "ex": "Please book your trip in advance.",
   "ext": "請提前預訂你的行程。",
@@ -9175,8 +9174,8 @@
   "syl": "ap·pro·pri·ate",
   "pos": "adj.",
   "zh": "適當的",
-  "ex": "Use an appropriate box size.",
-  "ext": "請用適當大小的箱子。",
+  "ex": "Not too big or small; use an appropriate box size.",
+  "ext": "不要太大或太小，請用適當大小的箱子。",
   "tip": "恰好屬於(propri)的 → 適當的。",
   "level": 2
  },
@@ -9185,8 +9184,8 @@
   "syl": "ap·prox·i·mate",
   "pos": "adj.",
   "zh": "大約的",
-  "ex": "The approximate weight is two kilos.",
-  "ext": "大約重量是兩公斤。",
+  "ex": "It is not exact, but the approximate weight is two kilos.",
+  "ext": "不是精確值，但大約重量是兩公斤。",
   "tip": "approx(接近)→ 接近真值 → 大約。",
   "level": 2
  },
@@ -9225,8 +9224,8 @@
   "syl": "av·er·age",
   "pos": "adj.",
   "zh": "平均的",
-  "ex": "The average delivery takes two days.",
-  "ext": "平均送件要兩天。",
+  "ex": "Some are faster, some slower, but the average delivery takes two days.",
+  "ext": "有的快有的慢，但平均送件要兩天。",
   "tip": "攤平(aver)→ 平均。",
   "level": 2
  },
@@ -9575,8 +9574,8 @@
   "syl": "brief",
   "pos": "adj.",
   "zh": "簡短的",
-  "ex": "He gave a brief reply to the email.",
-  "ext": "他簡短地回了那封信。",
+  "ex": "He wrote just one line, a brief reply to the email.",
+  "ext": "他只寫了一行，簡短地回了那封信。",
   "tip": "短(brief)→ 簡短的。",
   "level": 2
  },
@@ -9585,8 +9584,8 @@
   "syl": "ca·pa·ble",
   "pos": "adj.",
   "zh": "有能力的",
-  "ex": "She is capable of handling complaints.",
-  "ext": "她有能力處理客訴。",
+  "ex": "She solves hard cases alone, capable of handling complaints.",
+  "ext": "她能獨力解決難題，有能力處理客訴。",
   "tip": "cap(抓得住)+able → 有能力的。",
   "level": 2
  },
@@ -9785,8 +9784,8 @@
   "syl": "con·sis·tent",
   "pos": "adj.",
   "zh": "一致的、穩定的",
-  "ex": "Keep a consistent service quality.",
-  "ext": "維持一致的服務品質。",
+  "ex": "Serve every customer the same way, keeping consistent quality.",
+  "ext": "以同樣方式服務每位顧客，維持一致的品質。",
   "tip": "con+sist(立)→ 始終如一 → 一致的。",
   "level": 2
  },
@@ -9795,8 +9794,8 @@
   "syl": "con·stant",
   "pos": "adj.",
   "zh": "持續的、不變的",
-  "ex": "There is constant demand for boxes.",
-  "ext": "對箱子有持續的需求。",
+  "ex": "Day and night it never stops; there is constant demand for boxes.",
+  "ext": "日夜不停歇，對箱子有持續的需求。",
   "tip": "con+stant(立)→ 一直立著 → 不變的。",
   "level": 2
  },
@@ -9805,8 +9804,8 @@
   "syl": "con·tem·po·rary",
   "pos": "adj.",
   "zh": "當代的、同期的",
-  "ex": "This is a contemporary design.",
-  "ext": "這是一個當代設計。",
+  "ex": "The style is fresh and modern, a contemporary design.",
+  "ext": "這個風格新穎而現代，是當代設計。",
   "tip": "con+tempor(時)→ 同一時代 → 當代的。",
   "level": 2
  },
@@ -10135,8 +10134,8 @@
   "syl": "cor·po·rate",
   "pos": "adj.",
   "zh": "公司的、企業的",
-  "ex": "This is a corporate account.",
-  "ext": "這是一個企業帳戶。",
+  "ex": "A company, not a person, owns this corporate account.",
+  "ext": "擁有這個企業帳戶的是公司，不是個人。",
   "tip": "corporation(公司)→ 公司的。",
   "level": 2
  },
@@ -10165,8 +10164,8 @@
   "syl": "cre·ative",
   "pos": "adj.",
   "zh": "有創意的",
-  "ex": "They found a creative solution.",
-  "ext": "他們想出有創意的辦法。",
+  "ex": "Nobody had tried it before; a creative solution.",
+  "ext": "從沒有人試過，是個有創意的辦法。",
   "tip": "create(創造)+ive → 有創意的。",
   "level": 2
  },
@@ -10185,8 +10184,8 @@
   "syl": "crit·i·cal",
   "pos": "adj.",
   "zh": "關鍵的、批評的",
-  "ex": "Timing is critical for express mail.",
-  "ext": "時間對快遞至關重要。",
+  "ex": "One minute late ruins it; timing is critical for express mail.",
+  "ext": "晚一分鐘就毀了，時間對快遞至關重要。",
   "tip": "crit(判斷)→ 關鍵判斷點 → 關鍵的。",
   "level": 2
  },
@@ -10195,8 +10194,8 @@
   "syl": "cru·cial",
   "pos": "adj.",
   "zh": "至關重要的",
-  "ex": "A correct address is crucial.",
-  "ext": "正確的地址至關重要。",
+  "ex": "Without it the parcel is lost; a correct address is crucial.",
+  "ext": "沒有它包裹就會遺失，正確的地址至關重要。",
   "tip": "cruc(十字路口)→ 關鍵分岔 → 至關重要。",
   "level": 2
  },
@@ -10215,8 +10214,8 @@
   "syl": "de·cent",
   "pos": "adj.",
   "zh": "像樣的、正派的",
-  "ex": "They offer a decent salary.",
-  "ext": "他們提供不錯的薪水。",
+  "ex": "The salary is not high but decent enough to live on.",
+  "ext": "薪水不高，但還算像樣，足以生活。",
   "tip": "合宜得體(decent)→ 像樣的。",
   "level": 2
  },
@@ -10255,8 +10254,8 @@
   "syl": "def·i·nite",
   "pos": "adj.",
   "zh": "明確的",
-  "ex": "We need a definite answer today.",
-  "ext": "我們今天需要明確的答覆。",
+  "ex": "No more maybe; we need a definite yes or no today.",
+  "ext": "別再說也許了，我們今天需要明確的答覆。",
   "tip": "define(界定)→ 界定清楚 → 明確的。",
   "level": 2
  },
@@ -10315,8 +10314,8 @@
   "syl": "di·rect",
   "pos": "adj.",
   "zh": "直接的、直達的",
-  "ex": "This is a direct route to the city.",
-  "ext": "這是一條直達城市的路線。",
+  "ex": "It goes straight there with no stops, a direct route.",
+  "ext": "它直達那裡中途不停，是直達路線。",
   "tip": "di+rect(直)→ 直接 → 直接的。",
   "level": 2
  },
@@ -10345,8 +10344,8 @@
   "syl": "dis·tinct",
   "pos": "adj.",
   "zh": "明顯的、不同的",
-  "ex": "Each box has a distinct label.",
-  "ext": "每個箱子有獨特的標籤。",
+  "ex": "No two are alike; each box has its own distinct label.",
+  "ext": "沒有兩個一樣，每個箱子有各自不同的標籤。",
   "tip": "di+stinct(分)→ 分得清 → 明顯不同。",
   "level": 2
  },
@@ -10395,8 +10394,8 @@
   "syl": "do·mes·tic",
   "pos": "adj.",
   "zh": "國內的、家庭的",
-  "ex": "This is a domestic shipment.",
-  "ext": "這是一筆國內運送。",
+  "ex": "It stays inside the country, a domestic shipment.",
+  "ext": "它在國內運送，是國內運送。",
   "tip": "domes(家)→ 家內/國內 → 國內的。",
   "level": 2
  },
@@ -10415,8 +10414,8 @@
   "syl": "dy·nam·ic",
   "pos": "adj.",
   "zh": "充滿活力的、動態的",
-  "ex": "It is a dynamic young team.",
-  "ext": "這是個充滿活力的年輕團隊。",
+  "ex": "The team is full of energy and always moving, very dynamic.",
+  "ext": "這個團隊充滿活力又不停運轉，非常有衝勁。",
   "tip": "dyna(力)→ 有力的 → 充滿活力的。",
   "level": 2
  },
@@ -10425,8 +10424,8 @@
   "syl": "ea·ger",
   "pos": "adj.",
   "zh": "渴望的、熱切的",
-  "ex": "New staff are eager to learn.",
-  "ext": "新員工渴望學習。",
+  "ex": "New staff can't wait and are eager to learn.",
+  "ext": "新員工迫不及待，渴望學習。",
   "tip": "急切想要(eag)→ 渴望的。",
   "level": 2
  },
@@ -10765,8 +10764,8 @@
   "syl": "enor·mous",
   "pos": "adj.",
   "zh": "巨大的",
-  "ex": "There was an enormous pile of mail.",
-  "ext": "有一大堆信件。",
+  "ex": "The pile of mail reached the ceiling, simply enormous.",
+  "ext": "那堆信件高到天花板，多得驚人。",
   "tip": "e+norm(常規)→ 超出常規 → 巨大的。",
   "level": 2
  },
@@ -10785,8 +10784,8 @@
   "syl": "en·tire",
   "pos": "adj.",
   "zh": "整個的、全部的",
-  "ex": "The entire order was shipped today.",
-  "ext": "整筆訂單今天都出貨了。",
+  "ex": "Not one item was left; the entire order shipped today.",
+  "ext": "沒有漏掉任何一件，整筆訂單今天都出貨了。",
   "tip": "完整無缺(entir)→ 整個的。",
   "level": 2
  },
@@ -10825,8 +10824,8 @@
   "syl": "es·sen·tial",
   "pos": "adj.",
   "zh": "必要的、基本的",
-  "ex": "A clear address is essential.",
-  "ext": "清楚的地址是必要的。",
+  "ex": "Mail cannot move without it; a clear address is essential.",
+  "ext": "沒有它郵件就無法寄送，清楚的地址是必要的。",
   "tip": "essence(本質)→ 本質上必需 → 必要的。",
   "level": 2
  },
@@ -10835,8 +10834,8 @@
   "syl": "ev·i·dent",
   "pos": "adj.",
   "zh": "明顯的",
-  "ex": "The damage to the box was evident.",
-  "ext": "箱子的損壞很明顯。",
+  "ex": "Anyone could see the dents; the damage was evident.",
+  "ext": "任何人都看得到凹痕，損壞顯而易見。",
   "tip": "e+vid(看)→ 一看就見 → 明顯的。",
   "level": 2
  },
@@ -10865,8 +10864,8 @@
   "syl": "ex·clu·sive",
   "pos": "adj.",
   "zh": "獨家的、專屬的",
-  "ex": "This is an exclusive service for members.",
-  "ext": "這是會員專屬服務。",
+  "ex": "Only members may use it, an exclusive service.",
+  "ext": "只有會員能使用，是會員專屬服務。",
   "tip": "ex+clud(關)→ 把別人關在外 → 獨家的。",
   "level": 2
  },
@@ -10945,8 +10944,8 @@
   "syl": "ex·ter·nal",
   "pos": "adj.",
   "zh": "外部的",
-  "ex": "Stick an external label on the box.",
-  "ext": "在箱子外貼上標籤。",
+  "ex": "Put the label on the outside, an external label, not inside.",
+  "ext": "把標籤貼在外面，是外部標籤，不是裡面。",
   "tip": "extern(外)→ 外部的。",
   "level": 2
  },
@@ -11005,8 +11004,8 @@
   "syl": "for·mal",
   "pos": "adj.",
   "zh": "正式的",
-  "ex": "Please send a formal reply.",
-  "ext": "請寄一封正式的回覆。",
+  "ex": "Use polite, official wording in a formal reply.",
+  "ext": "用客氣、正式的措辭寫一封正式的回覆。",
   "tip": "form(形式)+al → 照形式來 → 正式的。",
   "level": 2
  },
@@ -11025,8 +11024,8 @@
   "syl": "fre·quent",
   "pos": "adj.",
   "zh": "頻繁的",
-  "ex": "He is a frequent customer here.",
-  "ext": "他是這裡的常客。",
+  "ex": "He comes here almost every day, a frequent customer.",
+  "ext": "他幾乎每天都來，是常客。",
   "tip": "frequ(常)→ 頻繁的。",
   "level": 2
  },
@@ -11045,8 +11044,8 @@
   "syl": "fun·da·men·tal",
   "pos": "adj.",
   "zh": "基本的",
-  "ex": "Accuracy is a fundamental rule.",
-  "ext": "準確是基本守則。",
+  "ex": "Everything else builds on it; accuracy is a fundamental rule.",
+  "ext": "其他一切都以它為基礎，準確是基本守則。",
   "tip": "fund(基)→ 基礎的 → 基本的。",
   "level": 2
  },
@@ -11055,8 +11054,8 @@
   "syl": "gen·er·ous",
   "pos": "adj.",
   "zh": "慷慨的",
-  "ex": "They gave us a generous discount.",
-  "ext": "他們給了我們慷慨的折扣。",
+  "ex": "They cut the price a lot and gave a generous discount.",
+  "ext": "他們大幅降價，給了我們慷慨的折扣。",
   "tip": "gener(出身好)→ 大方 → 慷慨的。",
   "level": 2
  },
@@ -11065,8 +11064,8 @@
   "syl": "gen·uine",
   "pos": "adj.",
   "zh": "真正的、真誠的",
-  "ex": "This is a genuine leather bag.",
-  "ext": "這是一個真皮包。",
+  "ex": "It is real leather, not plastic; a genuine leather bag.",
+  "ext": "這是真皮，不是塑膠，是真皮包。",
   "tip": "gen(天生)→ 天生真的 → 真正的。",
   "level": 2
  },
@@ -11385,7 +11384,7 @@
  {
   "en": "chair",
   "syl": "chair",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "椅子",
   "ex": "The clerk offered the old man a chair.",
   "ext": "櫃員給那位老先生一張椅子。",
@@ -11394,7 +11393,7 @@
  {
   "en": "first",
   "syl": "first",
-  "pos": "n./adv./adj.",
+  "pos": "adj./adv.",
   "zh": "第一",
   "ex": "She was the first customer in line today.",
   "ext": "她是今天排隊的第一位顧客。",
@@ -11421,7 +11420,7 @@
  {
   "en": "following",
   "syl": "fol·low·ing",
-  "pos": "adj./prep./n.",
+  "pos": "adj.",
   "zh": "接下來的、下列的",
   "ex": "Please sign the following two forms.",
   "ext": "請簽署下列兩份表格。",
@@ -11502,7 +11501,7 @@
  {
   "en": "farm",
   "syl": "farm",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "農場",
   "ex": "The truck delivers mail to the far farm.",
   "ext": "卡車把郵件送到遠處的農場。",
@@ -11520,7 +11519,7 @@
  {
   "en": "south",
   "syl": "south",
-  "pos": "n./adj./adv.",
+  "pos": "n./adj.",
   "zh": "南方的",
   "ex": "The route runs to the south of the city.",
   "ext": "這條路線通往城市南方。",
@@ -11529,7 +11528,7 @@
  {
   "en": "sun",
   "syl": "sun",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "太陽",
   "ex": "The carrier works in the hot sun all morning.",
   "ext": "郵務士整個早上在烈日下工作。",
@@ -11565,7 +11564,7 @@
  {
   "en": "water",
   "syl": "wa·ter",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "水",
   "ex": "Keep the parcels away from water.",
   "ext": "讓包裹遠離水。",
@@ -11574,10 +11573,10 @@
  {
   "en": "well",
   "syl": "well",
-  "pos": "adv./adj./n.",
+  "pos": "adj.",
   "zh": "身體健康的",
-  "ex": "The new clerk did the job very well.",
-  "ext": "新櫃員把工作做得很好。",
+  "ex": "She rested and now feels well again.",
+  "ext": "她休息過後，現在覺得身體好多了。",
   "level": 2
  },
  {
@@ -11601,7 +11600,7 @@
  {
   "en": "saw",
   "syl": "saw",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "看見（see的過去式）",
   "ex": "He saw the truck leave the station.",
   "ext": "他看見卡車離開站點。",
@@ -11637,10 +11636,10 @@
  {
   "en": "best",
   "syl": "best",
-  "pos": "adj./adv./v./n.",
+  "pos": "adj.",
   "zh": "最好的",
-  "ex": "She is the best worker on the team.",
-  "ext": "她是團隊裡最好的員工。",
+  "ex": "No one works faster than her; she is the best worker.",
+  "ext": "沒有人比她做得更快，她是最好的員工。",
   "level": 2
  },
  {
@@ -11664,7 +11663,7 @@
  {
   "en": "everyone",
   "syl": "ev·ery·one",
-  "pos": "n./v.",
+  "pos": "pron.",
   "zh": "每個人",
   "ex": "Everyone at the branch wears a uniform.",
   "ext": "分局裡每個人都穿制服。",
@@ -11673,16 +11672,16 @@
  {
   "en": "great",
   "syl": "great",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "很棒的、偉大的",
-  "ex": "The staff did a great job this month.",
-  "ext": "員工這個月表現很棒。",
+  "ex": "They beat every record; the staff did a great job.",
+  "ext": "他們打破所有紀錄，員工表現很棒。",
   "level": 2
  },
  {
   "en": "house",
   "syl": "house",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "房子",
   "ex": "The carrier delivers mail to every house.",
   "ext": "郵務士把郵件送到每一戶人家。",
@@ -11700,7 +11699,7 @@
  {
   "en": "land",
   "syl": "land",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "降落",
   "ex": "The plane will land at the airport soon.",
   "ext": "飛機很快會在機場降落。",
@@ -11709,7 +11708,7 @@
  {
   "en": "party",
   "syl": "par·ty",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "派對；政黨",
   "ex": "The post office held a year-end party.",
   "ext": "郵局舉辦了年終派對。",
@@ -11727,7 +11726,7 @@
  {
   "en": "play",
   "syl": "play",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "玩、扮演",
   "ex": "Speed plays a big part in good service.",
   "ext": "速度在良好服務中扮演重要角色。",
@@ -11736,10 +11735,10 @@
  {
   "en": "ring",
   "syl": "ring",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "戒指",
-  "ex": "Please ring the bell for service.",
-  "ext": "需要服務請按鈴。",
+  "ex": "She wears a gold ring on her finger.",
+  "ext": "她手指上戴著一只金戒指。",
   "level": 2
  },
  {
@@ -11781,7 +11780,7 @@
  {
   "en": "yet",
   "syl": "yet",
-  "pos": "adv./conj.",
+  "pos": "adv.",
   "zh": "尚未；但是",
   "ex": "The parcel has not arrived yet.",
   "ext": "包裹還沒送到。",
@@ -11790,7 +11789,7 @@
  {
   "en": "author",
   "syl": "au·thor",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "作者",
   "ex": "The author signed every book by hand.",
   "ext": "作者親手簽了每一本書。",
@@ -11808,7 +11807,7 @@
  {
   "en": "due",
   "syl": "due",
-  "pos": "adj./adv./n.",
+  "pos": "adj.",
   "zh": "到期的、預定的",
   "ex": "The payment is due next Monday.",
   "ext": "款項下週一到期。",
@@ -11891,8 +11890,8 @@
   "syl": "pre·vi·ous",
   "pos": "adj.",
   "zh": "先前的",
-  "ex": "Check the previous record before sending.",
-  "ext": "寄出前先查看先前的紀錄。",
+  "ex": "Look at the earlier entry first, the previous record.",
+  "ext": "先看前一筆紀錄，也就是先前的紀錄。",
   "level": 2
  },
  {
@@ -11918,8 +11917,8 @@
   "syl": "able",
   "pos": "adj.",
   "zh": "能夠的",
-  "ex": "She is able to lift the heavy box.",
-  "ext": "她能夠搬起那個重箱子。",
+  "ex": "With her strength she is able to lift the heavy box.",
+  "ext": "憑著她的力氣，她能夠搬起那個重箱子。",
   "level": 2
  },
  {
@@ -11952,7 +11951,7 @@
  {
   "en": "both",
   "syl": "both",
-  "pos": "pron./adv./adj.",
+  "pos": "pron.",
   "zh": "兩者都",
   "ex": "Both forms must be signed.",
   "ext": "兩份表格都必須簽名。",
@@ -11961,7 +11960,7 @@
  {
   "en": "dance",
   "syl": "dance",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "跳舞",
   "ex": "The staff joined a dance at the party.",
   "ext": "員工在派對上參加了跳舞。",
@@ -11988,7 +11987,7 @@
  {
   "en": "even",
   "syl": "even",
-  "pos": "adv./adj./v.",
+  "pos": "adv.",
   "zh": "甚至",
   "ex": "We deliver even on rainy days.",
   "ext": "即使下雨我們也送件。",
@@ -12051,7 +12050,7 @@
  {
   "en": "end",
   "syl": "end",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "結束",
   "ex": "The shift ends at six in the evening.",
   "ext": "班次在傍晚六點結束。",
@@ -12107,14 +12106,14 @@
   "syl": "large",
   "pos": "adj.",
   "zh": "大的",
-  "ex": "This is a large parcel for one person.",
-  "ext": "對一個人來說這是個大包裹。",
+  "ex": "It barely fits through the door, a very large parcel.",
+  "ext": "它幾乎進不了門，是個很大的包裹。",
   "level": 2
  },
  {
   "en": "last",
   "syl": "last",
-  "pos": "n./v./adv./adj.",
+  "pos": "adj.",
   "zh": "最後的",
   "ex": "He was the last customer of the day.",
   "ext": "他是當天最後一位顧客。",
@@ -12123,7 +12122,7 @@
  {
   "en": "man",
   "syl": "man",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "男人",
   "ex": "The man asked for a registered letter.",
   "ext": "那名男子要寄掛號信。",
@@ -12132,7 +12131,7 @@
  {
   "en": "least",
   "syl": "least",
-  "pos": "adv./pron./adj.",
+  "pos": "adv.",
   "zh": "最少",
   "ex": "It takes at least three days to arrive.",
   "ext": "至少要三天才會送達。",
@@ -12141,7 +12140,7 @@
  {
   "en": "less",
   "syl": "less",
-  "pos": "pron./adv./adj./prep.",
+  "pos": "adj./adv.",
   "zh": "更少的",
   "ex": "Small parcels cost less to send.",
   "ext": "小包裹寄送費用更少。",
@@ -12177,16 +12176,16 @@
  {
   "en": "present",
   "syl": "present",
-  "pos": "adj./n./v.",
+  "pos": "n./adj.",
   "zh": "禮物、目前的",
-  "ex": "She sent a present by parcel.",
-  "ext": "她用包裹寄了一份禮物。",
+  "ex": "For his birthday she sent a wrapped present by parcel.",
+  "ext": "為了他的生日，她用包裹寄了一份包好的禮物。",
   "level": 2
  },
  {
   "en": "off",
   "syl": "off",
-  "pos": "adv./prep./adj.",
+  "pos": "adv./prep.",
   "zh": "離開、休（假）",
   "ex": "Take one day off after a busy week.",
   "ext": "忙碌一週後休一天假。",
@@ -12195,7 +12194,7 @@
  {
   "en": "right",
   "syl": "right",
-  "pos": "adv./adj./n.",
+  "pos": "adj./adv.",
   "zh": "右邊的",
   "ex": "Please write the right address.",
   "ext": "請寫下正確的地址。",
@@ -12204,7 +12203,7 @@
  {
   "en": "rise",
   "syl": "rise",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "上升",
   "ex": "Postage fees may rise next year.",
   "ext": "郵資明年可能會上漲。",
@@ -12258,7 +12257,7 @@
  {
   "en": "third",
   "syl": "third",
-  "pos": "adj./n./adv.",
+  "pos": "adj.",
   "zh": "第三",
   "ex": "This is the third notice we sent.",
   "ext": "這是我們寄出的第三次通知。",
@@ -12312,10 +12311,10 @@
  {
   "en": "white",
   "syl": "white",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "白色",
-  "ex": "Put the form in a white envelope.",
-  "ext": "把表格放進白色信封。",
+  "ex": "Not the brown one; put the form in a white envelope.",
+  "ext": "不是棕色那個，把表格放進白色信封。",
   "level": 2
  },
  {
@@ -12357,7 +12356,7 @@
  {
   "en": "better",
   "syl": "bet·ter",
-  "pos": "adj./adv./n./v.",
+  "pos": "adj.",
   "zh": "更好的",
   "ex": "Night sorting gives better speed.",
   "ext": "夜間分揀速度更好。",
@@ -12420,10 +12419,10 @@
  {
   "en": "local",
   "syl": "lo·cal",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "當地的",
-  "ex": "The local branch opens at eight.",
-  "ext": "當地分局八點開門。",
+  "ex": "The branch in our own town, the local branch, opens at eight.",
+  "ext": "我們鎮上的當地分局八點開門。",
   "level": 2
  },
  {
@@ -12438,7 +12437,7 @@
  {
   "en": "perfect",
   "syl": "per·fect",
-  "pos": "adj./v./n.",
+  "pos": "adj.",
   "zh": "完美的",
   "ex": "The address must be perfect for delivery.",
   "ext": "地址必須完美無誤才能送達。",
@@ -12449,8 +12448,8 @@
   "syl": "of·fi·cial",
   "pos": "adj./n.",
   "zh": "官方的、官員",
-  "ex": "This is an official postal notice.",
-  "ext": "這是一份官方郵政通知。",
+  "ex": "The post office itself issued this official notice.",
+  "ext": "郵局親自發出這份官方通知。",
   "level": 2
  },
  {
@@ -12458,8 +12457,8 @@
   "syl": "pleas·ant",
   "pos": "adj.",
   "zh": "愉快的",
-  "ex": "The clerk has a pleasant manner.",
-  "ext": "那位櫃員態度愉快。",
+  "ex": "The clerk smiles warmly and has a pleasant manner.",
+  "ext": "那位櫃員笑容溫暖，態度令人愉快。",
   "level": 2
  },
  {
@@ -12467,14 +12466,14 @@
   "syl": "pow·er·ful",
   "pos": "adj.",
   "zh": "強大的",
-  "ex": "The truck has a powerful engine.",
-  "ext": "卡車有強大的引擎。",
+  "ex": "The engine is so powerful it pulls a heavy load.",
+  "ext": "這具引擎很強大，能拉動沉重的貨物。",
   "level": 2
  },
  {
   "en": "search",
   "syl": "search",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "搜尋",
   "ex": "Search the system for the tracking number.",
   "ext": "在系統裡搜尋追蹤號碼。",
@@ -12483,7 +12482,7 @@
  {
   "en": "sense",
   "syl": "sense",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "感覺、理智",
   "ex": "It makes sense to weigh the parcel first.",
   "ext": "先秤包裹是合理的。",
@@ -12494,8 +12493,8 @@
   "syl": "so·cial",
   "pos": "adj.",
   "zh": "社會的、社交的",
-  "ex": "The post office offers a social service.",
-  "ext": "郵局提供一項社會服務。",
+  "ex": "It helps people in need, a social service for the community.",
+  "ext": "它幫助有需要的人，是為社區提供的社會服務。",
   "level": 2
  },
  {
@@ -12566,8 +12565,8 @@
   "syl": "fa·mil·iar",
   "pos": "adj.",
   "zh": "熟悉的",
-  "ex": "The route is familiar to the old carrier.",
-  "ext": "這條路線對老郵務士很熟悉。",
+  "ex": "He has walked it for years, so the route is familiar to him.",
+  "ext": "他走了好幾年，所以這條路線對他很熟悉。",
   "level": 2
  },
  {
@@ -12602,8 +12601,8 @@
   "syl": "au·dio",
   "pos": "adj.",
   "zh": "聲音的、音訊的",
-  "ex": "Listen to the audio guide for the exam.",
-  "ext": "聽考試的音訊指引。",
+  "ex": "Put on headphones and play the audio guide for the exam.",
+  "ext": "戴上耳機播放考試的音訊指引。",
   "level": 2
  },
  {
@@ -12629,8 +12628,8 @@
   "syl": "imag·i·nary",
   "pos": "adj.",
   "zh": "虛構的、想像的",
-  "ex": "The story is set in an imaginary town.",
-  "ext": "故事設定在一個虛構的小鎮。",
+  "ex": "The town is not real; it exists only in an imaginary world.",
+  "ext": "這座小鎮並不真實，只存在於虛構的世界。",
   "level": 2
  },
  {
@@ -12647,8 +12646,8 @@
   "syl": "prime",
   "pos": "adj./n.",
   "zh": "主要的、首要的",
-  "ex": "Speed is the prime goal of delivery.",
-  "ext": "速度是遞送的首要目標。",
+  "ex": "Above all else, speed is the prime goal of delivery.",
+  "ext": "最重要的是，速度是遞送的首要目標。",
   "level": 2
  },
  {
@@ -12681,7 +12680,7 @@
  {
   "en": "beloved",
   "syl": "beloved",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "心愛的、深愛的",
   "ex": "She kept her beloved letters for years.",
   "ext": "她把心愛的信件保存了多年。",
@@ -12701,8 +12700,8 @@
   "syl": "ex·ten·sive",
   "pos": "adj.",
   "zh": "廣泛的、大量的",
-  "ex": "The post has an extensive delivery network.",
-  "ext": "郵政有廣泛的遞送網絡。",
+  "ex": "It reaches every town and village, an extensive network.",
+  "ext": "它遍及每個城鎮和村莊，是廣泛的網絡。",
   "level": 2
  },
  {
@@ -12744,7 +12743,7 @@
  {
   "en": "book",
   "syl": "book",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "書本",
   "ex": "Please book a pickup for tomorrow.",
   "ext": "請預約明天的收件。",
@@ -12780,16 +12779,16 @@
  {
   "en": "certain",
   "syl": "cer·tain",
-  "pos": "adj./pron.",
+  "pos": "adj.",
   "zh": "確定的",
-  "ex": "We are certain the parcel was sent.",
-  "ext": "我們確定包裹已寄出。",
+  "ex": "We checked the record, so we are certain it was sent.",
+  "ext": "我們查過紀錄，所以確定它已寄出。",
   "level": 2
  },
  {
   "en": "breakfast",
   "syl": "break·fast",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "早餐",
   "ex": "The carrier eats breakfast before the route.",
   "ext": "郵務士在出勤前吃早餐。",
@@ -12798,7 +12797,7 @@
  {
   "en": "bug",
   "syl": "bug",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "小蟲",
   "ex": "A bug crawled out of the old box.",
   "ext": "一隻小蟲從舊箱子裡爬出來。",
@@ -12807,7 +12806,7 @@
  {
   "en": "class",
   "syl": "class",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "種類、等級",
   "ex": "Send it by first class mail.",
   "ext": "用第一級郵件寄送。",
@@ -12834,7 +12833,7 @@
  {
   "en": "deal",
   "syl": "deal",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "處理、交易",
   "ex": "The clerk can deal with your problem.",
   "ext": "櫃員可以處理你的問題。",
@@ -12843,7 +12842,7 @@
  {
   "en": "coat",
   "syl": "coat",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "外套",
   "ex": "He wore a heavy coat in the cold.",
   "ext": "他在寒冷中穿了厚外套。",
@@ -12852,7 +12851,7 @@
  {
   "en": "case",
   "syl": "case",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "案例、箱子",
   "ex": "In this case, the address was missing.",
   "ext": "在這個情況下，地址漏掉了。",
@@ -12906,7 +12905,7 @@
  {
   "en": "fall",
   "syl": "fall",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "掉落",
   "ex": "Leaves fall on the delivery path.",
   "ext": "葉子落在遞送的路上。",
@@ -12924,7 +12923,7 @@
  {
   "en": "either",
   "syl": "ei·ther",
-  "pos": "adv./pron./adj./conj.",
+  "pos": "pron.",
   "zh": "兩者之一",
   "ex": "You can pay with either cash or card.",
   "ext": "你可以用現金或卡片付款。",
@@ -12944,14 +12943,14 @@
   "syl": "fun·ny",
   "pos": "adj.",
   "zh": "有趣的",
-  "ex": "The clerk told a funny story.",
-  "ext": "櫃員說了個有趣的故事。",
+  "ex": "The clerk told a story so funny we all laughed.",
+  "ext": "櫃員說了個很好笑的故事，我們都笑了。",
   "level": 2
  },
  {
   "en": "else",
   "syl": "else",
-  "pos": "adv.",
+  "pos": "adv./adj.",
   "zh": "其他、別的",
   "ex": "Is there anything else to send?",
   "ext": "還有別的東西要寄嗎？",
@@ -12960,7 +12959,7 @@
  {
   "en": "feed",
   "syl": "feed",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "餵食",
   "ex": "She has to feed the office cat.",
   "ext": "她得餵辦公室的貓。",
@@ -12978,7 +12977,7 @@
  {
   "en": "inside",
   "syl": "in·side",
-  "pos": "prep./adv./n./adj.",
+  "pos": "prep./n.",
   "zh": "在…裡面",
   "ex": "Check what is inside the box.",
   "ext": "檢查箱子裡面有什麼。",
@@ -12989,8 +12988,8 @@
   "syl": "in·ter·est·ed",
   "pos": "adj.",
   "zh": "感興趣的",
-  "ex": "He is interested in the postal exam.",
-  "ext": "他對郵政考試感興趣。",
+  "ex": "He keeps reading about it, very interested in the postal exam.",
+  "ext": "他不停查資料，對郵政考試很感興趣。",
   "level": 2
  },
  {
@@ -12998,8 +12997,8 @@
   "syl": "in·ter·est·ing",
   "pos": "adj.",
   "zh": "有趣的",
-  "ex": "The training was very interesting.",
-  "ext": "訓練很有趣。",
+  "ex": "I never felt bored; the training was interesting.",
+  "ext": "我一點都不覺得無聊，這場訓練很有趣。",
   "level": 2
  },
  {
@@ -13014,7 +13013,7 @@
  {
   "en": "ground",
   "syl": "ground",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "地面",
   "ex": "Do not leave parcels on the ground.",
   "ext": "別把包裹留在地上。",
@@ -13050,7 +13049,7 @@
  {
   "en": "hand",
   "syl": "hand",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "手",
   "ex": "Please hand me the form.",
   "ext": "請把表格遞給我。",
@@ -13077,7 +13076,7 @@
  {
   "en": "knee",
   "syl": "knee",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "膝蓋",
   "ex": "He hurt his knee while lifting boxes.",
   "ext": "他搬箱子時傷了膝蓋。",
@@ -13095,7 +13094,7 @@
  {
   "en": "lunch",
   "syl": "lunch",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "午餐",
   "ex": "The team takes lunch at noon.",
   "ext": "團隊中午吃午餐。",
@@ -13104,7 +13103,7 @@
  {
   "en": "machine",
   "syl": "ma·chine",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "機器",
   "ex": "The machine weighs each parcel.",
   "ext": "機器秤每件包裹。",
@@ -13131,7 +13130,7 @@
  {
   "en": "lead",
   "syl": "lead",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "領導、帶領",
   "ex": "She will lead the new team.",
   "ext": "她將領導新團隊。",
@@ -13142,8 +13141,8 @@
   "syl": "mar·ried",
   "pos": "adj.",
   "zh": "已婚的",
-  "ex": "The married couple share one mailbox.",
-  "ext": "這對夫妻共用一個信箱。",
+  "ex": "The husband and wife share one mailbox, a married couple.",
+  "ext": "這對丈夫和妻子共用一個信箱，是一對夫妻。",
   "level": 2
  },
  {
@@ -13158,7 +13157,7 @@
  {
   "en": "level",
   "syl": "lev·el",
-  "pos": "n./adj.",
+  "pos": "adj./n.",
   "zh": "水平",
   "ex": "Keep the parcel level when carrying.",
   "ext": "搬運時讓包裹保持水平。",
@@ -13169,8 +13168,8 @@
   "syl": "na·tion·al",
   "pos": "adj.",
   "zh": "國家的",
-  "ex": "There is a national mail holiday.",
-  "ext": "有一個全國郵政假日。",
+  "ex": "The whole country closes for a national mail holiday.",
+  "ext": "全國都放假的全國郵政假日。",
   "level": 2
  },
  {
@@ -13185,7 +13184,7 @@
  {
   "en": "miss",
   "syl": "miss",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "想念、未擊中",
   "ex": "Do not miss the last pickup.",
   "ext": "別錯過最後一次收件。",
@@ -13196,14 +13195,14 @@
   "syl": "noisy",
   "pos": "adj.",
   "zh": "吵鬧的",
-  "ex": "The sorting room is very noisy.",
-  "ext": "分揀室非常吵鬧。",
+  "ex": "The machines roar loudly; the sorting room is noisy.",
+  "ext": "機器轟隆作響，分揀室非常吵鬧。",
   "level": 2
  },
  {
   "en": "pool",
   "syl": "pool",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "游泳池",
   "ex": "Rain left a pool by the back door.",
   "ext": "雨在後門邊留下一灘水。",
@@ -13212,7 +13211,7 @@
  {
   "en": "part",
   "syl": "part",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "部分",
   "ex": "Accuracy is part of good service.",
   "ext": "準確是良好服務的一部分。",
@@ -13221,7 +13220,7 @@
  {
   "en": "past",
   "syl": "past",
-  "pos": "adj./n./prep./adv.",
+  "pos": "prep./adj.",
   "zh": "過去的、經過",
   "ex": "The truck drove past the village.",
   "ext": "卡車開過了村子。",
@@ -13230,7 +13229,7 @@
  {
   "en": "pen",
   "syl": "pen",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "筆",
   "ex": "Sign here with a black pen.",
   "ext": "用黑筆在這裡簽名。",
@@ -13239,7 +13238,7 @@
  {
   "en": "question",
   "syl": "ques·tion",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "問題",
   "ex": "Please answer this question on the form.",
   "ext": "請在表格上回答這個問題。",
@@ -13248,7 +13247,7 @@
  {
   "en": "plant",
   "syl": "plant",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "種植、植物",
   "ex": "The parcel held a small plant.",
   "ext": "包裹裡裝著一株小植物。",
@@ -13257,7 +13256,7 @@
  {
   "en": "outside",
   "syl": "out·side",
-  "pos": "prep./adv./adj./n.",
+  "pos": "prep./adv.",
   "zh": "在…外面",
   "ex": "Wait outside until the office opens.",
   "ext": "在郵局開門前在外面等。",
@@ -13293,7 +13292,7 @@
  {
   "en": "someone",
   "syl": "some·one",
-  "pos": "n./v.",
+  "pos": "pron.",
   "zh": "某人",
   "ex": "Someone must sign for this letter.",
   "ext": "必須有人簽收這封信。",
@@ -13356,7 +13355,7 @@
  {
   "en": "touch",
   "syl": "touch",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "觸摸",
   "ex": "Do not touch the fragile parcel.",
   "ext": "別碰那件易碎包裹。",
@@ -13374,7 +13373,7 @@
  {
   "en": "trouble",
   "syl": "trou·ble",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "麻煩",
   "ex": "The wrong address caused trouble.",
   "ext": "錯誤的地址造成了麻煩。",
@@ -13383,7 +13382,7 @@
  {
   "en": "type",
   "syl": "type",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "打字、類型",
   "ex": "Type the address into the system.",
   "ext": "把地址打進系統。",
@@ -13401,7 +13400,7 @@
  {
   "en": "team",
   "syl": "team",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "隊伍",
   "ex": "The team sorts mail every morning.",
   "ext": "團隊每天早上分信。",
@@ -13410,7 +13409,7 @@
  {
   "en": "video",
   "syl": "video",
-  "pos": "n./v./adj.",
+  "pos": "n.",
   "zh": "影片；錄影機",
   "ex": "Watch the safety video before work.",
   "ext": "工作前先看安全影片。",
@@ -13635,7 +13634,7 @@
  {
   "en": "beat",
   "syl": "beat",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "打擊、擊敗",
   "ex": "Our branch beat the delivery record.",
   "ext": "我們分局打破了遞送紀錄。",
@@ -13653,10 +13652,10 @@
  {
   "en": "current",
   "syl": "cur·rent",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "當前的",
-  "ex": "Check the current postage rate.",
-  "ext": "查看目前的郵資費率。",
+  "ex": "Rates change often, so check today's current postage rate.",
+  "ext": "費率常變，所以查看今天當前的郵資費率。",
   "level": 2
  },
  {
@@ -13689,7 +13688,7 @@
  {
   "en": "double",
   "syl": "dou·ble",
-  "pos": "adj./v./n./adv.",
+  "pos": "adj.",
   "zh": "雙倍的",
   "ex": "Holiday mail is double the usual amount.",
   "ext": "節日郵件是平常的兩倍。",
@@ -13725,7 +13724,7 @@
  {
   "en": "ease",
   "syl": "ease",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "緩和、減輕",
   "ex": "Online tools ease the daily work.",
   "ext": "線上工具減輕了日常工作。",
@@ -13815,16 +13814,16 @@
  {
   "en": "general",
   "syl": "gen·er·al",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "一般的、將軍",
-  "ex": "This is the general rule for parcels.",
-  "ext": "這是包裹的一般規則。",
+  "ex": "It applies to almost all cases, the general rule for parcels.",
+  "ext": "它適用於幾乎所有情況，是包裹的一般規則。",
   "level": 2
  },
  {
   "en": "escape",
   "syl": "es·cape",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "逃脫、逃避",
   "ex": "No parcel can escape the scan.",
   "ext": "沒有包裹能逃過掃描。",
@@ -13842,7 +13841,7 @@
  {
   "en": "guard",
   "syl": "guard",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "警衛、守衛",
   "ex": "A guard watches the main gate.",
   "ext": "警衛看守大門。",
@@ -13860,7 +13859,7 @@
  {
   "en": "individual",
   "syl": "in·di·vid·u·al",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "個人、個別的",
   "ex": "Each individual parcel is scanned.",
   "ext": "每件個別的包裹都被掃描。",
@@ -13871,8 +13870,8 @@
   "syl": "lib·er·al",
   "pos": "adj.",
   "zh": "開明的、慷慨的",
-  "ex": "The boss has a liberal view on breaks.",
-  "ext": "老闆對休息時間態度開明。",
+  "ex": "The boss lets staff rest freely, a liberal view on breaks.",
+  "ext": "老闆讓員工自由休息，對休息時間態度開明。",
   "level": 2
  },
  {
@@ -13896,10 +13895,10 @@
  {
   "en": "major",
   "syl": "ma·jor",
-  "pos": "adj./n./v.",
+  "pos": "adj.",
   "zh": "主要的、主修",
-  "ex": "Speed is a major part of the job.",
-  "ext": "速度是這份工作的主要部分。",
+  "ex": "More than anything else, speed is a major part of the job.",
+  "ext": "勝過其他一切，速度是這份工作的主要部分。",
   "level": 2
  },
  {
@@ -13932,7 +13931,7 @@
  {
   "en": "master",
   "syl": "mas·ter",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "精通、大師",
   "ex": "She has mastered the sorting system.",
   "ext": "她精通了分揀系統。",
@@ -13943,8 +13942,8 @@
   "syl": "lat·est",
   "pos": "adj.",
   "zh": "最新的",
-  "ex": "Check the latest tracking update.",
-  "ext": "查看最新的追蹤更新。",
+  "ex": "Ignore the old notes; check the newest, latest tracking update.",
+  "ext": "別管舊紀錄，查看最新的追蹤更新。",
   "level": 2
  },
  {
@@ -13959,10 +13958,10 @@
  {
   "en": "negative",
   "syl": "neg·a·tive",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "負面的",
-  "ex": "Late mail gives a negative impression.",
-  "ext": "遲到的郵件給人負面印象。",
+  "ex": "Customers feel unhappy; late mail gives a negative impression.",
+  "ext": "顧客感到不悅，遲到的郵件給人負面印象。",
   "level": 2
  },
  {
@@ -13995,10 +13994,10 @@
  {
   "en": "minor",
   "syl": "mi·nor",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "次要的、未成年的",
-  "ex": "It was only a minor delay.",
-  "ext": "那只是輕微的延誤。",
+  "ex": "It lasted only a few minutes, just a minor delay.",
+  "ext": "只持續幾分鐘，只是輕微的延誤。",
   "level": 2
  },
  {
@@ -14013,7 +14012,7 @@
  {
   "en": "object",
   "syl": "ob·ject",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "物體、反對",
   "ex": "A heavy object was inside the box.",
   "ext": "箱子裡有個沉重的物體。",
@@ -14024,8 +14023,8 @@
   "syl": "ob·vi·ous",
   "pos": "adj.",
   "zh": "明顯的",
-  "ex": "The wrong address was obvious.",
-  "ext": "錯誤的地址很明顯。",
+  "ex": "Anyone could spot it at a glance; the wrong address was obvious.",
+  "ext": "任何人一眼就看得出，錯誤的地址很明顯。",
   "level": 2
  },
  {
@@ -14076,7 +14075,7 @@
  {
   "en": "range",
   "syl": "range",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "範圍",
   "ex": "The price range depends on weight.",
   "ext": "價格範圍取決於重量。",
@@ -14096,8 +14095,8 @@
   "syl": "re·cent",
   "pos": "adj.",
   "zh": "最近的",
-  "ex": "Check the recent delivery records.",
-  "ext": "查看最近的遞送紀錄。",
+  "ex": "Look at this week's records, the recent ones.",
+  "ext": "看這週的紀錄，也就是最近的紀錄。",
   "level": 2
  },
  {
@@ -14175,7 +14174,7 @@
  {
   "en": "surface",
   "syl": "sur·face",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "表面",
   "ex": "Write clearly on the box surface.",
   "ext": "在箱子表面清楚書寫。",
@@ -14184,16 +14183,16 @@
  {
   "en": "single",
   "syl": "sin·gle",
-  "pos": "adj./n./v.",
+  "pos": "adj.",
   "zh": "單一的、單身的",
-  "ex": "Send it as a single parcel.",
-  "ext": "把它當作單一包裹寄出。",
+  "ex": "Do not split it; send it all as one single parcel.",
+  "ext": "不要分開，全部當作一件單一包裹寄出。",
   "level": 2
  },
  {
   "en": "steel",
   "syl": "steel",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "鋼",
   "ex": "The cart is made of steel.",
   "ext": "這台推車由鋼製成。",
@@ -14202,7 +14201,7 @@
  {
   "en": "step",
   "syl": "step",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "步驟、腳步",
   "ex": "Follow each step to mail a parcel.",
   "ext": "依照每個步驟寄包裹。",
@@ -14229,10 +14228,10 @@
  {
   "en": "whole",
   "syl": "whole",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "整個的",
-  "ex": "The whole street gets mail by ten.",
-  "ext": "整條街十點前都收到郵件。",
+  "ex": "Every house on it, the whole street, gets mail by ten.",
+  "ext": "街上每一戶，整條街，十點前都收到郵件。",
   "level": 2
  },
  {
@@ -14240,14 +14239,14 @@
   "syl": "will·ing",
   "pos": "adj.",
   "zh": "願意的",
-  "ex": "She is willing to work the night shift.",
-  "ext": "她願意上夜班。",
+  "ex": "Nobody forced her; she is willing to work the night shift.",
+  "ext": "沒有人逼她，她自願上夜班。",
   "level": 2
  },
  {
   "en": "worse",
   "syl": "worse",
-  "pos": "adj./adv./n.",
+  "pos": "adj.",
   "zh": "更糟的",
   "ex": "The traffic got worse after the rain.",
   "ext": "雨後交通變得更糟。",
@@ -14294,8 +14293,8 @@
   "syl": "au·to·mat·ic",
   "pos": "adj.",
   "zh": "自動的",
-  "ex": "The door has an automatic lock.",
-  "ext": "這扇門有自動鎖。",
+  "ex": "The door locks by itself, an automatic lock.",
+  "ext": "這扇門會自己上鎖，是自動鎖。",
   "level": 2
  },
  {
@@ -14330,8 +14329,8 @@
   "syl": "ca·su·al",
   "pos": "adj.",
   "zh": "隨意的、非正式的",
-  "ex": "Friday is casual dress day.",
-  "ext": "週五是便服日。",
+  "ex": "On Friday we wear jeans, a casual dress day.",
+  "ext": "週五我們穿牛仔褲，是便服日。",
   "level": 2
  },
  {
@@ -14373,7 +14372,7 @@
  {
   "en": "coach",
   "syl": "coach",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "教練、指導",
   "ex": "A senior clerk will coach the new staff.",
   "ext": "資深櫃員會指導新員工。",
@@ -14384,14 +14383,14 @@
   "syl": "emo·tion·al",
   "pos": "adj.",
   "zh": "情緒化的、感人的",
-  "ex": "The lost letter was very emotional for her.",
-  "ext": "那封遺失的信對她很有感情。",
+  "ex": "She cried over the lost letter; it was very emotional for her.",
+  "ext": "她為那封遺失的信哭了，那對她很有感情。",
   "level": 2
  },
  {
   "en": "flock",
   "syl": "flock",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "一群（鳥羊）",
   "ex": "A flock of birds rose over the field.",
   "ext": "一群鳥飛過田野。",
@@ -14436,7 +14435,7 @@
  {
   "en": "junk",
   "syl": "junk",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "垃圾、廢物",
   "ex": "Recycle the junk mail in the bin.",
   "ext": "把垃圾郵件回收進箱子。",
@@ -14445,7 +14444,7 @@
  {
   "en": "harm",
   "syl": "harm",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "傷害、損害",
   "ex": "Water can harm the paper inside.",
   "ext": "水會損壞裡面的紙。",
@@ -14483,8 +14482,8 @@
   "syl": "orig·i·nal",
   "pos": "adj./n.",
   "zh": "原本的、原件",
-  "ex": "Keep the original receipt for the record.",
-  "ext": "保留正本收據以供存查。",
+  "ex": "Do not keep a copy; keep the original receipt.",
+  "ext": "不要留影本，要保留正本收據。",
   "level": 2
  },
  {
@@ -14501,17 +14500,17 @@
   "syl": "out·er",
   "pos": "adj.",
   "zh": "外部的",
-  "ex": "Check the outer box for damage.",
-  "ext": "檢查外箱是否有損壞。",
+  "ex": "Look at the outside layer first, the outer box, for damage.",
+  "ext": "先檢查最外層，也就是外箱，是否有損壞。",
   "level": 2
  },
  {
   "en": "march",
   "syl": "march",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "遊行、行進",
-  "ex": "The new rule starts in March.",
-  "ext": "新規定從三月開始。",
+  "ex": "The soldiers march down the street.",
+  "ext": "士兵們沿著街道行進。",
   "level": 2
  },
  {
@@ -14544,7 +14543,7 @@
  {
   "en": "rate",
   "syl": "rate",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "費率、速度",
   "ex": "The postage rate went up this year.",
   "ext": "今年郵資費率上漲了。",
@@ -14598,7 +14597,7 @@
  {
   "en": "risk",
   "syl": "risk",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "風險",
   "ex": "There is a risk of delay in heavy rain.",
   "ext": "大雨中有延誤的風險。",
@@ -14636,8 +14635,8 @@
   "syl": "spe·cif·ic",
   "pos": "adj.",
   "zh": "明確的、特定的",
-  "ex": "Write a specific address on the box.",
-  "ext": "在箱子上寫明確的地址。",
+  "ex": "Not just the city; write a specific street and number.",
+  "ext": "不能只寫城市，要寫明確的街道和門牌號。",
   "level": 2
  },
  {
@@ -14661,7 +14660,7 @@
  {
   "en": "rumor",
   "syl": "ru·mor",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "謠言",
   "ex": "Do not spread a rumor about the closure.",
   "ext": "別散布關於停業的謠言。",
@@ -14670,7 +14669,7 @@
  {
   "en": "rush",
   "syl": "rush",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "匆忙、趕",
   "ex": "There is a rush before the holiday.",
   "ext": "假期前有一陣忙碌。",
@@ -14697,7 +14696,7 @@
  {
   "en": "tunnel",
   "syl": "tun·nel",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "隧道",
   "ex": "The train passed through a long tunnel.",
   "ext": "火車穿過一條長隧道。",
@@ -14706,10 +14705,10 @@
  {
   "en": "unique",
   "syl": "unique",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "獨特的",
-  "ex": "Each parcel has a unique tracking number.",
-  "ext": "每件包裹都有獨特的追蹤號碼。",
+  "ex": "No two are the same; each parcel has its own unique number.",
+  "ext": "沒有兩個相同，每件包裹都有獨一無二的號碼。",
   "level": 2
  },
  {
@@ -14724,7 +14723,7 @@
  {
   "en": "superior",
   "syl": "su·pe·ri·or",
-  "pos": "adj./n.",
+  "pos": "n.",
   "zh": "上級的、較好的",
   "ex": "Report the loss to your superior.",
   "ext": "向上級報告遺失。",
@@ -14771,8 +14770,8 @@
   "syl": "wealthy",
   "pos": "adj.",
   "zh": "富有的",
-  "ex": "A wealthy client sent many parcels.",
-  "ext": "一位富有的客戶寄了許多包裹。",
+  "ex": "The client owns many companies, a very wealthy person.",
+  "ext": "這位客戶擁有許多公司，是個非常富有的人。",
   "level": 2
  },
  {
@@ -14787,7 +14786,7 @@
  {
   "en": "wrap",
   "syl": "wrap",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "包裝、包覆",
   "ex": "Wrap the glass before mailing.",
   "ext": "寄送前先把玻璃包好。",
@@ -14825,8 +14824,8 @@
   "syl": "com·pet·i·tive",
   "pos": "adj.",
   "zh": "有競爭力的",
-  "ex": "Our prices are very competitive.",
-  "ext": "我們的價格很有競爭力。",
+  "ex": "We match any rival's price; our prices are competitive.",
+  "ext": "我們不輸任何對手的價格，價格很有競爭力。",
   "level": 2
  },
  {
@@ -14850,10 +14849,10 @@
  {
   "en": "concrete",
   "syl": "con·crete",
-  "pos": "adj./n./v.",
+  "pos": "adj.",
   "zh": "具體的、混凝土",
-  "ex": "Give a concrete example on the form.",
-  "ext": "在表格上舉一個具體的例子。",
+  "ex": "Don't be vague; give a concrete example on the form.",
+  "ext": "別含糊，在表格上舉一個具體的例子。",
   "level": 2
  },
  {
@@ -14861,8 +14860,8 @@
   "syl": "dig·i·tal",
   "pos": "adj.",
   "zh": "數位的",
-  "ex": "Use the digital scale to weigh parcels.",
-  "ext": "用數位磅秤秤包裹。",
+  "ex": "The scale shows the weight in numbers, a digital scale.",
+  "ext": "這台秤用數字顯示重量，是數位磅秤。",
   "level": 2
  },
  {
@@ -14870,8 +14869,8 @@
   "syl": "de·light·ful",
   "pos": "adj.",
   "zh": "令人愉快的",
-  "ex": "The new clerk has a delightful manner.",
-  "ext": "新櫃員態度令人愉快。",
+  "ex": "The new clerk laughs and charms us with a delightful manner.",
+  "ext": "新櫃員談笑風生，態度令人愉快。",
   "level": 2
  },
  {
@@ -14879,8 +14878,8 @@
   "syl": "coura·geous",
   "pos": "adj.",
   "zh": "勇敢的",
-  "ex": "It was courageous to drive in the storm.",
-  "ext": "在暴風雨中開車很勇敢。",
+  "ex": "He faced the danger without fear; that was courageous.",
+  "ext": "他毫不畏懼地面對危險，很勇敢。",
   "level": 2
  },
  {
@@ -14904,7 +14903,7 @@
  {
   "en": "gear",
   "syl": "gear",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "裝備、齒輪",
   "ex": "The carrier checked his rain gear.",
   "ext": "郵務士檢查他的雨具。",
@@ -14942,8 +14941,8 @@
   "syl": "grace·ful",
   "pos": "adj.",
   "zh": "優雅的",
-  "ex": "She has a graceful way with customers.",
-  "ext": "她對待顧客的方式很優雅。",
+  "ex": "She moves smoothly and calmly, in a graceful way.",
+  "ext": "她動作流暢沉穩，姿態優雅。",
   "level": 2
  },
  {
@@ -14976,7 +14975,7 @@
  {
   "en": "impact",
   "syl": "im·pact",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "影響、衝擊",
   "ex": "The strike had a big impact on delivery.",
   "ext": "罷工對遞送有很大影響。",
@@ -15005,14 +15004,14 @@
   "syl": "lux·u·ri·ous",
   "pos": "adj.",
   "zh": "豪華的",
-  "ex": "The hotel mailed a luxurious gift box.",
-  "ext": "飯店寄出一個豪華禮盒。",
+  "ex": "The gift box was costly and grand, very luxurious.",
+  "ext": "這個禮盒昂貴又氣派，非常豪華。",
   "level": 2
  },
  {
   "en": "issue",
   "syl": "is·sue",
-  "pos": "n./v.",
+  "pos": "v./n.",
   "zh": "問題、發行",
   "ex": "Please report any issue with delivery.",
   "ext": "遞送有任何問題請回報。",
@@ -15023,8 +15022,8 @@
   "syl": "mem·o·rable",
   "pos": "adj.",
   "zh": "難忘的",
-  "ex": "It was a memorable day at the branch.",
-  "ext": "那是分局難忘的一天。",
+  "ex": "We still talk about that memorable day at the branch.",
+  "ext": "我們至今仍談起分局那難忘的一天。",
   "level": 2
  },
  {
@@ -15093,7 +15092,7 @@
  {
   "en": "pace",
   "syl": "pace",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "步調、速度",
   "ex": "Keep a steady pace on the route.",
   "ext": "在路線上保持穩定的步調。",
@@ -15104,8 +15103,8 @@
   "syl": "par·tial",
   "pos": "adj.",
   "zh": "部分的",
-  "ex": "Only a partial address was given.",
-  "ext": "只提供了部分地址。",
+  "ex": "The street is missing; only a partial address was given.",
+  "ext": "少了街名，只提供了部分地址。",
   "level": 2
  },
  {
@@ -15165,7 +15164,7 @@
  {
   "en": "rescue",
   "syl": "res·cue",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "救援、營救",
   "ex": "Staff helped in the flood rescue.",
   "ext": "員工協助水災救援。",
@@ -15203,8 +15202,8 @@
   "syl": "trag·ic",
   "pos": "adj.",
   "zh": "悲慘的",
-  "ex": "The fire was a tragic accident.",
-  "ext": "那場火災是悲慘的意外。",
+  "ex": "Lives were lost in the fire, a tragic accident.",
+  "ext": "火災中有人喪生，是一場悲慘的意外。",
   "level": 2
  },
  {
@@ -15228,7 +15227,7 @@
  {
   "en": "despair",
   "syl": "de·spair",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "絕望",
   "ex": "Do not despair if a parcel is delayed.",
   "ext": "包裹延誤時別絕望。",
@@ -15239,8 +15238,8 @@
   "syl": "en·thu·si·as·tic",
   "pos": "adj.",
   "zh": "熱情的、熱衷的",
-  "ex": "The new clerk is very enthusiastic.",
-  "ext": "新櫃員非常熱情。",
+  "ex": "The new clerk loves the job and is very enthusiastic.",
+  "ext": "新櫃員熱愛這份工作，非常熱情。",
   "level": 2
  },
  {
@@ -15248,8 +15247,8 @@
   "syl": "ex·tra·or·di·nary",
   "pos": "adj.",
   "zh": "非凡的、特別的",
-  "ex": "The team made an extraordinary effort.",
-  "ext": "團隊付出了非凡的努力。",
+  "ex": "They worked far beyond normal; an extraordinary effort.",
+  "ext": "他們付出遠超尋常，是非凡的努力。",
   "level": 2
  },
  {
@@ -15257,8 +15256,8 @@
   "syl": "in·evitable",
   "pos": "adj.",
   "zh": "不可避免的",
-  "ex": "Some delay is inevitable in storms.",
-  "ext": "暴風雨中有些延誤是難免的。",
+  "ex": "No one can stop it; some delay is inevitable in storms.",
+  "ext": "沒有人能阻止，暴風雨中有些延誤是無法避免的。",
   "level": 2
  },
  {
@@ -15273,7 +15272,7 @@
  {
   "en": "snatch",
   "syl": "snatch",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "搶奪、抓住",
   "ex": "A thief tried to snatch the bag.",
   "ext": "一個小偷想搶那個袋子。",
@@ -15284,8 +15283,8 @@
   "syl": "un·prece·dent·ed",
   "pos": "adj.",
   "zh": "前所未有的",
-  "ex": "Holiday mail hit an unprecedented level.",
-  "ext": "假期郵件達到前所未有的量。",
+  "ex": "Never seen before in history, mail hit an unprecedented level.",
+  "ext": "史上從未見過，郵件達到前所未有的量。",
   "level": 2
  },
  {
@@ -15329,14 +15328,14 @@
   "syl": "life·long",
   "pos": "adj.",
   "zh": "終身的",
-  "ex": "He made a lifelong career at the post.",
-  "ext": "他在郵政做了終身的職業。",
+  "ex": "He worked there from youth to old age, a lifelong career.",
+  "ext": "他從年輕做到年老，是終身的職業。",
   "level": 2
  },
  {
   "en": "outright",
   "syl": "out·right",
-  "pos": "adj./adv.",
+  "pos": "adv.",
   "zh": "徹底地、直接地",
   "ex": "She rejected the claim outright.",
   "ext": "她直接駁回了那項要求。",
@@ -15345,10 +15344,10 @@
  {
   "en": "notable",
   "syl": "no·table",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "顯著的、值得注意的",
-  "ex": "There was a notable rise in parcels.",
-  "ext": "包裹有顯著的增加。",
+  "ex": "The jump was big enough to catch everyone's eye, a notable rise.",
+  "ext": "這波增長大到引人注目，是顯著的增加。",
   "level": 2
  },
  {
@@ -15374,8 +15373,8 @@
   "syl": "wise",
   "pos": "adj.",
   "zh": "有智慧的",
-  "ex": "It is wise to insure a valuable parcel.",
-  "ext": "為貴重包裹保價是明智的。",
+  "ex": "You avoid loss, so insuring a parcel is wise.",
+  "ext": "你能避免損失，所以為包裹保價很明智。",
   "level": 2
  },
  {
@@ -15390,7 +15389,7 @@
  {
   "en": "wish",
   "syl": "wish",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "希望",
   "ex": "We wish you a fast delivery.",
   "ext": "祝您快速送達。",
@@ -15419,8 +15418,8 @@
   "syl": "won·der·ful",
   "pos": "adj.",
   "zh": "美妙的",
-  "ex": "The team did a wonderful job.",
-  "ext": "團隊做得很棒。",
+  "ex": "Everyone was amazed; the team did a wonderful job.",
+  "ext": "大家都很驚艷，團隊做得很棒。",
   "level": 2
  },
  {
@@ -15435,7 +15434,7 @@
  {
   "en": "aim",
   "syl": "aim",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "目標",
   "ex": "Our aim is on-time delivery.",
   "ext": "我們的目標是準時送達。",
@@ -15444,7 +15443,7 @@
  {
   "en": "alarm",
   "syl": "alarm",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "警報、鬧鐘",
   "ex": "The alarm went off in the storeroom.",
   "ext": "儲藏室的警報響了。",
@@ -15471,7 +15470,7 @@
  {
   "en": "wave",
   "syl": "wave",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "揮手",
   "ex": "She gave a wave as the truck left.",
   "ext": "卡車離開時她揮了揮手。",
@@ -15498,10 +15497,10 @@
  {
   "en": "yellow",
   "syl": "yel·low",
-  "pos": "adj./n./v.",
+  "pos": "adj.",
   "zh": "黃色",
-  "ex": "Drop letters in the yellow box.",
-  "ext": "把信投進黃色信箱。",
+  "ex": "Not the red one; drop letters in the yellow box.",
+  "ext": "不是紅色那個，把信投進黃色信箱。",
   "level": 2
  },
  {
@@ -15509,8 +15508,8 @@
   "syl": "an·cient",
   "pos": "adj.",
   "zh": "古代的",
-  "ex": "The parcel held an ancient coin.",
-  "ext": "包裹裡裝著一枚古錢幣。",
+  "ex": "The coin was made thousands of years ago, an ancient coin.",
+  "ext": "那枚錢幣是幾千年前鑄造的，是古錢幣。",
   "level": 2
  },
  {
@@ -15534,7 +15533,7 @@
  {
   "en": "west",
   "syl": "west",
-  "pos": "n./adj./adv.",
+  "pos": "n.",
   "zh": "西方的",
   "ex": "The route runs to the west.",
   "ext": "這條路線通往西邊。",
@@ -15599,8 +15598,8 @@
   "syl": "ac·tive",
   "pos": "adj.",
   "zh": "活躍的",
-  "ex": "The branch is active even at night.",
-  "ext": "分局即使在夜間也很活躍。",
+  "ex": "Workers keep moving all night; the branch is active.",
+  "ext": "工人整夜不停忙碌，分局很活躍。",
   "level": 2
  },
  {
@@ -15642,7 +15641,7 @@
  {
   "en": "adult",
   "syl": "adult",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "成年人",
   "ex": "An adult must sign for this parcel.",
   "ext": "這件包裹須由成人簽收。",
@@ -15678,7 +15677,7 @@
  {
   "en": "backpack",
   "syl": "back·pack",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "背包",
   "ex": "The carrier wore a small backpack.",
   "ext": "郵務士背著一個小背包。",
@@ -15687,7 +15686,7 @@
  {
   "en": "blanket",
   "syl": "blan·ket",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "毯子",
   "ex": "Wrap the glass in a blanket.",
   "ext": "用毯子把玻璃包好。",
@@ -15723,7 +15722,7 @@
  {
   "en": "chalk",
   "syl": "chalk",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "粉筆",
   "ex": "Mark the floor with chalk.",
   "ext": "用粉筆在地板上做記號。",
@@ -15732,7 +15731,7 @@
  {
   "en": "boil",
   "syl": "boil",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "煮沸",
   "ex": "Hot weather can boil a closed truck.",
   "ext": "炎熱天氣能讓密閉卡車悶熱不已。",
@@ -15795,7 +15794,7 @@
  {
   "en": "bother",
   "syl": "both·er",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "打擾",
   "ex": "A wrong code can bother the whole team.",
   "ext": "錯誤的郵遞區號會麻煩整個團隊。",
@@ -15822,7 +15821,7 @@
  {
   "en": "branch",
   "syl": "branch",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "分支、樹枝、分局",
   "ex": "The new branch opens next month.",
   "ext": "新分局下個月開幕。",
@@ -15831,7 +15830,7 @@
  {
   "en": "chase",
   "syl": "chase",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "追逐",
   "ex": "Do not chase the truck on foot.",
   "ext": "別徒步追卡車。",
@@ -15840,7 +15839,7 @@
  {
   "en": "cheat",
   "syl": "cheat",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "欺騙",
   "ex": "Do not cheat on the weight.",
   "ext": "別在重量上作假。",
@@ -15849,7 +15848,7 @@
  {
   "en": "barbecue",
   "syl": "bar·be·cue",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "烤肉",
   "ex": "The parcel held a barbecue grill.",
   "ext": "包裹裡裝著一個烤肉架。",
@@ -15867,7 +15866,7 @@
  {
   "en": "bark",
   "syl": "bark",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "吠叫",
   "ex": "The dog began to bark at the carrier.",
   "ext": "那隻狗開始對郵務士吠叫。",
@@ -15878,8 +15877,8 @@
   "syl": "broad",
   "pos": "adj.",
   "zh": "寬廣的",
-  "ex": "The truck took the broad main road.",
-  "ext": "卡車走寬闊的主幹道。",
+  "ex": "Many lanes ran side by side on the broad main road.",
+  "ext": "寬闊的主幹道上好幾條車道並排。",
   "level": 2
  },
  {
@@ -15894,7 +15893,7 @@
  {
   "en": "base",
   "syl": "base",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "基礎；基地",
   "ex": "Write the weight at the base of the box.",
   "ext": "在箱子底部寫上重量。",
@@ -15903,7 +15902,7 @@
  {
   "en": "brush",
   "syl": "brush",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "刷",
   "ex": "Brush the dust off the parcel.",
   "ext": "把包裹上的灰塵刷掉。",
@@ -15914,8 +15913,8 @@
   "syl": "ba·sic",
   "pos": "adj.",
   "zh": "基本的",
-  "ex": "Follow the basic mailing rules.",
-  "ext": "遵守基本的郵寄規則。",
+  "ex": "Start with the simplest ones, the basic mailing rules.",
+  "ext": "從最簡單的開始，遵守基本的郵寄規則。",
   "level": 2
  },
  {
@@ -15948,7 +15947,7 @@
  {
   "en": "burn",
   "syl": "burn",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "燒焦",
   "ex": "Hot pipes can burn your hand.",
   "ext": "高溫的管子會燙傷手。",
@@ -15957,7 +15956,7 @@
  {
   "en": "burst",
   "syl": "burst",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "爆發",
   "ex": "The full bag may burst.",
   "ext": "裝滿的袋子可能會爆開。",
@@ -15984,7 +15983,7 @@
  {
   "en": "clap",
   "syl": "clap",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "拍手",
   "ex": "The team clapped for the new record.",
   "ext": "團隊為新紀錄鼓掌。",
@@ -16029,7 +16028,7 @@
  {
   "en": "cage",
   "syl": "cage",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "籠子",
   "ex": "Live birds travel in a cage.",
   "ext": "活鳥裝在籠子裡運送。",
@@ -16083,7 +16082,7 @@
  {
   "en": "cartoon",
   "syl": "car·toon",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "卡通",
   "ex": "The child mailed a cartoon drawing.",
   "ext": "孩子寄了一張卡通畫。",
@@ -16119,7 +16118,7 @@
  {
   "en": "cause",
   "syl": "cause",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "原因",
   "ex": "Rain was the cause of the delay.",
   "ext": "下雨是延誤的原因。",
@@ -16146,7 +16145,7 @@
  {
   "en": "cure",
   "syl": "cure",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "治癒",
   "ex": "There is no quick cure for late mail.",
   "ext": "遲到的郵件沒有速效良方。",
@@ -16155,7 +16154,7 @@
  {
   "en": "comb",
   "syl": "comb",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "梳子",
   "ex": "The parcel held a comb and brush.",
   "ext": "包裹裡裝著一把梳子和刷子。",
@@ -16164,7 +16163,7 @@
  {
   "en": "comic",
   "syl": "com·ic",
-  "pos": "adj./n.",
+  "pos": "n.",
   "zh": "漫畫",
   "ex": "The parcel held a stack of comic books.",
   "ext": "包裹裡裝著一疊漫畫書。",
@@ -16173,7 +16172,7 @@
  {
   "en": "curtain",
   "syl": "cur·tain",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "窗簾",
   "ex": "The parcel held a window curtain.",
   "ext": "包裹裡裝著一片窗簾。",
@@ -16191,7 +16190,7 @@
  {
   "en": "damage",
   "syl": "dam·age",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "損害",
   "ex": "Check the box for any damage.",
   "ext": "檢查箱子有無損壞。",
@@ -16220,8 +16219,8 @@
   "syl": "dis·tant",
   "pos": "adj.",
   "zh": "遙遠的",
-  "ex": "The parcel went to a distant village.",
-  "ext": "包裹送到一個遙遠的村子。",
+  "ex": "The village lies many miles away, a distant village.",
+  "ext": "那座村子在好幾英里外，是個遙遠的村莊。",
   "level": 2
  },
  {
@@ -16236,7 +16235,7 @@
  {
   "en": "debate",
   "syl": "de·bate",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "辯論",
   "ex": "There was a debate about night service.",
   "ext": "關於夜間服務有過一場辯論。",
@@ -16263,7 +16262,7 @@
  {
   "en": "dot",
   "syl": "dot",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "點",
   "ex": "Mark the spot with a red dot.",
   "ext": "用紅點標出位置。",
@@ -16272,7 +16271,7 @@
  {
   "en": "doubt",
   "syl": "doubt",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "懷疑",
   "ex": "There is no doubt the parcel was sent.",
   "ext": "包裹確實已寄出，毫無疑問。",
@@ -16290,7 +16289,7 @@
  {
   "en": "downstairs",
   "syl": "down·stairs",
-  "pos": "adv./n./adj.",
+  "pos": "adv.",
   "zh": "樓下",
   "ex": "The parcel was left downstairs.",
   "ext": "包裹被放在樓下。",
@@ -16317,7 +16316,7 @@
  {
   "en": "control",
   "syl": "con·trol",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "控制",
   "ex": "Stay in control during the busy hour.",
   "ext": "在忙碌時段保持冷靜掌控。",
@@ -16344,7 +16343,7 @@
  {
   "en": "couple",
   "syl": "cou·ple",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "情侶；夫妻",
   "ex": "A couple sent a wedding invitation.",
   "ext": "一對情侶寄出結婚請帖。",
@@ -16380,7 +16379,7 @@
  {
   "en": "desert",
   "syl": "desert",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "沙漠",
   "ex": "The mail crosses a dry desert.",
   "ext": "郵件穿過乾燥的沙漠。",
@@ -16407,7 +16406,7 @@
  {
   "en": "cream",
   "syl": "cream",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "鮮奶油",
   "ex": "Keep the cream cold in transit.",
   "ext": "運送途中讓鮮奶油保持冷藏。",
@@ -16416,7 +16415,7 @@
  {
   "en": "dial",
   "syl": "di·al",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "撥號",
   "ex": "Dial the number on the form.",
   "ext": "撥打表格上的號碼。",
@@ -16443,7 +16442,7 @@
  {
   "en": "crowd",
   "syl": "crowd",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "人群",
   "ex": "A crowd waited outside the branch.",
   "ext": "一群人在分局外等候。",
@@ -16452,7 +16451,7 @@
  {
   "en": "diet",
   "syl": "di·et",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "飲食；節食",
   "ex": "The clerk keeps a healthy diet.",
   "ext": "櫃員保持健康的飲食。",
@@ -16461,7 +16460,7 @@
  {
   "en": "edge",
   "syl": "edge",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "邊緣",
   "ex": "The box edge was torn.",
   "ext": "箱子的邊緣破了。",
@@ -16488,7 +16487,7 @@
  {
   "en": "extra",
   "syl": "ex·tra",
-  "pos": "adj./adv./n.",
+  "pos": "adv./n.",
   "zh": "額外的",
   "ex": "Express mail costs extra.",
   "ext": "快遞郵件需額外收費。",
@@ -16497,7 +16496,7 @@
  {
   "en": "elder",
   "syl": "el·der",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "長輩",
   "ex": "We help elder customers carry parcels.",
   "ext": "我們幫年長的顧客搬包裹。",
@@ -16508,17 +16507,17 @@
   "syl": "elec·tric",
   "pos": "adj.",
   "zh": "電的",
-  "ex": "The new cart is electric.",
-  "ext": "新推車是電動的。",
+  "ex": "The cart runs on a battery, not on gas; it is electric.",
+  "ext": "這台推車靠電池運轉，不用汽油，是電動的。",
   "level": 2
  },
  {
   "en": "fair",
   "syl": "fair",
-  "pos": "adj./n./adv.",
+  "pos": "adj.",
   "zh": "公平的",
-  "ex": "The price is fair for fast delivery.",
-  "ext": "以快速遞送來說價格公道。",
+  "ex": "It is not too high or too low; the price is fair.",
+  "ext": "不會太高也不會太低，價格公道。",
   "level": 2
  },
  {
@@ -16542,7 +16541,7 @@
  {
   "en": "fry",
   "syl": "fry",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "油炸",
   "ex": "Do not fry food near the parcels.",
   "ext": "別在包裹附近炸東西。",
@@ -16596,10 +16595,10 @@
  {
   "en": "final",
   "syl": "fi·nal",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "最終的",
-  "ex": "This is the final notice.",
-  "ext": "這是最後通知。",
+  "ex": "We will send no more after this, the final notice.",
+  "ext": "這之後不再寄了，這是最後通知。",
   "level": 2
  },
  {
@@ -16632,7 +16631,7 @@
  {
   "en": "fit",
   "syl": "fit",
-  "pos": "v./adj./n./adv.",
+  "pos": "v.",
   "zh": "適合",
   "ex": "The box must fit on the shelf.",
   "ext": "箱子必須放得進架子。",
@@ -16650,7 +16649,7 @@
  {
   "en": "glue",
   "syl": "glue",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "膠水",
   "ex": "Use glue to seal the box flap.",
   "ext": "用膠水封住箱蓋。",
@@ -16677,7 +16676,7 @@
  {
   "en": "evil",
   "syl": "evil",
-  "pos": "n./adj.",
+  "pos": "adj.",
   "zh": "邪惡的",
   "ex": "Mail theft is an evil act.",
   "ext": "竊取郵件是邪惡的行為。",
@@ -16695,7 +16694,7 @@
  {
   "en": "gold",
   "syl": "gold",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "黃金",
   "ex": "A gold ring needs insured mail.",
   "ext": "金戒指需要保價郵寄。",
@@ -16722,7 +16721,7 @@
  {
   "en": "excuse",
   "syl": "ex·cuse",
-  "pos": "v./n.",
+  "pos": "n.",
   "zh": "藉口",
   "ex": "Bad traffic is no excuse for rudeness.",
   "ext": "交通差不能成為無禮的藉口。",
@@ -16731,7 +16730,7 @@
  {
   "en": "fog",
   "syl": "fog",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "霧",
   "ex": "Thick fog slowed the morning route.",
   "ext": "濃霧拖慢了早班路線。",
@@ -16740,7 +16739,7 @@
  {
   "en": "exit",
   "syl": "ex·it",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "出口",
   "ex": "The emergency exit is at the back.",
   "ext": "緊急出口在後面。",
@@ -16751,8 +16750,8 @@
   "syl": "fool·ish",
   "pos": "adj.",
   "zh": "愚蠢的",
-  "ex": "It is foolish to skip the weight check.",
-  "ext": "省略重量檢查很愚蠢。",
+  "ex": "Skipping the weight check causes errors; that is foolish.",
+  "ext": "省略重量檢查會出錯，那很愚蠢。",
   "level": 2
  },
  {
@@ -16821,10 +16820,10 @@
  {
   "en": "guide",
   "syl": "guide",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "導遊",
-  "ex": "The manual is a guide for new staff.",
-  "ext": "手冊是新員工的指南。",
+  "ex": "The guide showed us around the city.",
+  "ext": "導遊帶我們參觀這座城市。",
   "level": 2
  },
  {
@@ -16848,7 +16847,7 @@
  {
   "en": "gun",
   "syl": "gun",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "槍",
   "ex": "Mailing a gun needs special rules.",
   "ext": "郵寄槍枝需要特殊規定。",
@@ -16875,7 +16874,7 @@
  {
   "en": "influence",
   "syl": "in·flu·ence",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "影響",
   "ex": "Weather has a big influence on delivery.",
   "ext": "天氣對遞送有很大影響。",
@@ -16893,7 +16892,7 @@
  {
   "en": "ink",
   "syl": "ink",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "墨水",
   "ex": "The stamp ink was almost dry.",
   "ext": "印章的墨水快乾了。",
@@ -16922,17 +16921,17 @@
   "syl": "hand·some",
   "pos": "adj.",
   "zh": "英俊的",
-  "ex": "The parcel held a handsome leather bag.",
-  "ext": "包裹裡裝著一個好看的皮包。",
+  "ex": "The leather bag looked smart and good-looking, a handsome bag.",
+  "ext": "那個皮包看起來體面又好看，是個英俊好看的包。",
   "level": 2
  },
  {
   "en": "instant",
   "syl": "in·stant",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "立即的",
-  "ex": "Tracking gives an instant update.",
-  "ext": "追蹤提供即時更新。",
+  "ex": "The moment a parcel moves, tracking gives an instant update.",
+  "ext": "包裹一移動，追蹤就立即更新。",
   "level": 2
  },
  {
@@ -16947,7 +16946,7 @@
  {
   "en": "link",
   "syl": "link",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "連結",
   "ex": "Click the link to track your parcel.",
   "ext": "點擊連結追蹤包裹。",
@@ -16974,7 +16973,7 @@
  {
   "en": "hike",
   "syl": "hike",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "健行／遠足",
   "ex": "The rural route is like a long hike.",
   "ext": "鄉村路線像一場長途健行。",
@@ -17001,16 +17000,16 @@
  {
   "en": "iron",
   "syl": "iron",
-  "pos": "n./v./adj.",
+  "pos": "v.",
   "zh": "熨燙",
-  "ex": "The parcel held a heavy iron.",
-  "ext": "包裹裡裝著一個沉重的熨斗。",
+  "ex": "He will iron his shirt before work.",
+  "ext": "他上班前會把襯衫燙平。",
   "level": 2
  },
  {
   "en": "hop",
   "syl": "hop",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "單腳跳",
   "ex": "A rabbit hopped across the path.",
   "ext": "一隻兔子跳過小徑。",
@@ -17019,7 +17018,7 @@
  {
   "en": "jam",
   "syl": "jam",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "果醬",
   "ex": "The jars of jam were heavy.",
   "ext": "那幾罐果醬很重。",
@@ -17037,7 +17036,7 @@
  {
   "en": "jog",
   "syl": "jog",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "慢跑",
   "ex": "He likes to jog before the early shift.",
   "ext": "他喜歡在早班前慢跑。",
@@ -17046,10 +17045,10 @@
  {
   "en": "human",
   "syl": "hu·man",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "人類",
-  "ex": "A human must check each odd parcel.",
-  "ext": "每件異常包裹都要由人檢查。",
+  "ex": "A machine cannot decide; a human must check each odd parcel.",
+  "ext": "機器無法判斷，每件異常包裹都要由人檢查。",
   "level": 2
  },
  {
@@ -17057,23 +17056,23 @@
   "syl": "hum·ble",
   "pos": "adj.",
   "zh": "謙虛的",
-  "ex": "The clerk is humble about her record.",
-  "ext": "櫃員對自己的紀錄很謙虛。",
+  "ex": "She never brags and stays humble about her record.",
+  "ext": "她從不誇耀，對自己的紀錄很謙虛。",
   "level": 2
  },
  {
   "en": "judge",
   "syl": "judge",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "法官",
-  "ex": "Do not judge a parcel by its box.",
-  "ext": "別以箱子外觀評斷包裹。",
+  "ex": "The judge listened to both sides.",
+  "ext": "法官聽取了雙方的說法。",
   "level": 2
  },
  {
   "en": "hunt",
   "syl": "hunt",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "狩獵",
   "ex": "We hunt for the missing parcel together.",
   "ext": "我們一起找遺失的包裹。",
@@ -17145,7 +17144,7 @@
  {
   "en": "mask",
   "syl": "mask",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "口罩；面具",
   "ex": "The parcel held a box of masks.",
   "ext": "包裹裡裝著一盒口罩。",
@@ -17163,7 +17162,7 @@
  {
   "en": "lamb",
   "syl": "lamb",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "小羊",
   "ex": "The farm raises lambs in spring.",
   "ext": "農場春天養小羊。",
@@ -17217,7 +17216,7 @@
  {
   "en": "paste",
   "syl": "paste",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "貼上",
   "ex": "Paste the label onto the box.",
   "ext": "把標籤貼到箱子上。",
@@ -17244,7 +17243,7 @@
  {
   "en": "pattern",
   "syl": "pat·tern",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "模式",
   "ex": "There is a clear pattern in busy hours.",
   "ext": "忙碌時段有明顯的規律。",
@@ -17253,7 +17252,7 @@
  {
   "en": "nod",
   "syl": "nod",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "點頭",
   "ex": "The clerk gave a polite nod.",
   "ext": "櫃員禮貌地點了點頭。",
@@ -17289,7 +17288,7 @@
  {
   "en": "metal",
   "syl": "met·al",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "金屬",
   "ex": "The parcel held a metal box.",
   "ext": "包裹裡裝著一個金屬盒。",
@@ -17361,7 +17360,7 @@
  {
   "en": "novel",
   "syl": "nov·el",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "小說",
   "ex": "The parcel held a long novel.",
   "ext": "包裹裡裝著一本長篇小說。",
@@ -17390,14 +17389,14 @@
   "syl": "per·son·al",
   "pos": "adj.",
   "zh": "個人的",
-  "ex": "Mark it as a personal letter.",
-  "ext": "把它標為私人信件。",
+  "ex": "It is private, not work; mark it as a personal letter.",
+  "ext": "這是私事不是公事，把它標為私人信件。",
   "level": 2
  },
  {
   "en": "mirror",
   "syl": "mir·ror",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "鏡子",
   "ex": "Wrap the mirror so it will not break.",
   "ext": "把鏡子包好以免破掉。",
@@ -17406,7 +17405,7 @@
  {
   "en": "mix",
   "syl": "mix",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "混合",
   "ex": "Do not mix parcels and letters.",
   "ext": "別把包裹和信件混在一起。",
@@ -17442,7 +17441,7 @@
  {
   "en": "model",
   "syl": "mod·el",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "模特兒",
   "ex": "The parcel held a model plane.",
   "ext": "包裹裡裝著一架模型飛機。",
@@ -17451,16 +17450,16 @@
  {
   "en": "plain",
   "syl": "plain",
-  "pos": "adj./n.",
+  "pos": "n.",
   "zh": "平原",
-  "ex": "Use a plain box with no print.",
-  "ext": "用沒有印刷的素面箱子。",
+  "ex": "The farm lies on a wide, flat plain.",
+  "ext": "那座農場位在一片寬闊平坦的平原上。",
   "level": 2
  },
  {
   "en": "mop",
   "syl": "mop",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "用拖把拖地",
   "ex": "Use a mop on the wet floor.",
   "ext": "用拖把拖濕地板。",
@@ -17478,7 +17477,7 @@
  {
   "en": "plus",
   "syl": "plus",
-  "pos": "prep./n./adj.",
+  "pos": "prep.",
   "zh": "加號",
   "ex": "The fee is ten dollars plus tax.",
   "ext": "費用是十元外加稅。",
@@ -17489,8 +17488,8 @@
   "syl": "or·di·nary",
   "pos": "adj.",
   "zh": "普通的",
-  "ex": "It was just an ordinary letter.",
-  "ext": "那只是一封普通的信。",
+  "ex": "Nothing special at all, just an ordinary letter.",
+  "ext": "一點也不特別，只是一封普通的信。",
   "level": 2
  },
  {
@@ -17523,7 +17522,7 @@
  {
   "en": "poison",
   "syl": "poi·son",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "毒藥",
   "ex": "Mark the box if it holds poison.",
   "ext": "若裝有毒物要標示箱子。",
@@ -17534,8 +17533,8 @@
   "syl": "nat·u·ral",
   "pos": "adj.",
   "zh": "自然的",
-  "ex": "Some delay is natural in storms.",
-  "ext": "暴風雨中有些延誤是自然的。",
+  "ex": "Storms slow everyone, so some delay is natural.",
+  "ext": "暴風雨拖慢每個人，所以有些延誤是自然的。",
   "level": 2
  },
  {
@@ -17552,8 +17551,8 @@
   "syl": "naughty",
   "pos": "adj.",
   "zh": "頑皮的",
-  "ex": "A naughty dog chased the carrier.",
-  "ext": "一隻頑皮的狗追著郵務士。",
+  "ex": "The dog broke the rules and chased the carrier, so naughty.",
+  "ext": "那隻狗不守規矩地追著郵務士，很頑皮。",
   "level": 2
  },
  {
@@ -17597,8 +17596,8 @@
   "syl": "nec·es·sary",
   "pos": "adj.",
   "zh": "必要的",
-  "ex": "A clear address is necessary.",
-  "ext": "清楚的地址是必要的。",
+  "ex": "Mail cannot be sent without it; a clear address is necessary.",
+  "ext": "沒有它郵件就寄不出去，清楚的地址是必要的。",
   "level": 2
  },
  {
@@ -17649,7 +17648,7 @@
  {
   "en": "purple",
   "syl": "pur·ple",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "紫色",
   "ex": "Wrap the gift in purple paper.",
   "ext": "用紫色紙包禮物。",
@@ -17658,7 +17657,7 @@
  {
   "en": "puzzle",
   "syl": "puz·zle",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "拼圖；謎題",
   "ex": "The parcel held a jigsaw puzzle.",
   "ext": "包裹裡裝著一盒拼圖。",
@@ -17685,7 +17684,7 @@
  {
   "en": "roof",
   "syl": "roof",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "屋頂",
   "ex": "Rain leaked through the warehouse roof.",
   "ext": "雨從倉庫屋頂漏進來。",
@@ -17694,7 +17693,7 @@
  {
   "en": "praise",
   "syl": "praise",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "讚美",
   "ex": "The boss gave the team praise.",
   "ext": "老闆讚美了團隊。",
@@ -17730,7 +17729,7 @@
  {
   "en": "rub",
   "syl": "rub",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "摩擦",
   "ex": "Do not let the boxes rub the wall.",
   "ext": "別讓箱子磨到牆。",
@@ -17750,14 +17749,14 @@
   "syl": "rare",
   "pos": "adj.",
   "zh": "稀有的",
-  "ex": "The parcel held a rare stamp.",
-  "ext": "包裹裡裝著一枚稀有郵票。",
+  "ex": "Only a few exist in the world, a rare stamp.",
+  "ext": "世上只剩幾張，是一枚稀有的郵票。",
   "level": 2
  },
  {
   "en": "pressure",
   "syl": "pres·sure",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "壓力",
   "ex": "There is pressure before the holiday rush.",
   "ext": "假期高峰前壓力很大。",
@@ -17775,7 +17774,7 @@
  {
   "en": "sail",
   "syl": "sail",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "航行",
   "ex": "Island mail sails out each morning.",
   "ext": "離島郵件每天早上啟航。",
@@ -17802,7 +17801,7 @@
  {
   "en": "principal",
   "syl": "prin·ci·pal",
-  "pos": "adj./n.",
+  "pos": "n.",
   "zh": "校長",
   "ex": "The school principal signed for the parcel.",
   "ext": "校長簽收了包裹。",
@@ -17820,7 +17819,7 @@
  {
   "en": "sand",
   "syl": "sand",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "沙子",
   "ex": "The bag of sand was very heavy.",
   "ext": "那袋沙非常重。",
@@ -17847,7 +17846,7 @@
  {
   "en": "sandwich",
   "syl": "sand·wich",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "三明治",
   "ex": "He ate a sandwich on his break.",
   "ext": "他休息時吃了個三明治。",
@@ -17865,7 +17864,7 @@
  {
   "en": "prize",
   "syl": "prize",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "獎品",
   "ex": "The winner's prize was mailed today.",
   "ext": "得獎者的獎品今天寄出。",
@@ -17876,14 +17875,14 @@
   "syl": "scared",
   "pos": "adj.",
   "zh": "害怕的",
-  "ex": "The new clerk was scared of mistakes.",
-  "ext": "新櫃員害怕出錯。",
+  "ex": "He trembled and feared every step, scared of mistakes.",
+  "ext": "他發抖、害怕每一步，很怕出錯。",
   "level": 2
  },
  {
   "en": "progress",
   "syl": "progress",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "進步",
   "ex": "We made good progress on the backlog.",
   "ext": "我們在積壓件上有良好進展。",
@@ -17892,7 +17891,7 @@
  {
   "en": "score",
   "syl": "score",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "分數",
   "ex": "He got a high score on the exam.",
   "ext": "他考試得了高分。",
@@ -17910,7 +17909,7 @@
  {
   "en": "rent",
   "syl": "rent",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "租用",
   "ex": "The branch pays a high rent.",
   "ext": "分局付高額租金。",
@@ -17928,7 +17927,7 @@
  {
   "en": "secret",
   "syl": "se·cret",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "秘密",
   "ex": "We keep customer data secret.",
   "ext": "我們對顧客資料保密。",
@@ -17975,8 +17974,8 @@
   "syl": "snowy",
   "pos": "adj.",
   "zh": "下雪的",
-  "ex": "Mountain routes are snowy in winter.",
-  "ext": "山區路線冬天會下雪。",
+  "ex": "White snow covers the path in winter; the routes are snowy.",
+  "ext": "冬天白雪覆蓋小徑，路線都是雪。",
   "level": 2
  },
  {
@@ -17993,14 +17992,14 @@
   "syl": "self·ish",
   "pos": "adj.",
   "zh": "自私的",
-  "ex": "It is selfish to block the counter.",
-  "ext": "擋住櫃台是自私的。",
+  "ex": "He blocks the counter and ignores others, so selfish.",
+  "ext": "他擋住櫃台又不顧別人，很自私。",
   "level": 2
  },
  {
   "en": "soap",
   "syl": "soap",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "肥皂",
   "ex": "The parcel held bars of soap.",
   "ext": "包裹裡裝著幾塊肥皂。",
@@ -18009,7 +18008,7 @@
  {
   "en": "stream",
   "syl": "stream",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "溪流",
   "ex": "The road follows a small stream.",
   "ext": "這條路沿著一條小溪。",
@@ -18045,7 +18044,7 @@
  {
   "en": "strike",
   "syl": "strike",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "打擊；罷工",
   "ex": "A transport strike delayed delivery.",
   "ext": "一場運輸罷工延誤了遞送。",
@@ -18063,7 +18062,7 @@
  {
   "en": "style",
   "syl": "style",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "風格",
   "ex": "The new uniform has a smart style.",
   "ext": "新制服有俐落的風格。",
@@ -18117,16 +18116,16 @@
  {
   "en": "sudden",
   "syl": "sud·den",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "突然的",
-  "ex": "A sudden storm hit the route.",
-  "ext": "一場突然的暴風雨襲擊路線。",
+  "ex": "With no warning at all, a sudden storm hit the route.",
+  "ext": "毫無預警地，一場突然的暴風雨襲擊路線。",
   "level": 2
  },
  {
   "en": "shine",
   "syl": "shine",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "照耀",
   "ex": "Polish the counter until it shines.",
   "ext": "把櫃台擦到發亮。",
@@ -18135,7 +18134,7 @@
  {
   "en": "sour",
   "syl": "sour",
-  "pos": "adj./n./v.",
+  "pos": "adj.",
   "zh": "酸的",
   "ex": "The spoiled milk turned sour.",
   "ext": "壞掉的牛奶變酸了。",
@@ -18144,7 +18143,7 @@
  {
   "en": "suit",
   "syl": "suit",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "西裝",
   "ex": "The parcel held a business suit.",
   "ext": "包裹裡裝著一套西裝。",
@@ -18153,7 +18152,7 @@
  {
   "en": "shoot",
   "syl": "shoot",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "射擊",
   "ex": "The camera will shoot the loading area.",
   "ext": "攝影機會拍攝裝載區。",
@@ -18171,10 +18170,10 @@
  {
   "en": "super",
   "syl": "su·per",
-  "pos": "adj./adv.",
+  "pos": "adj.",
   "zh": "超級的",
-  "ex": "The team did a super job today.",
-  "ext": "團隊今天表現超棒。",
+  "ex": "They finished early with no errors; a super job today.",
+  "ext": "他們提早完成又零失誤，今天表現超棒。",
   "level": 2
  },
  {
@@ -18198,7 +18197,7 @@
  {
   "en": "shut",
   "syl": "shut",
-  "pos": "v./adj.",
+  "pos": "v.",
   "zh": "關閉",
   "ex": "Shut the truck door before leaving.",
   "ext": "離開前關上卡車門。",
@@ -18209,8 +18208,8 @@
   "syl": "shy",
   "pos": "adj.",
   "zh": "害羞的",
-  "ex": "The shy clerk speaks softly.",
-  "ext": "害羞的櫃員說話輕聲細語。",
+  "ex": "He blushes and looks away, a shy clerk.",
+  "ext": "他臉紅又別開視線，是個害羞的櫃員。",
   "level": 2
  },
  {
@@ -18243,7 +18242,7 @@
  {
   "en": "silence",
   "syl": "si·lence",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "寂靜",
   "ex": "There was silence in the early branch.",
   "ext": "清晨的分局一片寂靜。",
@@ -18254,8 +18253,8 @@
   "syl": "silent",
   "pos": "adj.",
   "zh": "沉默的",
-  "ex": "The street was silent before dawn.",
-  "ext": "黎明前街上一片寂靜。",
+  "ex": "Not a single sound could be heard; the street was silent.",
+  "ext": "聽不見任何一點聲音，街上一片寂靜。",
   "level": 2
  },
  {
@@ -18272,14 +18271,14 @@
   "syl": "sil·ly",
   "pos": "adj.",
   "zh": "傻的",
-  "ex": "It is silly to skip the address check.",
-  "ext": "省略地址檢查很傻。",
+  "ex": "Forgetting such an easy step is just silly.",
+  "ext": "忘記這麼簡單的步驟真的很傻。",
   "level": 2
  },
  {
   "en": "silver",
   "syl": "sil·ver",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "銀",
   "ex": "A silver bracelet needs insured mail.",
   "ext": "銀手鐲需要保價郵寄。",
@@ -18288,7 +18287,7 @@
  {
   "en": "swallow",
   "syl": "swal·low",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "吞嚥",
   "ex": "The dog tried to swallow the small tag.",
   "ext": "那隻狗想吞下小標籤。",
@@ -18315,7 +18314,7 @@
  {
   "en": "swim",
   "syl": "swim",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "游泳",
   "ex": "The flood made the road like a place to swim.",
   "ext": "洪水讓道路像可以游泳的地方。",
@@ -18387,10 +18386,10 @@
  {
   "en": "slide",
   "syl": "slide",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "溜滑梯",
-  "ex": "The boxes may slide off the cart.",
-  "ext": "箱子可能會從推車上滑落。",
+  "ex": "The children play on the slide in the park.",
+  "ext": "孩子們在公園的溜滑梯上玩。",
   "level": 2
  },
  {
@@ -18405,7 +18404,7 @@
  {
   "en": "stone",
   "syl": "stone",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "石頭",
   "ex": "The box was heavy as a stone.",
   "ext": "那箱子重得像石頭。",
@@ -18414,7 +18413,7 @@
  {
   "en": "snack",
   "syl": "snack",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "點心",
   "ex": "He had a quick snack between routes.",
   "ext": "他在兩趟路線間吃了點心。",
@@ -18468,7 +18467,7 @@
  {
   "en": "aid",
   "syl": "aid",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "援助、幫助",
   "ex": "The post sent aid parcels to the village.",
   "ext": "郵政把援助包裹送到村子。",
@@ -18504,7 +18503,7 @@
  {
   "en": "yes",
   "syl": "yes",
-  "pos": "adv./n.",
+  "pos": "adv.",
   "zh": "是的",
   "ex": "The clerk said yes to the refund.",
   "ext": "櫃員同意退款。",
@@ -18522,7 +18521,7 @@
  {
   "en": "what",
   "syl": "what",
-  "pos": "pron./adj.",
+  "pos": "pron.",
   "zh": "什麼",
   "ex": "Ask what is inside the box.",
   "ext": "問問箱子裡是什麼。",
@@ -18549,7 +18548,7 @@
  {
   "en": "where",
   "syl": "where",
-  "pos": "conj./adv./pron./n.",
+  "pos": "adv.",
   "zh": "哪裡、在…的地方",
   "ex": "Ask where the parcel should go.",
   "ext": "問問包裹該送到哪裡。",
@@ -18576,7 +18575,7 @@
  {
   "en": "which",
   "syl": "which",
-  "pos": "pron./adj.",
+  "pos": "pron.",
   "zh": "哪一個",
   "ex": "Choose which box fits best.",
   "ext": "選哪個箱子最合適。",
@@ -18587,8 +18586,8 @@
   "syl": "ac·tu·al",
   "pos": "adj.",
   "zh": "實際的",
-  "ex": "Write the actual weight on the form.",
-  "ext": "在表格上寫實際重量。",
+  "ex": "Do not guess; write the real, actual weight on the form.",
+  "ext": "不要用猜的，在表格上寫真正的實際重量。",
   "level": 2
  },
  {
@@ -18641,14 +18640,14 @@
   "syl": "cen·tral",
   "pos": "adj.",
   "zh": "中央的、中心的",
-  "ex": "Letters go to the central sorting office.",
-  "ext": "信件送到中央分揀局。",
+  "ex": "All mail meets at one main hub, the central sorting office.",
+  "ext": "所有郵件匯集到一個主要中心，中央分揀局。",
   "level": 2
  },
  {
   "en": "chain",
   "syl": "chain",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "鏈條、連鎖",
   "ex": "A chain holds the cart in place.",
   "ext": "一條鏈條把推車固定住。",
@@ -18666,7 +18665,7 @@
  {
   "en": "bar",
   "syl": "bar",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "條、酒吧、橫桿",
   "ex": "Scan the bar code on the parcel.",
   "ext": "掃描包裹上的條碼。",
@@ -18686,14 +18685,14 @@
   "syl": "bril·liant",
   "pos": "adj.",
   "zh": "出色的、聰明的",
-  "ex": "She had a brilliant idea for sorting.",
-  "ext": "她想到一個出色的分信點子。",
+  "ex": "Her clever plan saved hours; a brilliant idea for sorting.",
+  "ext": "她聰明的計畫省下數小時，是出色的分信點子。",
   "level": 2
  },
  {
   "en": "chemical",
   "syl": "chem·i·cal",
-  "pos": "adj./n.",
+  "pos": "n./adj.",
   "zh": "化學的、化學品",
   "ex": "Mark the box if it holds a chemical.",
   "ext": "若裝有化學品要標示箱子。",
@@ -18702,10 +18701,10 @@
  {
   "en": "chief",
   "syl": "chief",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "主要的、首長",
-  "ex": "The chief clerk checks the daily report.",
-  "ext": "主任櫃員查看每日報表。",
+  "ex": "The clerk in charge of all others, the chief clerk, checks the report.",
+  "ext": "管理其他所有人的主任櫃員查看報表。",
   "level": 2
  },
  {
@@ -18720,7 +18719,7 @@
  {
   "en": "burden",
   "syl": "bur·den",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "負擔",
   "ex": "Heavy parcels are a burden to carry.",
   "ext": "重包裹是搬運的負擔。",
@@ -18738,7 +18737,7 @@
  {
   "en": "battle",
   "syl": "bat·tle",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "戰役、奮戰",
   "ex": "Holiday delivery is a daily battle.",
   "ext": "假期遞送是每天的奮戰。",
@@ -18747,10 +18746,10 @@
  {
   "en": "classic",
   "syl": "clas·sic",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "經典的",
-  "ex": "The parcel held a classic novel.",
-  "ext": "包裹裡裝著一本經典小說。",
+  "ex": "The famous old novel everyone still reads, a classic novel.",
+  "ext": "那本人人至今仍讀的著名老小說，是經典小說。",
   "level": 2
  },
  {
@@ -18767,8 +18766,8 @@
   "syl": "clever",
   "pos": "adj.",
   "zh": "聰明的",
-  "ex": "It was clever to label each box.",
-  "ext": "為每個箱子貼標籤很聰明。",
+  "ex": "Labeling each box was a clever way to avoid mix-ups.",
+  "ext": "為每個箱子貼標籤是避免搞混的聰明做法。",
   "level": 2
  },
  {
@@ -18819,7 +18818,7 @@
  {
   "en": "bend",
   "syl": "bend",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "彎曲",
   "ex": "Do not bend the photo inside.",
   "ext": "別折到裡面的照片。",
@@ -18837,7 +18836,7 @@
  {
   "en": "beyond",
   "syl": "be·yond",
-  "pos": "prep./adv.",
+  "pos": "prep.",
   "zh": "超過、在…之外",
   "ex": "Delivery is beyond the usual area.",
   "ext": "遞送超出了一般範圍。",
@@ -18891,7 +18890,7 @@
  {
   "en": "cycle",
   "syl": "cy·cle",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "循環、週期",
   "ex": "Busy and quiet days follow a cycle.",
   "ext": "忙碌和清閒的日子有其循環。",
@@ -18918,7 +18917,7 @@
  {
   "en": "conflict",
   "syl": "con·flict",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "衝突、矛盾",
   "ex": "There was a conflict over the schedule.",
   "ext": "排班上有過衝突。",
@@ -18972,7 +18971,7 @@
  {
   "en": "drug",
   "syl": "drug",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "藥物、毒品",
   "ex": "Mailing some drugs needs a permit.",
   "ext": "郵寄某些藥物需要許可。",
@@ -18990,7 +18989,7 @@
  {
   "en": "dull",
   "syl": "dull",
-  "pos": "adj./v.",
+  "pos": "adj.",
   "zh": "乏味的、鈍的",
   "ex": "Sorting can feel dull but matters.",
   "ext": "分信可能乏味但很重要。",
@@ -19062,7 +19061,7 @@
  {
   "en": "effect",
   "syl": "ef·fect",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "效果、影響",
   "ex": "The new rule had a good effect.",
   "ext": "新規定有良好的效果。",
@@ -19082,8 +19081,8 @@
   "syl": "for·mer",
   "pos": "adj.",
   "zh": "前任的、以前的",
-  "ex": "A former clerk visited the branch.",
-  "ext": "一位前櫃員來訪分局。",
+  "ex": "He used to work here but quit; a former clerk visited.",
+  "ext": "他以前在這裡工作但已離職，一位前櫃員來訪。",
   "level": 2
  },
  {
@@ -19118,14 +19117,14 @@
   "syl": "false",
   "pos": "adj.",
   "zh": "錯誤的、假的",
-  "ex": "A false address causes returns.",
-  "ext": "錯誤的地址導致退件。",
+  "ex": "The street name is made up; a false address causes returns.",
+  "ext": "街名是編造的，錯誤的地址導致退件。",
   "level": 2
  },
  {
   "en": "fashion",
   "syl": "fash·ion",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "時尚、流行",
   "ex": "The parcel held fashion magazines.",
   "ext": "包裹裡裝著時尚雜誌。",
@@ -19143,7 +19142,7 @@
  {
   "en": "favor",
   "syl": "fa·vor",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "恩惠、幫忙",
   "ex": "Could you do me a quick favor?",
   "ext": "能幫我個小忙嗎？",
@@ -19170,7 +19169,7 @@
  {
   "en": "further",
   "syl": "fur·ther",
-  "pos": "adv./adj./v.",
+  "pos": "adv.",
   "zh": "更進一步的",
   "ex": "For further help, ask the clerk.",
   "ext": "需要進一步協助，請問櫃員。",
@@ -19179,10 +19178,10 @@
  {
   "en": "female",
   "syl": "fe·male",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "女性的",
-  "ex": "A female clerk helped the old lady.",
-  "ext": "一位女櫃員幫了那位老太太。",
+  "ex": "A female clerk, a woman not a man, helped the old lady.",
+  "ext": "一位女櫃員，是女的不是男的，幫了那位老太太。",
   "level": 2
  },
  {
@@ -19206,7 +19205,7 @@
  {
   "en": "figure",
   "syl": "fig·ure",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "數字、人物",
   "ex": "Check the figure on the receipt.",
   "ext": "核對收據上的數字。",
@@ -19233,7 +19232,7 @@
  {
   "en": "firm",
   "syl": "firm",
-  "pos": "n./adj./v./adv.",
+  "pos": "n./adj.",
   "zh": "公司、堅定的",
   "ex": "The firm sends parcels every day.",
   "ext": "這家公司每天寄包裹。",
@@ -19260,7 +19259,7 @@
  {
   "en": "flat",
   "syl": "flat",
-  "pos": "adj./adv./n.",
+  "pos": "adj.",
   "zh": "平的、公寓",
   "ex": "Keep the photo flat in the envelope.",
   "ext": "把照片平放在信封裡。",
@@ -19287,7 +19286,7 @@
  {
   "en": "flow",
   "syl": "flow",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "流動、流量",
   "ex": "The mail flow rises before holidays.",
   "ext": "假期前郵件流量增加。",
@@ -19314,7 +19313,7 @@
  {
   "en": "folk",
   "syl": "folk",
-  "pos": "n.",
+  "pos": "n./adj.",
   "zh": "人們、民間的",
   "ex": "The town folk know the carrier well.",
   "ext": "鎮上的人很熟悉郵務士。",
@@ -19325,8 +19324,8 @@
   "syl": "grad·u·al",
   "pos": "adj.",
   "zh": "逐漸的",
-  "ex": "There was a gradual rise in parcels.",
-  "ext": "包裹逐漸增加。",
+  "ex": "It went up slowly over months, a gradual rise in parcels.",
+  "ext": "它在數月間緩緩上升，包裹逐漸增加。",
   "level": 2
  },
  {
@@ -19359,7 +19358,7 @@
  {
   "en": "force",
   "syl": "force",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "力量、強迫",
   "ex": "Do not force the box shut.",
   "ext": "別硬把箱子壓緊。",
@@ -19469,8 +19468,8 @@
   "syl": "in·ter·nal",
   "pos": "adj.",
   "zh": "內部的",
-  "ex": "This is an internal staff memo.",
-  "ext": "這是一份內部員工備忘錄。",
+  "ex": "It stays inside the office, an internal staff memo, not for the public.",
+  "ext": "它只在辦公室內部流通，是內部員工備忘錄，不對外。",
   "level": 2
  },
  {
@@ -19494,7 +19493,7 @@
  {
   "en": "load",
   "syl": "load",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "裝載、負荷",
   "ex": "Load the parcels onto the truck.",
   "ext": "把包裹裝上卡車。",
@@ -19514,8 +19513,8 @@
   "syl": "his·tor·i·cal",
   "pos": "adj.",
   "zh": "歷史的",
-  "ex": "The parcel held a historical map.",
-  "ext": "包裹裡裝著一張歷史地圖。",
+  "ex": "The map showed the city hundreds of years ago, a historical map.",
+  "ext": "那張地圖呈現幾百年前的城市，是歷史地圖。",
   "level": 2
  },
  {
@@ -19532,8 +19531,8 @@
   "syl": "lone",
   "pos": "adj.",
   "zh": "孤單的、單獨的",
-  "ex": "A lone parcel sat on the shelf.",
-  "ext": "一件孤零零的包裹放在架上。",
+  "ex": "All the rest were gone; one lone parcel sat on the shelf.",
+  "ext": "其他全都不見了，只剩一件孤零零的包裹在架上。",
   "level": 2
  },
  {
@@ -19559,17 +19558,17 @@
   "syl": "huge",
   "pos": "adj.",
   "zh": "巨大的",
-  "ex": "A huge parcel filled the cart.",
-  "ext": "一個巨大的包裹塞滿了推車。",
+  "ex": "The parcel was so huge that one cart could barely hold it.",
+  "ext": "這個包裹巨大到一台推車幾乎裝不下。",
   "level": 2
  },
  {
   "en": "joint",
   "syl": "joint",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "共同的、關節",
-  "ex": "The two teams made a joint effort.",
-  "ext": "兩個團隊共同努力。",
+  "ex": "Both teams worked together as one, a joint effort.",
+  "ext": "兩個團隊合而為一地工作，共同努力。",
   "level": 2
  },
  {
@@ -19584,10 +19583,10 @@
  {
   "en": "male",
   "syl": "male",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "男性的",
-  "ex": "A male clerk carried the heavy box.",
-  "ext": "一位男櫃員搬了重箱子。",
+  "ex": "A male clerk, a man not a woman, carried the heavy box.",
+  "ext": "一位男櫃員，是男的不是女的，搬了重箱子。",
   "level": 2
  },
  {
@@ -19611,16 +19610,16 @@
  {
   "en": "ideal",
   "syl": "ide·al",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "理想的",
-  "ex": "An early start is the ideal plan.",
-  "ext": "早點出發是理想的計畫。",
+  "ex": "Nothing could be better; an early start is the ideal plan.",
+  "ext": "沒有比這更好的了，早點出發是最理想的計畫。",
   "level": 2
  },
  {
   "en": "ill",
   "syl": "ill",
-  "pos": "adj./adv./n.",
+  "pos": "adj.",
   "zh": "生病的",
   "ex": "The clerk felt ill and went home.",
   "ext": "櫃員不舒服回家了。",
@@ -19658,14 +19657,14 @@
   "syl": "im·pres·sive",
   "pos": "adj.",
   "zh": "令人印象深刻的",
-  "ex": "The team made an impressive record.",
-  "ext": "團隊創下令人印象深刻的紀錄。",
+  "ex": "No branch ever did better; an impressive record.",
+  "ext": "沒有分局做得更好，這是令人印象深刻的紀錄。",
   "level": 2
  },
  {
   "en": "mate",
   "syl": "mate",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "夥伴、同伴",
   "ex": "His work mate helped load the truck.",
   "ext": "他的工作夥伴幫忙裝車。",
@@ -19674,7 +19673,7 @@
  {
   "en": "pardon",
   "syl": "par·don",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "原諒、抱歉",
   "ex": "Pardon the short delay, please.",
   "ext": "請原諒這短暫的延誤。",
@@ -19685,8 +19684,8 @@
   "syl": "ma·ture",
   "pos": "adj.",
   "zh": "成熟的",
-  "ex": "She handled the complaint in a mature way.",
-  "ext": "她以成熟的方式處理投訴。",
+  "ex": "She stayed calm and sensible, handling it in a mature way.",
+  "ext": "她沉著理智，以成熟的方式處理。",
   "level": 2
  },
  {
@@ -19737,7 +19736,7 @@
  {
   "en": "none",
   "syl": "none",
-  "pos": "pron./adv.",
+  "pos": "pron.",
   "zh": "沒有一個",
   "ex": "None of the parcels were damaged.",
   "ext": "沒有任何包裹受損。",
@@ -19746,7 +19745,7 @@
  {
   "en": "peak",
   "syl": "peak",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "高峰、頂點",
   "ex": "Mail hits a peak before the holiday.",
   "ext": "郵件在假期前達到高峰。",
@@ -19764,10 +19763,10 @@
  {
   "en": "military",
   "syl": "mil·i·tary",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "軍事的",
-  "ex": "The military base gets daily mail.",
-  "ext": "軍事基地每天收到郵件。",
+  "ex": "Soldiers and tanks fill the military base, which gets daily mail.",
+  "ext": "士兵和坦克駐紮的軍事基地每天收到郵件。",
   "level": 2
  },
  {
@@ -19791,7 +19790,7 @@
  {
   "en": "phrase",
   "syl": "phrase",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "片語、措辭",
   "ex": "Use a polite phrase with customers.",
   "ext": "對顧客使用禮貌的措辭。",
@@ -19818,10 +19817,10 @@
  {
   "en": "musical",
   "syl": "mu·si·cal",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "音樂的",
-  "ex": "A musical box played inside the parcel.",
-  "ext": "包裹裡有個音樂盒在響。",
+  "ex": "It played a sweet tune, a musical box inside the parcel.",
+  "ext": "它播放著悅耳的曲子，是包裹裡的音樂盒。",
   "level": 2
  },
  {
@@ -19908,7 +19907,7 @@
  {
   "en": "pop",
   "syl": "pop",
-  "pos": "n./adj.",
+  "pos": "v./adj.",
   "zh": "流行的、突然出現",
   "ex": "The parcel will pop up in the system soon.",
   "ext": "包裹很快會出現在系統裡。",
@@ -19926,10 +19925,10 @@
  {
   "en": "nearby",
   "syl": "near·by",
-  "pos": "adj./adv.",
+  "pos": "adj.",
   "zh": "附近的",
-  "ex": "A nearby shop holds the parcels.",
-  "ext": "附近的商店代收包裹。",
+  "ex": "The shop just next door, a nearby shop, holds the parcels.",
+  "ext": "就在隔壁的附近商店代收包裹。",
   "level": 2
  },
  {
@@ -19953,7 +19952,7 @@
  {
   "en": "pose",
   "syl": "pose",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "造成、擺姿勢",
   "ex": "Wet floors pose a real danger.",
   "ext": "濕地板造成真正的危險。",
@@ -19962,10 +19961,10 @@
  {
   "en": "positive",
   "syl": "pos·i·tive",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "正面的、肯定的",
-  "ex": "Keep a positive attitude at work.",
-  "ext": "工作時保持正面的態度。",
+  "ex": "Smile and stay hopeful; keep a positive attitude at work.",
+  "ext": "保持微笑與希望，工作時維持正面的態度。",
   "level": 2
  },
  {
@@ -19982,8 +19981,8 @@
   "syl": "rocky",
   "pos": "adj.",
   "zh": "多岩石的、崎嶇的",
-  "ex": "The rocky road slowed the truck.",
-  "ext": "崎嶇的路拖慢了卡車。",
+  "ex": "Stones covered the path; the rocky road slowed the truck.",
+  "ext": "路上滿是石頭，崎嶇的路拖慢了卡車。",
   "level": 2
  },
  {
@@ -20018,8 +20017,8 @@
   "syl": "roy·al",
   "pos": "adj.",
   "zh": "皇家的、王室的",
-  "ex": "The stamp shows a royal crown.",
-  "ext": "郵票上印著皇冠。",
+  "ex": "It belongs to the king and queen, a royal crown.",
+  "ext": "它屬於國王和王后，是皇家的王冠。",
   "level": 2
  },
  {
@@ -20045,8 +20044,8 @@
   "syl": "rapid",
   "pos": "adj.",
   "zh": "快速的",
-  "ex": "We offer a rapid delivery service.",
-  "ext": "我們提供快速遞送服務。",
+  "ex": "Parcels arrive within hours, a rapid delivery service.",
+  "ext": "包裹數小時內送達，是快速遞送服務。",
   "level": 2
  },
  {
@@ -20061,7 +20060,7 @@
  {
   "en": "pride",
   "syl": "pride",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "驕傲、自豪",
   "ex": "She takes pride in on-time delivery.",
   "ext": "她以準時遞送為傲。",
@@ -20142,7 +20141,7 @@
  {
   "en": "scare",
   "syl": "scare",
-  "pos": "v./n.",
+  "pos": "n.",
   "zh": "驚嚇",
   "ex": "The loud bang gave the clerk a scare.",
   "ext": "巨大的砰聲嚇了櫃員一跳。",
@@ -20151,7 +20150,7 @@
  {
   "en": "regular",
   "syl": "reg·u·lar",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "定期的、一般的",
   "ex": "Regular mail is cheaper than express.",
   "ext": "平信比快遞便宜。",
@@ -20189,8 +20188,8 @@
   "syl": "prop·er",
   "pos": "adj.",
   "zh": "適當的、正確的",
-  "ex": "Use the proper box for fragile goods.",
-  "ext": "易碎品用適當的箱子。",
+  "ex": "Fragile goods need the correct, proper box, not any box.",
+  "ext": "易碎品需要正確、適當的箱子，不能隨便用。",
   "level": 2
  },
  {
@@ -20223,7 +20222,7 @@
  {
   "en": "stress",
   "syl": "stress",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "壓力、強調",
   "ex": "The holiday rush brings stress.",
   "ext": "假期高峰帶來壓力。",
@@ -20241,7 +20240,7 @@
  {
   "en": "stretch",
   "syl": "stretch",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "伸展、延伸",
   "ex": "The route stretches for ten miles.",
   "ext": "這條路線延伸十英里。",
@@ -20252,8 +20251,8 @@
   "syl": "strict",
   "pos": "adj.",
   "zh": "嚴格的",
-  "ex": "There are strict rules for mailing liquid.",
-  "ext": "郵寄液體有嚴格規定。",
+  "ex": "You must obey them exactly; the rules for mailing liquid are strict.",
+  "ext": "你必須完全遵守，郵寄液體的規定很嚴格。",
   "level": 2
  },
  {
@@ -20268,7 +20267,7 @@
  {
   "en": "struggle",
   "syl": "strug·gle",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "奮鬥、掙扎",
   "ex": "It was a struggle to lift the heavy box.",
   "ext": "搬起那個重箱子很吃力。",
@@ -20304,7 +20303,7 @@
  {
   "en": "sort",
   "syl": "sort",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "分類、種類",
   "ex": "Sort the letters by postal code.",
   "ext": "依郵遞區號分信。",
@@ -20313,7 +20312,7 @@
  {
   "en": "such",
   "syl": "such",
-  "pos": "adj./pron.",
+  "pos": "adj.",
   "zh": "這樣的",
   "ex": "We rarely see such a heavy parcel.",
   "ext": "我們很少見到這麼重的包裹。",
@@ -20331,7 +20330,7 @@
  {
   "en": "shock",
   "syl": "shock",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "震驚、電擊",
   "ex": "The high bill was a shock to him.",
   "ext": "高額帳單令他震驚。",
@@ -20360,8 +20359,8 @@
   "syl": "suit·able",
   "pos": "adj.",
   "zh": "合適的",
-  "ex": "Choose a suitable box for the gift.",
-  "ext": "為禮物選一個合適的箱子。",
+  "ex": "Pick a box that fits the gift just right, a suitable size.",
+  "ext": "挑一個剛好裝得下禮物、合適大小的箱子。",
   "level": 2
  },
  {
@@ -20403,7 +20402,7 @@
  {
   "en": "sport",
   "syl": "sport",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "運動",
   "ex": "The parcel held sport shoes.",
   "ext": "包裹裡裝著運動鞋。",
@@ -20412,7 +20411,7 @@
  {
   "en": "stage",
   "syl": "stage",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "階段、舞台",
   "ex": "The parcel is at the final stage of delivery.",
   "ext": "包裹在遞送的最後階段。",
@@ -20421,7 +20420,7 @@
  {
   "en": "standard",
   "syl": "stan·dard",
-  "pos": "adj./n.",
+  "pos": "n.",
   "zh": "標準的",
   "ex": "All boxes meet a size standard.",
   "ext": "所有箱子都符合尺寸標準。",
@@ -20432,14 +20431,14 @@
   "syl": "skilled",
   "pos": "adj.",
   "zh": "熟練的",
-  "ex": "A skilled clerk sorts very fast.",
-  "ext": "熟練的櫃員分信很快。",
+  "ex": "Years of practice make the clerk skilled and quick.",
+  "ext": "多年的練習讓這位櫃員熟練又快速。",
   "level": 2
  },
  {
   "en": "slip",
   "syl": "slip",
-  "pos": "v./n.",
+  "pos": "n.",
   "zh": "滑倒、紙條",
   "ex": "Keep the receipt slip in the file.",
   "ext": "把收據紙條放進檔案。",
@@ -20448,7 +20447,7 @@
  {
   "en": "stick",
   "syl": "stick",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "黏住、棍子",
   "ex": "The wet label will not stick.",
   "ext": "濕的標籤黏不住。",
@@ -20475,7 +20474,7 @@
  {
   "en": "smooth",
   "syl": "smooth",
-  "pos": "adj./v.",
+  "pos": "adj.",
   "zh": "平滑的、順暢的",
   "ex": "Sorting went smooth this morning.",
   "ext": "今早分信很順暢。",
@@ -20484,7 +20483,7 @@
  {
   "en": "tear",
   "syl": "tear",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "眼淚",
   "ex": "A tear fell when she read the letter.",
   "ext": "她讀信時掉下一滴眼淚。",
@@ -20493,7 +20492,7 @@
  {
   "en": "trust",
   "syl": "trust",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "信任",
   "ex": "Customers trust us with their parcels.",
   "ext": "顧客把包裹託付給我們。",
@@ -20502,7 +20501,7 @@
  {
   "en": "western",
   "syl": "west·ern",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "西方的",
   "ex": "The truck serves the western district.",
   "ext": "卡車服務西區。",
@@ -20547,7 +20546,7 @@
  {
   "en": "whatever",
   "syl": "what·ev·er",
-  "pos": "adj./pron.",
+  "pos": "pron.",
   "zh": "無論什麼",
   "ex": "Send whatever fits in this box.",
   "ext": "把放得進這箱子的任何東西都寄出。",
@@ -20592,7 +20591,7 @@
  {
   "en": "whenever",
   "syl": "when·ev·er",
-  "pos": "conj./adv.",
+  "pos": "conj.",
   "zh": "每當、無論何時",
   "ex": "Call us whenever your parcel is late.",
   "ext": "包裹遲到時隨時打給我們。",
@@ -20612,14 +20611,14 @@
   "syl": "typ·i·cal",
   "pos": "adj.",
   "zh": "典型的",
-  "ex": "It was a typical busy Monday.",
-  "ext": "那是典型忙碌的星期一。",
+  "ex": "Just like every other Monday, a typical busy day.",
+  "ext": "就跟其他每個星期一一樣，典型忙碌的一天。",
   "level": 2
  },
  {
   "en": "wherever",
   "syl": "wher·ev·er",
-  "pos": "adv./conj.",
+  "pos": "conj.",
   "zh": "無論何處",
   "ex": "We deliver wherever the address points.",
   "ext": "地址指向哪裡我們就送到哪裡。",
@@ -20637,7 +20636,7 @@
  {
   "en": "whisper",
   "syl": "whis·per",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "低語、耳語",
   "ex": "She read the address in a whisper.",
   "ext": "她低聲讀出地址。",
@@ -20718,7 +20717,7 @@
  {
   "en": "wild",
   "syl": "wild",
-  "pos": "adj./adv./n.",
+  "pos": "adj.",
   "zh": "野生的、狂野的",
   "ex": "Wild animals need special handling.",
   "ext": "野生動物需要特殊處理。",
@@ -20727,7 +20726,7 @@
  {
   "en": "throughout",
   "syl": "through·out",
-  "pos": "prep./adv.",
+  "pos": "prep.",
   "zh": "遍及、整個",
   "ex": "Mail goes throughout the whole town.",
   "ext": "郵件送遍整個鎮。",
@@ -20745,7 +20744,7 @@
  {
   "en": "thunder",
   "syl": "thun·der",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "雷聲",
   "ex": "Thunder warned of a coming storm.",
   "ext": "雷聲預告暴風雨將至。",
@@ -20765,8 +20764,8 @@
   "syl": "up·per",
   "pos": "adj.",
   "zh": "上面的",
-  "ex": "Write the code in the upper corner.",
-  "ext": "在上角寫郵遞區號。",
+  "ex": "Write the code at the top, in the upper corner, not the bottom.",
+  "ext": "把郵遞區號寫在上方，在上角，不是下方。",
   "level": 2
  },
  {
@@ -20781,7 +20780,7 @@
  {
   "en": "till",
   "syl": "till",
-  "pos": "conj./prep.",
+  "pos": "prep.",
   "zh": "直到",
   "ex": "Wait till the truck arrives.",
   "ext": "等到卡車到達。",
@@ -20790,7 +20789,7 @@
  {
   "en": "upset",
   "syl": "up·set",
-  "pos": "adj./v./n.",
+  "pos": "adj.",
   "zh": "不安的、使心煩",
   "ex": "The late parcel made her upset.",
   "ext": "遲到的包裹讓她心煩。",
@@ -20810,14 +20809,14 @@
   "syl": "tiny",
   "pos": "adj.",
   "zh": "微小的",
-  "ex": "The tiny parcel weighed almost nothing.",
-  "ext": "那個微小的包裹幾乎沒有重量。",
+  "ex": "It fits in one hand, a tiny parcel.",
+  "ext": "它一隻手就握得住，是個微小的包裹。",
   "level": 2
  },
  {
   "en": "upstairs",
   "syl": "up·stairs",
-  "pos": "adv./adj./n.",
+  "pos": "adv.",
   "zh": "樓上",
   "ex": "The parcel was left upstairs.",
   "ext": "包裹被放在樓上。",
@@ -20835,7 +20834,7 @@
  {
   "en": "tire",
   "syl": "tire",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "疲倦、輪胎",
   "ex": "Long routes can tire the carrier.",
   "ext": "長路線會讓郵務士疲倦。",
@@ -20844,7 +20843,7 @@
  {
   "en": "within",
   "syl": "with·in",
-  "pos": "prep./adv.",
+  "pos": "prep.",
   "zh": "在…之內",
   "ex": "Parcels arrive within two days.",
   "ext": "包裹兩天內送達。",
@@ -20871,7 +20870,7 @@
  {
   "en": "title",
   "syl": "ti·tle",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "標題、頭銜",
   "ex": "Write the book title on the form.",
   "ext": "在表格上寫書名。",
@@ -20889,7 +20888,7 @@
  {
   "en": "wonder",
   "syl": "won·der",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "想知道、驚奇",
   "ex": "I wonder where the parcel is.",
   "ext": "我想知道包裹在哪裡。",
@@ -20898,7 +20897,7 @@
  {
   "en": "toast",
   "syl": "toast",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "吐司、烤",
   "ex": "He ate toast before the early shift.",
   "ext": "他在早班前吃了吐司。",
@@ -20907,7 +20906,7 @@
  {
   "en": "vacation",
   "syl": "va·ca·tion",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "假期",
   "ex": "The clerk is on vacation this week.",
   "ext": "櫃員這週休假。",
@@ -20945,8 +20944,8 @@
   "syl": "wood·en",
   "pos": "adj.",
   "zh": "木製的",
-  "ex": "The parcel held a wooden box.",
-  "ext": "包裹裡裝著一個木盒。",
+  "ex": "The box was carved from wood, a wooden box.",
+  "ext": "那個盒子是用木頭刻成的，是木盒。",
   "level": 2
  },
  {
@@ -21015,7 +21014,7 @@
  {
   "en": "worm",
   "syl": "worm",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "蠕蟲、蟲",
   "ex": "A worm crawled out of the wet box.",
   "ext": "一隻蟲從濕箱子裡爬出。",
@@ -21042,7 +21041,7 @@
  {
   "en": "vote",
   "syl": "vote",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "投票",
   "ex": "Staff will vote on the new schedule.",
   "ext": "員工將票選新的排班。",
@@ -21060,7 +21059,7 @@
  {
   "en": "wound",
   "syl": "wound",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "創傷；傷口",
   "ex": "The carrier cleaned a small wound.",
   "ext": "郵務士清理了一個小傷口。",
@@ -21069,7 +21068,7 @@
  {
   "en": "trade",
   "syl": "trade",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "貿易",
   "ex": "The shop does most of its trade online.",
   "ext": "這家店大部分生意在線上進行。",
@@ -21116,8 +21115,8 @@
   "syl": "tra·di·tion·al",
   "pos": "adj.",
   "zh": "傳統的",
-  "ex": "Mailing cards is a traditional habit.",
-  "ext": "寄卡片是一種傳統習慣。",
+  "ex": "People have mailed cards for generations, a traditional habit.",
+  "ext": "人們世世代代都寄卡片，是一種傳統習慣。",
   "level": 2
  },
  {
@@ -21141,7 +21140,7 @@
  {
   "en": "trap",
   "syl": "trap",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "陷阱、困住",
   "ex": "A wrong turn is an easy trap.",
   "ext": "走錯路是常見的陷阱。",
@@ -21161,14 +21160,14 @@
   "syl": "ac·cept·able",
   "pos": "adj.",
   "zh": "可接受的",
-  "ex": "A small delay is acceptable in storms.",
-  "ext": "暴風雨中小幅延誤是可接受的。",
+  "ex": "No one will complain; a small delay is acceptable in storms.",
+  "ext": "沒有人會抱怨，暴風雨中小幅延誤是可接受的。",
   "level": 2
  },
  {
   "en": "treasure",
   "syl": "trea·sure",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "寶藏",
   "ex": "Old stamps are a real treasure.",
   "ext": "舊郵票是真正的寶藏。",
@@ -21204,7 +21203,7 @@
  {
   "en": "ache",
   "syl": "ache",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "疼痛",
   "ex": "His back began to ache from lifting boxes.",
   "ext": "搬箱子讓他背開始痛。",
@@ -21233,8 +21232,8 @@
   "syl": "ad·di·tion·al",
   "pos": "adj.",
   "zh": "額外的",
-  "ex": "Express mail needs an additional fee.",
-  "ext": "快遞郵件需要額外的費用。",
+  "ex": "On top of the usual cost, express mail needs an additional fee.",
+  "ext": "在原本費用之外，快遞郵件需要額外的費用。",
   "level": 2
  },
  {
@@ -21258,7 +21257,7 @@
  {
   "en": "bomb",
   "syl": "bomb",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "炸彈",
   "ex": "Security screens for a possible bomb.",
   "ext": "保全檢查是否有炸彈。",
@@ -21285,7 +21284,7 @@
  {
   "en": "boot",
   "syl": "boot",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "靴子",
   "ex": "The parcel held a pair of rain boots.",
   "ext": "包裹裡裝著一雙雨靴。",
@@ -21294,7 +21293,7 @@
  {
   "en": "bore",
   "syl": "bore",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "使厭煩、鑽孔",
   "ex": "Long waits can bore the customers.",
   "ext": "久等會讓顧客厭煩。",
@@ -21312,7 +21311,7 @@
  {
   "en": "brake",
   "syl": "brake",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "剎車",
   "ex": "The driver checked the truck brake.",
   "ext": "司機檢查了卡車剎車。",
@@ -21330,7 +21329,7 @@
  {
   "en": "brass",
   "syl": "brass",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "黃銅",
   "ex": "The parcel held a brass bell.",
   "ext": "包裹裡裝著一個黃銅鈴。",
@@ -21341,8 +21340,8 @@
   "syl": "aw·ful",
   "pos": "adj.",
   "zh": "糟糕的、可怕的",
-  "ex": "The traffic was awful after the rain.",
-  "ext": "雨後交通糟透了。",
+  "ex": "Cars were stuck for hours; the traffic was awful.",
+  "ext": "車子卡了好幾個小時，交通糟透了。",
   "level": 2
  },
  {
@@ -21447,7 +21446,7 @@
  {
   "en": "bait",
   "syl": "bait",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "餌",
   "ex": "The fishing shop ordered bait by post.",
   "ext": "釣具店用郵寄訂購魚餌。",
@@ -21465,7 +21464,7 @@
  {
   "en": "bang",
   "syl": "bang",
-  "pos": "n./v./adv.",
+  "pos": "n.",
   "zh": "砰、猛撞",
   "ex": "There was a loud bang in the storeroom.",
   "ext": "儲藏室傳來一聲巨響。",
@@ -21474,7 +21473,7 @@
  {
   "en": "bubble",
   "syl": "bub·ble",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "氣泡",
   "ex": "Use bubble wrap for fragile goods.",
   "ext": "易碎品用氣泡墊。",
@@ -21510,7 +21509,7 @@
  {
   "en": "bare",
   "syl": "bare",
-  "pos": "adj./v.",
+  "pos": "adj.",
   "zh": "赤裸的、光禿的",
   "ex": "Do not carry hot pipes with bare hands.",
   "ext": "別徒手搬高溫的管子。",
@@ -21519,7 +21518,7 @@
  {
   "en": "bud",
   "syl": "bud",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "花苞、芽",
   "ex": "The flower bud opened in transit.",
   "ext": "花苞在運送途中開了。",
@@ -21627,7 +21626,7 @@
  {
   "en": "beam",
   "syl": "beam",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "光束、橫梁",
   "ex": "A beam of light showed the dark stairs.",
   "ext": "一道光束照亮了昏暗的樓梯。",
@@ -21636,7 +21635,7 @@
  {
   "en": "bump",
   "syl": "bump",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "碰撞、顛簸",
   "ex": "The cart hit a bump and a box fell.",
   "ext": "推車撞到顛簸處，一個箱子掉了。",
@@ -21683,8 +21682,8 @@
   "syl": "armed",
   "pos": "adj.",
   "zh": "武裝的",
-  "ex": "An armed guard watches the cash room.",
-  "ext": "一名武裝警衛看守現金室。",
+  "ex": "A guard with a gun, an armed guard, watches the cash room.",
+  "ext": "一名持槍的武裝警衛看守現金室。",
   "level": 2
  },
  {
@@ -21708,7 +21707,7 @@
  {
   "en": "arrest",
   "syl": "ar·rest",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "逮捕",
   "ex": "Police made an arrest for mail theft.",
   "ext": "警方因竊取郵件逮捕了人。",
@@ -21744,7 +21743,7 @@
  {
   "en": "buzz",
   "syl": "buzz",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "嗡嗡聲",
   "ex": "The scanner gave a quick buzz.",
   "ext": "掃描器發出短促的嗡嗡聲。",
@@ -21771,7 +21770,7 @@
  {
   "en": "bet",
   "syl": "bet",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "打賭",
   "ex": "I bet the parcel arrives by noon.",
   "ext": "我打賭包裹中午前會到。",
@@ -21780,7 +21779,7 @@
  {
   "en": "cable",
   "syl": "ca·ble",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "電纜",
   "ex": "The parcel held a long power cable.",
   "ext": "包裹裡裝著一條長電源線。",
@@ -21834,10 +21833,10 @@
  {
   "en": "worst",
   "syl": "worst",
-  "pos": "adj./adv./n.",
+  "pos": "adj.",
   "zh": "最糟的",
-  "ex": "Rain on a holiday is the worst case.",
-  "ext": "假期下雨是最糟的情況。",
+  "ex": "Nothing could be more troublesome; rain on a holiday is the worst case.",
+  "ext": "沒有比這更麻煩的了，假期下雨是最糟的情況。",
   "level": 2
  },
  {
@@ -21879,7 +21878,7 @@
  {
   "en": "breeze",
   "syl": "breeze",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "微風",
   "ex": "A cool breeze blew through the open door.",
   "ext": "一陣涼風從開著的門吹進來。",
@@ -21987,7 +21986,7 @@
  {
   "en": "capture",
   "syl": "cap·ture",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "捕捉、攻佔",
   "ex": "The camera captures the loading area.",
   "ext": "攝影機拍下裝載區。",
@@ -22032,16 +22031,16 @@
  {
   "en": "criminal",
   "syl": "crim·i·nal",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "罪犯、犯罪的",
-  "ex": "Mail theft is a criminal act.",
-  "ext": "竊取郵件是犯罪行為。",
+  "ex": "Stealing mail breaks the law; it is a criminal act.",
+  "ext": "竊取郵件觸犯法律，是犯罪行為。",
   "level": 2
  },
  {
   "en": "carpet",
   "syl": "car·pet",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "地毯",
   "ex": "The parcel held a rolled carpet.",
   "ext": "包裹裡裝著一捲地毯。",
@@ -22061,8 +22060,8 @@
   "syl": "crispy",
   "pos": "adj.",
   "zh": "酥脆的",
-  "ex": "The crispy snacks arrived unbroken.",
-  "ext": "酥脆的點心送達時沒有碎掉。",
+  "ex": "The snacks snap and crunch in your mouth, very crispy.",
+  "ext": "這些點心入口又脆又響，非常酥脆。",
   "level": 2
  },
  {
@@ -22077,7 +22076,7 @@
  {
   "en": "crop",
   "syl": "crop",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "農作物",
   "ex": "The farm ships its main crop in autumn.",
   "ext": "農場秋天運送主要作物。",
@@ -22086,7 +22085,7 @@
  {
   "en": "cart",
   "syl": "cart",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "手推車",
   "ex": "Load the boxes onto the cart.",
   "ext": "把箱子裝上推車。",
@@ -22104,7 +22103,7 @@
  {
   "en": "crown",
   "syl": "crown",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "皇冠",
   "ex": "The stamp shows a golden crown.",
   "ext": "郵票上印著金色皇冠。",
@@ -22113,7 +22112,7 @@
  {
   "en": "cast",
   "syl": "cast",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "投擲、演員陣容",
   "ex": "Cast a quick look at the address.",
   "ext": "快速看一眼地址。",
@@ -22167,7 +22166,7 @@
  {
   "en": "cave",
   "syl": "cave",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "洞穴",
   "ex": "The mountain road passes a cave.",
   "ext": "山路經過一個洞穴。",
@@ -22176,7 +22175,7 @@
  {
   "en": "dam",
   "syl": "dam",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "水壩",
   "ex": "The truck crossed the road by the dam.",
   "ext": "卡車經過水壩邊的路。",
@@ -22212,7 +22211,7 @@
  {
   "en": "charm",
   "syl": "charm",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "魅力、護身符",
   "ex": "Her charm puts customers at ease.",
   "ext": "她的魅力讓顧客放鬆。",
@@ -22239,7 +22238,7 @@
  {
   "en": "dash",
   "syl": "dash",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "猛衝、破折號",
   "ex": "He made a dash to catch the truck.",
   "ext": "他猛衝去趕卡車。",
@@ -22268,14 +22267,14 @@
   "syl": "cheer·ful",
   "pos": "adj.",
   "zh": "開朗的、愉快的",
-  "ex": "The cheerful clerk greeted everyone.",
-  "ext": "開朗的櫃員向每個人問好。",
+  "ex": "The clerk smiled brightly and greeted everyone, so cheerful.",
+  "ext": "櫃員笑得燦爛地向每個人問好，十分開朗。",
   "level": 2
  },
  {
   "en": "dawn",
   "syl": "dawn",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "黎明",
   "ex": "The trucks leave at dawn.",
   "ext": "卡車在黎明出發。",
@@ -22284,7 +22283,7 @@
  {
   "en": "cherry",
   "syl": "cher·ry",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "櫻桃",
   "ex": "The farm packs each cherry with care.",
   "ext": "農場小心包裝每一顆櫻桃。",
@@ -22329,7 +22328,7 @@
  {
   "en": "chill",
   "syl": "chill",
-  "pos": "n./v./adj.",
+  "pos": "n.",
   "zh": "寒意、冷卻",
   "ex": "Keep the medicine in the chill box.",
   "ext": "把藥放在冷藏箱裡。",
@@ -22340,8 +22339,8 @@
   "syl": "chilly",
   "pos": "adj.",
   "zh": "寒冷的",
-  "ex": "The early route was chilly today.",
-  "ext": "今天早班路線很冷。",
+  "ex": "I shivered in the cold morning air, it was chilly.",
+  "ext": "清晨的冷空氣讓我發抖，很寒冷。",
   "level": 2
  },
  {
@@ -22383,7 +22382,7 @@
  {
   "en": "chip",
   "syl": "chip",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "碎片、晶片",
   "ex": "The scanner reads a small chip.",
   "ext": "掃描器讀取一個小晶片。",
@@ -22394,8 +22393,8 @@
   "syl": "con·sid·er·able",
   "pos": "adj.",
   "zh": "相當大的",
-  "ex": "There was a considerable rise in parcels.",
-  "ext": "包裹有相當大的增加。",
+  "ex": "The rise in parcels was large enough to notice, quite considerable.",
+  "ext": "包裹的增加大到引人注意，相當可觀。",
   "level": 2
  },
  {
@@ -22410,7 +22409,7 @@
  {
   "en": "chop",
   "syl": "chop",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "剁、砍",
   "ex": "Chop the box flat before recycling.",
   "ext": "回收前把箱子壓平。",
@@ -22475,8 +22474,8 @@
   "syl": "demo·crat·ic",
   "pos": "adj.",
   "zh": "民主的",
-  "ex": "The team made a democratic choice.",
-  "ext": "團隊做出民主的選擇。",
+  "ex": "Everyone voted, so the team made a democratic choice.",
+  "ext": "每個人都投了票，所以團隊做出民主的選擇。",
   "level": 2
  },
  {
@@ -22554,7 +22553,7 @@
  {
   "en": "cough",
   "syl": "cough",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "咳嗽",
   "ex": "The clerk had a bad cough all day.",
   "ext": "櫃員整天咳得厲害。",
@@ -22635,7 +22634,7 @@
  {
   "en": "clip",
   "syl": "clip",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "夾子、修剪",
   "ex": "Use a clip to hold the forms.",
   "ext": "用夾子夾住表格。",
@@ -22644,7 +22643,7 @@
  {
   "en": "cradle",
   "syl": "cra·dle",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "搖籃",
   "ex": "The parcel held a baby cradle.",
   "ext": "包裹裡裝著一個嬰兒搖籃。",
@@ -22662,7 +22661,7 @@
  {
   "en": "crane",
   "syl": "crane",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "起重機、鶴",
   "ex": "A crane lifted the heavy crate.",
   "ext": "起重機吊起沉重的木箱。",
@@ -22680,16 +22679,16 @@
  {
   "en": "dim",
   "syl": "dim",
-  "pos": "adj./v.",
+  "pos": "adj.",
   "zh": "昏暗的",
-  "ex": "The storeroom light was very dim.",
-  "ext": "儲藏室的燈光很昏暗。",
+  "ex": "We could hardly see; the storeroom light was dim.",
+  "ext": "我們幾乎看不見，儲藏室的燈光很昏暗。",
   "level": 2
  },
  {
   "en": "clown",
   "syl": "clown",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "小丑",
   "ex": "The parcel held a clown costume.",
   "ext": "包裹裡裝著一套小丑服。",
@@ -22698,7 +22697,7 @@
  {
   "en": "crawl",
   "syl": "crawl",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "爬行",
   "ex": "A bug crawled out of the old box.",
   "ext": "一隻蟲從舊箱子爬出。",
@@ -22770,7 +22769,7 @@
  {
   "en": "dip",
   "syl": "dip",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "浸、下降",
   "ex": "Parcel numbers dip after the holiday.",
   "ext": "假期後包裹數量下降。",
@@ -22799,8 +22798,8 @@
   "syl": "dis·hon·est",
   "pos": "adj.",
   "zh": "不誠實的",
-  "ex": "It is dishonest to fake the weight.",
-  "ext": "假報重量是不誠實的。",
+  "ex": "Lying about the weight to pay less is dishonest.",
+  "ext": "謊報重量以少付錢是不誠實的。",
   "level": 2
  },
  {
@@ -22824,7 +22823,7 @@
  {
   "en": "flavor",
   "syl": "fla·vor",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "味道、風味",
   "ex": "The snacks come in many flavors.",
   "ext": "這些點心有多種口味。",
@@ -22833,7 +22832,7 @@
  {
   "en": "dislike",
   "syl": "dis·like",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "不喜歡",
   "ex": "Customers dislike long waits.",
   "ext": "顧客不喜歡久等。",
@@ -22860,7 +22859,7 @@
  {
   "en": "ditch",
   "syl": "ditch",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "水溝、丟棄",
   "ex": "The cart wheel got stuck in a ditch.",
   "ext": "推車輪子卡在水溝裡。",
@@ -22869,7 +22868,7 @@
  {
   "en": "float",
   "syl": "float",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "漂浮",
   "ex": "The empty box can float on water.",
   "ext": "空箱子能浮在水上。",
@@ -22878,7 +22877,7 @@
  {
   "en": "dive",
   "syl": "dive",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "跳水、潛水",
   "ex": "Parcel numbers can dive after holidays.",
   "ext": "假期後包裹數量會驟降。",
@@ -22889,8 +22888,8 @@
   "syl": "en·er·get·ic",
   "pos": "adj.",
   "zh": "精力充沛的",
-  "ex": "The energetic clerk never slows down.",
-  "ext": "精力充沛的櫃員從不慢下來。",
+  "ex": "The clerk runs around all day full of energy, so energetic.",
+  "ext": "櫃員整天精力充沛地跑來跑去，活力十足。",
   "level": 2
  },
  {
@@ -22905,7 +22904,7 @@
  {
   "en": "dock",
   "syl": "dock",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "碼頭、裝卸區",
   "ex": "Trucks load at the back dock.",
   "ext": "卡車在後方裝卸區裝貨。",
@@ -22916,8 +22915,8 @@
   "syl": "en·joy·able",
   "pos": "adj.",
   "zh": "愉快的",
-  "ex": "The training day was enjoyable.",
-  "ext": "訓練日很愉快。",
+  "ex": "We had fun all day; the training was enjoyable.",
+  "ext": "我們一整天都很開心，訓練很愉快。",
   "level": 2
  },
  {
@@ -22968,7 +22967,7 @@
  {
   "en": "envy",
   "syl": "en·vy",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "嫉妒",
   "ex": "Other branches envy our record.",
   "ext": "其他分局羨慕我們的紀錄。",
@@ -22979,14 +22978,14 @@
   "syl": "fog·gy",
   "pos": "adj.",
   "zh": "有霧的",
-  "ex": "The foggy morning slowed the route.",
-  "ext": "有霧的早晨拖慢了路線。",
+  "ex": "Thick mist blocked the view; the foggy morning slowed the route.",
+  "ext": "濃霧擋住視線，有霧的早晨拖慢了路線。",
   "level": 2
  },
  {
   "en": "dose",
   "syl": "dose",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "劑量",
   "ex": "The label lists the right dose.",
   "ext": "標籤列出正確劑量。",
@@ -23004,7 +23003,7 @@
  {
   "en": "fold",
   "syl": "fold",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "摺疊",
   "ex": "Fold the form and put it in the envelope.",
   "ext": "把表格摺好放進信封。",
@@ -23015,8 +23014,8 @@
   "syl": "doubt·ful",
   "pos": "adj.",
   "zh": "懷疑的、不確定的",
-  "ex": "It is doubtful the parcel arrives today.",
-  "ext": "包裹今天能不能到還不確定。",
+  "ex": "With the storm, it is doubtful the parcel arrives today.",
+  "ext": "遇上暴風雨，包裹今天能不能到很難說。",
   "level": 2
  },
  {
@@ -23051,14 +23050,14 @@
   "syl": "fond",
   "pos": "adj.",
   "zh": "喜愛的",
-  "ex": "She is fond of her quiet morning route.",
-  "ext": "她喜愛安靜的早班路線。",
+  "ex": "She loves and looks forward to her morning route, so fond of it.",
+  "ext": "她喜愛並期待早班路線，很喜歡它。",
   "level": 2
  },
  {
   "en": "downtown",
   "syl": "down·town",
-  "pos": "adj./adv./n.",
+  "pos": "adj.",
   "zh": "市中心",
   "ex": "The main branch is downtown.",
   "ext": "總局在市中心。",
@@ -23076,7 +23075,7 @@
  {
   "en": "drag",
   "syl": "drag",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "拖、拉",
   "ex": "Do not drag the box across the floor.",
   "ext": "別把箱子拖過地板。",
@@ -23094,7 +23093,7 @@
  {
   "en": "experiment",
   "syl": "ex·per·i·ment",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "實驗",
   "ex": "Night sorting was a useful experiment.",
   "ext": "夜間分揀是個有用的實驗。",
@@ -23112,7 +23111,7 @@
  {
   "en": "drain",
   "syl": "drain",
-  "pos": "v./n.",
+  "pos": "n.",
   "zh": "排水、流乾",
   "ex": "Rain water ran into the drain.",
   "ext": "雨水流進排水溝。",
@@ -23141,14 +23140,14 @@
   "syl": "dra·mat·ic",
   "pos": "adj.",
   "zh": "戲劇性的、劇烈的",
-  "ex": "There was a dramatic rise in parcels.",
-  "ext": "包裹有戲劇性的增加。",
+  "ex": "Parcels suddenly shot up overnight, a dramatic rise.",
+  "ext": "包裹一夜之間暴增，是戲劇性的增加。",
   "level": 2
  },
  {
   "en": "freeze",
   "syl": "freeze",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "結冰、凍結",
   "ex": "The pipes freeze on cold nights.",
   "ext": "寒冷的夜裡水管會結冰。",
@@ -23157,7 +23156,7 @@
  {
   "en": "drip",
   "syl": "drip",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "滴",
   "ex": "Water began to drip from the box.",
   "ext": "水開始從箱子滴下來。",
@@ -23202,10 +23201,10 @@
  {
   "en": "drunk",
   "syl": "drunk",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "喝醉的",
-  "ex": "A drunk man wandered near the gate.",
-  "ext": "一個醉漢在大門附近徘徊。",
+  "ex": "A man who drank too much wine stumbled near the gate, drunk.",
+  "ext": "一個喝太多酒的男子在大門附近踉蹌，醉了。",
   "level": 2
  },
  {
@@ -23238,16 +23237,16 @@
  {
   "en": "faint",
   "syl": "faint",
-  "pos": "adj./v./n.",
+  "pos": "adj.",
   "zh": "微弱的、昏倒",
-  "ex": "There was a faint smell of smoke.",
-  "ext": "有一股微弱的煙味。",
+  "ex": "You could barely notice it, a faint smell of smoke.",
+  "ext": "你幾乎察覺不到，一股微弱的煙味。",
   "level": 2
  },
  {
   "en": "fuel",
   "syl": "fu·el",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "燃料",
   "ex": "The truck stopped for fuel.",
   "ext": "卡車停下來加油。",
@@ -23256,7 +23255,7 @@
  {
   "en": "dump",
   "syl": "dump",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "傾倒、丟棄",
   "ex": "Do not dump parcels on the floor.",
   "ext": "別把包裹倒在地上。",
@@ -23265,7 +23264,7 @@
  {
   "en": "fund",
   "syl": "fund",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "資金、基金",
   "ex": "The branch saved a fund for new carts.",
   "ext": "分局存了一筆買新推車的資金。",
@@ -23283,7 +23282,7 @@
  {
   "en": "dust",
   "syl": "dust",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "灰塵",
   "ex": "Wipe the dust off the shelf.",
   "ext": "把架上的灰塵擦掉。",
@@ -23301,16 +23300,16 @@
  {
   "en": "fake",
   "syl": "fake",
-  "pos": "adj./v./n.",
+  "pos": "adj.",
   "zh": "假的、偽造",
-  "ex": "Watch out for a fake address.",
-  "ext": "小心假地址。",
+  "ex": "The address does not exist; watch out for a fake one.",
+  "ext": "這個地址根本不存在，小心是假地址。",
   "level": 2
  },
  {
   "en": "gamble",
   "syl": "gam·ble",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "賭博",
   "ex": "Skipping the weight check is a gamble.",
   "ext": "省略重量檢查是一場賭博。",
@@ -23319,7 +23318,7 @@
  {
   "en": "echo",
   "syl": "echo",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "回音",
   "ex": "His steps made an echo in the hall.",
   "ext": "他的腳步聲在大廳裡迴響。",
@@ -23328,7 +23327,7 @@
  {
   "en": "gang",
   "syl": "gang",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "幫派、一群",
   "ex": "A gang of kids played near the branch.",
   "ext": "一群孩子在分局附近玩。",
@@ -23346,10 +23345,10 @@
  {
   "en": "fancy",
   "syl": "fan·cy",
-  "pos": "adj./n./v.",
+  "pos": "adj.",
   "zh": "花俏的、別緻的",
-  "ex": "The gift came in a fancy box.",
-  "ext": "禮物裝在一個別緻的盒子裡。",
+  "ex": "The box had ribbons and gold print, very fancy.",
+  "ext": "那個盒子有緞帶和燙金，非常別緻。",
   "level": 2
  },
  {
@@ -23373,7 +23372,7 @@
  {
   "en": "farther",
   "syl": "far·ther",
-  "pos": "adv./adj.",
+  "pos": "adv.",
   "zh": "更遠的",
   "ex": "The last house is farther up the hill.",
   "ext": "最後一戶在更遠的山坡上。",
@@ -23418,7 +23417,7 @@
  {
   "en": "elbow",
   "syl": "el·bow",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "手肘",
   "ex": "He hurt his elbow against the shelf.",
   "ext": "他的手肘撞到架子受傷。",
@@ -23429,14 +23428,14 @@
   "syl": "fear·ful",
   "pos": "adj.",
   "zh": "害怕的、可怕的",
-  "ex": "The new clerk was fearful of mistakes.",
-  "ext": "新櫃員害怕出錯。",
+  "ex": "She worried all day, fearful of making a mistake.",
+  "ext": "她整天擔心，害怕犯錯。",
   "level": 2
  },
  {
   "en": "glance",
   "syl": "glance",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "瞥一眼",
   "ex": "She took a glance at the address.",
   "ext": "她瞥了一眼地址。",
@@ -23463,7 +23462,7 @@
  {
   "en": "elect",
   "syl": "elect",
-  "pos": "v./adj.",
+  "pos": "v.",
   "zh": "選舉",
   "ex": "The staff will elect a team leader.",
   "ext": "員工將選出一位團隊領袖。",
@@ -23499,7 +23498,7 @@
  {
   "en": "glow",
   "syl": "glow",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "發光、光輝",
   "ex": "A soft glow lit the night counter.",
   "ext": "柔和的光照亮夜間櫃台。",
@@ -23517,7 +23516,7 @@
  {
   "en": "golf",
   "syl": "golf",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "高爾夫球",
   "ex": "The parcel held a set of golf clubs.",
   "ext": "包裹裡裝著一組高爾夫球桿。",
@@ -23535,7 +23534,7 @@
  {
   "en": "fist",
   "syl": "fist",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "拳頭",
   "ex": "He knocked with his fist on the door.",
   "ext": "他用拳頭敲門。",
@@ -23544,7 +23543,7 @@
  {
   "en": "gossip",
   "syl": "gos·sip",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "八卦、閒話",
   "ex": "Do not gossip about customers.",
   "ext": "別議論顧客的八卦。",
@@ -23571,7 +23570,7 @@
  {
   "en": "flash",
   "syl": "flash",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "閃光、閃現",
   "ex": "A flash of light came from the camera.",
   "ext": "相機閃了一下光。",
@@ -23580,7 +23579,7 @@
  {
   "en": "graduate",
   "syl": "grad·u·ate",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "畢業生、畢業",
   "ex": "The new graduate mailed his resume.",
   "ext": "新畢業生寄出履歷。",
@@ -23591,8 +23590,8 @@
   "syl": "holy",
   "pos": "adj.",
   "zh": "神聖的",
-  "ex": "The parcel held a holy book.",
-  "ext": "包裹裡裝著一本聖書。",
+  "ex": "People pray with this sacred, holy book.",
+  "ext": "人們用這本神聖的聖書祈禱。",
   "level": 2
  },
  {
@@ -23607,7 +23606,7 @@
  {
   "en": "grasp",
   "syl": "grasp",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "抓住、理解",
   "ex": "Grasp the handle firmly when lifting.",
   "ext": "搬起時牢牢抓住把手。",
@@ -23625,7 +23624,7 @@
  {
   "en": "ivory",
   "syl": "ivory",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "象牙",
   "ex": "Mailing ivory is against the law.",
   "ext": "郵寄象牙是違法的。",
@@ -23652,7 +23651,7 @@
  {
   "en": "jail",
   "syl": "jail",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "監獄",
   "ex": "Mail theft can send a person to jail.",
   "ext": "竊取郵件可能讓人入獄。",
@@ -23663,8 +23662,8 @@
   "syl": "grassy",
   "pos": "adj.",
   "zh": "長滿草的",
-  "ex": "The parcel sat on the grassy ground.",
-  "ext": "包裹放在長草的地上。",
+  "ex": "Green grass covered the spot; the parcel sat on grassy ground.",
+  "ext": "青草覆蓋著那塊地，包裹放在長草的地上。",
   "level": 2
  },
  {
@@ -23697,7 +23696,7 @@
  {
   "en": "honor",
   "syl": "hon·or",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "榮譽、尊敬",
   "ex": "It is an honor to serve the town.",
   "ext": "服務這個鎮是一種榮譽。",
@@ -23726,8 +23725,8 @@
   "syl": "hope·ful",
   "pos": "adj.",
   "zh": "懷抱希望的",
-  "ex": "She is hopeful about the exam.",
-  "ext": "她對考試懷抱希望。",
+  "ex": "She believes she will pass and feels hopeful about the exam.",
+  "ext": "她相信會通過，對考試懷抱希望。",
   "level": 2
  },
  {
@@ -23742,7 +23741,7 @@
  {
   "en": "grin",
   "syl": "grin",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "咧嘴笑",
   "ex": "He gave a grin when the parcel arrived.",
   "ext": "包裹送到時他咧嘴一笑。",
@@ -23780,8 +23779,8 @@
   "syl": "hor·ri·ble",
   "pos": "adj.",
   "zh": "可怕的",
-  "ex": "The smell from the box was horrible.",
-  "ext": "箱子發出的味道很可怕。",
+  "ex": "The smell was so bad it made us gag, truly horrible.",
+  "ext": "那味道糟到讓我們作嘔，真的很可怕。",
   "level": 2
  },
  {
@@ -23832,10 +23831,10 @@
  {
   "en": "hourly",
   "syl": "hourly",
-  "pos": "adj./adv.",
+  "pos": "adj.",
   "zh": "每小時的",
-  "ex": "The truck runs on an hourly schedule.",
-  "ext": "卡車按每小時的班次行駛。",
+  "ex": "A truck leaves once every hour, on an hourly schedule.",
+  "ext": "每小時發一班車，按每小時的班次行駛。",
   "level": 2
  },
  {
@@ -23886,7 +23885,7 @@
  {
   "en": "hammer",
   "syl": "ham·mer",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "鐵鎚",
   "ex": "The parcel held a heavy hammer.",
   "ext": "包裹裡裝著一支沉重的鐵鎚。",
@@ -23906,8 +23905,8 @@
   "syl": "hu·mid",
   "pos": "adj.",
   "zh": "潮濕的",
-  "ex": "The humid air made the labels curl.",
-  "ext": "潮濕的空氣讓標籤捲起。",
+  "ex": "The air was thick with moisture, so humid the labels curled.",
+  "ext": "空氣充滿濕氣，潮濕到標籤都捲起來。",
   "level": 2
  },
  {
@@ -23915,8 +23914,8 @@
   "syl": "joy·ful",
   "pos": "adj.",
   "zh": "快樂的",
-  "ex": "It was a joyful day at the branch.",
-  "ext": "那是分局快樂的一天。",
+  "ex": "Everyone smiled and laughed; a joyful day at the branch.",
+  "ext": "大家又笑又樂，分局度過快樂的一天。",
   "level": 2
  },
  {
@@ -23942,8 +23941,8 @@
   "syl": "juicy",
   "pos": "adj.",
   "zh": "多汁的",
-  "ex": "The juicy fruit must arrive fast.",
-  "ext": "多汁的水果必須快速送達。",
+  "ex": "The fruit drips with sweet juice, so juicy it must arrive fast.",
+  "ext": "這水果滴著甜美的汁液，多汁到必須快速送達。",
   "level": 2
  },
  {
@@ -23951,8 +23950,8 @@
   "syl": "handy",
   "pos": "adj.",
   "zh": "方便的、靈巧的",
-  "ex": "A small cart is handy for narrow lanes.",
-  "ext": "小推車在窄巷很方便。",
+  "ex": "It fits tight spaces and is easy to push, very handy.",
+  "ext": "它能進狹小空間又好推，非常方便。",
   "level": 2
  },
  {
@@ -23960,8 +23959,8 @@
   "syl": "hu·mor·ous",
   "pos": "adj.",
   "zh": "幽默的",
-  "ex": "The clerk made a humorous remark.",
-  "ext": "櫃員說了句幽默的話。",
+  "ex": "The clerk's joke made us laugh, a humorous remark.",
+  "ext": "櫃員的笑話逗我們發笑，是句幽默的話。",
   "level": 2
  },
  {
@@ -24040,7 +24039,7 @@
  {
   "en": "manufacture",
   "syl": "man·u·fac·ture",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "製造、生產",
   "ex": "They manufacture parts for the trucks.",
   "ext": "他們製造卡車的零件。",
@@ -24056,7 +24055,7 @@
  {
   "en": "dispatch",
   "syl": "dis·patch",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "派遣、發送",
   "ex": "We will dispatch the parcel this afternoon.",
   "ext": "我們今天下午會把包裹發出。",
@@ -24074,8 +24073,8 @@
   "syl": "sub·stan·tial",
   "pos": "adj.",
   "zh": "大量的、可觀的",
-  "ex": "There was a substantial rise in parcels.",
-  "ext": "包裹有可觀的增加。",
+  "ex": "The number grew by half, a substantial rise in parcels.",
+  "ext": "數量增加了一半，是相當大的增加。",
   "tip": "＝ large 的正式說法。",
   "syn": [
    {
@@ -24266,8 +24265,8 @@
   "syl": "nu·mer·ous",
   "pos": "adj.",
   "zh": "許多的",
-  "ex": "There were numerous parcels before the holiday.",
-  "ext": "假期前有許多包裹。",
+  "ex": "Too many to count, there were numerous parcels before the holiday.",
+  "ext": "多到數不清，假期前有許多包裹。",
   "tip": "＝ many 的正式說法。",
   "syn": [
    {
@@ -24378,8 +24377,8 @@
   "syl": "ab·nor·mal",
   "pos": "adj.",
   "zh": "不正常的",
-  "ex": "The scale showed an abnormal weight.",
-  "ext": "磅秤顯示不正常的重量。",
+  "ex": "The number was far from usual; the scale showed an abnormal weight.",
+  "ext": "數字與平常差很多，磅秤顯示不正常的重量。",
   "level": 2
  },
  {
@@ -24396,8 +24395,8 @@
   "syl": "abrupt",
   "pos": "adj.",
   "zh": "突然的",
-  "ex": "There was an abrupt change in the schedule.",
-  "ext": "排程有突然的變動。",
+  "ex": "With no notice at all, there was an abrupt change in the schedule.",
+  "ext": "毫無預告，排程有了突然的變動。",
   "level": 2
  },
  {
@@ -24405,8 +24404,8 @@
   "syl": "ab·surd",
   "pos": "adj.",
   "zh": "荒謬的",
-  "ex": "It is absurd to mail cash without insurance.",
-  "ext": "不保價就寄現金很荒謬。",
+  "ex": "Mailing cash with no cover makes no sense at all; it is absurd.",
+  "ext": "不保價就寄現金完全說不通，很荒謬。",
   "level": 2
  },
  {
@@ -24414,14 +24413,14 @@
   "syl": "abun·dant",
   "pos": "adj.",
   "zh": "豐富的、大量的",
-  "ex": "There was abundant mail before the holiday.",
-  "ext": "假期前郵件量很大。",
+  "ex": "There was more than enough for all, abundant mail before the holiday.",
+  "ext": "多到綽綽有餘，假期前郵件量很大。",
   "level": 2
  },
  {
   "en": "abuse",
   "syl": "abuse",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "濫用、虐待",
   "ex": "We report any abuse of the postal system.",
   "ext": "我們會通報任何濫用郵政系統的行為。",
@@ -24441,14 +24440,14 @@
   "syl": "ac·ces·si·ble",
   "pos": "adj.",
   "zh": "可使用的、易到達的",
-  "ex": "Online tracking is accessible to everyone.",
-  "ext": "線上追蹤人人都能使用。",
+  "ex": "Anyone with a phone can reach it; online tracking is accessible.",
+  "ext": "任何有手機的人都能使用，線上追蹤人人可用。",
   "level": 2
  },
  {
   "en": "accord",
   "syl": "ac·cord",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "一致、協議",
   "ex": "The two offices reached an accord on hours.",
   "ext": "兩個郵局就營業時間達成協議。",
@@ -24486,8 +24485,8 @@
   "syl": "acute",
   "pos": "adj.",
   "zh": "急性的、敏銳的",
-  "ex": "There was an acute shortage of staff.",
-  "ext": "人手嚴重短缺。",
+  "ex": "So few workers came that there was an acute shortage of staff.",
+  "ext": "來上班的人太少，造成嚴重的人手短缺。",
   "level": 2
  },
  {
@@ -24495,8 +24494,8 @@
   "syl": "ad·min·is·tra·tive",
   "pos": "adj.",
   "zh": "行政的",
-  "ex": "She handles the administrative work.",
-  "ext": "她負責行政工作。",
+  "ex": "She files forms and keeps records, the administrative work.",
+  "ext": "她歸檔表單、保管紀錄，做行政工作。",
   "level": 2
  },
  {
@@ -24511,10 +24510,10 @@
  {
   "en": "adolescent",
   "syl": "ado·les·cent",
-  "pos": "adj./n.",
+  "pos": "n.",
   "zh": "青少年（的）",
-  "ex": "The adolescent mailed his exam form.",
-  "ext": "那名青少年寄出他的考試表格。",
+  "ex": "The teenage boy, an adolescent, mailed his exam form.",
+  "ext": "那名十幾歲的青少年寄出他的考試表格。",
   "level": 2
  },
  {
@@ -24538,7 +24537,7 @@
  {
   "en": "advocate",
   "syl": "ad·vo·cate",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "提倡、擁護者",
   "ex": "She is an advocate for faster mail.",
   "ext": "她是更快郵遞的提倡者。",
@@ -24592,7 +24591,7 @@
  {
   "en": "alcoholic",
   "syl": "al·co·holic",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "含酒精的、酗酒者",
   "ex": "Mailing alcoholic drinks needs special rules.",
   "ext": "郵寄含酒精飲料需要特殊規定。",
@@ -24601,10 +24600,10 @@
  {
   "en": "alien",
   "syl": "alien",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "外國的、外星的",
-  "ex": "An alien object set off the scanner.",
-  "ext": "一個異常物體觸發了掃描器。",
+  "ex": "The scanner found something that did not belong, an alien object.",
+  "ext": "掃描器找到一個不該出現的異物。",
   "level": 2
  },
  {
@@ -24612,8 +24611,8 @@
   "syl": "al·ler·gic",
   "pos": "adj.",
   "zh": "過敏的",
-  "ex": "Some staff are allergic to dust.",
-  "ext": "有些員工對灰塵過敏。",
+  "ex": "Dust makes them sneeze; some staff are allergic to it.",
+  "ext": "灰塵讓他們打噴嚏，有些員工對它過敏。",
   "level": 2
  },
  {
@@ -24648,8 +24647,8 @@
   "syl": "bald",
   "pos": "adj.",
   "zh": "禿頭的",
-  "ex": "The bald clerk wore a warm cap.",
-  "ext": "那位禿頭櫃員戴著保暖帽。",
+  "ex": "With no hair on his head, the bald clerk wore a cap.",
+  "ext": "頭上沒有頭髮的禿頭櫃員戴著帽子。",
   "level": 2
  },
  {
@@ -24664,7 +24663,7 @@
  {
   "en": "bandage",
   "syl": "ban·dage",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "繃帶",
   "ex": "The first-aid kit holds a bandage.",
   "ext": "急救箱裡有繃帶。",
@@ -24673,7 +24672,7 @@
  {
   "en": "bankrupt",
   "syl": "bank·rupt",
-  "pos": "adj./v./n.",
+  "pos": "adj.",
   "zh": "破產的",
   "ex": "The shop went bankrupt and closed.",
   "ext": "那家店破產關門了。",
@@ -24682,7 +24681,7 @@
  {
   "en": "bargain",
   "syl": "bar·gain",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "討價還價、便宜貨",
   "ex": "The boxes were a real bargain.",
   "ext": "那些箱子真是便宜貨。",
@@ -24745,7 +24744,7 @@
  {
   "en": "blend",
   "syl": "blend",
-  "pos": "v./n.",
+  "pos": "n.",
   "zh": "混合",
   "ex": "The shop sells a special coffee blend.",
   "ext": "這家店賣一種特調咖啡。",
@@ -24763,7 +24762,7 @@
  {
   "en": "blink",
   "syl": "blink",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "眨眼、閃爍",
   "ex": "The scanner light blinks when ready.",
   "ext": "掃描器準備好時燈會閃爍。",
@@ -24772,7 +24771,7 @@
  {
   "en": "bloom",
   "syl": "bloom",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "開花、盛開",
   "ex": "The flowers were in full bloom on arrival.",
   "ext": "花送達時正盛開。",
@@ -24781,7 +24780,7 @@
  {
   "en": "blossom",
   "syl": "blos·som",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "花、開花",
   "ex": "The parcel held cherry blossom seeds.",
   "ext": "包裹裡裝著櫻花種子。",
@@ -24790,7 +24789,7 @@
  {
   "en": "boast",
   "syl": "boast",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "誇耀",
   "ex": "The branch can boast a perfect record.",
   "ext": "這間分局可以誇耀完美的紀錄。",
@@ -24799,7 +24798,7 @@
  {
   "en": "bounce",
   "syl": "bounce",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "彈跳",
   "ex": "The empty box can bounce off the cart.",
   "ext": "空箱子可能會從推車上彈落。",
@@ -24817,7 +24816,7 @@
  {
   "en": "breed",
   "syl": "breed",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "繁殖、品種",
   "ex": "The parcel held food for a rare breed.",
   "ext": "包裹裡裝著稀有品種的飼料。",
@@ -24837,8 +24836,8 @@
   "syl": "broke",
   "pos": "adj.",
   "zh": "身無分文的",
-  "ex": "He was broke until the refund arrived.",
-  "ext": "退款到帳前他身無分文。",
+  "ex": "He had no money at all until the refund arrived, totally broke.",
+  "ext": "退款到帳前他一毛錢都沒有，身無分文。",
   "level": 2
  },
  {
@@ -24855,8 +24854,8 @@
   "syl": "bru·tal",
   "pos": "adj.",
   "zh": "殘酷的、嚴酷的",
-  "ex": "The winter route was brutal and cold.",
-  "ext": "冬天的路線又冷又嚴酷。",
+  "ex": "Ice and freezing wind made the winter route brutal.",
+  "ext": "結冰和刺骨寒風讓冬天的路線十分嚴酷。",
   "level": 2
  },
  {
@@ -24907,7 +24906,7 @@
  {
   "en": "canoe",
   "syl": "ca·noe",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "獨木舟",
   "ex": "The parcel held a small canoe paddle.",
   "ext": "包裹裡裝著一支獨木舟槳。",
@@ -24943,7 +24942,7 @@
  {
   "en": "catalogue",
   "syl": "cat·a·logue",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "目錄",
   "ex": "The shop mailed its product catalogue.",
   "ext": "店家郵寄產品目錄。",
@@ -25006,7 +25005,7 @@
  {
   "en": "chew",
   "syl": "chew",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "咀嚼",
   "ex": "A dog tried to chew the soft parcel.",
   "ext": "一隻狗想啃那件軟包裹。",
@@ -25015,7 +25014,7 @@
  {
   "en": "choke",
   "syl": "choke",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "噎住、阻塞",
   "ex": "Tape can choke the printing machine.",
   "ext": "膠帶可能會卡住印表機。",
@@ -25035,8 +25034,8 @@
   "syl": "cir·cu·lar",
   "pos": "adj.",
   "zh": "圓形的、通知函",
-  "ex": "The office sent a circular to all staff.",
-  "ext": "辦公室向全體員工發了通知函。",
+  "ex": "One notice went out to every worker, a circular to all staff.",
+  "ext": "一份通知發給每位員工，向全體員工發了通知函。",
   "level": 2
  },
  {
@@ -25060,7 +25059,7 @@
  {
   "en": "civilian",
   "syl": "civil·ian",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "平民（的）",
   "ex": "The base also serves civilian mail.",
   "ext": "這個基地也處理平民郵件。",
@@ -25087,7 +25086,7 @@
  {
   "en": "clash",
   "syl": "clash",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "衝突、撞擊",
   "ex": "There was a clash over the schedule.",
   "ext": "排程上發生了衝突。",
@@ -25114,7 +25113,7 @@
  {
   "en": "claw",
   "syl": "claw",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "爪子",
   "ex": "The cat's claw tore the soft box.",
   "ext": "貓爪抓破了軟箱子。",
@@ -25134,8 +25133,8 @@
   "syl": "clum·sy",
   "pos": "adj.",
   "zh": "笨拙的",
-  "ex": "A clumsy drop cracked the glass.",
-  "ext": "笨拙地一摔，玻璃裂了。",
+  "ex": "He fumbled and dropped it; such a clumsy move.",
+  "ext": "他手一滑摔了它，動作真笨拙。",
   "level": 2
  },
  {
@@ -25143,14 +25142,14 @@
   "syl": "coarse",
   "pos": "adj.",
   "zh": "粗糙的",
-  "ex": "The rope was coarse and rough.",
-  "ext": "那條繩子又粗又糙。",
+  "ex": "The rope scraped my hands, so coarse and rough.",
+  "ext": "這條繩子刮著我的手，又粗又糙。",
   "level": 2
  },
  {
   "en": "code",
   "syl": "code",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "代碼、密碼",
   "ex": "Each district has its own postal code.",
   "ext": "每個區都有自己的郵遞區號。",
@@ -25159,7 +25158,7 @@
  {
   "en": "collapse",
   "syl": "col·lapse",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "倒塌、崩潰",
   "ex": "The wet box began to collapse.",
   "ext": "濕箱子開始塌陷。",
@@ -25348,10 +25347,10 @@
  {
   "en": "conservative",
   "syl": "con·ser·va·tive",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "保守的、保守派",
-  "ex": "She made a conservative time estimate.",
-  "ext": "她做了保守的時間估計。",
+  "ex": "She guessed on the safe, low side, a conservative time estimate.",
+  "ext": "她往保守、偏低的方向估計，做了保守的時間估計。",
   "level": 2
  },
  {
@@ -25413,8 +25412,8 @@
   "syl": "con·tin·u·ous",
   "pos": "adj.",
   "zh": "連續的、不間斷的",
-  "ex": "The belt runs in a continuous loop.",
-  "ext": "輸送帶不間斷地運轉。",
+  "ex": "It never stops or pauses; the belt runs in a continuous loop.",
+  "ext": "它從不停下或暫停，輸送帶不間斷地運轉。",
   "level": 2
  },
  {
@@ -25456,10 +25455,10 @@
  {
   "en": "cooperative",
   "syl": "co·op·er·a·tive",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "合作的、合作社",
-  "ex": "A cooperative team finishes faster.",
-  "ext": "團結合作的團隊完成得更快。",
+  "ex": "When everyone helps each other, a cooperative team finishes faster.",
+  "ext": "當大家互相幫忙，團結合作的團隊完成得更快。",
   "level": 2
  },
  {
@@ -25474,7 +25473,7 @@
  {
   "en": "copper",
   "syl": "cop·per",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "銅",
   "ex": "The parcel held a heavy copper pipe.",
   "ext": "包裹裡裝著一根沉重的銅管。",
@@ -25519,7 +25518,7 @@
  {
   "en": "crack",
   "syl": "crack",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "裂縫、破裂",
   "ex": "There was a crack in the glass jar.",
   "ext": "玻璃罐上有一道裂縫。",
@@ -25602,14 +25601,14 @@
   "syl": "crunchy",
   "pos": "adj.",
   "zh": "脆的",
-  "ex": "The crunchy snacks arrived unbroken.",
-  "ext": "脆的點心送達時沒碎。",
+  "ex": "You can hear them crack with each bite, very crunchy.",
+  "ext": "每咬一口都聽得到脆響，非常脆。",
   "level": 2
  },
  {
   "en": "cube",
   "syl": "cube",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "立方體、方塊",
   "ex": "The box was a perfect cube.",
   "ext": "那個箱子是個完美的立方體。",
@@ -25618,7 +25617,7 @@
  {
   "en": "cue",
   "syl": "cue",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "提示、信號",
   "ex": "The bell is the cue to open the doors.",
   "ext": "鈴聲是開門的信號。",
@@ -25627,10 +25626,10 @@
  {
   "en": "cunning",
   "syl": "cun·ning",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "狡猾的",
-  "ex": "A cunning thief tried to swap labels.",
-  "ext": "一個狡猾的小偷想調換標籤。",
+  "ex": "The sly thief tricked the staff, very cunning.",
+  "ext": "那個狡猾的小偷騙過了員工，很奸詐。",
   "level": 2
  },
  {
@@ -25645,7 +25644,7 @@
  {
   "en": "curl",
   "syl": "curl",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "捲曲",
   "ex": "Damp air made the labels curl.",
   "ext": "潮濕的空氣讓標籤捲起。",
@@ -25654,7 +25653,7 @@
  {
   "en": "curse",
   "syl": "curse",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "詛咒、咒罵",
   "ex": "A long line felt like a curse that day.",
   "ext": "那天的長隊像個詛咒。",
@@ -25663,7 +25662,7 @@
  {
   "en": "curve",
   "syl": "curve",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "曲線、彎道",
   "ex": "The truck slowed at the sharp curve.",
   "ext": "卡車在急彎處減速。",
@@ -25672,7 +25671,7 @@
  {
   "en": "cushion",
   "syl": "cush·ion",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "墊子、緩衝",
   "ex": "Foam acts as a cushion for fragile goods.",
   "ext": "泡棉作為易碎品的緩衝。",
@@ -25681,10 +25680,10 @@
  {
   "en": "damp",
   "syl": "damp",
-  "pos": "adj./n./v.",
+  "pos": "adj.",
   "zh": "潮濕的",
-  "ex": "The damp box began to tear.",
-  "ext": "潮濕的箱子開始破裂。",
+  "ex": "Rain made the box damp, and the wet paper began to tear.",
+  "ext": "雨水讓箱子變得潮濕，濕掉的紙開始破裂。",
   "level": 2
  },
  {
@@ -25728,14 +25727,14 @@
   "syl": "del·i·cate",
   "pos": "adj.",
   "zh": "精緻的、易碎的",
-  "ex": "Handle the delicate vase with care.",
-  "ext": "小心處理這個易碎的花瓶。",
+  "ex": "The vase breaks easily, so handle the delicate vase with care.",
+  "ext": "這個花瓶很容易碎，請小心處理這個易碎的花瓶。",
   "level": 2
  },
  {
   "en": "demand",
   "syl": "de·mand",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "需求、要求",
   "ex": "Demand for parcels rises every winter.",
   "ext": "包裹需求每年冬天上升。",
@@ -25755,17 +25754,17 @@
   "syl": "dense",
   "pos": "adj.",
   "zh": "密集的、濃密的",
-  "ex": "The dense fog slowed the trucks.",
-  "ext": "濃霧拖慢了卡車。",
+  "ex": "The fog was so thick we saw nothing, very dense.",
+  "ext": "霧濃到我們什麼都看不見，非常濃密。",
   "level": 2
  },
  {
   "en": "dependent",
   "syl": "de·pen·dent",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "依賴的、受撫養者",
-  "ex": "Fast delivery is dependent on good roads.",
-  "ext": "快速遞送仰賴良好的道路。",
+  "ex": "Without good roads it fails; fast delivery is dependent on them.",
+  "ext": "沒有好的道路就辦不到，快速遞送仰賴良好的道路。",
   "level": 2
  },
  {
@@ -25773,8 +25772,8 @@
   "syl": "des·per·ate",
   "pos": "adj.",
   "zh": "絕望的、拼命的",
-  "ex": "He was desperate to find the lost parcel.",
-  "ext": "他拼命想找到遺失的包裹。",
+  "ex": "He searched everywhere all night, desperate to find the parcel.",
+  "ext": "他整夜到處翻找，拼命想找到包裹。",
   "level": 2
  },
  {
@@ -25789,7 +25788,7 @@
  {
   "en": "detective",
   "syl": "de·tec·tive",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "偵探",
   "ex": "Tracking a lost parcel is detective work.",
   "ext": "追查遺失包裹是偵探工作。",
@@ -25825,7 +25824,7 @@
  {
   "en": "diagram",
   "syl": "di·a·gram",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "圖表、示意圖",
   "ex": "The manual has a diagram of the route.",
   "ext": "手冊裡有路線的示意圖。",
@@ -25843,7 +25842,7 @@
  {
   "en": "digest",
   "syl": "di·gest",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "消化、摘要",
   "ex": "It takes time to digest the new rules.",
   "ext": "消化新規定需要時間。",
@@ -25897,7 +25896,7 @@
  {
   "en": "disadvantage",
   "syl": "dis·ad·van·tage",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "缺點、不利",
   "ex": "Slow roads are a disadvantage for rural routes.",
   "ext": "路況差是鄉村路線的不利條件。",
@@ -25906,7 +25905,7 @@
  {
   "en": "discipline",
   "syl": "dis·ci·pline",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "紀律、訓練",
   "ex": "The team works with great discipline.",
   "ext": "團隊以高度紀律工作。",
@@ -25915,7 +25914,7 @@
  {
   "en": "disguise",
   "syl": "dis·guise",
-  "pos": "v./n.",
+  "pos": "n.",
   "zh": "偽裝",
   "ex": "A thief used a disguise to enter.",
   "ext": "一個小偷用偽裝混了進來。",
@@ -25924,7 +25923,7 @@
  {
   "en": "disgust",
   "syl": "dis·gust",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "厭惡、噁心",
   "ex": "The smell from the box caused disgust.",
   "ext": "箱子的氣味令人作嘔。",
@@ -25942,7 +25941,7 @@
  {
   "en": "disorder",
   "syl": "dis·or·der",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "混亂、失調",
   "ex": "The strike left the depot in disorder.",
   "ext": "罷工讓集散站陷入混亂。",
@@ -25953,8 +25952,8 @@
   "syl": "dis·tin·guished",
   "pos": "adj.",
   "zh": "傑出的、卓越的",
-  "ex": "A distinguished guest visited the branch.",
-  "ext": "一位傑出的賓客參訪分局。",
+  "ex": "A respected, high-ranking distinguished guest visited the branch.",
+  "ext": "一位備受敬重的傑出賓客參訪分局。",
   "level": 2
  },
  {
@@ -25987,7 +25986,7 @@
  {
   "en": "divorce",
   "syl": "di·vorce",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "離婚",
   "ex": "The form is used to report a divorce.",
   "ext": "這張表格用來申報離婚。",
@@ -25996,7 +25995,7 @@
  {
   "en": "dodge",
   "syl": "dodge",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "閃避",
   "ex": "The driver had to dodge a fallen branch.",
   "ext": "司機得閃避一根倒落的樹枝。",
@@ -26007,14 +26006,14 @@
   "syl": "dom·i·nant",
   "pos": "adj.",
   "zh": "主要的、佔優勢的",
-  "ex": "Parcels are now the dominant kind of mail.",
-  "ext": "包裹如今是最主要的郵件種類。",
+  "ex": "Parcels now outnumber all letters, the dominant kind of mail.",
+  "ext": "包裹的數量現在超過所有信件，是最主要的郵件種類。",
   "level": 2
  },
  {
   "en": "draft",
   "syl": "draft",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "草稿、徵召",
   "ex": "She wrote a draft of the new notice.",
   "ext": "她寫了新通知的草稿。",
@@ -26023,7 +26022,7 @@
  {
   "en": "dread",
   "syl": "dread",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "畏懼、害怕",
   "ex": "Carriers dread the icy winter roads.",
   "ext": "郵務士害怕結冰的冬路。",
@@ -26032,7 +26031,7 @@
  {
   "en": "drift",
   "syl": "drift",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "漂流、飄移",
   "ex": "Snow began to drift across the road.",
   "ext": "雪開始在路上堆積飄移。",
@@ -26041,7 +26040,7 @@
  {
   "en": "drill",
   "syl": "drill",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "鑽、操練",
   "ex": "Staff did a fire drill at noon.",
   "ext": "員工中午做了消防演習。",
@@ -26061,8 +26060,8 @@
   "syl": "durable",
   "pos": "adj.",
   "zh": "耐用的",
-  "ex": "Choose a durable box for heavy goods.",
-  "ext": "重物選耐用的箱子。",
+  "ex": "Pick a tough box that won't break, a durable one.",
+  "ext": "挑一個不會破、耐用的堅固箱子。",
   "level": 2
  },
  {
@@ -26077,7 +26076,7 @@
  {
   "en": "dye",
   "syl": "dye",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "染料、染色",
   "ex": "The parcel held bottles of cloth dye.",
   "ext": "包裹裡裝著幾瓶布料染料。",
@@ -26095,10 +26094,10 @@
  {
   "en": "earnest",
   "syl": "earnest",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "認真的、誠摯的",
-  "ex": "She made an earnest effort to help.",
-  "ext": "她認真地努力幫忙。",
+  "ex": "She tried sincerely and hard, an earnest effort to help.",
+  "ext": "她真誠又努力地嘗試，認真地想幫忙。",
   "level": 2
  },
  {
@@ -26140,10 +26139,10 @@
  {
   "en": "elastic",
   "syl": "elas·tic",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "有彈性的、鬆緊帶",
-  "ex": "An elastic band holds the letters together.",
-  "ext": "一條鬆緊帶把信綁在一起。",
+  "ex": "A stretchy band that snaps back, an elastic band, holds the letters.",
+  "ext": "一條會回彈、有彈性的鬆緊帶把信綁在一起。",
   "level": 2
  },
  {
@@ -26160,8 +26159,8 @@
   "syl": "el·e·gant",
   "pos": "adj.",
   "zh": "優雅的",
-  "ex": "The gift came in an elegant box.",
-  "ext": "禮物裝在一個優雅的盒子裡。",
+  "ex": "The box looked stylish and refined, very elegant.",
+  "ext": "那個盒子看起來時尚精緻，非常優雅。",
   "level": 2
  },
  {
@@ -26169,8 +26168,8 @@
   "syl": "el·e·men·tary",
   "pos": "adj.",
   "zh": "基礎的、初級的",
-  "ex": "New staff learn the elementary rules first.",
-  "ext": "新員工先學基礎規則。",
+  "ex": "Beginners start with the simplest, elementary rules first.",
+  "ext": "新手先從最簡單、最基礎的規則學起。",
   "level": 2
  },
  {
@@ -26239,7 +26238,7 @@
  {
   "en": "ethnic",
   "syl": "eth·nic",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "種族的、民族的",
   "ex": "We respect every ethnic group.",
   "ext": "我們尊重每個族群。",
@@ -26259,14 +26258,14 @@
   "syl": "even·tu·al",
   "pos": "adj.",
   "zh": "最終的",
-  "ex": "The eventual delivery took three days.",
-  "ext": "最終的遞送花了三天。",
+  "ex": "After many delays, the eventual delivery took three days.",
+  "ext": "歷經多次延誤，最終的遞送花了三天。",
   "level": 2
  },
  {
   "en": "evidence",
   "syl": "ev·i·dence",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "證據",
   "ex": "The receipt is evidence the parcel was sent.",
   "ext": "收據是包裹已寄出的證據。",
@@ -26284,7 +26283,7 @@
  {
   "en": "exhaust",
   "syl": "ex·haust",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "耗盡、廢氣",
   "ex": "The long shift can exhaust the staff.",
   "ext": "長班會讓員工精疲力盡。",
@@ -26329,7 +26328,7 @@
  {
   "en": "explosive",
   "syl": "ex·plo·sive",
-  "pos": "adj./n.",
+  "pos": "n./adj.",
   "zh": "爆炸物、爆炸性的",
   "ex": "Mailing an explosive is strictly banned.",
   "ext": "郵寄爆炸物是嚴格禁止的。",
@@ -26376,8 +26375,8 @@
   "syl": "faith·ful",
   "pos": "adj.",
   "zh": "忠實的",
-  "ex": "He is a faithful customer of the branch.",
-  "ext": "他是分局的忠實顧客。",
+  "ex": "He has come here for twenty years, a faithful customer.",
+  "ext": "他來這裡二十年了，是忠實的顧客。",
   "level": 2
  },
  {
@@ -26394,8 +26393,8 @@
   "syl": "fan·tas·tic",
   "pos": "adj.",
   "zh": "極好的、奇妙的",
-  "ex": "The team did a fantastic job today.",
-  "ext": "團隊今天表現極好。",
+  "ex": "The results amazed us; the team did a fantastic job.",
+  "ext": "成果令我們驚艷，團隊今天表現極好。",
   "level": 2
  },
  {
@@ -26421,14 +26420,14 @@
   "syl": "fa·tal",
   "pos": "adj.",
   "zh": "致命的",
-  "ex": "A fatal error would lose the whole batch.",
-  "ext": "一個致命的錯誤會弄丟整批。",
+  "ex": "One such mistake destroys everything, a fatal error.",
+  "ext": "這樣一個錯誤會毀掉一切，是致命的錯誤。",
   "level": 2
  },
  {
   "en": "fax",
   "syl": "fax",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "傳真",
   "ex": "The office still sends some forms by fax.",
   "ext": "辦公室仍用傳真寄送一些表格。",
@@ -26437,7 +26436,7 @@
  {
   "en": "feast",
   "syl": "feast",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "盛宴、飽餐",
   "ex": "The team shared a feast after the rush.",
   "ext": "忙完後團隊一起飽餐一頓。",
@@ -26448,8 +26447,8 @@
   "syl": "fer·tile",
   "pos": "adj.",
   "zh": "肥沃的",
-  "ex": "The fertile farm ships goods all year.",
-  "ext": "肥沃的農場全年運送貨物。",
+  "ex": "Crops grow well in the rich soil of the fertile farm.",
+  "ext": "肥沃農場的沃土讓作物長得很好。",
   "level": 2
  },
  {
@@ -26457,8 +26456,8 @@
   "syl": "fierce",
   "pos": "adj.",
   "zh": "兇猛的、激烈的",
-  "ex": "A fierce dog guarded the gate.",
-  "ext": "一隻兇猛的狗看守著大門。",
+  "ex": "The dog barked and bared its teeth, very fierce.",
+  "ext": "那隻狗狂吠並露出牙齒，非常兇猛。",
   "level": 2
  },
  {
@@ -26502,14 +26501,14 @@
   "syl": "flu·ent",
   "pos": "adj.",
   "zh": "流利的",
-  "ex": "A fluent clerk helps foreign customers.",
-  "ext": "口語流利的櫃員能幫外國顧客。",
+  "ex": "She speaks English smoothly, a fluent clerk.",
+  "ext": "她英文說得流暢，是口語流利的櫃員。",
   "level": 2
  },
  {
   "en": "flush",
   "syl": "flush",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "沖洗、臉紅",
   "ex": "She flushed when she found the error.",
   "ext": "發現錯誤時她臉紅了。",
@@ -26518,7 +26517,7 @@
  {
   "en": "foam",
   "syl": "foam",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "泡棉、泡沫",
   "ex": "Use foam to protect the glass.",
   "ext": "用泡棉保護玻璃。",
@@ -26565,14 +26564,14 @@
   "syl": "for·tu·nate",
   "pos": "adj.",
   "zh": "幸運的",
-  "ex": "We were fortunate to avoid the storm.",
-  "ext": "我們很幸運避開了暴風雨。",
+  "ex": "By luck we missed the storm; we were fortunate.",
+  "ext": "我們僥倖避開了暴風雨，很幸運。",
   "level": 2
  },
  {
   "en": "fossil",
   "syl": "fos·sil",
-  "pos": "n./adj.",
+  "pos": "n.",
   "zh": "化石",
   "ex": "The museum mailed a small fossil.",
   "ext": "博物館寄出一塊小化石。",
@@ -26599,7 +26598,7 @@
  {
   "en": "frame",
   "syl": "frame",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "框架、相框",
   "ex": "Wrap the photo frame with care.",
   "ext": "小心包裝相框。",
@@ -26626,7 +26625,7 @@
  {
   "en": "frost",
   "syl": "frost",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "霜",
   "ex": "Frost covered the early morning parcels.",
   "ext": "霜覆蓋了清晨的包裹。",
@@ -26635,7 +26634,7 @@
  {
   "en": "frown",
   "syl": "frown",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "皺眉",
   "ex": "The customer began to frown at the delay.",
   "ext": "顧客對延誤皺起眉頭。",
@@ -26682,8 +26681,8 @@
   "syl": "fu·ri·ous",
   "pos": "adj.",
   "zh": "狂怒的",
-  "ex": "The customer was furious about the loss.",
-  "ext": "顧客對遺失感到狂怒。",
+  "ex": "He shouted and slammed the desk, absolutely furious.",
+  "ext": "他大吼並猛拍桌子，氣得火冒三丈。",
   "level": 2
  },
  {
@@ -26716,7 +26715,7 @@
  {
   "en": "gaze",
   "syl": "gaze",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "凝視",
   "ex": "She fixed her gaze on the address.",
   "ext": "她凝視著地址。",
@@ -26772,8 +26771,8 @@
   "syl": "gift·ed",
   "pos": "adj.",
   "zh": "有天賦的",
-  "ex": "The gifted clerk learned the system fast.",
-  "ext": "有天賦的櫃員很快學會系統。",
+  "ex": "She has a natural talent and learns fast, a gifted clerk.",
+  "ext": "她天生有才華又學得快，是有天賦的櫃員。",
   "level": 2
  },
  {
@@ -26781,14 +26780,14 @@
   "syl": "gi·gan·tic",
   "pos": "adj.",
   "zh": "巨大的",
-  "ex": "A gigantic parcel filled the whole cart.",
-  "ext": "一個巨大的包裹塞滿整台推車。",
+  "ex": "The parcel was taller than a person, simply gigantic.",
+  "ext": "這個包裹比一個人還高，簡直巨大無比。",
   "level": 2
  },
  {
   "en": "giggle",
   "syl": "gig·gle",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "咯咯笑",
   "ex": "The child gave a giggle at the toy.",
   "ext": "孩子看到玩具咯咯笑。",
@@ -26806,7 +26805,7 @@
  {
   "en": "glimpse",
   "syl": "glimpse",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "瞥見",
   "ex": "She caught a glimpse of the truck leaving.",
   "ext": "她瞥見卡車離開。",
@@ -26826,8 +26825,8 @@
   "syl": "glo·ri·ous",
   "pos": "adj.",
   "zh": "光榮的、輝煌的",
-  "ex": "It was a glorious day for the team.",
-  "ext": "對團隊來說那是光榮的一天。",
+  "ex": "They won the top prize; a glorious day for the team.",
+  "ext": "他們贏得最高榮譽，對團隊是光榮的一天。",
   "level": 2
  },
  {
@@ -26842,7 +26841,7 @@
  {
   "en": "grace",
   "syl": "grace",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "優雅、恩典",
   "ex": "She handled the complaint with grace.",
   "ext": "她優雅地處理了投訴。",
@@ -26853,8 +26852,8 @@
   "syl": "gra·cious",
   "pos": "adj.",
   "zh": "親切的、有禮的",
-  "ex": "The gracious clerk thanked every customer.",
-  "ext": "親切的櫃員感謝每位顧客。",
+  "ex": "The clerk bowed and warmly thanked every customer, so gracious.",
+  "ext": "櫃員鞠躬並溫暖地感謝每位顧客，十分有禮。",
   "level": 2
  },
  {
@@ -26887,7 +26886,7 @@
  {
   "en": "graph",
   "syl": "graph",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "圖表",
   "ex": "The report shows a graph of daily parcels.",
   "ext": "報告顯示每日包裹的圖表。",
@@ -26898,8 +26897,8 @@
   "syl": "grate·ful",
   "pos": "adj.",
   "zh": "感激的",
-  "ex": "We are grateful for your patience.",
-  "ext": "我們感激你的耐心。",
+  "ex": "Thank you for waiting; we are grateful for your patience.",
+  "ext": "謝謝您的等候，我們很感激您的耐心。",
   "level": 2
  },
  {
@@ -26941,7 +26940,7 @@
  {
   "en": "grind",
   "syl": "grind",
-  "pos": "v./n.",
+  "pos": "n.",
   "zh": "磨碎、苦差事",
   "ex": "The holiday rush is a daily grind.",
   "ext": "假期高峰是每天的苦差事。",
@@ -26988,14 +26987,14 @@
   "syl": "ha·bit·u·al",
   "pos": "adj.",
   "zh": "習慣性的",
-  "ex": "Checking the address is a habitual step.",
-  "ext": "核對地址是個習慣性的步驟。",
+  "ex": "She does it without thinking every time, a habitual step.",
+  "ext": "她每次都不假思索地做，是個習慣性的步驟。",
   "level": 2
  },
  {
   "en": "halt",
   "syl": "halt",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "停止",
   "ex": "The strike brought delivery to a halt.",
   "ext": "罷工使遞送停擺。",
@@ -27033,8 +27032,8 @@
   "syl": "harsh",
   "pos": "adj.",
   "zh": "嚴酷的、刺耳的",
-  "ex": "The harsh wind chilled the carrier.",
-  "ext": "刺骨的寒風凍著郵務士。",
+  "ex": "The biting wind was so harsh it stung the carrier's face.",
+  "ext": "刺骨的風十分嚴酷，刺痛了郵務士的臉。",
   "level": 2
  },
  {
@@ -27085,7 +27084,7 @@
  {
   "en": "herd",
   "syl": "herd",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "獸群",
   "ex": "A herd of cattle blocked the road.",
   "ext": "一群牛擋住了路。",
@@ -27121,7 +27120,7 @@
  {
   "en": "honeymoon",
   "syl": "hon·ey·moon",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "蜜月",
   "ex": "The couple mailed honeymoon postcards.",
   "ext": "這對夫妻寄出蜜月明信片。",
@@ -27130,7 +27129,7 @@
  {
   "en": "hook",
   "syl": "hook",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "鉤子",
   "ex": "Hang the raincoat on the hook.",
   "ext": "把雨衣掛在鉤子上。",
@@ -27157,7 +27156,7 @@
  {
   "en": "hose",
   "syl": "hose",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "軟管、水管",
   "ex": "The parcel held a garden hose.",
   "ext": "包裹裡裝著一條花園水管。",
@@ -27166,7 +27165,7 @@
  {
   "en": "household",
   "syl": "house·hold",
-  "pos": "n.",
+  "pos": "n./adj.",
   "zh": "家庭、家用的",
   "ex": "Every household on the street gets mail.",
   "ext": "街上每一戶都收到郵件。",
@@ -27202,7 +27201,7 @@
  {
   "en": "hush",
   "syl": "hush",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "安靜、噓",
   "ex": "A hush fell over the early branch.",
   "ext": "清晨的分局陷入一片寂靜。",
@@ -27256,7 +27255,7 @@
  {
   "en": "idle",
   "syl": "idle",
-  "pos": "adj./v.",
+  "pos": "adj.",
   "zh": "閒置的、無所事事",
   "ex": "The cart sat idle in the corner.",
   "ext": "推車閒置在角落。",
@@ -27303,8 +27302,8 @@
   "syl": "imag·i·na·tive",
   "pos": "adj.",
   "zh": "富想像力的",
-  "ex": "She found an imaginative way to sort faster.",
-  "ext": "她想到富創意的方法加快分信。",
+  "ex": "She dreamed up a creative, imaginative way to sort faster.",
+  "ext": "她想出富創意、富想像力的方法加快分信。",
   "level": 2
  },
  {
@@ -27429,8 +27428,8 @@
   "syl": "in·flu·en·tial",
   "pos": "adj.",
   "zh": "有影響力的",
-  "ex": "An influential customer praised the branch.",
-  "ext": "一位有影響力的顧客讚揚了分局。",
+  "ex": "A customer whose words sway many people, very influential, praised the branch.",
+  "ext": "一位言論能左右眾人的有影響力顧客讚揚了分局。",
   "level": 2
  },
  {
@@ -27454,7 +27453,7 @@
  {
   "en": "initial",
   "syl": "ini·tial",
-  "pos": "adj./n./v.",
+  "pos": "adj.",
   "zh": "最初的、起首字母",
   "ex": "Write your initial next to each change.",
   "ext": "在每處改動旁寫上你的姓名縮寫。",
@@ -27481,7 +27480,7 @@
  {
   "en": "insert",
   "syl": "in·sert",
-  "pos": "v./n.",
+  "pos": "v.",
   "zh": "插入、放入",
   "ex": "Insert the form into the envelope.",
   "ext": "把表格放入信封。",
@@ -27526,7 +27525,7 @@
  {
   "en": "insult",
   "syl": "in·sult",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "侮辱",
   "ex": "Never insult a difficult customer.",
   "ext": "絕不要侮辱難纏的顧客。",
@@ -27535,7 +27534,7 @@
  {
   "en": "intellectual",
   "syl": "in·tel·lec·tu·al",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "知識的、知識分子",
   "ex": "The parcel held intellectual journals.",
   "ext": "包裹裡裝著學術期刊。",
@@ -27555,8 +27554,8 @@
   "syl": "in·tense",
   "pos": "adj.",
   "zh": "強烈的、激烈的",
-  "ex": "There was intense pressure before the holiday.",
-  "ext": "假期前壓力很大。",
+  "ex": "The stress grew almost unbearable, intense pressure before the holiday.",
+  "ext": "壓力大到幾乎難以承受，假期前壓力極大。",
   "level": 2
  },
  {
@@ -27616,10 +27615,10 @@
  {
   "en": "intermediate",
   "syl": "in·ter·me·di·ate",
-  "pos": "adj./n./v.",
+  "pos": "adj.",
   "zh": "中級的、中間的",
-  "ex": "He passed the intermediate English exam.",
-  "ext": "他通過了中級英文考試。",
+  "ex": "He moved up from basic to the middle, intermediate level.",
+  "ext": "他從初級升到中間的中級程度。",
   "level": 2
  },
  {
@@ -27634,7 +27633,7 @@
  {
   "en": "intimate",
   "syl": "in·ti·mate",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "親密的",
   "ex": "The letters shared intimate family news.",
   "ext": "那些信分享親密的家庭近況。",
@@ -27717,8 +27716,8 @@
   "syl": "keen",
   "pos": "adj.",
   "zh": "熱衷的、敏銳的",
-  "ex": "She is keen to pass the postal exam.",
-  "ext": "她熱切想通過郵政考試。",
+  "ex": "She studies hard every day, keen to pass the exam.",
+  "ext": "她每天用功讀書，熱切想通過考試。",
   "level": 2
  },
  {
@@ -27751,7 +27750,7 @@
  {
   "en": "labor",
   "syl": "la·bor",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "勞動、勞工",
   "ex": "Sorting heavy mail is hard labor.",
   "ext": "分重郵件是吃力的勞動。",
@@ -27769,7 +27768,7 @@
  {
   "en": "lag",
   "syl": "lag",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "落後、延遲",
   "ex": "There was a short lag in the tracking system.",
   "ext": "追蹤系統有短暫的延遲。",
@@ -27787,7 +27786,7 @@
  {
   "en": "landscape",
   "syl": "land·scape",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "風景、景觀",
   "ex": "The rural route has a beautiful landscape.",
   "ext": "鄉村路線景色優美。",
@@ -27825,14 +27824,14 @@
   "syl": "learned",
   "pos": "adj.",
   "zh": "有學問的、博學的",
-  "ex": "The learned clerk knows every rule.",
-  "ext": "這位博學的櫃員熟知每條規則。",
+  "ex": "After years of study, the learned clerk knows every rule.",
+  "ext": "經過多年鑽研，這位博學的櫃員熟知每條規則。",
   "level": 2
  },
  {
   "en": "lecture",
   "syl": "lec·ture",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "演講、講課",
   "ex": "Staff attended a safety lecture.",
   "ext": "員工參加了安全講座。",
@@ -27859,10 +27858,10 @@
  {
   "en": "leisurely",
   "syl": "leisure·ly",
-  "pos": "adj./adv.",
+  "pos": "adj.",
   "zh": "悠閒的",
-  "ex": "He took a leisurely walk between routes.",
-  "ext": "他在兩趟路線間悠閒地散步。",
+  "ex": "In no hurry at all, he took a slow, leisurely walk.",
+  "ext": "他一點也不趕，悠閒地慢慢散步。",
   "level": 2
  },
  {
@@ -27942,8 +27941,8 @@
   "syl": "lit·er·ary",
   "pos": "adj.",
   "zh": "文學的",
-  "ex": "The parcel held a literary magazine.",
-  "ext": "包裹裡裝著一本文學雜誌。",
+  "ex": "The magazine was full of poems and novels, a literary magazine.",
+  "ext": "那本雜誌滿是詩和小說，是文學雜誌。",
   "level": 2
  },
  {
@@ -27978,8 +27977,8 @@
   "syl": "log·i·cal",
   "pos": "adj.",
   "zh": "合邏輯的",
-  "ex": "It is logical to weigh the parcel first.",
-  "ext": "先秤包裹是合理的。",
+  "ex": "Each step follows the last, so the plan is logical.",
+  "ext": "每一步都接著上一步，所以這個計畫合邏輯。",
   "level": 2
  },
  {
@@ -27987,8 +27986,8 @@
   "syl": "lousy",
   "pos": "adj.",
   "zh": "糟糕的",
-  "ex": "The weather was lousy on the early route.",
-  "ext": "早班路線的天氣很糟。",
+  "ex": "Cold rain ruined the whole morning; the weather was lousy.",
+  "ext": "冰冷的雨毀了整個早上，天氣很糟。",
   "level": 2
  },
  {
@@ -28014,8 +28013,8 @@
   "syl": "mag·net·ic",
   "pos": "adj.",
   "zh": "磁性的",
-  "ex": "The scanner reads a magnetic strip.",
-  "ext": "掃描器讀取磁條。",
+  "ex": "The black strip holds data like a magnet, a magnetic strip.",
+  "ext": "那條黑色條紋像磁鐵般存資料，是磁條。",
   "level": 2
  },
  {
@@ -28075,10 +28074,10 @@
  {
   "en": "maximum",
   "syl": "max·i·mum",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "最大的、最大量",
-  "ex": "Each parcel has a maximum weight.",
-  "ext": "每件包裹有最大重量。",
+  "ex": "It may not weigh more than the maximum weight allowed.",
+  "ext": "它的重量不得超過容許的最大重量。",
   "level": 2
  },
  {
@@ -28113,14 +28112,14 @@
   "syl": "me·chan·i·cal",
   "pos": "adj.",
   "zh": "機械的",
-  "ex": "A mechanical fault stopped the belt.",
-  "ext": "機械故障讓輸送帶停了。",
+  "ex": "A broken part in the machine, a mechanical fault, stopped the belt.",
+  "ext": "機器裡一個零件壞了，這個機械故障讓輸送帶停了。",
   "level": 2
  },
  {
   "en": "memorial",
   "syl": "memo·ri·al",
-  "pos": "adj./n.",
+  "pos": "n./adj.",
   "zh": "紀念的、紀念碑",
   "ex": "The route passes a war memorial.",
   "ext": "這條路線經過一座戰爭紀念碑。",
@@ -28149,8 +28148,8 @@
   "syl": "mere",
   "pos": "adj.",
   "zh": "僅僅的",
-  "ex": "It was a mere two-minute delay.",
-  "ext": "那只是短短兩分鐘的延誤。",
+  "ex": "It cost us almost nothing, a mere two-minute delay.",
+  "ext": "它幾乎沒造成損失，只是短短兩分鐘的延誤。",
   "level": 2
  },
  {
@@ -28176,8 +28175,8 @@
   "syl": "messy",
   "pos": "adj.",
   "zh": "凌亂的",
-  "ex": "The desk was messy after the rush.",
-  "ext": "忙完後桌面很凌亂。",
+  "ex": "Papers lay everywhere; the desk was messy.",
+  "ext": "紙張散落一地，桌面很凌亂。",
   "level": 2
  },
  {
@@ -28194,14 +28193,14 @@
   "syl": "mild",
   "pos": "adj.",
   "zh": "溫和的",
-  "ex": "The weather was mild on the route today.",
-  "ext": "今天路線上天氣溫和。",
+  "ex": "Not too hot, not too cold; the weather was mild today.",
+  "ext": "不太熱也不太冷，今天天氣溫和。",
   "level": 2
  },
  {
   "en": "mill",
   "syl": "mill",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "磨坊、工廠",
   "ex": "The flour mill ships bags by truck.",
   "ext": "麵粉廠用卡車運送一袋袋麵粉。",
@@ -28237,10 +28236,10 @@
  {
   "en": "minimum",
   "syl": "min·i·mum",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "最小的、最低限度",
-  "ex": "There is a minimum charge per parcel.",
-  "ext": "每件包裹有最低收費。",
+  "ex": "You pay at least the minimum charge, even for a tiny parcel.",
+  "ext": "即使是小包裹，你至少要付最低收費。",
   "level": 2
  },
  {
@@ -28302,8 +28301,8 @@
   "syl": "mod·er·ate",
   "pos": "adj.",
   "zh": "適度的、溫和的",
-  "ex": "Keep a moderate pace on the route.",
-  "ext": "在路線上保持適度的步調。",
+  "ex": "Not too fast, not too slow; keep a moderate pace.",
+  "ext": "不太快也不太慢，保持適中的步調。",
   "level": 2
  },
  {
@@ -28311,8 +28310,8 @@
   "syl": "mod·est",
   "pos": "adj.",
   "zh": "謙虛的、樸素的",
-  "ex": "She is modest about her record.",
-  "ext": "她對自己的紀錄很謙虛。",
+  "ex": "She plays down her success, modest about her record.",
+  "ext": "她淡化自己的成就，對紀錄很謙虛。",
   "level": 2
  },
  {
@@ -28365,8 +28364,8 @@
   "syl": "moun·tain·ous",
   "pos": "adj.",
   "zh": "多山的",
-  "ex": "Mail reaches the mountainous villages.",
-  "ext": "郵件送到多山的村莊。",
+  "ex": "High peaks surround the area; mail reaches the mountainous villages.",
+  "ext": "高峰環繞這一帶，郵件送到多山的村莊。",
   "level": 2
  },
  {
@@ -28374,8 +28373,8 @@
   "syl": "mud·dy",
   "pos": "adj.",
   "zh": "泥濘的",
-  "ex": "The muddy road slowed the truck.",
-  "ext": "泥濘的路拖慢了卡車。",
+  "ex": "Rain turned the path to mud; the muddy road slowed the truck.",
+  "ext": "雨把路變成爛泥，泥濘的路拖慢了卡車。",
   "level": 2
  },
  {
@@ -28408,7 +28407,7 @@
  {
   "en": "murmur",
   "syl": "mur·mur",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "低語、私語",
   "ex": "A murmur ran through the waiting line.",
   "ext": "一陣低語在等候的隊伍中傳開。",
@@ -28428,8 +28427,8 @@
   "syl": "mys·te·ri·ous",
   "pos": "adj.",
   "zh": "神秘的",
-  "ex": "A mysterious box arrived with no sender.",
-  "ext": "一個沒有寄件人的神秘箱子送到了。",
+  "ex": "No one knows who sent it; a mysterious box arrived.",
+  "ext": "沒人知道是誰寄的，一個神秘的箱子送到了。",
   "level": 2
  },
  {
@@ -28480,10 +28479,10 @@
  {
   "en": "noble",
   "syl": "no·ble",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "高貴的、貴族",
-  "ex": "Serving others is a noble job.",
-  "ext": "服務他人是高尚的工作。",
+  "ex": "Helping people selflessly makes it a noble job.",
+  "ext": "無私地幫助他人，使它成為高尚的工作。",
   "level": 2
  },
  {
@@ -28536,8 +28535,8 @@
   "syl": "obe·di·ent",
   "pos": "adj.",
   "zh": "順從的",
-  "ex": "An obedient dog let the carrier pass.",
-  "ext": "一隻順從的狗讓郵務士通過。",
+  "ex": "The dog sat and obeyed its owner, very obedient.",
+  "ext": "那隻狗坐下並聽從主人，很順從。",
   "level": 2
  },
  {
@@ -28563,8 +28562,8 @@
   "syl": "oc·ca·sion·al",
   "pos": "adj.",
   "zh": "偶爾的",
-  "ex": "There is only the occasional late parcel.",
-  "ext": "只有偶爾才有遲到的包裹。",
+  "ex": "Most arrive on time, with only an occasional late parcel.",
+  "ext": "大多數準時送達，只有偶爾才有遲到的包裹。",
   "level": 2
  },
  {
@@ -28590,8 +28589,8 @@
   "syl": "of·fen·sive",
   "pos": "adj.",
   "zh": "冒犯的、攻擊性的",
-  "ex": "An offensive remark upset the clerk.",
-  "ext": "一句冒犯的話惹惱了櫃員。",
+  "ex": "His rude, insulting words hurt the clerk, an offensive remark.",
+  "ext": "他粗魯侮辱的話傷了櫃員，是冒犯的言論。",
   "level": 2
  },
  {
@@ -28606,7 +28605,7 @@
  {
   "en": "orbit",
   "syl": "or·bit",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "軌道",
   "ex": "The satellite tracks parcels from orbit.",
   "ext": "衛星從軌道上追蹤包裹。",
@@ -28624,7 +28623,7 @@
  {
   "en": "orphan",
   "syl": "or·phan",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "孤兒",
   "ex": "Charity parcels went to an orphan home.",
   "ext": "慈善包裹送到一間孤兒院。",
@@ -28644,17 +28643,17 @@
   "syl": "out·stand·ing",
   "pos": "adj.",
   "zh": "傑出的、未付的",
-  "ex": "The branch had an outstanding month.",
-  "ext": "分局這個月表現傑出。",
+  "ex": "No branch did better; it had an outstanding month.",
+  "ext": "沒有分局做得更好，它度過了傑出的一個月。",
   "level": 2
  },
  {
   "en": "oval",
   "syl": "oval",
-  "pos": "adj./n.",
+  "pos": "adj.",
   "zh": "橢圓形的",
-  "ex": "The parcel held an oval mirror.",
-  "ext": "包裹裡裝著一面橢圓形鏡子。",
+  "ex": "The mirror was shaped like an egg, an oval mirror.",
+  "ext": "那面鏡子形狀像蛋，是橢圓形鏡子。",
   "level": 2
  },
  {
@@ -28714,7 +28713,7 @@
  {
   "en": "parachute",
   "syl": "para·chute",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "降落傘",
   "ex": "Aid parcels dropped by parachute.",
   "ext": "援助包裹用降落傘投下。",
@@ -28759,7 +28758,7 @@
  {
   "en": "paw",
   "syl": "paw",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "腳掌、爪",
   "ex": "The dog left a muddy paw print on the box.",
   "ext": "那隻狗在箱子上留下泥腳印。",
@@ -28770,14 +28769,14 @@
   "syl": "pe·cu·liar",
   "pos": "adj.",
   "zh": "奇特的、特有的",
-  "ex": "A peculiar smell came from the box.",
-  "ext": "箱子傳出一股奇特的氣味。",
+  "ex": "The smell was strange and unusual, a peculiar smell.",
+  "ext": "那股味道古怪又不尋常，是奇特的氣味。",
   "level": 2
  },
  {
   "en": "peep",
   "syl": "peep",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "偷看、窺視",
   "ex": "Do not peep inside a sealed parcel.",
   "ext": "別偷看密封包裹的內容。",
@@ -28786,7 +28785,7 @@
  {
   "en": "peer",
   "syl": "peer",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "同儕、凝視",
   "ex": "New clerks learn from their peers.",
   "ext": "新櫃員向同儕學習。",
@@ -28813,7 +28812,7 @@
  {
   "en": "perfume",
   "syl": "per·fume",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "香水",
   "ex": "Seal the perfume so it will not leak.",
   "ext": "把香水封好以免漏出。",
@@ -28824,8 +28823,8 @@
   "syl": "per·ma·nent",
   "pos": "adj.",
   "zh": "永久的",
-  "ex": "Write the permanent address on the form.",
-  "ext": "在表格上寫永久地址。",
+  "ex": "Write the address you will live at for years, your permanent address.",
+  "ext": "寫下你將住上多年的地址，也就是永久地址。",
   "level": 2
  },
  {
@@ -28842,8 +28841,8 @@
   "syl": "per·sua·sive",
   "pos": "adj.",
   "zh": "有說服力的",
-  "ex": "She gave a persuasive reason for the change.",
-  "ext": "她為這項改變提出有說服力的理由。",
+  "ex": "Her reason convinced everyone; it was persuasive.",
+  "ext": "她的理由說服了所有人，很有說服力。",
   "level": 2
  },
  {
@@ -28957,7 +28956,7 @@
  {
   "en": "pioneer",
   "syl": "pi·o·neer",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "先驅、開拓者",
   "ex": "She was a pioneer of online tracking.",
   "ext": "她是線上追蹤的先驅。",
@@ -28968,14 +28967,14 @@
   "syl": "plen·ti·ful",
   "pos": "adj.",
   "zh": "充足的、豐富的",
-  "ex": "Boxes were plentiful before the holiday.",
-  "ext": "假期前箱子很充足。",
+  "ex": "There were far more than we needed, boxes were plentiful.",
+  "ext": "箱子遠多於我們所需，數量很充足。",
   "level": 2
  },
  {
   "en": "plot",
   "syl": "plot",
-  "pos": "n./v.",
+  "pos": "n.",
   "zh": "情節、密謀",
   "ex": "The novel has a clever plot.",
   "ext": "這本小說情節巧妙。",
@@ -29011,7 +29010,7 @@
  {
   "en": "polish",
   "syl": "pol·ish",
-  "pos": "n./v.",
+  "pos": "v.",
   "zh": "擦亮、磨光",
   "ex": "Polish the counter until it shines.",
   "ext": "把櫃台擦到發亮。",
