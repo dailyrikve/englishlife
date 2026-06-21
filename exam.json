@@ -12,7 +12,14 @@
             "subside"
           ],
           "answer": "withdraw",
-          "note": "withdraw=領(錢)。從 ATM「領」現金。allocate=分配、triumph=獲勝、subside=平息/消退,語意都不合。"
+          "optzh": {
+            "allocate": "分配",
+            "triumph": "獲勝",
+            "withdraw": "領(錢)",
+            "subside": "平息、消退"
+          },
+          "trans": "週日銀行都關了,他只能希望提款機還能用,好讓他領一些現金。",
+          "note": "從 ATM『領』現金,故選 withdraw。"
         },
         {
           "stem": "An ___ to driving during rush hour is taking public transportation.",
@@ -23,7 +30,14 @@
             "inspiration"
           ],
           "answer": "alternative",
-          "note": "alternative=替代方案。搭大眾運輸是開車的「替代方案」。achievement=成就、objection=反對、inspiration=靈感,皆不合。"
+          "optzh": {
+            "achievement": "成就",
+            "alternative": "替代方案",
+            "objection": "反對",
+            "inspiration": "靈感"
+          },
+          "trans": "尖峰時間開車的一個替代方案是搭乘大眾運輸。",
+          "note": "開車的『替代方案』,用 alternative。"
         },
         {
           "stem": "The hotel is so popular that it doesn't have any room ___ this weekend.",
@@ -34,7 +48,14 @@
             "similar"
           ],
           "answer": "available",
-          "note": "available=可用的、空著的。沒有「空房」。original=原本的、familiar=熟悉的、similar=相似的,皆不合。"
+          "optzh": {
+            "original": "原本的",
+            "familiar": "熟悉的",
+            "available": "可用的、空的",
+            "similar": "相似的"
+          },
+          "trans": "這家飯店太受歡迎,這個週末沒有任何空房。",
+          "note": "沒有『空』房,用 available。"
         },
         {
           "stem": "Millions of Americans are under ___ watches in the Northeast where post-tropical cyclone Debby is rapidly picking up speed.",
@@ -45,7 +66,14 @@
             "forest"
           ],
           "answer": "tornado",
-          "note": "tornado=龍捲風。氣旋來襲發布「龍捲風」警戒。earthquake=地震、fire=火災、forest=森林,與氣旋不相關。"
+          "optzh": {
+            "tornado": "龍捲風",
+            "earthquake": "地震",
+            "fire": "火災",
+            "forest": "森林"
+          },
+          "trans": "在東北部,數百萬美國人處於龍捲風警戒中,後熱帶氣旋黛比正迅速增強。",
+          "note": "氣旋來襲發布『龍捲風』警戒,用 tornado。"
         },
         {
           "stem": "It is crucial to ___ your time between work, family, and personal hobbies to maintain a happy life.",
@@ -56,7 +84,14 @@
             "transform"
           ],
           "answer": "balance",
-          "note": "balance=平衡分配。要「平衡」工作、家庭與嗜好的時間。disrupt=打亂、expand=擴展、transform=轉變,皆不合。"
+          "optzh": {
+            "disrupt": "打亂",
+            "expand": "擴展",
+            "balance": "平衡",
+            "transform": "轉變"
+          },
+          "trans": "在工作、家庭和個人興趣之間平衡你的時間,對維持快樂生活至關重要。",
+          "note": "『平衡』分配時間,用 balance。"
         },
         {
           "stem": "My sister ___ salt for sugar, and the birthday cake she made for me turned out to be a disaster.",
@@ -67,7 +102,14 @@
             "reviewed"
           ],
           "answer": "mistook",
-          "note": "mistake A for B=把 A 誤認為 B。把鹽「誤當成」糖。define=定義、adopt=採用/領養、review=檢視,皆不合。"
+          "optzh": {
+            "defined": "定義",
+            "adopted": "採用、領養",
+            "mistook": "誤認",
+            "reviewed": "檢視"
+          },
+          "trans": "我姊姊把鹽誤當成糖,她為我做的生日蛋糕結果慘不忍睹。",
+          "note": "把鹽『誤認為』糖,用 mistake A for B。"
         },
         {
           "stem": "The mailman will ___ the package to your house tomorrow.",
@@ -78,7 +120,14 @@
             "teach"
           ],
           "answer": "deliver",
-          "note": "deliver=投遞、送達。郵差明天「送」包裹。clean=清潔、build=建造、teach=教,皆不合。"
+          "optzh": {
+            "clean": "清潔",
+            "deliver": "投遞",
+            "build": "建造",
+            "teach": "教"
+          },
+          "trans": "郵差明天會把包裹送到你家。",
+          "note": "『投遞』包裹,用 deliver。"
         },
         {
           "stem": "Eating moon cakes during the Mid-Autumn Festival is an old ___.",
@@ -89,7 +138,14 @@
             "generation"
           ],
           "answer": "tradition",
-          "note": "tradition=傳統。中秋吃月餅是老「傳統」。spirit=精神、rumor=謠言、generation=世代,皆不合。"
+          "optzh": {
+            "tradition": "傳統",
+            "spirit": "精神",
+            "rumor": "謠言",
+            "generation": "世代"
+          },
+          "trans": "中秋節吃月餅是個古老的傳統。",
+          "note": "流傳已久的『傳統』,用 tradition。"
         }
       ],
       "grammar": [
@@ -440,7 +496,14 @@
             "miraculous"
           ],
           "answer": "miraculous",
-          "note": "miraculous=奇蹟般的。嚴重車禍後「奇蹟般」康復。terrestrial=陸地的、bleak=慘澹的、wimpy=軟弱的,都不合。"
+          "optzh": {
+            "terrestrial": "陸地的",
+            "bleak": "慘澹的",
+            "wimpy": "軟弱的",
+            "miraculous": "奇蹟般的"
+          },
+          "trans": "那位歌手在嚴重車禍後奇蹟般地康復,很難相信他現在完全健康。",
+          "note": "重傷後『奇蹟般』康復,用 miraculous。"
         },
         {
           "stem": "In the speech contest, Jane and Bill won first place and third place ___.",
@@ -451,7 +514,14 @@
             "respectively"
           ],
           "answer": "respectively",
-          "note": "respectively=分別地。兩人「分別」得第一、第三名。barely=幾乎不、particularly=特別地、gradually=逐漸地,皆不合。"
+          "optzh": {
+            "barely": "幾乎不",
+            "particularly": "特別地",
+            "gradually": "逐漸地",
+            "respectively": "分別地"
+          },
+          "trans": "演講比賽中,珍和比爾分別贏得第一名和第三名。",
+          "note": "兩人『分別』得名,用 respectively。"
         },
         {
           "stem": "There is a high ___ of accidents driving in the storm.",
@@ -462,7 +532,14 @@
             "award"
           ],
           "answer": "risk",
-          "note": "risk=風險。暴風雨開車「風險」高。selection=選擇、material=材料、award=獎項,皆不合。"
+          "optzh": {
+            "risk": "風險",
+            "selection": "選擇",
+            "material": "材料",
+            "award": "獎項"
+          },
+          "trans": "在暴風雨中開車發生意外的風險很高。",
+          "note": "出事『風險』高,用 risk。"
         },
         {
           "stem": "Apple Pay and Google Pay offer users the ability to pay digitally in ___ stores, too.",
@@ -473,7 +550,14 @@
             "distraction"
           ],
           "answer": "retail",
-          "note": "retail=零售。在「零售」店也能數位付款。curtail=削減、detail=細節、distraction=分心,皆不合。"
+          "optzh": {
+            "curtail": "削減",
+            "detail": "細節",
+            "retail": "零售",
+            "distraction": "分心"
+          },
+          "trans": "Apple Pay 和 Google Pay 也讓使用者能在零售商店以數位方式付款。",
+          "note": "在『零售』店付款,用 retail。"
         },
         {
           "stem": "Before making an important decision, it is wise to ___ all possible options and their consequences carefully.",
@@ -484,7 +568,14 @@
             "assume"
           ],
           "answer": "examine",
-          "note": "examine=仔細審視。決策前要「審視」各選項。ignore=忽略、rush=匆促、assume=假定,皆不合。"
+          "optzh": {
+            "examine": "審視",
+            "ignore": "忽略",
+            "rush": "匆促",
+            "assume": "假定"
+          },
+          "trans": "做重要決定前,明智的做法是仔細審視所有可能的選項及其後果。",
+          "note": "『審視』各選項,用 examine。"
         },
         {
           "stem": "After the earthquake, we find huge cracks along the walls. The house is not ___ and may collapse if another strong quake hits.",
@@ -495,7 +586,14 @@
             "empty"
           ],
           "answer": "stable",
-          "note": "stable=穩固的。牆裂了,房子不「穩固」恐倒塌。upset=不安的、active=活躍的、empty=空的,皆不合。"
+          "optzh": {
+            "upset": "不安的",
+            "stable": "穩固的",
+            "active": "活躍的",
+            "empty": "空的"
+          },
+          "trans": "地震過後,我們發現牆上有巨大裂縫。這房子不穩固,若再來一次強震可能會倒。",
+          "note": "房子不『穩固』,用 stable。"
         },
         {
           "stem": "Before starting their road trip, they carefully planned the best ___ to avoid traffic and save time.",
@@ -506,7 +604,14 @@
             "topic"
           ],
           "answer": "route",
-          "note": "route=路線。規劃最佳「路線」避開塞車。battle=戰役、permit=許可、topic=主題,皆不合。"
+          "optzh": {
+            "battle": "戰役",
+            "route": "路線",
+            "permit": "許可",
+            "topic": "主題"
+          },
+          "trans": "展開公路旅行前,他們仔細規劃了最佳路線,以避開車流並節省時間。",
+          "note": "規劃最佳『路線』,用 route。"
         },
         {
           "stem": "Employees in this company are allowed to wear ___ clothes to work such as T-shirts and jeans.",
@@ -517,7 +622,14 @@
             "imaginary"
           ],
           "answer": "casual",
-          "note": "casual=休閒的。可穿「休閒」服上班。emotional=情緒化的、automatic=自動的、imaginary=虛構的,皆不合。"
+          "optzh": {
+            "casual": "休閒的",
+            "emotional": "情緒化的",
+            "automatic": "自動的",
+            "imaginary": "虛構的"
+          },
+          "trans": "這家公司允許員工穿休閒服上班,例如 T 恤和牛仔褲。",
+          "note": "穿『休閒』服,用 casual。"
         }
       ],
       "grammar": [
@@ -868,7 +980,14 @@
             "scale"
           ],
           "answer": "maximum",
-          "note": "maximum=最大值、上限。電梯「最多」搭 20 人。weight=重量、amount=數量(接不可數)、scale=規模/秤,皆不合。"
+          "optzh": {
+            "maximum": "最大值、上限",
+            "weight": "重量",
+            "amount": "數量",
+            "scale": "規模、秤"
+          },
+          "trans": "這部電梯最多可搭 20 人,所以你得等下一部。",
+          "note": "電梯乘載『上限』20 人,用 maximum。"
         },
         {
           "stem": "Walking in the city after the tragic event, you can see that many pedestrians were weighed down by a heavy sense of ___.",
@@ -879,7 +998,14 @@
             "excitement"
           ],
           "answer": "sorrow",
-          "note": "sorrow=悲傷。悲劇後行人滿懷「沉重的悲傷」。joy=喜悅、delight=高興、excitement=興奮,語意相反,不合。"
+          "optzh": {
+            "joy": "喜悅",
+            "sorrow": "悲傷",
+            "delight": "高興",
+            "excitement": "興奮"
+          },
+          "trans": "悲劇事件後走在城裡,你會看到許多行人被沉重的悲傷壓得喘不過氣。",
+          "note": "悲劇後充滿『悲傷』,用 sorrow。"
         },
         {
           "stem": "This machine doesn't ___ well. It needs repairing.",
@@ -890,7 +1016,14 @@
             "explore"
           ],
           "answer": "function",
-          "note": "function=運作(動詞)。機器「運作」不正常要修。limit=限制、mention=提及、explore=探索,皆不合。"
+          "optzh": {
+            "function": "運作",
+            "limit": "限制",
+            "mention": "提及",
+            "explore": "探索"
+          },
+          "trans": "這台機器運作不順,需要修理。",
+          "note": "機器『運作』不良,用 function。"
         },
         {
           "stem": "Giving chocolates as a gift is a custom that smart chocolate companies have spread to ___ their sales.",
@@ -901,7 +1034,14 @@
             "sabotage"
           ],
           "answer": "boost",
-          "note": "boost=提升。藉送禮習俗「提升」業績。distribute=分發、conclude=總結、sabotage=蓄意破壞,皆不合。"
+          "optzh": {
+            "distribute": "分發",
+            "conclude": "總結",
+            "boost": "提升",
+            "sabotage": "蓄意破壞"
+          },
+          "trans": "把巧克力當禮物送是一種習俗,聰明的巧克力公司已把它擴大來提升業績。",
+          "note": "『提升』業績,用 boost。"
         },
         {
           "stem": "When meeting someone new, a warm smile and a friendly ___ can create a positive and lasting first impression.",
@@ -912,7 +1052,14 @@
             "algorithm"
           ],
           "answer": "gesture",
-          "note": "gesture=手勢、舉動。友善的「舉止」留好印象。monitor=螢幕/監看、circuit=迴路、algorithm=演算法,皆不合。"
+          "optzh": {
+            "gesture": "舉止、手勢",
+            "monitor": "螢幕、監看",
+            "circuit": "迴路",
+            "algorithm": "演算法"
+          },
+          "trans": "認識新朋友時,溫暖的微笑和友善的舉止能營造正面而持久的第一印象。",
+          "note": "友善的『舉止』,用 gesture。"
         },
         {
           "stem": "English is a ___ language. Mastering English enables you to travel around the world with no sweat.",
@@ -923,7 +1070,14 @@
             "peculiar"
           ],
           "answer": "global",
-          "note": "global=全球的。英語是「全球」語言。normal=正常的、reliable=可靠的、peculiar=奇特的,皆不合。"
+          "optzh": {
+            "global": "全球的",
+            "normal": "正常的",
+            "reliable": "可靠的",
+            "peculiar": "奇特的"
+          },
+          "trans": "英語是一種全球性的語言,精通英語能讓你輕鬆環遊世界。",
+          "note": "『全球』語言,用 global。"
         },
         {
           "stem": "An oversupply of bananas has caused a great drop in prices. The government is urging purchase to ease the farmers' ___.",
@@ -934,7 +1088,14 @@
             "bargains"
           ],
           "answer": "worries",
-          "note": "worries=憂慮。香蕉價跌,政府促購以紓解農民「憂慮」。actions=行動、degrees=程度/學位、bargains=便宜貨,皆不合。"
+          "optzh": {
+            "actions": "行動",
+            "worries": "憂慮",
+            "degrees": "程度、學位",
+            "bargains": "便宜貨"
+          },
+          "trans": "香蕉供過於求導致價格大跌,政府正呼籲民眾採購以紓解農民的憂慮。",
+          "note": "紓解農民『憂慮』,用 worries。"
         },
         {
           "stem": "Bill has changed so much these years that I could hardly ___ him yesterday.",
@@ -945,7 +1106,14 @@
             "perform"
           ],
           "answer": "recognize",
-          "note": "recognize=認出。變太多,我差點「認不出」他。represent=代表、determine=決定、perform=表演,皆不合。"
+          "optzh": {
+            "represent": "代表",
+            "recognize": "認出",
+            "determine": "決定",
+            "perform": "表演"
+          },
+          "trans": "比爾這幾年變了好多,我昨天差點認不出他。",
+          "note": "『認出』某人,用 recognize。"
         }
       ],
       "grammar": [
@@ -1261,7 +1429,14 @@
             "quarter"
           ],
           "answer": "quarter",
-          "note": "a quarter=一刻鐘(15 分)。8:15 是「八點過一刻」。half=半(30 分)、fourth=第四、fifteen 不這樣用,皆不對。"
+          "optzh": {
+            "half": "一半",
+            "fourth": "第四",
+            "fifteen": "十五",
+            "quarter": "一刻鐘"
+          },
+          "trans": "現在幾點?晚上八點十五分——八點過一刻。",
+          "note": "8:15 是八點過『一刻鐘』,a quarter after eight。"
         },
         {
           "stem": "At the party, her delightful smile was so ___ that it influenced the mood of everyone present.",
@@ -1272,7 +1447,14 @@
             "noncommunicable"
           ],
           "answer": "infectious",
-          "note": "infectious=有感染力的。她的笑容「極具感染力」,影響全場。dismal=陰沉的、unapproachable=難親近的、noncommunicable=不可傳達的,皆不合。"
+          "optzh": {
+            "dismal": "陰沉的",
+            "infectious": "有感染力的",
+            "unapproachable": "難親近的",
+            "noncommunicable": "不可傳達的"
+          },
+          "trans": "派對上,她愉快的笑容極具感染力,影響了在場每個人的心情。",
+          "note": "笑容『有感染力』影響全場,用 infectious。"
         },
         {
           "stem": "The value of a diamond ___ on its qualities. Each factor can greatly affect the price.",
@@ -1283,7 +1465,14 @@
             "depends"
           ],
           "answer": "depends",
-          "note": "depend on=取決於。鑽石價值「取決於」品質。describe=描述、introduce=介紹、display=展示,皆不接 on 表此意。"
+          "optzh": {
+            "describes": "描述",
+            "introduces": "介紹",
+            "displays": "展示",
+            "depends": "取決於"
+          },
+          "trans": "鑽石的價值取決於它的品質,每個因素都會大大影響價格。",
+          "note": "價值『取決於』品質,用 depend on。"
         },
         {
           "stem": "Did you see John in the past two days? I wasn't even ___ that he was ill.",
@@ -1294,7 +1483,14 @@
             "impressive"
           ],
           "answer": "aware",
-          "note": "be aware that=察覺、知道。我根本不「知道」他生病。weary=疲倦的、diligent=勤奮的、impressive=令人印象深刻的,皆不合。"
+          "optzh": {
+            "aware": "察覺的",
+            "weary": "疲倦的",
+            "diligent": "勤奮的",
+            "impressive": "令人印象深刻的"
+          },
+          "trans": "你這兩天有看到約翰嗎?我根本不知道他生病了。",
+          "note": "『不知道、未察覺』,用 be aware that。"
         },
         {
           "stem": "In daily life, we must learn to ___ small inconveniences, like waiting in line or dealing with noisy neighbors.",
@@ -1305,7 +1501,14 @@
             "tolerate"
           ],
           "answer": "tolerate",
-          "note": "tolerate=容忍。要學會「容忍」小麻煩。reject=拒絕、destroy=摧毀、collapse=倒塌,皆不合。"
+          "optzh": {
+            "reject": "拒絕",
+            "destroy": "摧毀",
+            "collapse": "倒塌",
+            "tolerate": "容忍"
+          },
+          "trans": "在日常生活中,我們必須學會容忍小小的不便,例如排隊或應付吵鬧的鄰居。",
+          "note": "『容忍』小麻煩,用 tolerate。"
         },
         {
           "stem": "Apartments near MRT stations are popular with those who need to ___ to and from work by public transportation.",
@@ -1316,7 +1519,14 @@
             "commute"
           ],
           "answer": "commute",
-          "note": "commute=通勤。捷運旁公寓受「通勤族」歡迎。respond=回應、schedule=排程、purchase=購買,皆不合。"
+          "optzh": {
+            "respond": "回應",
+            "schedule": "排程",
+            "purchase": "購買",
+            "commute": "通勤"
+          },
+          "trans": "捷運站附近的公寓很受需要搭乘大眾運輸通勤上下班的人歡迎。",
+          "note": "『通勤』上下班,用 commute。"
         },
         {
           "stem": "The foreigner has studied Taiwanese hard in the hope of speaking it ___ and making friends with the locals.",
@@ -1327,7 +1537,14 @@
             "formally"
           ],
           "answer": "fluently",
-          "note": "fluently=流利地。希望說得「流利」。frankly=坦白地、friendly 是形容詞不能修飾動詞、formally=正式地,皆不合。"
+          "optzh": {
+            "frankly": "坦白地",
+            "friendly": "友善的",
+            "fluently": "流利地",
+            "formally": "正式地"
+          },
+          "trans": "這位外國人努力學台語,希望能說得流利並和當地人交朋友。",
+          "note": "說得『流利』,用副詞 fluently;friendly 是形容詞不能修飾動詞。"
         },
         {
           "stem": "The city has one of the world's largest subway systems. The subway system is so ___ that many first-time travelers get lost in it.",
@@ -1338,7 +1555,14 @@
             "enthusiastic"
           ],
           "answer": "complicated",
-          "note": "complicated=複雜的。地鐵系統太「複雜」易迷路。appropriate=適當的、essential=必要的、enthusiastic=熱情的,皆不合。"
+          "optzh": {
+            "appropriate": "適當的",
+            "complicated": "複雜的",
+            "essential": "必要的",
+            "enthusiastic": "熱情的"
+          },
+          "trans": "這座城市擁有世界最大的地鐵系統之一,系統太複雜,許多第一次來的旅客都會迷路。",
+          "note": "系統太『複雜』,用 complicated。"
         }
       ],
       "grammar": [
@@ -1658,7 +1882,14 @@
             "elaboration"
           ],
           "answer": "appointment",
-          "note": "make an appointment=預約(看診)。跟牙醫「預約」。engagement=訂婚/約定、assignment=作業/指派、elaboration=詳述,皆不合。"
+          "optzh": {
+            "engagement": "訂婚、約定",
+            "appointment": "預約",
+            "assignment": "作業、指派",
+            "elaboration": "詳述"
+          },
+          "trans": "我想跟牙醫預約,看看牙齒有沒有蛀洞。",
+          "note": "跟牙醫『預約』,用 make an appointment。"
         },
         {
           "stem": "In the company, he stood out as a ___ employee, consistently punctual and exceptionally responsible with tasks.",
@@ -1669,7 +1900,14 @@
             "diligent"
           ],
           "answer": "diligent",
-          "note": "diligent=勤奮的。準時又負責,是「勤奮」員工。tardy=遲到的、lazy=懶惰的、careless=粗心的,語意相反,不合。"
+          "optzh": {
+            "tardy": "遲到的",
+            "lazy": "懶惰的",
+            "careless": "粗心的",
+            "diligent": "勤奮的"
+          },
+          "trans": "在公司裡,他是個勤奮的員工,總是準時又對工作格外負責,因而出眾。",
+          "note": "準時又負責是『勤奮』員工,用 diligent。"
         },
         {
           "stem": "Mr. Smith is about to retire from the company, so his colleagues plan a ___ party for him.",
@@ -1680,7 +1918,14 @@
             "bachelor"
           ],
           "answer": "farewell",
-          "note": "farewell party=歡送會。同事為退休者辦「歡送」派對。wedding=婚禮、move-in=喬遷、bachelor=單身漢(派對),皆不合。"
+          "optzh": {
+            "wedding": "婚禮",
+            "farewell": "歡送",
+            "move-in": "喬遷",
+            "bachelor": "單身漢"
+          },
+          "trans": "史密斯先生即將從公司退休,所以同事為他籌辦一場歡送會。",
+          "note": "為退休者辦『歡送』會,用 farewell party。"
         },
         {
           "stem": "We should ___ flights 48 hours before departure to avoid last-minute changes or cancellations.",
@@ -1691,7 +1936,14 @@
             "inform"
           ],
           "answer": "confirm",
-          "note": "confirm=確認。起飛前 48 小時「確認」班機。reform=改革、conform=順從、inform=通知,字形相近但語意不合。"
+          "optzh": {
+            "reform": "改革",
+            "conform": "順從",
+            "confirm": "確認",
+            "inform": "通知"
+          },
+          "trans": "我們應該在起飛前 48 小時確認班機,以避免最後一刻的變動或取消。",
+          "note": "『確認』班機,用 confirm;其餘三字拼法相近但意思不同。"
         },
         {
           "stem": "The sign at the beach ___ that swimming is dangerous when the waves are high.",
@@ -1702,7 +1954,14 @@
             "warns"
           ],
           "answer": "warns",
-          "note": "warn=警告。告示牌「警告」浪大游泳危險。relieve=減輕、pretend=假裝、affect=影響,皆不合。"
+          "optzh": {
+            "relieves": "減輕",
+            "pretends": "假裝",
+            "affects": "影響",
+            "warns": "警告"
+          },
+          "trans": "海灘上的告示牌警告:浪大時游泳很危險。",
+          "note": "告示牌『警告』,用 warn。"
         },
         {
           "stem": "Taiwan's baseball team beat Japan and ___ its first-ever gold medal in the 2024 WBSC Premier12.",
@@ -1713,7 +1972,14 @@
             "launched"
           ],
           "answer": "claimed",
-          "note": "claim=奪得、贏得。擊敗日本「奪下」首面金牌。adjust=調整、engage=從事、launch=發射/推出,皆不合。"
+          "optzh": {
+            "claimed": "奪得",
+            "adjusted": "調整",
+            "engaged": "從事",
+            "launched": "發射、推出"
+          },
+          "trans": "台灣棒球隊擊敗日本,奪下 2024 世界棒球十二強賽史上首面金牌。",
+          "note": "『奪得』金牌,用 claim。"
         },
         {
           "stem": "I just know there will be a meeting tomorrow, but I don't know the ___ time when it will take place.",
@@ -1724,7 +1990,14 @@
             "general"
           ],
           "answer": "specific",
-          "note": "specific=明確、具體的。不知「確切」時間。common=常見的、normal=正常的、general=籠統的,語意相反或不合。"
+          "optzh": {
+            "common": "常見的",
+            "normal": "正常的",
+            "specific": "明確的",
+            "general": "籠統的"
+          },
+          "trans": "我只知道明天有個會議,但不知道確切的舉行時間。",
+          "note": "不知『確切』時間,用 specific。"
         },
         {
           "stem": "As a ___ of getting into a big argument with his boss, Alex was fired and had to look for a new job.",
@@ -1735,7 +2008,14 @@
             "entertainment"
           ],
           "answer": "consequence",
-          "note": "as a consequence of=作為…的後果。與老闆大吵的「後果」是被解雇。interruption=打斷、contact=聯絡、entertainment=娛樂,皆不合。"
+          "optzh": {
+            "consequence": "後果",
+            "interruption": "打斷",
+            "contact": "聯絡",
+            "entertainment": "娛樂"
+          },
+          "trans": "和老闆大吵一架的後果是,艾力克斯被解雇,只好另找新工作。",
+          "note": "作為…的『後果』,用 as a consequence of。"
         }
       ],
       "grammar": [
@@ -2055,7 +2335,14 @@
             "waived"
           ],
           "answer": "exhausted",
-          "note": "exhausted=精疲力竭的。長途飛行後「累壞了」。decomposed=腐爛分解的、complained=抱怨(動詞)、waived=放棄(權利),皆不合。"
+          "optzh": {
+            "decomposed": "腐爛分解的",
+            "exhausted": "精疲力竭的",
+            "complained": "抱怨",
+            "waived": "放棄(權利)"
+          },
+          "trans": "經過 26 小時的長途飛行,珍妮佛累壞了。",
+          "note": "長途飛行後『精疲力竭』,用 exhausted。"
         },
         {
           "stem": "Regrettably, they decided to ___ the party due to unforeseen circumstances.",
@@ -2066,7 +2353,14 @@
             "decorate"
           ],
           "answer": "cancel",
-          "note": "cancel=取消。因突發狀況「取消」派對。attend=出席、enhance=增強、decorate=裝飾,都不合語意。"
+          "optzh": {
+            "cancel": "取消",
+            "attend": "出席",
+            "enhance": "增強",
+            "decorate": "裝飾"
+          },
+          "trans": "很遺憾,他們因為無法預料的狀況而決定取消派對。",
+          "note": "因突發狀況『取消』派對,用 cancel。"
         },
         {
           "stem": "It is very difficult to ___ between love and money when you can just have one of them.",
@@ -2077,7 +2371,14 @@
             "complain"
           ],
           "answer": "decide",
-          "note": "decide between=在…之間做抉擇。在愛情與金錢間「抉擇」。return=歸還、separate=分開、complain=抱怨,皆不合。"
+          "optzh": {
+            "return": "歸還",
+            "separate": "分開",
+            "decide": "抉擇",
+            "complain": "抱怨"
+          },
+          "trans": "當你只能擁有其中一個時,要在愛情和金錢之間抉擇非常困難。",
+          "note": "在兩者間『抉擇』,用 decide between。"
         },
         {
           "stem": "The news is warning us about ___ weather; we'd better not go outside right now.",
@@ -2088,7 +2389,14 @@
             "severe"
           ],
           "answer": "severe",
-          "note": "severe=嚴峻、惡劣的。警告「惡劣」天氣勿外出。vital=至關重要的、timid=膽小的、prompt=迅速的,皆不合。"
+          "optzh": {
+            "vital": "至關重要的",
+            "timid": "膽小的",
+            "prompt": "迅速的",
+            "severe": "惡劣、嚴峻的"
+          },
+          "trans": "新聞正警告我們會有惡劣天氣,我們現在最好別出門。",
+          "note": "『惡劣、嚴峻』天氣,用 severe。"
         },
         {
           "stem": "Studying every day is an ___ way to remember what you learn in school.",
@@ -2099,7 +2407,14 @@
             "annual"
           ],
           "answer": "effective",
-          "note": "effective=有效的。每天讀書是「有效」的記憶法。organic=有機的、anxious=焦慮的、annual=每年的,皆不合。"
+          "optzh": {
+            "organic": "有機的",
+            "effective": "有效的",
+            "anxious": "焦慮的",
+            "annual": "每年的"
+          },
+          "trans": "每天讀書是記住學校所學的有效方法。",
+          "note": "『有效的』方法,用 effective。"
         },
         {
           "stem": "He worked very hard to ___ his fear of giving a speech in public.",
@@ -2110,7 +2425,14 @@
             "operate"
           ],
           "answer": "overcome",
-          "note": "overcome=克服。努力「克服」公開演講的恐懼。elevate=提升、stimulate=刺激、operate=操作,皆不合。"
+          "optzh": {
+            "overcome": "克服",
+            "elevate": "提升",
+            "stimulate": "刺激",
+            "operate": "操作"
+          },
+          "trans": "他非常努力地克服自己在公開場合演講的恐懼。",
+          "note": "『克服』恐懼,用 overcome。"
         },
         {
           "stem": "My parents plan to live in the countryside and enjoy a relaxing ___ life when they become old.",
@@ -2121,7 +2443,14 @@
             "hectic"
           ],
           "answer": "rural",
-          "note": "rural=鄉村的。到鄉下過悠閒「鄉村」生活。minor=次要的、urban=都市的(相反)、hectic=忙亂的,皆不合。"
+          "optzh": {
+            "rural": "鄉村的",
+            "minor": "次要的",
+            "urban": "都市的",
+            "hectic": "忙亂的"
+          },
+          "trans": "我父母打算年老時住在鄉下,享受悠閒的鄉村生活。",
+          "note": "『鄉村』生活,用 rural;urban 意思相反。"
         },
         {
           "stem": "It's important to have enough money to live on, but money alone doesn't ___ that you will have a happy life forever.",
@@ -2132,7 +2461,14 @@
             "issue"
           ],
           "answer": "guarantee",
-          "note": "guarantee=保證。金錢無法「保證」永遠幸福。compare=比較、replace=取代、issue=發行/議題,皆不合。"
+          "optzh": {
+            "compare": "比較",
+            "guarantee": "保證",
+            "replace": "取代",
+            "issue": "發行、議題"
+          },
+          "trans": "有足夠的錢過生活很重要,但光有錢並不能保證你會永遠幸福。",
+          "note": "無法『保證』幸福,用 guarantee。"
         }
       ],
       "grammar": [
@@ -2456,7 +2792,14 @@
             "exceptional"
           ],
           "answer": "groundless",
-          "note": "groundless=毫無根據的。大家都知道她愛動物,謠言「毫無根據」。available=可取得的、inevitable=不可避免的、exceptional=傑出的,皆不合。"
+          "optzh": {
+            "available": "可取得的",
+            "inevitable": "不可避免的",
+            "groundless": "毫無根據的",
+            "exceptional": "傑出的"
+          },
+          "trans": "關於蘇菲亞虐狗的謠言毫無根據,因為大家都知道她愛動物。",
+          "note": "大家都知道她愛動物,謠言『毫無根據』,用 groundless。"
         },
         {
           "stem": "It will take lots of work to ___ such a big event, so we need more people to help.",
@@ -2467,7 +2810,14 @@
             "warn"
           ],
           "answer": "organize",
-          "note": "organize=籌辦。要花很多力氣「籌辦」大型活動。occur=發生(不及物)、beat=打敗、warn=警告,皆不合。"
+          "optzh": {
+            "organize": "籌辦",
+            "occur": "發生",
+            "beat": "打敗",
+            "warn": "警告"
+          },
+          "trans": "籌辦這麼大的活動要花很多心力,所以我們需要更多人幫忙。",
+          "note": "『籌辦』大型活動,用 organize。"
         },
         {
           "stem": "In Halloween, people would put on makeups and costumes to look like ___ ghosts or monsters.",
@@ -2478,7 +2828,14 @@
             "guilty"
           ],
           "answer": "scary",
-          "note": "scary=可怕的。萬聖節裝扮成「可怕的」鬼怪。dizzy=暈眩的、tiny=微小的、guilty=愧疚的,皆不合。"
+          "optzh": {
+            "scary": "可怕的",
+            "dizzy": "暈眩的",
+            "tiny": "微小的",
+            "guilty": "愧疚的"
+          },
+          "trans": "萬聖節時,人們會化妝、穿戲服,把自己裝扮成可怕的鬼怪。",
+          "note": "裝成『可怕的』鬼怪,用 scary。"
         },
         {
           "stem": "She wore a beautiful dress to the party because she wanted to look stylish and ___.",
@@ -2489,7 +2846,14 @@
             "furious"
           ],
           "answer": "elegant",
-          "note": "elegant=優雅的。想看起來時髦又「優雅」。enormous=巨大的、dependable=可靠的、furious=狂怒的,皆不合。"
+          "optzh": {
+            "enormous": "巨大的",
+            "elegant": "優雅的",
+            "dependable": "可靠的",
+            "furious": "狂怒的"
+          },
+          "trans": "她穿了一件漂亮的洋裝去派對,因為她想看起來時髦又優雅。",
+          "note": "想顯得『優雅』,用 elegant。"
         },
         {
           "stem": "Many of the artist's major works are now on ___ at the museum, attracting thousands of visitors.",
@@ -2500,7 +2864,14 @@
             "display"
           ],
           "answer": "display",
-          "note": "on display=展出中。作品在博物館「展出」。impulse=衝動、awareness=意識、purchase=購買,皆不合。"
+          "optzh": {
+            "impulse": "衝動",
+            "awareness": "意識",
+            "purchase": "購買",
+            "display": "展示、展出"
+          },
+          "trans": "這位藝術家的許多重要作品現正在博物館展出,吸引數千名訪客。",
+          "note": "作品『展出中』,用 on display。"
         },
         {
           "stem": "Her friends ___ her to try new activities, even if she has to do them solo.",
@@ -2511,7 +2882,14 @@
             "advocated"
           ],
           "answer": "encouraged",
-          "note": "encourage sb to=鼓勵某人。朋友「鼓勵」她嘗試新事物。conduct=進行、manage=設法/管理、advocate=提倡(不接 sb to),皆不合。"
+          "optzh": {
+            "encouraged": "鼓勵",
+            "conducted": "進行",
+            "managed": "設法、管理",
+            "advocated": "提倡"
+          },
+          "trans": "她的朋友鼓勵她嘗試新活動,即使她得獨自進行。",
+          "note": "『鼓勵』某人做某事,用 encourage sb to。"
         },
         {
           "stem": "Lily ___ in fright the moment she saw a seagull flying toward her to snatch the food in her hand.",
@@ -2522,7 +2900,14 @@
             "expanded"
           ],
           "answer": "screamed",
-          "note": "scream=尖叫。被海鷗嚇得「尖叫」。chuckle=輕笑、quarrel=爭吵、expand=擴張,皆不合。"
+          "optzh": {
+            "chuckled": "輕笑",
+            "screamed": "尖叫",
+            "quarreled": "爭吵",
+            "expanded": "擴張"
+          },
+          "trans": "莉莉一看到海鷗朝她飛來想搶她手上的食物,就嚇得尖叫。",
+          "note": "嚇得『尖叫』,用 scream。"
         },
         {
           "stem": "After you read my composition, please give me some ___ so that I can improve it.",
@@ -2533,7 +2918,14 @@
             "crisis"
           ],
           "answer": "feedback",
-          "note": "feedback=回饋意見。請給我「意見」以改進。charity=慈善、delight=喜悅、crisis=危機,皆不合。"
+          "optzh": {
+            "charity": "慈善",
+            "delight": "喜悅",
+            "feedback": "回饋意見",
+            "crisis": "危機"
+          },
+          "trans": "看完我的作文後,請給我一些意見,好讓我可以改進。",
+          "note": "給『回饋意見』,用 feedback。"
         }
       ],
       "grammar": [
@@ -2853,7 +3245,14 @@
             "concludes"
           ],
           "answer": "amounts",
-          "note": "amount to=總計達。付款總額「合計達」3,400 元。mount=登上/增加(不接 to 表總計)、culminate=以…告終、conclude=結束,皆不對。"
+          "optzh": {
+            "mounts": "登上、增加",
+            "amounts": "合計達",
+            "culminates": "以…告終",
+            "concludes": "結束"
+          },
+          "trans": "你買了三樣東西,付款總額合計達 3,400 元。",
+          "note": "總額『合計達』某數,用 amount to。"
         },
         {
           "stem": "Everybody in the ___ clapped when the singer finished singing her song.",
@@ -2864,7 +3263,14 @@
             "mystery"
           ],
           "answer": "audience",
-          "note": "audience=觀眾。「觀眾」鼓掌。adventure=冒險、custom=習俗、mystery=謎,皆不合。"
+          "optzh": {
+            "adventure": "冒險",
+            "audience": "觀眾",
+            "custom": "習俗",
+            "mystery": "謎"
+          },
+          "trans": "歌手唱完她的歌時,觀眾席裡每個人都鼓掌。",
+          "note": "鼓掌的是『觀眾』,用 audience。"
         },
         {
           "stem": "When the CEO was arrested for his crime, the stock price of the company ___ the next day.",
@@ -2875,7 +3281,14 @@
             "surged"
           ],
           "answer": "plunged",
-          "note": "plunge=暴跌。執行長被捕,股價隔天「暴跌」。soared/ascended/surged 都是「上升、飆漲」,語意相反。"
+          "optzh": {
+            "plunged": "暴跌",
+            "soared": "飆升",
+            "ascended": "上升",
+            "surged": "激增"
+          },
+          "trans": "當執行長因犯罪被捕,公司的股價隔天就暴跌。",
+          "note": "利空使股價『暴跌』,用 plunged;其餘三個都是上漲,語意相反。"
         },
         {
           "stem": "The doctor put me on a low-salt diet to ___ my blood pressure.",
@@ -2886,7 +3299,14 @@
             "remain"
           ],
           "answer": "reduce",
-          "note": "reduce=降低。低鹽飲食「降低」血壓。receive=收到、recall=回想/召回、remain=維持,皆不合。"
+          "optzh": {
+            "receive": "收到",
+            "recall": "回想、召回",
+            "reduce": "降低",
+            "remain": "維持"
+          },
+          "trans": "醫生要我採低鹽飲食來降低血壓。",
+          "note": "『降低』血壓,用 reduce。"
         },
         {
           "stem": "This region ___ some of the most breathtaking landscapes in the country, attracting nature lovers from around the world.",
@@ -2897,7 +3317,14 @@
             "intends"
           ],
           "answer": "boasts",
-          "note": "boast=(自豪地)擁有。此區「擁有」絕美風景。amaze=使驚訝、wander=遊蕩、intend=打算,皆不合。"
+          "optzh": {
+            "amazes": "使驚訝",
+            "wanders": "遊蕩",
+            "boasts": "自豪地擁有",
+            "intends": "打算"
+          },
+          "trans": "這個地區擁有全國最令人嘆為觀止的風景,吸引世界各地的自然愛好者。",
+          "note": "(自豪地)『擁有』美景,用 boast。"
         },
         {
           "stem": "The hotel's ___ offered free drinks, soft music, and a quiet place where guests could read or chat.",
@@ -2908,7 +3335,14 @@
             "lounge"
           ],
           "answer": "lounge",
-          "note": "lounge=休息室、交誼廳。飯店「交誼廳」供飲料音樂。palace=宮殿、arena=競技場、cinema=電影院,皆不合。"
+          "optzh": {
+            "palace": "宮殿",
+            "arena": "競技場",
+            "cinema": "電影院",
+            "lounge": "交誼廳"
+          },
+          "trans": "飯店的交誼廳提供免費飲料、輕柔音樂,還有可供客人閱讀或聊天的安靜空間。",
+          "note": "飯店『交誼廳』,用 lounge。"
         },
         {
           "stem": "The teacher is ___ the possibility of effective teaching. So far, she has tried videos and field trips.",
@@ -2919,7 +3353,14 @@
             "predicting"
           ],
           "answer": "exploring",
-          "note": "explore=探索。老師正「探索」有效教學的可能。avoid=避免、remove=移除、predict=預測,皆不合。"
+          "optzh": {
+            "avoiding": "避免",
+            "exploring": "探索",
+            "removing": "移除",
+            "predicting": "預測"
+          },
+          "trans": "老師正在探索有效教學的可能性,目前她已嘗試影片和戶外教學。",
+          "note": "『探索』可能性,用 explore。"
         },
         {
           "stem": "Judy is one of my most valued friends; our friendship has ___ over thirty years.",
@@ -2930,7 +3371,14 @@
             "spanned"
           ],
           "answer": "spanned",
-          "note": "span=橫跨(時間)。友誼「跨越」三十多年。spare=騰出、spread=散播、scatter=散落,皆不合。"
+          "optzh": {
+            "spared": "騰出",
+            "spread": "散播",
+            "scattered": "散落",
+            "spanned": "橫跨"
+          },
+          "trans": "茱蒂是我最珍視的朋友之一;我們的友誼已橫跨三十多年。",
+          "note": "友誼『橫跨』時間,用 span。"
         }
       ],
       "grammar": [
@@ -3250,7 +3698,14 @@
             "fiction"
           ],
           "answer": "version",
-          "note": "version=版本。軟體「最新版本」優於舊版。priority=優先、anniversary=週年、fiction=小說,皆不合。"
+          "optzh": {
+            "priority": "優先",
+            "anniversary": "週年",
+            "version": "版本",
+            "fiction": "小說"
+          },
+          "trans": "這套軟體的最新版本優於先前所有版本。",
+          "note": "軟體『最新版本』,用 version。"
         },
         {
           "stem": "Peter has a very busy ___ today. He has to attend several meetings and hardly has time for lunch.",
@@ -3261,7 +3716,14 @@
             "recipe"
           ],
           "answer": "schedule",
-          "note": "schedule=行程表。今天「行程」很滿。option=選項、approach=方法、recipe=食譜,皆不合。"
+          "optzh": {
+            "option": "選項",
+            "approach": "方法",
+            "schedule": "行程表",
+            "recipe": "食譜"
+          },
+          "trans": "彼得今天行程很滿,他得參加好幾場會議,幾乎沒時間吃午餐。",
+          "note": "今天『行程』很滿,用 schedule。"
         },
         {
           "stem": "The puppies in the pet shops are so ___ that Mary really wants to have one as a soothing pet.",
@@ -3272,7 +3734,14 @@
             "adorable"
           ],
           "answer": "adorable",
-          "note": "adorable=可愛討喜的。小狗「可愛」到想養。demanding=要求高的、hostile=有敵意的、grumpy=易怒的,語意相反。"
+          "optzh": {
+            "demanding": "要求高的",
+            "hostile": "有敵意的",
+            "grumpy": "易怒的",
+            "adorable": "可愛討喜的"
+          },
+          "trans": "寵物店裡的小狗太可愛了,瑪麗真的好想養一隻來療癒身心。",
+          "note": "小狗『可愛討喜』,用 adorable。"
         },
         {
           "stem": "I was ___ by how well he looked. It was hard to believe he had been sick just a week ago.",
@@ -3283,7 +3752,14 @@
             "amazed"
           ],
           "answer": "amazed",
-          "note": "amazed=驚訝的。對他氣色好感到「驚訝」。composed=鎮定的、attached=依附的、removed=移除的,皆不合。"
+          "optzh": {
+            "composed": "鎮定的",
+            "attached": "依附的",
+            "removed": "移除的",
+            "amazed": "驚訝的"
+          },
+          "trans": "他氣色這麼好讓我很驚訝,很難相信他一週前還在生病。",
+          "note": "對他氣色好感到『驚訝』,用 amazed。"
         },
         {
           "stem": "The juice blender broke down after just a few times of use, so Mary returned it to the store and asked for a ___.",
@@ -3294,7 +3770,14 @@
             "display"
           ],
           "answer": "refund",
-          "note": "refund=退款。果汁機壞了退貨要求「退款」。loan=貸款、proof=證據、display=展示,皆不合。"
+          "optzh": {
+            "loan": "貸款",
+            "proof": "證據",
+            "refund": "退款",
+            "display": "展示"
+          },
+          "trans": "果汁機用沒幾次就壞了,所以瑪麗把它退回店家要求退款。",
+          "note": "退貨要求『退款』,用 refund。"
         },
         {
           "stem": "He showed his language proficiency ___ when applying for a customer service job at the airport.",
@@ -3305,7 +3788,14 @@
             "framework"
           ],
           "answer": "certificate",
-          "note": "certificate=證書、檢定證明。出示語言能力「證書」。responsibility=責任、acceptance=接受、framework=架構,皆不合。"
+          "optzh": {
+            "certificate": "證書",
+            "responsibility": "責任",
+            "acceptance": "接受",
+            "framework": "架構"
+          },
+          "trans": "他在應徵機場客服工作時,出示了自己的語言能力證書。",
+          "note": "語言能力『證書』,用 certificate。"
         },
         {
           "stem": "If you want to be happy, do not ___ in the past or worry about the future. Just focus on living fully in the present.",
@@ -3316,7 +3806,14 @@
             "escape"
           ],
           "answer": "dwell",
-          "note": "dwell on/in=沉湎、糾結於。別「沉溺」過去。gather=聚集、appear=出現、escape=逃離,皆不合。"
+          "optzh": {
+            "dwell": "沉湎",
+            "gather": "聚集",
+            "appear": "出現",
+            "escape": "逃離"
+          },
+          "trans": "如果你想快樂,就別沉湎於過去或擔憂未來,只要專注於充實地活在當下。",
+          "note": "別『沉溺』過去,用 dwell on/in。"
         },
         {
           "stem": "Although air travel has resumed in many parts of the world, airline ___ shortages continue to create flight cancellation and airport chaos.",
@@ -3327,7 +3824,14 @@
             "tracking"
           ],
           "answer": "staffing",
-          "note": "staffing=人力配置。航空「人力」短缺導致混亂。polluting=污染、promoting=促銷、tracking=追蹤,皆不合。"
+          "optzh": {
+            "staffing": "人力配置",
+            "polluting": "污染",
+            "promoting": "促銷",
+            "tracking": "追蹤"
+          },
+          "trans": "雖然世界許多地方已恢復空中旅行,航空業的人力短缺仍持續造成班機取消和機場混亂。",
+          "note": "『人力』短缺,用 staffing。"
         }
       ],
       "grammar": [
@@ -3647,7 +4151,14 @@
             "competitive"
           ],
           "answer": "competitive",
-          "note": "competitive=競爭激烈的。在「競爭激烈」的產業要脫穎而出。obvious=明顯的、responsible=負責的、imaginary=虛構的,皆不合。"
+          "optzh": {
+            "obvious": "明顯的",
+            "responsible": "負責的",
+            "imaginary": "虛構的",
+            "competitive": "競爭激烈的"
+          },
+          "trans": "想在這個競爭激烈的產業被錄取,你得有讓自己脫穎而出的獨特特質。",
+          "note": "產業『競爭激烈』,用 competitive。"
         },
         {
           "stem": "With house prices rising so high, most young people cannot ___ to buy an apartment in Taipei.",
@@ -3658,7 +4169,14 @@
             "connect"
           ],
           "answer": "afford",
-          "note": "afford=負擔得起。房價高,年輕人「買不起」。divide=分割、recognize=認出、connect=連接,皆不合。"
+          "optzh": {
+            "divide": "分割",
+            "afford": "負擔得起",
+            "recognize": "認出",
+            "connect": "連接"
+          },
+          "trans": "由於房價漲得太高,大多數年輕人買不起台北的公寓。",
+          "note": "『負擔不起』買房,用 afford。"
         },
         {
           "stem": "The witness only had a short ___ at the thief's face, so she didn't remember how he looked.",
@@ -3669,7 +4187,14 @@
             "circuit"
           ],
           "answer": "glance",
-          "note": "a glance=一瞥。只「瞥」了一眼,記不清長相。term=期間/術語、stroll=散步、circuit=迴路,皆不合。"
+          "optzh": {
+            "term": "期間、術語",
+            "glance": "一瞥",
+            "stroll": "散步",
+            "circuit": "迴路"
+          },
+          "trans": "目擊者只瞥了小偷的臉一眼,所以不記得他長什麼樣。",
+          "note": "只『瞥一眼』,用 a glance。"
         },
         {
           "stem": "The elderly are more ___ to diseases because our immune systems get weaker as we age.",
@@ -3680,7 +4205,14 @@
             "indispensable"
           ],
           "answer": "vulnerable",
-          "note": "be vulnerable to=易受…侵害。免疫力下降,長者「易」生病。remarkable=出色的、knowledgeable=博學的、indispensable=不可或缺的,皆不合。"
+          "optzh": {
+            "remarkable": "出色的",
+            "knowledgeable": "博學的",
+            "vulnerable": "易受害的",
+            "indispensable": "不可或缺的"
+          },
+          "trans": "長者較容易染病,因為隨著年齡增長,我們的免疫系統會變弱。",
+          "note": "『易受』疾病侵害,用 be vulnerable to。"
         },
         {
           "stem": "As a great actress, Meryl Streep has received many famous ___ throughout her career in the movie industry.",
@@ -3691,7 +4223,14 @@
             "awards"
           ],
           "answer": "awards",
-          "note": "awards=獎項。傑出演員獲得許多「獎項」。rivals=對手、feasts=盛宴、targets=目標,皆不合。"
+          "optzh": {
+            "rivals": "對手",
+            "feasts": "盛宴",
+            "targets": "目標",
+            "awards": "獎項"
+          },
+          "trans": "身為傑出的女演員,梅莉史翠普在電影生涯中獲得許多著名獎項。",
+          "note": "獲得『獎項』,用 awards。"
         },
         {
           "stem": "Tom put on his ___ to keep his pants from falling down.",
@@ -3702,7 +4241,14 @@
             "shoes"
           ],
           "answer": "belt",
-          "note": "belt=皮帶。繫「皮帶」防褲子掉。hat=帽子、watch=手錶、shoes=鞋子,都無法防褲子掉。"
+          "optzh": {
+            "belt": "皮帶",
+            "hat": "帽子",
+            "watch": "手錶",
+            "shoes": "鞋子"
+          },
+          "trans": "湯姆繫上皮帶,以免褲子掉下來。",
+          "note": "繫『皮帶』防褲子掉,用 belt。"
         },
         {
           "stem": "The doctor ___ that I exercise at least three times a week in order to stay healthy.",
@@ -3713,7 +4259,14 @@
             "depended"
           ],
           "answer": "recommended",
-          "note": "recommend that+原形=建議。醫生「建議」每週運動三次。avoid=避免、obey=服從、depend=依賴,皆不合。"
+          "optzh": {
+            "avoided": "避免",
+            "obeyed": "服從",
+            "recommended": "建議",
+            "depended": "依賴"
+          },
+          "trans": "醫生建議我每週至少運動三次以保持健康。",
+          "note": "『建議』,用 recommend that+原形動詞。"
         },
         {
           "stem": "The school administration has promised to strengthen security to ___ the concerns of parents.",
@@ -3724,7 +4277,14 @@
             "knee"
           ],
           "answer": "relieve",
-          "note": "relieve=緩解。加強安全以「緩解」家長疑慮。double=使加倍、shoulder=肩負、knee=膝(無動詞此意),皆不合。"
+          "optzh": {
+            "double": "使加倍",
+            "relieve": "緩解",
+            "shoulder": "肩負",
+            "knee": "膝"
+          },
+          "trans": "校方已承諾加強安全,以緩解家長的疑慮。",
+          "note": "『緩解』疑慮,用 relieve。"
         }
       ],
       "grammar": [

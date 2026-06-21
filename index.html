@@ -129,6 +129,20 @@
   .disc-row{display:flex;align-items:center;gap:9px;margin-top:5px;}
   .disc-w{font-family:'Fraunces',serif;font-size:21px;color:var(--ink);min-width:104px;}
   .disc-zh{color:var(--muted);font-size:14px;flex:1;}
+  /* 模擬考字彙:整句翻譯 + 各選項中文卡 */
+  .vtrans{margin-top:10px;padding:8px 10px;background:rgba(0,0,0,.04);border-radius:8px;color:var(--ink);font-size:14.5px;line-height:1.65;}
+  .vtrans-lab{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--accent);border-radius:5px;padding:1px 7px;margin-right:7px;vertical-align:middle;}
+  .vreason{margin-top:9px;color:var(--ink);font-size:14.5px;line-height:1.6;}
+  .vgloss{margin-top:11px;padding-top:9px;border-top:1px dashed var(--line);}
+  .vgloss-h{font-size:12px;color:var(--muted);margin-bottom:6px;}
+  .vg-row{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:7px;margin-top:4px;background:rgba(0,0,0,.025);}
+  .vg-row.on{background:#e7f3ea;}
+  .vg-row.pick{background:#f7e3df;}
+  .vg-en{font-family:'Fraunces',serif;font-size:17px;color:var(--ink);min-width:96px;}
+  .vg-zh{color:var(--muted);font-size:14px;flex:1;}
+  .vg-tag{font-size:11px;font-weight:700;border-radius:5px;padding:1px 7px;}
+  .vg-tag.ok{color:var(--good);background:rgba(46,125,77,.14);}
+  .vg-tag.no{color:var(--bad);background:rgba(180,60,40,.14);}
   /* 四選一答完:各選項中文對照 */
   .optzh{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);}
   .optzh-row{display:flex;align-items:center;gap:9px;padding:3px 0;color:var(--muted);}
@@ -260,6 +274,24 @@ function discrimHTML(answer,picked){
   return '<div class="disc"><div class="disc-h">這兩個字長很像,看清楚差別:</div>'
     +'<div class="disc-row"><span class="disc-w">'+diffHL(wp.en,wa.en)+'</span><span class="disc-zh">'+wp.zh+'(你選的)</span><span class="confspk" data-en="'+wp.en+'">🔊</span></div>'
     +'<div class="disc-row"><span class="disc-w">'+diffHL(wa.en,wp.en)+'</span><span class="disc-zh">'+wa.zh+'(正解)</span><span class="confspk" data-en="'+wa.en+'">🔊</span></div></div>';}
+
+// ===== 模擬考字彙題:答完一律顯示整句中文翻譯 + 每個選項中文(各自一行,正解/誤選標記)=====
+function vocabExamHTML(q,picked){
+  let h="";
+  if(q.trans)h+='<div class="vtrans"><span class="vtrans-lab">中文翻譯</span>'+q.trans+'</div>';
+  if(q.note)h+='<div class="vreason">'+q.note+'</div>';
+  if(q.optzh&&Array.isArray(q.options)){
+    h+='<div class="vgloss"><div class="vgloss-h">各選項中文</div>';
+    for(const o of q.options){
+      const zh=q.optzh[o]||"";
+      const isAns=(o===q.answer), isPick=(picked&&o===picked&&!isAns);
+      const tag=isAns?'<span class="vg-tag ok">✓ 正解</span>':(isPick?'<span class="vg-tag no">✗ 你選的</span>':'');
+      h+='<div class="vg-row'+(isAns?' on':'')+(isPick?' pick':'')+'"><span class="vg-en">'+o+'</span><span class="vg-zh">'+zh+'</span>'+tag+'<span class="confspk" data-en="'+o+'">🔊</span></div>';
+    }
+    h+='</div>';
+  }
+  return h;
+}
 
 // ===== 文法:找訊號字 / 對比階梯 (皆為選填欄位,沒有就略過)=====
 // 由 it.signal + it.ex 組出「點出關鍵字」題;訊號字可為片語,會自動合併成一個 chip
@@ -449,7 +481,7 @@ function renderCat(){
   }
   const allDone=cur>=n;
   html+=`<button class="resume" id="resume">${allDone?'全部完成,複習第 1 關':('繼續挑戰 · 第 '+(cur+1)+' 關')}</button>`;
-  html+=`<div class="hint">下一關預告:${fmtHint(curCat,allDone?0:cur)}</div>`;
+  if(curCat!=="exam")html+=`<div class="hint">下一關預告:${fmtHint(curCat,allDone?0:cur)}</div>`;
   html+='<div class="menu-title">所有關卡(可自由前後挑戰)</div><div class="grid" id="grid">';
   for(let i=0;i<n;i++){const rec=state.progress[curCat]["L"+i];
     let tag=(curCat==="vocab")?('<div class="st" style="color:var(--accent)">'+vocabFmtLabel(i)+'</div>'):'';
@@ -877,7 +909,8 @@ function buildQuiz(){
       // 1) 字彙:每題一句挖一格,依語境選字(區塊內題序可洗、選項可洗)
       for(const v of shuffle((R.vocab||[]).slice())){
         quizQ.push({kind:"choice",head:v.stem,headSmall:true,ask:"依句意選出最適合的字",
-          options:shuffle(v.options.slice()),answer:v.answer,note:v.note||null});}
+          options:shuffle(v.options.slice()),answer:v.answer,note:v.note||null,
+          secType:"vocab",trans:v.trans||null,optzh:v.optzh||null});}
       // 2) 文法:單句四選一
       for(const g of shuffle((R.grammar||[]).slice())){
         quizQ.push({kind:"choice",head:g.q,headSmall:true,ask:"選出正確的文法",
@@ -1055,11 +1088,17 @@ function renderQuiz(){
     if((curCat==="reading"||curCat==="exam")&&ctxPassage&&!(isStory&&storyData)){const cp=document.getElementById("ctxpassage");
       if(cp){if(isCloze&&q.blankN!=null){quizFill[q.blankN]=q.answer;cp.innerHTML=clozePassageHTML(ctxPassage,q.blankN,quizFill);}
         else if(q.locate){cp.innerHTML=ctxInnerHTML(q,q.locate,curCtx);}}}
-    let body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
+    let body;
+    if(q.secType==="vocab"){ // 模擬考字彙:答對答錯都給整句翻譯+各選項中文
+      const ansZh=(q.optzh&&q.optzh[q.answer])?"(<b>"+q.optzh[q.answer]+"</b>)":"";
+      body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>"+ansZh)+vocabExamHTML(q,picked);
+    }else{
+      body=(ok?"✓ 答對了!":"✗ 正確答案:<b>"+q.answer+"</b>")+(q.note?"<br>"+q.note:"");
+    }
     if(q.locate){const hled=!!document.querySelector("#ctxpassage mark");
       body+='<div class="hint" style="margin-top:8px;text-align:left">'+(hled?"📍 答案就在上面標黃的那一句":("📍 答案線索:「"+q.locate+"」"))+'</div>';}
     if(q.cloze)body+=clozeReviewHTML(q); // 例句填空:答完一律給整句英文(正解標紅)+整句中文+🔊
-    else if(!ok && (curCat==="vocab"||curCat==="exam"||curCat==="sprint"))body+=discrimHTML(q.answer,picked); // 形近字辨別卡:單字/模擬考/衝刺都出現
+    else if(!ok && !q.secType && (curCat==="vocab"||curCat==="exam"||curCat==="sprint"))body+=discrimHTML(q.answer,picked); // 形近字辨別卡:單字/衝刺(模擬考字彙已另有完整中文卡)
     if(q.qZh && (curCat==="grammar"||curCat==="gsprint"))body+=gramSentenceHTML(q); // 文法/文法衝刺:答完分開列出整句中文
     fb.innerHTML=body;
     fb.querySelectorAll(".confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
@@ -1105,7 +1144,8 @@ function renderDone(){
     <div style="font-size:52px">${pass?"🎉":"💪"}</div>
     <div style="font-family:'Fraunces';font-size:40px;color:var(--accent);font-weight:600">${rec.score} / ${total}</div>
     <p style="color:var(--muted);margin-top:6px">${pass?"做得好!":"再練一次會更熟。"}</p></div>`;
-  html+=`<div class="hint">${hasNext?("下一關預告:"+fmtHint(curCat,viewLevel+1)):"這個大類完成了,回目錄挑戰別的吧!"}</div>`;
+  if(curCat==="exam")html+=`<div class="hint">${hasNext?"下一回合是不同主題的完整考卷,加油!":"全部 10 回模擬考都完成了,回目錄複習別的吧!"}</div>`;
+  else html+=`<div class="hint">${hasNext?("下一關預告:"+fmtHint(curCat,viewLevel+1)):"這個大類完成了,回目錄挑戰別的吧!"}</div>`;
   html+=`<div class="row"><button class="btn btn-ghost" id="again">再練一次</button>`;
   html+=hasNext?`<button class="btn btn-main" id="next">下一關 ›</button>`:`<button class="btn btn-main" id="home">回目錄</button>`;
   html+=`</div><div class="row" style="padding-top:10px"><button class="btn btn-ghost" id="cat">回 ${CATS.find(c=>c.key===curCat).name} 關卡列表</button></div>`;
