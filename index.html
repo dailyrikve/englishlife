@@ -458,7 +458,8 @@ function chrome(){
   let learned=0;for(const k in state.progress.vocab){const i=parseInt(k.replace("L",""));if(DAYS[i])learned+=DAYS[i].length;}
   document.getElementById("tally").textContent="累積認得 "+learned+" 個單字";
   const wbBtn=document.getElementById("wbBtn");
-  if(wbBtn){let t=0;try{t=wrongbookEntries().total;}catch(e){}wbBtn.textContent="📕 錯題本"+(t?(" "+t):"");}
+  if(wbBtn){if(phase==="wrongbook")wbBtn.textContent="‹ 回首頁"; // 在錯題本內,頂部按鈕切換成回首頁
+    else{let t=0;try{t=wrongbookEntries().total;}catch(e){}wbBtn.textContent="📕 錯題本"+(t?(" "+t):"");}}
   if(!home&&phase!=="wrongbook"){
     const cn=CATS.find(c=>c.key===curCat);
     document.getElementById("dayBig").textContent=(phase==="cat")?cn.name:(curCat.endsWith("sprint")?cn.name:(cn.name+" · 第 "+(viewLevel+1)+" 關"));
@@ -602,13 +603,12 @@ function renderLearn(){
     document.getElementById("fwd").onclick=()=>{if(learnIdx<items.length-1){learnIdx++;render();}else buildQuiz();};
   } else if(curCat==="reading"){
     const item=readingLevels()[viewLevel],kw=(item.glossary&&item.glossary.length?item.glossary:item.keywords),k=kw[learnIdx];
-    card.innerHTML=`<div class="counter" style="display:flex;justify-content:space-between;align-items:center">難字 ${learnIdx+1} / ${kw.length}<button class="starbtn off" id="starbtn" title="收進錯題本">☆</button></div>
+    card.innerHTML=`<div class="counter">難字 ${learnIdx+1} / ${kw.length}</div>
       <div class="wordrow"><div class="word" style="font-size:${wordSize(k.en)}px">${k.en}</div>${speakerHTML()}</div>
       <div class="syl">${k.syl||""}</div><div class="pos">${k.pos||""}</div><div class="zh">${k.zh}</div>
       <div class="row" style="margin-top:22px"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===kw.length-1?'開始閱讀 →':'下一個 ›'}</button></div>`;
     document.getElementById("spk").onclick=()=>speak(k.en);speak(k.en);
-    bindStarBtn({kind:"word",data:{en:k.en,zh:k.zh,pos:k.pos,syl:k.syl}});
     document.getElementById("back").onclick=()=>{if(learnIdx>0){learnIdx--;render();}else{phase="cat";render();}};
     document.getElementById("fwd").onclick=()=>{if(learnIdx<kw.length-1){learnIdx++;render();}else buildQuiz();};
   }
@@ -957,7 +957,7 @@ function wbToast(msg){let t=document.getElementById("wbtoast");
     t.style.cssText="position:fixed;left:50%;bottom:34px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px;font-size:13px;z-index:99;opacity:0;transition:opacity .2s;pointer-events:none;box-shadow:0 6px 18px rgba(0,0,0,.18)";
     document.body.appendChild(t);}
   t.textContent=msg;t.style.opacity="1";clearTimeout(t._h);t._h=setTimeout(()=>{t.style.opacity="0";},1300);}
-function updateWbBadge(){const b=document.getElementById("wbBtn");if(!b)return;let t=0;try{t=wrongbookEntries().total;}catch(e){}b.textContent="📕 錯題本"+(t?(" "+t):"");}
+function updateWbBadge(){const b=document.getElementById("wbBtn");if(!b||phase==="wrongbook")return;let t=0;try{t=wrongbookEntries().total;}catch(e){}b.textContent="📕 錯題本"+(t?(" "+t):"");}
 // 綁定學習卡/測驗卡上方的 ☆ 鈕(id="starbtn")
 function bindStarBtn(target){
   const sb=document.getElementById("starbtn");if(!sb)return;
@@ -1303,7 +1303,7 @@ function renderQuiz(){
   html+=`<div class="feedback" id="fb"></div>`;
   card.innerHTML=html;
   card.classList.toggle("storymode",!!isStory);
-  bindStarBtn(qStarTarget(q,curCat)); // 測驗卡上方 ☆:隨時可把這題收進錯題本
+  bindStarBtn(curCat==="reading"?null:qStarTarget(q,curCat)); // 測驗卡上方 ☆;閱讀單元不提供手動收藏(無前後文,收藏意義不大)
   if(q.speak){document.getElementById("spk").onclick=()=>speak(q.speak);speak(q.speak);}
   if(q.cloze){const rb=document.getElementById("revealzh");if(rb)rb.onclick=()=>{
     const h=document.getElementById("zhhint");h.textContent=q.clozeZh;h.style.display="block";rb.style.display="none";};}
@@ -1397,7 +1397,7 @@ function renderDone(){
 }
 
 document.getElementById("menuBtn").onclick=()=>{phase="home";render();};
-document.getElementById("wbBtn").onclick=()=>{state._wbF="all";phase="wrongbook";render();};
+document.getElementById("wbBtn").onclick=()=>{if(phase==="wrongbook"){phase="home";}else{state._wbF="all";phase="wrongbook";}render();};
 init();
 </script>
 </body>
