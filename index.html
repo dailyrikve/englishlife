@@ -199,7 +199,7 @@
   .wbBtn:hover{background:var(--accent-soft);}
   .wb-sec{margin-top:20px;}
   .wb-sec-h{font-size:13px;color:var(--teal);font-weight:700;margin-bottom:9px;letter-spacing:.02em;}
-  .wb-item{position:relative;background:#fffaf0;border:1px solid var(--line);border-radius:12px;padding:11px 36px 12px 13px;margin-bottom:9px;}
+  .wb-item{position:relative;background:#fffaf0;border:1px solid var(--line);border-radius:12px;padding:11px 60px 12px 13px;margin-bottom:9px;}
   .wb-en{font-family:'Fraunces',serif;font-size:19px;color:var(--ink);line-height:1.4;}
   .wb-zh{font-size:14px;color:var(--muted);margin-top:3px;line-height:1.5;}
   .wb-ex{font-family:'Fraunces',serif;font-size:14.5px;color:#6b5d4a;margin-top:7px;line-height:1.55;}
@@ -210,6 +210,13 @@
   .wb-spk{cursor:pointer;font-size:14px;margin-left:7px;}
   .wb-tag{font-size:10px;border-radius:5px;padding:1px 7px;margin-right:6px;background:#eef3f1;color:var(--teal);vertical-align:middle;}
   .wb-empty{text-align:center;color:var(--muted);padding:38px 12px;line-height:1.9;}
+  /* 手動收藏星號 */
+  .starbtn{background:none;border:none;cursor:pointer;font-size:23px;line-height:1;color:#e0a92e;padding:0 2px;}
+  .starbtn.off{color:#cabfa8;}
+  .wb-star{position:absolute;top:8px;right:34px;width:24px;height:24px;border:none;background:transparent;color:#e0a92e;font-size:16px;cursor:pointer;border-radius:50%;line-height:1;padding:0;}
+  .wb-star.off{color:#cabfa8;}
+  .wb-star:hover{background:#fbeec9;}
+  .wb-sec.star .wb-item{border-color:#ecd28a;background:#fffdf4;}
 </style>
 </head>
 <body>
@@ -538,7 +545,7 @@ function renderLearn(){
       <div class="conf-row"><span class="conf-w">${diffHL(w.en,near[0].en)}</span><span class="conf-zh">${w.zh}(這個字)</span></div>
       ${near.map(s=>'<div class="conf-row"><span class="conf-w">'+diffHL(s.en,w.en)+'</span><span class="conf-zh">'+s.zh+'</span><span class="confspk" data-en="'+s.en+'">🔊</span></div>').join("")}
       </div>`:"";
-    card.innerHTML=`<div class="counter">單字 ${learnIdx+1} / ${set.length}</div>
+    card.innerHTML=`<div class="counter" style="display:flex;justify-content:space-between;align-items:center">單字 ${learnIdx+1} / ${set.length}<button class="starbtn off" id="starbtn" title="收進錯題本">☆</button></div>
       <div class="wordrow"><div class="word">${w.en}</div>${speakerHTML()}${lvtag}</div>
       <div class="syl">${w.syl||""}</div><div class="pos">${w.pos}</div><div class="zh">${w.zh}</div>
       ${w.tip?('<div class="hint" style="margin-top:14px">💡 '+w.tip+'</div>'):''}
@@ -553,6 +560,7 @@ function renderLearn(){
       <div class="row"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===set.length-1?'開始測驗 →':'下一個 ›'}</button></div>`;
     document.getElementById("spk").onclick=()=>speak(w.en);speak(w.en);
+    bindStarBtn({kind:"word",data:{en:w.en,zh:w.zh,pos:w.pos,syl:w.syl,ex:w.ex,ext:w.ext}});
     card.querySelectorAll(".conf .confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
     const em=document.getElementById("entmask"),et=document.getElementById("extog");
     function revealZh(){em.classList.remove("zhmask");et.style.display="none";}
@@ -565,7 +573,7 @@ function renderLearn(){
     document.getElementById("fwd").onclick=()=>{if(learnIdx<set.length-1){learnIdx++;render();}else buildQuiz();};
   } else if(curCat==="grammar"){
     const items=gramLevels()[viewLevel],it=items[learnIdx];
-    card.innerHTML=`<div class="counter">句型 ${learnIdx+1} / ${items.length}</div>
+    card.innerHTML=`<div class="counter" style="display:flex;justify-content:space-between;align-items:center">句型 ${learnIdx+1} / ${items.length}<button class="starbtn off" id="starbtn" title="收進錯題本">☆</button></div>
       <div class="qhead small"><b>${it.pattern}</b></div>
       <div class="zh" style="font-size:17px">${it.zh}</div>
       <div class="ex"><div class="en" style="font-size:18px">${hlSignal(it.ex,it.signal,it.forms)}</div><div class="ent">${it.exZh}</div></div>
@@ -574,6 +582,7 @@ function renderLearn(){
       ${contrastHTML(it.contrast)}
       <div class="row"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===items.length-1?'開始測驗 →':'下一個 ›'}</button></div>`;
+    bindStarBtn({kind:"pattern",data:{pattern:it.pattern,zh:it.zh,ex:it.ex,exZh:it.exZh,note:it.note||it.signalNote||""}});
     if(it.contrast&&it.contrast.items&&it.contrast.items.length){
       const c=it.contrast,stem=document.getElementById("cstem"),note=document.getElementById("cnote");
       const sel=(i)=>{const f=c.items[i];const bad=(f.ok===false);
@@ -590,12 +599,13 @@ function renderLearn(){
     document.getElementById("fwd").onclick=()=>{if(learnIdx<items.length-1){learnIdx++;render();}else buildQuiz();};
   } else if(curCat==="reading"){
     const item=readingLevels()[viewLevel],kw=(item.glossary&&item.glossary.length?item.glossary:item.keywords),k=kw[learnIdx];
-    card.innerHTML=`<div class="counter">難字 ${learnIdx+1} / ${kw.length}</div>
+    card.innerHTML=`<div class="counter" style="display:flex;justify-content:space-between;align-items:center">難字 ${learnIdx+1} / ${kw.length}<button class="starbtn off" id="starbtn" title="收進錯題本">☆</button></div>
       <div class="wordrow"><div class="word">${k.en}</div>${speakerHTML()}</div>
       <div class="syl">${k.syl||""}</div><div class="pos">${k.pos||""}</div><div class="zh">${k.zh}</div>
       <div class="row" style="margin-top:22px"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===kw.length-1?'開始閱讀 →':'下一個 ›'}</button></div>`;
     document.getElementById("spk").onclick=()=>speak(k.en);speak(k.en);
+    bindStarBtn({kind:"word",data:{en:k.en,zh:k.zh,pos:k.pos,syl:k.syl}});
     document.getElementById("back").onclick=()=>{if(learnIdx>0){learnIdx--;render();}else{phase="cat";render();}};
     document.getElementById("fwd").onclick=()=>{if(learnIdx<kw.length-1){learnIdx++;render();}else buildQuiz();};
   }
@@ -903,6 +913,56 @@ function collectWrong(q,picked,cat){
   }
   saveState();
 }
+// ===== 手動收藏(☆)=====
+function wbKey(kind,data){
+  if(kind==="word")return "w:"+String(data.en).toLowerCase();
+  if(kind==="pattern")return "p:"+data.pattern;
+  return "s:"+hashStr((data.q||"")+"|"+(data.answer||""));
+}
+function wbStore(kind){const wb=ensureWB();return kind==="word"?wb.words:kind==="pattern"?wb.patterns:wb.sentences;}
+function wbStoreByKey(key){const wb=ensureWB();return key[0]==="w"?wb.words:key[0]==="p"?wb.patterns:wb.sentences;}
+function wbNewEntry(kind,data){
+  if(kind==="word")return {en:data.en,zh:data.zh||"",pos:data.pos||"",syl:data.syl||"",ex:data.ex||"",ext:data.ext||"",count:0,star:true};
+  if(kind==="pattern")return {pattern:data.pattern,zh:data.zh||"",ex:data.ex||"",exZh:data.exZh||"",note:data.note||"",count:0,star:true};
+  return {q:data.q,answer:data.answer,note:data.note||"",trans:data.trans||"",cat:data.cat||"",count:0,star:true};
+}
+function isStarred(kind,data){const e=wbStore(kind)[wbKey(kind,data)];return !!(e&&e.star);}
+function toggleStar(kind,data){
+  const wb=ensureWB();const store=wbStore(kind);const k=wbKey(kind,data);let e=store[k];
+  if(e){if(e.star){e.star=false;if(!e.count)delete store[k];} // 取消;純收藏(沒答錯過)→ 整筆移除
+        else{e.star=true;delete wb.hidden[k];}}
+  else{store[k]=wbNewEntry(kind,data);delete wb.hidden[k];}
+  saveState();return isStarred(kind,data);
+}
+// 由測驗題物件推出收藏標的(kind + data)
+function qStarTarget(q,cat){
+  if(!q)return null;
+  if(cat==="grammar"||cat==="gsprint"){if(!q.gPattern)return null;const g=GRAMMAR.find(x=>x.pattern===q.gPattern);
+    return {kind:"pattern",data:{pattern:q.gPattern,zh:g?g.zh:(q.gZh||""),ex:g?g.ex:"",exZh:g?g.exZh:"",note:g?(g.note||g.signalNote||""):(q.note||"")}};}
+  if(cat==="reading"||cat==="exam")return {kind:"sentence",data:{q:q.head,answer:q.answer,note:q.note||"",trans:q.trans||"",cat}};
+  let en,zh; // vocab / sprint
+  if(cat==="sprint"){en=q.sprintEn;zh=q.sprintZh;}
+  else if(q.cloze){en=q.clozeEn;zh=q.clozeZh;}
+  else if(q.answer&&/[a-z]/i.test(q.answer)&&!/[一-鿿]/.test(q.answer)){en=q.answer;zh=q.head;}
+  else{en=q.head;zh=q.answer;}
+  if(!en)return null;
+  const src=ALL.find(x=>x.en.toLowerCase()===String(en).toLowerCase());
+  return {kind:"word",data:{en:src?src.en:en,zh:src?src.zh:zh,pos:src?src.pos:"",syl:src?src.syl:"",ex:src?src.ex:""}};
+}
+function wbToast(msg){let t=document.getElementById("wbtoast");
+  if(!t){t=document.createElement("div");t.id="wbtoast";
+    t.style.cssText="position:fixed;left:50%;bottom:34px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px;font-size:13px;z-index:99;opacity:0;transition:opacity .2s;pointer-events:none;box-shadow:0 6px 18px rgba(0,0,0,.18)";
+    document.body.appendChild(t);}
+  t.textContent=msg;t.style.opacity="1";clearTimeout(t._h);t._h=setTimeout(()=>{t.style.opacity="0";},1300);}
+function updateWbBadge(){const b=document.getElementById("wbBtn");if(!b)return;let t=0;try{t=wrongbookEntries().total;}catch(e){}b.textContent="📕 錯題本"+(t?(" "+t):"");}
+// 綁定學習卡/測驗卡上方的 ☆ 鈕(id="starbtn")
+function bindStarBtn(target){
+  const sb=document.getElementById("starbtn");if(!sb)return;
+  if(!target){sb.style.display="none";return;}
+  const refresh=()=>{const on=isStarred(target.kind,target.data);sb.textContent=on?"★":"☆";sb.classList.toggle("off",!on);};
+  refresh();
+  sb.onclick=()=>{const on=toggleStar(target.kind,target.data);sb.textContent=on?"★":"☆";sb.classList.toggle("off",!on);wbToast(on?"已加入錯題本 ⭐":"已取消收藏");updateWbBadge();};
+}
 // 整理錯題本內容:衝刺類即時回溯 + 手動/句子題的儲存資料,合併去重、依錯誤次數排序
 function wrongbookEntries(){
   const hid=wbHidden(),wb=state.wrongbook||{};
@@ -911,77 +971,110 @@ function wrongbookEntries(){
   const sp=state.progress.sprint||{};
   for(const en in sp){const w=(sp[en]&&sp[en].w)||0;if(w<=0)continue;const k="w:"+en.toLowerCase();if(hid[k])continue;
     const src=ALL.find(x=>x.en.toLowerCase()===en.toLowerCase());
-    words[k]={key:k,en:src?src.en:en,zh:src?src.zh:"",pos:src?src.pos:"",ex:src?src.ex:"",count:w};}
-  // 單字(關卡)答錯 → 儲存資料
-  for(const k in (wb.words||{})){if(hid[k])continue;const e=wb.words[k];
-    if(words[k])words[k].count=Math.max(words[k].count,e.count||1);
-    else words[k]={key:k,en:e.en,zh:e.zh,pos:e.pos,ex:e.ex,count:e.count||1};}
+    words[k]={key:k,en:src?src.en:en,zh:src?src.zh:"",pos:src?src.pos:"",ex:src?src.ex:"",count:w,star:false};}
+  // 單字(關卡答錯 / 手動收藏)→ 儲存資料;star 項目即使沒答錯(count 0)也保留
+  for(const k in (wb.words||{})){if(hid[k])continue;const e=wb.words[k];const c=e.count||0;if(!c&&!e.star)continue;
+    if(words[k]){words[k].count=Math.max(words[k].count,c);words[k].star=words[k].star||!!e.star;}
+    else words[k]={key:k,en:e.en,zh:e.zh,pos:e.pos,syl:e.syl,ex:e.ex,count:c,star:!!e.star};}
   // 文法衝刺 → 即時回溯
   const gp=state.progress.gsprint||{};
   for(const pat in gp){const w=(gp[pat]&&gp[pat].w)||0;if(w<=0)continue;const k="p:"+pat;if(hid[k])continue;
     const src=GRAMMAR.find(g=>g.pattern===pat);
-    patterns[k]={key:k,pattern:pat,zh:src?src.zh:"",ex:src?src.ex:"",exZh:src?src.exZh:"",note:src?(src.note||src.signalNote||""):"",count:w};}
-  for(const k in (wb.patterns||{})){if(hid[k])continue;const e=wb.patterns[k];
-    if(patterns[k])patterns[k].count=Math.max(patterns[k].count,e.count||1);
-    else patterns[k]={key:k,pattern:e.pattern,zh:e.zh,ex:e.ex,exZh:e.exZh,note:e.note,count:e.count||1};}
-  // 句子題(閱讀/模擬考)→ 儲存資料
-  for(const k in (wb.sentences||{})){if(hid[k])continue;const e=wb.sentences[k];sentences[k]={key:k,q:e.q,answer:e.answer,note:e.note,trans:e.trans,cat:e.cat,count:e.count||1};}
-  const wArr=Object.values(words).sort((a,b)=>b.count-a.count);
-  const pArr=Object.values(patterns).sort((a,b)=>b.count-a.count);
-  const sArr=Object.values(sentences).sort((a,b)=>(b.count||1)-(a.count||1));
-  return {words:wArr,patterns:pArr,sentences:sArr,total:wArr.length+pArr.length+sArr.length};
+    patterns[k]={key:k,pattern:pat,zh:src?src.zh:"",ex:src?src.ex:"",exZh:src?src.exZh:"",note:src?(src.note||src.signalNote||""):"",count:w,star:false};}
+  for(const k in (wb.patterns||{})){if(hid[k])continue;const e=wb.patterns[k];const c=e.count||0;if(!c&&!e.star)continue;
+    if(patterns[k]){patterns[k].count=Math.max(patterns[k].count,c);patterns[k].star=patterns[k].star||!!e.star;}
+    else patterns[k]={key:k,pattern:e.pattern,zh:e.zh,ex:e.ex,exZh:e.exZh,note:e.note,count:c,star:!!e.star};}
+  // 句子題(閱讀/模擬考答錯 / 手動收藏)→ 儲存資料
+  for(const k in (wb.sentences||{})){if(hid[k])continue;const e=wb.sentences[k];const c=e.count||0;if(!c&&!e.star)continue;
+    sentences[k]={key:k,q:e.q,answer:e.answer,note:e.note,trans:e.trans,cat:e.cat,count:c,star:!!e.star};}
+  const byCount=(a,b)=>b.count-a.count;
+  const wArr=Object.values(words).sort(byCount);
+  const pArr=Object.values(patterns).sort(byCount);
+  const sArr=Object.values(sentences).sort(byCount);
+  const starred=[...wArr,...pArr,...sArr].filter(x=>x.star);
+  return {words:wArr,patterns:pArr,sentences:sArr,starred,total:wArr.length+pArr.length+sArr.length};
+}
+// 單筆項目 HTML(依 key 前綴決定種類);含 ☆ 收藏切換與 ✕ 移除
+function wbItemHTML(e){
+  const star=`<button class="wb-star ${e.star?'':'off'}" data-k="${e.key}" title="收藏">${e.star?'★':'☆'}</button>`;
+  const x=`<button class="wb-x" data-k="${e.key}" title="移除">✕</button>`;
+  const cnt=e.count>1?('<span class="wb-cnt">錯 '+e.count+' 次</span>'):'';
+  if(e.key[0]==="w")return `<div class="wb-item">${star}${x}
+    <div class="wb-en">${e.en}<span class="wb-spk confspk" data-en="${e.en}">🔊</span>${cnt}</div>
+    <div class="wb-zh">${e.pos?('<i style="color:#a89878">'+e.pos+'</i> '):''}${e.zh||""}</div>
+    ${e.ex?('<div class="wb-ex">'+hlWord(e.ex,e.en)+'</div>'):''}</div>`;
+  if(e.key[0]==="p")return `<div class="wb-item">${star}${x}
+    <div class="wb-en" style="font-size:16px">${e.pattern}${cnt}</div>
+    ${e.zh?('<div class="wb-zh">'+e.zh+'</div>'):''}
+    ${e.ex?('<div class="wb-ex">'+e.ex+(e.exZh?(' <span style="color:#9c8a6e">'+e.exZh+'</span>'):'')+'</div>'):''}
+    ${e.note?('<div class="wb-note">💡 '+e.note+'</div>'):''}</div>`;
+  const tag=e.cat==="exam"?"模擬考":"閱讀";
+  return `<div class="wb-item">${star}${x}
+    <div class="wb-en" style="font-size:15px;line-height:1.5"><span class="wb-tag">${tag}</span>${e.q}${cnt}</div>
+    <div class="wb-zh">✓ 正解:<b style="color:var(--accent)">${e.answer}</b></div>
+    ${e.trans?('<div class="wb-note">'+e.trans+'</div>'):''}
+    ${e.note?('<div class="wb-note">💡 '+e.note+'</div>'):''}</div>`;
 }
 function renderWrongbook(){
-  const {words,patterns,sentences,total}=wrongbookEntries();
+  const {words,patterns,sentences,starred,total}=wrongbookEntries();
   const card=document.getElementById("card");
   let html=`<div class="counter" style="text-align:center">📕 錯題本</div>`;
   if(total===0){
-    html+=`<div class="wb-empty">目前還沒有錯題紀錄。<br>到各單元練習,<b>答錯的題目會自動收進這裡</b>。<br><br>
+    html+=`<div class="wb-empty">目前還沒有錯題紀錄。<br>到各單元練習,<b>答錯的題目會自動收進這裡</b>。<br>
+      看到想特別記的字或句型,點右上角 ☆ 也能收進來。<br><br>
       <span style="font-size:13px">單字衝刺、文法衝刺以前練過、答錯過的字和句型,也會自動出現在這裡。</span></div>
       <div class="row"><button class="btn btn-main" id="wbhome">回首頁</button></div>`;
     card.innerHTML=html;
     document.getElementById("wbhome").onclick=()=>{phase="home";render();};
     return;
   }
-  const onlyHF=!!state._wbHF;
-  const fW=onlyHF?words.filter(x=>x.count>=2):words;
-  const fP=onlyHF?patterns.filter(x=>x.count>=2):patterns;
-  const fS=onlyHF?sentences.filter(x=>(x.count||1)>=2):sentences;
-  html+=`<div class="hint" style="margin-top:12px">進考場前快速掃一遍曾經錯過的地方。<b>錯越多次的排越前面。</b>點 ✕ 可移除已經熟了的。</div>
+  const f=state._wbF||"all"; // all / star / hf
+  html+=`<div class="hint" style="margin-top:12px">進考場前快速掃一遍曾經錯過的地方。<b>錯越多次的排越前面。</b>點 ☆ 收藏想特別複習的、點 ✕ 移除已經熟了的。</div>
     <div class="setting" style="margin-top:14px"><div class="chips">
-      <button class="chip ${!onlyHF?'on':''}" id="wbAll">全部 (${total})</button>
-      <button class="chip ${onlyHF?'on':''}" id="wbHF">只看高頻 (錯 ≥ 2 次)</button></div></div>`;
-  if(fW.length){html+=`<div class="wb-sec"><div class="wb-sec-h">📦 常錯單字 (${fW.length})</div>`;
-    for(const w of fW){html+=`<div class="wb-item">
-      <button class="wb-x" data-k="${w.key}" title="移除">✕</button>
-      <div class="wb-en">${w.en}<span class="wb-spk confspk" data-en="${w.en}">🔊</span>${w.count>1?('<span class="wb-cnt">錯 '+w.count+' 次</span>'):''}</div>
-      <div class="wb-zh">${w.pos?('<i style="color:#a89878">'+w.pos+'</i> '):''}${w.zh||""}</div>
-      ${w.ex?('<div class="wb-ex">'+hlWord(w.ex,w.en)+'</div>'):''}</div>`;}
-    html+=`</div>`;}
-  if(fP.length){html+=`<div class="wb-sec"><div class="wb-sec-h">🔧 常錯文法句型 (${fP.length})</div>`;
-    for(const p of fP){html+=`<div class="wb-item">
-      <button class="wb-x" data-k="${p.key}" title="移除">✕</button>
-      <div class="wb-en" style="font-size:16px">${p.pattern}${p.count>1?('<span class="wb-cnt">錯 '+p.count+' 次</span>'):''}</div>
-      ${p.zh?('<div class="wb-zh">'+p.zh+'</div>'):''}
-      ${p.ex?('<div class="wb-ex">'+p.ex+(p.exZh?(' <span style="color:#9c8a6e">'+p.exZh+'</span>'):'')+'</div>'):''}
-      ${p.note?('<div class="wb-note">💡 '+p.note+'</div>'):''}</div>`;}
-    html+=`</div>`;}
-  if(fS.length){html+=`<div class="wb-sec"><div class="wb-sec-h">📝 常錯題目 · 閱讀/模擬考 (${fS.length})</div>`;
-    for(const s of fS){const tag=s.cat==="exam"?"模擬考":"閱讀";
-      html+=`<div class="wb-item">
-      <button class="wb-x" data-k="${s.key}" title="移除">✕</button>
-      <div class="wb-en" style="font-size:15px;line-height:1.5"><span class="wb-tag">${tag}</span>${s.q}${s.count>1?('<span class="wb-cnt">錯 '+s.count+' 次</span>'):''}</div>
-      <div class="wb-zh">✓ 正解:<b style="color:var(--accent)">${s.answer}</b></div>
-      ${s.trans?('<div class="wb-note">'+s.trans+'</div>'):''}
-      ${s.note?('<div class="wb-note">💡 '+s.note+'</div>'):''}</div>`;}
-    html+=`</div>`;}
-  if(!fW.length&&!fP.length&&!fS.length)html+=`<div class="wb-empty">沒有錯 2 次以上的題目。<br>切回「全部」看所有錯題。</div>`;
+      <button class="chip ${f==="all"?'on':''}" id="wbAll">全部 (${total})</button>
+      <button class="chip ${f==="star"?'on':''}" id="wbStar">⭐ 我收藏的 (${starred.length})</button>
+      <button class="chip ${f==="hf"?'on':''}" id="wbHF">高頻 (錯 ≥ 2 次)</button></div></div>`;
+  // 置頂收藏區(全部 / 我收藏的 兩種檢視才顯示)
+  if((f==="all"||f==="star")&&starred.length){
+    html+=`<div class="wb-sec star"><div class="wb-sec-h">⭐ 我收藏的 (${starred.length})</div>`;
+    for(const e of starred)html+=wbItemHTML(e);
+    html+=`</div>`;
+  }
+  if(f==="star"&&!starred.length)html+=`<div class="wb-empty">還沒有收藏任何項目。<br>練習或複習時,點右上角 ☆ 就能收進來。</div>`;
+  // 自動蒐集分區:全部檢視排除已收藏(已在置頂);高頻檢視只留 count≥2
+  if(f!=="star"){
+    const pick=(arr)=>arr.filter(x=> f==="hf" ? x.count>=2 : !x.star );
+    const fW=pick(words),fP=pick(patterns),fS=pick(sentences);
+    if(fW.length){html+=`<div class="wb-sec"><div class="wb-sec-h">📦 常錯單字 (${fW.length})</div>`;
+      for(const w of fW)html+=wbItemHTML(w);html+=`</div>`;}
+    if(fP.length){html+=`<div class="wb-sec"><div class="wb-sec-h">🔧 常錯文法句型 (${fP.length})</div>`;
+      for(const p of fP)html+=wbItemHTML(p);html+=`</div>`;}
+    if(fS.length){html+=`<div class="wb-sec"><div class="wb-sec-h">📝 常錯題目 · 閱讀/模擬考 (${fS.length})</div>`;
+      for(const s of fS)html+=wbItemHTML(s);html+=`</div>`;}
+    if(f==="hf"&&!fW.length&&!fP.length&&!fS.length)html+=`<div class="wb-empty">沒有錯 2 次以上的題目。<br>切回「全部」看所有錯題。</div>`;
+  }
   html+=`<div class="row" style="margin-top:20px"><button class="btn btn-main" id="wbhome">回首頁</button></div>`;
   card.innerHTML=html;
+  // 點擊查找用:key → 顯示物件
+  const byKey={};[...words,...patterns,...sentences].forEach(e=>byKey[e.key]=e);
+  function wbToggleStarEntry(disp){if(!disp)return;const wb=ensureWB();
+    const store=disp.key[0]==="w"?wb.words:disp.key[0]==="p"?wb.patterns:wb.sentences;
+    let e=store[disp.key];
+    if(!e){e=store[disp.key]= disp.key[0]==="w"?{en:disp.en,zh:disp.zh,pos:disp.pos,syl:disp.syl,ex:disp.ex,count:0,star:false}
+      :disp.key[0]==="p"?{pattern:disp.pattern,zh:disp.zh,ex:disp.ex,exZh:disp.exZh,note:disp.note,count:0,star:false}
+      :{q:disp.q,answer:disp.answer,note:disp.note,trans:disp.trans,cat:disp.cat,count:0,star:false};}
+    e.star=!e.star;delete wb.hidden[disp.key];if(!e.star&&!e.count)delete store[disp.key];saveState();}
+  function wbRemoveEntry(disp){if(!disp)return;const wb=ensureWB();const key=disp.key;
+    const store=key[0]==="w"?wb.words:key[0]==="p"?wb.patterns:wb.sentences;const e=store[key];
+    if(disp.star&&!disp.count){if(e)delete store[key];} // 純收藏(沒答錯過)→ 直接刪
+    else{wb.hidden[key]=true;if(e)e.star=false;}        // 自動/曾答錯 → 隱藏並取消收藏
+    saveState();}
   card.querySelectorAll(".confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
-  card.querySelectorAll(".wb-x").forEach(b=>{b.onclick=()=>{ensureWB().hidden[b.dataset.k]=true;saveState();render();};});
-  const aAll=document.getElementById("wbAll");if(aAll)aAll.onclick=()=>{state._wbHF=false;render();};
-  const aHF=document.getElementById("wbHF");if(aHF)aHF.onclick=()=>{state._wbHF=true;render();};
+  card.querySelectorAll(".wb-star").forEach(b=>{b.onclick=()=>{wbToggleStarEntry(byKey[b.dataset.k]);render();};});
+  card.querySelectorAll(".wb-x").forEach(b=>{b.onclick=()=>{wbRemoveEntry(byKey[b.dataset.k]);render();};});
+  const aAll=document.getElementById("wbAll");if(aAll)aAll.onclick=()=>{state._wbF="all";render();};
+  const aStar=document.getElementById("wbStar");if(aStar)aStar.onclick=()=>{state._wbF="star";render();};
+  const aHF=document.getElementById("wbHF");if(aHF)aHF.onclick=()=>{state._wbF="hf";render();};
   document.getElementById("wbhome").onclick=()=>{phase="home";render();};
 }
 
@@ -1174,7 +1267,7 @@ function renderQuiz(){
   const isCloze=q.ctxMode?(q.ctxMode==="cloze"):quizCloze;
   const storyData=q.ctxMode?null:quizStoryData; // 整卷沒有句對句散文資料
   const curCtx={passage:ctxPassage,mode:(isStory?"story":(isCloze?"cloze":"reading")),story:storyData};
-  let html=`<div class="counter">第 ${quizIdx+1} / ${quizQ.length} 題</div>`;
+  let html=`<div class="counter" style="display:flex;justify-content:space-between;align-items:center">第 ${quizIdx+1} / ${quizQ.length} 題<button class="starbtn off" id="starbtn" title="收進錯題本">☆</button></div>`;
   if(ctxPassage){
     const lng=(!isStory&&!isCloze&&ctxPassage.split(/\s+/).length>120);
     const boxCls=isStory?"story":("ctx"+(lng?" long":""));
@@ -1207,6 +1300,7 @@ function renderQuiz(){
   html+=`<div class="feedback" id="fb"></div>`;
   card.innerHTML=html;
   card.classList.toggle("storymode",!!isStory);
+  bindStarBtn(qStarTarget(q,curCat)); // 測驗卡上方 ☆:隨時可把這題收進錯題本
   if(q.speak){document.getElementById("spk").onclick=()=>speak(q.speak);speak(q.speak);}
   if(q.cloze){const rb=document.getElementById("revealzh");if(rb)rb.onclick=()=>{
     const h=document.getElementById("zhhint");h.textContent=q.clozeZh;h.style.display="block";rb.style.display="none";};}
@@ -1300,7 +1394,7 @@ function renderDone(){
 }
 
 document.getElementById("menuBtn").onclick=()=>{phase="home";render();};
-document.getElementById("wbBtn").onclick=()=>{state._wbHF=false;phase="wrongbook";render();};
+document.getElementById("wbBtn").onclick=()=>{state._wbF="all";phase="wrongbook";render();};
 init();
 </script>
 </body>
