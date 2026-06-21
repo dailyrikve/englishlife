@@ -30,15 +30,15 @@
   .card{background:#fffaf0;border:1px solid var(--line);border-radius:20px;padding:28px 24px;
     box-shadow:0 8px 24px rgba(80,60,30,.07);min-height:330px;display:flex;flex-direction:column;}
   .counter{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;}
-  .wordrow{display:flex;align-items:center;gap:14px;}
+  .wordrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
   .lvtag{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap;line-height:1.4;}
   .lvtag.lv2{background:#eef3f1;color:var(--teal);border:1px solid #cfe0db;}
   .lvtag.lv3{background:#fbeee6;color:#b3502e;border:1px solid #e6c3ab;}
-  .word{font-family:'Fraunces',serif;font-size:44px;font-weight:600;line-height:1.05;letter-spacing:-0.02em;}
+  .word{font-family:'Fraunces',serif;font-size:44px;font-weight:600;line-height:1.05;letter-spacing:-0.02em;min-width:0;overflow-wrap:break-word;flex-shrink:1;}
   .speaker{flex-shrink:0;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--teal);background:#eaf2f1;
     color:var(--teal);font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.12s;}
   .speaker:active{transform:scale(.9);}
-  .syl{font-family:'Fraunces',serif;font-size:20px;color:var(--teal);margin-top:10px;letter-spacing:.02em;}
+  .syl{font-family:'Fraunces',serif;font-size:20px;color:var(--teal);margin-top:10px;letter-spacing:.02em;overflow-wrap:anywhere;}
   .pos{display:inline-block;font-style:italic;font-family:'Fraunces',serif;color:var(--muted);font-size:15px;margin-top:4px;}
   .zh{font-size:23px;font-weight:500;margin-top:14px;}
   .ex{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);}
@@ -53,7 +53,7 @@
   .row{display:flex;gap:10px;margin-top:auto;padding-top:22px;}
   .btn{flex:1;border:none;border-radius:12px;padding:13px;font-size:15px;font-weight:500;font-family:inherit;cursor:pointer;transition:transform .08s;}
   .btn:active{transform:scale(.97);} .btn-ghost{background:var(--paper2);color:var(--ink);border:1px solid var(--line);} .btn-main{background:var(--accent);color:#fff;}
-  .qhead{font-family:'Fraunces',serif;font-size:30px;font-weight:600;text-align:center;margin:4px 0 2px;line-height:1.3;}
+  .qhead{font-family:'Fraunces',serif;font-size:30px;font-weight:600;text-align:center;margin:4px 0 2px;line-height:1.3;overflow-wrap:break-word;}
   .qhead.small{font-size:20px;font-family:'Noto Sans TC';font-weight:500;text-align:left;line-height:1.6;}
   .qspeak{text-align:center;margin-bottom:6px;} .qspeak .speaker{display:inline-flex;}
   .qask{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px;}
@@ -102,9 +102,9 @@
   .rtag{display:inline-block;font-family:'Noto Sans TC',sans-serif;font-size:11px;padding:1px 8px;border-radius:999px;margin-top:4px;}
   .rtag.read{background:#e8eef0;color:#3f6b73;} .rtag.cloze{background:#efe7f3;color:#6b4f7a;} .rtag.fun{background:#fcefd8;color:#a9762e;}
   .opt{display:block;width:100%;text-align:left;background:#fffaf0;border:1.5px solid var(--line);border-radius:12px;
-    padding:13px 15px;margin-bottom:10px;font-size:16px;font-family:inherit;cursor:pointer;transition:.15s;}
+    padding:13px 15px;margin-bottom:10px;font-size:16px;font-family:inherit;cursor:pointer;transition:.15s;overflow-wrap:break-word;}
   .opt:hover{border-color:var(--teal);} .opt.correct{border-color:var(--good);background:#e7f3ea;} .opt.wrong{border-color:var(--bad);background:#f7e3df;} .opt:disabled{cursor:default;}
-  .fillrow{text-align:center;margin:10px 0 4px;} .fillmask{font-family:'Fraunces',serif;font-size:34px;letter-spacing:4px;}
+  .fillrow{text-align:center;margin:10px 0 4px;} .fillmask{font-family:'Fraunces',serif;font-size:34px;letter-spacing:4px;display:inline-block;max-width:100%;line-height:1.4;}
   .fillin{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:14px;font-size:20px;font-family:'Fraunces',serif;text-align:center;margin-top:14px;}
   .fillin:focus{outline:none;border-color:var(--teal);}
   .feedback{margin-top:14px;font-size:15px;line-height:1.6;padding:12px;border-radius:10px;display:none;}
@@ -120,14 +120,14 @@
   .conf{margin-top:14px;background:#fbf2ec;border:1px solid var(--accent-soft);border-radius:12px;padding:12px 14px;}
   .conf-h{font-size:12px;color:var(--accent);font-weight:500;margin-bottom:6px;}
   .conf-row{display:flex;align-items:center;gap:10px;margin-top:6px;}
-  .conf-w{font-family:'Fraunces',serif;font-size:21px;min-width:104px;color:var(--ink);}
+  .conf-w{font-family:'Fraunces',serif;font-size:21px;min-width:104px;color:var(--ink);overflow-wrap:anywhere;}
   .conf-zh{font-size:14px;color:var(--muted);flex:1;}
   .dchar{color:var(--accent);font-weight:700;border-bottom:2px solid var(--accent);}
   .confspk{cursor:pointer;font-size:15px;flex-shrink:0;}
   .disc{margin-top:12px;padding-top:10px;border-top:1px dashed var(--bad);}
   .disc-h{font-size:12px;margin-bottom:6px;color:var(--bad);}
   .disc-row{display:flex;align-items:center;gap:9px;margin-top:5px;}
-  .disc-w{font-family:'Fraunces',serif;font-size:21px;color:var(--ink);min-width:104px;}
+  .disc-w{font-family:'Fraunces',serif;font-size:21px;color:var(--ink);min-width:104px;overflow-wrap:anywhere;}
   .disc-zh{color:var(--muted);font-size:14px;flex:1;}
   /* 模擬考字彙:整句翻譯 + 各選項中文卡 */
   .vtrans{margin-top:10px;padding:8px 10px;background:rgba(0,0,0,.04);border-radius:8px;color:var(--ink);font-size:14.5px;line-height:1.65;}
@@ -138,7 +138,7 @@
   .vg-row{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:7px;margin-top:4px;background:rgba(0,0,0,.025);}
   .vg-row.on{background:#e7f3ea;}
   .vg-row.pick{background:#f7e3df;}
-  .vg-en{font-family:'Fraunces',serif;font-size:17px;color:var(--ink);min-width:96px;}
+  .vg-en{font-family:'Fraunces',serif;font-size:17px;color:var(--ink);min-width:96px;overflow-wrap:anywhere;}
   .vg-zh{color:var(--muted);font-size:14px;flex:1;}
   .vg-tag{font-size:11px;font-weight:700;border-radius:5px;padding:1px 7px;}
   .vg-tag.ok{color:var(--good);background:rgba(46,125,77,.14);}
@@ -146,7 +146,7 @@
   /* 四選一答完:各選項中文對照 */
   .optzh{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);}
   .optzh-row{display:flex;align-items:center;gap:9px;padding:3px 0;color:var(--muted);}
-  .optzh-en{font-family:'Fraunces',serif;font-size:18px;min-width:104px;color:#8a7c68;}
+  .optzh-en{font-family:'Fraunces',serif;font-size:18px;min-width:104px;color:#8a7c68;overflow-wrap:anywhere;}
   .optzh-zh{font-size:14px;flex:1;}
   .optzh-row.ans .optzh-en,.optzh-row.ans .optzh-zh{color:var(--accent);font-weight:600;}
   /* 找訊號字 chips */
@@ -200,7 +200,7 @@
   .wb-sec{margin-top:20px;}
   .wb-sec-h{font-size:13px;color:var(--teal);font-weight:700;margin-bottom:9px;letter-spacing:.02em;}
   .wb-item{position:relative;background:#fffaf0;border:1px solid var(--line);border-radius:12px;padding:11px 60px 12px 13px;margin-bottom:9px;}
-  .wb-en{font-family:'Fraunces',serif;font-size:19px;color:var(--ink);line-height:1.4;}
+  .wb-en{font-family:'Fraunces',serif;font-size:19px;color:var(--ink);line-height:1.4;overflow-wrap:break-word;}
   .wb-zh{font-size:14px;color:var(--muted);margin-top:3px;line-height:1.5;}
   .wb-ex{font-family:'Fraunces',serif;font-size:14.5px;color:#6b5d4a;margin-top:7px;line-height:1.55;}
   .wb-note{font-size:13px;color:#7a6a52;margin-top:6px;line-height:1.55;}
@@ -270,6 +270,9 @@ function saveState(){try{localStorage.setItem(STORE_KEY,JSON.stringify(state));}
 function speak(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=0.85;speechSynthesis.speak(u);}catch(e){}}
 function shuffle(a){return a.slice().sort(()=>Math.random()-0.5);}
 function normalize(d){return (Array.isArray(d)&&d.length&&Array.isArray(d[0]))?d.flat():d;}
+// 學習卡大字單字:依字母長度自動縮小,避免長字(如 entrepreneur)撐破卡片把🔊/標籤擠出去
+function wordSize(en){const L=String(en||"").replace(/[^A-Za-z]/g,"").length;
+  return L<=8?44:L<=10?38:L<=12?33:L<=15?28:L<=18?24:21;}
 
 // ===== 形近字偵測(編輯距離)=====
 function editDist(a,b){const m=a.length,n=b.length;const dp=Array.from({length:m+1},()=>new Array(n+1).fill(0));
@@ -546,7 +549,7 @@ function renderLearn(){
       ${near.map(s=>'<div class="conf-row"><span class="conf-w">'+diffHL(s.en,w.en)+'</span><span class="conf-zh">'+s.zh+'</span><span class="confspk" data-en="'+s.en+'">🔊</span></div>').join("")}
       </div>`:"";
     card.innerHTML=`<div class="counter" style="display:flex;justify-content:space-between;align-items:center">單字 ${learnIdx+1} / ${set.length}<button class="starbtn off" id="starbtn" title="收進錯題本">☆</button></div>
-      <div class="wordrow"><div class="word">${w.en}</div>${speakerHTML()}${lvtag}</div>
+      <div class="wordrow"><div class="word" style="font-size:${wordSize(w.en)}px">${w.en}</div>${speakerHTML()}${lvtag}</div>
       <div class="syl">${w.syl||""}</div><div class="pos">${w.pos}</div><div class="zh">${w.zh}</div>
       ${w.tip?('<div class="hint" style="margin-top:14px">💡 '+w.tip+'</div>'):''}
       <div class="ex">
@@ -600,7 +603,7 @@ function renderLearn(){
   } else if(curCat==="reading"){
     const item=readingLevels()[viewLevel],kw=(item.glossary&&item.glossary.length?item.glossary:item.keywords),k=kw[learnIdx];
     card.innerHTML=`<div class="counter" style="display:flex;justify-content:space-between;align-items:center">難字 ${learnIdx+1} / ${kw.length}<button class="starbtn off" id="starbtn" title="收進錯題本">☆</button></div>
-      <div class="wordrow"><div class="word">${k.en}</div>${speakerHTML()}</div>
+      <div class="wordrow"><div class="word" style="font-size:${wordSize(k.en)}px">${k.en}</div>${speakerHTML()}</div>
       <div class="syl">${k.syl||""}</div><div class="pos">${k.pos||""}</div><div class="zh">${k.zh}</div>
       <div class="row" style="margin-top:22px"><button class="btn btn-ghost" id="back">${learnIdx===0?'‹ 返回':'‹ 上一個'}</button>
       <button class="btn btn-main" id="fwd">${learnIdx===kw.length-1?'開始閱讀 →':'下一個 ›'}</button></div>`;
