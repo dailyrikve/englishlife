@@ -193,11 +193,28 @@
   .daycell:hover{border-color:var(--teal);} .daycell .dn{font-family:'Fraunces',serif;font-size:16px;font-weight:600;} .daycell .st{font-size:11px;color:var(--muted);margin-top:3px;}
   .daycell.done{background:#e7f3ea;border-color:#a8d3ba;} .daycell.done .st{color:var(--good);} .daycell .todaytag{position:absolute;top:-8px;right:-6px;background:var(--teal);color:#fff;font-size:10px;border-radius:10px;padding:1px 7px;}
   .daycell .advbadge{position:absolute;top:-8px;left:-6px;background:#fbeee6;color:#b3502e;border:1px solid #e6c3ab;font-size:10px;font-weight:600;border-radius:10px;padding:1px 7px;}
+  /* 錯題本 */
+  .hdr-tools{display:flex;gap:8px;align-items:center;}
+  .wbBtn{background:#fff;border:1px solid var(--accent-soft);color:var(--accent);border-radius:999px;padding:5px 12px;font-size:13px;font-family:inherit;cursor:pointer;font-weight:500;white-space:nowrap;}
+  .wbBtn:hover{background:var(--accent-soft);}
+  .wb-sec{margin-top:20px;}
+  .wb-sec-h{font-size:13px;color:var(--teal);font-weight:700;margin-bottom:9px;letter-spacing:.02em;}
+  .wb-item{position:relative;background:#fffaf0;border:1px solid var(--line);border-radius:12px;padding:11px 36px 12px 13px;margin-bottom:9px;}
+  .wb-en{font-family:'Fraunces',serif;font-size:19px;color:var(--ink);line-height:1.4;}
+  .wb-zh{font-size:14px;color:var(--muted);margin-top:3px;line-height:1.5;}
+  .wb-ex{font-family:'Fraunces',serif;font-size:14.5px;color:#6b5d4a;margin-top:7px;line-height:1.55;}
+  .wb-note{font-size:13px;color:#7a6a52;margin-top:6px;line-height:1.55;}
+  .wb-cnt{display:inline-block;font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:1px 8px;margin-left:7px;vertical-align:middle;}
+  .wb-x{position:absolute;top:8px;right:8px;width:24px;height:24px;border:none;background:transparent;color:#b9ab95;font-size:15px;cursor:pointer;border-radius:50%;line-height:1;}
+  .wb-x:hover{background:var(--accent-soft);color:var(--accent);}
+  .wb-spk{cursor:pointer;font-size:14px;margin-left:7px;}
+  .wb-tag{font-size:10px;border-radius:5px;padding:1px 7px;margin-right:6px;background:#eef3f1;color:var(--teal);vertical-align:middle;}
+  .wb-empty{text-align:center;color:var(--muted);padding:38px 12px;line-height:1.9;}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header><div class="brand">每日<span>郵政</span>英文</div><div class="streak" id="streak"></div></header>
+  <header><div class="brand">每日<span>郵政</span>英文</div><div class="hdr-tools"><button class="wbBtn" id="wbBtn">📕 錯題本</button><div class="streak" id="streak"></div></div></header>
   <div class="tally" id="tally"></div>
   <div class="topbar" id="topbar" style="display:none;">
     <button class="menuBtn" id="menuBtn">&#9776; 目錄</button>
@@ -239,6 +256,7 @@ function loadState(){
   if(!state.gsprintN)state.gsprintN=DEFAULT_GSPRINT_N;
   if(!state.progress)state.progress={vocab:{},grammar:{},reading:{},exam:{},sprint:{},gsprint:{}};
   for(const c of CATS)if(!state.progress[c.key])state.progress[c.key]={}; // 舊存檔自動補上 gsprint:{} 等缺漏欄位
+  if(!state.wrongbook)state.wrongbook={words:{},patterns:{},sentences:{},hidden:{}}; // 錯題本(手動蒐集/句子題用;衝刺類另從 progress 即時回溯)
   saveState();
 }
 function saveState(){try{localStorage.setItem(STORE_KEY,JSON.stringify(state));}catch(e){}}
@@ -423,13 +441,15 @@ async function init(){
 
 function chrome(){
   const home=(phase==="home");
-  document.getElementById("topbar").style.display=home?"none":"flex";
+  document.getElementById("topbar").style.display=(home||phase==="wrongbook")?"none":"flex";
   document.getElementById("progress").style.display=(phase==="learn"||phase==="quiz")?"block":"none";
   let totDone=0;for(const c of CATS){if(c.key.endsWith("sprint"))continue;totDone+=doneCount(c.key);} // sprint / gsprint 皆不計關
   document.getElementById("streak").textContent="完成 "+totDone+" 關";
   let learned=0;for(const k in state.progress.vocab){const i=parseInt(k.replace("L",""));if(DAYS[i])learned+=DAYS[i].length;}
   document.getElementById("tally").textContent="累積認得 "+learned+" 個單字";
-  if(!home){
+  const wbBtn=document.getElementById("wbBtn");
+  if(wbBtn){let t=0;try{t=wrongbookEntries().total;}catch(e){}wbBtn.textContent="📕 錯題本"+(t?(" "+t):"");}
+  if(!home&&phase!=="wrongbook"){
     const cn=CATS.find(c=>c.key===curCat);
     document.getElementById("dayBig").textContent=(phase==="cat")?cn.name:(curCat.endsWith("sprint")?cn.name:(cn.name+" · 第 "+(viewLevel+1)+" 關"));
     document.getElementById("daySub").textContent=phase==="quiz"?"作答中":(phase==="done"||phase==="sprintDone"||phase==="gsprintDone")?"完成":(phase==="sprintSetup"||phase==="gsprintSetup")?"選題數":phase==="learn"?"學習":("共 "+levelCount(curCat)+" 關");
@@ -449,6 +469,7 @@ function render(){chrome();
   else if(phase==="sprintSetup")renderSprintSetup();
   else if(phase==="gsprintDone")renderGramSprintDone();
   else if(phase==="gsprintSetup")renderGramSprintSetup();
+  else if(phase==="wrongbook")renderWrongbook();
 }
 
 function renderHome(){
@@ -843,6 +864,127 @@ function renderGramSprintDone(){
   document.getElementById("again").onclick=()=>startGramSprint();
 }
 
+// ===== 錯題本(第 7 個入口)=====
+// 設計:衝刺單元(sprint/gsprint)不另存,打開時直接從現有 state.progress 即時回溯(w>0 的字/句型)
+//       單字/文法/閱讀/模擬考答錯時,即時寫入 state.wrongbook(這四類沒有別的歷史來源,只能往後蒐集)
+//       state.wrongbook.hidden 記下被使用者刪除(✕)的 key,顯示時略過(衝刺類也能藏)
+function ensureWB(){
+  if(!state.wrongbook)state.wrongbook={};
+  state.wrongbook.words=state.wrongbook.words||{};
+  state.wrongbook.patterns=state.wrongbook.patterns||{};
+  state.wrongbook.sentences=state.wrongbook.sentences||{};
+  state.wrongbook.hidden=state.wrongbook.hidden||{};
+  return state.wrongbook;
+}
+function wbHidden(){return (state.wrongbook&&state.wrongbook.hidden)||{};}
+function hashStr(s){let h=0;s=String(s);for(let i=0;i<s.length;i++){h=((h<<5)-h+s.charCodeAt(i))|0;}return (h>>>0).toString(36);}
+// 答錯時呼叫;sprint/gsprint 不在此處理(打開錯題本時即時回溯)
+function collectWrong(q,picked,cat){
+  if(!q)return;const wb=ensureWB();const now=Date.now();
+  if(cat==="vocab"){
+    let en,zh;
+    if(q.cloze){en=q.clozeEn;zh=q.clozeZh;}
+    else if(q.answer&&/[a-z]/i.test(q.answer)&&!/[一-鿿]/.test(q.answer)){en=q.answer;zh=q.head;} // 答案是英文
+    else{en=q.head;zh=q.answer;} // 題目是英文、答案是中文
+    if(!en)return;
+    const src=ALL.find(x=>x.en.toLowerCase()===String(en).toLowerCase());
+    const k="w:"+String(en).toLowerCase();delete wb.hidden[k];
+    const e=wb.words[k]||(wb.words[k]={en:src?src.en:en,zh:src?src.zh:zh,pos:src?src.pos:"",syl:src?src.syl:"",ex:src?src.ex:"",ext:src?src.ext:"",count:0});
+    e.count++;e.last=now;
+  }else if(cat==="grammar"){
+    const pat=q.gPattern;if(!pat)return;const src=GRAMMAR.find(g=>g.pattern===pat);
+    const k="p:"+pat;delete wb.hidden[k];
+    const e=wb.patterns[k]||(wb.patterns[k]={pattern:pat,zh:src?src.zh:(q.gZh||""),ex:src?src.ex:"",exZh:src?src.exZh:"",note:src?(src.note||src.signalNote||""):(q.note||""),count:0});
+    e.count++;e.last=now;
+  }else if(cat==="reading"||cat==="exam"){
+    const key="s:"+hashStr((q.head||"")+"|"+(q.answer||""));delete wb.hidden[key];
+    const e=wb.sentences[key]||(wb.sentences[key]={q:q.head,answer:q.answer,note:q.note||"",trans:q.trans||"",cat,count:0});
+    e.count++;e.last=now;
+  }
+  saveState();
+}
+// 整理錯題本內容:衝刺類即時回溯 + 手動/句子題的儲存資料,合併去重、依錯誤次數排序
+function wrongbookEntries(){
+  const hid=wbHidden(),wb=state.wrongbook||{};
+  const words={},patterns={},sentences={};
+  // 單字衝刺 → 即時回溯(現有 localStorage 的 w>0)
+  const sp=state.progress.sprint||{};
+  for(const en in sp){const w=(sp[en]&&sp[en].w)||0;if(w<=0)continue;const k="w:"+en.toLowerCase();if(hid[k])continue;
+    const src=ALL.find(x=>x.en.toLowerCase()===en.toLowerCase());
+    words[k]={key:k,en:src?src.en:en,zh:src?src.zh:"",pos:src?src.pos:"",ex:src?src.ex:"",count:w};}
+  // 單字(關卡)答錯 → 儲存資料
+  for(const k in (wb.words||{})){if(hid[k])continue;const e=wb.words[k];
+    if(words[k])words[k].count=Math.max(words[k].count,e.count||1);
+    else words[k]={key:k,en:e.en,zh:e.zh,pos:e.pos,ex:e.ex,count:e.count||1};}
+  // 文法衝刺 → 即時回溯
+  const gp=state.progress.gsprint||{};
+  for(const pat in gp){const w=(gp[pat]&&gp[pat].w)||0;if(w<=0)continue;const k="p:"+pat;if(hid[k])continue;
+    const src=GRAMMAR.find(g=>g.pattern===pat);
+    patterns[k]={key:k,pattern:pat,zh:src?src.zh:"",ex:src?src.ex:"",exZh:src?src.exZh:"",note:src?(src.note||src.signalNote||""):"",count:w};}
+  for(const k in (wb.patterns||{})){if(hid[k])continue;const e=wb.patterns[k];
+    if(patterns[k])patterns[k].count=Math.max(patterns[k].count,e.count||1);
+    else patterns[k]={key:k,pattern:e.pattern,zh:e.zh,ex:e.ex,exZh:e.exZh,note:e.note,count:e.count||1};}
+  // 句子題(閱讀/模擬考)→ 儲存資料
+  for(const k in (wb.sentences||{})){if(hid[k])continue;const e=wb.sentences[k];sentences[k]={key:k,q:e.q,answer:e.answer,note:e.note,trans:e.trans,cat:e.cat,count:e.count||1};}
+  const wArr=Object.values(words).sort((a,b)=>b.count-a.count);
+  const pArr=Object.values(patterns).sort((a,b)=>b.count-a.count);
+  const sArr=Object.values(sentences).sort((a,b)=>(b.count||1)-(a.count||1));
+  return {words:wArr,patterns:pArr,sentences:sArr,total:wArr.length+pArr.length+sArr.length};
+}
+function renderWrongbook(){
+  const {words,patterns,sentences,total}=wrongbookEntries();
+  const card=document.getElementById("card");
+  let html=`<div class="counter" style="text-align:center">📕 錯題本</div>`;
+  if(total===0){
+    html+=`<div class="wb-empty">目前還沒有錯題紀錄。<br>到各單元練習,<b>答錯的題目會自動收進這裡</b>。<br><br>
+      <span style="font-size:13px">單字衝刺、文法衝刺以前練過、答錯過的字和句型,也會自動出現在這裡。</span></div>
+      <div class="row"><button class="btn btn-main" id="wbhome">回首頁</button></div>`;
+    card.innerHTML=html;
+    document.getElementById("wbhome").onclick=()=>{phase="home";render();};
+    return;
+  }
+  const onlyHF=!!state._wbHF;
+  const fW=onlyHF?words.filter(x=>x.count>=2):words;
+  const fP=onlyHF?patterns.filter(x=>x.count>=2):patterns;
+  const fS=onlyHF?sentences.filter(x=>(x.count||1)>=2):sentences;
+  html+=`<div class="hint" style="margin-top:12px">進考場前快速掃一遍曾經錯過的地方。<b>錯越多次的排越前面。</b>點 ✕ 可移除已經熟了的。</div>
+    <div class="setting" style="margin-top:14px"><div class="chips">
+      <button class="chip ${!onlyHF?'on':''}" id="wbAll">全部 (${total})</button>
+      <button class="chip ${onlyHF?'on':''}" id="wbHF">只看高頻 (錯 ≥ 2 次)</button></div></div>`;
+  if(fW.length){html+=`<div class="wb-sec"><div class="wb-sec-h">📦 常錯單字 (${fW.length})</div>`;
+    for(const w of fW){html+=`<div class="wb-item">
+      <button class="wb-x" data-k="${w.key}" title="移除">✕</button>
+      <div class="wb-en">${w.en}<span class="wb-spk confspk" data-en="${w.en}">🔊</span>${w.count>1?('<span class="wb-cnt">錯 '+w.count+' 次</span>'):''}</div>
+      <div class="wb-zh">${w.pos?('<i style="color:#a89878">'+w.pos+'</i> '):''}${w.zh||""}</div>
+      ${w.ex?('<div class="wb-ex">'+hlWord(w.ex,w.en)+'</div>'):''}</div>`;}
+    html+=`</div>`;}
+  if(fP.length){html+=`<div class="wb-sec"><div class="wb-sec-h">🔧 常錯文法句型 (${fP.length})</div>`;
+    for(const p of fP){html+=`<div class="wb-item">
+      <button class="wb-x" data-k="${p.key}" title="移除">✕</button>
+      <div class="wb-en" style="font-size:16px">${p.pattern}${p.count>1?('<span class="wb-cnt">錯 '+p.count+' 次</span>'):''}</div>
+      ${p.zh?('<div class="wb-zh">'+p.zh+'</div>'):''}
+      ${p.ex?('<div class="wb-ex">'+p.ex+(p.exZh?(' <span style="color:#9c8a6e">'+p.exZh+'</span>'):'')+'</div>'):''}
+      ${p.note?('<div class="wb-note">💡 '+p.note+'</div>'):''}</div>`;}
+    html+=`</div>`;}
+  if(fS.length){html+=`<div class="wb-sec"><div class="wb-sec-h">📝 常錯題目 · 閱讀/模擬考 (${fS.length})</div>`;
+    for(const s of fS){const tag=s.cat==="exam"?"模擬考":"閱讀";
+      html+=`<div class="wb-item">
+      <button class="wb-x" data-k="${s.key}" title="移除">✕</button>
+      <div class="wb-en" style="font-size:15px;line-height:1.5"><span class="wb-tag">${tag}</span>${s.q}${s.count>1?('<span class="wb-cnt">錯 '+s.count+' 次</span>'):''}</div>
+      <div class="wb-zh">✓ 正解:<b style="color:var(--accent)">${s.answer}</b></div>
+      ${s.trans?('<div class="wb-note">'+s.trans+'</div>'):''}
+      ${s.note?('<div class="wb-note">💡 '+s.note+'</div>'):''}</div>`;}
+    html+=`</div>`;}
+  if(!fW.length&&!fP.length&&!fS.length)html+=`<div class="wb-empty">沒有錯 2 次以上的題目。<br>切回「全部」看所有錯題。</div>`;
+  html+=`<div class="row" style="margin-top:20px"><button class="btn btn-main" id="wbhome">回首頁</button></div>`;
+  card.innerHTML=html;
+  card.querySelectorAll(".confspk").forEach(b=>{b.onclick=(e)=>{e.stopPropagation();speak(b.dataset.en);};});
+  card.querySelectorAll(".wb-x").forEach(b=>{b.onclick=()=>{ensureWB().hidden[b.dataset.k]=true;saveState();render();};});
+  const aAll=document.getElementById("wbAll");if(aAll)aAll.onclick=()=>{state._wbHF=false;render();};
+  const aHF=document.getElementById("wbHF");if(aHF)aHF.onclick=()=>{state._wbHF=true;render();};
+  document.getElementById("wbhome").onclick=()=>{phase="home";render();};
+}
+
 function buildQuiz(){
   quizQ=[];quizCtx=null;quizCtxZh=null;quizCtxGloss=null;quizGenre=null;quizStory=false;quizStoryData=null;quizCloze=false;quizIdx=0;quizScore=0;answered=false;
   if(curCat==="vocab"){
@@ -869,12 +1011,12 @@ function buildQuiz(){
     const per=lvl.length<=4?2:1; // 小家族每句型抽2題,大家族抽1題,控制每關長度
     for(const it of shuffle(lvl.slice())){
       const draw=shuffle(gramBank(it)).slice(0,per);
-      const sq=buildSignalQ(it);if(sq)quizQ.push(sq); // 有標 signal 才出現「找關鍵字」步驟(每句型一次)
-      for(const qq of draw)quizQ.push(gramFormQ(qq)); // 從題庫抽1~2題
+      const sq=buildSignalQ(it);if(sq){sq.gPattern=it.pattern;sq.gZh=it.zh;quizQ.push(sq);} // 有標 signal 才出現「找關鍵字」步驟(每句型一次)
+      for(const qq of draw){const gq=gramFormQ(qq);gq.gPattern=it.pattern;gq.gZh=it.zh;quizQ.push(gq);} // 從題庫抽1~2題;記回句型供錯題本
     }
     for(const it of lvl){ // 有 confuse 才出現辨析題,放在最後當進階
       if(it.confuse&&Array.isArray(it.confuse.options))
-        quizQ.push({kind:"choice",head:it.confuse.q,headSmall:true,ask:"辨析:哪一個用法才對?",options:shuffle(it.confuse.options.slice()),answer:it.confuse.answer,note:it.confuse.note});
+        quizQ.push({kind:"choice",head:it.confuse.q,headSmall:true,ask:"辨析:哪一個用法才對?",options:shuffle(it.confuse.options.slice()),answer:it.confuse.answer,note:it.confuse.note,gPattern:it.pattern,gZh:it.zh});
     }
   } else if(curCat==="reading"){
     const item=readingLevels()[viewLevel];
@@ -1078,6 +1220,7 @@ function renderQuiz(){
   const fb=document.getElementById("fb");
   function go(){if(quizIdx<quizQ.length-1){quizIdx++;render();}else{if(curCat==="sprint")finishSprint();else if(curCat==="gsprint")finishGramSprint();else finishLevel();}}
   function after(ok,picked){answered=true;quizScore+=ok?1:0;
+    if(!ok)collectWrong(q,picked,curCat); // 答錯 → 自動收進錯題本(sprint/gsprint 不在此處理,打開時即時回溯)
     if(curCat==="sprint"&&q.sprintEn){const sp=state.progress.sprint||(state.progress.sprint={});
       const st=sp[q.sprintEn]||(sp[q.sprintEn]={r:0,w:0});if(ok)st.r++;else{st.w++;sprintWrong.push(q);}saveState();}
     if(curCat==="gsprint"&&q.gPattern){const gp=state.progress.gsprint||(state.progress.gsprint={});
@@ -1157,6 +1300,7 @@ function renderDone(){
 }
 
 document.getElementById("menuBtn").onclick=()=>{phase="home";render();};
+document.getElementById("wbBtn").onclick=()=>{state._wbHF=false;phase="wrongbook";render();};
 init();
 </script>
 </body>
