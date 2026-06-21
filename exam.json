@@ -4,130 +4,108 @@
       "title": "模擬考 第 1 回",
       "vocab": [
         {
-          "stem": "It will take a lot of work to ___ such a big mailing event, so the post office needs more staff to help.",
+          "stem": "All banks were closed on Sunday. He could only hope the ATMs were working so he could ___ some cash.",
           "options": [
-            "organize",
-            "occur",
-            "beat",
-            "warn"
+            "allocate",
+            "triumph",
+            "withdraw",
+            "subside"
           ],
-          "answer": "organize",
-          "note": "organize=籌辦、安排。句意是「要花很多力氣『籌辦』這麼大的活動」。occur=發生(不及物,不能接受詞)、beat=打敗、warn=警告,語意都不合。"
+          "answer": "withdraw",
+          "note": "withdraw=領(錢)。從 ATM「領」現金。allocate=分配、triumph=獲勝、subside=平息/消退,語意都不合。"
         },
         {
-          "stem": "The express counter is not ___ on Sunday, so please come back on Monday to send your parcel.",
+          "stem": "An ___ to driving during rush hour is taking public transportation.",
           "options": [
-            "available",
-            "familiar",
+            "achievement",
+            "alternative",
+            "objection",
+            "inspiration"
+          ],
+          "answer": "alternative",
+          "note": "alternative=替代方案。搭大眾運輸是開車的「替代方案」。achievement=成就、objection=反對、inspiration=靈感,皆不合。"
+        },
+        {
+          "stem": "The hotel is so popular that it doesn't have any room ___ this weekend.",
+          "options": [
             "original",
+            "familiar",
+            "available",
             "similar"
           ],
           "answer": "available",
-          "note": "available=可使用的、開放的。櫃台週日「不開放」。familiar=熟悉的、original=原本的、similar=相似的,都搭不上「櫃台不…」。"
+          "note": "available=可用的、空著的。沒有「空房」。original=原本的、familiar=熟悉的、similar=相似的,皆不合。"
         },
         {
-          "stem": "The mail carrier promised to ___ the package to the customer's door before noon.",
+          "stem": "Millions of Americans are under ___ watches in the Northeast where post-tropical cyclone Debby is rapidly picking up speed.",
           "options": [
+            "tornado",
+            "earthquake",
+            "fire",
+            "forest"
+          ],
+          "answer": "tornado",
+          "note": "tornado=龍捲風。氣旋來襲發布「龍捲風」警戒。earthquake=地震、fire=火災、forest=森林,與氣旋不相關。"
+        },
+        {
+          "stem": "It is crucial to ___ your time between work, family, and personal hobbies to maintain a happy life.",
+          "options": [
+            "disrupt",
+            "expand",
+            "balance",
+            "transform"
+          ],
+          "answer": "balance",
+          "note": "balance=平衡分配。要「平衡」工作、家庭與嗜好的時間。disrupt=打亂、expand=擴展、transform=轉變,皆不合。"
+        },
+        {
+          "stem": "My sister ___ salt for sugar, and the birthday cake she made for me turned out to be a disaster.",
+          "options": [
+            "defined",
+            "adopted",
+            "mistook",
+            "reviewed"
+          ],
+          "answer": "mistook",
+          "note": "mistake A for B=把 A 誤認為 B。把鹽「誤當成」糖。define=定義、adopt=採用/領養、review=檢視,皆不合。"
+        },
+        {
+          "stem": "The mailman will ___ the package to your house tomorrow.",
+          "options": [
+            "clean",
             "deliver",
-            "discover",
-            "decorate",
-            "decrease"
+            "build",
+            "teach"
           ],
           "answer": "deliver",
-          "note": "deliver=投遞、送達。郵差答應在中午前把包裹「送到」門口。discover=發現、decorate=裝飾、decrease=減少,語意都不對。"
+          "note": "deliver=投遞、送達。郵差明天「送」包裹。clean=清潔、build=建造、teach=教,皆不合。"
         },
         {
-          "stem": "Please mark the box as ___ so the workers will handle the glass cups inside with care.",
+          "stem": "Eating moon cakes during the Mid-Autumn Festival is an old ___.",
           "options": [
-            "fragile",
-            "flexible",
-            "familiar",
-            "formal"
+            "tradition",
+            "spirit",
+            "rumor",
+            "generation"
           ],
-          "answer": "fragile",
-          "note": "fragile=易碎的。裡面是玻璃杯,要標「易碎」。flexible=有彈性的、familiar=熟悉的、formal=正式的,都不符合「小心輕放」的情境。"
-        },
-        {
-          "stem": "The clerk will ___ your letter first to decide how much postage you need to pay.",
-          "options": [
-            "weigh",
-            "count",
-            "borrow",
-            "repair"
-          ],
-          "answer": "weigh",
-          "note": "weigh=秤重。要先「秤」信的重量才知道郵資多少。count=數、borrow=借、repair=修理,跟決定郵資沒關係。"
-        },
-        {
-          "stem": "After waiting in line for over an hour, the angry customer filed a ___ about the slow service.",
-          "options": [
-            "complaint",
-            "compliment",
-            "contract",
-            "container"
-          ],
-          "answer": "complaint",
-          "note": "complaint=抱怨、投訴。客人生氣,當然是「投訴」服務太慢。compliment=稱讚(意思相反)、contract=合約、container=容器,都不合。"
-        },
-        {
-          "stem": "Trucks ___ thousands of parcels from the sorting center to local post offices every night.",
-          "options": [
-            "transport",
-            "translate",
-            "transform",
-            "trade"
-          ],
-          "answer": "transport",
-          "note": "transport=運送。卡車把包裹從分揀中心「運」到各地郵局。translate=翻譯、transform=轉變、trade=交易,字頭很像但語意都不對。"
-        },
-        {
-          "stem": "Please ___ your address and phone number so we can contact you if the delivery fails.",
-          "options": [
-            "confirm",
-            "cancel",
-            "consume",
-            "connect"
-          ],
-          "answer": "confirm",
-          "note": "confirm=確認。請你「確認」地址電話,投遞失敗才聯絡得到你。cancel=取消、consume=消耗、connect=連接,都不合句意。"
+          "answer": "tradition",
+          "note": "tradition=傳統。中秋吃月餅是老「傳統」。spirit=精神、rumor=謠言、generation=世代,皆不合。"
         }
       ],
       "grammar": [
         {
-          "q": "The customers were not ___ the long waiting time at the counter, so they left a bad review.",
+          "q": "No one in this world, ___ his closest friend, knows about his big secret.",
           "options": [
-            "satisfying to",
-            "satisfied with",
-            "satisfying with",
-            "satisfied to"
+            "not even",
+            "even so",
+            "even if",
+            "don't even"
           ],
-          "answer": "satisfied with",
-          "note": "be satisfied with=對…感到滿意,是固定用法。人是「被滿足」用過去分詞 satisfied;搭配的介系詞是 with,不是 to。"
+          "answer": "not even",
+          "note": "not even=甚至連…都不。連最好的朋友「都不」知道。even so=即使如此、even if=即使、don't even 為動詞用法,皆不合句構。"
         },
         {
-          "q": "This is the package ___ I have been waiting for all week.",
-          "options": [
-            "who",
-            "which",
-            "what",
-            "where"
-          ],
-          "answer": "which",
-          "note": "先行詞是 package(物),關係代名詞用 which(或 that)。who 指人、where 指地方、what 不能接在名詞後面當關係代名詞。"
-        },
-        {
-          "q": "The man ___ in line at the counter is holding three big boxes.",
-          "options": [
-            "standing",
-            "stands",
-            "stood",
-            "who stand"
-          ],
-          "answer": "standing",
-          "note": "現在分詞 standing 當形容詞修飾 the man,等於 who is standing。stands/stood 是動詞,會讓句子變兩個動詞;who stand 主詞單數應該用 stands,也不對。"
-        },
-        {
-          "q": "Despite ___ incredibly tired, the mail carrier still finished delivering every parcel.",
+          "q": "Despite ___ incredibly tired, he continued working on the project.",
           "options": [
             "be",
             "being",
@@ -135,51 +113,62 @@
             "to be"
           ],
           "answer": "being",
-          "note": "despite 是介系詞,後面要接名詞或動名詞(V-ing),所以用 being。be/been/to be 都不是動名詞,接在介系詞後面不合文法。"
+          "note": "despite 是介系詞,後接動名詞 being。be/been/to be 皆非動名詞,不能接在介系詞後。"
         },
         {
-          "q": "The manager expects his staff to spend more time ___ customers rather than chatting.",
+          "q": "We canceled the outdoor party ___ it rained cats and dogs.",
           "options": [
-            "serve",
-            "serving",
-            "to serve",
-            "which serves"
+            "so",
+            "although",
+            "unless",
+            "because"
           ],
-          "answer": "serving",
-          "note": "spend time + V-ing=花時間做某事,是固定用法,所以用 serving。serve/to serve/which serves 都不符合 spend time 後面要接 V-ing 的規則。"
+          "answer": "because",
+          "note": "because=因為,接原因子句(下大雨)。so=所以(位置錯)、although=雖然、unless=除非,邏輯不合。"
         },
         {
-          "q": "If the address ___ clearer, the package would not have been returned to the sender.",
+          "q": "While Sarah ___ a book in the library to prepare for her upcoming exam, her phone suddenly rang.",
           "options": [
-            "is",
-            "was",
-            "had been",
-            "has been"
+            "read",
+            "was reading",
+            "has read",
+            "reads"
           ],
-          "answer": "had been",
-          "note": "這是與過去事實相反的假設(後半句 would not have been)。if 子句要用過去完成式 had been。is/was/has been 都不符合假設語氣的搭配。"
+          "answer": "was reading",
+          "note": "while 引導的背景動作用過去進行式 was reading,搭配突然發生的 rang。read/has read/reads 時態不合。"
         },
         {
-          "q": "___ the heavy rain, the delivery team kept working day and night to clear the parcels.",
+          "q": "By this time next year, she ___ her degree.",
           "options": [
-            "Despite",
-            "Though",
-            "As soon as",
-            "As long as"
+            "completed",
+            "had completed",
+            "will have completed",
+            "completes"
           ],
-          "answer": "Despite",
-          "note": "後面接的是名詞 the heavy rain,要用介系詞 Despite(儘管)。Though 是連接詞,後面要接完整句子;As soon as=一…就、As long as=只要,語意也不對。"
+          "answer": "will have completed",
+          "note": "By+未來時間 搭配未來完成式 will have completed(到那時已完成)。completed/had completed/completes 時態不合。"
         },
         {
-          "q": "The more parcels we sort tonight, ___ we will have to do tomorrow.",
+          "q": "Thank you ___ all the support you have been giving us.",
           "options": [
-            "the fewer",
-            "fewer",
-            "the fewest",
-            "less few"
+            "of",
+            "for",
+            "with",
+            "by"
           ],
-          "answer": "the fewer",
-          "note": "「the + 比較級…, the + 比較級…」=越…就越…。前面 the more,後面要對稱用 the fewer(越少)。fewer 少了 the、the fewest 是最高級、less few 不是正確說法。"
+          "answer": "for",
+          "note": "thank you for+事物=為…感謝,介系詞用 for。of/with/by 皆非此搭配。"
+        },
+        {
+          "q": "Endorphins are ___ the body produces after you get some exercise. These chemicals give you a sense of happiness.",
+          "options": [
+            "how",
+            "that",
+            "what",
+            "which"
+          ],
+          "answer": "what",
+          "note": "be 動詞後缺先行詞的名詞子句,用 what(=the things that)。how/that/which 需先行詞或語意不合。"
         }
       ],
       "cloze": {
@@ -443,182 +432,171 @@
       "title": "模擬考 第 2 回",
       "vocab": [
         {
-          "stem": "With postage rising so high, some small shops can no longer ___ to mail heavy parcels overseas.",
+          "stem": "The singer made a ___ recovery after the serious car accident. It's hard to believe he's perfectly healthy now.",
           "options": [
-            "divide",
-            "afford",
-            "recognize",
-            "connect"
+            "terrestrial",
+            "bleak",
+            "wimpy",
+            "miraculous"
           ],
-          "answer": "afford",
-          "note": "afford=負擔得起(費用)。郵資太貴,小店「付不起」寄重包裹到國外。divide=分開、recognize=認出、connect=連接,都跟費用無關。"
+          "answer": "miraculous",
+          "note": "miraculous=奇蹟般的。嚴重車禍後「奇蹟般」康復。terrestrial=陸地的、bleak=慘澹的、wimpy=軟弱的,都不合。"
         },
         {
-          "stem": "The clerk ___ that I use the express service if I want the letter to arrive tomorrow.",
+          "stem": "In the speech contest, Jane and Bill won first place and third place ___.",
           "options": [
-            "avoided",
-            "obeyed",
-            "recommended",
-            "depended"
+            "barely",
+            "particularly",
+            "gradually",
+            "respectively"
           ],
-          "answer": "recommended",
-          "note": "recommend=建議、推薦。櫃員「建議」我用快遞。avoid=避免、obey=服從、depend=依賴,語意都不合。"
+          "answer": "respectively",
+          "note": "respectively=分別地。兩人「分別」得第一、第三名。barely=幾乎不、particularly=特別地、gradually=逐漸地,皆不合。"
         },
         {
-          "stem": "The box was badly ___ during transport, so the cups inside were all broken.",
+          "stem": "There is a high ___ of accidents driving in the storm.",
           "options": [
-            "damaged",
-            "decorated",
-            "delighted",
-            "delivered"
+            "risk",
+            "selection",
+            "material",
+            "award"
           ],
-          "answer": "damaged",
-          "note": "damage=損壞。箱子在運送中被「弄壞」,裡面杯子才會破。decorate=裝飾、delight=使高興、deliver=投遞,字頭像但語意都不對。"
+          "answer": "risk",
+          "note": "risk=風險。暴風雨開車「風險」高。selection=選擇、material=材料、award=獎項,皆不合。"
         },
         {
-          "stem": "Our post office is famous for its ___ service; parcels almost always arrive on time.",
+          "stem": "Apple Pay and Google Pay offer users the ability to pay digitally in ___ stores, too.",
           "options": [
-            "reliable",
-            "curious",
-            "nervous",
+            "curtail",
+            "detail",
+            "retail",
+            "distraction"
+          ],
+          "answer": "retail",
+          "note": "retail=零售。在「零售」店也能數位付款。curtail=削減、detail=細節、distraction=分心,皆不合。"
+        },
+        {
+          "stem": "Before making an important decision, it is wise to ___ all possible options and their consequences carefully.",
+          "options": [
+            "examine",
+            "ignore",
+            "rush",
+            "assume"
+          ],
+          "answer": "examine",
+          "note": "examine=仔細審視。決策前要「審視」各選項。ignore=忽略、rush=匆促、assume=假定,皆不合。"
+        },
+        {
+          "stem": "After the earthquake, we find huge cracks along the walls. The house is not ___ and may collapse if another strong quake hits.",
+          "options": [
+            "upset",
+            "stable",
+            "active",
             "empty"
           ],
-          "answer": "reliable",
-          "note": "reliable=可靠的。包裹幾乎都準時到,代表服務「可靠」。curious=好奇的、nervous=緊張的、empty=空的,都不符合。"
+          "answer": "stable",
+          "note": "stable=穩固的。牆裂了,房子不「穩固」恐倒塌。upset=不安的、active=活躍的、empty=空的,皆不合。"
         },
         {
-          "stem": "You can ___ your parcel online to see exactly where it is right now.",
+          "stem": "Before starting their road trip, they carefully planned the best ___ to avoid traffic and save time.",
           "options": [
-            "track",
-            "treat",
-            "trust",
-            "trade"
+            "battle",
+            "route",
+            "permit",
+            "topic"
           ],
-          "answer": "track",
-          "note": "track=追蹤(包裹位置)。可以上網「追蹤」包裹到哪了。treat=對待、trust=信任、trade=交易,字頭像但語意不合。"
+          "answer": "route",
+          "note": "route=路線。規劃最佳「路線」避開塞車。battle=戰役、permit=許可、topic=主題,皆不合。"
         },
         {
-          "stem": "Because the package arrived broken, the customer asked the post office for a full ___.",
+          "stem": "Employees in this company are allowed to wear ___ clothes to work such as T-shirts and jeans.",
           "options": [
-            "refund",
-            "reason",
-            "record",
-            "receipt"
+            "casual",
+            "emotional",
+            "automatic",
+            "imaginary"
           ],
-          "answer": "refund",
-          "note": "refund=退款。包裹寄到時是壞的,客人要求「全額退款」。reason=理由、record=紀錄、receipt=收據,雖然 receipt 也常出現在郵局,但這裡要的是『退錢』。"
-        },
-        {
-          "stem": "Please ___ the correct address label to the front of the box before you send it.",
-          "options": [
-            "attach",
-            "attend",
-            "attack",
-            "attract"
-          ],
-          "answer": "attach",
-          "note": "attach=貼上、附上。要把地址標籤「貼」在箱子正面。attend=出席、attack=攻擊、attract=吸引,字頭都是 att- 但語意不同。"
-        },
-        {
-          "stem": "Heavy snow caused a long ___ in mail delivery across the whole country last week.",
-          "options": [
-            "delay",
-            "display",
-            "demand",
-            "design"
-          ],
-          "answer": "delay",
-          "note": "delay=延誤。大雪造成郵件投遞「延誤」。display=展示、demand=需求、design=設計,字頭像但語意不合。"
+          "answer": "casual",
+          "note": "casual=休閒的。可穿「休閒」服上班。emotional=情緒化的、automatic=自動的、imaginary=虛構的,皆不合。"
         }
       ],
       "grammar": [
         {
-          "q": "This post office ___ at the same street corner for more than fifty years.",
+          "q": "Our teacher insisted that we ___ every class on time.",
           "options": [
-            "stands",
-            "has stood",
-            "standing",
-            "stood"
+            "coming to",
+            "come to",
+            "to come to",
+            "came to"
           ],
-          "answer": "has stood",
-          "note": "搭配 for more than fifty years(持續到現在),用現在完成式 has stood。stands 是單純現在式、standing 不是完整動詞、stood 是過去式都不含『一直到現在』的意思。"
+          "answer": "come to",
+          "note": "insist that+主詞+(should)原形。堅持我們「準時到」課,用原形 come to。coming/to come/came 皆不合此假設語氣。"
         },
         {
-          "q": "As soon as the parcels arrived at the center, they ___ by the machines into different lines.",
+          "q": "During the weekends, he likes hiking in the mountains, swimming in the local pool, and ___ in the park.",
           "options": [
-            "sorted",
-            "had sorted",
-            "were sorted",
-            "were sorting"
+            "to run",
+            "run",
+            "running",
+            "ran"
           ],
-          "answer": "were sorted",
-          "note": "包裹是「被」機器分揀,用被動 were sorted。sorted/had sorted 是主動、were sorting 是主動進行式,都不對。"
+          "answer": "running",
+          "note": "對等連接須平行,前面 hiking、swimming 都是 V-ing,故用 running。to run/run/ran 破壞平行結構。"
         },
         {
-          "q": "This is the customer ___ package was lost on the way last week.",
-          "options": [
-            "who",
-            "which",
-            "whose",
-            "whom"
-          ],
-          "answer": "whose",
-          "note": "後面接名詞 package,表示『那位客人的包裹』,要用所有格關係代名詞 whose。who/whom 當主詞或受詞、which 指物,後面都不會直接接名詞。"
-        },
-        {
-          "q": "The Internet makes ___ possible for us to track our parcels without leaving home.",
-          "options": [
-            "it",
-            "us",
-            "one",
-            "that"
-          ],
-          "answer": "it",
-          "note": "make it + 形容詞 + to V 是固定句型,it 是虛受詞,真正的受詞是後面的 to track…。us/one/that 都不能當這個虛受詞。"
-        },
-        {
-          "q": "Not only ___ the carrier deliver the mail on time, but he also helped the old lady carry her bags.",
-          "options": [
-            "do",
-            "will",
-            "did",
-            "does"
-          ],
-          "answer": "did",
-          "note": "Not only 放句首要『倒裝』,且全句是過去式(helped),所以助動詞用 did + 原形 deliver。do/does 是現在式、will 是未來式,時態都不合。"
-        },
-        {
-          "q": "Many carriers feel happier riding bikes to work than ___ in heavy traffic.",
+          "q": "Susan avoids ___ alone on a long trip because she tends to fall asleep without talking to someone.",
           "options": [
             "drive",
-            "driving",
             "to drive",
-            "drove"
+            "driving",
+            "driven"
           ],
           "answer": "driving",
-          "note": "than 前面是 riding(動名詞),為了對稱,後面也要用動名詞 driving。drive/to drive/drove 形式不一致。"
+          "note": "avoid+V-ing=避免做。avoid 後接動名詞 driving。drive/to drive/driven 皆不合。"
         },
         {
-          "q": "___ the long line at the counter, the customers stayed calm and waited quietly.",
+          "q": "He packed two pairs of trousers and four shirts for the trip. He also brought a jacket ___ the weather turned cold.",
           "options": [
-            "Although",
-            "Because",
-            "In spite of",
-            "As long as"
+            "in case",
+            "in fact",
+            "likewise",
+            "for instance"
           ],
-          "answer": "In spite of",
-          "note": "後面接名詞 the long line,要用介系詞片語 In spite of(儘管)。Although/Because/As long as 都是連接詞,後面要接完整句子。"
+          "answer": "in case",
+          "note": "in case=以防、以備。多帶外套「以防」變冷。in fact=事實上、likewise=同樣地、for instance=例如,皆不合。"
         },
         {
-          "q": "The new sorting machine works ___ as the old one, so it clears the parcels much sooner.",
+          "q": "It is dangerous to block an emergency exit in buildings ___ it can prevent people from escaping.",
           "options": [
-            "twice as fast",
-            "twice faster than",
-            "two times fast",
-            "twice faster"
+            "unless",
+            "due to",
+            "so that",
+            "because"
           ],
-          "answer": "twice as fast",
-          "note": "倍數表達用『倍數 + as + 原級 + as』,即 twice as fast as。twice faster than / two times fast / twice faster 都不是正確的倍數比較說法。"
+          "answer": "because",
+          "note": "because=因為,接原因子句。堵住逃生門危險「因為」會妨礙逃生。unless=除非、due to 後接名詞、so that=以便,皆不合。"
+        },
+        {
+          "q": "When ___ if he planned to resign from his position, the mayor smiled briefly, avoiding a direct response.",
+          "options": [
+            "asking",
+            "ask",
+            "asks",
+            "asked"
+          ],
+          "answer": "asked",
+          "note": "從屬子句省略後用過去分詞 asked(=When he was asked),因市長「被問」。asking 是主動、ask/asks 形式不合。"
+        },
+        {
+          "q": "My mom gets up early every day ___ she can get our breakfast ready before we leave for school.",
+          "options": [
+            "so that",
+            "in case",
+            "so as to",
+            "in order to"
+          ],
+          "answer": "so that",
+          "note": "so that+子句=以便。媽媽早起「以便」準備早餐。in case=以防、so as to/in order to 後接原形(此處有主詞+can),皆不合。"
         }
       ],
       "cloze": {
@@ -874,6 +852,3182 @@
             "answer": "A package goes through a long, complex journey before it reaches you",
             "qtype": "主旨",
             "note": "全篇從寄件、秤重、分揀到投遞,說明包裹要經過漫長複雜的旅程才送到你手上,這就是主旨。"
+          }
+        ]
+      }
+    },
+    {
+      "title": "模擬考 第 3 回",
+      "vocab": [
+        {
+          "stem": "The ___ of people who can ride this elevator is 20, so you have to wait for the next one.",
+          "options": [
+            "maximum",
+            "weight",
+            "amount",
+            "scale"
+          ],
+          "answer": "maximum",
+          "note": "maximum=最大值、上限。電梯「最多」搭 20 人。weight=重量、amount=數量(接不可數)、scale=規模/秤,皆不合。"
+        },
+        {
+          "stem": "Walking in the city after the tragic event, you can see that many pedestrians were weighed down by a heavy sense of ___.",
+          "options": [
+            "joy",
+            "sorrow",
+            "delight",
+            "excitement"
+          ],
+          "answer": "sorrow",
+          "note": "sorrow=悲傷。悲劇後行人滿懷「沉重的悲傷」。joy=喜悅、delight=高興、excitement=興奮,語意相反,不合。"
+        },
+        {
+          "stem": "This machine doesn't ___ well. It needs repairing.",
+          "options": [
+            "function",
+            "limit",
+            "mention",
+            "explore"
+          ],
+          "answer": "function",
+          "note": "function=運作(動詞)。機器「運作」不正常要修。limit=限制、mention=提及、explore=探索,皆不合。"
+        },
+        {
+          "stem": "Giving chocolates as a gift is a custom that smart chocolate companies have spread to ___ their sales.",
+          "options": [
+            "distribute",
+            "conclude",
+            "boost",
+            "sabotage"
+          ],
+          "answer": "boost",
+          "note": "boost=提升。藉送禮習俗「提升」業績。distribute=分發、conclude=總結、sabotage=蓄意破壞,皆不合。"
+        },
+        {
+          "stem": "When meeting someone new, a warm smile and a friendly ___ can create a positive and lasting first impression.",
+          "options": [
+            "gesture",
+            "monitor",
+            "circuit",
+            "algorithm"
+          ],
+          "answer": "gesture",
+          "note": "gesture=手勢、舉動。友善的「舉止」留好印象。monitor=螢幕/監看、circuit=迴路、algorithm=演算法,皆不合。"
+        },
+        {
+          "stem": "English is a ___ language. Mastering English enables you to travel around the world with no sweat.",
+          "options": [
+            "global",
+            "normal",
+            "reliable",
+            "peculiar"
+          ],
+          "answer": "global",
+          "note": "global=全球的。英語是「全球」語言。normal=正常的、reliable=可靠的、peculiar=奇特的,皆不合。"
+        },
+        {
+          "stem": "An oversupply of bananas has caused a great drop in prices. The government is urging purchase to ease the farmers' ___.",
+          "options": [
+            "actions",
+            "worries",
+            "degrees",
+            "bargains"
+          ],
+          "answer": "worries",
+          "note": "worries=憂慮。香蕉價跌,政府促購以紓解農民「憂慮」。actions=行動、degrees=程度/學位、bargains=便宜貨,皆不合。"
+        },
+        {
+          "stem": "Bill has changed so much these years that I could hardly ___ him yesterday.",
+          "options": [
+            "represent",
+            "recognize",
+            "determine",
+            "perform"
+          ],
+          "answer": "recognize",
+          "note": "recognize=認出。變太多,我差點「認不出」他。represent=代表、determine=決定、perform=表演,皆不合。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "I know it's urgent, so I will send the parcel to you ___ it arrives.",
+          "options": [
+            "until",
+            "as soon as",
+            "unless",
+            "in case"
+          ],
+          "answer": "as soon as",
+          "note": "as soon as=一…就。包裹「一」到「就」寄。until=直到、unless=除非、in case=以防,邏輯不合。"
+        },
+        {
+          "q": "Not only did she sing a beautiful song, but she also ___ a graceful dance at the party.",
+          "options": [
+            "dance",
+            "dances",
+            "danced",
+            "dancing"
+          ],
+          "answer": "danced",
+          "note": "Not only...but also... 對等,but also 後接過去式 danced(與前句時態一致)。dance/dances/dancing 形式不合。"
+        },
+        {
+          "q": "Twenty years ago, Mr. Wang bought this house, ___ his two daughters were born.",
+          "options": [
+            "where",
+            "that",
+            "however",
+            "which"
+          ],
+          "answer": "where",
+          "note": "非限定關係子句,先行詞 house 為地點,用 where。that 不用於非限定、however 是副詞、which 後句完整不需,皆不合。"
+        },
+        {
+          "q": "Building this bridge has already been too costly in terms of people who ___ while working on it.",
+          "options": [
+            "be kill",
+            "been killed",
+            "have killed",
+            "have been killed"
+          ],
+          "answer": "have been killed",
+          "note": "人是「被」害死,用被動完成式 have been killed。be kill 文法錯、been killed 缺助動詞、have killed 是主動,皆不合。"
+        },
+        {
+          "q": "Some people tend to look at the lunar calendar to pick a lucky day ___ they can hold a certain important activity.",
+          "options": [
+            "while",
+            "where",
+            "which",
+            "on which"
+          ],
+          "answer": "on which",
+          "note": "先行詞 day 為時間且後句完整,需「介系詞+關代」on which(=on that day)。while/where/which 在此皆不合。"
+        },
+        {
+          "q": "I'll never forget the day ___ we first met in the library during a heavy rainstorm.",
+          "options": [
+            "which",
+            "when",
+            "where",
+            "why"
+          ],
+          "answer": "when",
+          "note": "先行詞 day 為時間且後句完整,用關係副詞 when。which 需當主受詞、where 指地、why 指原因,皆不合。"
+        },
+        {
+          "q": "Mr. Lee used to eat lots of junk food, but recently for the sake of his health, he ___ the bad habit and looks thinner now.",
+          "options": [
+            "was kicked",
+            "will kick",
+            "has kicked",
+            "had kicked"
+          ],
+          "answer": "has kicked",
+          "note": "recently 搭配現在完成式,且「主動」戒掉,用 has kicked。was kicked 被動、will kick 未來、had kicked 過去完成,皆不合。"
+        }
+      ],
+      "cloze": {
+        "passage": "Today is Mark's first day as a mail carrier. He feels both nervous and excited. Before he ___(1) out, his manager reminded him to check every address carefully. The streets were crowded, ___(2) Mark still managed to deliver most of the letters on time. Around noon, he met an old lady ___(3) was waiting for a parcel from her son abroad. When he handed it to her, she was so happy ___(4) she almost cried. By the end of the day, Mark ___(5) more than thirty kilometers, but he felt proud of his work.",
+        "passageZh": "今天是馬克當郵差的第一天,他既緊張又興奮。出發前,主管提醒他仔細核對每個地址。街道很擁擠,但馬克仍設法把大部分信件準時送達。中午左右,他遇到一位老太太,正在等海外兒子寄來的包裹。當他把包裹交給她時,她高興得幾乎要哭了。到了一天結束,馬克走了超過三十公里,但他對自己的工作感到自豪。",
+        "glossary": [
+          {
+            "en": "mail carrier",
+            "zh": "郵差"
+          },
+          {
+            "en": "nervous",
+            "zh": "緊張的"
+          },
+          {
+            "en": "remind",
+            "zh": "提醒"
+          },
+          {
+            "en": "address",
+            "zh": "地址"
+          },
+          {
+            "en": "crowded",
+            "zh": "擁擠的"
+          },
+          {
+            "en": "manage to",
+            "zh": "設法做到"
+          },
+          {
+            "en": "deliver",
+            "zh": "投遞"
+          },
+          {
+            "en": "parcel",
+            "zh": "包裹"
+          },
+          {
+            "en": "abroad",
+            "zh": "在國外"
+          },
+          {
+            "en": "proud",
+            "zh": "自豪的"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "片語動詞",
+            "options": [
+              "set",
+              "sets",
+              "setting",
+              "to set"
+            ],
+            "answer": "set",
+            "note": "set out=出發。全文為過去式敘述,set 的過去式與原形同形,故用 set。sets 是現在式、setting 是分詞、to set 是不定詞,皆不合。"
+          },
+          {
+            "n": 2,
+            "point": "對等連接詞",
+            "options": [
+              "but",
+              "so",
+              "because",
+              "although"
+            ],
+            "answer": "but",
+            "note": "前後語意相反(街道擁擠『但』仍準時),用對等連接詞 but。so=所以、because=因為,邏輯不合;although 是從屬連接詞,不能放在這個位置連接兩個獨立子句。"
+          },
+          {
+            "n": 3,
+            "point": "關係代名詞",
+            "options": [
+              "who",
+              "which",
+              "whom",
+              "whose"
+            ],
+            "answer": "who",
+            "note": "先行詞 an old lady 指人且在子句當主詞,用 who。which 指物、whom 是受格、whose 是所有格,皆不合。"
+          },
+          {
+            "n": 4,
+            "point": "so...that 句型",
+            "options": [
+              "that",
+              "as",
+              "than",
+              "which"
+            ],
+            "answer": "that",
+            "note": "so+形容詞+that=如此…以致於。so happy that she almost cried。as/than/which 不能構成此句型。"
+          },
+          {
+            "n": 5,
+            "point": "時態(過去完成)",
+            "options": [
+              "walked",
+              "had walked",
+              "has walked",
+              "walks"
+            ],
+            "answer": "had walked",
+            "note": "By the end of the day 表「到某過去時間點為止」,搭配過去完成式 had walked。walked 是單純過去、has walked 是現在完成、walks 是現在式,皆不合。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "The post office plays an important role in our daily life. In Taiwan, Chunghwa Post has a history of more than one hundred years. Long before the Internet, the post office was the main way for people to send messages to family and friends far away. A handwritten letter could take several days to arrive, but it carried warm feelings that a quick phone call could not. Today, the post office does much more than deliver letters. People can save money in a postal account, send packages around the world, pay bills, and even buy insurance at the counter. In many small towns where there are no banks, the local post office becomes the center of the community. Older people, in particular, trust the friendly staff who have served them for years. The way people use the post office has changed with technology. Fewer people send personal letters now, but online shopping has made package delivery busier than ever. To keep up, Chunghwa Post has built smart lockers, online tracking systems, and mobile apps. Still, the goal stays the same: to connect people and bring what they need to their door. Some things never change. Behind every parcel and every stamp, there are workers who get up early, rain or shine, to make sure the mail arrives. They are a quiet but important part of the society we live in.",
+        "passageZh": "郵局在我們的日常生活中扮演重要角色。在台灣,中華郵政已有超過一百年的歷史。早在網路出現之前,郵局是人們向遠方親友傳遞訊息的主要方式。一封手寫信可能要好幾天才會送到,卻承載著快速電話無法傳達的溫暖情感。如今,郵局做的遠不只是送信。人們可以在郵政帳戶存錢、寄包裹到世界各地、繳費,甚至在櫃台買保險。在許多沒有銀行的小鎮,當地郵局成了社區的中心。尤其是長者,特別信任那些服務他們多年的親切員工。人們使用郵局的方式隨著科技改變。現在較少人寄私人信件,但網購讓包裹投遞比以往更繁忙。為了跟上腳步,中華郵政設置了智慧儲物櫃、線上追蹤系統與行動 App。然而目標始終如一:連結人們,把他們需要的東西送到家門口。有些事永遠不變。在每件包裹與每張郵票背後,都有不論晴雨、早起確保郵件送達的工作者。他們是我們所處社會中安靜卻重要的一部分。",
+        "glossary": [
+          {
+            "en": "Chunghwa Post",
+            "zh": "中華郵政"
+          },
+          {
+            "en": "handwritten",
+            "zh": "手寫的"
+          },
+          {
+            "en": "deliver",
+            "zh": "投遞"
+          },
+          {
+            "en": "postal account",
+            "zh": "郵政帳戶"
+          },
+          {
+            "en": "insurance",
+            "zh": "保險"
+          },
+          {
+            "en": "counter",
+            "zh": "櫃台"
+          },
+          {
+            "en": "community",
+            "zh": "社區"
+          },
+          {
+            "en": "tracking system",
+            "zh": "追蹤系統"
+          },
+          {
+            "en": "connect",
+            "zh": "連結"
+          },
+          {
+            "en": "rain or shine",
+            "zh": "不論晴雨"
+          }
+        ],
+        "questions": [
+          {
+            "q": "What is the passage mainly about?",
+            "options": [
+              "How to send a letter abroad",
+              "The role of the post office and how it has changed",
+              "Why people stopped writing letters",
+              "The history of the Internet in Taiwan"
+            ],
+            "answer": "The role of the post office and how it has changed",
+            "qtype": "主旨",
+            "note": "全文圍繞郵局的角色,以及它如何隨科技演變,故選此項。其他選項只是文中細節或未提及。",
+            "locate": "The post office plays an important role in our daily life."
+          },
+          {
+            "q": "According to the passage, what can people do at the post office besides sending letters?",
+            "options": [
+              "Borrow books",
+              "See a doctor",
+              "Save money and pay bills",
+              "Rent a car"
+            ],
+            "answer": "Save money and pay bills",
+            "qtype": "細節",
+            "note": "文中明確說可在郵局存錢、繳費、寄包裹、買保險。借書、看醫生、租車皆未提及。",
+            "locate": "People can save money in a postal account, send packages around the world, pay bills, and even buy insurance."
+          },
+          {
+            "q": "Why is the post office important in many small towns?",
+            "options": [
+              "It is the only place with the Internet",
+              "It serves as the center of the community where there are no banks",
+              "It is the tallest building in town",
+              "It sells the cheapest food"
+            ],
+            "answer": "It serves as the center of the community where there are no banks",
+            "qtype": "細節",
+            "note": "文中說在沒有銀行的小鎮,當地郵局成為社區中心。其餘三項文中皆未提及。",
+            "locate": "In many small towns where there are no banks, the local post office becomes the center of the community."
+          },
+          {
+            "q": "What can we infer about package delivery today?",
+            "options": [
+              "It has become less common",
+              "It is busier because of online shopping",
+              "It has completely replaced letters",
+              "It is now done only by machines"
+            ],
+            "answer": "It is busier because of online shopping",
+            "qtype": "推論",
+            "note": "文中說網購讓包裹投遞比以往更忙,可推知包裹量增加。並未說完全取代信件或全由機器處理。",
+            "locate": "online shopping has made package delivery busier than ever."
+          },
+          {
+            "q": "What does the phrase \"rain or shine\" most likely mean?",
+            "options": [
+              "Only on sunny days",
+              "No matter what the weather is",
+              "When it is raining heavily",
+              "During spring and summer"
+            ],
+            "answer": "No matter what the weather is",
+            "qtype": "字義",
+            "note": "rain or shine 是固定片語,意為「不論晴雨、無論如何」,強調員工風雨無阻。",
+            "locate": "there are workers who get up early, rain or shine, to make sure the mail arrives."
+          }
+        ]
+      }
+    },
+    {
+      "title": "模擬考 第 4 回",
+      "vocab": [
+        {
+          "stem": "What time is it? It is 8:15pm — a ___ after eight at night.",
+          "options": [
+            "half",
+            "fourth",
+            "fifteen",
+            "quarter"
+          ],
+          "answer": "quarter",
+          "note": "a quarter=一刻鐘(15 分)。8:15 是「八點過一刻」。half=半(30 分)、fourth=第四、fifteen 不這樣用,皆不對。"
+        },
+        {
+          "stem": "At the party, her delightful smile was so ___ that it influenced the mood of everyone present.",
+          "options": [
+            "dismal",
+            "infectious",
+            "unapproachable",
+            "noncommunicable"
+          ],
+          "answer": "infectious",
+          "note": "infectious=有感染力的。她的笑容「極具感染力」,影響全場。dismal=陰沉的、unapproachable=難親近的、noncommunicable=不可傳達的,皆不合。"
+        },
+        {
+          "stem": "The value of a diamond ___ on its qualities. Each factor can greatly affect the price.",
+          "options": [
+            "describes",
+            "introduces",
+            "displays",
+            "depends"
+          ],
+          "answer": "depends",
+          "note": "depend on=取決於。鑽石價值「取決於」品質。describe=描述、introduce=介紹、display=展示,皆不接 on 表此意。"
+        },
+        {
+          "stem": "Did you see John in the past two days? I wasn't even ___ that he was ill.",
+          "options": [
+            "aware",
+            "weary",
+            "diligent",
+            "impressive"
+          ],
+          "answer": "aware",
+          "note": "be aware that=察覺、知道。我根本不「知道」他生病。weary=疲倦的、diligent=勤奮的、impressive=令人印象深刻的,皆不合。"
+        },
+        {
+          "stem": "In daily life, we must learn to ___ small inconveniences, like waiting in line or dealing with noisy neighbors.",
+          "options": [
+            "reject",
+            "destroy",
+            "collapse",
+            "tolerate"
+          ],
+          "answer": "tolerate",
+          "note": "tolerate=容忍。要學會「容忍」小麻煩。reject=拒絕、destroy=摧毀、collapse=倒塌,皆不合。"
+        },
+        {
+          "stem": "Apartments near MRT stations are popular with those who need to ___ to and from work by public transportation.",
+          "options": [
+            "respond",
+            "schedule",
+            "purchase",
+            "commute"
+          ],
+          "answer": "commute",
+          "note": "commute=通勤。捷運旁公寓受「通勤族」歡迎。respond=回應、schedule=排程、purchase=購買,皆不合。"
+        },
+        {
+          "stem": "The foreigner has studied Taiwanese hard in the hope of speaking it ___ and making friends with the locals.",
+          "options": [
+            "frankly",
+            "friendly",
+            "fluently",
+            "formally"
+          ],
+          "answer": "fluently",
+          "note": "fluently=流利地。希望說得「流利」。frankly=坦白地、friendly 是形容詞不能修飾動詞、formally=正式地,皆不合。"
+        },
+        {
+          "stem": "The city has one of the world's largest subway systems. The subway system is so ___ that many first-time travelers get lost in it.",
+          "options": [
+            "appropriate",
+            "complicated",
+            "essential",
+            "enthusiastic"
+          ],
+          "answer": "complicated",
+          "note": "complicated=複雜的。地鐵系統太「複雜」易迷路。appropriate=適當的、essential=必要的、enthusiastic=熱情的,皆不合。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "I have gotten used to ___ tea during these two years.",
+          "options": [
+            "drink",
+            "drinking",
+            "have been drinking",
+            "have drunk"
+          ],
+          "answer": "drinking",
+          "note": "be/get used to+V-ing=習慣於。此處 to 是介系詞,接動名詞 drinking。drink/完成式皆不合。"
+        },
+        {
+          "q": "I have many foreign friends. Some are from Japan and ___ are all from South Korea.",
+          "options": [
+            "another",
+            "other",
+            "others",
+            "the others"
+          ],
+          "answer": "the others",
+          "note": "把朋友分兩群:一些(Some)…其餘全部(the others)。another=另一個、other 不能單獨當代名詞、others=其他一些(非全部),皆不合。"
+        },
+        {
+          "q": "___ this game to a no-ranking young player was a heavy blow to his confidence.",
+          "options": [
+            "Lose",
+            "Lost",
+            "Losing",
+            "When losing"
+          ],
+          "answer": "Losing",
+          "note": "動名詞當主詞:「輸掉」這場比賽是主詞,用 Losing。Lose/Lost 不能當主詞、When losing 是副詞片語,皆不合。"
+        },
+        {
+          "q": "If he had taken my advice, he ___ the mistake. Now he regretted not listening to me.",
+          "options": [
+            "might make",
+            "might had made",
+            "might not made",
+            "might not have made"
+          ],
+          "answer": "might not have made",
+          "note": "與過去事實相反的假設:If 過去完成 + 主句 might have+過去分詞,故 might not have made。其餘結構皆錯。"
+        },
+        {
+          "q": "Valentine's Day, ___ on February 14, has been around for centuries as a celebration of romance and love.",
+          "options": [
+            "falls",
+            "fallen",
+            "falling",
+            "which fall"
+          ],
+          "answer": "falling",
+          "note": "分詞片語 falling on February 14(=which falls on)修飾 Valentine's Day。falls 會變兩動詞、fallen 是被動不合、which fall 主詞單數應 falls,皆不合。"
+        },
+        {
+          "q": "The students ___ notes quietly during the lecture are the top performers in the class.",
+          "options": [
+            "take",
+            "taking",
+            "are taking",
+            "who takes"
+          ],
+          "answer": "taking",
+          "note": "現在分詞 taking notes 修飾 The students(=who are taking)。take/are taking 會多出動詞、who takes 主詞複數應 take,皆不合。"
+        },
+        {
+          "q": "He was heard ___ a love song to his girlfriend.",
+          "options": [
+            "sing",
+            "sang",
+            "singing",
+            "to singing"
+          ],
+          "answer": "singing",
+          "note": "hear sb V-ing 變被動 be heard V-ing,用 singing 表「被聽到正在唱」。sing(被動後須加 to)、sang 過去式、to singing 錯誤,皆不合。"
+        }
+      ],
+      "cloze": {
+        "passage": "More and more people in Taiwan are using smart parcel lockers. These lockers ___(1) at MRT stations, convenience stores, and post offices. When your package arrives, you ___(2) a text message with a special code. All you have to do is enter the code, and the locker door will open ___(3). This service is popular because it lets people pick up their parcels ___(4) they are free, even at midnight. ___(5) the system is convenient, some elderly users still prefer to receive their mail at the counter.",
+        "passageZh": "越來越多台灣人使用智慧包裹櫃。這些櫃子設置在捷運站、便利商店和郵局。當你的包裹送達時,你會收到一封含特殊密碼的簡訊。你只要輸入密碼,櫃門就會自動打開。這項服務很受歡迎,因為它讓人們可以在有空時領取包裹,即使是半夜也行。雖然這套系統很方便,有些年長使用者仍偏好到櫃台領取郵件。",
+        "glossary": [
+          {
+            "en": "smart parcel locker",
+            "zh": "智慧包裹櫃"
+          },
+          {
+            "en": "MRT station",
+            "zh": "捷運站"
+          },
+          {
+            "en": "convenience store",
+            "zh": "便利商店"
+          },
+          {
+            "en": "code",
+            "zh": "密碼"
+          },
+          {
+            "en": "enter",
+            "zh": "輸入"
+          },
+          {
+            "en": "pick up",
+            "zh": "領取"
+          },
+          {
+            "en": "midnight",
+            "zh": "午夜"
+          },
+          {
+            "en": "elderly",
+            "zh": "年長的"
+          },
+          {
+            "en": "counter",
+            "zh": "櫃台"
+          },
+          {
+            "en": "convenient",
+            "zh": "方便的"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "被動語態",
+            "options": [
+              "are found",
+              "find",
+              "are finding",
+              "found"
+            ],
+            "answer": "are found",
+            "note": "櫃子「被設置/可見於」各地,用被動 are found。find 是主動、are finding 是進行式、found 缺 be 動詞,皆不合。"
+          },
+          {
+            "n": 2,
+            "point": "時態(未來)",
+            "options": [
+              "receive",
+              "will receive",
+              "received",
+              "have received"
+            ],
+            "answer": "will receive",
+            "note": "When 引導的時間子句用現在式(arrives),主句表未來用 will receive。received 是過去、have received 是現在完成,與「未來收到」不合。"
+          },
+          {
+            "n": 3,
+            "point": "詞性(副詞)",
+            "options": [
+              "automatic",
+              "automatically",
+              "automate",
+              "automation"
+            ],
+            "answer": "automatically",
+            "note": "修飾動詞 open 要用副詞 automatically(自動地)。automatic 是形容詞、automate 是動詞、automation 是名詞,皆不能修飾動詞。"
+          },
+          {
+            "n": 4,
+            "point": "複合關係副詞",
+            "options": [
+              "whenever",
+              "however",
+              "whatever",
+              "wherever"
+            ],
+            "answer": "whenever",
+            "note": "語意為「無論何時有空」,用 whenever(每當)。however=然而、whatever=無論什麼、wherever=無論何地,皆不合語意。"
+          },
+          {
+            "n": 5,
+            "point": "從屬連接詞",
+            "options": [
+              "Although",
+              "Because",
+              "Unless",
+              "So"
+            ],
+            "answer": "Although",
+            "note": "前後語意轉折(雖然方便,長者『仍』偏好櫃台),用 Although。Because=因為、Unless=除非、So=所以,邏輯皆不合。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "One rainy afternoon, a young clerk named Emma found an old letter at the bottom of a forgotten mailbag. The envelope was yellow and the ink had faded, but she could still read the address. The letter had been written thirty years ago and, for some reason, had never been delivered. Emma felt that she had to finish the job. She searched the old records and found that the house on the envelope had been torn down long ago. The person who sent the letter, a soldier named Mr. Wang, might have passed away. Still, Emma did not give up. She posted a message online, asking if anyone knew the family. A week later, an elderly woman came to the post office. Her hands shook as she opened the letter. It was from her husband, written just before he went abroad to work. He had told her how much he loved her and promised to come home soon. He never did, but his words had finally reached her after all those years. The woman cried, but she also smiled. She thanked Emma again and again, saying that the letter was the best gift she had ever received. Emma realized that her job was about more than moving paper from one place to another. Sometimes, a single letter could carry a whole lifetime of love.",
+        "passageZh": "一個下雨的午後,一位名叫艾瑪的年輕櫃員在被遺忘的郵袋底部發現一封舊信。信封泛黃,墨水褪色,但她仍讀得出地址。這封信寫於三十年前,不知何故從未被投遞。艾瑪覺得自己必須完成這件工作。她查閱舊紀錄,發現信封上的房子早已被拆除。寄信人是一位姓王的軍人,或許已經過世。儘管如此,艾瑪沒有放棄。她在網路上發文,詢問是否有人認識這家人。一週後,一位年長的女士來到郵局。她開信時雙手顫抖。信是她先生寫的,就在他出國工作前寫下。他告訴她自己有多愛她,並承諾很快回家。他始終沒能回來,但他的話語在多年後終於送到了她手中。女士哭了,卻也笑了。她一再感謝艾瑪,說這封信是她收過最好的禮物。艾瑪明白,她的工作不只是把紙張從一地搬到另一地。有時候,一封信能承載一輩子的愛。",
+        "glossary": [
+          {
+            "en": "clerk",
+            "zh": "櫃員、職員"
+          },
+          {
+            "en": "mailbag",
+            "zh": "郵袋"
+          },
+          {
+            "en": "envelope",
+            "zh": "信封"
+          },
+          {
+            "en": "faded",
+            "zh": "褪色的"
+          },
+          {
+            "en": "address",
+            "zh": "地址"
+          },
+          {
+            "en": "records",
+            "zh": "紀錄"
+          },
+          {
+            "en": "torn down",
+            "zh": "被拆除"
+          },
+          {
+            "en": "soldier",
+            "zh": "軍人"
+          },
+          {
+            "en": "pass away",
+            "zh": "過世"
+          },
+          {
+            "en": "elderly",
+            "zh": "年長的"
+          },
+          {
+            "en": "abroad",
+            "zh": "在國外"
+          }
+        ],
+        "questions": [
+          {
+            "q": "Where did Emma find the old letter?",
+            "options": [
+              "In a customer's house",
+              "At the bottom of a forgotten mailbag",
+              "In her own desk drawer",
+              "On the street near the post office"
+            ],
+            "answer": "At the bottom of a forgotten mailbag",
+            "qtype": "細節",
+            "note": "文章開頭就說艾瑪在被遺忘的郵袋底部發現這封舊信。",
+            "locate": "Emma found an old letter at the bottom of a forgotten mailbag."
+          },
+          {
+            "q": "What did Emma discover when she searched the old records?",
+            "options": [
+              "The house on the envelope had been torn down",
+              "The family had moved abroad",
+              "The letter was a fake",
+              "Mr. Wang had become very rich"
+            ],
+            "answer": "The house on the envelope had been torn down",
+            "qtype": "細節",
+            "note": "文中說她查紀錄後發現信封上的房子早已被拆除。其餘選項文中皆無。",
+            "locate": "She searched the old records and found that the house on the envelope had been torn down long ago."
+          },
+          {
+            "q": "Who finally received the letter?",
+            "options": [
+              "Mr. Wang himself",
+              "Emma's own mother",
+              "Mr. Wang's wife",
+              "A young soldier"
+            ],
+            "answer": "Mr. Wang's wife",
+            "qtype": "細節",
+            "note": "來郵局的年長女士打開信後得知是「她先生」寫的,可知收信人是王先生的太太。",
+            "locate": "It was from her husband, written just before he went abroad to work."
+          },
+          {
+            "q": "What can we infer about Mr. Wang?",
+            "options": [
+              "He is still working abroad now",
+              "He probably never returned home",
+              "He wrote many letters every year",
+              "He had forgotten about his wife"
+            ],
+            "answer": "He probably never returned home",
+            "qtype": "推論",
+            "note": "文中「He never did」承接前句「promised to come home soon」,意指他始終沒回家,可推論他可能再也沒能回來。",
+            "locate": "He had told her how much he loved her and promised to come home soon. He never did."
+          },
+          {
+            "q": "What did Emma learn from this experience?",
+            "options": [
+              "Old letters should be thrown away",
+              "Her job is only about moving paper",
+              "A single letter can carry deep meaning and love",
+              "She should look for a new job"
+            ],
+            "answer": "A single letter can carry deep meaning and love",
+            "qtype": "主旨",
+            "note": "結尾點出艾瑪體會到工作不只是搬紙張,一封信能承載一輩子的愛。",
+            "locate": "Sometimes, a single letter could carry a whole lifetime of love."
+          }
+        ]
+      }
+    },
+    {
+      "title": "模擬考 第 5 回",
+      "vocab": [
+        {
+          "stem": "I would like to make an ___ with the dentist to see if there is a cavity in my teeth.",
+          "options": [
+            "engagement",
+            "appointment",
+            "assignment",
+            "elaboration"
+          ],
+          "answer": "appointment",
+          "note": "make an appointment=預約(看診)。跟牙醫「預約」。engagement=訂婚/約定、assignment=作業/指派、elaboration=詳述,皆不合。"
+        },
+        {
+          "stem": "In the company, he stood out as a ___ employee, consistently punctual and exceptionally responsible with tasks.",
+          "options": [
+            "tardy",
+            "lazy",
+            "careless",
+            "diligent"
+          ],
+          "answer": "diligent",
+          "note": "diligent=勤奮的。準時又負責,是「勤奮」員工。tardy=遲到的、lazy=懶惰的、careless=粗心的,語意相反,不合。"
+        },
+        {
+          "stem": "Mr. Smith is about to retire from the company, so his colleagues plan a ___ party for him.",
+          "options": [
+            "wedding",
+            "farewell",
+            "move-in",
+            "bachelor"
+          ],
+          "answer": "farewell",
+          "note": "farewell party=歡送會。同事為退休者辦「歡送」派對。wedding=婚禮、move-in=喬遷、bachelor=單身漢(派對),皆不合。"
+        },
+        {
+          "stem": "We should ___ flights 48 hours before departure to avoid last-minute changes or cancellations.",
+          "options": [
+            "reform",
+            "conform",
+            "confirm",
+            "inform"
+          ],
+          "answer": "confirm",
+          "note": "confirm=確認。起飛前 48 小時「確認」班機。reform=改革、conform=順從、inform=通知,字形相近但語意不合。"
+        },
+        {
+          "stem": "The sign at the beach ___ that swimming is dangerous when the waves are high.",
+          "options": [
+            "relieves",
+            "pretends",
+            "affects",
+            "warns"
+          ],
+          "answer": "warns",
+          "note": "warn=警告。告示牌「警告」浪大游泳危險。relieve=減輕、pretend=假裝、affect=影響,皆不合。"
+        },
+        {
+          "stem": "Taiwan's baseball team beat Japan and ___ its first-ever gold medal in the 2024 WBSC Premier12.",
+          "options": [
+            "claimed",
+            "adjusted",
+            "engaged",
+            "launched"
+          ],
+          "answer": "claimed",
+          "note": "claim=奪得、贏得。擊敗日本「奪下」首面金牌。adjust=調整、engage=從事、launch=發射/推出,皆不合。"
+        },
+        {
+          "stem": "I just know there will be a meeting tomorrow, but I don't know the ___ time when it will take place.",
+          "options": [
+            "common",
+            "normal",
+            "specific",
+            "general"
+          ],
+          "answer": "specific",
+          "note": "specific=明確、具體的。不知「確切」時間。common=常見的、normal=正常的、general=籠統的,語意相反或不合。"
+        },
+        {
+          "stem": "As a ___ of getting into a big argument with his boss, Alex was fired and had to look for a new job.",
+          "options": [
+            "consequence",
+            "interruption",
+            "contact",
+            "entertainment"
+          ],
+          "answer": "consequence",
+          "note": "as a consequence of=作為…的後果。與老闆大吵的「後果」是被解雇。interruption=打斷、contact=聯絡、entertainment=娛樂,皆不合。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "Kristine visits her mom ___.",
+          "options": [
+            "twice a week",
+            "two in a week",
+            "two times for a week",
+            "two times week"
+          ],
+          "answer": "twice a week",
+          "note": "「一週兩次」正確說法為 twice a week。two in a week、two times for a week、two times week 皆不合英語慣用法。"
+        },
+        {
+          "q": "Jack taught his students ___ effective ways to improve their English.",
+          "options": [
+            "a little",
+            "a great deal of",
+            "a few",
+            "an amount of"
+          ],
+          "answer": "a few",
+          "note": "ways 是可數複數,用 a few(一些)。a little/a great deal of/an amount of 皆修飾不可數名詞,故不合。"
+        },
+        {
+          "q": "Holding an implicit bias towards a particular social group can determine ___ from that group.",
+          "options": [
+            "what you treat",
+            "you treat how",
+            "how you treat",
+            "which you treat"
+          ],
+          "answer": "how you treat",
+          "note": "determine 後接名詞子句,語序為「疑問詞+主詞+動詞」:how you treat(someone)。其餘語序錯誤或語意不合。"
+        },
+        {
+          "q": "Bill has been living in Taiwan for 10 years, so he has no difficulty ___ to people in Chinese.",
+          "options": [
+            "talks",
+            "to talk",
+            "talked",
+            "talking"
+          ],
+          "answer": "talking",
+          "note": "have no difficulty (in) V-ing=做…沒困難,用 talking。talks/to talk/talked 皆不合此固定句型。"
+        },
+        {
+          "q": "When planning to dine in that Michelin-starred restaurant, you ___ make a reservation first. Otherwise, you will find yourself in a long waiting line.",
+          "options": [
+            "used to",
+            "had better",
+            "would like",
+            "can't help but"
+          ],
+          "answer": "had better",
+          "note": "had better+原形=最好。最好先訂位。used to=過去常、would like(需 to)、can't help but=忍不住,皆不合語意。"
+        },
+        {
+          "q": "If you ___, I would take the opportunity and learn as much as possible.",
+          "options": [
+            "am",
+            "wasn't",
+            "were",
+            "have been"
+          ],
+          "answer": "were",
+          "note": "與現在事實相反的假設,be 動詞一律用 were(If I were you)。am/wasn't/have been 皆不合假設語氣。"
+        },
+        {
+          "q": "This is the school from ___ I graduated.",
+          "options": [
+            "that",
+            "what",
+            "which",
+            "where"
+          ],
+          "answer": "which",
+          "note": "「介系詞+關代」from which(=from the school)。that 不可接在介系詞後、what 不可、where 已含介意不能再加 from,故用 which。"
+        }
+      ],
+      "cloze": {
+        "passage": "Online shopping is convenient, but it creates a huge amount of packaging waste. Every year, millions of boxes ___(1) away after being used only once. To solve this problem, some companies ___(2) reusable boxes to customers. Customers return the empty boxes, ___(3) are then cleaned and used again. This idea not only reduces waste ___(4) also saves money. Experts say that if more people support this change, the environment ___(5) much cleaner in the future.",
+        "passageZh": "網購很方便,卻製造大量包裝廢棄物。每年有數百萬個箱子只用一次就被丟棄。為了解決這個問題,有些公司提供可重複使用的箱子給顧客。顧客退回空箱,這些箱子接著被清潔後再次使用。這個點子不僅減少廢棄物,也省錢。專家說,如果更多人支持這項改變,未來環境會乾淨許多。",
+        "glossary": [
+          {
+            "en": "packaging",
+            "zh": "包裝"
+          },
+          {
+            "en": "waste",
+            "zh": "廢棄物"
+          },
+          {
+            "en": "throw away",
+            "zh": "丟棄"
+          },
+          {
+            "en": "reusable",
+            "zh": "可重複使用的"
+          },
+          {
+            "en": "return",
+            "zh": "歸還"
+          },
+          {
+            "en": "empty",
+            "zh": "空的"
+          },
+          {
+            "en": "reduce",
+            "zh": "減少"
+          },
+          {
+            "en": "expert",
+            "zh": "專家"
+          },
+          {
+            "en": "support",
+            "zh": "支持"
+          },
+          {
+            "en": "environment",
+            "zh": "環境"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "被動語態",
+            "options": [
+              "throw",
+              "are thrown",
+              "threw",
+              "throwing"
+            ],
+            "answer": "are thrown",
+            "note": "箱子「被」丟棄,用被動 are thrown(away)。throw 是主動原形、threw 是過去主動、throwing 是分詞,皆不合。"
+          },
+          {
+            "n": 2,
+            "point": "動詞時態",
+            "options": [
+              "provide",
+              "providing",
+              "to provide",
+              "provided"
+            ],
+            "answer": "provide",
+            "note": "主詞 some companies 為複數,主要動詞用現在式 provide。providing 是分詞、to provide 是不定詞、provided 是過去式(與全文現在式不符),皆不合。"
+          },
+          {
+            "n": 3,
+            "point": "關係代名詞",
+            "options": [
+              "who",
+              "which",
+              "where",
+              "what"
+            ],
+            "answer": "which",
+            "note": "先行詞 the empty boxes 指物且在子句當主詞,用 which。who 指人、where 指地點、what 不能引導關係子句,皆不合。"
+          },
+          {
+            "n": 4,
+            "point": "對等連接(not only...but also)",
+            "options": [
+              "and",
+              "but",
+              "or",
+              "so"
+            ],
+            "answer": "but",
+            "note": "not only A but also B=不僅 A 而且 B,固定搭配 but。and/or/so 無法與 not only 構成這個句型。"
+          },
+          {
+            "n": 5,
+            "point": "時態(未來)",
+            "options": [
+              "is",
+              "was",
+              "will be",
+              "has been"
+            ],
+            "answer": "will be",
+            "note": "in the future 表未來,用 will be。is 是現在、was 是過去、has been 是現在完成,皆與「未來」不合。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "Every time you order something online, it usually arrives wrapped in a box, plastic, and tape. This packaging protects the product, but it also creates a mountain of trash. Studies show that packaging makes up almost a third of all household waste. As online shopping grows, this problem only gets worse. Luckily, companies and shoppers are starting to look for greener choices. Some shops now use boxes made from recycled paper that can be folded flat and sent back. Others have replaced plastic bubble wrap with paper or even mushroom-based materials that break down naturally. A few delivery companies are testing reusable boxes: customers return the empty box, and it is cleaned and used again up to twenty times. Shoppers can help, too. Choosing to receive several items in one box, rather than many separate deliveries, cuts down on waste and saves fuel. Saying no to extra plastic bags and reusing boxes at home also make a difference. Of course, greener packaging is not always cheaper, and some customers worry that their products may be less protected. But experts believe that as more people care about the environment, these new materials will become common and affordable. Small changes, repeated by millions of people, can add up to a cleaner planet.",
+        "passageZh": "每次你在網路上下單,東西通常包在箱子、塑膠和膠帶裡送來。這些包裝保護商品,卻也製造出如山的垃圾。研究顯示,包裝幾乎占了所有家庭廢棄物的三分之一。隨著網購成長,這個問題只會更嚴重。所幸,企業與消費者開始尋找更環保的選擇。有些店家現在使用可折平寄回、以回收紙製成的箱子。有些則用紙、甚至能自然分解的菇類材料取代塑膠氣泡布。少數物流公司正在試行可重複使用的箱子:顧客退回空箱,清潔後可再使用多達二十次。消費者也能幫上忙。選擇把多件商品裝在同一箱、而非分成多次寄送,可減少廢棄物並節省燃料。拒絕多餘的塑膠袋、在家重複使用箱子,同樣能帶來改變。當然,環保包裝不一定比較便宜,有些顧客擔心商品保護較差。但專家相信,隨著愈多人在意環境,這些新材料會變得普遍又負擔得起。數百萬人重複的小改變,能累積成一個更乾淨的星球。",
+        "glossary": [
+          {
+            "en": "wrapped",
+            "zh": "包裹住的"
+          },
+          {
+            "en": "packaging",
+            "zh": "包裝"
+          },
+          {
+            "en": "trash",
+            "zh": "垃圾"
+          },
+          {
+            "en": "household waste",
+            "zh": "家庭廢棄物"
+          },
+          {
+            "en": "recycled",
+            "zh": "回收的"
+          },
+          {
+            "en": "bubble wrap",
+            "zh": "氣泡布"
+          },
+          {
+            "en": "break down",
+            "zh": "分解"
+          },
+          {
+            "en": "reusable",
+            "zh": "可重複使用的"
+          },
+          {
+            "en": "cut down on",
+            "zh": "減少"
+          },
+          {
+            "en": "fuel",
+            "zh": "燃料"
+          },
+          {
+            "en": "affordable",
+            "zh": "負擔得起的"
+          }
+        ],
+        "questions": [
+          {
+            "q": "What is the passage mainly about?",
+            "options": [
+              "How to shop online more quickly",
+              "Greener ways to reduce packaging waste",
+              "Why plastic is cheaper than paper",
+              "How delivery companies make money"
+            ],
+            "answer": "Greener ways to reduce packaging waste",
+            "qtype": "主旨",
+            "note": "全文討論網購包裝造成的垃圾,以及更環保的解決方式,故選此項。",
+            "locate": "companies and shoppers are starting to look for greener choices."
+          },
+          {
+            "q": "According to the passage, how much of household waste is packaging?",
+            "options": [
+              "About half",
+              "Almost a third",
+              "A tenth",
+              "Nearly all of it"
+            ],
+            "answer": "Almost a third",
+            "qtype": "細節",
+            "note": "文中說研究顯示包裝幾乎占家庭廢棄物的三分之一。",
+            "locate": "packaging makes up almost a third of all household waste."
+          },
+          {
+            "q": "How many times can the reusable boxes be used?",
+            "options": [
+              "Twice",
+              "Up to ten times",
+              "Up to twenty times",
+              "More than a hundred times"
+            ],
+            "answer": "Up to twenty times",
+            "qtype": "細節",
+            "note": "文中提到可重複使用的箱子清潔後可再用多達二十次。",
+            "locate": "it is cleaned and used again up to twenty times."
+          },
+          {
+            "q": "Which of the following is NOT mentioned as a greener choice?",
+            "options": [
+              "Boxes made from recycled paper",
+              "Mushroom-based materials",
+              "Reusable boxes",
+              "Glass containers"
+            ],
+            "answer": "Glass containers",
+            "qtype": "是非/細節",
+            "note": "文中提到回收紙箱、菇類材料、可重複使用的箱子,但完全沒提到玻璃容器。",
+            "locate": "Others have replaced plastic bubble wrap with paper or even mushroom-based materials."
+          },
+          {
+            "q": "What do experts believe about greener packaging in the future?",
+            "options": [
+              "It will disappear soon",
+              "It will become common and affordable",
+              "It will only be used by rich people",
+              "It will make products break easily"
+            ],
+            "answer": "It will become common and affordable",
+            "qtype": "推論",
+            "note": "文末專家相信隨著更多人在意環境,新材料會變得普遍又負擔得起。",
+            "locate": "these new materials will become common and affordable."
+          }
+        ]
+      }
+    },
+    {
+      "title": "模擬考 第 6 回",
+      "vocab": [
+        {
+          "stem": "After a 26-hour long flight, Jennifer was totally ___.",
+          "options": [
+            "decomposed",
+            "exhausted",
+            "complained",
+            "waived"
+          ],
+          "answer": "exhausted",
+          "note": "exhausted=精疲力竭的。長途飛行後「累壞了」。decomposed=腐爛分解的、complained=抱怨(動詞)、waived=放棄(權利),皆不合。"
+        },
+        {
+          "stem": "Regrettably, they decided to ___ the party due to unforeseen circumstances.",
+          "options": [
+            "cancel",
+            "attend",
+            "enhance",
+            "decorate"
+          ],
+          "answer": "cancel",
+          "note": "cancel=取消。因突發狀況「取消」派對。attend=出席、enhance=增強、decorate=裝飾,都不合語意。"
+        },
+        {
+          "stem": "It is very difficult to ___ between love and money when you can just have one of them.",
+          "options": [
+            "return",
+            "separate",
+            "decide",
+            "complain"
+          ],
+          "answer": "decide",
+          "note": "decide between=在…之間做抉擇。在愛情與金錢間「抉擇」。return=歸還、separate=分開、complain=抱怨,皆不合。"
+        },
+        {
+          "stem": "The news is warning us about ___ weather; we'd better not go outside right now.",
+          "options": [
+            "vital",
+            "timid",
+            "prompt",
+            "severe"
+          ],
+          "answer": "severe",
+          "note": "severe=嚴峻、惡劣的。警告「惡劣」天氣勿外出。vital=至關重要的、timid=膽小的、prompt=迅速的,皆不合。"
+        },
+        {
+          "stem": "Studying every day is an ___ way to remember what you learn in school.",
+          "options": [
+            "organic",
+            "effective",
+            "anxious",
+            "annual"
+          ],
+          "answer": "effective",
+          "note": "effective=有效的。每天讀書是「有效」的記憶法。organic=有機的、anxious=焦慮的、annual=每年的,皆不合。"
+        },
+        {
+          "stem": "He worked very hard to ___ his fear of giving a speech in public.",
+          "options": [
+            "overcome",
+            "elevate",
+            "stimulate",
+            "operate"
+          ],
+          "answer": "overcome",
+          "note": "overcome=克服。努力「克服」公開演講的恐懼。elevate=提升、stimulate=刺激、operate=操作,皆不合。"
+        },
+        {
+          "stem": "My parents plan to live in the countryside and enjoy a relaxing ___ life when they become old.",
+          "options": [
+            "rural",
+            "minor",
+            "urban",
+            "hectic"
+          ],
+          "answer": "rural",
+          "note": "rural=鄉村的。到鄉下過悠閒「鄉村」生活。minor=次要的、urban=都市的(相反)、hectic=忙亂的,皆不合。"
+        },
+        {
+          "stem": "It's important to have enough money to live on, but money alone doesn't ___ that you will have a happy life forever.",
+          "options": [
+            "compare",
+            "guarantee",
+            "replace",
+            "issue"
+          ],
+          "answer": "guarantee",
+          "note": "guarantee=保證。金錢無法「保證」永遠幸福。compare=比較、replace=取代、issue=發行/議題,皆不合。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "That award-winning movie ___ by a young Chinese rising star.",
+          "options": [
+            "directs",
+            "was directed",
+            "directed",
+            "had been directed"
+          ],
+          "answer": "was directed",
+          "note": "電影是「被」執導,用被動 was directed。directs/directed 為主動、had been directed 時態無依據,皆不合。"
+        },
+        {
+          "q": "The workers were not ___ the result of the meeting.",
+          "options": [
+            "satisfying to",
+            "satisfying with",
+            "satisfied to",
+            "satisfied with"
+          ],
+          "answer": "satisfied with",
+          "note": "be satisfied with=對…滿意,固定用法。人用過去分詞 satisfied,介系詞用 with。satisfying=令人滿意的、介系詞 to 皆不合。"
+        },
+        {
+          "q": "___ the alternator, the battery is the most important component in any car's electrical system.",
+          "options": [
+            "As far as",
+            "Aside from",
+            "As soon as",
+            "Apart in"
+          ],
+          "answer": "Aside from",
+          "note": "Aside from=除…之外。除了交流發電機,電瓶最重要。As far as=就…而言、As soon as=一就、Apart in 非正確片語,皆不合。"
+        },
+        {
+          "q": "The tour package offers several activities, ___ meals to ensure a great experience for all travelers.",
+          "options": [
+            "included",
+            "include",
+            "including",
+            "to include"
+          ],
+          "answer": "including",
+          "note": "including=包括(介系詞)。套裝行程「包括」餐點。included 常置名詞後、include 是動詞、to include 不合,皆不對。"
+        },
+        {
+          "q": "A country is believed ___ a comparative advantage over another when it can produce a commodity more cheaply.",
+          "options": [
+            "to have",
+            "having",
+            "that it has",
+            "to have had"
+          ],
+          "answer": "to have",
+          "note": "be believed to V=被認為…。國家被認為「擁有」比較利益,用 to have。having/that 子句/to have had 在結構或時態上不合。"
+        },
+        {
+          "q": "They considered it impossible ___ the project in two days.",
+          "options": [
+            "finished",
+            "to finish",
+            "had finished",
+            "finishing"
+          ],
+          "answer": "to finish",
+          "note": "consider it+形容詞+to V,it 為虛受詞,真受詞是不定詞 to finish。finished/had finished/finishing 皆不合此句型。"
+        },
+        {
+          "q": "Jack's dog ran out of his house, ___ by another dog.",
+          "options": [
+            "was chased",
+            "chasing",
+            "to be chased",
+            "chased"
+          ],
+          "answer": "chased",
+          "note": "分詞構句,狗「被」追,用過去分詞 chased(=being chased)。was chased 會多動詞、chasing 是主動、to be chased 不合,皆排除。"
+        }
+      ],
+      "cloze": {
+        "passage": "Phone and online scams have become a serious problem in Taiwan. Scammers often pretend ___(1) post office workers or delivery companies. They may send you a text message ___(2) says your parcel cannot be delivered, and ask you to click a link. ___(3) you click it, you might give away your personal information. The police remind people never ___(4) money to strangers over the phone. If you are not sure whether a message is real, you ___(5) call the official customer service number to check.",
+        "passageZh": "電話與網路詐騙在台灣已成為嚴重問題。詐騙者常假裝成郵局人員或物流公司。他們可能傳一封簡訊給你,說你的包裹無法投遞,並要你點一個連結。一旦你點下去,可能就洩漏了個人資料。警方提醒民眾,絕不要在電話中把錢交給陌生人。如果你不確定一則訊息是不是真的,你應該打官方客服電話查證。",
+        "glossary": [
+          {
+            "en": "scam",
+            "zh": "詐騙"
+          },
+          {
+            "en": "scammer",
+            "zh": "詐騙者"
+          },
+          {
+            "en": "pretend",
+            "zh": "假裝"
+          },
+          {
+            "en": "delivery company",
+            "zh": "物流公司"
+          },
+          {
+            "en": "click",
+            "zh": "點擊"
+          },
+          {
+            "en": "link",
+            "zh": "連結"
+          },
+          {
+            "en": "give away",
+            "zh": "洩漏"
+          },
+          {
+            "en": "personal information",
+            "zh": "個人資料"
+          },
+          {
+            "en": "stranger",
+            "zh": "陌生人"
+          },
+          {
+            "en": "official",
+            "zh": "官方的"
+          },
+          {
+            "en": "customer service",
+            "zh": "客服"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "不定詞",
+            "options": [
+              "be",
+              "to be",
+              "being",
+              "been"
+            ],
+            "answer": "to be",
+            "note": "pretend to be=假裝是,固定接不定詞 to be。be 是原形、being 是動名詞、been 是過去分詞,皆不能直接接在 pretend 後。"
+          },
+          {
+            "n": 2,
+            "point": "關係代名詞",
+            "options": [
+              "who",
+              "that",
+              "what",
+              "where"
+            ],
+            "answer": "that",
+            "note": "先行詞 a text message 指物且在子句當主詞,用 that(亦可 which)。who 指人、what 不能引導關係子句、where 指地點,皆不合。"
+          },
+          {
+            "n": 3,
+            "point": "從屬連接詞",
+            "options": [
+              "Once",
+              "Unless",
+              "Although",
+              "Despite"
+            ],
+            "answer": "Once",
+            "note": "語意為「一旦你點下去」,用 Once。Unless=除非、Although=雖然、Despite=儘管(且為介系詞需接名詞),皆不合。"
+          },
+          {
+            "n": 4,
+            "point": "不定詞",
+            "options": [
+              "give",
+              "to give",
+              "giving",
+              "gave"
+            ],
+            "answer": "to give",
+            "note": "remind sb (never) to V=提醒某人(絕不要)做,用不定詞 to give。give 原形、giving 動名詞、gave 過去式,皆不合此句型。"
+          },
+          {
+            "n": 5,
+            "point": "助動詞(建議)",
+            "options": [
+              "should",
+              "needn't",
+              "can't",
+              "won't"
+            ],
+            "answer": "should",
+            "note": "語意為「你『應該』打客服查證」,用 should。needn't=不必、can't=不能、won't=不會,語意皆相反或不合。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "Not long ago, most people in Taiwan paid for everything with cash. They carried coins for the bus and bills for the night market. Today, many of them simply tap their phones. Mobile payment has spread quickly, changing the way we shop, eat, and travel. The idea is simple. Instead of handing over cash or a card, you store your payment information on an app. When you buy something, you scan a code or hold your phone near a reader, and the money is sent in a second. Receipts are saved on the phone, so there is no paper to lose. For busy shop owners, this means shorter lines and less trouble counting change. Mobile payment also brings new habits. Some apps give points or small rewards each time you pay, which encourages people to use them again. Others let friends split a bill or send money to each other instantly. During festivals, people even send digital red envelopes through their phones. However, the change is not perfect. Older people and those without smartphones may feel left out. There are also worries about safety: if a phone is lost or hacked, personal money could be at risk. Experts advise users to set strong passwords and check their accounts often. Used carefully, mobile payment can make daily life faster and more convenient.",
+        "passageZh": "不久之前,台灣大多數人付任何東西都用現金。他們帶著零錢搭公車、帶著鈔票逛夜市。如今,許多人只要用手機輕輕一刷。行動支付迅速普及,改變了我們購物、用餐和旅行的方式。原理很簡單。你不必交出現金或卡片,而是把付款資訊存在 App 裡。買東西時,你掃描一個條碼或把手機靠近感應機,錢就在一秒內送出。收據存在手機裡,不會弄丟紙本。對忙碌的店家來說,這意味著排隊更短、找零更省事。行動支付也帶來新習慣。有些 App 在你每次付款時給點數或小獎勵,鼓勵人們再次使用。有些則讓朋友分攤帳單或即時互相轉帳。逢年過節,人們甚至透過手機發數位紅包。然而,這項改變並不完美。長者與沒有智慧型手機的人可能感到被排除在外。也有安全疑慮:手機若遺失或被駭,個人金錢可能有風險。專家建議使用者設定強密碼並常檢查帳戶。只要小心使用,行動支付能讓日常生活更快速、更方便。",
+        "glossary": [
+          {
+            "en": "cash",
+            "zh": "現金"
+          },
+          {
+            "en": "coin",
+            "zh": "硬幣"
+          },
+          {
+            "en": "tap",
+            "zh": "輕觸、刷"
+          },
+          {
+            "en": "mobile payment",
+            "zh": "行動支付"
+          },
+          {
+            "en": "scan",
+            "zh": "掃描"
+          },
+          {
+            "en": "receipt",
+            "zh": "收據"
+          },
+          {
+            "en": "count change",
+            "zh": "找零"
+          },
+          {
+            "en": "reward",
+            "zh": "獎勵"
+          },
+          {
+            "en": "split a bill",
+            "zh": "分攤帳單"
+          },
+          {
+            "en": "left out",
+            "zh": "被排除在外"
+          },
+          {
+            "en": "hacked",
+            "zh": "被駭"
+          }
+        ],
+        "questions": [
+          {
+            "q": "What is the main idea of the passage?",
+            "options": [
+              "Cash is safer than mobile payment",
+              "How mobile payment is changing daily life in Taiwan",
+              "Why night markets only accept coins",
+              "How to start a payment app company"
+            ],
+            "answer": "How mobile payment is changing daily life in Taiwan",
+            "qtype": "主旨",
+            "note": "全文介紹行動支付如何普及並改變台灣人的生活方式,故選此項。",
+            "locate": "Mobile payment has spread quickly, changing the way we shop, eat, and travel."
+          },
+          {
+            "q": "According to the passage, how does mobile payment work?",
+            "options": [
+              "You mail cash to the shop",
+              "You scan a code or hold your phone near a reader",
+              "You write a check at the counter",
+              "You give the shop your password"
+            ],
+            "answer": "You scan a code or hold your phone near a reader",
+            "qtype": "細節",
+            "note": "文中說買東西時掃條碼或把手機靠近感應機,錢就送出。",
+            "locate": "you scan a code or hold your phone near a reader, and the money is sent in a second."
+          },
+          {
+            "q": "What benefit does mobile payment bring to shop owners?",
+            "options": [
+              "Higher prices",
+              "Shorter lines and less trouble counting change",
+              "More paper receipts to keep",
+              "Free advertising on TV"
+            ],
+            "answer": "Shorter lines and less trouble counting change",
+            "qtype": "細節",
+            "note": "文中明說對店家而言代表排隊更短、找零更省事。",
+            "locate": "this means shorter lines and less trouble counting change."
+          },
+          {
+            "q": "Who may feel left out by mobile payment?",
+            "options": [
+              "Young office workers",
+              "Shop owners",
+              "Older people and those without smartphones",
+              "People who travel a lot"
+            ],
+            "answer": "Older people and those without smartphones",
+            "qtype": "細節",
+            "note": "文中指出長者與沒有智慧型手機的人可能感到被排除。",
+            "locate": "Older people and those without smartphones may feel left out."
+          },
+          {
+            "q": "What do experts advise users to do?",
+            "options": [
+              "Carry more cash than before",
+              "Set strong passwords and check their accounts often",
+              "Never use any payment app",
+              "Share their passwords with friends"
+            ],
+            "answer": "Set strong passwords and check their accounts often",
+            "qtype": "推論/細節",
+            "note": "文末專家建議設定強密碼並常檢查帳戶,以降低風險。",
+            "locate": "Experts advise users to set strong passwords and check their accounts often."
+          }
+        ]
+      }
+    },
+    {
+      "title": "模擬考 第 7 回",
+      "vocab": [
+        {
+          "stem": "That rumor about Sophia's abuse of her dog was ___ because everyone knew she loved animals.",
+          "options": [
+            "available",
+            "inevitable",
+            "groundless",
+            "exceptional"
+          ],
+          "answer": "groundless",
+          "note": "groundless=毫無根據的。大家都知道她愛動物,謠言「毫無根據」。available=可取得的、inevitable=不可避免的、exceptional=傑出的,皆不合。"
+        },
+        {
+          "stem": "It will take lots of work to ___ such a big event, so we need more people to help.",
+          "options": [
+            "organize",
+            "occur",
+            "beat",
+            "warn"
+          ],
+          "answer": "organize",
+          "note": "organize=籌辦。要花很多力氣「籌辦」大型活動。occur=發生(不及物)、beat=打敗、warn=警告,皆不合。"
+        },
+        {
+          "stem": "In Halloween, people would put on makeups and costumes to look like ___ ghosts or monsters.",
+          "options": [
+            "scary",
+            "dizzy",
+            "tiny",
+            "guilty"
+          ],
+          "answer": "scary",
+          "note": "scary=可怕的。萬聖節裝扮成「可怕的」鬼怪。dizzy=暈眩的、tiny=微小的、guilty=愧疚的,皆不合。"
+        },
+        {
+          "stem": "She wore a beautiful dress to the party because she wanted to look stylish and ___.",
+          "options": [
+            "enormous",
+            "elegant",
+            "dependable",
+            "furious"
+          ],
+          "answer": "elegant",
+          "note": "elegant=優雅的。想看起來時髦又「優雅」。enormous=巨大的、dependable=可靠的、furious=狂怒的,皆不合。"
+        },
+        {
+          "stem": "Many of the artist's major works are now on ___ at the museum, attracting thousands of visitors.",
+          "options": [
+            "impulse",
+            "awareness",
+            "purchase",
+            "display"
+          ],
+          "answer": "display",
+          "note": "on display=展出中。作品在博物館「展出」。impulse=衝動、awareness=意識、purchase=購買,皆不合。"
+        },
+        {
+          "stem": "Her friends ___ her to try new activities, even if she has to do them solo.",
+          "options": [
+            "encouraged",
+            "conducted",
+            "managed",
+            "advocated"
+          ],
+          "answer": "encouraged",
+          "note": "encourage sb to=鼓勵某人。朋友「鼓勵」她嘗試新事物。conduct=進行、manage=設法/管理、advocate=提倡(不接 sb to),皆不合。"
+        },
+        {
+          "stem": "Lily ___ in fright the moment she saw a seagull flying toward her to snatch the food in her hand.",
+          "options": [
+            "chuckled",
+            "screamed",
+            "quarreled",
+            "expanded"
+          ],
+          "answer": "screamed",
+          "note": "scream=尖叫。被海鷗嚇得「尖叫」。chuckle=輕笑、quarrel=爭吵、expand=擴張,皆不合。"
+        },
+        {
+          "stem": "After you read my composition, please give me some ___ so that I can improve it.",
+          "options": [
+            "charity",
+            "delight",
+            "feedback",
+            "crisis"
+          ],
+          "answer": "feedback",
+          "note": "feedback=回饋意見。請給我「意見」以改進。charity=慈善、delight=喜悅、crisis=危機,皆不合。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "That is the house ___ a murderer killed three college students.",
+          "options": [
+            "that",
+            "which",
+            "where",
+            "who"
+          ],
+          "answer": "where",
+          "note": "先行詞 house 是地點且後句結構完整,用關係副詞 where。that/which 需在子句當主受詞、who 指人,皆不合。"
+        },
+        {
+          "q": "My decayed tooth is killing me. I cannot wait to have it ___ out.",
+          "options": [
+            "to pull",
+            "to be pulled",
+            "pulling",
+            "pulled"
+          ],
+          "answer": "pulled",
+          "note": "have+受詞+過去分詞=讓(某物)被處理。牙齒「被拔」,用 pulled。to pull/to be pulled/pulling 皆不合此使役結構。"
+        },
+        {
+          "q": "People often have trouble ___ attention to one thing because their brain wants to drift off.",
+          "options": [
+            "to pay",
+            "pay",
+            "paying",
+            "paid"
+          ],
+          "answer": "paying",
+          "note": "have trouble (in) V-ing=做…有困難,故用 paying。to pay/pay/paid 皆不合此固定句型。"
+        },
+        {
+          "q": "Every person that you meet ___ something you don't; try to learn from them.",
+          "options": [
+            "to know",
+            "know",
+            "knowing",
+            "knows"
+          ],
+          "answer": "knows",
+          "note": "主詞 Every person 為單數,主要動詞用 knows。to know/know/knowing 皆非正確的單數主要動詞形式。"
+        },
+        {
+          "q": "The teacher, ___ has a lot of experience, is very helpful.",
+          "options": [
+            "whom",
+            "which",
+            "that",
+            "who"
+          ],
+          "answer": "who",
+          "note": "非限定子句,先行詞 teacher 指人且當主詞,用 who。whom 是受格、which 指物、that 不用於非限定,皆不合。"
+        },
+        {
+          "q": "An e-payment makes ___ possible to do our shopping without the use of checks or cash. What a great convenience!",
+          "options": [
+            "it",
+            "us",
+            "one",
+            "that"
+          ],
+          "answer": "it",
+          "note": "make+it+形容詞+to V,it 為虛受詞代替後面的不定詞,故用 it。us/one/that 皆不合此虛受詞結構。"
+        },
+        {
+          "q": "At least 33 coastal cities are sinking by over one centimeter per year. That's ___ the rate of current sea level rise.",
+          "options": [
+            "fifth time",
+            "five times",
+            "five times than",
+            "five times as much"
+          ],
+          "answer": "five times",
+          "note": "倍數+the+名詞:five times the rate(速率的五倍)。fifth time=第五次、five times than 語法錯、five times as much 需接 as,皆不合。"
+        }
+      ],
+      "cloze": {
+        "passage": "Many people want to get fit, but they give up after only a few weeks. The key ___(1) building a lasting habit is to start small. Instead of running ten kilometers on the first day, you ___(2) begin with a short walk. Exercising at the same time every day also helps it ___(3) part of your routine. ___(4) you keep going for a month, the habit will feel natural. Remember, being healthy is not about being perfect; it is about ___(5) small efforts every single day.",
+        "passageZh": "許多人想變健康,卻常在幾週後就放棄。養成持久習慣的關鍵是從小處開始。與其第一天就跑十公里,你應該從短程散步開始。每天在同一時間運動,也有助於讓它成為你日常的一部分。如果你持續一個月,這個習慣就會變得自然。記住,健康不是要做到完美,而是每一天都付出小小的努力。",
+        "glossary": [
+          {
+            "en": "get fit",
+            "zh": "變健康強壯"
+          },
+          {
+            "en": "give up",
+            "zh": "放棄"
+          },
+          {
+            "en": "lasting",
+            "zh": "持久的"
+          },
+          {
+            "en": "habit",
+            "zh": "習慣"
+          },
+          {
+            "en": "instead of",
+            "zh": "而不是"
+          },
+          {
+            "en": "routine",
+            "zh": "例行作息"
+          },
+          {
+            "en": "keep going",
+            "zh": "持續下去"
+          },
+          {
+            "en": "natural",
+            "zh": "自然的"
+          },
+          {
+            "en": "perfect",
+            "zh": "完美的"
+          },
+          {
+            "en": "effort",
+            "zh": "努力"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "介系詞搭配",
+            "options": [
+              "of",
+              "to",
+              "for",
+              "with"
+            ],
+            "answer": "to",
+            "note": "the key to+名詞/動名詞=…的關鍵,固定搭配介系詞 to(the key to building)。of/for/with 皆非此搭配。"
+          },
+          {
+            "n": 2,
+            "point": "助動詞(建議)",
+            "options": [
+              "should",
+              "must",
+              "can't",
+              "needn't"
+            ],
+            "answer": "should",
+            "note": "語意為「你『應該』從散步開始」,用 should 表建議。must=必須(語氣過強)、can't=不能、needn't=不必,皆不合。"
+          },
+          {
+            "n": 3,
+            "point": "使役動詞接原形",
+            "options": [
+              "become",
+              "becomes",
+              "became",
+              "becoming"
+            ],
+            "answer": "become",
+            "note": "help+受詞+(to) V,受詞後接原形動詞 become。becomes/became/becoming 皆非原形,不合 help 的用法。"
+          },
+          {
+            "n": 4,
+            "point": "從屬連接詞",
+            "options": [
+              "If",
+              "Unless",
+              "Although",
+              "Despite"
+            ],
+            "answer": "If",
+            "note": "語意為「如果你持續一個月」,用 If。Unless=除非、Although=雖然、Despite=儘管,邏輯皆不合。"
+          },
+          {
+            "n": 5,
+            "point": "動名詞",
+            "options": [
+              "make",
+              "making",
+              "to make",
+              "made"
+            ],
+            "answer": "making",
+            "note": "about 是介系詞,後接動名詞 making(it is about making efforts)。make 原形、to make 不定詞、made 過去分詞,皆不能接在介系詞後。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "Many students think that staying up late to study is a good way to get higher grades. In fact, the opposite is often true. Sleep is not wasted time; it is when the brain sorts and stores everything we have learned during the day. Without enough sleep, even the hardest worker will struggle to remember new information. Doctors say that most teenagers need about eight to nine hours of sleep each night. During deep sleep, the body also repairs itself, builds muscle, and strengthens the immune system. People who sleep well tend to feel happier, think more clearly, and get sick less often. On the other hand, those who sleep too little may feel tired, anxious, and unable to focus. Good sleep does not happen by accident. Experts suggest going to bed and waking up at the same time every day, even on weekends. They also warn against looking at bright screens right before bed, because the light tricks the brain into thinking it is still daytime. A dark, quiet, and cool room helps the body fall asleep faster. So the next time you have an important test, do not throw away your sleep for a few more hours of study. A rested mind remembers more and performs better than a tired one ever could.",
+        "passageZh": "許多學生以為熬夜讀書是拿高分的好方法。事實上,情況往往相反。睡眠不是浪費時間;它是大腦整理並儲存我們白天所學一切的時候。沒有足夠睡眠,再用功的人也難以記住新資訊。醫生說,大多數青少年每晚需要約八到九小時的睡眠。在深層睡眠中,身體也會自我修復、增長肌肉並強化免疫系統。睡得好的人往往更快樂、思緒更清晰、也較少生病。另一方面,睡太少的人可能感到疲倦、焦慮、無法專注。好的睡眠不是碰運氣。專家建議每天在同一時間就寢與起床,連週末也一樣。他們也告誡不要在睡前看明亮的螢幕,因為光線會讓大腦誤以為還是白天。一個黑暗、安靜、涼爽的房間能幫助身體更快入睡。所以下次有重要考試時,別為了多讀幾小時而犧牲睡眠。休息充足的頭腦比疲累的頭腦記得更多、表現更好。",
+        "glossary": [
+          {
+            "en": "stay up late",
+            "zh": "熬夜"
+          },
+          {
+            "en": "opposite",
+            "zh": "相反"
+          },
+          {
+            "en": "sort",
+            "zh": "整理"
+          },
+          {
+            "en": "store",
+            "zh": "儲存"
+          },
+          {
+            "en": "struggle to",
+            "zh": "難以、掙扎著"
+          },
+          {
+            "en": "repair",
+            "zh": "修復"
+          },
+          {
+            "en": "immune system",
+            "zh": "免疫系統"
+          },
+          {
+            "en": "anxious",
+            "zh": "焦慮的"
+          },
+          {
+            "en": "focus",
+            "zh": "專注"
+          },
+          {
+            "en": "trick",
+            "zh": "欺騙、使誤以為"
+          },
+          {
+            "en": "rested",
+            "zh": "休息充足的"
+          }
+        ],
+        "questions": [
+          {
+            "q": "What is the main point of the passage?",
+            "options": [
+              "Studying all night is the best way to get high grades",
+              "Sleep helps the brain learn and the body stay healthy",
+              "Teenagers should never take tests",
+              "Bright screens are good before bed"
+            ],
+            "answer": "Sleep helps the brain learn and the body stay healthy",
+            "qtype": "主旨",
+            "note": "全文說明睡眠對學習與健康的重要,故選此項;其餘選項與文意相反或未提及。",
+            "locate": "Sleep is not wasted time; it is when the brain sorts and stores everything we have learned."
+          },
+          {
+            "q": "How many hours of sleep do most teenagers need each night?",
+            "options": [
+              "About four to five hours",
+              "About six hours",
+              "About eight to nine hours",
+              "About twelve hours"
+            ],
+            "answer": "About eight to nine hours",
+            "qtype": "細節",
+            "note": "文中醫生指出多數青少年每晚需要約八到九小時睡眠。",
+            "locate": "most teenagers need about eight to nine hours of sleep each night."
+          },
+          {
+            "q": "According to the passage, what happens during deep sleep?",
+            "options": [
+              "The body repairs itself and strengthens the immune system",
+              "The brain stops working completely",
+              "People burn the most calories",
+              "Students forget what they learned"
+            ],
+            "answer": "The body repairs itself and strengthens the immune system",
+            "qtype": "細節",
+            "note": "文中說深層睡眠時身體會修復、長肌肉並強化免疫系統。",
+            "locate": "the body also repairs itself, builds muscle, and strengthens the immune system."
+          },
+          {
+            "q": "What do experts suggest for good sleep?",
+            "options": [
+              "Going to bed at a different time every day",
+              "Looking at bright screens before bed",
+              "Going to bed and waking up at the same time every day",
+              "Drinking coffee before sleeping"
+            ],
+            "answer": "Going to bed and waking up at the same time every day",
+            "qtype": "細節",
+            "note": "專家建議每天同一時間就寢起床,並避免睡前看亮螢幕。",
+            "locate": "Experts suggest going to bed and waking up at the same time every day, even on weekends."
+          },
+          {
+            "q": "What does the writer suggest you do before an important test?",
+            "options": [
+              "Stay up all night to study",
+              "Get enough sleep instead of studying for a few more hours",
+              "Drink lots of energy drinks",
+              "Skip breakfast to save time"
+            ],
+            "answer": "Get enough sleep instead of studying for a few more hours",
+            "qtype": "推論",
+            "note": "文末勸讀者別為了多讀幾小時而犧牲睡眠,因休息好的頭腦表現更佳。",
+            "locate": "do not throw away your sleep for a few more hours of study."
+          }
+        ]
+      }
+    },
+    {
+      "title": "模擬考 第 8 回",
+      "vocab": [
+        {
+          "stem": "You have bought three items and the payment total ___ to NT$3,400.",
+          "options": [
+            "mounts",
+            "amounts",
+            "culminates",
+            "concludes"
+          ],
+          "answer": "amounts",
+          "note": "amount to=總計達。付款總額「合計達」3,400 元。mount=登上/增加(不接 to 表總計)、culminate=以…告終、conclude=結束,皆不對。"
+        },
+        {
+          "stem": "Everybody in the ___ clapped when the singer finished singing her song.",
+          "options": [
+            "adventure",
+            "audience",
+            "custom",
+            "mystery"
+          ],
+          "answer": "audience",
+          "note": "audience=觀眾。「觀眾」鼓掌。adventure=冒險、custom=習俗、mystery=謎,皆不合。"
+        },
+        {
+          "stem": "When the CEO was arrested for his crime, the stock price of the company ___ the next day.",
+          "options": [
+            "plunged",
+            "soared",
+            "ascended",
+            "surged"
+          ],
+          "answer": "plunged",
+          "note": "plunge=暴跌。執行長被捕,股價隔天「暴跌」。soared/ascended/surged 都是「上升、飆漲」,語意相反。"
+        },
+        {
+          "stem": "The doctor put me on a low-salt diet to ___ my blood pressure.",
+          "options": [
+            "receive",
+            "recall",
+            "reduce",
+            "remain"
+          ],
+          "answer": "reduce",
+          "note": "reduce=降低。低鹽飲食「降低」血壓。receive=收到、recall=回想/召回、remain=維持,皆不合。"
+        },
+        {
+          "stem": "This region ___ some of the most breathtaking landscapes in the country, attracting nature lovers from around the world.",
+          "options": [
+            "amazes",
+            "wanders",
+            "boasts",
+            "intends"
+          ],
+          "answer": "boasts",
+          "note": "boast=(自豪地)擁有。此區「擁有」絕美風景。amaze=使驚訝、wander=遊蕩、intend=打算,皆不合。"
+        },
+        {
+          "stem": "The hotel's ___ offered free drinks, soft music, and a quiet place where guests could read or chat.",
+          "options": [
+            "palace",
+            "arena",
+            "cinema",
+            "lounge"
+          ],
+          "answer": "lounge",
+          "note": "lounge=休息室、交誼廳。飯店「交誼廳」供飲料音樂。palace=宮殿、arena=競技場、cinema=電影院,皆不合。"
+        },
+        {
+          "stem": "The teacher is ___ the possibility of effective teaching. So far, she has tried videos and field trips.",
+          "options": [
+            "avoiding",
+            "exploring",
+            "removing",
+            "predicting"
+          ],
+          "answer": "exploring",
+          "note": "explore=探索。老師正「探索」有效教學的可能。avoid=避免、remove=移除、predict=預測,皆不合。"
+        },
+        {
+          "stem": "Judy is one of my most valued friends; our friendship has ___ over thirty years.",
+          "options": [
+            "spared",
+            "spread",
+            "scattered",
+            "spanned"
+          ],
+          "answer": "spanned",
+          "note": "span=橫跨(時間)。友誼「跨越」三十多年。spare=騰出、spread=散播、scatter=散落,皆不合。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "___ everybody's effort, the concert was a big success.",
+          "options": [
+            "In addition to",
+            "Because",
+            "In spite of",
+            "Thanks to"
+          ],
+          "answer": "Thanks to",
+          "note": "Thanks to=多虧。多虧大家努力,演唱會成功。In addition to=除…之外、Because 後接子句、In spite of=儘管(語意相反),皆不合。"
+        },
+        {
+          "q": "___ the bad weather, the rescue team continued to search day and night for any survivor of the earthquake.",
+          "options": [
+            "Despite",
+            "Though",
+            "As soon as",
+            "As long as"
+          ],
+          "answer": "Despite",
+          "note": "後接名詞片語 the bad weather,用介系詞 Despite。Though 是連接詞需接子句、As soon as=一就、As long as=只要,皆不合。"
+        },
+        {
+          "q": "I ___ do it unless you help me.",
+          "options": [
+            "will",
+            "don't",
+            "won't",
+            "didn't"
+          ],
+          "answer": "won't",
+          "note": "unless=除非。除非你幫忙,否則我「不會」做,用 won't。will 是肯定、don't/didn't 時態不合。"
+        },
+        {
+          "q": "If I ___ more money, I would buy a big house for my parents.",
+          "options": [
+            "have",
+            "will have",
+            "having",
+            "had"
+          ],
+          "answer": "had",
+          "note": "與現在事實相反的假設:If+過去式, 主句 would+原形,故用 had。have/will have/having 皆不合假設語氣。"
+        },
+        {
+          "q": "The chef ___ a delicious meal for the guests.",
+          "options": [
+            "was prepared",
+            "prepared",
+            "is prepared",
+            "has been prepared"
+          ],
+          "answer": "prepared",
+          "note": "廚師「主動」做菜,用主動 prepared。was/is/has been prepared 都是被動(餐點被準備),主詞是廚師故不合。"
+        },
+        {
+          "q": "Mr. Chen expects his kids to spend time ___ their hobbies rather than use their phones all day.",
+          "options": [
+            "pursue",
+            "pursuing",
+            "to pursue",
+            "which pursues"
+          ],
+          "answer": "pursuing",
+          "note": "spend time (in) V-ing=花時間做,用 pursuing。pursue/to pursue/which pursues 皆不合此固定句型。"
+        },
+        {
+          "q": "Sam prefers spending time outside ___ video games inside all day long.",
+          "options": [
+            "to play",
+            "than playing",
+            "than play",
+            "to playing"
+          ],
+          "answer": "to playing",
+          "note": "prefer A to B(A、B 為動名詞)=喜歡 A 勝過 B。前為 spending,後用 to playing。than playing/than play(prefer 不接 than)、to play(需 V-ing)皆不合。"
+        }
+      ],
+      "cloze": {
+        "passage": "Since the pandemic, working from home ___(1) more and more common. Many companies now let their employees ___(2) at home a few days a week. This change has both good and bad sides. On the one hand, workers save time ___(3) they no longer need to commute. On the other hand, some people find it hard ___(4) work and rest when their home becomes their office. ___(5), most workers agree that having the freedom to choose where they work makes them happier.",
+        "passageZh": "自從疫情以來,在家工作變得越來越普遍。許多公司現在讓員工每週可以有幾天在家工作。這個改變有好有壞。一方面,員工省下通勤時間;另一方面,當家裡變成辦公室,有些人覺得很難區分工作與休息。整體而言,大多數員工同意,能自由選擇工作地點讓他們更快樂。",
+        "glossary": [
+          {
+            "en": "pandemic",
+            "zh": "疫情、大流行"
+          },
+          {
+            "en": "work from home",
+            "zh": "在家工作"
+          },
+          {
+            "en": "common",
+            "zh": "普遍的"
+          },
+          {
+            "en": "employee",
+            "zh": "員工"
+          },
+          {
+            "en": "commute",
+            "zh": "通勤"
+          },
+          {
+            "en": "on the one hand",
+            "zh": "一方面"
+          },
+          {
+            "en": "on the other hand",
+            "zh": "另一方面"
+          },
+          {
+            "en": "separate",
+            "zh": "區分、分開"
+          },
+          {
+            "en": "freedom",
+            "zh": "自由"
+          },
+          {
+            "en": "overall",
+            "zh": "整體而言"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "時態(現在完成)",
+            "options": [
+              "become",
+              "becomes",
+              "has become",
+              "had become"
+            ],
+            "answer": "has become",
+            "note": "Since the pandemic 搭配現在完成式 has become(從過去持續至今)。become 原形、becomes 現在式、had become 過去完成,皆不合。"
+          },
+          {
+            "n": 2,
+            "point": "使役動詞接原形",
+            "options": [
+              "work",
+              "to work",
+              "working",
+              "worked"
+            ],
+            "answer": "work",
+            "note": "let+受詞+原形動詞=讓某人做,故接原形 work。to work 不定詞、working 分詞、worked 過去式,皆不合 let 的用法。"
+          },
+          {
+            "n": 3,
+            "point": "從屬連接詞",
+            "options": [
+              "because",
+              "although",
+              "unless",
+              "so"
+            ],
+            "answer": "because",
+            "note": "語意為「因為不必通勤所以省時」,用 because 接原因。although=雖然、unless=除非、so=所以(位置不合),皆不對。"
+          },
+          {
+            "n": 4,
+            "point": "不定詞(虛受詞 it)",
+            "options": [
+              "separate",
+              "to separate",
+              "separating",
+              "separated"
+            ],
+            "answer": "to separate",
+            "note": "find it hard to V,it 為虛受詞,真受詞是不定詞 to separate。separate 原形、separating 動名詞、separated 過去分詞,皆不合此句型。"
+          },
+          {
+            "n": 5,
+            "point": "轉折/總結副詞",
+            "options": [
+              "Overall",
+              "However",
+              "Otherwise",
+              "Instead"
+            ],
+            "answer": "Overall",
+            "note": "語意為「整體而言」做總結,用 Overall。However=然而、Otherwise=否則、Instead=反而,皆不合此處總結語氣。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "When Kevin decided to take the postal service exam, many people doubted him. He had left school early to help his family and had not studied English for over ten years. At first, even simple sentences looked like a wall of strange letters. But Kevin had a reason to keep going: a steady job would give his family a better life. Every morning before work, he woke up at five o'clock to memorize twenty new words. During his lunch break, he listened to English while others chatted. At night, even when he was tired, he finished at least one practice test. Slowly, the wall began to fall. Words he once feared became old friends. The road was not smooth. He failed his first practice exam badly and wanted to give up. His younger sister, however, reminded him of how far he had already come. \"You are not the same person you were three months ago,\" she said. Those words pushed him to try again. On the day of the real exam, Kevin felt nervous but ready. When the results came out weeks later, he saw his name on the list of those who had passed. He cried, not because the test was easy, but because he had proved that hard work and a clear goal can beat any starting point.",
+        "passageZh": "當凱文決定參加郵局考試時,許多人都不看好他。他為了幫忙家計很早就離開學校,已超過十年沒讀英文。起初,連簡單的句子看起來都像一堵由陌生字母築成的牆。但凱文有堅持下去的理由:一份穩定的工作能讓家人過得更好。每天上班前,他五點起床背二十個新單字。午休時,別人在聊天,他聽英文。晚上即使很累,他至少做完一回模擬試題。慢慢地,那堵牆開始倒下。曾經害怕的字變成了老朋友。這條路並不平順。他第一次模擬考慘敗,曾想放棄。然而,他的妹妹提醒他已經走了多遠。「你已經不是三個月前的那個你了,」她說。這些話推著他再試一次。正式考試那天,凱文很緊張,卻準備好了。幾週後成績出爐,他在金榜上看見自己的名字。他哭了,不是因為考試簡單,而是因為他證明了:努力與明確的目標,能戰勝任何起點。",
+        "glossary": [
+          {
+            "en": "doubt",
+            "zh": "懷疑、不看好"
+          },
+          {
+            "en": "steady",
+            "zh": "穩定的"
+          },
+          {
+            "en": "memorize",
+            "zh": "背誦"
+          },
+          {
+            "en": "lunch break",
+            "zh": "午休"
+          },
+          {
+            "en": "practice test",
+            "zh": "模擬試題"
+          },
+          {
+            "en": "fail",
+            "zh": "失敗、不及格"
+          },
+          {
+            "en": "give up",
+            "zh": "放棄"
+          },
+          {
+            "en": "remind",
+            "zh": "提醒"
+          },
+          {
+            "en": "nervous",
+            "zh": "緊張的"
+          },
+          {
+            "en": "prove",
+            "zh": "證明"
+          },
+          {
+            "en": "starting point",
+            "zh": "起點"
+          }
+        ],
+        "questions": [
+          {
+            "q": "Why did many people doubt Kevin?",
+            "options": [
+              "He was too old to work",
+              "He had left school early and had not studied English for over ten years",
+              "He did not want a steady job",
+              "He had failed the exam many times before"
+            ],
+            "answer": "He had left school early and had not studied English for over ten years",
+            "qtype": "細節",
+            "note": "文中說凱文很早離校幫家計,已超過十年沒讀英文,因此被人不看好。",
+            "locate": "He had left school early to help his family and had not studied English for over ten years."
+          },
+          {
+            "q": "How did Kevin study for the exam?",
+            "options": [
+              "He hired a private teacher all day",
+              "He woke up early to memorize words and did practice tests at night",
+              "He only studied on weekends",
+              "He copied answers from friends"
+            ],
+            "answer": "He woke up early to memorize words and did practice tests at night",
+            "qtype": "細節",
+            "note": "文中描述他清晨五點背單字、午休聽英文、晚上做模擬題。",
+            "locate": "he woke up at five o'clock to memorize twenty new words ... he finished at least one practice test."
+          },
+          {
+            "q": "Who encouraged Kevin not to give up?",
+            "options": [
+              "His manager",
+              "His younger sister",
+              "His old teacher",
+              "A stranger online"
+            ],
+            "answer": "His younger sister",
+            "qtype": "細節",
+            "note": "當他想放棄時,是妹妹提醒他已走了多遠並鼓勵他。",
+            "locate": "His younger sister, however, reminded him of how far he had already come."
+          },
+          {
+            "q": "What does \"the wall began to fall\" most likely mean?",
+            "options": [
+              "A real wall was knocked down",
+              "His difficulty with English was slowly going away",
+              "He lost interest in studying",
+              "He moved to a new house"
+            ],
+            "answer": "His difficulty with English was slowly going away",
+            "qtype": "字義",
+            "note": "前文把英文比喻成一堵陌生字母築成的牆,「牆開始倒下」是比喻他的英文困難逐漸消失。",
+            "locate": "At first, even simple sentences looked like a wall of strange letters ... Slowly, the wall began to fall."
+          },
+          {
+            "q": "What is the main lesson of the story?",
+            "options": [
+              "Exams are always easy if you are lucky",
+              "Hard work and a clear goal can overcome a weak start",
+              "You should never leave school",
+              "Only young students can pass exams"
+            ],
+            "answer": "Hard work and a clear goal can overcome a weak start",
+            "qtype": "主旨",
+            "note": "結尾點明:努力與明確目標能戰勝任何起點,正是全文主旨。",
+            "locate": "he had proved that hard work and a clear goal can beat any starting point."
+          }
+        ]
+      }
+    },
+    {
+      "title": "模擬考 第 9 回",
+      "vocab": [
+        {
+          "stem": "The latest ___ of this software is superior to all the previous ones.",
+          "options": [
+            "priority",
+            "anniversary",
+            "version",
+            "fiction"
+          ],
+          "answer": "version",
+          "note": "version=版本。軟體「最新版本」優於舊版。priority=優先、anniversary=週年、fiction=小說,皆不合。"
+        },
+        {
+          "stem": "Peter has a very busy ___ today. He has to attend several meetings and hardly has time for lunch.",
+          "options": [
+            "option",
+            "approach",
+            "schedule",
+            "recipe"
+          ],
+          "answer": "schedule",
+          "note": "schedule=行程表。今天「行程」很滿。option=選項、approach=方法、recipe=食譜,皆不合。"
+        },
+        {
+          "stem": "The puppies in the pet shops are so ___ that Mary really wants to have one as a soothing pet.",
+          "options": [
+            "demanding",
+            "hostile",
+            "grumpy",
+            "adorable"
+          ],
+          "answer": "adorable",
+          "note": "adorable=可愛討喜的。小狗「可愛」到想養。demanding=要求高的、hostile=有敵意的、grumpy=易怒的,語意相反。"
+        },
+        {
+          "stem": "I was ___ by how well he looked. It was hard to believe he had been sick just a week ago.",
+          "options": [
+            "composed",
+            "attached",
+            "removed",
+            "amazed"
+          ],
+          "answer": "amazed",
+          "note": "amazed=驚訝的。對他氣色好感到「驚訝」。composed=鎮定的、attached=依附的、removed=移除的,皆不合。"
+        },
+        {
+          "stem": "The juice blender broke down after just a few times of use, so Mary returned it to the store and asked for a ___.",
+          "options": [
+            "loan",
+            "proof",
+            "refund",
+            "display"
+          ],
+          "answer": "refund",
+          "note": "refund=退款。果汁機壞了退貨要求「退款」。loan=貸款、proof=證據、display=展示,皆不合。"
+        },
+        {
+          "stem": "He showed his language proficiency ___ when applying for a customer service job at the airport.",
+          "options": [
+            "certificate",
+            "responsibility",
+            "acceptance",
+            "framework"
+          ],
+          "answer": "certificate",
+          "note": "certificate=證書、檢定證明。出示語言能力「證書」。responsibility=責任、acceptance=接受、framework=架構,皆不合。"
+        },
+        {
+          "stem": "If you want to be happy, do not ___ in the past or worry about the future. Just focus on living fully in the present.",
+          "options": [
+            "dwell",
+            "gather",
+            "appear",
+            "escape"
+          ],
+          "answer": "dwell",
+          "note": "dwell on/in=沉湎、糾結於。別「沉溺」過去。gather=聚集、appear=出現、escape=逃離,皆不合。"
+        },
+        {
+          "stem": "Although air travel has resumed in many parts of the world, airline ___ shortages continue to create flight cancellation and airport chaos.",
+          "options": [
+            "staffing",
+            "polluting",
+            "promoting",
+            "tracking"
+          ],
+          "answer": "staffing",
+          "note": "staffing=人力配置。航空「人力」短缺導致混亂。polluting=污染、promoting=促銷、tracking=追蹤,皆不合。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "It was an old friend ___ Tom came across in the park yesterday.",
+          "options": [
+            "which",
+            "that",
+            "what",
+            "where"
+          ],
+          "answer": "that",
+          "note": "強調句 It was...that...。被強調的是人 an old friend,用 that(亦可 whom)。which 指物、what 不可、where 指地,皆不合。"
+        },
+        {
+          "q": "The harder you work, ___ to succeed.",
+          "options": [
+            "you are more likely",
+            "you are more possible",
+            "the more likely you are",
+            "the more possible you are"
+          ],
+          "answer": "the more likely you are",
+          "note": "「the+比較級…, the+比較級…」句型,後半要 the more likely you are。possible 不用於「人 be likely to」結構,故排除。"
+        },
+        {
+          "q": "I cannot sing, and she ___.",
+          "options": [
+            "neither can",
+            "cannot either",
+            "can either",
+            "cannot neither"
+          ],
+          "answer": "cannot either",
+          "note": "空格在 she 之後,須用 not...either 結構:she cannot either=她也不會。neither can 只能用於倒裝「neither can she」,放在 she 後語序錯誤;can either 語意相反;cannot neither 是雙重否定,皆不合。"
+        },
+        {
+          "q": "Neither of the students ___ happy with the contest results.",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "be"
+          ],
+          "answer": "was",
+          "note": "Neither of+複數 視為單數,動詞用 was。were/are/be 在數或形式上不合。"
+        },
+        {
+          "q": "A: ___ were you born? B: In Taipei.",
+          "options": [
+            "When",
+            "What",
+            "Why",
+            "Where"
+          ],
+          "answer": "Where",
+          "note": "答句 In Taipei 是地點,問句用 Where(哪裡)。When 問時間、What 問事物、Why 問原因,皆不合。"
+        },
+        {
+          "q": "As soon as the noisy flock of tourists came into the museum, they ___ by the guard right away.",
+          "options": [
+            "hushed",
+            "had hushed",
+            "were hushed",
+            "were hushing"
+          ],
+          "answer": "were hushed",
+          "note": "遊客「被」警衛制止,用被動 were hushed。hushed/had hushed 主動、were hushing 進行主動,皆不合。"
+        },
+        {
+          "q": "Not only ___ the American student speak Chinese well, but she also understands Taiwanese.",
+          "options": [
+            "do",
+            "will",
+            "did",
+            "does"
+          ],
+          "answer": "does",
+          "note": "Not only 置句首須倒裝,主詞單數現在式用 does(does...speak)。do 複數、will/did 時態不合語境(她現在會說),皆不合。"
+        }
+      ],
+      "cloze": {
+        "passage": "When a typhoon is coming, the post office must change its delivery plans quickly. Managers ___(1) the weather reports closely and decide whether it is safe to send carriers out. If the wind is too strong, deliveries ___(2) until the storm passes. Packages that are marked \"urgent\" ___(3) handled first once the roads are clear. The staff also call customers ___(4) them know about possible delays. ___(5) careful planning, the post office can keep both its workers and the mail safe during bad weather.",
+        "passageZh": "颱風來襲時,郵局必須迅速調整投遞計畫。主管密切關注氣象報告,決定派郵務士外出是否安全。如果風太強,投遞作業會延後到風暴過去。標示「急件」的包裹會在道路淨空後優先處理。員工也會打電話給顧客,讓他們知道可能的延誤。藉由仔細的規劃,郵局能在惡劣天氣中同時確保員工與郵件的安全。",
+        "glossary": [
+          {
+            "en": "typhoon",
+            "zh": "颱風"
+          },
+          {
+            "en": "delivery",
+            "zh": "投遞"
+          },
+          {
+            "en": "manager",
+            "zh": "主管"
+          },
+          {
+            "en": "weather report",
+            "zh": "氣象報告"
+          },
+          {
+            "en": "carrier",
+            "zh": "郵務士"
+          },
+          {
+            "en": "urgent",
+            "zh": "緊急的"
+          },
+          {
+            "en": "handle",
+            "zh": "處理"
+          },
+          {
+            "en": "delay",
+            "zh": "延誤"
+          },
+          {
+            "en": "planning",
+            "zh": "規劃"
+          },
+          {
+            "en": "staff",
+            "zh": "員工"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "主謂一致/時態",
+            "options": [
+              "watch",
+              "watches",
+              "watching",
+              "watched"
+            ],
+            "answer": "watch",
+            "note": "主詞 Managers 為複數,現在式動詞用原形 watch。watches 是第三人稱單數、watching 是分詞、watched 是過去式,皆不合。"
+          },
+          {
+            "n": 2,
+            "point": "被動語態(未來)",
+            "options": [
+              "delay",
+              "will be delayed",
+              "delaying",
+              "have delayed"
+            ],
+            "answer": "will be delayed",
+            "note": "投遞作業「被」延後,且表未來,用 will be delayed。delay 主動、delaying 分詞、have delayed 主動完成,皆不合。"
+          },
+          {
+            "n": 3,
+            "point": "被動語態",
+            "options": [
+              "are",
+              "were",
+              "will",
+              "have"
+            ],
+            "answer": "are",
+            "note": "急件「被」優先處理,需 be 動詞構成被動 are handled;且全文為現在式,故用 are。were 是過去、will/have 無法直接接 handled 構成正確被動。"
+          },
+          {
+            "n": 4,
+            "point": "不定詞(表目的)",
+            "options": [
+              "let",
+              "to let",
+              "letting",
+              "lets"
+            ],
+            "answer": "to let",
+            "note": "打電話「為了讓」顧客知道,用不定詞表目的 to let。let 原形、letting 分詞、lets 現在式,皆不合此目的用法。"
+          },
+          {
+            "n": 5,
+            "point": "介系詞",
+            "options": [
+              "With",
+              "Despite",
+              "Without",
+              "Because"
+            ],
+            "answer": "With",
+            "note": "With careful planning=藉由仔細規劃。Despite=儘管、Without=沒有(語意相反)、Because 需接子句,皆不合。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "Ask most people what a post office does, and they will say, \"It delivers letters.\" That answer was complete fifty years ago, but today it tells only a small part of the story. Modern post offices have grown into one-stop centers that serve almost every part of daily life. First, there is banking. Millions of people keep savings accounts at the post office because it is safe, simple, and found in nearly every town. Farmers, students, and retired workers who live far from big banks can still manage their money close to home. Second, the post office helps with official tasks. People can pay their taxes, water bills, and traffic fines at the counter. Some branches even help citizens apply for documents, saving them a long trip to a government office. Third, the post office supports local business. Small online sellers depend on it to ship products quickly and cheaply across the island. Special services, such as cold delivery for fresh fruit and seafood, help farmers sell directly to customers in faraway cities. Finally, in times of disaster, the post office often becomes a channel for donations, sending money and goods to those in need. From a simple letter to a helping hand in hard times, the post office quietly holds the community together in ways most of us rarely notice.",
+        "passageZh": "問大多數人郵局是做什麼的,他們會說:「送信。」五十年前這答案很完整,但今天它只說出故事的一小部分。現代郵局已成長為服務日常生活幾乎每個面向的一站式中心。首先是金融。數百萬人在郵局開儲蓄帳戶,因為它安全、簡單,而且幾乎每個鄉鎮都有。住得離大銀行很遠的農民、學生與退休工作者,仍能就近管理自己的錢。其次,郵局協助處理官方事務。人們可以在櫃台繳稅、繳水費和交通罰單。有些分局甚至協助民眾申辦文件,省去到政府機關的長途奔波。第三,郵局支持在地商業。小型網路賣家仰賴它把商品快速又便宜地寄送到全島。冷藏配送等特殊服務,讓農民能把新鮮水果和海鮮直接賣到遠方城市的顧客手中。最後,在災難時刻,郵局常成為捐款的管道,把金錢與物資送給需要的人。從一封簡單的信,到艱難時刻伸出的援手,郵局以多數人很少注意到的方式,默默把社區凝聚在一起。",
+        "glossary": [
+          {
+            "en": "one-stop center",
+            "zh": "一站式中心"
+          },
+          {
+            "en": "savings account",
+            "zh": "儲蓄帳戶"
+          },
+          {
+            "en": "manage",
+            "zh": "管理"
+          },
+          {
+            "en": "official tasks",
+            "zh": "官方事務"
+          },
+          {
+            "en": "taxes",
+            "zh": "稅"
+          },
+          {
+            "en": "traffic fine",
+            "zh": "交通罰單"
+          },
+          {
+            "en": "branch",
+            "zh": "分局、分行"
+          },
+          {
+            "en": "apply for",
+            "zh": "申請"
+          },
+          {
+            "en": "cold delivery",
+            "zh": "冷藏配送"
+          },
+          {
+            "en": "disaster",
+            "zh": "災難"
+          },
+          {
+            "en": "donation",
+            "zh": "捐款"
+          }
+        ],
+        "questions": [
+          {
+            "q": "What is the main idea of the passage?",
+            "options": [
+              "The post office only delivers letters",
+              "The post office offers many services beyond delivering mail",
+              "Banks are better than post offices",
+              "People no longer use the post office"
+            ],
+            "answer": "The post office offers many services beyond delivering mail",
+            "qtype": "主旨",
+            "note": "全文列舉郵局在金融、官方事務、商業、賑災等多項服務,說明它遠不只送信。",
+            "locate": "Modern post offices have grown into one-stop centers that serve almost every part of daily life."
+          },
+          {
+            "q": "Why do millions of people keep savings accounts at the post office?",
+            "options": [
+              "It pays the highest interest",
+              "It is safe, simple, and found in nearly every town",
+              "It gives free gifts every month",
+              "It is only for rich people"
+            ],
+            "answer": "It is safe, simple, and found in nearly every town",
+            "qtype": "細節",
+            "note": "文中說人們在郵局存錢是因為它安全、簡單且幾乎每鎮都有。",
+            "locate": "Millions of people keep savings accounts at the post office because it is safe, simple, and found in nearly every town."
+          },
+          {
+            "q": "Which official task can people do at the post office?",
+            "options": [
+              "Vote in elections",
+              "Pay taxes, water bills, and traffic fines",
+              "Get a driver's license test",
+              "Renew a passport photo only"
+            ],
+            "answer": "Pay taxes, water bills, and traffic fines",
+            "qtype": "細節",
+            "note": "文中明列可在櫃台繳稅、繳水費、繳交通罰單。",
+            "locate": "People can pay their taxes, water bills, and traffic fines at the counter."
+          },
+          {
+            "q": "How does cold delivery help farmers?",
+            "options": [
+              "It keeps their fields cool",
+              "It lets them sell fresh fruit and seafood to customers in faraway cities",
+              "It freezes their money",
+              "It delivers letters faster"
+            ],
+            "answer": "It lets them sell fresh fruit and seafood to customers in faraway cities",
+            "qtype": "細節",
+            "note": "文中說冷藏配送讓農民把新鮮水果海鮮直接賣到遠方城市。",
+            "locate": "cold delivery for fresh fruit and seafood, help farmers sell directly to customers in faraway cities."
+          },
+          {
+            "q": "Which of the following is NOT mentioned as a post office service?",
+            "options": [
+              "Banking",
+              "Paying traffic fines",
+              "Cold delivery of fresh food",
+              "Teaching English classes"
+            ],
+            "answer": "Teaching English classes",
+            "qtype": "是非/細節",
+            "note": "文中提到金融、繳罰單、冷藏配送等,但完全沒提到開英文課。",
+            "locate": "From a simple letter to a helping hand in hard times, the post office quietly holds the community together."
+          }
+        ]
+      }
+    },
+    {
+      "title": "模擬考 第 10 回",
+      "vocab": [
+        {
+          "stem": "To get hired in this ___ industry, you need to have some unique traits that make you stand out from your fellow candidates.",
+          "options": [
+            "obvious",
+            "responsible",
+            "imaginary",
+            "competitive"
+          ],
+          "answer": "competitive",
+          "note": "competitive=競爭激烈的。在「競爭激烈」的產業要脫穎而出。obvious=明顯的、responsible=負責的、imaginary=虛構的,皆不合。"
+        },
+        {
+          "stem": "With house prices rising so high, most young people cannot ___ to buy an apartment in Taipei.",
+          "options": [
+            "divide",
+            "afford",
+            "recognize",
+            "connect"
+          ],
+          "answer": "afford",
+          "note": "afford=負擔得起。房價高,年輕人「買不起」。divide=分割、recognize=認出、connect=連接,皆不合。"
+        },
+        {
+          "stem": "The witness only had a short ___ at the thief's face, so she didn't remember how he looked.",
+          "options": [
+            "term",
+            "glance",
+            "stroll",
+            "circuit"
+          ],
+          "answer": "glance",
+          "note": "a glance=一瞥。只「瞥」了一眼,記不清長相。term=期間/術語、stroll=散步、circuit=迴路,皆不合。"
+        },
+        {
+          "stem": "The elderly are more ___ to diseases because our immune systems get weaker as we age.",
+          "options": [
+            "remarkable",
+            "knowledgeable",
+            "vulnerable",
+            "indispensable"
+          ],
+          "answer": "vulnerable",
+          "note": "be vulnerable to=易受…侵害。免疫力下降,長者「易」生病。remarkable=出色的、knowledgeable=博學的、indispensable=不可或缺的,皆不合。"
+        },
+        {
+          "stem": "As a great actress, Meryl Streep has received many famous ___ throughout her career in the movie industry.",
+          "options": [
+            "rivals",
+            "feasts",
+            "targets",
+            "awards"
+          ],
+          "answer": "awards",
+          "note": "awards=獎項。傑出演員獲得許多「獎項」。rivals=對手、feasts=盛宴、targets=目標,皆不合。"
+        },
+        {
+          "stem": "Tom put on his ___ to keep his pants from falling down.",
+          "options": [
+            "belt",
+            "hat",
+            "watch",
+            "shoes"
+          ],
+          "answer": "belt",
+          "note": "belt=皮帶。繫「皮帶」防褲子掉。hat=帽子、watch=手錶、shoes=鞋子,都無法防褲子掉。"
+        },
+        {
+          "stem": "The doctor ___ that I exercise at least three times a week in order to stay healthy.",
+          "options": [
+            "avoided",
+            "obeyed",
+            "recommended",
+            "depended"
+          ],
+          "answer": "recommended",
+          "note": "recommend that+原形=建議。醫生「建議」每週運動三次。avoid=避免、obey=服從、depend=依賴,皆不合。"
+        },
+        {
+          "stem": "The school administration has promised to strengthen security to ___ the concerns of parents.",
+          "options": [
+            "double",
+            "relieve",
+            "shoulder",
+            "knee"
+          ],
+          "answer": "relieve",
+          "note": "relieve=緩解。加強安全以「緩解」家長疑慮。double=使加倍、shoulder=肩負、knee=膝(無動詞此意),皆不合。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "She ___ all her homework assignments yet, has she?",
+          "options": [
+            "hadn't finished",
+            "hasn't finished",
+            "don't finish",
+            "didn't finish"
+          ],
+          "answer": "hasn't finished",
+          "note": "yet 搭配現在完成式,且附加問句 has she? 顯示主句用 has,故 hasn't finished。其餘時態與附加問句不一致。"
+        },
+        {
+          "q": "Do you know the girl ___ at you?",
+          "options": [
+            "smiled",
+            "smiles",
+            "smiling",
+            "who smiling"
+          ],
+          "answer": "smiling",
+          "note": "現在分詞 smiling 修飾 the girl(=who is smiling)。smiled/smiles 是動詞會造成兩動詞、who smiling 缺 be 動詞,皆不合。"
+        },
+        {
+          "q": "It took me three hours ___ the work.",
+          "options": [
+            "do",
+            "to do",
+            "doing",
+            "done"
+          ],
+          "answer": "to do",
+          "note": "It takes+人+時間+to V=花(時間)做某事,用不定詞 to do。do/doing/done 皆不合此句型。"
+        },
+        {
+          "q": "___ I need right now is enough money for the down payment to buy this beautiful apartment.",
+          "options": [
+            "That",
+            "What",
+            "Which",
+            "Who"
+          ],
+          "answer": "What",
+          "note": "名詞子句當主詞且缺先行詞,用 What(=the thing that)。That/Which/Who 皆需先行詞或語意不合。"
+        },
+        {
+          "q": "I think you should keep ___ and never give up.",
+          "options": [
+            "try",
+            "to try",
+            "trying",
+            "to trying"
+          ],
+          "answer": "trying",
+          "note": "keep+V-ing=持續做。要「持續嘗試」,用 trying。try/to try/to trying 皆不合 keep 的用法。"
+        },
+        {
+          "q": "In the orientation, the coach gave all the participants two minutes to briefly introduce ___ to the whole class.",
+          "options": [
+            "them",
+            "theirs",
+            "oneself",
+            "themselves"
+          ],
+          "answer": "themselves",
+          "note": "主詞 participants 自我介紹,反身代名詞用 themselves。them 非反身、theirs 所有格、oneself 單數不一致,皆不合。"
+        },
+        {
+          "q": "According to the research reports, the loss of mass from Antarctica's ice shelves has been twice as ___ as previously estimated.",
+          "options": [
+            "extensive",
+            "extensively",
+            "being extensive",
+            "being extensively"
+          ],
+          "answer": "extensive",
+          "note": "as...as 中間接形容詞當補語,修飾 has been,用 extensive。extensively 是副詞、being extensive(ly) 動名詞片語,皆不合。"
+        }
+      ],
+      "cloze": {
+        "passage": "Last summer, a group of students decided to do something good for their town. They ___(1) a plan to clean up the old park near the river. At first, only ten people joined, ___(2) soon the news spread and more than fifty volunteers came to help. They picked up trash, painted the benches, and planted flowers ___(3) the park looked beautiful again. The local people were so grateful ___(4) they brought drinks and snacks for the students. This experience taught the young volunteers that even a small action can make a ___(5) difference in their community.",
+        "passageZh": "去年夏天,一群學生決定為家鄉做點好事。他們想出一個清理河邊老公園的計畫。起初只有十個人加入,但消息很快傳開,超過五十名志工前來幫忙。他們撿垃圾、油漆長椅、種花,讓公園再度變得美麗。當地居民非常感激,還為學生帶來飲料和點心。這次經驗讓這群年輕志工明白:即使是小小的行動,也能為社區帶來真正的改變。",
+        "glossary": [
+          {
+            "en": "volunteer",
+            "zh": "志工"
+          },
+          {
+            "en": "clean up",
+            "zh": "清理"
+          },
+          {
+            "en": "spread",
+            "zh": "傳開"
+          },
+          {
+            "en": "trash",
+            "zh": "垃圾"
+          },
+          {
+            "en": "bench",
+            "zh": "長椅"
+          },
+          {
+            "en": "plant",
+            "zh": "種植"
+          },
+          {
+            "en": "grateful",
+            "zh": "感激的"
+          },
+          {
+            "en": "snack",
+            "zh": "點心"
+          },
+          {
+            "en": "make a difference",
+            "zh": "帶來改變、影響"
+          },
+          {
+            "en": "community",
+            "zh": "社區"
+          }
+        ],
+        "blanks": [
+          {
+            "n": 1,
+            "point": "片語動詞",
+            "options": [
+              "came up with",
+              "gave up",
+              "put up with",
+              "looked up"
+            ],
+            "answer": "came up with",
+            "note": "come up with=想出(點子/計畫),過去式 came up with。give up=放棄、put up with=忍受、look up=查詢,皆不合語意。"
+          },
+          {
+            "n": 2,
+            "point": "對等連接詞",
+            "options": [
+              "but",
+              "so",
+              "because",
+              "or"
+            ],
+            "answer": "but",
+            "note": "前後語意轉折(起初只有十人『但』很快變多),用 but。so=所以、because=因為、or=或者,邏輯皆不合。"
+          },
+          {
+            "n": 3,
+            "point": "連接詞(目的/結果)",
+            "options": [
+              "so that",
+              "in case",
+              "as if",
+              "unless"
+            ],
+            "answer": "so that",
+            "note": "so that=以便、使得,引導目的或結果(讓公園再度變美)。in case=以防、as if=彷彿、unless=除非,皆不合語意。"
+          },
+          {
+            "n": 4,
+            "point": "so...that 句型",
+            "options": [
+              "that",
+              "as",
+              "which",
+              "than"
+            ],
+            "answer": "that",
+            "note": "so+形容詞+that=如此…以致於(so grateful that they brought...)。as/which/than 不能構成此句型。"
+          },
+          {
+            "n": 5,
+            "point": "詞性(形容詞)",
+            "options": [
+              "real",
+              "really",
+              "realize",
+              "reality"
+            ],
+            "answer": "real",
+            "note": "修飾名詞 difference 要用形容詞 real(make a real difference=帶來真正的改變)。really 是副詞、realize 是動詞、reality 是名詞,皆不能修飾名詞。"
+          }
+        ]
+      },
+      "reading": {
+        "passage": "At a small post office in a quiet town, there lived a fat orange cat named Money. No one remembered exactly when he had arrived. One cold winter morning, the staff found him sleeping on a pile of warm parcels, and he simply never left. At first, the manager worried that customers might complain about a cat in a workplace. The opposite happened. People began visiting the post office just to see Money. Children dragged their parents inside, and old men who lived alone came every day to pet him and chat with the staff. The little office became the happiest corner of the town. Money also seemed to know his job. He sat by the counter while people waited in line, calming nervous customers and crying babies. When a clerk was busy, he would jump onto the desk and watch, as if checking that everything was done correctly. Some regular customers even brought him toys and treats. When Money grew old and passed away, the whole town was sad. The staff put a small photo of him by the door, with the words \"Our best worker.\" Visitors still smile when they see it. Money never sorted a single letter, yet he had delivered something just as valuable: warmth, comfort, and a reason for neighbors to come together.",
+        "passageZh": "在一個安靜小鎮的小郵局裡,住著一隻名叫「錢錢」的胖橘貓。沒人記得他究竟何時來的。一個寒冷的冬日早晨,員工發現他睡在一疊溫暖的包裹上,從此他就沒再離開。起初,經理擔心顧客會抱怨工作場所有貓。結果恰恰相反。人們開始只為看錢錢而來郵局。孩子們拉著父母進門,獨居的老人每天來摸摸他、和員工聊聊天。這間小郵局成了鎮上最快樂的角落。錢錢似乎也懂自己的工作。人們排隊時他坐在櫃台邊,安撫緊張的顧客和哭鬧的嬰兒。櫃員忙碌時,他會跳上桌子看著,彷彿在檢查一切是否做得正確。一些常客甚至帶玩具和零食給他。當錢錢年老過世時,全鎮都很難過。員工在門邊放了一張他的小照片,寫著「我們最棒的員工」。訪客看到時仍會微笑。錢錢從沒分過一封信,卻送出了同樣珍貴的東西:溫暖、安慰,以及讓鄰里相聚的理由。",
+        "glossary": [
+          {
+            "en": "orange cat",
+            "zh": "橘貓"
+          },
+          {
+            "en": "a pile of",
+            "zh": "一疊、一堆"
+          },
+          {
+            "en": "parcel",
+            "zh": "包裹"
+          },
+          {
+            "en": "complain",
+            "zh": "抱怨"
+          },
+          {
+            "en": "workplace",
+            "zh": "工作場所"
+          },
+          {
+            "en": "drag",
+            "zh": "拖、拉"
+          },
+          {
+            "en": "pet",
+            "zh": "撫摸"
+          },
+          {
+            "en": "calm",
+            "zh": "安撫"
+          },
+          {
+            "en": "clerk",
+            "zh": "櫃員"
+          },
+          {
+            "en": "treat",
+            "zh": "零食、招待"
+          },
+          {
+            "en": "comfort",
+            "zh": "安慰"
+          }
+        ],
+        "questions": [
+          {
+            "q": "How did Money come to live at the post office?",
+            "options": [
+              "The manager bought him from a shop",
+              "The staff found him sleeping on warm parcels one winter morning",
+              "A customer mailed him in a box",
+              "He was born inside the office"
+            ],
+            "answer": "The staff found him sleeping on warm parcels one winter morning",
+            "qtype": "細節",
+            "note": "文中說一個寒冬早晨員工發現他睡在溫暖包裹上,從此沒離開。",
+            "locate": "the staff found him sleeping on a pile of warm parcels, and he simply never left."
+          },
+          {
+            "q": "What did the manager worry about at first?",
+            "options": [
+              "That Money would eat the letters",
+              "That customers might complain about a cat in a workplace",
+              "That Money was too thin",
+              "That the office was too small"
+            ],
+            "answer": "That customers might complain about a cat in a workplace",
+            "qtype": "細節",
+            "note": "起初經理擔心顧客抱怨工作場所有貓,但結果相反。",
+            "locate": "the manager worried that customers might complain about a cat in a workplace."
+          },
+          {
+            "q": "What did Money do near the counter?",
+            "options": [
+              "He sold stamps to customers",
+              "He calmed nervous customers and crying babies",
+              "He delivered parcels to houses",
+              "He counted the money"
+            ],
+            "answer": "He calmed nervous customers and crying babies",
+            "qtype": "細節",
+            "note": "文中說人們排隊時他坐在櫃台邊,安撫緊張顧客和哭鬧嬰兒。",
+            "locate": "calming nervous customers and crying babies."
+          },
+          {
+            "q": "Why did the staff call Money \"Our best worker\"?",
+            "options": [
+              "He sorted the most letters",
+              "He brought warmth and brought neighbors together, even without doing usual work",
+              "He earned the most money for the office",
+              "He was the oldest worker there"
+            ],
+            "answer": "He brought warmth and brought neighbors together, even without doing usual work",
+            "qtype": "推論",
+            "note": "結尾說他沒分過一封信,卻送出溫暖、安慰與讓鄰里相聚的理由,因此被稱最棒員工。",
+            "locate": "Money never sorted a single letter, yet he had delivered something just as valuable."
+          },
+          {
+            "q": "What is the main message of the story?",
+            "options": [
+              "Cats should not be allowed in offices",
+              "Someone can be valuable by bringing warmth, even without doing the usual job",
+              "Post offices should hire more animals",
+              "Old buildings are the happiest places"
+            ],
+            "answer": "Someone can be valuable by bringing warmth, even without doing the usual job",
+            "qtype": "主旨",
+            "note": "整篇藉錢錢的故事說明:即使不做一般工作,也能以溫暖與凝聚力帶來價值。",
+            "locate": "he had delivered something just as valuable: warmth, comfort, and a reason for neighbors to come together."
           }
         ]
       }
